@@ -3,15 +3,324 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jonathan Capalbo</title>
+    <title>Jonathan Capalbo | Business & Information Systems</title>
+    <meta
+      name="description"
+      content="Personal website for Jonathan Capalbo, a business graduate and MS Business & Information Systems student focused on business analysis, project management, and technology-enabled process improvement."
+    />
+    <style>
+      :root {
+        --bg: #f7f7f4;
+        --text: #1f2933;
+        --muted: #5f6b76;
+        --card: #ffffff;
+        --border: #d8d8d0;
+        --accent: #1f4e79;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        color: var(--text);
+        background: var(--bg);
+      }
+
+      header,
+      main,
+      footer {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+
+      header {
+        padding-top: 56px;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-bottom: 48px;
+      }
+
+      nav a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      .hero {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 36px;
+      }
+
+      h1 {
+        font-size: clamp(2.2rem, 5vw, 4rem);
+        line-height: 1.1;
+        margin: 0 0 12px;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        margin-top: 0;
+      }
+
+      h3 {
+        margin-bottom: 8px;
+      }
+
+      .tagline {
+        font-size: 1.2rem;
+        color: var(--muted);
+        margin-bottom: 24px;
+      }
+
+      section {
+        margin: 32px 0;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 28px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 18px;
+      }
+
+      .card {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 18px;
+        background: #fbfbf9;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      .button-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 16px;
+        border-radius: 999px;
+        border: 1px solid var(--accent);
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .button.primary {
+        background: var(--accent);
+        color: white;
+      }
+
+      .placeholder {
+        color: var(--muted);
+        font-style: italic;
+      }
+
+      footer {
+        color: var(--muted);
+        padding-bottom: 48px;
+      }
+    </style>
   </head>
   <body>
+    <header>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="hero">
+        <h1>Jonathan Capalbo</h1>
+        <p class="tagline">
+          Business graduate and M.S. Business & Information Systems student focused on business analysis, project management, and technology-enabled process improvement.
+        </p>
+        <p>
+          I combine customer-facing sales experience with growing technical skills in SQL, Python, Tableau, Excel, systems analysis, and web development. My goal is to move into business analyst, project coordinator, or digital transformation roles where I can help connect business needs with practical technology solutions.
+        </p>
+        <div class="button-row">
+          <a class="button primary" href="#projects">View Projects</a>
+          <a class="button" href="#contact">Contact Me</a>
+          <a class="button" href="resume.pdf">Download Resume</a>
+        </div>
+      </div>
+    </header>
+
     <main>
-      <h1>Jonathan Capalbo</h1>
-      <p>
-        Welcome! This page is a basic landing page that will be expanded with
-        more information for future employers.
-      </p>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I earned a B.S. in Business Administration from New Jersey Institute of Technology and am currently pursuing an M.S. in Business & Information Systems. My academic and professional interests sit at the intersection of business operations, data, technology, and customer experience.
+        </p>
+        <p>
+          In my current sales role, I work with customers, systems, policies, and internal documentation every day. That experience has helped me develop communication, problem-solving, requirements gathering, and process-improvement skills that translate well into business analysis and project work.
+        </p>
+        <p>
+          Outside of work and school, I enjoy chess, bowling, movies, travel, restaurants, and learning new technology skills.
+        </p>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="card">
+          <h3>Comcast / Xfinity</h3>
+          <p><strong>Sales Representative</strong> | April 2022 - Present</p>
+          <ul>
+            <li>Work with customers to understand needs, explain service options, and recommend internet, TV, and mobile solutions.</li>
+            <li>Use CRM tools and internal systems to manage customer information, review account details, and complete sales-related processes.</li>
+            <li>Interpret policy changes, promotions, and documentation to support accurate customer conversations and team knowledge sharing.</li>
+            <li>Developed strong communication, problem-solving, and stakeholder-facing skills through daily customer interactions.</li>
+            <li>Supported teammates by helping clarify documentation, internal procedures, and system-related questions.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>
+          This section should show practical work. Add screenshots, GitHub links, short writeups, and measurable outcomes where possible.
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h3>SQL / Database Project</h3>
+            <p>
+              Designed and worked with relational database tables, constraints, views, sequences, and sample data using Oracle SQL.
+            </p>
+            <p class="placeholder">Add project name, screenshots, schema diagram, GitHub link, and 2-3 details about what the database does.</p>
+          </div>
+
+          <div class="card">
+            <h3>Systems Analysis Project</h3>
+            <p>
+              Created analysis deliverables such as process models, event-response lists, use cases, ERDs, and data dictionaries for business system scenarios.
+            </p>
+            <p class="placeholder">Add the strongest class project here, such as a system analysis case study or requirements document.</p>
+          </div>
+
+          <div class="card">
+            <h3>Tableau / Data Visualization</h3>
+            <p>
+              Built dashboards and visual summaries to communicate patterns, performance, and business insights from data.
+            </p>
+            <p class="placeholder">Add dashboard image, data source, business question, and what insight the dashboard provides.</p>
+          </div>
+
+          <div class="card">
+            <h3>Python Project</h3>
+            <p>
+              Used Python to practice automation, analysis, or application logic while strengthening technical problem-solving skills.
+            </p>
+            <p class="placeholder">Add a Python project title, short description, tools used, and GitHub link.</p>
+          </div>
+
+          <div class="card">
+            <h3>Personal Website</h3>
+            <p>
+              Built this website as a professional portfolio to present my background, projects, skills, and career direction.
+            </p>
+            <p class="placeholder">Add notes about the tech stack, deployment method, and future improvements.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Business</h3>
+            <ul>
+              <li>Business analysis</li>
+              <li>Requirements gathering</li>
+              <li>Process modeling</li>
+              <li>Customer needs assessment</li>
+              <li>Project coordination</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Technical</h3>
+            <ul>
+              <li>SQL</li>
+              <li>Python</li>
+              <li>Tableau</li>
+              <li>Excel</li>
+              <li>HTML, CSS, and JavaScript</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Tools & Methods</h3>
+            <ul>
+              <li>Oracle Database / Oracle APEX</li>
+              <li>Git and GitHub</li>
+              <li>CRM systems</li>
+              <li>Microsoft Office</li>
+              <li>SDLC, Agile, Waterfall, Scrum, and V-Model concepts</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="card">
+          <h3>New Jersey Institute of Technology</h3>
+          <p><strong>M.S. Business & Information Systems</strong> | In Progress</p>
+          <p class="placeholder">Add expected graduation date, concentration, and relevant graduate coursework.</p>
+        </div>
+        <div class="card">
+          <h3>New Jersey Institute of Technology</h3>
+          <p><strong>B.S. Business Administration</strong> | GPA: 3.97</p>
+          <p class="placeholder">Add graduation year, honors, concentration, or relevant undergraduate coursework if desired.</p>
+        </div>
+      </section>
+
+      <section id="resume">
+        <h2>Resume</h2>
+        <p>
+          A downloadable resume can be added as <strong>resume.pdf</strong> in the same folder as this page. Keep the resume focused on business analysis, project coordination, technical skills, and transferable sales experience.
+        </p>
+        <a class="button" href="resume.pdf">Download Resume</a>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          I am interested in business analyst, project coordinator, data-focused business, and digital transformation opportunities.
+        </p>
+        <ul>
+          <li>Email: <a href="mailto:jonathancapalbo1@gmail.com">jonathancapalbo1@gmail.com</a></li>
+          <li>LinkedIn: <span class="placeholder">Add LinkedIn URL</span></li>
+          <li>GitHub: <a href="https://github.com/jon314159">github.com/jon314159</a></li>
+        </ul>
+      </section>
     </main>
+
+    <footer>
+      <p>&copy; 2026 Jonathan Capalbo. Built as a personal portfolio website.</p>
+    </footer>
   </body>
 </html>

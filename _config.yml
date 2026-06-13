@@ -1,0 +1,10 @@
+title: Jonathan Capalbo
+description: Business graduate and M.S. Business & Information Systems student focused on business analysis, project management, and technology-enabled process improvement.
+url: "https://jon314159.github.io"
+baseurl: "/JonathanCapalbo.me"
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - README.md

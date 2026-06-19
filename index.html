@@ -5,8 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jonathan Capalbo | Business & Information Systems</title>
     <meta name="description" content="Personal website for Jonathan Capalbo, a business graduate and MS Business & Information Systems student focused on business analysis, project management, and technology-enabled process improvement." />
-    <link rel="stylesheet" href="assets/css/style.css?v=5" />
+    <link rel="stylesheet" href="assets/css/style.css?v=6" />
     <style>
+      :root {
+        --bg: #eef3f1;
+        --bg-2: #dbe7e3;
+        --surface: rgba(255, 255, 255, 0.94);
+        --surface-strong: #ffffff;
+        --surface-dark: rgba(19, 45, 48, 0.86);
+        --text: #102326;
+        --text-light: #f7fbfa;
+        --muted: #5f706f;
+        --muted-light: #d3dfdd;
+        --border: rgba(95, 112, 111, 0.22);
+        --accent: #2f8f83;
+        --accent-2: #174e5a;
+        --accent-3: #d98c3f;
+        --warning: #d98c3f;
+      }
+
+      body {
+        background:
+          radial-gradient(circle at 16% 10%, rgba(47, 143, 131, 0.22), transparent 24rem),
+          radial-gradient(circle at 88% 18%, rgba(217, 140, 63, 0.16), transparent 22rem),
+          linear-gradient(135deg, #edf4f2 0%, #dce9e6 46%, #f7f4ef 100%);
+      }
+
+      nav {
+        background: rgba(16, 35, 38, 0.84);
+      }
+
+      .hero {
+        background:
+          linear-gradient(135deg, rgba(16, 35, 38, 0.96), rgba(23, 78, 90, 0.86)),
+          radial-gradient(circle at top right, rgba(47, 143, 131, 0.28), transparent 28rem);
+      }
+
+      .button.primary {
+        background: linear-gradient(135deg, #174e5a, #2f8f83);
+      }
+
+      .button.primary:hover,
+      .button.primary:focus-visible {
+        background: linear-gradient(135deg, #123f49, #26766d);
+      }
+
+      .profile-mark {
+        background: linear-gradient(135deg, #d98c3f, #f3d19b);
+        color: #2b1a0d;
+      }
+
+      .stats-strip strong,
+      .card-kicker,
+      .course-code {
+        color: #174e5a;
+      }
+
+      .cta-section {
+        background:
+          linear-gradient(135deg, rgba(23, 78, 90, 0.96), rgba(47, 143, 131, 0.88)),
+          radial-gradient(circle at top right, rgba(255, 255, 255, 0.2), transparent 20rem);
+      }
+
       @media (min-width: 1280px) {
         header,
         main,
@@ -59,30 +119,41 @@
 
       .course-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 14px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 16px;
       }
 
       .course-card {
+        padding: 20px;
+        border: 1px solid rgba(95, 112, 111, 0.22);
+        border-radius: 20px;
+        background: linear-gradient(180deg, #ffffff, #f7faf8);
+        box-shadow: 0 8px 22px rgba(16, 35, 38, 0.05);
+      }
+
+      .course-card h3 {
+        margin-bottom: 10px;
+      }
+
+      .course-card p {
+        color: #5f706f;
+      }
+
+      .course-list {
         display: flex;
-        justify-content: space-between;
-        gap: 16px;
-        padding: 16px 18px;
-        border: 1px solid rgba(203, 213, 225, 0.85);
-        border-radius: 18px;
-        background: linear-gradient(180deg, #ffffff, #f8fafc);
-        box-shadow: 0 8px 22px rgba(15, 23, 42, 0.05);
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 14px;
       }
 
-      .course-code {
-        flex: 0 0 auto;
-        color: #1e3a8a;
-        font-weight: 900;
-      }
-
-      .course-title {
-        color: #334155;
-        text-align: right;
+      .course-list span {
+        display: inline-flex;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: #e4efec;
+        color: #174e5a;
+        font-size: 0.82rem;
+        font-weight: 800;
       }
     </style>
   </head>
@@ -180,30 +251,12 @@
       </section>
 
       <section id="coursework">
-        <div class="section-heading"><p class="eyebrow">Coursework</p><h2>Relevant business, analytics, technology, and management coursework.</h2><p>Selected completed coursework across business administration, management information systems, entrepreneurship, analytics, operations, and information systems.</p></div>
+        <div class="section-heading"><p class="eyebrow">Coursework</p><h2>Selected relevant coursework.</h2><p>Instead of listing every class, this section highlights the coursework most directly connected to business analysis, information systems, analytics, operations, and project work.</p></div>
         <div class="course-grid">
-          <div class="course-card"><span class="course-code">ENTR 210</span><span class="course-title">Intro to Entrepreneurship</span></div>
-          <div class="course-card"><span class="course-code">ENTR 320</span><span class="course-title">Financing New Venture</span></div>
-          <div class="course-card"><span class="course-code">ENTR 330</span><span class="course-title">Entrepreneurial Strategy</span></div>
-          <div class="course-card"><span class="course-code">ENTR 440</span><span class="course-title">Lean Startup Accelerator</span></div>
-          <div class="course-card"><span class="course-code">FIN 403</span><span class="course-title">Financial Statement Analysis</span></div>
-          <div class="course-card"><span class="course-code">HRM 301</span><span class="course-title">Organizational Behavior</span></div>
-          <div class="course-card"><span class="course-code">HSS 404</span><span class="course-title">HSS Senior Seminar</span></div>
-          <div class="course-card"><span class="course-code">MGMT 216</span><span class="course-title">Business Data Analytics</span></div>
-          <div class="course-card"><span class="course-code">MGMT 316</span><span class="course-title">Business Research Methods</span></div>
-          <div class="course-card"><span class="course-code">MGMT 330</span><span class="course-title">Real Estate Principles</span></div>
-          <div class="course-card"><span class="course-code">MGMT 480</span><span class="course-title">Managing Technology & Innovation</span></div>
-          <div class="course-card"><span class="course-code">MGMT 492</span><span class="course-title">Business Policy</span></div>
-          <div class="course-card"><span class="course-code">MIS 245</span><span class="course-title">Intro to Management Information Systems</span></div>
-          <div class="course-card"><span class="course-code">MIS 363</span><span class="course-title">Project Management for Managers</span></div>
-          <div class="course-card"><span class="course-code">MIS 385</span><span class="course-title">Database Systems for Managers</span></div>
-          <div class="course-card"><span class="course-code">MIS 445</span><span class="course-title">Decision Support Tools & Technology for Managers</span></div>
-          <div class="course-card"><span class="course-code">OM 375</span><span class="course-title">Business Operations Management & Analytics</span></div>
-          <div class="course-card"><span class="course-code">STS 310</span><span class="course-title">Technology and Human Values</span></div>
-          <div class="course-card"><span class="course-code">Graduate</span><span class="course-title">Web Systems Development</span></div>
-          <div class="course-card"><span class="course-code">Graduate</span><span class="course-title">Enterprise Database Management</span></div>
-          <div class="course-card"><span class="course-code">Graduate</span><span class="course-title">System Analysis and Design</span></div>
-          <div class="course-card"><span class="course-code">Graduate</span><span class="course-title">Data Analytics for Information Systems</span></div>
+          <div class="course-card"><h3>Information Systems & Development</h3><p>Courses focused on systems, databases, web development, and technical business tools.</p><div class="course-list"><span>Web Systems Development</span><span>Enterprise Database Management</span><span>System Analysis and Design</span><span>Database Systems for Managers</span><span>Intro to Management Information Systems</span></div></div>
+          <div class="course-card"><h3>Analytics & Decision Support</h3><p>Courses focused on using data, tools, and structured analysis to support better decisions.</p><div class="course-list"><span>Business Data Analytics</span><span>Data Analytics for Information Systems</span><span>Decision Support Tools</span><span>Business Operations Management & Analytics</span><span>Business Research Methods</span></div></div>
+          <div class="course-card"><h3>Management & Strategy</h3><p>Courses focused on project work, organizations, innovation, and business strategy.</p><div class="course-list"><span>Project Management for Managers</span><span>Managing Technology & Innovation</span><span>Business Policy</span><span>Organizational Behavior</span><span>Financial Statement Analysis</span></div></div>
+          <div class="course-card"><h3>Entrepreneurship</h3><p>Courses focused on venture creation, startup strategy, and business model development.</p><div class="course-list"><span>Intro to Entrepreneurship</span><span>Financing New Venture</span><span>Entrepreneurial Strategy</span><span>Lean Startup Accelerator</span></div></div>
         </div>
       </section>
 

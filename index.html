@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jonathan Capalbo | Business & Information Systems</title>
     <meta name="description" content="Personal website for Jonathan Capalbo, a business graduate and MS Business & Information Systems student focused on business analysis, project management, and technology-enabled process improvement." />
-    <link rel="stylesheet" href="assets/css/style.css?v=4" />
+    <link rel="stylesheet" href="assets/css/style.css?v=5" />
     <style>
       @media (min-width: 1280px) {
         header,
@@ -56,6 +56,34 @@
           padding: clamp(38px, 3.5vw, 58px);
         }
       }
+
+      .course-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 14px;
+      }
+
+      .course-card {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 16px 18px;
+        border: 1px solid rgba(203, 213, 225, 0.85);
+        border-radius: 18px;
+        background: linear-gradient(180deg, #ffffff, #f8fafc);
+        box-shadow: 0 8px 22px rgba(15, 23, 42, 0.05);
+      }
+
+      .course-code {
+        flex: 0 0 auto;
+        color: #1e3a8a;
+        font-weight: 900;
+      }
+
+      .course-title {
+        color: #334155;
+        text-align: right;
+      }
     </style>
   </head>
   <body>
@@ -65,6 +93,7 @@
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#coursework">Coursework</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -133,10 +162,10 @@
       <section id="projects">
         <div class="section-heading"><p class="eyebrow">Projects</p><h2>Portfolio areas I am developing through coursework and independent practice.</h2><p>This section will grow as I add screenshots, GitHub links, short writeups, and measurable outcomes. The strongest projects should show the business problem, the tools used, and the final result.</p></div>
         <div class="project-grid">
-          <article class="project-card featured-card"><span class="card-kicker">Featured</span><h3>Systems Analysis Project</h3><p>Created analysis deliverables such as process models, event-response lists, use cases, ERDs, and data dictionaries for business system scenarios.</p><div class="tag-row"><span>Requirements</span><span>ERD</span><span>Use Cases</span></div><p class="placeholder">Add the strongest class project here, such as a system analysis case study or requirements document.</p></article>
+          <article class="project-card featured-card"><span class="card-kicker">Featured Class Project</span><h3>Calculator API</h3><p>Built a FastAPI-based calculator service with user registration, login, JWT authentication, PostgreSQL storage, and calculation history. The project also includes Docker, Docker Compose, Alembic migrations, pgAdmin, testing, CI/CD, security scanning, and Docker Hub deployment.</p><div class="tag-row"><span>FastAPI</span><span>PostgreSQL</span><span>JWT</span><span>Docker</span><span>CI/CD</span></div><p><a class="button" href="https://github.com/jon314159/FinalProject">View Project</a></p></article>
+          <article class="project-card"><span class="card-kicker">Systems Analysis</span><h3>Systems Analysis Deliverables</h3><p>Created analysis deliverables such as process models, event-response lists, use cases, ERDs, and data dictionaries for business system scenarios.</p><div class="tag-row"><span>Requirements</span><span>ERD</span><span>Use Cases</span></div><p class="placeholder">Add the strongest systems analysis document or screenshot here.</p></article>
           <article class="project-card"><span class="card-kicker">Database</span><h3>SQL / Oracle Project</h3><p>Worked with relational database tables, constraints, views, sequences, and sample data using Oracle SQL.</p><div class="tag-row"><span>Oracle SQL</span><span>Tables</span><span>Views</span></div><p class="placeholder">Add project name, screenshots, schema diagram, GitHub link, and 2-3 details about what the database does.</p></article>
           <article class="project-card"><span class="card-kicker">Analytics</span><h3>Tableau / Data Visualization</h3><p>Built dashboards and visual summaries to communicate patterns, performance, and business insights from data.</p><div class="tag-row"><span>Dashboards</span><span>Insights</span><span>Business Data</span></div><p class="placeholder">Add dashboard image, data source, business question, and what insight the dashboard provides.</p></article>
-          <article class="project-card"><span class="card-kicker">Technical</span><h3>Python Project</h3><p>Used Python to practice automation, analysis, and application logic while strengthening technical problem-solving skills.</p><div class="tag-row"><span>Python</span><span>Automation</span><span>Analysis</span></div><p class="placeholder">Add a Python project title, short description, tools used, and GitHub link.</p></article>
           <article class="project-card"><span class="card-kicker">Web</span><h3>Personal Website</h3><p>Built this portfolio site to present my background, projects, skills, and career direction.</p><div class="tag-row"><span>HTML</span><span>GitHub Pages</span><span>CSS</span></div><p class="placeholder">Add notes about deployment method and future improvements.</p></article>
         </div>
       </section>
@@ -145,8 +174,36 @@
         <div class="section-heading"><p class="eyebrow">Skills</p><h2>Business and technical skills I am applying to analyst work.</h2></div>
         <div class="skill-board">
           <div class="skill-column"><h3>Business</h3><ul class="check-list"><li>Business analysis</li><li>Requirements gathering</li><li>Process modeling</li><li>Customer needs assessment</li><li>Project coordination</li></ul></div>
-          <div class="skill-column"><h3>Technical</h3><ul class="check-list"><li>SQL</li><li>Python</li><li>Tableau</li><li>Excel</li><li>HTML, CSS, and JavaScript</li></ul></div>
-          <div class="skill-column"><h3>Tools & Methods</h3><ul class="check-list"><li>Oracle Database / Oracle APEX</li><li>Git and GitHub</li><li>CRM systems</li><li>Microsoft Office</li><li>SDLC, Agile, Waterfall, Scrum, and V-Model concepts</li></ul></div>
+          <div class="skill-column"><h3>Technical</h3><ul class="check-list"><li>SQL</li><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>Tableau</li><li>Excel</li><li>HTML, CSS, and JavaScript</li></ul></div>
+          <div class="skill-column"><h3>Tools & Methods</h3><ul class="check-list"><li>Oracle Database / Oracle APEX</li><li>Git and GitHub</li><li>Docker and Docker Compose</li><li>Alembic migrations</li><li>CRM systems</li><li>Microsoft Office</li><li>SDLC, Agile, Waterfall, Scrum, and V-Model concepts</li></ul></div>
+        </div>
+      </section>
+
+      <section id="coursework">
+        <div class="section-heading"><p class="eyebrow">Coursework</p><h2>Relevant business, analytics, technology, and management coursework.</h2><p>Selected completed coursework across business administration, management information systems, entrepreneurship, analytics, operations, and information systems.</p></div>
+        <div class="course-grid">
+          <div class="course-card"><span class="course-code">ENTR 210</span><span class="course-title">Intro to Entrepreneurship</span></div>
+          <div class="course-card"><span class="course-code">ENTR 320</span><span class="course-title">Financing New Venture</span></div>
+          <div class="course-card"><span class="course-code">ENTR 330</span><span class="course-title">Entrepreneurial Strategy</span></div>
+          <div class="course-card"><span class="course-code">ENTR 440</span><span class="course-title">Lean Startup Accelerator</span></div>
+          <div class="course-card"><span class="course-code">FIN 403</span><span class="course-title">Financial Statement Analysis</span></div>
+          <div class="course-card"><span class="course-code">HRM 301</span><span class="course-title">Organizational Behavior</span></div>
+          <div class="course-card"><span class="course-code">HSS 404</span><span class="course-title">HSS Senior Seminar</span></div>
+          <div class="course-card"><span class="course-code">MGMT 216</span><span class="course-title">Business Data Analytics</span></div>
+          <div class="course-card"><span class="course-code">MGMT 316</span><span class="course-title">Business Research Methods</span></div>
+          <div class="course-card"><span class="course-code">MGMT 330</span><span class="course-title">Real Estate Principles</span></div>
+          <div class="course-card"><span class="course-code">MGMT 480</span><span class="course-title">Managing Technology & Innovation</span></div>
+          <div class="course-card"><span class="course-code">MGMT 492</span><span class="course-title">Business Policy</span></div>
+          <div class="course-card"><span class="course-code">MIS 245</span><span class="course-title">Intro to Management Information Systems</span></div>
+          <div class="course-card"><span class="course-code">MIS 363</span><span class="course-title">Project Management for Managers</span></div>
+          <div class="course-card"><span class="course-code">MIS 385</span><span class="course-title">Database Systems for Managers</span></div>
+          <div class="course-card"><span class="course-code">MIS 445</span><span class="course-title">Decision Support Tools & Technology for Managers</span></div>
+          <div class="course-card"><span class="course-code">OM 375</span><span class="course-title">Business Operations Management & Analytics</span></div>
+          <div class="course-card"><span class="course-code">STS 310</span><span class="course-title">Technology and Human Values</span></div>
+          <div class="course-card"><span class="course-code">Graduate</span><span class="course-title">Web Systems Development</span></div>
+          <div class="course-card"><span class="course-code">Graduate</span><span class="course-title">Enterprise Database Management</span></div>
+          <div class="course-card"><span class="course-code">Graduate</span><span class="course-title">System Analysis and Design</span></div>
+          <div class="course-card"><span class="course-code">Graduate</span><span class="course-title">Data Analytics for Information Systems</span></div>
         </div>
       </section>
 

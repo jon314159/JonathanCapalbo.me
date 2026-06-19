@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jonathan Capalbo | Business & Information Systems</title>
-    <meta name="description" content="Personal website for Jonathan Capalbo, a business graduate and MS Business & Information Systems student focused on business analysis, project management, and technology-enabled process improvement." />
-    <link rel="stylesheet" href="assets/css/style.css?v=9" />
+    <meta name="description" content="Personal website for Jonathan Capalbo, a business graduate and MS Business & Information Systems student focused on business analysis, project management, AI-supported workflows, and technology-enabled process improvement." />
+    <link rel="stylesheet" href="assets/css/style.css?v=10" />
     <style>
       :root {
         --bg: #eef3f1;
@@ -52,7 +52,7 @@
 
       .dynamic-strip {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 14px;
         margin: 28px 0;
       }
@@ -89,13 +89,13 @@
         font-size: 0.95rem;
       }
 
-      .course-grid {
+      .course-grid, .ai-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
       }
 
-      .course-card {
+      .course-card, .ai-card {
         padding: 22px;
         border: 1px solid rgba(95, 112, 111, 0.22);
         border-radius: 22px;
@@ -104,12 +104,12 @@
         transition: transform 180ms ease, box-shadow 180ms ease;
       }
 
-      .course-card:hover {
+      .course-card:hover, .ai-card:hover {
         transform: translateY(-4px);
         box-shadow: 0 18px 38px rgba(16, 35, 38, 0.12);
       }
 
-      .course-card p { color: #5f706f; }
+      .course-card p, .ai-card p { color: #5f706f; }
 
       .course-list {
         display: flex;
@@ -128,7 +128,7 @@
         font-weight: 800;
       }
 
-      .project-card, .skill-column, .education-card, .course-card, .timeline-card, .callout-card, .stats-strip div {
+      .project-card, .skill-column, .education-card, .course-card, .ai-card, .timeline-card, .callout-card, .stats-strip div {
         transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
       }
 
@@ -166,8 +166,12 @@
         section { padding: clamp(38px, 3.5vw, 58px); }
       }
 
+      @media (max-width: 1100px) {
+        .dynamic-strip { grid-template-columns: repeat(2, 1fr); }
+      }
+
       @media (max-width: 920px) {
-        .dynamic-strip, .course-grid { grid-template-columns: 1fr; }
+        .dynamic-strip, .course-grid, .ai-grid { grid-template-columns: 1fr; }
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -182,6 +186,7 @@
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#ai-skills">AI Skills</a>
         <a href="#coursework">Coursework</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
@@ -191,8 +196,8 @@
         <div class="hero-copy">
           <p class="eyebrow">Business • Systems • Analysis</p>
           <h1>Jonathan Capalbo</h1>
-          <p class="tagline">Business graduate and M.S. Business & Information Systems student interested in business analysis, project coordination, and digital transformation.</p>
-          <p>I bring 5+ years of customer sales experience and a growing technical foundation in SQL, Python, Tableau, Excel, systems analysis, and web development. I am focused on using those skills to understand business needs, improve processes, and support practical technology solutions.</p>
+          <p class="tagline">Business graduate and M.S. Business & Information Systems student interested in business analysis, project coordination, AI-supported workflows, and digital transformation.</p>
+          <p>I bring 5+ years of customer sales experience and a growing technical foundation in SQL, Python, Tableau, Excel, systems analysis, web development, and practical AI use. I am focused on using those skills to understand business needs, improve processes, and support technology solutions.</p>
           <div class="button-row">
             <a class="button primary" href="#projects">View Projects</a>
             <a class="button" href="#experience">See Experience</a>
@@ -205,7 +210,7 @@
           <p class="panel-label">Current Direction</p>
           <h2>Connecting business needs with practical technology solutions.</h2>
           <div class="badge-list">
-            <span>SQL</span><span>Python</span><span>Tableau</span><span>Excel</span><span>Systems Analysis</span><span>Project Coordination</span>
+            <span>SQL</span><span>Python</span><span>Tableau</span><span>Excel</span><span>AI Tools</span><span>Systems Analysis</span><span>Project Coordination</span>
           </div>
         </aside>
       </div>
@@ -223,16 +228,17 @@
         <div class="dynamic-item"><strong>Analyze</strong><span>Understand requirements, workflows, and business problems.</span></div>
         <div class="dynamic-item"><strong>Build</strong><span>Create practical technical projects using databases, APIs, and web tools.</span></div>
         <div class="dynamic-item"><strong>Improve</strong><span>Use data and process thinking to support better decisions.</span></div>
+        <div class="dynamic-item"><strong>Augment</strong><span>Use AI tools to improve research, documentation, and workflow efficiency.</span></div>
       </div>
 
       <section id="about" class="section-feature">
         <div class="section-heading"><p class="eyebrow">About</p><h2>Business background, technical interests, and customer-facing experience.</h2></div>
         <div class="two-column">
           <div>
-            <p>I earned a B.S. in Business Administration from New Jersey Institute of Technology and am currently pursuing an M.S. in Business & Information Systems. My interests are centered on business operations, information systems, data, and the way technology can make work more organized and effective.</p>
+            <p>I earned a B.S. in Business Administration from New Jersey Institute of Technology and am currently pursuing an M.S. in Business & Information Systems. My interests are centered on business operations, information systems, data, AI-supported workflows, and the way technology can make work more organized and effective.</p>
             <p>My sales experience has given me daily practice working with customers, internal systems, policies, documentation, and changing business rules. That background has helped me build communication, problem-solving, requirements gathering, and process-improvement skills that I can carry into analyst and project-focused roles.</p>
           </div>
-          <div class="callout-card"><h3>What I am building toward</h3><p>I am working toward roles where I can document requirements, improve workflows, support project delivery, analyze data, and help teams make better decisions with technology.</p></div>
+          <div class="callout-card"><h3>What I am building toward</h3><p>I am working toward roles where I can document requirements, improve workflows, support project delivery, analyze data, and help teams make better decisions with technology and AI-supported tools.</p></div>
         </div>
       </section>
 
@@ -260,7 +266,7 @@
           <article class="project-card featured-card"><span class="card-kicker">Featured Class Project</span><h3>Calculator API</h3><p>Built a FastAPI-based calculator service with user registration, login, JWT authentication, PostgreSQL storage, and calculation history. The project also includes Docker, Docker Compose, Alembic migrations, pgAdmin, testing, CI/CD, security scanning, and Docker Hub deployment.</p><div class="tag-row"><span>FastAPI</span><span>PostgreSQL</span><span>JWT</span><span>Docker</span><span>CI/CD</span></div><p><a class="button" href="https://github.com/jon314159/FinalProject">View Project</a></p></article>
           <article class="project-card"><span class="card-kicker">Business Simulation</span><h3>CAPSIM Andrews Company Report</h3><p>Analyzed a seven-year business simulation for Andrews, including product strategy, market share, corporate social responsibility, ratio analysis, sales, variable costs, net profit, cash flow, debt, equity, dividends, and future strategic goals. The report showed Andrews leading sales from 2028 to 2030, reaching $930,324 in sales across 2028 to 2031, and finishing second in net profit at $61,927.</p><div class="tag-row"><span>Financial Analysis</span><span>Business Strategy</span><span>Market Share</span><span>CAPSIM</span></div></article>
           <article class="project-card"><span class="card-kicker">Database Design</span><h3>Movie Rental Database</h3><p>Created an Oracle SQL database for a movie rental system with customers, movies, media, actors, star billings, and rental history. The project includes primary and foreign keys, check constraints, sequences, sample data, a read-only unavailable-title view, an index, and a synonym.</p><div class="tag-row"><span>Oracle SQL</span><span>Relational Design</span><span>Constraints</span><span>Views</span></div></article>
-          <article class="project-card"><span class="card-kicker">Research</span><h3>Target Retail Theft Research Review</h3><p>Researched causes and possible solutions to Target's shoplifting problem, including mental health, peer influence, financial pressure, fixtures, tagging, RFID, AI-assisted surveillance, strategy, and customer experience tradeoffs.</p><div class="tag-row"><span>Research</span><span>Retail Strategy</span><span>Loss Prevention</span><span>Customer Experience</span></div></article>
+          <article class="project-card"><span class="card-kicker">Research</span><h3>Target Retail Theft Research Review</h3><p>Researched causes and possible solutions to Target's shoplifting problem, including mental health, peer influence, financial pressure, fixtures, tagging, RFID, AI-assisted surveillance, strategy, and customer experience tradeoffs.</p><div class="tag-row"><span>Research</span><span>Retail Strategy</span><span>AI-Assisted Surveillance</span><span>Customer Experience</span></div></article>
           <article class="project-card"><span class="card-kicker">Presentation</span><h3>Sweatshop Ethics & Regulation Presentation</h3><p>Presented ethical, moral, legal, and human-values issues surrounding sweatshops, including worker conditions, non-worseness arguments, unfair distribution, regulatory challenges, and paths for more specific accountability.</p><div class="tag-row"><span>Ethics</span><span>Regulation</span><span>Human Values</span><span>Presentation</span></div></article>
           <article class="project-card"><span class="card-kicker">Systems Analysis</span><h3>Systems Analysis Deliverables</h3><p>Created analysis deliverables such as process models, event-response lists, use cases, ERDs, and data dictionaries for business system scenarios.</p><div class="tag-row"><span>Requirements</span><span>ERD</span><span>Use Cases</span></div><p class="placeholder">Add the strongest systems analysis document or screenshot here.</p></article>
           <article class="project-card"><span class="card-kicker">Web</span><h3>Personal Website</h3><p>Built this portfolio site to present my background, projects, skills, and career direction.</p><div class="tag-row"><span>HTML</span><span>GitHub Pages</span><span>CSS</span></div><p class="placeholder">Add notes about deployment method and future improvements.</p></article>
@@ -272,7 +278,16 @@
         <div class="skill-board">
           <div class="skill-column"><h3>Business</h3><ul class="check-list"><li>Business analysis</li><li>Requirements gathering</li><li>Process modeling</li><li>Customer needs assessment</li><li>Research and literature review</li><li>Financial and ratio analysis</li><li>Strategic decision-making</li><li>Project coordination</li></ul></div>
           <div class="skill-column"><h3>Technical</h3><ul class="check-list"><li>SQL</li><li>Oracle Database</li><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>Tableau</li><li>Excel</li><li>HTML, CSS, and JavaScript</li></ul></div>
-          <div class="skill-column"><h3>Tools & Methods</h3><ul class="check-list"><li>Oracle APEX</li><li>Git and GitHub</li><li>Docker and Docker Compose</li><li>Alembic migrations</li><li>CRM systems</li><li>Microsoft Office</li><li>SDLC, Agile, Waterfall, Scrum, and V-Model concepts</li></ul></div>
+          <div class="skill-column"><h3>Tools & Methods</h3><ul class="check-list"><li>AI-assisted research and documentation</li><li>Prompt engineering basics</li><li>Oracle APEX</li><li>Git and GitHub</li><li>Docker and Docker Compose</li><li>Alembic migrations</li><li>CRM systems</li><li>Microsoft Office</li><li>SDLC, Agile, Waterfall, Scrum, and V-Model concepts</li></ul></div>
+        </div>
+      </section>
+
+      <section id="ai-skills">
+        <div class="section-heading"><p class="eyebrow">AI Skills</p><h2>Practical AI use for business, research, and workflow support.</h2><p>I use AI tools as a support layer for analysis, documentation, learning, and process improvement. My focus is on using AI responsibly, checking outputs, and applying it to practical business and technical tasks.</p></div>
+        <div class="ai-grid">
+          <div class="ai-card"><h3>Research & Summarization</h3><p>Use AI to organize research, compare sources, summarize long documents, generate outlines, and identify follow-up questions while still reviewing the final work for accuracy.</p></div>
+          <div class="ai-card"><h3>Business Analysis Support</h3><p>Apply AI to draft requirements, clarify user stories, improve documentation, brainstorm process improvements, and translate business needs into structured deliverables.</p></div>
+          <div class="ai-card"><h3>Technical Learning & Prototyping</h3><p>Use AI as a coding and troubleshooting aid for SQL, Python, APIs, web development, debugging, and explaining unfamiliar technical concepts.</p></div>
         </div>
       </section>
 

@@ -6,6 +6,57 @@
     <title>Jonathan Capalbo | Business & Information Systems</title>
     <meta name="description" content="Personal website for Jonathan Capalbo, a business graduate and MS Business & Information Systems student focused on business analysis, project management, and technology-enabled process improvement." />
     <link rel="stylesheet" href="assets/css/style.css?v=4" />
+    <style>
+      @media (min-width: 1280px) {
+        header,
+        main,
+        footer {
+          width: min(1480px, calc(100% - 96px));
+        }
+
+        .hero-split {
+          grid-template-columns: minmax(0, 1.55fr) minmax(360px, 0.85fr);
+        }
+
+        .hero-copy > p:not(.tagline):not(.eyebrow),
+        .tagline,
+        .section-heading {
+          max-width: 920px;
+        }
+
+        .two-column {
+          grid-template-columns: minmax(0, 1.25fr) minmax(360px, 0.75fr);
+        }
+
+        .project-grid {
+          grid-template-columns: repeat(12, 1fr);
+        }
+
+        .featured-card {
+          grid-column: span 8;
+        }
+
+        .project-card {
+          grid-column: span 4;
+        }
+      }
+
+      @media (min-width: 1700px) {
+        header,
+        main,
+        footer {
+          width: min(1640px, calc(100% - 128px));
+        }
+
+        .hero {
+          padding: clamp(52px, 5vw, 84px);
+        }
+
+        section {
+          padding: clamp(38px, 3.5vw, 58px);
+        }
+      }
+    </style>
   </head>
   <body>
     <header>

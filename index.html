@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jonathan Capalbo | Business & Information Systems</title>
     <meta name="description" content="Personal website for Jonathan Capalbo, a business graduate and MS Business & Information Systems student focused on business analysis, project management, and technology-enabled process improvement." />
-    <link rel="stylesheet" href="assets/css/style.css?v=6" />
+    <link rel="stylesheet" href="assets/css/style.css?v=7" />
     <style>
       :root {
         --bg: #eef3f1;
@@ -31,9 +31,7 @@
           linear-gradient(135deg, #edf4f2 0%, #dce9e6 46%, #f7f4ef 100%);
       }
 
-      nav {
-        background: rgba(16, 35, 38, 0.84);
-      }
+      nav { background: rgba(16, 35, 38, 0.84); }
 
       .hero {
         background:
@@ -41,25 +39,10 @@
           radial-gradient(circle at top right, rgba(47, 143, 131, 0.28), transparent 28rem);
       }
 
-      .button.primary {
-        background: linear-gradient(135deg, #174e5a, #2f8f83);
-      }
-
-      .button.primary:hover,
-      .button.primary:focus-visible {
-        background: linear-gradient(135deg, #123f49, #26766d);
-      }
-
-      .profile-mark {
-        background: linear-gradient(135deg, #d98c3f, #f3d19b);
-        color: #2b1a0d;
-      }
-
-      .stats-strip strong,
-      .card-kicker,
-      .course-code {
-        color: #174e5a;
-      }
+      .button.primary { background: linear-gradient(135deg, #174e5a, #2f8f83); }
+      .button.primary:hover, .button.primary:focus-visible { background: linear-gradient(135deg, #123f49, #26766d); }
+      .profile-mark { background: linear-gradient(135deg, #d98c3f, #f3d19b); color: #2b1a0d; }
+      .stats-strip strong, .card-kicker, .course-code { color: #174e5a; }
 
       .cta-section {
         background:
@@ -67,77 +50,66 @@
           radial-gradient(circle at top right, rgba(255, 255, 255, 0.2), transparent 20rem);
       }
 
-      @media (min-width: 1280px) {
-        header,
-        main,
-        footer {
-          width: min(1480px, calc(100% - 96px));
-        }
-
-        .hero-split {
-          grid-template-columns: minmax(0, 1.55fr) minmax(360px, 0.85fr);
-        }
-
-        .hero-copy > p:not(.tagline):not(.eyebrow),
-        .tagline,
-        .section-heading {
-          max-width: 920px;
-        }
-
-        .two-column {
-          grid-template-columns: minmax(0, 1.25fr) minmax(360px, 0.75fr);
-        }
-
-        .project-grid {
-          grid-template-columns: repeat(12, 1fr);
-        }
-
-        .featured-card {
-          grid-column: span 8;
-        }
-
-        .project-card {
-          grid-column: span 4;
-        }
+      .dynamic-strip {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        margin: 28px 0;
       }
 
-      @media (min-width: 1700px) {
-        header,
-        main,
-        footer {
-          width: min(1640px, calc(100% - 128px));
-        }
+      .dynamic-item {
+        position: relative;
+        overflow: hidden;
+        padding: 18px 20px;
+        border-radius: 22px;
+        color: #f7fbfa;
+        background: linear-gradient(135deg, rgba(23, 78, 90, 0.96), rgba(47, 143, 131, 0.86));
+        box-shadow: 0 14px 34px rgba(16, 35, 38, 0.14);
+      }
 
-        .hero {
-          padding: clamp(52px, 5vw, 84px);
-        }
+      .dynamic-item::after {
+        content: "";
+        position: absolute;
+        right: -50px;
+        bottom: -70px;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        background: rgba(217, 140, 63, 0.25);
+      }
 
-        section {
-          padding: clamp(38px, 3.5vw, 58px);
-        }
+      .dynamic-item strong {
+        display: block;
+        font-size: 1.05rem;
+        margin-bottom: 4px;
+      }
+
+      .dynamic-item span {
+        color: #d3dfdd;
+        font-size: 0.95rem;
       }
 
       .course-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 16px;
       }
 
       .course-card {
-        padding: 20px;
+        padding: 22px;
         border: 1px solid rgba(95, 112, 111, 0.22);
-        border-radius: 20px;
+        border-radius: 22px;
         background: linear-gradient(180deg, #ffffff, #f7faf8);
         box-shadow: 0 8px 22px rgba(16, 35, 38, 0.05);
+        transition: transform 180ms ease, box-shadow 180ms ease;
       }
 
-      .course-card h3 {
-        margin-bottom: 10px;
+      .course-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 18px 38px rgba(16, 35, 38, 0.12);
       }
 
-      .course-card p {
-        color: #5f706f;
-      }
+      .course-card p { color: #5f706f; }
 
       .course-list {
         display: flex;
@@ -154,6 +126,52 @@
         color: #174e5a;
         font-size: 0.82rem;
         font-weight: 800;
+      }
+
+      .project-card, .skill-column, .education-card, .course-card, .timeline-card, .callout-card, .stats-strip div {
+        transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+      }
+
+      .project-card:hover, .skill-column:hover, .education-card:hover, .stats-strip div:hover {
+        transform: translateY(-4px);
+      }
+
+      .hero-copy, .hero-panel, section {
+        animation: riseIn 550ms ease both;
+      }
+
+      main section:nth-of-type(2) { animation-delay: 80ms; }
+      main section:nth-of-type(3) { animation-delay: 140ms; }
+      main section:nth-of-type(4) { animation-delay: 200ms; }
+      main section:nth-of-type(5) { animation-delay: 260ms; }
+
+      @keyframes riseIn {
+        from { opacity: 0; transform: translateY(16px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @media (min-width: 1280px) {
+        header, main, footer { width: min(1480px, calc(100% - 96px)); }
+        .hero-split { grid-template-columns: minmax(0, 1.55fr) minmax(360px, 0.85fr); }
+        .hero-copy > p:not(.tagline):not(.eyebrow), .tagline, .section-heading { max-width: 920px; }
+        .two-column { grid-template-columns: minmax(0, 1.25fr) minmax(360px, 0.75fr); }
+        .project-grid { grid-template-columns: repeat(12, 1fr); }
+        .featured-card { grid-column: span 8; }
+        .project-card { grid-column: span 4; }
+      }
+
+      @media (min-width: 1700px) {
+        header, main, footer { width: min(1640px, calc(100% - 128px)); }
+        .hero { padding: clamp(52px, 5vw, 84px); }
+        section { padding: clamp(38px, 3.5vw, 58px); }
+      }
+
+      @media (max-width: 920px) {
+        .dynamic-strip, .course-grid { grid-template-columns: 1fr; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { animation: none !important; transition: none !important; }
       }
     </style>
   </head>
@@ -200,6 +218,12 @@
         <div><strong>MS BIS</strong><span>Graduate study in progress</span></div>
         <div><strong>BA / PM</strong><span>Target career path</span></div>
       </section>
+
+      <div class="dynamic-strip" aria-label="Focus areas">
+        <div class="dynamic-item"><strong>Analyze</strong><span>Understand requirements, workflows, and business problems.</span></div>
+        <div class="dynamic-item"><strong>Build</strong><span>Create practical technical projects using databases, APIs, and web tools.</span></div>
+        <div class="dynamic-item"><strong>Improve</strong><span>Use data and process thinking to support better decisions.</span></div>
+      </div>
 
       <section id="about" class="section-feature">
         <div class="section-heading"><p class="eyebrow">About</p><h2>Business background, technical interests, and customer-facing experience.</h2></div>
@@ -251,12 +275,11 @@
       </section>
 
       <section id="coursework">
-        <div class="section-heading"><p class="eyebrow">Coursework</p><h2>Selected relevant coursework.</h2><p>Instead of listing every class, this section highlights the coursework most directly connected to business analysis, information systems, analytics, operations, and project work.</p></div>
+        <div class="section-heading"><p class="eyebrow">Coursework</p><h2>Selected relevant coursework.</h2><p>Kept concise to avoid reading like a transcript. These are the courses most directly connected to analyst, information systems, and project-focused roles.</p></div>
         <div class="course-grid">
-          <div class="course-card"><h3>Information Systems & Development</h3><p>Courses focused on systems, databases, web development, and technical business tools.</p><div class="course-list"><span>Web Systems Development</span><span>Enterprise Database Management</span><span>System Analysis and Design</span><span>Database Systems for Managers</span><span>Intro to Management Information Systems</span></div></div>
-          <div class="course-card"><h3>Analytics & Decision Support</h3><p>Courses focused on using data, tools, and structured analysis to support better decisions.</p><div class="course-list"><span>Business Data Analytics</span><span>Data Analytics for Information Systems</span><span>Decision Support Tools</span><span>Business Operations Management & Analytics</span><span>Business Research Methods</span></div></div>
-          <div class="course-card"><h3>Management & Strategy</h3><p>Courses focused on project work, organizations, innovation, and business strategy.</p><div class="course-list"><span>Project Management for Managers</span><span>Managing Technology & Innovation</span><span>Business Policy</span><span>Organizational Behavior</span><span>Financial Statement Analysis</span></div></div>
-          <div class="course-card"><h3>Entrepreneurship</h3><p>Courses focused on venture creation, startup strategy, and business model development.</p><div class="course-list"><span>Intro to Entrepreneurship</span><span>Financing New Venture</span><span>Entrepreneurial Strategy</span><span>Lean Startup Accelerator</span></div></div>
+          <div class="course-card"><h3>Information Systems</h3><p>Systems, databases, and web-focused coursework.</p><div class="course-list"><span>Web Systems Development</span><span>Enterprise Database Management</span><span>System Analysis and Design</span></div></div>
+          <div class="course-card"><h3>Analytics & Operations</h3><p>Data, decision support, and business operations coursework.</p><div class="course-list"><span>Business Data Analytics</span><span>Data Analytics for Information Systems</span><span>Business Operations Management & Analytics</span></div></div>
+          <div class="course-card"><h3>Project & Management</h3><p>Coursework connected to project work, organizations, and technology strategy.</p><div class="course-list"><span>Project Management for Managers</span><span>Managing Technology & Innovation</span><span>Organizational Behavior</span></div></div>
         </div>
       </section>
 

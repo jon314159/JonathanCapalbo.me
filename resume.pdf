@@ -3,77 +3,118 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+<< /Type /Pages /Kids [3 0 R 4 0 R] /Count 2 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 5 0 R >>
 endobj
 4 0 obj
-<< /Length 3538 >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 6 0 R >>
+endobj
+5 0 obj
+<< /Length 3444 >>
 stream
 BT
-/F2 22 Tf 1 0 0 1 56 748 Tm (Jonathan Capalbo) Tj
-/F1 10 Tf 1 0 0 1 56 726 Tm (jonathancapalbo1@gmail.com | www.linkedin.com/in/jonathan-capalbo-2a00b9140 |) Tj
-/F1 10 Tf 1 0 0 1 56 713 Tm (github.com/jon314159) Tj
-/F2 13 Tf 1 0 0 1 56 687 Tm (PROFESSIONAL SUMMARY) Tj
-/F1 10 Tf 1 0 0 1 56 670 Tm (Business professional with a strong background in strategic pricing, data analytics, and) Tj
-/F1 10 Tf 1 0 0 1 56 657 Tm (customer relationship management. Demonstrated ability to analyze business problems, develop) Tj
-/F1 10 Tf 1 0 0 1 56 644 Tm (data-driven solutions, and support growth through digital transformation. Seeking to apply) Tj
-/F1 10 Tf 1 0 0 1 56 631 Tm (these skills in analyst, project, and consulting-focused roles.) Tj
-/F2 13 Tf 1 0 0 1 56 605 Tm (EDUCATION) Tj
-/F2 11 Tf 1 0 0 1 56 588 Tm (New Jersey Institute of Technology, Newark, NJ) Tj
-/F1 10 Tf 1 0 0 1 56 574 Tm (Bachelor's Degree in Business, 2024 | GPA: 3.97) Tj
-/F1 10 Tf 1 0 0 1 56 561 Tm (Academic Honors: Dean's List, all semesters) Tj
-/F1 10 Tf 1 0 0 1 56 548 Tm (Relevant Courses: Data Analytics, Database Systems for Managers, Business Operations) Tj
-/F1 10 Tf 1 0 0 1 56 535 Tm (Management & Analytics) Tj
-/F2 13 Tf 1 0 0 1 56 509 Tm (PROFESSIONAL EXPERIENCE) Tj
-/F2 11 Tf 1 0 0 1 56 492 Tm (Comcast, Remote) Tj
-/F1 10 Tf 1 0 0 1 56 478 Tm (Sales Representative | April 2022 - Present) Tj
-/F1 10 Tf 1 0 0 1 56 465 Tm (- Developed and implemented sales strategies, resulting in month-over-month revenue growth.) Tj
-/F1 10 Tf 1 0 0 1 56 452 Tm (- Utilized CRM tools to analyze customer behavior and support customer retention.) Tj
-/F1 10 Tf 1 0 0 1 56 439 Tm (- Conducted data analysis using Excel and Tableau to monitor and enhance sales performance.) Tj
-/F1 10 Tf 1 0 0 1 56 426 Tm (- Engaged in consultative selling by identifying customer needs and delivering tailored) Tj
-/F1 10 Tf 1 0 0 1 56 413 Tm (  solutions.) Tj
-/F1 10 Tf 1 0 0 1 56 400 Tm (- Collaborated with teammates to improve service delivery and clarify internal procedures.) Tj
-/F2 11 Tf 1 0 0 1 56 379 Tm (Harte Hanks, Remote) Tj
-/F1 10 Tf 1 0 0 1 56 365 Tm (Customer Service Representative | February 2021 - January 2022) Tj
-/F1 10 Tf 1 0 0 1 56 352 Tm (- Assisted clients with troubleshooting and resolving inquiries efficiently.) Tj
-/F1 10 Tf 1 0 0 1 56 339 Tm (- Managed and categorized email inquiries to support accurate and timely resolutions.) Tj
-/F1 10 Tf 1 0 0 1 56 326 Tm (- Developed strong interpersonal communication skills through high-volume customer) Tj
-/F1 10 Tf 1 0 0 1 56 313 Tm (  interactions.) Tj
-/F1 10 Tf 1 0 0 1 56 300 Tm (- Provided insights and feedback to improve business processes and client satisfaction.) Tj
-/F2 13 Tf 1 0 0 1 56 274 Tm (CORE COMPETENCIES) Tj
-/F1 10 Tf 1 0 0 1 56 257 Tm (- Business and Digital Transformation) Tj
-/F1 10 Tf 1 0 0 1 56 244 Tm (- Strategic Pricing and Market Analysis) Tj
-/F1 10 Tf 1 0 0 1 56 231 Tm (- Data Analytics and Visualization: Tableau, Excel, SQL, Python) Tj
-/F1 10 Tf 1 0 0 1 56 218 Tm (- Customer Relationship and Retention Management) Tj
-/F1 10 Tf 1 0 0 1 56 205 Tm (- Consulting and Problem-Solving Skills) Tj
-/F1 10 Tf 1 0 0 1 56 192 Tm (- Process Optimization and Business Intelligence) Tj
-/F2 13 Tf 1 0 0 1 56 166 Tm (TECHNICAL SKILLS) Tj
-/F1 10 Tf 1 0 0 1 56 149 Tm (- CRM Tools) Tj
-/F1 10 Tf 1 0 0 1 56 136 Tm (- Excel, Tableau, SQL, Python) Tj
-/F1 10 Tf 1 0 0 1 56 123 Tm (- Business Intelligence and Reporting) Tj
-/F1 10 Tf 1 0 0 1 56 110 Tm (- Strong Communication and Negotiation Skills) Tj
+/F2 20 Tf 1 0 0 1 50 748.0 Tm (Jonathan Capalbo) Tj
+/F1 9 Tf 1 0 0 1 50 726.0 Tm (jonathancapalbo1@gmail.com | linkedin.com/in/jonathan-capalbo-2a00b9140 | github.com/jon314159) Tj
+/F2 11.5 Tf 1 0 0 1 50 701.0 Tm (PROFESSIONAL SUMMARY) Tj
+/F1 9 Tf 1 0 0 1 50 684.0 Tm (Business and Information Systems graduate student with 5+ years of customer-facing sales and service) Tj
+/F1 9 Tf 1 0 0 1 50 672.0 Tm (experience, CRM usage, account review, customer needs assessment, and process-focused support. Seeking Sales) Tj
+/F1 9 Tf 1 0 0 1 50 660.0 Tm (Operations Analyst, CRM Analyst, Customer Operations Analyst, Revenue Operations Analyst, or Business) Tj
+/F1 9 Tf 1 0 0 1 50 648.0 Tm (Systems roles where I can support reporting, workflow improvement, customer operations, and data-informed) Tj
+/F1 9 Tf 1 0 0 1 50 636.0 Tm (decision making.) Tj
+/F2 11.5 Tf 1 0 0 1 50 611.0 Tm (TARGET ROLES) Tj
+/F1 9 Tf 1 0 0 1 50 594.0 Tm (Sales Operations Analyst | CRM Analyst | Customer Operations Analyst | Revenue Operations Analyst | Business) Tj
+/F1 9 Tf 1 0 0 1 50 582.0 Tm (Systems Analyst) Tj
+/F2 11.5 Tf 1 0 0 1 50 557.0 Tm (EDUCATION) Tj
+/F2 9.8 Tf 1 0 0 1 50 540.0 Tm (New Jersey Institute of Technology, Newark, NJ) Tj
+/F1 9 Tf 1 0 0 1 50 526.0 Tm (M.S. Business & Information Systems | In Progress) Tj
+/F1 9 Tf 1 0 0 1 50 511.0 Tm (B.S. Business Administration, 2024 | GPA: 3.97 | Dean's List, all semesters) Tj
+/F1 9 Tf 1 0 0 1 50 496.0 Tm (Relevant coursework: Web Systems Development, Enterprise Database Management, System Analysis and Design,) Tj
+/F1 9 Tf 1 0 0 1 50 484.0 Tm (Data Analytics for Information Systems, Business Operations Management & Analytics) Tj
+/F2 11.5 Tf 1 0 0 1 50 459.0 Tm (PROFESSIONAL EXPERIENCE) Tj
+/F2 9.8 Tf 1 0 0 1 50 442.0 Tm (Comcast / Xfinity, Remote) Tj
+/F1 9 Tf 1 0 0 1 50 428.0 Tm (Sales Representative | April 2022 - Present) Tj
+/F1 9 Tf 1 0 0 1 50 413.0 Tm (- Use CRM tools and internal systems to review account data, document customer interactions, and support) Tj
+/F1 9 Tf 1 0 0 1 50 401.0 Tm (sales-related workflows.) Tj
+/F1 9 Tf 1 0 0 1 50 388.0 Tm (- Assess customer needs and recommend internet, TV, and mobile solutions based on account context, service) Tj
+/F1 9 Tf 1 0 0 1 50 376.0 Tm (options, and current offers.) Tj
+/F1 9 Tf 1 0 0 1 50 363.0 Tm (- Apply changing promotions, policy updates, and internal documentation to customer conversations with) Tj
+/F1 9 Tf 1 0 0 1 50 351.0 Tm (accuracy.) Tj
+/F1 9 Tf 1 0 0 1 50 338.0 Tm (- Support teammates by helping clarify system questions, internal procedures, documentation, and) Tj
+/F1 9 Tf 1 0 0 1 50 326.0 Tm (offer-related processes.) Tj
+/F1 9 Tf 1 0 0 1 50 313.0 Tm (- Build transferable skills in customer operations, process interpretation, account review, stakeholder) Tj
+/F1 9 Tf 1 0 0 1 50 301.0 Tm (communication, and issue investigation.) Tj
+/F2 9.8 Tf 1 0 0 1 50 285.0 Tm (Harte Hanks, Remote) Tj
+/F1 9 Tf 1 0 0 1 50 271.0 Tm (Customer Service Representative | February 2021 - January 2022) Tj
+/F1 9 Tf 1 0 0 1 50 256.0 Tm (- Resolved customer inquiries through clear communication, issue investigation, and accurate routing of) Tj
+/F1 9 Tf 1 0 0 1 50 244.0 Tm (requests.) Tj
+/F1 9 Tf 1 0 0 1 50 231.0 Tm (- Reviewed and categorized email inquiries to support accurate and timely resolutions.) Tj
+/F1 9 Tf 1 0 0 1 50 218.0 Tm (- Developed high-volume communication experience and process-focused customer support skills.) Tj
 ET
 endstream
 endobj
-5 0 obj
+6 0 obj
+<< /Length 2257 >>
+stream
+BT
+/F2 11.5 Tf 1 0 0 1 50 738.0 Tm (SELECTED PROJECTS) Tj
+/F2 9.8 Tf 1 0 0 1 50 721.0 Tm (Calculator API) Tj
+/F1 9 Tf 1 0 0 1 50 707.0 Tm (Built a FastAPI service with user registration, JWT authentication, PostgreSQL storage, calculation history,) Tj
+/F1 9 Tf 1 0 0 1 50 695.0 Tm (Docker, Alembic migrations, testing, CI/CD, and security scanning.) Tj
+/F2 9.8 Tf 1 0 0 1 50 679.0 Tm (CAPSIM Andrews Company Report) Tj
+/F1 9 Tf 1 0 0 1 50 665.0 Tm (Analyzed sales, market share, variable costs, net profit, cash flow, debt, equity, dividends, product) Tj
+/F1 9 Tf 1 0 0 1 50 653.0 Tm (strategy, and future goals in a seven-year business simulation.) Tj
+/F2 9.8 Tf 1 0 0 1 50 637.0 Tm (Movie Rental Database) Tj
+/F1 9 Tf 1 0 0 1 50 623.0 Tm (Created an Oracle SQL database with relational tables, primary and foreign keys, check constraints,) Tj
+/F1 9 Tf 1 0 0 1 50 611.0 Tm (sequences, sample data, views, an index, and a synonym.) Tj
+/F2 11.5 Tf 1 0 0 1 50 586.0 Tm (SKILLS) Tj
+/F2 9.8 Tf 1 0 0 1 50 569.0 Tm (Sales & Customer Operations) Tj
+/F1 9 Tf 1 0 0 1 50 555.0 Tm (- Customer needs assessment) Tj
+/F1 9 Tf 1 0 0 1 50 542.0 Tm (- CRM documentation and account review) Tj
+/F1 9 Tf 1 0 0 1 50 529.0 Tm (- Sales process support) Tj
+/F1 9 Tf 1 0 0 1 50 516.0 Tm (- Policy and promotion interpretation) Tj
+/F1 9 Tf 1 0 0 1 50 503.0 Tm (- Customer issue investigation) Tj
+/F1 9 Tf 1 0 0 1 50 490.0 Tm (- Process improvement) Tj
+/F1 9 Tf 1 0 0 1 50 477.0 Tm (- Cross-functional communication) Tj
+/F2 9.8 Tf 1 0 0 1 50 461.0 Tm (Data & Reporting) Tj
+/F1 9 Tf 1 0 0 1 50 447.0 Tm (- Excel and Tableau) Tj
+/F1 9 Tf 1 0 0 1 50 434.0 Tm (- SQL and Oracle Database) Tj
+/F1 9 Tf 1 0 0 1 50 421.0 Tm (- Business intelligence and reporting) Tj
+/F1 9 Tf 1 0 0 1 50 408.0 Tm (- Financial and ratio analysis) Tj
+/F1 9 Tf 1 0 0 1 50 395.0 Tm (- Research and literature review) Tj
+/F1 9 Tf 1 0 0 1 50 382.0 Tm (- Python) Tj
+/F2 9.8 Tf 1 0 0 1 50 366.0 Tm (Systems & Workflow) Tj
+/F1 9 Tf 1 0 0 1 50 352.0 Tm (- CRM systems) Tj
+/F1 9 Tf 1 0 0 1 50 339.0 Tm (- AI-assisted research and documentation) Tj
+/F1 9 Tf 1 0 0 1 50 326.0 Tm (- Prompt engineering basics) Tj
+/F1 9 Tf 1 0 0 1 50 313.0 Tm (- Oracle APEX) Tj
+/F1 9 Tf 1 0 0 1 50 300.0 Tm (- Git and GitHub) Tj
+/F1 9 Tf 1 0 0 1 50 287.0 Tm (- Docker and Docker Compose) Tj
+/F1 9 Tf 1 0 0 1 50 274.0 Tm (- FastAPI and PostgreSQL) Tj
+/F1 9 Tf 1 0 0 1 50 261.0 Tm (- SDLC, Agile, Waterfall, Scrum, and V-Model concepts) Tj
+ET
+endstream
+endobj
+7 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
-6 0 obj
+8 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 xref
-0 7
+0 9
 0000000000 65535 f 
 0000000009 00000 n 
 0000000058 00000 n 
-0000000115 00000 n 
-0000000251 00000 n 
-0000003841 00000 n 
-0000003911 00000 n 
+0000000131 00000 n 
+0000000279 00000 n 
+0000000427 00000 n 
+0000003921 00000 n 
+0000006229 00000 n 
+0000006299 00000 n 
 trailer
-<< /Size 7 /Root 1 0 R >>
+<< /Size 9 /Root 1 0 R >>
 startxref
-3986
+6374
 %%EOF

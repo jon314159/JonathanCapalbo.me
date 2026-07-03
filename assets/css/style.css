@@ -186,6 +186,19 @@ p:last-child, li:last-child { margin-bottom: 0; }
 .button.secondary { background: #ffffff; color: var(--accent-2); }
 .button.ghost { color: var(--text-light); }
 
+.project-card .button {
+  background: #ffffff;
+  color: var(--accent-2);
+  border-color: rgba(23, 78, 90, 0.26);
+}
+
+.project-card .button:hover,
+.project-card .button:focus-visible {
+  background: var(--accent-2);
+  color: #ffffff;
+  border-color: var(--accent-2);
+}
+
 section {
   margin: 28px 0;
   background: var(--surface);
@@ -225,8 +238,8 @@ section {
 .proof-card strong { display: block; color: var(--accent-2); font-size: 1.15rem; margin-bottom: 6px; }
 .proof-card span { color: var(--muted); }
 
-.project-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; }
-.project-card { grid-column: span 3; position: relative; overflow: hidden; min-height: 270px; padding: 24px; }
+.project-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; align-items: start; }
+.project-card { grid-column: span 3; position: relative; overflow: hidden; min-height: 0; padding: 24px; align-self: start; }
 .project-card::after { content: ""; position: absolute; inset: auto -20% -34% auto; width: 220px; height: 220px; border-radius: 50%; background: radial-gradient(circle, rgba(47, 143, 131, 0.14), transparent 68%); }
 .project-card:hover, .skill-column:hover, .education-card:hover, .course-card:hover, .proof-card:hover { transform: translateY(-4px); border-color: rgba(23, 78, 90, 0.28); box-shadow: 0 20px 44px rgba(16, 35, 38, 0.12); }
 .featured-card { grid-column: span 6; min-height: 230px; color: var(--text-light); background: linear-gradient(135deg, rgba(16, 35, 38, 0.96), rgba(23, 78, 90, 0.88)), radial-gradient(circle at 80% 20%, rgba(47, 143, 131, 0.28), transparent 28rem); border-color: rgba(47, 143, 131, 0.18); }

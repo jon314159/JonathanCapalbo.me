@@ -261,6 +261,7 @@ li::before, .check-list li::before, .mini-list li::before { content: ""; positio
 .skill-board, .education-grid, .contact-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .skill-column, .education-card, .course-card { padding: 24px; }
 .skill-column h3, .education-card h3, .project-card h3, .callout-card h3, .course-card h3 { color: var(--text); font-size: 1.28rem; line-height: 1.15; }
+.featured-card h3 { color: #ffffff; font-size: 1.55rem; }
 .course-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .two-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .course-card p { color: var(--muted); }

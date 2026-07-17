@@ -1,5 +1,4 @@
 :root {
-  --bg: #eef3f1;
   --surface: rgba(255, 255, 255, 0.94);
   --text: #102326;
   --text-light: #f7fbfa;
@@ -80,7 +79,14 @@ nav a {
   transition: color 160ms ease, background 160ms ease, transform 160ms ease;
 }
 
-nav a:hover, nav a:focus-visible { color: var(--text-light); background: rgba(47, 143, 131, 0.22); outline: none; transform: translateY(-1px); }
+nav a:hover,
+nav a:focus-visible {
+  color: var(--text-light);
+  background: rgba(47, 143, 131, 0.22);
+  outline: none;
+  transform: translateY(-1px);
+}
+
 a { color: var(--accent-2); }
 a:hover { color: #123f49; }
 a:focus-visible { outline: 3px solid var(--accent-3); outline-offset: 4px; }
@@ -181,7 +187,15 @@ p:last-child, li:last-child { margin-bottom: 0; }
   transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
 }
 
-.button:hover, .button:focus-visible { color: var(--text-light); background: rgba(255, 255, 255, 0.14); outline: none; transform: translateY(-2px); box-shadow: 0 14px 28px rgba(16, 35, 38, 0.22); }
+.button:hover,
+.button:focus-visible {
+  color: var(--text-light);
+  background: rgba(255, 255, 255, 0.14);
+  outline: none;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(16, 35, 38, 0.22);
+}
+
 .button.primary { background: linear-gradient(135deg, var(--accent-2), var(--accent)); color: #ffffff; border-color: transparent; }
 .button.primary:hover, .button.primary:focus-visible { background: linear-gradient(135deg, #123f49, #26766d); }
 .button.secondary { background: #ffffff; color: var(--accent-2); }
@@ -252,10 +266,10 @@ section {
 .tag-row span, .course-list span { color: var(--accent-2); background: #e4efec; }
 .featured-card .tag-row span { color: #e0f2fe; background: rgba(47, 143, 131, 0.16); border: 1px solid rgba(255, 255, 255, 0.18); }
 
-ul, .mini-list { padding-left: 0; list-style: none; margin: 14px 0 0; }
-li, .mini-list li { position: relative; padding-left: 26px; margin-bottom: 10px; }
+.check-list, .mini-list { padding-left: 0; list-style: none; margin: 14px 0 0; }
+.check-list li, .mini-list li { position: relative; padding-left: 26px; margin-bottom: 10px; }
 .mini-list li { color: var(--muted); padding-left: 22px; }
-li::before, .check-list li::before, .mini-list li::before { content: ""; position: absolute; left: 0; top: 0.7em; width: 9px; height: 9px; border-radius: 999px; background: var(--accent-3); box-shadow: 0 0 0 5px rgba(47, 143, 131, 0.12); }
+.check-list li::before, .mini-list li::before { content: ""; position: absolute; left: 0; top: 0.7em; width: 9px; height: 9px; border-radius: 999px; background: var(--accent-3); box-shadow: 0 0 0 5px rgba(47, 143, 131, 0.12); }
 .mini-list li::before { width: 8px; height: 8px; box-shadow: none; }
 
 .skill-board, .education-grid, .contact-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
@@ -274,7 +288,7 @@ li::before, .check-list li::before, .mini-list li::before { content: ""; positio
 
 .contact-section { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr); gap: 24px; align-items: center; }
 .contact-cards { grid-template-columns: 1fr; }
-.contact-cards a, .contact-cards span { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 20px; border: 1px solid var(--border); border-radius: 18px; background: #ffffff; text-decoration: none; font-weight: 850; box-shadow: 0 8px 20px rgba(16, 35, 38, 0.06); }
+.contact-cards a { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 20px; border: 1px solid var(--border); border-radius: 18px; background: #ffffff; text-decoration: none; font-weight: 850; box-shadow: 0 8px 20px rgba(16, 35, 38, 0.06); }
 .contact-cards a::after { content: "↗"; opacity: 0.65; }
 .contact-cards a[href^="mailto"]::after { content: "Email"; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; }
 

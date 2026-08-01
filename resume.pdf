@@ -1,104 +1,98 @@
 %PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<< /Type /Catalog /Pages 2 0 R >>
+<<
+/F1 2 0 R /F2 3 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Length 5704 >>
-stream
-BT
-/F2 18.5 Tf 1 0 0 1 44.0 756.0 Tm (Jonathan Capalbo) Tj
-/F1 8.3 Tf 1 0 0 1 44.0 740.0 Tm (jonathancapalbo1@gmail.com | linkedin.com/in/jonathan-capalbo-2a00b9140 | github.com/jon314159) Tj
-/F2 10.5 Tf 1 0 0 1 44.0 714.0 Tm (PROFESSIONAL SUMMARY) Tj
-/F1 8.3 Tf 1 0 0 1 44.0 702.0 Tm (Business and Information Systems graduate student with 5+ years of customer-facing sales and service experience,) Tj
-/F1 8.3 Tf 1 0 0 1 44.0 692.4 Tm (CRM usage, account review, customer needs assessment, and process-focused support. Seeking sales operations, CRM,) Tj
-/F1 8.3 Tf 1 0 0 1 44.0 682.8 Tm (customer operations, revenue operations, or business systems roles.) Tj
-/F2 10.5 Tf 1 0 0 1 44.0 667.2 Tm (TARGET ROLES) Tj
-/F1 8.2 Tf 1 0 0 1 44.0 655.2 Tm (Sales Operations Analyst | CRM Analyst | Customer Operations Analyst | Revenue Operations Analyst | Business Systems Analyst) Tj
-/F2 10.5 Tf 1 0 0 1 44.0 637.2 Tm (PROFESSIONAL DEVELOPMENT) Tj
-/F1 8.3 Tf 1 0 0 1 44.0 625.2 Tm (ServiceNow Administration Fundamentals | Expected completion: June 2026) Tj
-/F1 8.3 Tf 1 0 0 1 44.0 615.6 Tm (Knowledge Management Fundamentals | Expected completion: June 2026) Tj
-/F2 10.5 Tf 1 0 0 1 44.0 600.6 Tm (EDUCATION) Tj
-/F2 9.1 Tf 1 0 0 1 44.0 588.6 Tm (New Jersey Institute of Technology, Newark, NJ) Tj
-/F1 8.3 Tf 1 0 0 1 44.0 578.6 Tm (M.S. Business & Information Systems | In Progress) Tj
-/F1 8.3 Tf 1 0 0 1 44.0 569.1 Tm (B.S. Business Administration, 2024 | GPA: 3.97 | Dean's List, all semesters) Tj
-/F1 7.9 Tf 1 0 0 1 44.0 559.6 Tm (Relevant coursework: Web Systems Development, Enterprise Database Management, System Analysis and Design,) Tj
-/F1 7.9 Tf 1 0 0 1 44.0 550.6 Tm (Data Analytics for Information Systems, Business Operations Management & Analytics) Tj
-/F2 10.5 Tf 1 0 0 1 44.0 535.6 Tm (PROFESSIONAL EXPERIENCE) Tj
-/F2 9.1 Tf 1 0 0 1 44.0 523.6 Tm (Comcast / Xfinity, Remote) Tj
-/F1 8.3 Tf 1 0 0 1 440.0 523.6 Tm (April 2022 - Present) Tj
-/F1 8.4 Tf 1 0 0 1 44.0 513.6 Tm (Sales Representative) Tj
-/F1 8.05 Tf 1 0 0 1 44.0 503.6 Tm (- Use CRM tools and internal systems to review account data, document customer interactions, and) Tj
-/F1 8.05 Tf 1 0 0 1 44.0 494.4 Tm (  support sales workflows.) Tj
-/F1 8.05 Tf 1 0 0 1 44.0 485.2 Tm (- Assess customer needs and recommend internet, TV, and mobile solutions based on account context and) Tj
-/F1 8.05 Tf 1 0 0 1 44.0 476.0 Tm (  current offers.) Tj
-/F1 8.05 Tf 1 0 0 1 44.0 466.8 Tm (- Apply changing promotions, policy updates, and internal documentation to customer conversations with) Tj
-/F1 8.05 Tf 1 0 0 1 44.0 457.6 Tm (  accuracy.) Tj
-/F1 8.05 Tf 1 0 0 1 44.0 448.4 Tm (- Support teammates by clarifying system questions, internal procedures, documentation, and) Tj
-/F1 8.05 Tf 1 0 0 1 44.0 439.2 Tm (  offer-related processes.) Tj
-/F1 8.05 Tf 1 0 0 1 44.0 430.0 Tm (- Build transferable skills in customer operations, process interpretation, account review,) Tj
-/F1 8.05 Tf 1 0 0 1 44.0 420.8 Tm (  communication, and issue investigation.) Tj
-/F2 9.1 Tf 1 0 0 1 44.0 409.6 Tm (Harte Hanks, Remote) Tj
-/F1 8.3 Tf 1 0 0 1 430.0 409.6 Tm (February 2021 - January 2022) Tj
-/F1 8.4 Tf 1 0 0 1 44.0 399.6 Tm (Customer Service Representative) Tj
-/F1 8.05 Tf 1 0 0 1 44.0 389.6 Tm (- Resolved customer inquiries through clear communication, issue investigation, and accurate routing of requests.) Tj
-/F1 8.05 Tf 1 0 0 1 44.0 380.4 Tm (- Reviewed and categorized email inquiries to support accurate and timely resolutions.) Tj
-/F1 8.05 Tf 1 0 0 1 44.0 371.2 Tm (- Developed high-volume communication experience and process-focused customer support skills.) Tj
-/F2 10.5 Tf 1 0 0 1 44.0 359.0 Tm (SELECTED PROJECTS) Tj
-/F2 8.8 Tf 1 0 0 1 44.0 347.0 Tm (Calculator API) Tj
-/F1 7.9 Tf 1 0 0 1 44.0 338.0 Tm (- Built a FastAPI service with user registration, PostgreSQL storage, calculation history, Docker, testing, and CI/CD.) Tj
-/F2 8.8 Tf 1 0 0 1 44.0 329.0 Tm (CAPSIM Andrews Company Report) Tj
-/F1 7.9 Tf 1 0 0 1 44.0 320.0 Tm (- Analyzed sales, market share, costs, profit, cash flow, product strategy, and future goals in a business simulation.) Tj
-/F2 8.8 Tf 1 0 0 1 44.0 311.0 Tm (Movie Rental Database) Tj
-/F1 7.9 Tf 1 0 0 1 44.0 302.0 Tm (- Created an Oracle SQL database with relational tables, keys, constraints, sequences, sample data, views, and an index.) Tj
-/F2 10.5 Tf 1 0 0 1 44.0 291.0 Tm (SKILLS) Tj
-/F2 8.3 Tf 1 0 0 1 44.0 279.0 Tm (Sales & Customer Operations) Tj
-/F1 7.45 Tf 1 0 0 1 44.0 269.0 Tm (- Customer needs assessment) Tj
-/F1 7.45 Tf 1 0 0 1 44.0 260.6 Tm (- CRM documentation) Tj
-/F1 7.45 Tf 1 0 0 1 44.0 252.1 Tm (- Sales process support) Tj
-/F1 7.45 Tf 1 0 0 1 44.0 243.7 Tm (- Policy and offer review) Tj
-/F1 7.45 Tf 1 0 0 1 44.0 235.2 Tm (- Issue investigation) Tj
-/F1 7.45 Tf 1 0 0 1 44.0 226.8 Tm (- Process improvement) Tj
-/F2 8.3 Tf 1 0 0 1 235.0 279.0 Tm (Data & Reporting) Tj
-/F1 7.45 Tf 1 0 0 1 235.0 269.0 Tm (- Excel and Tableau) Tj
-/F1 7.45 Tf 1 0 0 1 235.0 260.6 Tm (- SQL and Oracle Database) Tj
-/F1 7.45 Tf 1 0 0 1 235.0 252.1 Tm (- Business intelligence) Tj
-/F1 7.45 Tf 1 0 0 1 235.0 243.7 Tm (- Financial analysis) Tj
-/F1 7.45 Tf 1 0 0 1 235.0 235.2 Tm (- Research review) Tj
-/F1 7.45 Tf 1 0 0 1 235.0 226.8 Tm (- Python) Tj
-/F2 8.3 Tf 1 0 0 1 417.0 279.0 Tm (Systems & Workflow) Tj
-/F1 7.45 Tf 1 0 0 1 417.0 269.0 Tm (- CRM systems) Tj
-/F1 7.45 Tf 1 0 0 1 417.0 260.6 Tm (- ServiceNow fundamentals) Tj
-/F1 7.45 Tf 1 0 0 1 417.0 252.1 Tm (- Knowledge management) Tj
-/F1 7.45 Tf 1 0 0 1 417.0 243.7 Tm (- AI-assisted documentation) Tj
-/F1 7.45 Tf 1 0 0 1 417.0 235.2 Tm (- Oracle APEX) Tj
-/F1 7.45 Tf 1 0 0 1 417.0 226.8 Tm (- Git and GitHub) Tj
-/F1 7.45 Tf 1 0 0 1 417.0 218.3 Tm (- SDLC concepts) Tj
-ET
-endstream
+<<
+/A <<
+/S /URI /Type /Action /URI (mailto:jonathancapalbo1@gmail.com)
+>> /Border [ 0 0 0 ] /Rect [ 43.44 723.96 163.2785 734.64 ] /Subtype /Link /Type /Annot
+>>
 endobj
 5 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.linkedin.com/in/jonathan-capalbo-2a00b9140)
+>> /Border [ 0 0 0 ] /Rect [ 170.5409 723.96 347.642 734.64 ] /Subtype /Link /Type /Annot
+>>
 endobj
 6 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+<<
+/A <<
+/S /URI /Type /Action /URI (https://jonathancapalbo.me)
+>> /Border [ 0 0 0 ] /Rect [ 354.9044 723.96 435.0489 734.64 ] /Subtype /Link /Type /Annot
+>>
+endobj
+7 0 obj
+<<
+/Annots [ 4 0 R 5 0 R 6 0 R ] /Contents 11 0 R /MediaBox [ 0 0 612 792 ] /Parent 10 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/PageMode /UseNone /Pages 10 0 R /Type /Catalog
+>>
+endobj
+9 0 obj
+<<
+/Author (Jonathan Capalbo) /CreationDate (D:20260801032812-04'00') /Creator (ReportLab) /Keywords () /ModDate (D:20260801032812-04'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (Sales Operations and Reporting) /Title (Jonathan Capalbo Resume) /Trapped /False
+>>
+endobj
+10 0 obj
+<<
+/Count 1 /Kids [ 7 0 R ] /Type /Pages
+>>
+endobj
+11 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2570
+>>
+stream
+Gau0E>F4&'&q9:V;,9!]]AWGk3;^"WS'5uPDpse.1QTBY:ti@6,X[r_+29,D2MS#;39`VtK*@F7\pX0NQ/[@QJ"HI014XQ^Gk9boc\KU^][-snEW`)Yg#k/p>T!`@(d^IN3P>u2_&:;\q>DuK`s_`mUn;)^qB-Pd\=6PAJ6QWq\IZET2tqa6p%^JkM-?&^0$&pG;uSG;I"KJTopL<fh`'`p6%/2#mZ+4>pH6-i<ajq)qA@86girfoi(%4W+(!HT;)UE6<1]W4K>%::1;Zp:iL,he*57"FUb%"i1R@@+2_9GW^"=pom/"YCVm.&L#;7-gi+02h4#^tX20Q[C#>U)IY1<RprP:F)ope<Z=O2,khlLN6*q/!I`oF,s]AX3X5Mk6,+9-3n^iSL-J3IdgqYF>d*e-8pc.a+(IcTFd/u13#m`)pgFFr!2&k!3^19,U24'lGso?73B)j?LY+ScG/67SR(!IR<>;2jZN<eAYsPW1!=Cm\BmoH2^`+scY<cnDnld6+*C@!RnNkhQDqeI&&/JnGCPb(4a<V^0IicP6MTp>GaFc8R2C/Z@M;O.-l@OrZ^.\<3He,Y<6C/!*u7BVp8m8t/a?_r#"0>&g8"%&R5oYfpXEk:laqckHW5;^am9VM2t;V6%ujW7b4WE`Y@]_-*/qUr[5PN#<W1J3rBPk5pe\<<GX.<obeddmh,>OCW/$=OM;fm@YlL,iiL\(.;"j:oFQs?D#G^gb?&^[,@o"$lX$`=[6?L5E9.LiTfQ;gj3kF$`"TX0`nS/)NHu<$#1FjSB0^B2;kWWgjj8K#\9&*_56MDM`aiPaF!?m"U?H\8>*i0#JgiVSbo31^;>M1>VO.rZ1$tC>V&EPrU@4<mt8T""Y5MnDiVQ1@(_CDF38]7Lqca,'_,8_B`,o1rhO#J&phSW/WPeLW+#-2A]2u'&#71GdG;d?<JJ;/?NWu!IrKE@Fkion/iL3pS/BuTYbVG@i3,/aRG)CK)gFNoQ(ZPdA??mF8C=Ve0O+pM@S4X^gdUt*7;_aSU=6V7"tq[;r=#$:qm^GtKC^_<[:XMZ1M;>T3]3jZ'M:&5elkk8j$,td%[&u`'iY:%ilKDDeUbi7FtVfRQ;Wf,/PP5*C0/hWM*tCqf\`IjP/W.%U@@uK$J@n$;<U)op`tdna&qY"l\(j02+d8uT+t.)_J!Y@g-CRJbmZa;qH#L2#->4+GeQYD/0-_U<d@G-06[9B1cuZi+!o_LNsOj$5`u/ec'K.7r4/KKP,D@QM:*,0KDQ)o:[$t!>3<RH^R=/;JASiB-%aCN2Kd:PU$ZBqZeM[)L^Ctgg?2a-;kgUAR<`L.#i)"-3%\s,!l6Hh!a(.-fj`W?,F1-sF/:T18ZZbe9+CVE8^[>\>EhE3UC%B9g"C"T$^s(O;nhK3X!;Tq`ocf#PkI2TdKk:Lq3,VASMG]mJCiZ,W@3STC23@%g9+"RIJ$ea'b7lTZ$^)hXu39r"u_d;%")\^IsipdAlD+l;Xe/#/F0_RVJ\h>g;_d8*nCD5HD`]H'aS!oVR$c*3-9_*`]s<Xd?,5K?)i6%<7jU)M;>2UWCY+3<\2^9KSEVQ@d1/a'1P./^TSAU1MuFm<L-s.)+CTF6G3qYQu-ikqMIjId";\HU^Yb/+h_:%kqX>`jCn3Q\"V[)(.%!.c0/Ul\cf*hY&Vrl98>gjl,Bi&re/qIT+koi>[^9rLIV5(dIf/I<EUc[.B4Q\$ISCH?n(*j,blgO:E'1Cm>X*A\Cd,#W[_XB<BmGbTh&1YQ->BHnEY[i[-IQ-qT8k\S#25kJJH+USSMS/j0:qmLmVlp5YbMub%>6`+O(f#e$OZ(X9k<-=I$^5aB[qF?)k2I<e.'.jnXMoH!r,a=?Qo:.j.Q%1fg'W(0_WAmC:G>_h[d4D%#!JT'+%q<%o1m[-8lBA(%<Z4UfIo86OpY91HH;Jg+]G=l*B,RF23jQS?IM?f*@N+Nd;P`%G>Z[*XcfKH;a0XHdt:G>>p:/a04B8.%]MOC-@5+6m&KbN5UNd#)*MFJug3Zidcg_9SOr'm_<D'A,M]=ss+86;S=H2Qp'd'D%$[Zp=Ae\F*6sL;UDrcXbWRhj!jp("79IO?pXabhBA<@u]'td"<_$oE9'<!Vk=f27i^10q;XD%`:AlW-3%Tjlk%<c2GQIk\efu;K%>eQV:Y5loX&3K(KO7hJ;JfkS@r%X:Q,49KHK-1g/s'jU9ncj!'H:%bt@!W9k,NqRY\@$htWQ:%1<H"J"@1@g=fW]mPK?:r"(nO):eS_Hl:"l=V7Y(R36;fB]!Y$G/Mn3Tol)U`7T7/Aqrsfq?>o5K(T\&&Yjf3,p%\Q^D]?Q#MB!0EBN83ASL8'Wp7>GRuj^GKoDW(tVi8c$R/H=S@lSaJAYn!ukE8F`m1sVop;s66_R=getQ@qP(Kk\g3/8N`RcG:>G:j&K>Q\969JH9piX0YAa<X-*'^!:UPZkR+(<NmN_3qlg.oK1F,R=>@=@b^AgSU9/KE"Ip"G-WOP-=\%I]+I,DiW4mgs's8UDdQ`e6ZN0SUeL_`q&^MTcs6R9>uYadH$,*i&:1f\Fr3`HC1rXZ)QC]X~>endstream
 endobj
 xref
-0 7
+0 12
 0000000000 65535 f 
-0000000009 00000 n 
-0000000058 00000 n 
-0000000115 00000 n 
-0000000251 00000 n 
-0000006006 00000 n 
-0000006076 00000 n 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000499 00000 n 
+0000000700 00000 n 
+0000000874 00000 n 
+0000001099 00000 n 
+0000001168 00000 n 
+0000001470 00000 n 
+0000001530 00000 n 
 trailer
-<< /Size 7 /Root 1 0 R >>
+<<
+/ID 
+[<8177da53c6d26a62890da4840a0ef8a7><8177da53c6d26a62890da4840a0ef8a7>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 9 0 R
+/Root 8 0 R
+/Size 12
+>>
 startxref
-6151
+4192
 %%EOF

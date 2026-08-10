@@ -1226,7 +1226,7 @@ footer strong { color: var(--ink); }
   .tracker-row { grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
   .tracker-row span { display: grid; gap: 2px; }
   .tracker-row span:nth-child(3)::before { content: "Outcome"; color: var(--muted); font-size: 0.66rem; font-weight: 850; text-transform: uppercase; }
-  .tracker-row span:nth-child(4)::before { content: "Quality"; color: inherit; font-size: 0.66rem; font-weight: 850; text-transform: uppercase; }
+  .tracker-row span:nth-child(4)::before { content: "Units"; color: inherit; font-size: 0.66rem; font-weight: 850; text-transform: uppercase; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -2,57 +2,58 @@
 
 ## Summary
 
-This Excel project shows how I organized daily activity in one table, added drop-down lists, flagged duplicate IDs and missing fields, and built a dashboard that updates from the entries. It does not publish employer or customer information.
+This Excel project uses a separate tracking sheet for every day of a 31-day month. Daily totals feed a monthly summary and dashboard, while a Settings page controls the fictional product names, goals, and point values.
 
 The public case study is available at [jonathancapalbo.me/sales-activity-tracker.html](https://jonathancapalbo.me/sales-activity-tracker.html).
 
 ## Public demonstration workbook
 
-The downloadable workbook was rebuilt from scratch using fabricated records. It contains three sheets:
+The downloadable workbook was rebuilt from scratch using fabricated records. It contains 35 sheets:
 
-1. **Dashboard** — summary counts and two Excel charts that update from the activity log.
-2. **Activity Log** — a filterable table with fictional activity entries and reserved rows for additional examples.
-3. **Read Me** — instructions, field explanations, and a clear privacy statement.
+1. **Dashboard** — four monthly totals and two charts comparing fictional results with goals.
+2. **Monthly Summary** — one row for each day, linked to the 31 daily sheets.
+3. **Settings** — editable month, product labels, monthly product goals, daily goals, and point values.
+4. **Day 01 through Day 31** — separate activity tables, daily totals, goal status, and product progress.
+5. **Read Me** — instructions and a clear privacy statement.
 
 ## Workbook features
 
-- One table for all activity entries
-- Drop-down validation for channel, outcome, follow-up, and status
-- Formula-based week grouping
-- Duplicate interaction-ID checks
-- Missing-required-field checks
-- Color alerts for entries that need review
-- Summary counts that update from the log
-- A weekly activity trend chart
-- An outcome comparison chart
-- Frozen headers, filters, readable number/date formats, and concise instructions
+- A separate filterable activity table for each day of the month
+- Fictional interaction IDs, products, outcomes, units, points, follow-up flags, and notes
+- Drop-down validation for products, outcomes, follow-up choices, and units
+- Daily summary cards for activities, completed units, points, goal, and status
+- Daily product totals and progress compared with monthly goals
+- A monthly summary linked to all 31 daily sheets
+- A line chart comparing daily completed units with the editable daily goal
+- A bar chart comparing fictional product totals with editable monthly goals
+- Conditional formatting for completed outcomes, follow-ups, and goal status
+- Frozen headers, filters, date formats, instructions, and editable blue input cells
 
-## Example data flow
+## How settings affect the workbook
 
-`Enter → Validate → Check → Review`
+`Settings → Daily sheets → Monthly Summary → Dashboard`
 
-Entries are added to the activity table. Drop-down lists keep category names consistent, formulas flag duplicates or missing fields, and the dashboard summarizes the same entries.
+Changing a fictional product name updates the sample product labels across the workbook. Changing product goals, the daily goal, or point values recalculates the daily progress tables, monthly totals, goal status, and charts.
 
 ## Fictional public version
 
 The public workbook contains no:
 
-- real customer or account identifiers;
-- employer-specific names or terminology;
-- product or service names;
-- pricing, revenue, sales targets, quotas, or goals;
-- compensation information; or
-- actual employee performance or operational results.
+- real customer, account, or employee identifiers;
+- employer-specific names, products, pricing, offers, or internal terminology;
+- actual revenue, compensation, quotas, goals, or performance results; or
+- confidential processes, scripts, systems, or operational instructions.
 
-Every activity record, identifier, date, note, and chart value is fictional.
+Every published product name, goal, activity record, identifier, date, note, result, and chart value is fictional.
 
 ## Tools used
 
-- Microsoft Excel formulas
-- Structured tables and filters
+- Cross-sheet Excel formulas
+- Excel tables and filters
 - Data validation
 - Conditional formatting
 - Excel charts
-- Duplicate and missing-field checks
+- Editable settings and assumptions
+- Goal tracking
 - Dashboard reporting
 - Process documentation

@@ -208,9 +208,9 @@ nav .nav-resume:hover { color: #fff; background: var(--blue); }
   gap: clamp(42px, 7vw, 96px);
   align-items: center;
   width: min(1180px, 100%);
-  min-height: 620px;
+  min-height: 600px;
   margin: 0 auto;
-  padding: 46px 0 60px;
+  padding: 28px 0 36px;
 }
 
 .hero-copy { animation: enter 480ms ease-out both; }
@@ -316,6 +316,7 @@ nav .nav-resume:hover { color: #fff; background: var(--blue); }
 
 .recruiter-card {
   position: relative;
+  align-self: end;
   overflow: hidden;
   padding: 28px;
   border: 1px solid rgba(255, 255, 255, 0.08);

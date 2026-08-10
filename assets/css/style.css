@@ -996,3 +996,20 @@ nav a {
     margin-bottom: 80px;
   }
 }
+
+/* Final audit refinements: separate row/column rhythm and complete the palette */
+.site-header {
+  background:
+    radial-gradient(circle at 82% 12%, rgba(49, 94, 234, 0.13), transparent 26rem),
+    radial-gradient(circle at 10% 72%, rgba(220, 239, 142, 0.20), transparent 28rem),
+    var(--paper-bright);
+}
+
+.current-badge {
+  background: #e3e9fb;
+}
+
+.education-section {
+  column-gap: clamp(42px, 8vw, 100px);
+  row-gap: 38px;
+}

@@ -316,7 +316,7 @@ nav .nav-resume:hover { color: #fff; background: var(--blue); }
 
 .recruiter-card {
   position: relative;
-  align-self: end;
+  align-self: center;
   overflow: hidden;
   padding: 32px;
   border: 1px solid rgba(255, 255, 255, 0.08);

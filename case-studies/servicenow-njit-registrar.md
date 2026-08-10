@@ -2,7 +2,7 @@
 
 ## Summary
 
-This academic project uses a ServiceNow school lab to demonstrate knowledge management, self-service design, and content quality review. The portal gives students one place to search and browse common registrar information.
+For this academic project, I used a ServiceNow school lab to build a searchable home page and organize common registrar information. Students can search the articles or browse them by topic.
 
 The public case study is available at [jonathancapalbo.me/servicenow-njit-registrar.html](https://jonathancapalbo.me/servicenow-njit-registrar.html).
 
@@ -11,10 +11,10 @@ The public case study is available at [jonathancapalbo.me/servicenow-njit-regist
 - A dedicated ServiceNow portal and custom registrar home page
 - 42 current knowledge articles organized into 12 student-facing categories
 - Search, popular topics, category cards, quick links, office hours, and contact information
-- A consistent article pattern using overviews, prerequisites, numbered steps, callouts, tables, and escalation guidance
-- Knowledge versioning that keeps the latest article available and clearly marks superseded versions as outdated
+- A consistent article layout using overviews, preparation steps, numbered instructions, callouts, tables, and contact guidance
+- Article versioning that keeps the current guidance published and marks previous versions as outdated
 
-## Knowledge structure
+## Article categories
 
 The 12 categories are:
 
@@ -31,15 +31,15 @@ The 12 categories are:
 11. Transfer Credit
 12. Withdrawals
 
-## Portal implementation
+## How the portal was built
 
-The school-lab configuration contains one registrar Service Portal, a custom homepage arranged across seven page containers, reusable HTML content blocks, and ServiceNow's knowledge homepage search widget. The knowledge base is active and available to the intended end-user audience.
+The school-lab project includes one registrar Service Portal, a custom home page, reusable HTML content blocks, and ServiceNow's knowledge search widget. The knowledge base is active for the intended school-lab users.
 
-No registrar-specific catalog items or record producers were present. This is therefore presented as a knowledge-management and portal project rather than a request-management implementation.
+The project focuses on the portal and knowledge articles. It does not include registrar request forms or ServiceNow catalog items.
 
 ## Example content revision
 
-The article **How to Register for Classes Using Banner** was revised by Jon Capalbo through version 3.0. The updated version improves the reading path by separating:
+The article **How to Register for Classes Using Banner** was revised by Jon Capalbo through version 3.0. The updated version separates:
 
 - preparation before registration;
 - numbered registration steps;
@@ -50,21 +50,21 @@ The article **How to Register for Classes Using Banner** was revised by Jon Capa
 
 The current article uses headings, callouts, lists, and tables so readers can find an answer without reading every paragraph.
 
-## Content lifecycle
+## Article updates
 
 `Draft → Publish → Revise → Replace older version`
 
-ServiceNow maintains earlier article versions while the portal directs readers to the latest published version. Older content is visibly identified as outdated.
+ServiceNow keeps the earlier versions while the portal shows readers the current published article. Older versions are marked as outdated.
 
-## Skills demonstrated
+## Tools used
 
 - ServiceNow Knowledge Management
 - Service Portal configuration
-- Knowledge taxonomy and information architecture
-- Search and findability
-- Article versioning and content quality review
+- Article organization
+- Search
+- Article versioning and content review
 - HTML and CSS content blocks
-- Plain-language process documentation
+- Instruction writing
 
 ## Privacy and scope
 

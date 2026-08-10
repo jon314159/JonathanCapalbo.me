@@ -1013,3 +1013,11 @@ nav a {
   column-gap: clamp(42px, 8vw, 100px);
   row-gap: 38px;
 }
+
+@media (max-width: 680px) {
+  .brand {
+    min-width: 44px;
+    min-height: 44px;
+    justify-content: center;
+  }
+}

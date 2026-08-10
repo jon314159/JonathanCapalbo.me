@@ -554,6 +554,9 @@ nav .nav-resume:hover { color: #fff; background: var(--blue); }
 
 .work-inner { position: relative; z-index: 1; width: min(1180px, calc(100% - 48px)); }
 
+.work-section .section-heading h2 { color: #fff; }
+.work-section .section-heading .eyebrow { color: var(--lime); }
+
 .featured-project {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(330px, 0.62fr);

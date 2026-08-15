@@ -344,13 +344,12 @@ nav .nav-resume:hover { color: #fff; background: var(--blue); }
 .card-topline {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  margin-bottom: 20px;
+  gap: 16px;
+  margin-bottom: 22px;
 }
 
 .card-topline p {
-  margin: 0;
+  margin: 0 0 7px;
   color: #aab9c8;
   font-size: 0.7rem;
   font-weight: 900;
@@ -361,13 +360,32 @@ nav .nav-resume:hover { color: #fff; background: var(--blue); }
 .profile-photo {
   display: block;
   flex: 0 0 auto;
-  width: clamp(104px, 12vw, 132px);
-  height: clamp(104px, 12vw, 132px);
-  border: 3px solid rgba(255, 255, 255, 0.82);
+  width: clamp(72px, 7vw, 88px);
+  height: clamp(72px, 7vw, 88px);
+  border: 2px solid rgba(255, 255, 255, 0.86);
   border-radius: 50%;
   background: #fff;
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
   object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.snapshot-intro { min-width: 0; }
+
+.snapshot-intro strong {
+  display: block;
+  color: #fff;
+  font-size: clamp(1.05rem, 1.5vw, 1.24rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.snapshot-intro span {
+  display: block;
+  margin-top: 6px;
+  color: #cad5de;
+  font-size: 0.78rem;
+  line-height: 1.4;
 }
 
 .quick-facts {
@@ -930,6 +948,8 @@ footer strong { color: var(--ink); }
   .button { width: 100%; justify-content: space-between; }
   .hero-links { justify-content: center; }
   .recruiter-card { display: block; padding: 24px; }
+  .card-topline { gap: 14px; margin-bottom: 18px; }
+  .profile-photo { width: 72px; height: 72px; }
   .quick-facts div { grid-template-columns: 105px 1fr; }
   .proof-bar p { padding: 15px; font-size: 0.74rem; }
   .section { width: min(100% - 32px, 1180px); padding: 76px 0; }

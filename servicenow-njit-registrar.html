@@ -10,9 +10,18 @@
     <meta property="og:description" content="A school-lab ServiceNow portal that organizes common registrar questions into searchable categories and articles." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://jonathancapalbo.me/servicenow-njit-registrar.html" />
+    <meta property="og:image" content="https://jonathancapalbo.me/assets/images/servicenow-registrar-portal.png" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:image:alt" content="Sanitized screenshot of Jonathan Capalbo's academic ServiceNow registrar portal project" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NJIT Registrar ServiceNow Case Study | Jonathan Capalbo" />
+    <meta name="twitter:description" content="An academic ServiceNow portal project with 42 articles organized into 12 categories at project completion." />
+    <meta name="twitter:image" content="https://jonathancapalbo.me/assets/images/servicenow-registrar-portal.png" />
+    <meta name="twitter:image:alt" content="Sanitized screenshot of Jonathan Capalbo's academic ServiceNow registrar portal project" />
     <link rel="canonical" href="https://jonathancapalbo.me/servicenow-njit-registrar.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/css/style.css?v=37" />
+    <link rel="stylesheet" href="assets/css/style.css?v=44" />
   </head>
   <body class="case-study-page">
     <a class="skip-link" href="#case-content">Skip to content</a>
@@ -33,8 +42,12 @@
       <div class="case-hero">
         <div class="case-hero-copy">
           <p class="eyebrow">Academic project · ServiceNow school lab</p>
-          <h1>A ServiceNow portal that makes <em>registrar information easier to find.</em></h1>
-          <p class="case-lede">For an NJIT school project, I built a searchable portal with 42 registrar articles organized into 12 categories. I also revised the registration guide so the steps, common errors, and contact information are easier to follow.</p>
+          <h1>A ServiceNow portal designed to make <em>registrar information easier to find.</em></h1>
+          <p class="case-lede">For an NJIT school project, I built a searchable portal with 42 registrar articles organized into 12 categories at project completion. I also restructured the registration guide to support faster scanning of steps, common errors, and contact information.</p>
+          <div class="academic-disclosure" role="note">
+            <strong>Academic demonstration</strong>
+            <span>This school-lab project is not NJIT's live registrar system and should not be used as current NJIT guidance.</span>
+          </div>
           <div class="button-row">
             <a class="button button-primary" href="#project-details">See the work <span aria-hidden="true">↓</span></a>
             <a class="button button-secondary" href="https://github.com/jon314159/JonathanCapalbo.me/blob/main/case-studies/servicenow-njit-registrar.md" target="_blank" rel="noopener noreferrer">View notes on GitHub <span aria-hidden="true">↗</span></a>
@@ -42,7 +55,7 @@
         </div>
 
         <dl class="case-stat-grid" aria-label="Project summary">
-          <div><dt>42</dt><dd>Current knowledge articles</dd></div>
+          <div><dt>42</dt><dd>Articles at project completion</dd></div>
           <div><dt>12</dt><dd>Student-facing categories</dd></div>
           <div><dt>Guide</dt><dd>Registration steps and common errors</dd></div>
           <div><dt>Lab</dt><dd>Academic ServiceNow instance</dd></div>
@@ -54,11 +67,23 @@
       <section class="section case-intro" id="project-details">
         <div>
           <p class="eyebrow">The need</p>
-          <h2>Make routine registrar information easier to find and use.</h2>
+          <h2>Design a clearer path to routine registrar information.</h2>
         </div>
         <div class="case-intro-copy">
-          <p>Registration, transcripts, graduation, privacy, and academic policies all have different steps and deadlines. Students needed one place to search for the right article or browse by topic.</p>
-          <p>I used clear category names, consistent article layouts, visible contact information, and ServiceNow version history to keep current guidance separate from older articles.</p>
+          <p>Registration, transcripts, graduation, privacy, and academic policies all involve different steps and deadlines. I organized the project around two navigation paths: search for an article or browse by topic.</p>
+          <p>I used clear category names, consistent article layouts, visible contact information, and ServiceNow version history to distinguish the published project version from the version marked outdated.</p>
+        </div>
+      </section>
+
+      <section class="section case-methods" aria-labelledby="project-frame-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Project frame</p>
+          <h2 id="project-frame-title">Responsibilities, design decisions, and evidence limits.</h2>
+        </div>
+        <div class="project-detail-grid">
+          <div><span>My role</span><p>Configured the school-lab portal, organized the article library, and revised the registration article through version 3.0.</p></div>
+          <div><span>Design constraints</span><p>Focused on portal navigation and knowledge content. Request forms and ServiceNow catalog items were outside the project scope.</p></div>
+          <div><span>Public checks &amp; limits</span><p>The screenshot shows the portal home and 42-article count, while the documented taxonomy lists 12 categories. The evidence does not establish live usage, search performance, or student usability results.</p></div>
         </div>
       </section>
 
@@ -66,11 +91,11 @@
         <div class="case-image-copy">
           <p class="eyebrow">Portal home page</p>
           <h2 id="portal-preview-title">Search for an answer or browse by topic.</h2>
-          <p>The home page includes search, popular topics, category links, office hours, and registrar contact details. Students can start with a question or select the type of task they need help with.</p>
+          <p>The home page presents search, popular topics, category links, office hours, and registrar contact details. The design supports starting with a question or browsing by task type.</p>
         </div>
         <figure class="portal-preview">
-          <img src="assets/images/servicenow-registrar-portal.png" alt="NJIT Registrar school-lab portal showing the knowledge search, article count, categories, hours, and contact information" />
-          <figcaption>Sanitized school-lab view. No student records or production data are shown.</figcaption>
+          <img src="assets/images/servicenow-registrar-portal.png" width="1280" height="720" loading="lazy" decoding="async" alt="NJIT Registrar school-lab portal showing the knowledge search, article count, categories, hours, and contact information" />
+          <figcaption><span>Sanitized school-lab view. No student records or production data are shown.</span><a href="assets/images/servicenow-registrar-portal.png" target="_blank" rel="noopener noreferrer">View full-size screenshot <span aria-hidden="true">↗</span></a></figcaption>
         </figure>
       </section>
 
@@ -90,7 +115,7 @@
             <article>
               <span>02</span>
               <h3>Article organization</h3>
-              <p>Organized 42 current articles into 12 categories, including registration, transcripts, FERPA, graduation, policies, and withdrawals.</p>
+              <p>Organized 42 articles at project completion into 12 categories, including registration, transcripts, FERPA, graduation, policies, and withdrawals.</p>
             </article>
             <article>
               <span>03</span>
@@ -100,27 +125,24 @@
             <article>
               <span>04</span>
               <h3>Article revisions</h3>
-              <p>Updated articles through ServiceNow Knowledge Management, published the current version, and marked the previous version as outdated.</p>
+              <p>Used ServiceNow Knowledge Management to publish the revised project version and mark the previous version as outdated in the lab.</p>
             </article>
           </div>
 
-          <div class="lifecycle" aria-label="Knowledge article lifecycle">
-            <p><span>Draft</span><small>Write and structure</small></p>
-            <b aria-hidden="true">→</b>
-            <p><span>Publish</span><small>Make available</small></p>
-            <b aria-hidden="true">→</b>
-            <p><span>Revise</span><small>Correct and clarify</small></p>
-            <b aria-hidden="true">→</b>
-            <p><span>Replace</span><small>Mark older version outdated</small></p>
-          </div>
+          <ol class="lifecycle" aria-label="Knowledge article lifecycle">
+            <li><span>Draft</span><small>Write and structure</small></li>
+            <li><span>Publish</span><small>Make available</small></li>
+            <li><span>Revise</span><small>Correct and clarify</small></li>
+            <li><span>Replace</span><small>Mark older version outdated</small></li>
+          </ol>
         </div>
       </section>
 
       <section class="section case-revision">
         <div class="revision-copy">
           <p class="eyebrow">Example revision</p>
-          <h2>Turn a dense registration guide into steps students can follow.</h2>
-          <p>I revised the registration article through version 3.0. The current version starts with a short overview, separates preparation from the registration steps, explains common errors, and uses tables for holds and deadlines.</p>
+          <h2>Restructure a dense registration guide for step-by-step scanning.</h2>
+          <p>In the project, I revised the registration article through version 3.0. The recreated excerpt starts with a short overview, separates preparation from the registration steps, explains common errors, and uses tables for holds and deadlines.</p>
           <ul class="plain-checklist">
             <li>Short overview before detailed instructions</li>
             <li>Numbered registration steps in task order</li>
@@ -130,10 +152,11 @@
           </ul>
         </div>
 
-        <article class="article-sample" aria-label="Simplified view of the revised registration article">
-          <div class="article-sample-top"><span>KB0010002</span><strong>v3.0 · Latest version</strong></div>
+        <article class="article-sample" aria-label="Recreated excerpt based on the revised registration article, not a ServiceNow screenshot">
+          <p class="recreated-label"><strong>Recreated excerpt</strong><span>Portfolio presentation, not a ServiceNow screenshot</span></p>
+          <div class="article-sample-top"><span>KB0010002</span><strong>v3.0 · Project version</strong></div>
           <h3>How to Register for Classes Using Banner</h3>
-          <p class="article-byline">Revised by Jon Capalbo</p>
+          <p class="article-byline">Revised by Jonathan Capalbo</p>
           <div class="article-callout"><strong>Overview</strong><p>Follow the steps below to register for classes and address common registration issues.</p></div>
           <h4>Before you begin</h4>
           <ol>
@@ -155,8 +178,9 @@
           <div class="skill-list case-skill-list"><span>ServiceNow Knowledge Management</span><span>Service Portal</span><span>Article organization</span><span>Search</span><span>Article versioning</span><span>HTML &amp; CSS</span><span>Content review</span><span>Instruction writing</span></div>
         </div>
         <aside class="scope-note">
-          <h3>About the project</h3>
-          <p>This is an academic project in a ServiceNow school lab, not NJIT’s live registrar system. It contains no real student records. The case study leaves out internal user details and shows only corrected or fictional registrar content.</p>
+          <h3>Academic demonstration, not live guidance</h3>
+          <p>This public case study includes my project description, a sanitized school-lab screenshot, and a recreated excerpt based on my project revision. Internal user details are omitted, and no real student records or production data are shown.</p>
+          <p>Operational details are corrected or synthetic and are illustrative only. The project covers the portal and knowledge articles, not registrar request forms or ServiceNow catalog items.</p>
           <a href="index.html#projects">Return to selected projects <span aria-hidden="true">→</span></a>
         </aside>
       </section>

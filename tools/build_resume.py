@@ -152,7 +152,7 @@ def build():
 
     story = [
         Paragraph("Jonathan Capalbo", title_style),
-        Paragraph("CUSTOMER SOLUTIONS | CUSTOMER OPERATIONS | PROBLEM SOLVING", subtitle_style),
+        Paragraph("CUSTOMER SOLUTIONS | OPERATIONS | ADAPTABILITY", subtitle_style),
         Paragraph(contact, contact_style),
         section("PROFESSIONAL SUMMARY"),
         paragraph(
@@ -160,7 +160,7 @@ def build():
         ),
         section("CORE STRENGTHS"),
         paragraph(
-            "Customer guidance and issue resolution | Needs-based communication | Account review and data accuracy | Policy and offer interpretation | Internal resource navigation | Documentation and follow-up | Workload prioritization | Cross-team handoffs | Excel reporting | Process improvement | Microsoft Power Automate | ServiceNow Knowledge Management",
+            "Customer guidance and issue resolution | Needs-based communication | Adaptability to changing guidance and tools | Account review and data accuracy | Policy and offer interpretation | Internal resource navigation | Documentation and follow-up | Workload prioritization | Cross-team handoffs | Excel reporting | Process improvement | Microsoft Power Automate",
             small_style,
         ),
         section("PROFESSIONAL EXPERIENCE"),
@@ -197,10 +197,10 @@ def build():
             [
                 role("Excel Activity Reporting System | Fictional public demonstration"),
                 bullet(
-                    "Designed a controlled 35-sheet workbook with settings, 31 daily logs, monthly consolidation, a dashboard, 32 Excel tables, validation rules, and 2,231 formula cells."
+                    "Built an Excel activity reporting system that captures daily activity, consolidates results into a monthly dashboard, and compares overall goal attainment with day-to-day consistency."
                 ),
                 bullet(
-                    "Reconciled fictional product, point, and daily-status totals and showed how monthly goal attainment can mask uneven daily consistency."
+                    "Added configurable goals, validation controls, and exception-focused views so users can identify gaps, review results efficiently, and focus follow-up on the days that need attention."
                 ),
             ]
         ),
@@ -208,7 +208,7 @@ def build():
             [
                 role("Registrar Knowledge Portal | ServiceNow school lab | Academic project"),
                 bullet(
-                    "Configured a searchable home page and organized 42 lab articles into 12 student-facing categories at project completion; revised registration guidance for faster scanning of steps, common errors, and support contacts."
+                    "Configured a searchable ServiceNow knowledge portal, organized 42 lab articles into 12 student-facing categories, and revised registration guidance for faster scanning of steps, common errors, and support contacts."
                 ),
                 role("Business and Cost Analysis | CAPSIM | Academic project"),
                 bullet(

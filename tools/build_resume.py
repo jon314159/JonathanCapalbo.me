@@ -137,9 +137,9 @@ def build():
         bottomMargin=0.28 * inch,
         title="Jonathan Capalbo Resume",
         author="Jonathan Capalbo",
-        subject="Customer solutions and operations resume",
+        subject="Operations, reporting, and business systems resume",
         creator="ReportLab resume generator",
-        keywords="customer solutions, customer operations, problem solving, documentation, Excel, process improvement",
+        keywords="business operations, reporting, business systems, Excel, process improvement, documentation, data accuracy",
     )
 
     contact = (
@@ -152,15 +152,15 @@ def build():
 
     story = [
         Paragraph("Jonathan Capalbo", title_style),
-        Paragraph("CUSTOMER SOLUTIONS | OPERATIONS | ADAPTABILITY", subtitle_style),
+        Paragraph("OPERATIONS | REPORTING | BUSINESS SYSTEMS", subtitle_style),
         Paragraph(contact, contact_style),
         section("PROFESSIONAL SUMMARY"),
         paragraph(
-            "Resourceful customer solutions professional with 5+ years of high-volume customer experience, including 4+ years at Comcast/Xfinity. Resolves complex account and service questions by reviewing data, policies, offers, and internal resources, then translating findings into clear, individualized next steps. Known for accurate documentation, efficient follow-through, and adapting quickly to changing guidance. B.S. Business Administration with a 3.97 GPA; M.S. Business & Information Systems in progress."
+            "Operations and business systems candidate with 5+ years of high-volume experience, including 4+ years at Comcast/Xfinity. Brings practical experience reviewing account and policy information, documenting decisions, coordinating handoffs, and improving recurring work with Excel, Microsoft Power Automate, and basic scripting. Academic projects demonstrate reporting, data validation, process documentation, ServiceNow knowledge management, and business analysis. B.S. Business Administration with a 3.97 GPA; M.S. Business & Information Systems in progress."
         ),
         section("CORE STRENGTHS"),
         paragraph(
-            "Customer guidance and issue resolution | Needs-based communication | Adaptability to changing guidance and tools | Account review and data accuracy | Policy and offer interpretation | Internal resource navigation | Documentation and follow-up | Workload prioritization | Cross-team handoffs | Excel reporting | Process improvement | Microsoft Power Automate",
+            "Excel reporting | Data validation and accuracy | Process documentation | Process improvement | Issue investigation | Workload prioritization | Cross-team coordination | Customer operations | Policy and procedure interpretation | Microsoft Power Automate | Basic scripting | ServiceNow Knowledge Management | Tableau (coursework) | SQL (coursework)",
             small_style,
         ),
         section("PROFESSIONAL EXPERIENCE"),
@@ -168,16 +168,16 @@ def build():
             [
                 role("Comcast / Xfinity | Sales Representative | Remote | April 2022 - Present"),
                 bullet(
-                    "Guide about 25 customers daily, more than 5,000 annually, by asking focused questions, reviewing account data and available offers, and identifying clear options that fit each situation."
+                    "Manage about 25 customer interactions daily, more than 5,000 annually, by clarifying needs, reviewing account data and available options, and determining practical next steps."
                 ),
                 bullet(
-                    "Investigate account, procedure, and system questions using current policies, knowledge resources, and support partners; translate findings into accurate, easy-to-understand next steps."
+                    "Investigate account, procedure, and system questions using current policies, knowledge resources, and support partners; organize findings and explain accurate next steps."
                 ),
                 bullet(
                     "Document interactions, decisions, and follow-up in internal systems with attention to accuracy, completeness, and timely handoffs."
                 ),
                 bullet(
-                    "Adapt to frequent policy, offer, and tool changes while maintaining efficient, high-quality service; build Excel tracking tools and use Microsoft Power Automate and basic scripting to streamline routine work."
+                    "Adapt to frequent policy, offer, and tool changes; build Excel tracking tools and use Microsoft Power Automate and basic scripting to streamline recurring work."
                 ),
             ]
         ),

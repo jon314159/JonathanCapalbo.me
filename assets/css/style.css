@@ -1006,6 +1006,7 @@ footer strong { color: var(--ink); }
   .brand-mark { width: 40px; height: 40px; }
   nav { min-width: 0; overflow-x: auto; }
   nav a { flex: 0 0 auto; font-size: 0.77rem; }
+  nav a[href="#experience"] { display: none; }
   nav a[href="#education"] { display: none; }
   .hero-shell { padding: 54px 0 58px; gap: 36px; }
   .availability { margin-bottom: 28px; }

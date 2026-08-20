@@ -1,12 +1,12 @@
 # JonathanCapalbo.me
 
-Personal portfolio for Jonathan Capalbo, pursuing customer solutions and operations roles with evidence in problem-solving, documentation, reporting, automation, and business information systems.
+Personal portfolio for Jonathan Capalbo, pursuing operations, reporting, process improvement, and business systems roles with evidence in Excel, documentation, data accuracy, automation, and high-volume operational work.
 
 ## Featured case studies
 
 [NJIT Registrar ServiceNow Knowledge Portal](https://jonathancapalbo.me/servicenow-njit-registrar.html): an academic school-lab project with a custom self-service portal, 12 knowledge categories, 42 articles at project completion, search, and version-controlled content.
 
-[Fictional Sales Activity Tracker](https://jonathancapalbo.me/sales-activity-tracker.html): an Excel demonstration with 31 daily tracking sheets, editable fictional products and goals, a monthly summary, and two goal-comparison charts.
+[Excel Activity Reporting System](https://jonathancapalbo.me/sales-activity-tracker.html): a fictional Excel demonstration with controlled daily entry, editable goals, monthly consolidation, and dashboard-based goal comparisons.
 
 Technical and scope notes are documented in:
 

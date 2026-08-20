@@ -1,4 +1,4 @@
-# Fictional Sales Activity Tracker
+# Excel Activity Reporting System
 
 ## Summary
 

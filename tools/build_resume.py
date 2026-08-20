@@ -137,9 +137,9 @@ def build():
         bottomMargin=0.28 * inch,
         title="Jonathan Capalbo Resume",
         author="Jonathan Capalbo",
-        subject="Entry-level analyst, procurement support, and operations resume",
+        subject="Customer solutions and operations resume",
         creator="ReportLab resume generator",
-        keywords="analyst, operations, reporting, Excel, process improvement, procurement support",
+        keywords="customer solutions, customer operations, problem solving, documentation, Excel, process improvement",
     )
 
     contact = (
@@ -152,15 +152,15 @@ def build():
 
     story = [
         Paragraph("Jonathan Capalbo", title_style),
-        Paragraph("ENTRY-LEVEL ANALYST | OPERATIONS | PROCUREMENT SUPPORT", subtitle_style),
+        Paragraph("CUSTOMER SOLUTIONS | CUSTOMER OPERATIONS | PROBLEM SOLVING", subtitle_style),
         Paragraph(contact, contact_style),
         section("PROFESSIONAL SUMMARY"),
         paragraph(
-            "Operations and reporting professional with 5+ years of customer-facing experience, including 4+ years at Comcast/Xfinity. Reviews account data, interprets changing policies, maintains accurate documentation, and manages about 25 customer interactions daily. Builds Excel reporting tools and uses Microsoft Power Automate and basic scripting to streamline routine work. Pursuing entry-level analyst, procurement support, and operations roles centered on data accuracy, process support, and clear communication."
+            "Resourceful customer solutions professional with 5+ years of high-volume customer experience, including 4+ years at Comcast/Xfinity. Resolves complex account and service questions by reviewing data, policies, offers, and internal resources, then translating findings into clear, individualized next steps. Known for accurate documentation, efficient follow-through, and adapting quickly to changing guidance. B.S. Business Administration with a 3.97 GPA; M.S. Business & Information Systems in progress."
         ),
-        section("CORE SKILLS"),
+        section("CORE STRENGTHS"),
         paragraph(
-            "Excel reporting and dashboards | Data cleanup and validation | Trend and cost analysis | Process improvement | Process documentation | Account review and data accuracy | Policy interpretation | Microsoft Power Automate | Basic scripting | Cross-team communication | High-volume workload management | Tableau (coursework) | SQL (coursework) | ServiceNow Knowledge Management (academic project and training)",
+            "Customer guidance and issue resolution | Needs-based communication | Account review and data accuracy | Policy and offer interpretation | Internal resource navigation | Documentation and follow-up | Workload prioritization | Cross-team handoffs | Excel reporting | Process improvement | Microsoft Power Automate | ServiceNow Knowledge Management",
             small_style,
         ),
         section("PROFESSIONAL EXPERIENCE"),
@@ -168,16 +168,16 @@ def build():
             [
                 role("Comcast / Xfinity | Sales Representative | Remote | April 2022 - Present"),
                 bullet(
-                    "Handle about 25 customer interactions daily, more than 5,000 annually, while reviewing account data, offers, policies, documentation requirements, and current internal guidance."
+                    "Guide about 25 customers daily, more than 5,000 annually, by asking focused questions, reviewing account data and available offers, and identifying clear options that fit each situation."
                 ),
                 bullet(
-                    "Document activity, decisions, and follow-up in internal systems with attention to accuracy and data integrity."
+                    "Investigate account, procedure, and system questions using current policies, knowledge resources, and support partners; translate findings into accurate, easy-to-understand next steps."
                 ),
                 bullet(
-                    "Interpret policy and offer changes, investigate procedure and system questions, and translate current guidance into clear next steps for customers and teammates."
+                    "Document interactions, decisions, and follow-up in internal systems with attention to accuracy, completeness, and timely handoffs."
                 ),
                 bullet(
-                    "Build Excel tracking tools and use Microsoft Power Automate and basic scripting to organize information, schedule Teams messages, and automate routine emails."
+                    "Adapt to frequent policy, offer, and tool changes while maintaining efficient, high-quality service; build Excel tracking tools and use Microsoft Power Automate and basic scripting to streamline routine work."
                 ),
             ]
         ),
@@ -188,7 +188,7 @@ def build():
                     "Investigated customer inquiries, documented relevant details, and communicated clear next steps in a remote, high-volume environment."
                 ),
                 bullet(
-                    "Reviewed, categorized, and routed email requests while maintaining organized records, priorities, and consistent handoffs."
+                    "Reviewed, categorized, prioritized, and routed email requests while maintaining organized records and consistent handoffs."
                 ),
             ]
         ),
@@ -208,7 +208,7 @@ def build():
             [
                 role("Registrar Knowledge Portal | ServiceNow school lab | Academic project"),
                 bullet(
-                    "Configured a searchable home page and organized 42 lab articles into 12 student-facing categories at project completion; revised registration guidance for clearer scanning."
+                    "Configured a searchable home page and organized 42 lab articles into 12 student-facing categories at project completion; revised registration guidance for faster scanning of steps, common errors, and support contacts."
                 ),
                 role("Business and Cost Analysis | CAPSIM | Academic project"),
                 bullet(

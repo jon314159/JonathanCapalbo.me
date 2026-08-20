@@ -1,6 +1,6 @@
 # JonathanCapalbo.me
 
-Personal portfolio for Jonathan Capalbo, pursuing entry-level analyst, procurement support, and operations roles with evidence in reporting, automation, documentation, and business information systems.
+Personal portfolio for Jonathan Capalbo, pursuing customer solutions and operations roles with evidence in problem-solving, documentation, reporting, automation, and business information systems.
 
 ## Featured case studies
 

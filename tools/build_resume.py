@@ -156,11 +156,19 @@ def build():
         Paragraph(contact, contact_style),
         section("PROFESSIONAL SUMMARY"),
         paragraph(
-            "Operations and business systems candidate with 5+ years of high-volume experience, including 4+ years at Comcast/Xfinity. Brings practical experience reviewing account and policy information, documenting decisions, coordinating handoffs, and improving recurring work with Excel, Microsoft Power Automate, and basic scripting. Academic projects demonstrate reporting, data validation, process documentation, ServiceNow knowledge management, and business analysis. B.S. Business Administration with a 3.97 GPA; M.S. Business & Information Systems in progress."
+            "Operations and business systems professional with 5+ years of experience supporting high-volume workflows, including 4+ years at Comcast/Xfinity. Builds Excel reporting and tracking tools, reviews account data, investigates policy and system questions, documents decisions, and coordinates accurate follow-up. Uses Microsoft Power Automate and basic scripting to streamline recurring work, with ServiceNow knowledge management training and academic project experience. M.S. Business & Information Systems in progress."
         ),
         section("CORE STRENGTHS"),
         paragraph(
-            "Excel reporting | Data validation and accuracy | Process documentation | Process improvement | Issue investigation | Workload prioritization | Cross-team coordination | Customer operations | Policy and procedure interpretation | Microsoft Power Automate | Basic scripting | ServiceNow Knowledge Management | Tableau (coursework) | SQL (coursework)",
+            "Data & Analysis: Excel reporting and dashboards | Data validation and accuracy | Trend and exception analysis | Tableau (coursework) | SQL (coursework)",
+            small_style,
+        ),
+        paragraph(
+            "Process & Systems: Process improvement | Process documentation | Issue investigation | Policy and procedure interpretation | Microsoft Power Automate | Basic scripting | ServiceNow Knowledge Management",
+            small_style,
+        ),
+        paragraph(
+            "Communication & Coordination: Cross-team coordination | Workload prioritization | Customer operations | Clear written communication",
             small_style,
         ),
         section("PROFESSIONAL EXPERIENCE"),
@@ -171,13 +179,13 @@ def build():
                     "Manage about 25 customer interactions daily, more than 5,000 annually, by clarifying needs, reviewing account data and available options, and determining practical next steps."
                 ),
                 bullet(
-                    "Investigate account, procedure, and system questions using current policies, knowledge resources, and support partners; organize findings and explain accurate next steps."
+                    "Investigate account, policy, procedure, and system questions using current resources and support partners; organize findings and explain clear, accurate next steps."
                 ),
                 bullet(
-                    "Document interactions, decisions, and follow-up in internal systems with attention to accuracy, completeness, and timely handoffs."
+                    "Maintain accurate, complete records in CSG and other internal systems by documenting interactions, decisions, follow-up, and cross-team handoffs."
                 ),
                 bullet(
-                    "Adapt to frequent policy, offer, and tool changes; build Excel tracking tools and use Microsoft Power Automate and basic scripting to streamline recurring work."
+                    "Build Excel tracking tools and use Microsoft Power Automate and basic scripting to streamline recurring personal workflows and follow-up."
                 ),
             ]
         ),
@@ -185,19 +193,19 @@ def build():
             [
                 role("Harte Hanks | Customer Service Representative | Remote | February 2021 - January 2022"),
                 bullet(
-                    "Investigated customer inquiries, documented relevant details, and communicated clear next steps in a remote, high-volume environment."
+                    "Researched customer inquiries in a fast-paced remote environment, documented relevant details, and communicated clear next steps."
                 ),
                 bullet(
-                    "Reviewed, categorized, prioritized, and routed email requests while maintaining organized records and consistent handoffs."
+                    "Prioritized and routed high-volume email requests, maintaining organized records for accurate, consistent team handoffs."
                 ),
             ]
         ),
         section("SELECTED PROJECTS"),
         KeepTogether(
             [
-                role("Excel Activity Reporting System | Fictional public demonstration"),
+                role("Excel Activity Reporting System | Independent Portfolio Project | Synthetic Data"),
                 bullet(
-                    "Built an Excel activity reporting system that captures daily activity, consolidates results into a monthly dashboard, and compares overall goal attainment with day-to-day consistency."
+                    "Built a controlled Excel workflow that captures daily activity, consolidates results into a monthly dashboard, and compares overall goal attainment with day-to-day consistency."
                 ),
                 bullet(
                     "Added configurable goals, validation controls, and exception-focused views so users can identify gaps, review results efficiently, and focus follow-up on the days that need attention."
@@ -206,11 +214,11 @@ def build():
         ),
         KeepTogether(
             [
-                role("Registrar Knowledge Portal | ServiceNow school lab | Academic project"),
+                role("Registrar Knowledge Portal | ServiceNow Lab | Academic Project"),
                 bullet(
                     "Configured a searchable ServiceNow knowledge portal, organized 42 lab articles into 12 student-facing categories, and revised registration guidance for faster scanning of steps, common errors, and support contacts."
                 ),
-                role("Business and Cost Analysis | CAPSIM | Academic project"),
+                role("Business and Cost Analysis | CAPSIM | Academic Project"),
                 bullet(
                     "Reviewed seven years of sales, market share, costs, profit, cash flow, and product strategy, then summarized trends and recommended next steps."
                 ),

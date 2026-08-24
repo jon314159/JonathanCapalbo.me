@@ -218,13 +218,13 @@ def education_header(institution: str, location: str):
 
 
 def configure_page(canvas, _document):
-    canvas.setTitle("Jonathan Capalbo - Business Operations Analyst Resume")
+    canvas.setTitle("Jonathan Capalbo - Analysis, Reporting, and Business Systems Resume")
     canvas.setAuthor("Jonathan Capalbo")
     canvas.setSubject(
-        "Business operations, reporting, process improvement, and business systems resume"
+        "Business analysis, reporting, process improvement, and business systems resume"
     )
     canvas.setKeywords(
-        "business operations, operations analysis, reporting, Excel, process improvement, Power Automate, ServiceNow"
+        "business analysis, operations analysis, reporting, Excel, process improvement, Power Automate, ServiceNow"
     )
     canvas._doc.Catalog.Lang = PDFString("en-US")
     preferences = ViewerPreferencesPDFDictionary()
@@ -240,11 +240,11 @@ def build():
         rightMargin=RIGHT_MARGIN,
         topMargin=TOP_MARGIN,
         bottomMargin=BOTTOM_MARGIN,
-        title="Jonathan Capalbo - Business Operations Analyst Resume",
+        title="Jonathan Capalbo - Analysis, Reporting, and Business Systems Resume",
         author="Jonathan Capalbo",
-        subject="Business operations, reporting, process improvement, and business systems resume",
+        subject="Business analysis, reporting, process improvement, and business systems resume",
         creator="ReportLab resume generator",
-        keywords="business operations, operations analysis, reporting, Excel, process improvement, Power Automate, ServiceNow",
+        keywords="business analysis, operations analysis, reporting, Excel, process improvement, Power Automate, ServiceNow",
     )
 
     contact = (
@@ -257,11 +257,11 @@ def build():
 
     story = [
         Paragraph("Jonathan Capalbo", name_style),
-        Paragraph("BUSINESS OPERATIONS | REPORTING | BUSINESS SYSTEMS", headline_style),
+        Paragraph("BUSINESS ANALYSIS | REPORTING | BUSINESS SYSTEMS", headline_style),
         Paragraph(contact, contact_style),
         section("PROFESSIONAL SUMMARY"),
         Paragraph(
-            "Business operations professional transitioning into analysis, with 5+ years supporting high-volume workflows, including 4+ years at Comcast/Xfinity. Builds Excel reports and dashboards, reviews account and operational data, investigates process and system issues, and documents findings for accurate decisions and follow-up. Uses Microsoft Power Automate and basic scripting to automate recurring workflows, saving several hours of manual work each week. M.S. Business & Information Systems in progress, with ServiceNow training and hands-on academic project experience.",
+            "Analytical professional transitioning from high-volume customer-facing work into business analysis, with 5+ years of experience including 4+ years at Comcast/Xfinity. Builds Excel reports and dashboards, reviews account data, investigates policy, process, and system questions, and documents findings and next steps for accurate follow-up. Uses Microsoft Power Automate and basic scripting to streamline recurring personal workflows. M.S. in Business & Information Systems in progress, supported by ServiceNow training and hands-on academic project experience.",
             body_style,
         ),
         section("CORE STRENGTHS"),
@@ -287,7 +287,7 @@ def build():
                     "Remote",
                 ),
                 bullet(
-                    "Handle 25+ customer interactions daily, more than 5,000 annually, reviewing account data and available options to determine accurate next steps."
+                    "Handle about 25 customer interactions daily, more than 5,000 annually, reviewing account data and available options to determine accurate next steps."
                 ),
                 bullet(
                     "Investigate account, policy, procedure, and system questions using current resources and support partners; organize findings and communicate clear next steps."
@@ -296,7 +296,7 @@ def build():
                     "Maintain accurate records in CSG and other internal systems, documenting decisions, follow-up, and cross-team handoffs."
                 ),
                 bullet(
-                    "Build Excel tracking tools and automate recurring workflows using Microsoft Power Automate and basic scripting, saving several hours of manual work each week."
+                    "Build Excel tracking tools and use Microsoft Power Automate and basic scripting to streamline recurring personal workflows and follow-up."
                 ),
                 Spacer(1, 1.5),
             ]

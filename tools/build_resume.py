@@ -224,7 +224,7 @@ def configure_page(canvas, _document):
         "Business analysis, reporting, process improvement, and business systems resume"
     )
     canvas.setKeywords(
-        "business analysis, operations analysis, reporting, Excel, process improvement, Power Automate, ServiceNow"
+        "business analysis, requirements, user stories, UAT planning, operations analysis, reporting, Excel, process improvement, Power Automate, ServiceNow"
     )
     canvas._doc.Catalog.Lang = PDFString("en-US")
     preferences = ViewerPreferencesPDFDictionary()
@@ -244,7 +244,7 @@ def build():
         author="Jonathan Capalbo",
         subject="Business analysis, reporting, process improvement, and business systems resume",
         creator="ReportLab resume generator",
-        keywords="business analysis, operations analysis, reporting, Excel, process improvement, Power Automate, ServiceNow",
+        keywords="business analysis, requirements, user stories, UAT planning, operations analysis, reporting, Excel, process improvement, Power Automate, ServiceNow",
     )
 
     contact = (
@@ -252,6 +252,7 @@ def build():
         "jonathancapalbo1@gmail.com</link> | "
         '<link href="https://www.linkedin.com/in/jonathan-capalbo-2a00b9140" color="#4D5968">'
         "LinkedIn</link> | "
+        '<link href="https://jonathancapalbo.me/" color="#4D5968">Portfolio</link> | '
         '<link href="https://github.com/jon314159" color="#4D5968">GitHub</link>'
     )
 
@@ -261,7 +262,7 @@ def build():
         Paragraph(contact, contact_style),
         section("PROFESSIONAL SUMMARY"),
         Paragraph(
-            "Analytical professional transitioning from high-volume customer-facing work into business analysis, with 5+ years of experience including 4+ years at Comcast/Xfinity. Builds Excel reports and dashboards, reviews account data, investigates policy, process, and system questions, and documents findings and next steps for accurate follow-up. Uses Microsoft Power Automate and basic scripting to streamline recurring personal workflows. M.S. in Business & Information Systems in progress, supported by ServiceNow training and hands-on academic project experience.",
+            "Analytical professional transitioning from high-volume customer-facing work into business analysis, with 5+ years of experience including 4+ years at Comcast/Xfinity. Builds Excel reports and dashboards, reviews account data, investigates policy, process, and system questions, and documents findings and next steps for accurate follow-up. Uses Microsoft Power Automate and basic scripting to streamline recurring personal workflows. M.S. in Business & Information Systems in progress, supported by ServiceNow training, academic work, and self-directed analysis projects.",
             body_style,
         ),
         section("CORE STRENGTHS"),
@@ -270,7 +271,7 @@ def build():
             small_style,
         ),
         Paragraph(
-            "<b>Process &amp; Systems:</b> Process improvement | Process documentation | Issue investigation | Policy and procedure interpretation | Microsoft Power Automate | Basic scripting | ServiceNow Knowledge Management",
+            "<b>Process &amp; Systems:</b> Process mapping and documentation | Requirements analysis | User stories and acceptance criteria | Issue investigation | Microsoft Power Automate | ServiceNow Knowledge Management",
             small_style,
         ),
         Paragraph(
@@ -327,17 +328,17 @@ def build():
             ],
         ),
         project(
+            "Arcade Operations Ticketing Modernization",
+            "Self-Directed Business Analysis Case Study | Hypothetical",
+            [
+                "Designed a hypothetical five-category ticketing pilot with current/future workflows, 110 draft requirements, 34 user stories, requirements-to-UAT traceability, and 31 planned UAT cases; mapped the design conceptually to ServiceNow without claiming implementation."
+            ],
+        ),
+        project(
             "Registrar Knowledge Portal",
             "ServiceNow Lab | Academic Project",
             [
                 "Configured a searchable ServiceNow knowledge portal, organized 42 lab articles into 12 student-facing categories, and revised registration guidance for faster scanning of steps, common errors, and support contacts."
-            ],
-        ),
-        project(
-            "Business and Cost Analysis",
-            "CAPSIM | Academic Project",
-            [
-                "Analyzed seven years of sales, market share, costs, profit, and product strategy; summarized trends and recommended next steps."
             ],
         ),
         section("EDUCATION"),

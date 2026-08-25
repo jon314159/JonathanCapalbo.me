@@ -748,6 +748,34 @@ nav .nav-resume:hover { color: #fff; background: var(--blue); }
   margin-top: 18px;
 }
 
+.project-card-wide {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: center;
+}
+
+.arcade-project {
+  border-color: rgba(220, 239, 142, 0.25);
+  background: linear-gradient(120deg, rgba(49, 94, 234, 0.17), rgba(255, 255, 255, 0.055));
+}
+
+.arcade-project-proof {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.arcade-project-proof div { min-height: 112px; padding: 20px; background: rgba(11, 31, 51, 0.82); }
+.arcade-project-proof dt { color: var(--lime); font-size: 1.55rem; font-weight: 950; letter-spacing: -0.04em; }
+.arcade-project-proof dd { margin: 7px 0 0; color: #b8c5d0; font-size: 0.76rem; line-height: 1.4; }
+
 .project-card {
   min-height: 0;
   padding: 30px;
@@ -1247,6 +1275,98 @@ footer strong { color: var(--ink); }
 .scope-note a { display: inline-flex; min-height: 44px; align-items: center; gap: 12px; margin-top: 18px; color: #fff; font-size: 0.86rem; font-weight: 850; text-underline-offset: 4px; }
 .case-contact { margin-top: 0; }
 
+/* Arcade ticketing business-analysis case study */
+.arcade-disclosure { border-left-color: var(--teal); background: #edf9f8; }
+.arcade-disclosure strong { color: #086d67; }
+
+.arcade-emergency-note {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: start;
+  margin-top: 34px;
+  padding: 19px 21px;
+  border: 1px solid rgba(220, 239, 142, 0.28);
+  border-radius: 16px;
+  background: rgba(220, 239, 142, 0.08);
+}
+
+.arcade-emergency-note span { color: var(--lime); font-size: 1.25rem; font-weight: 950; line-height: 1; }
+.arcade-emergency-note strong, .arcade-emergency-note small { display: block; }
+.arcade-emergency-note strong { color: #fff; }
+.arcade-emergency-note small { margin-top: 4px; color: #b8c5d0; line-height: 1.5; }
+
+.arcade-flow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 34px 0 0;
+  padding: 0;
+  counter-reset: arcade-step;
+  list-style: none;
+}
+
+.arcade-flow li {
+  position: relative;
+  min-height: 150px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.arcade-flow li::before {
+  content: counter(arcade-step, decimal-leading-zero);
+  display: block;
+  margin-bottom: 34px;
+  color: var(--lime);
+  font-size: 0.68rem;
+  font-weight: 950;
+  counter-increment: arcade-step;
+}
+
+.arcade-flow strong, .arcade-flow span { display: block; }
+.arcade-flow strong { color: #fff; font-size: 0.95rem; }
+.arcade-flow span { margin-top: 6px; color: #9fb0be; font-size: 0.78rem; line-height: 1.45; }
+
+.arcade-analysis-path {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 34px 0 0;
+  padding: 0;
+  counter-reset: analysis-step;
+  list-style: none;
+}
+
+.arcade-analysis-path li {
+  position: relative;
+  min-height: 164px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+
+.arcade-analysis-path li::before {
+  content: counter(analysis-step, decimal-leading-zero);
+  display: block;
+  margin-bottom: 26px;
+  color: var(--blue);
+  font-size: 0.72rem;
+  font-weight: 950;
+  counter-increment: analysis-step;
+}
+
+.arcade-analysis-path strong, .arcade-analysis-path span { display: block; }
+.arcade-analysis-path strong { color: var(--ink); }
+.arcade-analysis-path span { margin-top: 7px; color: var(--muted); font-size: 0.82rem; line-height: 1.5; }
+
+.arcade-source-list { display: grid; gap: 11px; margin: 26px 0 0; padding: 0; list-style: none; }
+.arcade-source-list li { padding-bottom: 11px; border-bottom: 1px solid rgba(255, 255, 255, 0.14); color: #cbd7e0; font-size: 0.83rem; line-height: 1.5; }
+.arcade-source-list a { color: #fff; font-weight: 850; text-underline-offset: 4px; }
+
 /* Sales activity tracker case study */
 .sales-stat-grid dt { font-size: 1.55rem; letter-spacing: -0.045em; }
 .case-inline-link { color: var(--blue); }
@@ -1657,6 +1777,8 @@ footer strong { color: var(--ink); }
   .sales-validation-grid { grid-template-columns: 1fr; }
   .sales-analysis-heading { max-width: 760px; }
   .sales-tradeoff-card { min-height: 390px; }
+  .project-card-wide { grid-template-columns: 1fr; }
+  .arcade-flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 680px) {
@@ -1689,6 +1811,11 @@ footer strong { color: var(--ink); }
   .sales-architecture-grid article { min-height: 0; }
   .sales-architecture-grid h3 { margin-top: 24px; }
   .sales-dashboard-figure figcaption { display: grid; gap: 5px; }
+  .arcade-project-proof,
+  .arcade-flow,
+  .arcade-analysis-path { grid-template-columns: 1fr; }
+  .arcade-flow li,
+  .arcade-analysis-path li { min-height: 0; }
   .sales-decision-table thead {
     position: absolute;
     width: 1px;

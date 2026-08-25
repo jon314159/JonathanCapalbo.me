@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arcade Ticketing Modernization Case Study | Jonathan Capalbo</title>
+    <meta name="description" content="A hypothetical business-analysis case study by Jonathan Capalbo covering internal arcade ticketing workflows, requirements, traceability, planned UAT, implementation readiness, and KPI definitions." />
+    <meta name="theme-color" content="#0b1f33" />
+    <meta property="og:title" content="Arcade Ticketing Modernization Case Study | Jonathan Capalbo" />
+    <meta property="og:description" content="A recruiter-friendly, hypothetical business-analysis package for modernizing internal arcade operations ticketing." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://jonathancapalbo.me/arcade-ticketing-modernization.html" />
+    <meta property="og:image" content="https://jonathancapalbo.me/assets/images/headshot.jpg" />
+    <meta property="og:image:alt" content="Jonathan Capalbo" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Arcade Ticketing Modernization Case Study | Jonathan Capalbo" />
+    <meta name="twitter:description" content="A hypothetical business-analysis package covering process design, requirements, traceability, planned UAT, readiness, and measurement." />
+    <link rel="canonical" href="https://jonathancapalbo.me/arcade-ticketing-modernization.html" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css?v=46" />
+  </head>
+  <body class="case-study-page">
+    <a class="skip-link" href="#case-content">Skip to content</a>
+
+    <header class="case-header" id="top">
+      <div class="nav-shell">
+        <a class="brand" href="index.html" aria-label="Jonathan Capalbo, portfolio home">
+          <span class="brand-mark" aria-hidden="true">JC</span>
+          <span class="brand-copy"><strong>Jonathan Capalbo</strong><small>Operations, reporting &amp; business systems</small></span>
+        </a>
+        <nav aria-label="Case study navigation">
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#skills">Skills</a>
+          <a class="nav-resume" href="resume.pdf">Resume</a>
+        </nav>
+      </div>
+
+      <div class="case-hero">
+        <div class="case-hero-copy">
+          <p class="eyebrow">Self-directed portfolio case study · Hypothetical</p>
+          <h1>A business-analysis package for <em>modernizing internal arcade ticketing.</em></h1>
+          <p class="case-lede">I designed a proposed single-location pilot that brings broken machines, game-card issues, refunds, prize-counter problems, and facility incidents into one controlled operating process—from intake and routing through verification and reporting.</p>
+          <div class="academic-disclosure arcade-disclosure" role="note">
+            <strong>Hypothetical and simulated</strong>
+            <span>The business, stakeholders, data, requirements, tests, and targets are fictional. ServiceNow is a conceptual platform frame only; no software was configured, built, tested, deployed, or measured.</span>
+          </div>
+          <div class="button-row">
+            <a class="button button-primary" href="#project-details">See the analysis <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="https://github.com/jon314159/JonathanCapalbo.me/blob/main/case-studies/arcade-operations-ticketing-modernization.md" target="_blank" rel="noopener noreferrer">View project notes <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <dl class="case-stat-grid" aria-label="Project summary">
+          <div><dt>110</dt><dd>Draft requirements</dd></div>
+          <div><dt>34</dt><dd>User stories with 102 acceptance criteria</dd></div>
+          <div><dt>31</dt><dd>Planned UAT cases; not executed</dd></div>
+          <div><dt>16</dt><dd>Defined KPIs; no measured results</dd></div>
+        </dl>
+      </div>
+    </header>
+
+    <main id="case-content">
+      <section class="section case-intro" id="project-details">
+        <div>
+          <p class="eyebrow">Problem and recommendation</p>
+          <h2>Replace fragmented handoffs with one traceable operating process.</h2>
+        </div>
+        <div class="case-intro-copy">
+          <p>The simulated current state assumes reports arrive through verbal handoffs, paper notes, calls, and messages. That makes ownership, urgency, approvals, status, and closure evidence difficult to see consistently.</p>
+          <p>I recommended a unified internal ticketing pilot across all five issue categories at one location. The scope is broad enough to test shared routing and reporting, while staying bounded enough for controlled rollout, training, and measurement.</p>
+        </div>
+      </section>
+
+      <section class="case-band" aria-labelledby="future-flow-title">
+        <div class="section case-band-inner">
+          <div class="section-heading compact-heading">
+            <p class="eyebrow">Proposed future state</p>
+            <h2 id="future-flow-title">A visible path from first report to verified closure.</h2>
+          </div>
+          <div class="arcade-emergency-note" role="note">
+            <span aria-hidden="true">!</span>
+            <div><strong>Safety comes before ticket entry.</strong><small>For an emergency or immediate hazard, staff would secure the area and follow the emergency procedure first, then document the incident when safe.</small></div>
+          </div>
+          <ol class="arcade-flow" aria-label="Proposed ticket lifecycle">
+            <li><strong>Minimum ticket</strong><span>Capture category, location, description, and urgency.</span></li>
+            <li><strong>Triage</strong><span>Confirm impact, priority, and safety or refund controls.</span></li>
+            <li><strong>Assign owner</strong><span>Route to the responsible operational team.</span></li>
+            <li><strong>Work or approve</strong><span>Investigate, repair, fulfill, or obtain authorization.</span></li>
+            <li><strong>Place pending</strong><span>Record the reason when parts, vendor, or customer input blocks work.</span></li>
+            <li><strong>Resolve</strong><span>Document the action taken and resolution code.</span></li>
+            <li><strong>Verify</strong><span>Confirm service restoration or customer-facing completion.</span></li>
+            <li><strong>Close and report</strong><span>Lock the record into auditable history and KPI reporting.</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="analysis-path-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Analyst workstream</p>
+          <h2 id="analysis-path-title">Every deliverable connects to the next decision.</h2>
+        </div>
+        <ol class="arcade-analysis-path" aria-label="Business analysis workstream">
+          <li><strong>Frame the scope</strong><span>Define the problem, pilot boundary, assumptions, stakeholders, and decision rights.</span></li>
+          <li><strong>Model the work</strong><span>Compare the simulated current state with a proposed future-state flow and exception paths.</span></li>
+          <li><strong>Define controls</strong><span>Set routing, priority, approval, status, security, and closure rules.</span></li>
+          <li><strong>Baseline requirements</strong><span>Document 110 draft requirements, 111 fields, and 20 cross-field validations.</span></li>
+          <li><strong>Trace and plan tests</strong><span>Link 34 stories and 102 acceptance criteria through 31 planned UAT cases.</span></li>
+          <li><strong>Prepare adoption</strong><span>Specify rollout, governance, an employee procedure, 16 KPIs, and three reports.</span></li>
+        </ol>
+      </section>
+
+      <section class="case-band" aria-labelledby="evidence-title">
+        <div class="section case-band-inner">
+          <div class="section-heading compact-heading">
+            <p class="eyebrow">Selected evidence</p>
+            <h2 id="evidence-title">A connected package, not a list of isolated documents.</h2>
+          </div>
+          <div class="case-feature-grid">
+            <article><span>01</span><h3>Operating rules</h3><p>Forty-two rules define priority, assignment, approvals, pending reasons, safety treatment, resolution, and closure.</p></article>
+            <article><span>02</span><h3>Data controls</h3><p>A 111-field dictionary and 20 cross-field validations clarify required values, ownership, and conditional logic.</p></article>
+            <article><span>03</span><h3>Traceability and UAT</h3><p>The requirements baseline connects to stories, acceptance criteria, and 31 planned UAT cases. All tests remain Not Executed.</p></article>
+            <article><span>04</span><h3>Readiness and measurement</h3><p>The package includes a cutover plan, employee procedure, governance cadence, 16 KPI definitions, and three report specifications.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section case-scope">
+        <div class="scope-card">
+          <p class="eyebrow">Skills demonstrated</p>
+          <h2>Business analysis from problem framing through adoption planning.</h2>
+          <div class="skill-list case-skill-list"><span>Stakeholder analysis</span><span>Current and future-state mapping</span><span>Requirements analysis</span><span>Business rules</span><span>User stories</span><span>Acceptance criteria</span><span>Data definition</span><span>Traceability</span><span>UAT planning</span><span>Implementation planning</span><span>Procedure writing</span><span>KPI design</span></div>
+        </div>
+        <aside class="scope-note">
+          <h3>Conceptual ServiceNow alignment</h3>
+          <p>I used official ServiceNow material to distinguish incident, request/catalog, work-order, and workplace-service patterns. The case study does not claim platform configuration or production experience.</p>
+          <ul class="arcade-source-list">
+            <li><a href="https://www.servicenow.com/products/incident-management.html" target="_blank" rel="noopener noreferrer">Incident Management</a> — interruption and restoration concepts</li>
+            <li><a href="https://www.servicenow.com/docs/r/servicenow-platform/service-catalog/c_UsingTheServiceCatalog.html" target="_blank" rel="noopener noreferrer">Service Catalog</a> — structured request concepts</li>
+            <li><a href="https://www.servicenow.com/docs/r/field-service-management/Work-order-fsm.html" target="_blank" rel="noopener noreferrer">Field Service work orders</a> — repair-work concepts</li>
+            <li><a href="https://www.servicenow.com/products/workplace-service-delivery.html" target="_blank" rel="noopener noreferrer">Workplace Service Delivery</a> — facility-service concepts</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section case-methods" aria-labelledby="method-sources-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Methods and sources</p>
+          <h2 id="method-sources-title">Public standards support the structure; project content remains simulated.</h2>
+        </div>
+        <div class="project-detail-grid">
+          <div><span>Business analysis structure</span><p>The package is organized around the role of business analysis described in <a class="case-inline-link" href="https://www.iiba.org/knowledgehub/the-business-analysis-standard/" target="_blank" rel="noopener noreferrer">IIBA's Business Analysis Standard</a>.</p></div>
+          <div><span>Acceptance criteria format</span><p>Scenarios use Given/When/Then conventions documented in the <a class="case-inline-link" href="https://cucumber.io/docs/gherkin/reference/" target="_blank" rel="noopener noreferrer">Cucumber Gherkin reference</a>.</p></div>
+          <div><span>Evidence limits</span><p>Counts describe authored deliverables, not performance. UAT is planned, KPIs are definitions, and implementation outcomes are not claimed.</p></div>
+        </div>
+      </section>
+
+      <section class="contact-section case-contact">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Want to discuss the analysis or my transition into business systems work?</h2>
+          <p>Email me or use the links below to review my resume and portfolio.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button contact-primary" href="mailto:jonathancapalbo1@gmail.com">jonathancapalbo1@gmail.com <span aria-hidden="true">→</span></a>
+          <div><a href="resume.pdf">Resume <span aria-hidden="true">↓</span></a><a href="index.html">Portfolio <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p><strong>Jonathan Capalbo</strong><span>Operations · Reporting · Business systems</span></p>
+      <p>© 2026 Jonathan Capalbo.</p>
+    </footer>
+  </body>
+</html>

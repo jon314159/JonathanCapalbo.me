@@ -17,7 +17,7 @@ The project focused on portal navigation and knowledge content. Registrar reques
 ## What the project includes
 
 - A dedicated ServiceNow portal and custom registrar home page
-- 42 knowledge articles organized into 12 student-facing categories at project completion
+- 42 knowledge articles organized into 12 student-facing categories in the completed project
 - Search, popular topics, category cards, quick links, office hours, and contact information
 - A consistent article layout using overviews, preparation steps, numbered instructions, callouts, tables, and contact guidance
 - Article versioning that publishes the revised project version and marks the previous version as outdated in the lab

@@ -262,7 +262,7 @@ def build():
         Paragraph(contact, contact_style),
         section("PROFESSIONAL SUMMARY"),
         Paragraph(
-            "Analytical professional transitioning from high-volume customer-facing work into business analysis, with 5+ years of experience including 4+ years at Comcast/Xfinity. Builds Excel reports and dashboards, reviews account data, investigates policy, process, and system questions, and documents findings and next steps for accurate follow-up. Uses Microsoft Power Automate and basic scripting to streamline recurring personal workflows. M.S. in Business & Information Systems in progress, supported by ServiceNow training, academic work, and self-directed analysis projects.",
+            "Analytical professional transitioning from high-volume customer-facing work into business analysis, with 5+ years of experience including 4+ years at Comcast/Xfinity. Builds Excel reports and dashboards, reviews customer records, investigates policy, process, and system questions, and documents findings and next steps for accurate follow-up. Uses Microsoft Power Automate and basic scripting to streamline recurring personal workflows. M.S. in Business & Information Systems in progress, supported by ServiceNow training, academic work, and self-directed analysis projects.",
             body_style,
         ),
         section("CORE STRENGTHS"),
@@ -282,16 +282,16 @@ def build():
         KeepTogether(
             [
                 role_header(
-                    "Sales Representative",
+                    "Customer Account Executive",
                     "April 2022 - Present",
                     "Comcast / Xfinity",
                     "Remote",
                 ),
                 bullet(
-                    "Handle about 25 customer interactions daily, more than 5,000 annually, reviewing account data and available options to determine accurate next steps."
+                    "Handle about 25 customer interactions daily, more than 5,000 annually, reviewing customer records and available options to determine accurate next steps."
                 ),
                 bullet(
-                    "Investigate account, policy, procedure, and system questions using current resources and support partners; organize findings and communicate clear next steps."
+                    "Investigate customer-record, policy, procedure, and system questions using current resources and support partners; organize findings and communicate clear next steps."
                 ),
                 bullet(
                     "Maintain accurate records in CSG and other internal systems, documenting decisions, follow-up, and cross-team handoffs."
@@ -345,7 +345,7 @@ def build():
         education_header("New Jersey Institute of Technology", "Newark, NJ"),
         Paragraph("<b>M.S. Business &amp; Information Systems</b> | In Progress", body_style),
         Paragraph(
-            "<b>Relevant Coursework:</b> Business Data Analytics, Operations Management and Analytics, Financial Statement Analysis, Business Research Methods, System Analysis and Design, Project Management, Knowledge Management, Decision Support Tools",
+            "<b>Relevant Coursework:</b> Business Data Analytics, Operations Management and Analytics, Business Research Methods, System Analysis and Design, Project Management, Knowledge Management, Decision Support Tools",
             small_style,
         ),
         Spacer(1, 0.8),

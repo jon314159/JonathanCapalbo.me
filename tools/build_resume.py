@@ -248,12 +248,13 @@ def build():
     )
 
     contact = (
+        "Point Pleasant, NJ | Open to remote | "
         '<link href="mailto:jonathancapalbo1@gmail.com" color="#4D5968">'
         "jonathancapalbo1@gmail.com</link> | "
-        '<link href="https://www.linkedin.com/in/jonathan-capalbo-2a00b9140" color="#4D5968">'
-        "LinkedIn</link> | "
-        '<link href="https://jonathancapalbo.me/" color="#4D5968">Portfolio</link> | '
-        '<link href="https://github.com/jon314159" color="#4D5968">GitHub</link>'
+        '<link href="https://jonathancapalbo.me" color="#4D5968">jonathancapalbo.me</link> | '
+        '<link href="https://linkedin.com/in/jonathan-capalbo-2a00b9140" color="#4D5968">'
+        "linkedin.com/in/jonathan-capalbo-2a00b9140</link> | "
+        '<link href="https://github.com/jon314159" color="#4D5968">github.com/jon314159</link>'
     )
 
     story = [
@@ -262,20 +263,20 @@ def build():
         Paragraph(contact, contact_style),
         section("PROFESSIONAL SUMMARY"),
         Paragraph(
-            "Analytical professional transitioning from high-volume customer-facing work into business analysis, with 5+ years of experience including 4+ years at Comcast/Xfinity. Builds Excel reports and dashboards, reviews customer records, investigates policy, process, and system questions, and documents findings and next steps for accurate follow-up. Uses Microsoft Power Automate and basic scripting to streamline recurring personal workflows. M.S. in Business & Information Systems in progress, supported by ServiceNow training, academic work, and self-directed analysis projects.",
+            "Customer operations professional with 5+ years of experience investigating policy and system issues, maintaining customer records, and coordinating follow-up. Builds Excel reporting workflows and develops requirements, process maps, and UAT plans through self-directed projects. Pursuing an M.S. in Business & Information Systems at NJIT.",
             body_style,
         ),
         section("CORE STRENGTHS"),
         Paragraph(
-            "<b>Data &amp; Analysis:</b> Excel reporting and dashboards | Data validation and accuracy | Trend and exception analysis | Tableau (coursework) | SQL (coursework)",
+            "<b>Reporting &amp; Analysis:</b> Excel reporting | Trend and exception review | Requirements analysis | Process mapping",
             small_style,
         ),
         Paragraph(
-            "<b>Process &amp; Systems:</b> Process mapping and documentation | Requirements analysis | User stories and acceptance criteria | Issue investigation | Microsoft Power Automate | ServiceNow Knowledge Management",
+            "<b>Operations &amp; Systems:</b> Issue investigation | Documentation | User stories and acceptance criteria | UAT planning | Workload prioritization | Cross-team coordination",
             small_style,
         ),
         Paragraph(
-            "<b>Communication &amp; Coordination:</b> Cross-team coordination | Workload prioritization | Customer operations | Clear written communication",
+            "<b>Tools:</b> Excel (tables, cross-sheet formulas, SUMIF/COUNTIF, data validation, conditional formatting) | Power Automate | Microsoft Access | CSG | ServiceNow Knowledge Management and Service Portal (academic project) | SQL and Tableau (coursework)",
             small_style,
         ),
         section("PROFESSIONAL EXPERIENCE"),
@@ -288,16 +289,16 @@ def build():
                     "Remote",
                 ),
                 bullet(
-                    "Handle about 25 customer interactions daily, more than 5,000 annually, reviewing customer records and available options to determine accurate next steps."
+                    "Manage about 25 customer interactions daily, more than 5,000 annually, reviewing customer records and available options to identify appropriate actions."
                 ),
                 bullet(
-                    "Investigate customer-record, policy, procedure, and system questions using current resources and support partners; organize findings and communicate clear next steps."
+                    "Investigate customer-record, policy, procedure, and system questions using current resources and internal support partners."
                 ),
                 bullet(
                     "Maintain accurate records in CSG and other internal systems, documenting decisions, follow-up, and cross-team handoffs."
                 ),
                 bullet(
-                    "Build Excel tracking tools and use Microsoft Power Automate and basic scripting to streamline recurring personal workflows and follow-up."
+                    "Use Microsoft Power Automate to organize my recurring tracking and follow-up."
                 ),
                 Spacer(1, 1.5),
             ]
@@ -311,50 +312,49 @@ def build():
                     "Remote",
                 ),
                 bullet(
-                    "Researched customer inquiries in a high-volume remote environment, documented relevant details, and communicated clear next steps."
+                    "Investigated customer inquiries in a remote environment, recorded relevant details, and explained next actions."
                 ),
                 bullet(
-                    "Prioritized and routed high-volume email requests, maintaining organized records for accurate, consistent team handoffs."
+                    "Prioritized, categorized, and routed email requests, maintaining organized records for team handoffs."
                 ),
             ]
         ),
         section("SELECTED PROJECTS"),
         project(
-            "Excel Activity Reporting System",
-            "Team-Used Workflow | Portfolio Case Study",
+            '<link href="https://jonathancapalbo.me/sales-activity-tracker.html" color="#17233A">Excel Activity Reporting System</link>',
+            "Portfolio Case Study | Fictional Data",
             [
-                "Built a team-used Excel workflow that captures multiple data points across recurring activities, consolidates results into a monthly dashboard, and analyzes goal attainment and day-to-day consistency.",
-                "Added configurable goals, validation controls, and exception-focused views so users can identify gaps, review results efficiently, and focus follow-up where needed.",
+                "Built a 35-sheet Excel reporting system with 31 standardized daily views, centralized settings, and monthly consolidation.",
+                "Added validation controls, configurable goals, and dashboard views to compare results and identify exceptions.",
             ],
         ),
         project(
-            "Arcade Operations Ticketing Modernization",
-            "Self-Directed Business Analysis Case Study | Hypothetical",
+            '<link href="https://jonathancapalbo.me/arcade-ticketing-modernization.html" color="#17233A">Arcade Operations Ticketing Modernization</link>',
+            "Self-Directed BA Case Study | Simulated Scenario",
             [
-                "Designed a hypothetical five-category ticketing pilot with current/future workflows, 110 draft requirements, 34 user stories, requirements-to-UAT traceability, and 31 planned UAT cases; mapped the design conceptually to ServiceNow without claiming implementation."
+                "Designed a five-category ticketing pilot with current- and future-state workflows, 110 draft requirements, 34 user stories, requirements traceability, and 31 planned UAT cases."
             ],
         ),
         project(
-            "Registrar Knowledge Portal",
-            "ServiceNow Lab | Academic Project",
+            '<link href="https://jonathancapalbo.me/servicenow-njit-registrar.html" color="#17233A">Registrar ServiceNow Portal</link>',
+            "Academic Project | ServiceNow Lab",
             [
-                "Configured a searchable ServiceNow knowledge portal, organized 42 lab articles into 12 student-facing categories, and revised registration guidance for faster scanning of steps, common errors, and support contacts."
+                "Configured a searchable portal, organized 42 lab articles into 12 student-facing categories, and revised registration guidance for steps, common errors, and support contacts."
             ],
         ),
         section("EDUCATION"),
         education_header("New Jersey Institute of Technology", "Newark, NJ"),
-        Paragraph("<b>M.S. Business &amp; Information Systems</b> | In Progress", body_style),
+        Paragraph("<b>M.S. Business &amp; Information Systems</b> | Expected Summer 2028", body_style),
         Paragraph(
-            "<b>Relevant Coursework:</b> Business Data Analytics, Operations Management and Analytics, Business Research Methods, System Analysis and Design, Project Management, Knowledge Management, Decision Support Tools",
+            "<b>Relevant Coursework:</b> System Analysis and Design, Business Data Analytics, Operations Management and Analytics, Project Management, Knowledge Management",
             small_style,
         ),
         Spacer(1, 0.8),
-        education_header("New Jersey Institute of Technology", "Newark, NJ"),
         Paragraph(
             "<b>B.S. Business Administration</b> | 2024 | GPA: 3.97 | Dean's List, all semesters",
             body_style,
         ),
-        section("ADDITIONAL TRAINING"),
+        section("PROFESSIONAL TRAINING"),
         bullet("ServiceNow Administration Fundamentals"),
         bullet("ServiceNow Knowledge Management Fundamentals"),
     ]

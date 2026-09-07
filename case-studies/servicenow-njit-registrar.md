@@ -8,6 +8,8 @@ The public case study is available at [jonathancapalbo.me/servicenow-njit-regist
 
 This is an academic demonstration, not NJIT's live registrar system or current NJIT guidance.
 
+The temporary school-lab instance is no longer available. The public evidence consists of the preserved screenshot, project notes, and clearly labeled recreated article excerpt.
+
 ## Responsibility and boundaries
 
 My project work covered school-lab portal configuration, article organization, and revision of the registration article through version 3.0.

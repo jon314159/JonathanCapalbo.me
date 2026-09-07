@@ -21,7 +21,7 @@
     <meta name="twitter:image:alt" content="Professional headshot of Jonathan Capalbo" />
     <link rel="canonical" href="https://jonathancapalbo.me/arcade-ticketing-modernization.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/css/style.css?v=48" />
+    <link rel="stylesheet" href="assets/css/style.css?v=49" />
   </head>
   <body class="case-study-page">
     <a class="skip-link" href="#case-content">Skip to content</a>
@@ -46,20 +46,19 @@
           <p class="case-lede">For this case study, I planned how one arcade location could handle five common types of internal tickets in one place. The process covers broken machines, game-card issues, refunds, prize-counter problems, and facility incidents from the first report through final review and reporting.</p>
           <div class="academic-disclosure arcade-disclosure" role="note">
             <strong>Hypothetical and simulated</strong>
-            <span>The business, stakeholders, data, requirements, tests, and targets are fictional. ServiceNow is a conceptual platform frame only; no software was configured, built, tested, deployed, or measured.</span>
+            <span>The business and planning scenario are fictional. This is a process proposal, with no configured software, executed UAT, or measured results.</span>
           </div>
           <div class="button-row">
             <a class="button button-primary" href="#project-details">Read the ticketing plan</a>
-            <a class="button button-secondary" href="https://github.com/jon314159/JonathanCapalbo.me/blob/main/case-studies/arcade-operations-ticketing-modernization.md" target="_blank" rel="noopener noreferrer">Arcade project notes <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#scope-decisions">Review the process choices</a>
           </div>
         </div>
 
-        <dl class="case-stat-grid" aria-label="Project summary">
-          <div><dt>110</dt><dd>Draft requirements</dd></div>
-          <div><dt>34</dt><dd>User stories with 102 acceptance criteria</dd></div>
-          <div><dt>31</dt><dd>Planned UAT cases; not executed</dd></div>
-          <div><dt>16</dt><dd>Defined KPIs; no measured results</dd></div>
-        </dl>
+        <aside class="scope-note">
+          <h2>What you can review</h2>
+          <p>The proposed ticket lifecycle, process choices, and planning approach are shown below. The full requirements and UAT documents are not included in this public version.</p>
+          <p>My contribution was analysis and planning. ServiceNow is a conceptual platform mapping only.</p>
+        </aside>
       </div>
     </header>
 
@@ -71,7 +70,7 @@
         </div>
         <div class="case-intro-copy">
           <p>In the simulated current state, staff report issues through conversations, paper notes, phone calls, and messages. With information spread across several channels, it is hard to see who owns the work, what is urgent, and whether an issue was fully resolved.</p>
-          <p>The recommended approach is one ticketing process for all five issue types at one location. This keeps the pilot focused while still testing shared routing, approvals, training, and reporting.</p>
+          <p>The proposed pilot covers one location and five issue types, with shared routing, approvals, training, and reporting. Limiting the location keeps the operating boundary clear; including five issue types still introduces different approval and exception paths.</p>
         </div>
       </section>
 
@@ -107,30 +106,30 @@
           <li><strong>Frame the scope</strong><span>Define the problem, pilot boundary, assumptions, stakeholders, and decision rights.</span></li>
           <li><strong>Model the work</strong><span>Compare the simulated current state with a proposed future-state flow and exception paths.</span></li>
           <li><strong>Define controls</strong><span>Set routing, priority, approval, status, security, and closure rules.</span></li>
-          <li><strong>Baseline requirements</strong><span>Document 110 draft requirements, 111 fields, and 20 cross-field validations.</span></li>
-          <li><strong>Trace and plan tests</strong><span>Link 34 stories and 102 acceptance criteria through 31 planned UAT cases.</span></li>
-          <li><strong>Prepare adoption</strong><span>Specify rollout, governance, an employee procedure, 16 KPIs, and three reports.</span></li>
+          <li><strong>Define requirements</strong><span>Describe required information, ownership, and conditional validation rules.</span></li>
+          <li><strong>Plan verification</strong><span>Connect requirements to user stories, acceptance criteria, and planned UAT.</span></li>
+          <li><strong>Prepare adoption</strong><span>Plan rollout, employee instructions, governance, and KPI definitions.</span></li>
         </ol>
       </section>
 
-      <section class="case-band" aria-labelledby="evidence-title">
+      <section class="case-band" id="scope-decisions" aria-labelledby="evidence-title">
         <div class="section case-band-inner">
           <div class="section-heading compact-heading">
-            <p class="eyebrow">Selected evidence</p>
-            <h2 id="evidence-title">The requirements, tests, and rollout materials stay connected.</h2>
+            <p class="eyebrow">Process choices</p>
+            <h2 id="evidence-title">What changes in the proposed workflow.</h2>
           </div>
           <div class="case-feature-grid">
-            <article><span>01</span><h3>Operating rules</h3><p>Forty-two rules define priority, assignment, approvals, pending reasons, safety treatment, resolution, and closure.</p></article>
-            <article><span>02</span><h3>Data controls</h3><p>A 111-field dictionary and 20 cross-field validations clarify required values, ownership, and conditional logic.</p></article>
-            <article><span>03</span><h3>Traceability and UAT</h3><p>The requirements baseline connects to stories, acceptance criteria, and 31 planned UAT cases. All tests remain Not Executed.</p></article>
-            <article><span>04</span><h3>Readiness and measurement</h3><p>The work also covers rollout steps, employee instructions, governance, 16 KPI definitions, and three report specifications.</p></article>
+            <article><span>01</span><h3>A shared record</h3><p>Replace scattered conversations, notes, calls, and messages with a ticket containing category, location, description, and urgency. Staff would have a common place to check the issue.</p></article>
+            <article><span>02</span><h3>Explicit ownership</h3><p>Triage assigns a responsible team and identifies approval needs. Refunds and repairs follow different work paths within the same lifecycle.</p></article>
+            <article><span>03</span><h3>A reason for waiting</h3><p>A pending state records whether parts, vendor input, or customer information is blocking work. A ticket can remain open without making its next dependency invisible.</p></article>
+            <article><span>04</span><h3>Verification before closure</h3><p>Record the resolution, then verify service restoration or customer-facing completion before closing. This adds a check between doing the work and reporting it complete.</p></article>
           </div>
         </div>
       </section>
 
       <section class="section case-scope">
         <div class="scope-card">
-          <p class="eyebrow">Skills demonstrated</p>
+          <p class="eyebrow">Planning methods</p>
           <h2>Business analysis methods used in this case study.</h2>
           <div class="skill-list case-skill-list"><span>Stakeholder analysis</span><span>Current and future-state mapping</span><span>Requirements analysis</span><span>Business rules</span><span>User stories</span><span>Acceptance criteria</span><span>Data definition</span><span>Traceability</span><span>UAT planning</span><span>Implementation planning</span><span>Procedure writing</span><span>KPI design</span></div>
         </div>
@@ -149,12 +148,12 @@
       <section class="section case-methods" aria-labelledby="method-sources-title">
         <div class="section-heading compact-heading">
           <p class="eyebrow">Methods and sources</p>
-          <h2 id="method-sources-title">Official references guided the format, while all project details remain simulated.</h2>
+          <h2 id="method-sources-title">References for the planning approach.</h2>
         </div>
         <div class="project-detail-grid">
           <div><span>Business analysis structure</span><p>I used IIBA's standard to organize the work.</p><a class="project-link case-inline-link" href="https://www.iiba.org/knowledgehub/the-business-analysis-standard/" target="_blank" rel="noopener noreferrer">IIBA Business Analysis Standard <span aria-hidden="true">↗</span></a></div>
           <div><span>Acceptance criteria format</span><p>I wrote scenarios in Given/When/Then format.</p><a class="project-link case-inline-link" href="https://cucumber.io/docs/gherkin/reference/" target="_blank" rel="noopener noreferrer">Cucumber Gherkin reference <span aria-hidden="true">↗</span></a></div>
-          <div><span>Evidence limits</span><p>The numbers on this page count the documents I created. They are not performance results. UAT was planned but not run, and the KPIs were defined but not measured.</p></div>
+          <div><span>Public project summary</span><p>The linked notes summarize scope and methods; they are not the full requirements or test pack.</p><a class="project-link case-inline-link" href="https://github.com/jon314159/JonathanCapalbo.me/blob/main/case-studies/arcade-operations-ticketing-modernization.md" target="_blank" rel="noopener noreferrer">Read summary notes <span aria-hidden="true">↗</span></a></div>
         </div>
       </section>
 

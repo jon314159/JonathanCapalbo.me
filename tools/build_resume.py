@@ -78,8 +78,8 @@ body_style = ParagraphStyle(
     "Body",
     parent=styles["Normal"],
     fontName="Helvetica",
-    fontSize=8.8,
-    leading=10.7,
+    fontSize=9.8,
+    leading=12,
     textColor=colors.black,
     alignment=TA_LEFT,
     spaceAfter=1.5,
@@ -87,16 +87,16 @@ body_style = ParagraphStyle(
 small_style = ParagraphStyle(
     "Small",
     parent=body_style,
-    fontSize=8.35,
-    leading=10,
+    fontSize=9.3,
+    leading=11.4,
     spaceAfter=0.7,
 )
 role_left_style = ParagraphStyle(
     "RoleLeft",
     parent=body_style,
     fontName="Helvetica-Bold",
-    fontSize=9,
-    leading=10.4,
+    fontSize=10,
+    leading=12,
     textColor=INK,
     spaceAfter=0,
 )
@@ -104,8 +104,8 @@ role_right_style = ParagraphStyle(
     "RoleRight",
     parent=body_style,
     fontName="Helvetica",
-    fontSize=8.55,
-    leading=10.4,
+    fontSize=9.3,
+    leading=11.4,
     textColor=MUTED,
     alignment=TA_RIGHT,
     spaceAfter=0,
@@ -114,8 +114,8 @@ meta_left_style = ParagraphStyle(
     "MetaLeft",
     parent=body_style,
     fontName="Helvetica-Oblique",
-    fontSize=8.55,
-    leading=10.1,
+    fontSize=9.3,
+    leading=11.4,
     textColor=MUTED,
     spaceAfter=0,
 )
@@ -127,8 +127,8 @@ meta_right_style = ParagraphStyle(
 bullet_style = ParagraphStyle(
     "Bullet",
     parent=body_style,
-    fontSize=8.65,
-    leading=10.25,
+    fontSize=9.6,
+    leading=11.7,
     leftIndent=10,
     firstLineIndent=-10,
     spaceAfter=0.45,
@@ -276,7 +276,7 @@ def build():
             small_style,
         ),
         Paragraph(
-            "<b>Tools:</b> Excel (tables, cross-sheet formulas, SUMIF/COUNTIF, data validation, conditional formatting) | Power Automate | Microsoft Access | CSG | ServiceNow Knowledge Management and Service Portal (academic project) | SQL and Tableau (coursework)",
+            "<b>Tools:</b> Excel (tables, cross-sheet formulas, SUMIF/COUNTIF, data validation, conditional formatting) | CSG | Power Automate (personal tracking) | ServiceNow Knowledge Management and Service Portal (academic lab) | SQL and Tableau (coursework)",
             small_style,
         ),
         section("PROFESSIONAL EXPERIENCE"),
@@ -324,22 +324,22 @@ def build():
             '<link href="https://jonathancapalbo.me/sales-activity-tracker.html" color="#17233A">Excel Activity Reporting System</link>',
             "Portfolio Case Study | Fictional Data",
             [
-                "Built a 35-sheet Excel reporting system with 31 standardized daily views, centralized settings, and monthly consolidation.",
-                "Added validation controls, configurable goals, and dashboard views to compare results and identify exceptions.",
-            ],
-        ),
-        project(
-            '<link href="https://jonathancapalbo.me/arcade-ticketing-modernization.html" color="#17233A">Arcade Operations Ticketing Modernization</link>',
-            "Self-Directed BA Case Study | Simulated Scenario",
-            [
-                "Designed a five-category ticketing pilot with current- and future-state workflows, 110 draft requirements, 34 user stories, requirements traceability, and 31 planned UAT cases."
+                "Built an Excel workbook with validated daily inputs, cross-sheet monthly consolidation, and dashboard reporting.",
+                "Reconciled source records with dashboard totals and distinguished monthly product goals from a separate daily target.",
             ],
         ),
         project(
             '<link href="https://jonathancapalbo.me/servicenow-njit-registrar.html" color="#17233A">Registrar ServiceNow Portal</link>',
             "Academic Project | ServiceNow Lab",
             [
-                "Configured a searchable portal, organized 42 lab articles into 12 student-facing categories, and revised registration guidance for steps, common errors, and support contacts."
+                "Configured a searchable portal, organized 42 lab articles into 12 categories, and revised registration guidance for steps, common errors, and support contacts."
+            ],
+        ),
+        project(
+            '<link href="https://jonathancapalbo.me/arcade-ticketing-modernization.html" color="#17233A">Arcade Operations Ticketing Modernization</link>',
+            "Self-Directed Planning Study | Hypothetical",
+            [
+                "Proposed a five-category ticket lifecycle covering intake, ownership, approvals, pending work, and verified closure. Scope includes requirements and UAT planning; no implementation or executed tests."
             ],
         ),
         section("EDUCATION"),

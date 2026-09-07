@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Excel Activity Reporting System Case Study | Jonathan Capalbo</title>
-    <meta name="description" content="A controlled Excel workflow with validated daily inputs, formula-driven monthly reporting, and a dashboard that separates total attainment from daily consistency." />
+    <meta name="description" content="An Excel reporting workbook with validated daily inputs, monthly summaries, and clearly defined product and daily targets using fictional data." />
     <meta name="theme-color" content="#0b1f33" />
     <meta property="og:title" content="Excel Activity Reporting System Case Study | Jonathan Capalbo" />
     <meta property="og:description" content="A 35-sheet fictional Excel reporting system with consistent inputs, monthly rollups, reconciled metrics, and clear goal comparisons." />
@@ -21,7 +21,7 @@
     <meta name="twitter:image:alt" content="Fictional Excel dashboard with KPI cards and goal-comparison charts" />
     <link rel="canonical" href="https://jonathancapalbo.me/sales-activity-tracker.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/css/style.css?v=48" />
+    <link rel="stylesheet" href="assets/css/style.css?v=49" />
   </head>
   <body class="case-study-page sales-case-page">
     <a class="skip-link" href="#case-content">Skip to content</a>
@@ -43,7 +43,7 @@
         <div class="case-hero-copy">
           <p class="eyebrow">Excel reporting system · Fictional data</p>
           <h1>An Excel workflow for <em>daily records and monthly reporting.</em></h1>
-          <p class="case-lede">I built a 35-sheet Excel system that standardizes daily activity, combines 31 daily views, and compares results with editable goals. In the fictional demonstration, aggregate product goals reached 104.5%, but only 14 of 31 days met the daily unit target.</p>
+          <p class="case-lede">I built an Excel workbook that connects daily activity records to monthly reporting. The fictional example compares product-goal attainment with a separate daily target. Inspect the formulas, input controls, and reconciliations behind both views.</p>
           <div class="button-row">
             <a class="button button-primary" href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download demo workbook <span aria-hidden="true">↓</span></a>
             <a class="button button-secondary" href="#analysis">Read the workbook analysis</a>
@@ -56,12 +56,6 @@
             <div class="sales-hero-crop"><img src="assets/images/sales-activity-dashboard.png" width="1107" height="1090" decoding="async" alt="Fictional Excel dashboard showing monthly KPI cards and goal-comparison charts" /></div>
             <figcaption>Actual workbook dashboard using fabricated portfolio data.</figcaption>
           </figure>
-          <dl class="sales-proof-grid" aria-label="Verified workbook scope">
-            <div><dt>35</dt><dd>Workbook sheets</dd></div>
-            <div><dt>2,231</dt><dd>Formula cells</dd></div>
-            <div><dt>32</dt><dd>Excel tables</dd></div>
-            <div><dt>2,480</dt><dd>Cells covered by validation</dd></div>
-          </dl>
         </div>
       </div>
     </header>
@@ -70,15 +64,15 @@
       <section class="section sales-analysis-section" id="analysis">
         <div class="sales-analysis-heading">
           <p class="eyebrow">The reporting question</p>
-          <h2>Did the month perform consistently, or only in total?</h2>
-          <p>Separate daily logs preserve operational detail, but totals alone can hide volatility. The model keeps both views connected so a reviewer can compare overall attainment with day-to-day execution.</p>
+          <h2>Which target are we measuring against?</h2>
+          <p>The workbook has independently editable monthly product goals and a daily completed-unit target. These answer different questions and should not be treated as equivalent goals.</p>
         </div>
         <div class="sales-result-panel">
           <div class="sales-result-contrast">
-            <article><span>Aggregate attainment</span><strong>104.5%</strong><p>324 completed units against 310 combined product-goal units.</p></article>
-            <article><span>Daily consistency</span><strong>14 / 31</strong><p>Days that met the daily goal; 17 days finished below it.</p></article>
+            <article><span>Monthly product attainment</span><strong>104.5%</strong><p>324 completed units ÷ 310 combined product-goal units.</p></article>
+            <article><span>Days meeting the daily target</span><strong>14 / 31</strong><p>Days with at least 11 completed units; 17 days were below that threshold.</p></article>
           </div>
-          <p class="sales-finding">All four fictional product totals exceeded their monthly goals. Daily results still varied: 17 days finished below the 11-unit daily target.</p>
+          <p class="sales-finding">The daily target implies 341 units over 31 days (11 × 31), compared with 310 units in the monthly product goals. Against that 341-unit benchmark, the same 324 units represent 95.0% attainment. The target difference helps explain the contrast; it does not by itself establish a performance problem.</p>
           <dl class="sales-mini-metrics" aria-label="Fictional demonstration totals">
             <div><dt>465</dt><dd>Activities</dd></div>
             <div><dt>324</dt><dd>Completed units</dd></div>
@@ -129,7 +123,7 @@
           <p class="eyebrow">Decision view</p>
           <h2 id="tracker-preview-title">The dashboard answers three different review questions.</h2>
           <ol class="sales-question-list">
-            <li><span>01</span><div><strong>Is the daily process consistent?</strong><p>The line chart and status count show 14 days at goal and 17 below.</p></div></li>
+            <li><span>01</span><div><strong>Which days missed the daily target?</strong><p>The line chart and status count show 14 days at or above 11 units and 17 below.</p></div></li>
             <li><span>02</span><div><strong>Which products are driving variance?</strong><p>All four finished above goal; Optional Add-on had the largest positive variance at +6 units, or 108.1% attainment.</p></div></li>
             <li><span>03</span><div><strong>Do the totals reconcile?</strong><p>Product units sum to 324, matching completed units, while product points sum to 402.5.</p></div></li>
           </ol>
@@ -145,7 +139,7 @@
         <div class="section-heading compact-heading sales-decisions-heading">
           <p class="eyebrow">Design decisions</p>
           <h2>How the workbook controls support review.</h2>
-          <p>Each decision connects a workbook mechanism to a review or handoff need.</p>
+          <p>Settings hold assumptions; daily tables hold records; formulas consolidate the results.</p>
         </div>
         <div class="sales-decision-table-wrap">
           <table class="sales-decision-table">
@@ -171,7 +165,7 @@
               <li><span>01</span><p><strong>Unit reconciliation</strong> Four product totals sum to 324, matching completed units.</p></li>
               <li><span>02</span><p><strong>Point reconciliation</strong> Product-level points sum to the 402.5 dashboard total.</p></li>
               <li><span>03</span><p><strong>Status reconciliation</strong> 14 Met plus 17 Below accounts for all 31 days.</p></li>
-              <li><span>04</span><p><strong>Record consistency</strong> 95 Follow-up outcomes match 95 Yes follow-up flags.</p></li>
+              <li><span>04</span><p><strong>Follow-up consistency</strong> 95 Follow-up outcomes match 95 Yes flags. Sample notes agree with each row's outcome and flag.</p></li>
             </ol>
           </div>
           <aside class="sales-tradeoff-card">
@@ -180,6 +174,14 @@
             <p>The structure keeps each day easy to isolate and review, matching the intended workflow. The trade-off is maintenance: repeated tabs are less scalable than one normalized activity table.</p>
             <div><strong>Next iteration</strong><span>Use one date-driven source table with PivotTables or Power Query, add sheet protection, and expand exception reporting.</span></div>
           </aside>
+        </div>
+      </section>
+
+      <section class="section case-intro" aria-labelledby="next-review-title">
+        <div><p class="eyebrow">Recommendation</p><h2 id="next-review-title">Confirm the goals before explaining the shortfall.</h2></div>
+        <div class="case-intro-copy">
+          <p>First, confirm whether the monthly product goals and daily target are meant to differ. Then compare activity volume and completed units on below-target days before proposing a process change.</p>
+          <p>This fictional sample can demonstrate those checks, but it cannot establish causes such as staffing, demand, or employee performance. A real review would need that operating context.</p>
         </div>
       </section>
 

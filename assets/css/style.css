@@ -244,6 +244,8 @@ nav .nav-resume:hover { color: #fff; background: var(--blue); }
   line-height: 1.55;
 }
 
+.hero-location { color: var(--muted); font-size: 0.92rem; }
+
 .button-row {
   display: flex;
   flex-wrap: wrap;
@@ -700,7 +702,7 @@ nav .nav-resume:hover { color: #fff; background: var(--blue); }
 
 .project-card:hover { border-color: rgba(255, 255, 255, 0.26); }
 .project-card h3 { max-width: 520px; color: #fff; font-size: clamp(1.65rem, 3vw, 2.35rem); }
-.project-card > p:not(.project-label) { color: #b8c5d0; }
+.project-card p:not(.project-label) { color: #b8c5d0; }
 .project-card .project-label { color: var(--lime); }
 
 .project-card .tag-row span { color: #cdd9e3; }
@@ -727,12 +729,16 @@ nav .nav-resume:hover { color: #fff; background: var(--blue); }
 
 .skill-groups article {
   display: grid;
-  grid-template-columns: 270px 1fr;
+  grid-template-columns: 220px minmax(0, 1fr) 190px;
   gap: 30px;
   align-items: center;
   padding: 26px 0;
   border-bottom: 1px solid var(--line);
 }
+
+.skill-groups p { margin: 0; }
+.skill-groups .project-link { margin: 0; color: var(--blue-dark); }
+.coursework-note { margin-top: 24px; color: var(--muted); }
 
 .skill-index { margin: 0; color: var(--muted); }
 

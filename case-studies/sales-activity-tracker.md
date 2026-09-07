@@ -37,14 +37,16 @@ Changing a fictional product name updates connected labels and the available dro
 
 ## Demonstration finding
 
-The fictional month exceeded aggregate product goals while daily consistency remained uneven:
+The fictional workbook uses separate monthly product goals and a daily target:
 
 - 324 completed units against 310 combined product-goal units, or **104.5%** attainment;
 - 402.5 points against a 400-point goal, or **100.6%** attainment;
 - all four product totals finished above their configured goals; and
 - only 14 of 31 days met the daily unit goal, while 17 finished below it.
 
-This distinction is the main analytical value of the model: a strong monthly total does not necessarily mean the daily operating pattern was consistent.
+The monthly product goals total 310 units. The separate daily target is 11 units, implying 341 units across 31 days. The same 324 completed units represent 95.0% of that 341-unit benchmark. These independently editable targets are not equivalent, so the contrast cannot by itself establish a performance problem.
+
+Before recommending a process change, confirm the intended relationship between the targets, then compare activity volume and completed units on below-target days. The fictional data does not establish causes such as staffing, demand, or employee performance.
 
 ## Validation checks
 
@@ -52,6 +54,7 @@ This distinction is the main analytical value of the model: a strong monthly tot
 - Product-level points reconcile to the 402.5 dashboard total.
 - Fourteen Met days plus 17 Below days account for all 31 days.
 - Ninety-five Follow-up outcomes reconcile to 95 Yes follow-up flags.
+- Sample notes agree with their row's outcome and follow-up flag. Notes were corrected during the September 2026 portfolio review without changing numeric records or formulas.
 
 ## Design trade-off
 

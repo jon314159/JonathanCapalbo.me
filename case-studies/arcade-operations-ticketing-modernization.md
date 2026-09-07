@@ -12,18 +12,20 @@ In the simulated current state, staff report broken machines, game-card issues, 
 
 Use one internal ticketing process for all five issue types at one location. The process would standardize intake, route work by category and urgency, apply approval controls, record status history, verify resolution, and create a reporting baseline. Emergency response always takes priority over ticket entry.
 
-## Analyst deliverables
+## Planning coverage
+
+This public summary describes the planning scope. The full requirements baseline, user stories, and UAT pack are not included here. Review the proposed lifecycle and process choices on the [case-study page](https://jonathancapalbo.me/arcade-ticketing-modernization.html).
 
 - Problem statement, project charter, stakeholder analysis, and scope
 - Simulated current-state and proposed future-state workflows
-- 110 draft functional, data, reporting, security, and nonfunctional requirements
-- 34 user stories with 102 Given/When/Then acceptance criteria
-- 111-field data dictionary with 20 cross-field validation rules
-- Requirements traceability through 31 planned UAT cases
+- Functional, data, reporting, security, and nonfunctional requirements planning
+- User stories and Given/When/Then acceptance criteria
+- Data definitions and cross-field validation rules
+- Requirements traceability and UAT planning
 - Implementation and cutover plan, employee procedure, and governance model
-- 16 KPI definitions and three report specifications
+- KPI definitions and report planning
 
-All 31 UAT cases remain **Not Executed**. No implementation outcomes, time savings, adoption results, or operational improvements are claimed.
+UAT remains **Not Executed**. No implementation outcomes, time savings, adoption results, or operational improvements are claimed.
 
 ## Proposed lifecycle
 

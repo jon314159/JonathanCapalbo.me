@@ -284,21 +284,21 @@ def build():
             [
                 role_header(
                     "Customer Account Executive",
-                    "April 2022 - Present",
+                    "April 2022 - September 2026",
                     "Comcast / Xfinity",
                     "Remote",
                 ),
                 bullet(
-                    "Manage about 25 customer interactions daily, more than 5,000 annually, reviewing customer records and available options to identify appropriate actions."
+                    "Managed about 25 customer interactions daily, more than 5,000 annually, reviewing customer records and available options to identify appropriate actions."
                 ),
                 bullet(
-                    "Investigate customer-record, policy, procedure, and system questions using current resources and internal support partners."
+                    "Investigated customer-record, policy, procedure, and system questions using current resources and internal support partners."
                 ),
                 bullet(
-                    "Maintain accurate records in CSG and other internal systems, documenting decisions, follow-up, and cross-team handoffs."
+                    "Maintained accurate records in CSG and other internal systems, documenting decisions, follow-up, and cross-team handoffs."
                 ),
                 bullet(
-                    "Use Microsoft Power Automate to organize my recurring tracking and follow-up."
+                    "Used Microsoft Power Automate to organize recurring tracking and follow-up."
                 ),
                 Spacer(1, 1.5),
             ]

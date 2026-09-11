@@ -22,6 +22,7 @@
     <link rel="canonical" href="https://jonathancapalbo.me/arcade-ticketing-modernization.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/style.css?v=49" />
+    <style>#ba-documents strong a { display: inline-flex; align-items: center; min-height: 44px; }</style>
   </head>
   <body class="case-study-page">
     <a class="skip-link" href="#case-content">Skip to content</a>
@@ -56,7 +57,8 @@
 
         <aside class="scope-note">
           <h2>What you can review</h2>
-          <p>The proposed ticket lifecycle, process choices, and planning approach are shown below. The full requirements and UAT documents are not included in this public version.</p>
+          <p>Review the process comparison, requirements register, acceptance criteria, planned tests, and traceability sample in the public evidence pack.</p>
+          <a href="arcade-ticketing-evidence.html">Read the BA documents</a>
           <p>My contribution was analysis and planning. ServiceNow is a conceptual platform mapping only.</p>
         </aside>
       </div>
@@ -127,6 +129,22 @@
         </div>
       </section>
 
+      <section class="section" id="ba-documents" aria-labelledby="ba-documents-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Public evidence pack</p>
+          <h2 id="ba-documents-title">Review the decisions behind the ticketing plan.</h2>
+          <p>These proposed artifacts expand the fictional scenario into reviewable rules and test scenarios. They have not been approved by real stakeholders or tested in a configured system.</p>
+        </div>
+        <ol class="arcade-analysis-path">
+          <li><strong><a href="arcade-ticketing-evidence.html#process-comparison">Process comparison</a></strong><span>Current and proposed workflows, responsible roles, and exception paths.</span></li>
+          <li><strong><a href="arcade-ticketing-evidence.html#requirements">Requirements register</a></strong><span>Ten proposed requirements with rationale, priority, and review ownership.</span></li>
+          <li><strong><a href="arcade-ticketing-evidence.html#acceptance-criteria">Acceptance criteria</a></strong><span>Given/When/Then scenarios linked to each requirement.</span></li>
+          <li><strong><a href="arcade-ticketing-evidence.html#planned-tests">Planned tests</a></strong><span>Fourteen UAT scenarios with setup, actions, and expected results. All are Not Executed.</span></li>
+          <li><strong><a href="arcade-ticketing-evidence.html#traceability">Traceability sample</a></strong><span>Follow a process need through its requirement, acceptance criteria, and planned tests.</span></li>
+        </ol>
+        <div class="button-row"><a class="button button-primary" href="arcade-ticketing-evidence.html">Open the evidence pack</a><a class="button button-secondary" href="arcade-ticketing-evidence.html" download="arcade-ticketing-evidence.html">Download the pack (HTML)</a></div>
+      </section>
+
       <section class="section case-scope">
         <div class="scope-card">
           <p class="eyebrow">Planning methods</p>
@@ -153,7 +171,7 @@
         <div class="project-detail-grid">
           <div><span>Business analysis structure</span><p>I used IIBA's standard to organize the work.</p><a class="project-link case-inline-link" href="https://www.iiba.org/knowledgehub/the-business-analysis-standard/" target="_blank" rel="noopener noreferrer">IIBA Business Analysis Standard <span aria-hidden="true">↗</span></a></div>
           <div><span>Acceptance criteria format</span><p>I wrote scenarios in Given/When/Then format.</p><a class="project-link case-inline-link" href="https://cucumber.io/docs/gherkin/reference/" target="_blank" rel="noopener noreferrer">Cucumber Gherkin reference <span aria-hidden="true">↗</span></a></div>
-          <div><span>Public project summary</span><p>The linked notes summarize scope and methods; they are not the full requirements or test pack.</p><a class="project-link case-inline-link" href="https://github.com/jon314159/JonathanCapalbo.me/blob/main/case-studies/arcade-operations-ticketing-modernization.md" target="_blank" rel="noopener noreferrer">Read summary notes <span aria-hidden="true">↗</span></a></div>
+          <div><span>Public project summary</span><p>The summary notes describe the scope and methods. The public evidence pack above contains the proposed requirements and planned tests.</p><a class="project-link case-inline-link" href="https://github.com/jon314159/JonathanCapalbo.me/blob/main/case-studies/arcade-operations-ticketing-modernization.md" target="_blank" rel="noopener noreferrer">Read summary notes <span aria-hidden="true">↗</span></a></div>
         </div>
       </section>
 

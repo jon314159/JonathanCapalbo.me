@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arcade Ticketing: BA Evidence Pack | Jonathan Capalbo</title>
+  <meta name="description" content="Hypothetical arcade ticketing process comparison, requirements register, acceptance criteria, planned UAT tests, and traceability sample.">
+  <link rel="canonical" href="https://jonathancapalbo.me/arcade-ticketing-evidence.html">
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; color: #0b1f33; background: #f2f0e9; line-height: 1.65; }
+    * { box-sizing: border-box; }
+    body { margin: 0; overflow-wrap: anywhere; }
+    header, main, footer { max-width: 76rem; margin: auto; padding: 2rem; }
+    header { padding-top: 3rem; }
+    h1, h2 { font-family: Georgia, serif; line-height: 1.15; font-weight: 500; }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); max-width: 20ch; margin: .6em 0; }
+    h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
+    h3 { font-size: 1.15rem; }
+    p, li { max-width: 85ch; }
+    a { color: #2147be; text-underline-offset: .2em; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid #2147be; outline-offset: 4px; }
+    .skip { position: absolute; left: 1rem; top: -5rem; background: white; padding: .6rem; }
+    .skip:focus { top: 0; }
+    .meta { font-weight: 650; }
+    .disclosure { background: #0b1f33; color: #fff; padding: 1.2rem 1.5rem; }
+    nav ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
+    nav a, .utility a { display: inline-block; min-height: 44px; padding: .5rem 0; }
+    section { padding: 1rem 0 2.5rem; border-top: 1px solid #a3abb0; scroll-margin-top: 1rem; }
+    article { margin: 1.6rem 0; scroll-margin-top: 1rem; }
+    table { border-collapse: collapse; width: 100%; margin: 1.5rem 0; font-size: .95rem; }
+    caption { text-align: left; font-weight: 650; margin-bottom: .6rem; }
+    th, td { text-align: left; vertical-align: top; padding: .9rem; border-bottom: 1px solid #a3abb0; overflow-wrap: anywhere; }
+    thead { background: #0b1f33; color: white; }
+    tbody th { min-width: 7rem; }
+    td p { margin: 0 0 .6rem; }
+    .register td:first-of-type { min-width: 15rem; }
+    .test-list { padding-left: 1.4rem; }
+    .test-list li { padding: .5rem 0; scroll-margin-top: 1rem; }
+    .status { font-weight: 650; }
+    #traceability td a { display: inline-block; min-width: 44px; min-height: 44px; padding: .5rem .2rem; }
+    footer { border-top: 1px solid #a3abb0; }
+    @media (max-width: 760px) {
+      header, main, footer { padding: 1.2rem; }
+      table, tbody, tr, td, tbody th { display: block; width: 100%; }
+      thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+      thead th { padding: 0; font-size: 1px; }
+      tbody tr { padding: .6rem 0; border-bottom: 2px solid #0b1f33; }
+      tbody th { background: #0b1f33; color: white; }
+      tbody th a { color: white; }
+      tbody th a:focus-visible { outline-color: white; }
+      td::before { content: attr(data-label); display: block; font-weight: 700; margin-bottom: .3rem; }
+      td { border: 0; padding: .6rem; }
+      .register td:first-of-type { min-width: 0; }
+      nav ul { display: block; }
+      nav li { margin: .3rem 0; }
+    }
+    @media print {
+      :root { background: white; font-size: 10pt; }
+      header, main, footer { max-width: none; padding: 0; }
+      .skip, nav, .utility { display: none; }
+      a { color: #0b1f33; }
+      section { break-before: page; }
+      tr, article, .test-list li { break-inside: avoid; }
+      .disclosure { color: #0b1f33; background: white; border: 1px solid; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#documents">Skip to documents</a>
+  <header>
+    <p class="utility"><a href="https://jonathancapalbo.me/arcade-ticketing-modernization.html">Back to the arcade case study</a></p>
+    <p class="meta">Jonathan Capalbo · Portfolio evidence · Version 1.0 · September 11, 2026</p>
+    <h1>Arcade ticketing: the BA evidence pack.</h1>
+    <p>Five connected artifacts show how a shared ticket could move from a staff report to verified closure at one fictional arcade location.</p>
+    <div class="disclosure"><strong>Hypothetical proposal, prepared for portfolio review.</strong><p>These documents expand the published case-study scenario. Roles, requirements, examples, and controls are proposed assumptions, not findings from real stakeholder interviews. No software was configured, no UAT was executed, and no operational results are claimed. ServiceNow remains a conceptual mapping.</p></div>
+    <p class="utility"><a href="https://jonathancapalbo.me/arcade-ticketing-evidence.html" download="arcade-ticketing-evidence.html">Download this pack (HTML)</a> · The downloaded file includes its styles and can be read offline. Use your browser's Print command for a paper copy.</p>
+    <nav aria-label="Evidence pack contents"><ul>
+      <li><a href="#process-comparison">1. Process comparison</a></li>
+      <li><a href="#requirements">2. Requirements register</a></li>
+      <li><a href="#acceptance-criteria">3. Acceptance criteria</a></li>
+      <li><a href="#planned-tests">4. Planned tests</a></li>
+      <li><a href="#traceability">5. Traceability sample</a></li>
+    </ul></nav>
+  </header>
+  <main id="documents">
+    <section id="process-comparison" aria-labelledby="process-title">
+      <h2 id="process-title">1. Process comparison</h2>
+      <p><strong>Scope:</strong> broken machines, game-card issues, refunds, prize-counter problems, and facility incidents at one location. Payment processing, customer self-service, integrations, and software configuration are outside this pack.</p>
+      <p><strong>Safety first:</strong> for an immediate hazard, staff would secure the area and follow the emergency procedure before documenting the incident when safe. The ticket would record the response; it would not replace it.</p>
+      <table><caption>Simulated current state and proposed future state</caption><thead><tr><th scope="col">Step / need</th><th scope="col">Simulated current state</th><th scope="col">Proposed future state and role</th><th scope="col">Control / exception</th></tr></thead><tbody>
+        <tr><th scope="row">P-01 Intake</th><td data-label="Current">Staff use conversations, paper, calls, and messages; required details vary.</td><td data-label="Proposed">Reporting staff capture category, location, description, and urgency in one ticket.</td><td data-label="Control">Reject incomplete intake. Record immediate-hazard response after the area is safe.</td></tr>
+        <tr><th scope="row">P-02 Triage</th><td data-label="Current">Urgency and responsibility depend on who hears the report.</td><td data-label="Proposed">Shift lead confirms impact and priority, then assigns a team and named owner.</td><td data-label="Control">Unclear routing remains with the shift lead until an owner accepts it; safety concerns get immediate operational attention.</td></tr>
+        <tr><th scope="row">P-03 Work and approval</th><td data-label="Current">Work and refund decisions may be communicated outside the original report.</td><td data-label="Proposed">Owner records investigation and actions. An authorized manager approves or rejects a refund before fulfillment is recorded.</td><td data-label="Control">Requester cannot approve their own refund. Rejection records a reason and customer communication.</td></tr>
+        <tr><th scope="row">P-04 Pending</th><td data-label="Current">Parts, vendor, and customer dependencies are difficult to distinguish from idle work.</td><td data-label="Proposed">Owner records the dependency, next action, and review date while retaining ownership.</td><td data-label="Control">Shift lead reviews overdue pending tickets; receipt of the dependency returns work to In Progress.</td></tr>
+        <tr><th scope="row">P-05 Resolve and verify</th><td data-label="Current">A verbal completion update may be the only evidence that an issue was fixed.</td><td data-label="Proposed">Owner records the resolution. Shift lead verifies restoration or customer-facing completion before closure.</td><td data-label="Control">Failed verification returns the ticket to In Progress with a reason. Resolved is not the same as Closed.</td></tr>
+        <tr><th scope="row">P-06 History and reporting</th><td data-label="Current">Scattered reports make backlog and completion measures inconsistent.</td><td data-label="Proposed">System preserves dated changes and shows ticket-level backlog and closure counts to authorized managers.</td><td data-label="Control">Closed history remains intact. A recurring issue creates a linked new ticket rather than overwriting the old record.</td></tr>
+      </tbody></table>
+      <h3>Proposed routing and status rules</h3>
+      <p>Machine issues route to maintenance; game-card and prize-counter issues to guest services; refunds to the shift lead for manager approval; facility incidents to facilities. These are role assumptions for validation in discovery. The shift lead owns unassigned tickets and reassignment decisions.</p>
+      <p><strong>Lifecycle:</strong> New → Triaged → Assigned → In Progress → Resolved → Closed. Pending is an optional branch from In Progress and returns there when work resumes. Approval is a separate decision field; a refund awaiting approval stays In Progress. Failed verification returns Resolved to In Progress.</p>
+      <p><strong>Proposed priority definitions:</strong> Critical = immediate safety concern, with emergency response first; High = service unavailable with no workaround; Normal = degraded service or an available workaround. These labels define triage order only. Response-time targets require stakeholder agreement.</p>
+    </section>
+    <section id="requirements" aria-labelledby="requirements-title">
+      <h2 id="requirements-title">2. Requirements register</h2>
+      <p>All entries are <strong>Proposed / awaiting stakeholder review</strong>. Must = needed for the proposed pilot controls; Should = useful for pilot evaluation. Review roles below are fictional responsibilities, not recorded approvals.</p>
+      <table class="register"><caption>Proposed pilot requirements</caption><thead><tr><th scope="col">ID / type</th><th scope="col">Requirement</th><th scope="col">Rationale</th><th scope="col">Priority / review role</th></tr></thead><tbody>
+        <tr id="req-01"><th scope="row">REQ-01<br>Data</th><td data-label="Requirement">Require one of the five categories, a location, a nonblank description, and urgency on submission. Assign a unique ticket ID, reporter, and created timestamp.</td><td data-label="Rationale">P-01: give each report a usable common record.</td><td data-label="Priority / reviewer">Must · Shift lead</td></tr>
+        <tr id="req-02"><th scope="row">REQ-02<br>Safety</th><td data-label="Requirement">Display the emergency-first instruction at intake. For an immediate-hazard report entered when safe, require response notes and shift-lead acknowledgment before resolution.</td><td data-label="Rationale">P-01: keep ticketing subordinate to emergency response.</td><td data-label="Priority / reviewer">Must · Operations manager</td></tr>
+        <tr id="req-03"><th scope="row">REQ-03<br>Workflow</th><td data-label="Requirement">Record confirmed impact, priority, team, and named owner before In Progress. Log reassignment actor, time, and reason. Keep unclear routing with the shift lead.</td><td data-label="Rationale">P-02: prevent work from becoming ownerless.</td><td data-label="Priority / reviewer">Must · Shift lead</td></tr>
+        <tr id="req-04"><th scope="row">REQ-04<br>Approval</th><td data-label="Requirement">For refunds, require a transaction reference, positive requested amount, and reason. An authorized manager other than the requester must record a decision and approved amount before fulfillment; reject fulfillment above that amount.</td><td data-label="Rationale">P-03: make authorization separate from fulfillment.</td><td data-label="Priority / reviewer">Must · Operations manager</td></tr>
+        <tr id="req-05"><th scope="row">REQ-05<br>Workflow</th><td data-label="Requirement">Allow Pending only with a reason (parts, vendor, or customer input), next action, review date, and retained owner. Flag it for the shift lead when that date has passed.</td><td data-label="Rationale">P-04: make blocked work reviewable.</td><td data-label="Priority / reviewer">Must · Shift lead</td></tr>
+        <tr id="req-06"><th scope="row">REQ-06<br>Closure</th><td data-label="Requirement">Require action notes and a resolution code (restored, fulfilled, declined, or duplicate) to resolve. Require shift-lead verification, verifier, and timestamp to close. Failed verification must return to In Progress with a reason.</td><td data-label="Rationale">P-05: distinguish an attempted fix from confirmed completion.</td><td data-label="Priority / reviewer">Must · Shift lead</td></tr>
+        <tr id="req-07"><th scope="row">REQ-07<br>Audit</th><td data-label="Requirement">Preserve actor, timestamp, old value, and new value for status, ownership, and approval changes. Prevent staff from editing history or closed records; create a linked new record for recurrence.</td><td data-label="Rationale">P-06: preserve the basis for review and reporting.</td><td data-label="Priority / reviewer">Must · Platform owner</td></tr>
+        <tr id="req-08"><th scope="row">REQ-08<br>Access</th><td data-label="Requirement">Staff may view their own reports and tickets assigned to their team; shift leads and authorized managers may view location-wide tickets. Restrict refund decisions to authorized managers. Use transaction references, never full payment-card numbers.</td><td data-label="Rationale">P-03 / P-06: restrict sensitive work and unnecessary data collection.</td><td data-label="Priority / reviewer">Must · Security reviewer</td></tr>
+        <tr id="req-09"><th scope="row">REQ-09<br>Reporting</th><td data-label="Requirement">Show counts by category, owner, and status as of a displayed refresh time. Open backlog includes every status except Closed. Period closures use closed timestamp and the half-open interval [start, end), in the agreed location time zone.</td><td data-label="Rationale">P-06: provide reproducible backlog and closure measures.</td><td data-label="Priority / reviewer">Should · Operations manager</td></tr>
+        <tr id="req-10"><th scope="row">REQ-10<br>Usability</th><td data-label="Requirement">Allow keyboard-only intake and correction. Identify invalid fields in text, associate each message with its field, and retain valid entries after a validation error.</td><td data-label="Rationale">P-01: help staff complete intake without losing work.</td><td data-label="Priority / reviewer">Must · Staff representative</td></tr>
+      </tbody></table>
+      <h3>Decisions still open</h3>
+      <p>Real discovery must confirm role membership, refund authority limits and currency, location time zone, retention periods, escalation timing, service targets, outage procedures, and the system of record for financial transactions. This sample does not define a production security model or integration design.</p>
+    </section>
+    <section id="acceptance-criteria" aria-labelledby="criteria-title">
+      <h2 id="criteria-title">3. User stories and acceptance criteria</h2>
+      <p>Given/When/Then statements describe proposed observable behavior. They are specifications, not executed automated tests.</p>
+      <article id="ac-01"><h3>AC-01 · Complete intake · REQ-01</h3><p><strong>Story:</strong> As reporting staff, I want one identifiable report so the next person can act on it.</p><p><strong>Given</strong> an intake form, <strong>when</strong> I submit an invalid category or omit a required value, <strong>then</strong> submission is blocked with a field-specific error. <strong>Given</strong> valid values, <strong>when</strong> I submit, <strong>then</strong> the record has a unique ID, reporter, created timestamp, and the supplied values.</p></article>
+      <article id="ac-02"><h3>AC-02 · Document safety response · REQ-02</h3><p><strong>Story:</strong> As a shift lead, I want emergency handling documented without delaying the response.</p><p><strong>Given</strong> intake is open, <strong>then</strong> an emergency-first instruction is visible. <strong>Given</strong> a hazard report entered when safe, <strong>when</strong> response notes or shift-lead acknowledgment are missing, <strong>then</strong> resolution is blocked; after both are recorded, ordinary resolution checks apply.</p></article>
+      <article id="ac-03"><h3>AC-03 · Own the work · REQ-03</h3><p><strong>Story:</strong> As a shift lead, I want an accountable owner for each active issue.</p><p><strong>Given</strong> an untriaged ticket, <strong>when</strong> impact, priority, team, or owner is absent, <strong>then</strong> In Progress is blocked. <strong>Given</strong> all are present, <strong>when</strong> the shift lead starts work or reassigns it with a reason, <strong>then</strong> the current owner is visible and the change is dated and attributed.</p></article>
+      <article id="ac-04"><h3>AC-04 · Authorize a refund · REQ-04</h3><p><strong>Story:</strong> As an operations manager, I want refund authorization recorded before fulfillment.</p><p><strong>Given</strong> a refund with a transaction reference, positive requested amount, and reason, <strong>when</strong> an authorized manager other than its requester approves an amount, <strong>then</strong> fulfillment may be recorded up to that amount. Missing details, self-approval, no approval, a declined decision, or an amount above approval must block fulfillment.</p></article>
+      <article id="ac-05"><h3>AC-05 · Review blocked work · REQ-05</h3><p><strong>Story:</strong> As an owner, I want a documented dependency so a waiting ticket is not forgotten.</p><p><strong>Given</strong> In Progress, <strong>when</strong> I select Pending without its reason, next action, or review date, <strong>then</strong> the change is blocked. With all fields present, Pending retains my ownership. <strong>When</strong> the review date passes, <strong>then</strong> the ticket is flagged to the shift lead; when the dependency arrives, work can return to In Progress.</p></article>
+      <article id="ac-06"><h3>AC-06 · Verify before closure · REQ-06</h3><p><strong>Story:</strong> As a shift lead, I want evidence that the issue is complete before closing it.</p><p><strong>Given</strong> action notes and a valid resolution code, <strong>when</strong> the owner resolves the ticket, <strong>then</strong> it remains Resolved until shift-lead verification. Missing resolution fields or verification block their respective transitions. Successful verification records verifier and time and allows Closed; failure requires a reason and returns it to In Progress.</p></article>
+      <article id="ac-07"><h3>AC-07 · Preserve history · REQ-07</h3><p><strong>Story:</strong> As a reviewer, I want prior decisions preserved so I can reconstruct what happened.</p><p><strong>Given</strong> a changed status, owner, or approval, <strong>when</strong> I inspect history, <strong>then</strong> I see actor, time, and old and new values. <strong>When</strong> staff try to edit history or a Closed record, <strong>then</strong> the write is denied. A recurring issue can be recorded as a new ticket linked to the original.</p></article>
+      <article id="ac-08"><h3>AC-08 · Restrict access · REQ-08</h3><p><strong>Story:</strong> As a staff member, I want access appropriate to my assigned work.</p><p><strong>Given</strong> a staff account, <strong>when</strong> it requests a ticket neither reported by it nor assigned to its team, <strong>then</strong> access is denied, including by direct record URL. Its own and team records remain readable. Location-wide access is available to shift leads and authorized managers; only an authorized manager can record a refund decision. Intake requests a transaction reference and warns against recording full payment-card numbers.</p></article>
+      <article id="ac-09"><h3>AC-09 · Reconcile reporting · REQ-09</h3><p><strong>Story:</strong> As an operations manager, I want counts I can reconcile to individual tickets.</p><p><strong>Given</strong> a controlled set of dated tickets, <strong>when</strong> I run the report, <strong>then</strong> displayed group totals reconcile to included records, Resolved and Pending remain in open backlog, only Closed records count as closed, and the refresh time is shown. Closures at the period start are included; closures exactly at its end are excluded.</p></article>
+      <article id="ac-10"><h3>AC-10 · Correct intake errors · REQ-10</h3><p><strong>Story:</strong> As reporting staff using a keyboard, I want to correct errors without re-entering valid information.</p><p><strong>Given</strong> keyboard-only input, <strong>when</strong> I submit with a required value missing, <strong>then</strong> I can reach and correct the field, its error is programmatically associated and visible in text, and valid entries remain. <strong>When</strong> I resubmit, <strong>then</strong> the valid ticket is saved with a visible confirmation.</p></article>
+    </section>
+    <section id="planned-tests" aria-labelledby="tests-title">
+      <h2 id="tests-title">4. Planned UAT tests</h2>
+      <p class="status">Every test below: Not Executed. Actual result, evidence, tester, and execution date: not recorded.</p>
+      <p><strong>Prerequisites:</strong> a configured test environment implementing the proposed rules; synthetic tickets only; staff, second-team staff, shift-lead, and manager test accounts. A future tester would record actual results and evidence against each ID, log defects, and rerun failed cases. These materials alone do not demonstrate acceptance.</p>
+      <ol class="test-list">
+        <li id="uat-01"><strong>UAT-01 · Valid intake · AC-01.</strong> Setup: staff account and valid inputs for each of the five categories. Action: submit one record per category. Expected: five distinct IDs, correct input values, reporter, and timestamps.</li>
+        <li id="uat-02"><strong>UAT-02 · Invalid intake · AC-01, AC-10.</strong> Setup: a populated draft. Action: submit once for each omitted required field, a whitespace-only description, and an unsupported category. Expected: each invalid submission is blocked, the relevant field has a textual error, and valid input is retained.</li>
+        <li id="uat-03"><strong>UAT-03 · Safety path · AC-02.</strong> Setup: synthetic facility hazard already made safe in the scenario. Action: inspect intake instructions; attempt resolution with missing response notes, then missing acknowledgment, then both supplied with valid resolution fields. Expected: emergency-first text is visible; incomplete attempts fail; the complete attempt succeeds.</li>
+        <li id="uat-04"><strong>UAT-04 · Routing and reassignment · AC-03.</strong> Setup: a New ticket for each category. Action: apply the routing map; try In Progress with each triage field missing in turn, then complete them; reassign with a reason. Expected: incomplete triage is blocked, completed tickets have the expected teams and owners, and reassignment records actor, time, and reason. An unclear route remains with the shift lead.</li>
+        <li id="uat-05"><strong>UAT-05 · Approved refund · AC-04.</strong> Setup: synthetic reference TX-DEMO-01, request of 10 test currency units, reason, and a separate authorized manager. Action: approve 10 and record fulfillment of 10. Expected: decision, approver, approved amount, and fulfillment are recorded; no actual payment is sent.</li>
+        <li id="uat-06"><strong>UAT-06 · Refund controls · AC-04, AC-08.</strong> Setup: separate refund records. Action: try missing reference, zero amount, missing reason, self-approval, a staff decision, fulfillment without approval, fulfillment after rejection, and fulfillment of 11 against approval of 10. Expected: each prohibited action is blocked and no fulfillment is recorded.</li>
+        <li id="uat-07"><strong>UAT-07 · Pending and review · AC-05.</strong> Setup: an owned In Progress ticket and controllable test date. Action: omit each Pending field in turn, then populate all; advance beyond the review date and resume work. Expected: missing fields block Pending, ownership persists, the overdue flag appears to the shift lead, and the record returns to In Progress.</li>
+        <li id="uat-08"><strong>UAT-08 · Successful closure · AC-06.</strong> Setup: a completed repair ticket. Action: omit notes and code in separate resolution attempts; supply both; try closing without verification; then verify as shift lead and close. Expected: invalid transitions fail; valid closure records the resolution, verifier, and verification time.</li>
+        <li id="uat-09"><strong>UAT-09 · Failed verification · AC-06.</strong> Setup: a Resolved machine issue. Action: record that the machine still fails, first without a reason, then with one. Expected: missing reason is rejected; completed failure returns the ticket to In Progress with its owner and failure reason retained.</li>
+        <li id="uat-10"><strong>UAT-10 · History and recurrence · AC-07.</strong> Setup: a ticket with status, owner, and approval changes, subsequently Closed. Action: inspect history, attempt staff edits to history and the closed record, then create a linked recurrence. Expected: history contains actor/time/old/new values; writes are denied; a separate linked ticket exists and original history is unchanged.</li>
+        <li id="uat-11"><strong>UAT-11 · Access boundaries · AC-08.</strong> Setup: own, same-team, and other-team tickets plus staff, shift-lead, and manager accounts. Action: try each record from lists and direct URLs with each role; inspect refund inputs. Expected: staff can read own/team records only; leads and managers can read the location; staff cannot decide refunds; inputs request a transaction reference and display the payment-data warning.</li>
+        <li id="uat-12"><strong>UAT-12 · Backlog reconciliation · AC-09.</strong> Setup: six tickets, one each New, Triaged, Assigned, In Progress, Pending, and Resolved; add two Closed tickets. Assign known categories and owners. Action: run the report. Expected: open backlog is 6, Closed is 2, category/owner/status breakdowns reconcile to the eight records, and refresh time is visible. These are synthetic test expectations, not business results.</li>
+        <li id="uat-13"><strong>UAT-13 · Period boundaries · AC-09.</strong> Setup: agree a test time zone and period; place Closed timestamps just before start, exactly at start, just before end, and exactly at end. Action: filter that period. Expected: exactly the middle two records count as period closures.</li>
+        <li id="uat-14"><strong>UAT-14 · Keyboard error recovery · AC-10.</strong> Setup: intake with a keyboard and accessibility inspection tool. Action: navigate all inputs, submit with one required value missing, inspect the error association, correct it, and resubmit. Expected: visible focus and logical navigation, an associated textual error, retained valid entries, and a saved-ticket confirmation.</li>
+      </ol>
+      <h3>Proposed exit decision</h3>
+      <p>The operations manager would review recorded evidence for every Must requirement, resolved defects, and retest results before recommending a pilot. Any deferred Should requirement needs an explicit decision. No sign-off, pass rate, or readiness claim is recorded here.</p>
+    </section>
+    <section id="traceability" aria-labelledby="trace-title">
+      <h2 id="trace-title">5. Traceability sample</h2>
+      <p>This matrix covers the ten requirements in this public sample. Links demonstrate planned coverage; they do not establish that a requirement has passed validation.</p>
+      <table><caption>Process need → requirement → acceptance criteria → planned tests</caption><thead><tr><th scope="col">Process need</th><th scope="col">Requirement</th><th scope="col">Criteria</th><th scope="col">Planned tests</th><th scope="col">Execution</th></tr></thead><tbody>
+        <tr><th scope="row">P-01 Intake</th><td data-label="Requirement"><a href="#req-01">REQ-01</a></td><td data-label="Criteria"><a href="#ac-01">AC-01</a></td><td data-label="Tests"><a href="#uat-01">UAT-01</a>, <a href="#uat-02">UAT-02</a></td><td data-label="Execution">Not Executed</td></tr>
+        <tr><th scope="row">P-01 Safety</th><td data-label="Requirement"><a href="#req-02">REQ-02</a></td><td data-label="Criteria"><a href="#ac-02">AC-02</a></td><td data-label="Tests"><a href="#uat-03">UAT-03</a></td><td data-label="Execution">Not Executed</td></tr>
+        <tr><th scope="row">P-02 Ownership</th><td data-label="Requirement"><a href="#req-03">REQ-03</a></td><td data-label="Criteria"><a href="#ac-03">AC-03</a></td><td data-label="Tests"><a href="#uat-04">UAT-04</a></td><td data-label="Execution">Not Executed</td></tr>
+        <tr><th scope="row">P-03 Refund control</th><td data-label="Requirement"><a href="#req-04">REQ-04</a></td><td data-label="Criteria"><a href="#ac-04">AC-04</a></td><td data-label="Tests"><a href="#uat-05">UAT-05</a>, <a href="#uat-06">UAT-06</a></td><td data-label="Execution">Not Executed</td></tr>
+        <tr><th scope="row">P-04 Dependencies</th><td data-label="Requirement"><a href="#req-05">REQ-05</a></td><td data-label="Criteria"><a href="#ac-05">AC-05</a></td><td data-label="Tests"><a href="#uat-07">UAT-07</a></td><td data-label="Execution">Not Executed</td></tr>
+        <tr><th scope="row">P-05 Verification</th><td data-label="Requirement"><a href="#req-06">REQ-06</a></td><td data-label="Criteria"><a href="#ac-06">AC-06</a></td><td data-label="Tests"><a href="#uat-08">UAT-08</a>, <a href="#uat-09">UAT-09</a></td><td data-label="Execution">Not Executed</td></tr>
+        <tr><th scope="row">P-06 History</th><td data-label="Requirement"><a href="#req-07">REQ-07</a></td><td data-label="Criteria"><a href="#ac-07">AC-07</a></td><td data-label="Tests"><a href="#uat-10">UAT-10</a></td><td data-label="Execution">Not Executed</td></tr>
+        <tr><th scope="row">P-03 / P-06 Access</th><td data-label="Requirement"><a href="#req-08">REQ-08</a></td><td data-label="Criteria"><a href="#ac-08">AC-08</a></td><td data-label="Tests"><a href="#uat-06">UAT-06</a>, <a href="#uat-11">UAT-11</a></td><td data-label="Execution">Not Executed</td></tr>
+        <tr><th scope="row">P-06 Reporting</th><td data-label="Requirement"><a href="#req-09">REQ-09</a></td><td data-label="Criteria"><a href="#ac-09">AC-09</a></td><td data-label="Tests"><a href="#uat-12">UAT-12</a>, <a href="#uat-13">UAT-13</a></td><td data-label="Execution">Not Executed</td></tr>
+        <tr><th scope="row">P-01 Usability</th><td data-label="Requirement"><a href="#req-10">REQ-10</a></td><td data-label="Criteria"><a href="#ac-10">AC-10</a></td><td data-label="Tests"><a href="#uat-02">UAT-02</a>, <a href="#uat-14">UAT-14</a></td><td data-label="Execution">Not Executed</td></tr>
+      </tbody></table>
+      <p><strong>Change example:</strong> if refund authority changes, review REQ-04 and REQ-08, revise AC-04 and AC-08, update UAT-05, UAT-06, and UAT-11, then record the review decision and rerun affected tests in the future test environment.</p>
+    </section>
+  </main>
+  <footer><p>Jonathan Capalbo · Hypothetical business analysis case study</p><p class="utility"><a href="https://jonathancapalbo.me/arcade-ticketing-modernization.html">Return to the case study</a></p></footer>
+</body>
+</html>

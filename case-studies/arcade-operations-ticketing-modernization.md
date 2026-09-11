@@ -14,7 +14,7 @@ Use one internal ticketing process for all five issue types at one location. The
 
 ## Planning coverage
 
-This public summary describes the planning scope. The full requirements baseline, user stories, and UAT pack are not included here. Review the proposed lifecycle and process choices on the [case-study page](https://jonathancapalbo.me/arcade-ticketing-modernization.html).
+This public summary describes the planning scope. Review the proposed lifecycle and process choices on the [case-study page](https://jonathancapalbo.me/arcade-ticketing-modernization.html), then open the [public BA evidence pack](https://jonathancapalbo.me/arcade-ticketing-evidence.html). The pack contains a process comparison, ten proposed requirements, linked user stories and acceptance criteria, fourteen planned tests, and a traceability sample. It expands the fictional scenario for portfolio review; it is not a stakeholder-approved baseline. All tests are Not Executed.
 
 - Problem statement, project charter, stakeholder analysis, and scope
 - Simulated current-state and proposed future-state workflows

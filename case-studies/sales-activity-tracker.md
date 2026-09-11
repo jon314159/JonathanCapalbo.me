@@ -60,7 +60,17 @@ A September 11, 2026 source-record check independently reproduced 465 activities
 
 ## Design trade-off
 
-Separate daily tabs make each day easy to isolate and review, but repeated sheets increase maintenance. A more scalable next version would use one normalized activity table with date filtering, PivotTables or Power Query, sheet protection, and expanded exception reporting.
+Separate daily tabs make each day easy to isolate and review, but repeated sheets increase maintenance. The September 11 revision below consolidates the records into one table. PivotTables, Power Query, sheet protection, and expanded exception reporting remain possible future work.
+
+## September 11, 2026 portfolio revision
+
+[Download the revised workbook](../downloads/Fictional_Activity_Tracker_Normalized.xlsx). The [original workbook](../downloads/Fictional_Sales_Activity_Tracker.xlsx) is preserved separately. This is new portfolio work using the original fictional records, not historical workplace work.
+
+The revision contains Summary, Activity, Settings, and Read Me sheets. A filterable Activities table replaces the repeated daily input tabs; structured references and SUMIFS connect records to daily and product summaries. All 465 original records and documented settings reconcile to 324 units and 402.5 points. Daily date matching includes entries with or without a time component.
+
+Microsoft Excel 16.0 testing verified row extension, formula and validation copying, first/last-day date handling, changed daily goals and point rates, zero-goal handling, chart source updates, and no formula errors. Temporary test records were not saved. The authoring tool returned stale in-memory summary totals after table expansion; independent Excel tests confirmed the exported workbook recalculates correctly.
+
+To add a fictional record, insert a table row, copy the previous row into it, replace all input values, and clear Original row. Keep the copied Points formula and check validation. Filtering does not change Summary totals. The summary retains the original 31-day reporting period, formulas remain unprotected, and pasted values require review.
 
 ## Fictional public version
 

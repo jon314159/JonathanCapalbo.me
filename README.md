@@ -8,7 +8,7 @@ Personal portfolio for Jonathan Capalbo, a customer operations professional tran
 
 [NJIT Registrar ServiceNow Portal](servicenow-njit-registrar.html): an academic school-lab project with a searchable portal, 42 articles organized into 12 categories, and a revised registration guide. Evidence includes a preserved lab screenshot and an explicitly recreated excerpt.
 
-[Excel Activity Reporting System](sales-activity-tracker.html): a fictional Excel demonstration with controlled daily entry, editable goals, monthly consolidation, and separate product and daily goal comparisons. The [original workbook](downloads/Fictional_Sales_Activity_Tracker.xlsx) remains the public download.
+[Excel Activity Reporting System](sales-activity-tracker.html): a fictional Excel demonstration with controlled daily entry, editable goals, monthly consolidation, and separate product and daily goal comparisons. The [original workbook](downloads/Fictional_Sales_Activity_Tracker.xlsx) is preserved alongside a [September 11, 2026 revision](downloads/Fictional_Activity_Tracker_Normalized.xlsx) with one filterable activity table. The revision preserves all 465 records and documented settings; added rows, date handling, formulas, and changed goals were tested in Microsoft Excel.
 
 ## Resume variants and editable source
 

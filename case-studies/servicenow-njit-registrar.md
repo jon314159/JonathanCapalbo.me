@@ -1,4 +1,4 @@
-# NJIT Registrar ServiceNow Knowledge Portal
+# NJIT Registrar ServiceNow Portal
 
 ## Summary
 
@@ -74,6 +74,8 @@ The article **How to Register for Classes Using Banner** was revised by Jonathan
 - registrar contact details.
 
 The structure uses headings, callouts, lists, and tables to support scanning for a relevant step or issue.
+
+Easier scanning was the intended benefit. The preserved public material does not provide an authentic before-and-after article comparison or measured usability change.
 
 ## Article updates
 

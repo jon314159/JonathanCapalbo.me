@@ -1,14 +1,25 @@
 # JonathanCapalbo.me
 
-Personal portfolio for Jonathan Capalbo, pursuing operations, reporting, process improvement, and business systems roles with evidence in Excel, documentation, data accuracy, automation, and high-volume operational work.
+Personal portfolio for Jonathan Capalbo, a customer operations professional transitioning into entry-level business analysis, reporting, and business systems work. Professional experience, academic lab work, personal tool use, and hypothetical portfolio planning are labeled separately.
 
 ## Featured case studies
 
-[Arcade Operations Ticketing Modernization](https://jonathancapalbo.me/arcade-ticketing-modernization.html): a self-directed, hypothetical business analysis case study covering process maps, requirements, user stories, planned UAT, employee instructions, and KPI definitions. ServiceNow is used as a conceptual frame only.
+[Arcade Operations Ticketing Modernization](arcade-ticketing-modernization.html): a self-directed, hypothetical business analysis study. The [existing evidence pack](arcade-ticketing-evidence.html) contains a process comparison, proposed requirements, linked stories and acceptance criteria, planned UAT, and traceability. All tests are Not Executed. ServiceNow is a conceptual frame only.
 
-[NJIT Registrar ServiceNow Knowledge Portal](https://jonathancapalbo.me/servicenow-njit-registrar.html): an academic school-lab project with a custom self-service portal, 42 articles in 12 knowledge categories, search, and version-controlled content.
+[NJIT Registrar ServiceNow Portal](servicenow-njit-registrar.html): an academic school-lab project with a searchable portal, 42 articles organized into 12 categories, and a revised registration guide. Evidence includes a preserved lab screenshot and an explicitly recreated excerpt.
 
-[Excel Activity Reporting System](https://jonathancapalbo.me/sales-activity-tracker.html): a fictional Excel demonstration with controlled daily entry, editable goals, monthly consolidation, and dashboard-based goal comparisons.
+[Excel Activity Reporting System](sales-activity-tracker.html): a fictional Excel demonstration with controlled daily entry, editable goals, monthly consolidation, and separate product and daily goal comparisons. The [original workbook](downloads/Fictional_Sales_Activity_Tracker.xlsx) remains the public download.
+
+## Resume variants and editable source
+
+- [Primary business analysis / junior business systems resume](resume.pdf)
+- [Reporting / operations resume](downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf)
+
+Both PDFs use the shared factual content in [`tools/resume_content.json`](tools/resume_content.json) and the ReportLab generator [`tools/build_resume.py`](tools/build_resume.py). Each has selectable text, embedded contact and project links, and 10.5-point body text. Variants change positioning, skills emphasis, project order, and relevant undergraduate coursework; employment history stays identical.
+
+Run `python tools/build_resume.py` with ReportLab installed to rebuild both PDFs. Use `--variant business-analysis` or `--variant reporting-operations` to rebuild one. Review extracted text, hyperlinks, page count, and a rendered image after any content change. Serve this static site with `python -m http.server 8765` for local browser checks.
+
+Undergraduate course attribution was confirmed by the author on September 11, 2026. Training remains separate from certifications. No phone number, new availability claim, or new proficiency level was added.
 
 Technical and scope notes are documented in:
 

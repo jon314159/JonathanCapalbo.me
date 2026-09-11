@@ -1,0 +1,79 @@
+{
+  "name": "Jonathan Capalbo",
+  "contact": {
+    "location": "Point Pleasant, NJ",
+    "preference": "Open to remote",
+    "email": "jonathancapalbo1@gmail.com",
+    "portfolio": "https://jonathancapalbo.me/",
+    "linkedin": "https://www.linkedin.com/in/jonathan-capalbo-2a00b9140"
+  },
+  "experience": [
+    {
+      "title": "Customer Account Executive",
+      "company": "Comcast / Xfinity",
+      "dates": "April 2022 - September 2026",
+      "location": "Remote",
+      "bullets": [
+        "Reviewed customer records and available options across about 25 daily interactions, documenting decisions, follow-up, and cross-team handoffs in CSG and other internal systems.",
+        "Investigated customer-record, policy, procedure, and system questions using current resources and internal support partners."
+      ]
+    },
+    {
+      "title": "Customer Service Representative",
+      "company": "Harte Hanks",
+      "dates": "February 2021 - January 2022",
+      "location": "Remote",
+      "bullets": [
+        "Investigated customer inquiries, recorded relevant details, and explained next actions.",
+        "Prioritized, categorized, and routed email requests, maintaining records for team handoffs."
+      ]
+    }
+  ],
+  "projects": {
+    "arcade": {
+      "name": "Arcade Operations Ticketing Modernization",
+      "url": "https://jonathancapalbo.me/arcade-ticketing-evidence.html",
+      "scope": "Self-directed planning study | Hypothetical",
+      "description": "Proposed a five-category ticket lifecycle with requirements, user stories, acceptance criteria, and traceability to planned UAT. No implementation; all tests Not Executed."
+    },
+    "servicenow": {
+      "name": "NJIT Registrar ServiceNow Portal",
+      "url": "https://jonathancapalbo.me/servicenow-njit-registrar.html",
+      "scope": "Academic project | ServiceNow school lab",
+      "description": "Configured a searchable portal, organized 42 lab articles into 12 categories, and revised registration guidance with steps, common errors, and support contacts."
+    },
+    "excel": {
+      "name": "Excel Activity Reporting System",
+      "url": "https://jonathancapalbo.me/sales-activity-tracker.html",
+      "scope": "Portfolio project | Fictional data",
+      "description": "Built validated daily inputs, monthly consolidation, and a dashboard. Reconciled source records to totals and distinguished monthly product goals from a separate daily target."
+    }
+  },
+  "variants": {
+    "business-analysis": {
+      "output": "resume.pdf",
+      "headline": "Business Analysis &amp; Junior Business Systems",
+      "summary": "Customer operations professional transitioning into entry-level business analysis and business systems work. Experience investigating issues, maintaining customer records, and coordinating follow-up; portfolio work in process planning and Excel reporting, plus academic ServiceNow configuration.",
+      "skills": [
+        "<b>Professional:</b> Issue investigation, CSG records, documentation, prioritization, and handoffs.",
+        "<b>Portfolio:</b> Process mapping, requirements, acceptance criteria, UAT planning; Excel reporting.",
+        "<b>Academic lab:</b> ServiceNow Knowledge Management and Service Portal.",
+        "<b>Personal use:</b> Power Automate tracking and follow-up. <b>Coursework:</b> SQL and Tableau."
+      ],
+      "project_order": ["arcade", "servicenow", "excel"],
+      "coursework": "Database Systems for Managers; Business Research Methods; project management (MIS 363)."
+    },
+    "reporting-operations": {
+      "output": "downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf",
+      "headline": "Reporting &amp; Operations",
+      "summary": "Customer operations professional transitioning into entry-level reporting and operations roles. Experience reviewing customer records, investigating issues, and coordinating follow-up. Portfolio Excel work covers validated inputs, monthly reporting, goal definitions, and reconciliation using fictional data.",
+      "skills": [
+        "<b>Portfolio Excel:</b> Tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation.",
+        "<b>Professional:</b> CSG records, issue investigation, documentation, prioritization, and handoffs.",
+        "<b>Academic lab:</b> ServiceNow Knowledge Management and Service Portal. <b>Coursework:</b> SQL and Tableau. <b>Personal use:</b> Power Automate tracking and follow-up."
+      ],
+      "project_order": ["excel", "servicenow", "arcade"],
+      "coursework": "Business Data Analytics; Business Research Methods; business operations management and analytics (OM 375)."
+    }
+  }
+}

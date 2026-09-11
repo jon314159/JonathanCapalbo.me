@@ -2,7 +2,7 @@
 
 ## Summary
 
-This Excel project uses a separate tracking sheet for every day of a 31-day month. Daily totals feed a monthly summary and dashboard, while a Settings page controls fictional product labels, goals, target days, and point values. The public workbook contains 35 sheets, 32 Excel tables, 2,231 formula cells, and 2,480 cells covered by validation rules.
+This Excel project connects daily activity records to monthly reporting. Inputs include fictional interaction IDs, product selections, outcomes, units, follow-up flags, and notes. The dashboard compares completed units with monthly product goals and a separately configured daily target. Settings controls product labels, goals, target days, and point values.
 
 The public case study is available at [jonathancapalbo.me/sales-activity-tracker.html](https://jonathancapalbo.me/sales-activity-tracker.html).
 
@@ -49,6 +49,8 @@ The monthly product goals total 310 units. The separate daily target is 11 units
 Before recommending a process change, confirm the intended relationship between the targets, then compare activity volume and completed units on below-target days. The fictional data does not establish causes such as staffing, demand, or employee performance.
 
 ## Validation checks
+
+A September 11, 2026 source-record check independently reproduced 465 activities, 324 units, 402.5 points, and the daily and product totals from the original public workbook. This was a reconciliation of the source records and saved outputs, not a native Excel interaction test.
 
 - Four product totals reconcile to the 324 completed-unit dashboard total.
 - Product-level points reconcile to the 402.5 dashboard total.

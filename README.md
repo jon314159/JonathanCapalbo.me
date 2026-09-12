@@ -4,6 +4,8 @@ I'm a customer operations professional pursuing entry-level roles in business an
 
 [Visit my portfolio](https://jonathancapalbo.me/)
 
+At Comcast/Xfinity, I also built Power Automate flows to filter reports, share results in Teams, distribute daily Excel reports by email, and schedule messages and confirmation emails. These were internal workflows; source files and screenshots are unavailable.
+
 ## Explore the projects
 
 ### Excel Activity Reporting System

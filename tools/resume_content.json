@@ -15,6 +15,7 @@
       "location": "Remote",
       "bullets": [
         "Reviewed customer records and available options across about 25 daily interactions, documenting decisions, follow-up, and cross-team handoffs in CSG and other internal systems.",
+        "Built Power Automate flows to filter reports and post results to Teams, distribute daily Excel reports through scheduled emails, and send scheduled messages and confirmation emails.",
         "Investigated customer-record, policy, procedure, and system questions using current resources and internal support partners."
       ]
     },
@@ -42,6 +43,12 @@
       "scope": "Academic project | ServiceNow school lab",
       "description": "Configured a searchable portal, organized 42 lab articles into 12 categories, and revised registration guidance with steps, common errors, and support contacts."
     },
+    "sql": {
+      "name": "Movie Rental Database | Oracle SQL",
+      "url": "https://jonathancapalbo.me/sql-movie-rental.html",
+      "scope": "Academic final project",
+      "description": "Built six related tables with primary and foreign keys, validation constraints, and a read-only view joining movie, copy, and rental records to identify unreturned copies."
+    },
     "excel": {
       "name": "Excel Activity Reporting System",
       "url": "https://jonathancapalbo.me/sales-activity-tracker.html",
@@ -53,12 +60,12 @@
     "business-analysis": {
       "output": "resume.pdf",
       "headline": "Business Analysis &amp; Junior Business Systems",
-      "summary": "Customer operations professional transitioning into entry-level business analysis and business systems work. Experience investigating issues, maintaining customer records, and coordinating follow-up; portfolio work in process planning and Excel reporting, plus academic ServiceNow configuration.",
+      "summary": "Customer operations professional pursuing entry-level business analysis and business systems roles. Experience investigating issues and automating internal report distribution with Power Automate; portfolio process planning and Excel reporting, plus academic SQL and ServiceNow work.",
       "skills": [
-        "<b>Professional:</b> Issue investigation, CSG records, documentation, prioritization, and handoffs.",
+        "<b>Professional:</b> CSG, Power Automate, issue investigation, documentation, prioritization, and handoffs.",
         "<b>Portfolio:</b> Process mapping, requirements, acceptance criteria, UAT planning; Excel reporting.",
-        "<b>Academic lab:</b> ServiceNow Knowledge Management and Service Portal.",
-        "<b>Personal use:</b> Power Automate tracking and follow-up.<br/><b>Coursework:</b> SQL, Tableau, Python, and Java."
+        "<b>Academic SQL:</b> Oracle SQL, relational tables, joins, keys, constraints, and views.",
+        "<b>Academic lab:</b> ServiceNow Knowledge Management and Service Portal.<br/><b>Additional coursework:</b> Tableau, Python, and Java."
       ],
       "project_order": ["arcade", "servicenow", "excel"],
       "coursework": "Database Systems for Managers; Business Research Methods; project management (MIS 363)."
@@ -66,13 +73,14 @@
     "reporting-operations": {
       "output": "downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf",
       "headline": "Reporting &amp; Operations",
-      "summary": "Customer operations professional transitioning into entry-level reporting and operations roles. Experience reviewing customer records, investigating issues, and coordinating follow-up. Portfolio Excel work covers validated inputs, monthly reporting, goal definitions, and reconciliation using fictional data.",
+      "summary": "Customer operations professional pursuing entry-level reporting and operations roles. Experience reviewing records and automating internal report distribution with Power Automate. Portfolio Excel work covers monthly reporting and reconciliation using fictional data; academic SQL work covers relational data and queries.",
       "skills": [
         "<b>Portfolio Excel:</b> Tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation.",
-        "<b>Professional:</b> CSG records, issue investigation, documentation, prioritization, and handoffs.",
-        "<b>Academic lab:</b> ServiceNow Knowledge Management and Service Portal.<br/><b>Coursework:</b> SQL, Tableau, Python, and Java.<br/><b>Personal use:</b> Power Automate tracking and follow-up."
+        "<b>Professional:</b> CSG, Power Automate, issue investigation, documentation, prioritization, and handoffs.",
+        "<b>Academic SQL:</b> Oracle SQL, relational tables, joins, keys, constraints, and views.",
+        "<b>Academic lab:</b> ServiceNow Knowledge Management and Service Portal.<br/><b>Additional coursework:</b> Tableau, Python, and Java."
       ],
-      "project_order": ["excel", "servicenow", "arcade"],
+      "project_order": ["excel", "sql", "servicenow"],
       "coursework": "Business Data Analytics; Business Research Methods; business operations management and analytics (OM 375)."
     }
   }

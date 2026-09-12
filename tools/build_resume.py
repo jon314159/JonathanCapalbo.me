@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = json.loads(Path(__file__).with_name("resume_content.json").read_text(encoding="utf-8"))
 INK = "#17233A"
 ACCENT = "#2B5D7E"
-BODY = ParagraphStyle("Body", fontName="Helvetica", fontSize=10.5, leading=12.5, spaceAfter=2.5)
+BODY = ParagraphStyle("Body", fontName="Helvetica", fontSize=10.5, leading=12.5, spaceAfter=2)
 NAME = ParagraphStyle("Name", parent=BODY, fontName="Helvetica-Bold", fontSize=20, leading=23, alignment=TA_CENTER, textColor=colors.HexColor(INK))
 HEADLINE = ParagraphStyle("Headline", parent=BODY, fontName="Helvetica-Bold", fontSize=10.5, leading=13, alignment=TA_CENTER, textColor=colors.HexColor(ACCENT))
 CONTACT = ParagraphStyle("Contact", parent=BODY, fontSize=10, leading=12, alignment=TA_CENTER)
@@ -62,8 +62,7 @@ def build(variant):
     story.append(Paragraph("M.S. Business &amp; Information Systems | Expected Summer 2028", BODY))
     story.append(Paragraph("B.S. Business Administration | 2024 | GPA: 3.97 | Dean's List, all semesters", BODY))
     story.append(Paragraph("<b>Undergraduate coursework:</b> " + selected["coursework"], BODY))
-    story.extend(section("TRAINING"))
-    story.append(Paragraph("ServiceNow Administration Fundamentals; ServiceNow Knowledge Management Fundamentals", BODY))
+    story.append(Paragraph("<b>Training:</b> ServiceNow Administration Fundamentals; ServiceNow Knowledge Management Fundamentals", BODY))
 
     def page_metadata(canvas, _document):
         canvas._doc.Catalog.Lang = PDFString("en-US")

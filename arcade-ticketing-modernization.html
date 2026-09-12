@@ -21,7 +21,7 @@
     <meta name="twitter:image:alt" content="Professional headshot of Jonathan Capalbo" />
     <link rel="canonical" href="https://jonathancapalbo.me/arcade-ticketing-modernization.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/css/style.css?v=50" />
+    <link rel="stylesheet" href="assets/css/style.css?v=51" />
     <style>#ba-documents strong a { display: inline-flex; align-items: center; min-height: 44px; }</style>
   </head>
   <body class="case-study-page">
@@ -97,6 +97,20 @@
             <li><strong>Close and report</strong><span>Lock the record into auditable history and KPI reporting.</span></li>
           </ol>
         </div>
+      </section>
+
+      <section class="section worked-example" id="worked-example" aria-labelledby="worked-example-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Worked example · Hypothetical</p>
+          <h2 id="worked-example-title">A repair is attempted, but the machine still fails.</h2>
+          <p>This fictional request illustrates the proposed rules. It is not an implemented workflow or an executed test.</p>
+        </div>
+        <ol class="worked-example-list">
+          <li><h3>Report and assign</h3><p>A staff member reports that the start button on Machine A-12 is unresponsive. The report includes the machine location and urgency. The shift lead confirms impact and priority, then assigns a named maintenance owner before work starts.</p><a class="project-link case-inline-link" href="arcade-ticketing-evidence.html#req-03">REQ-03 · Ownership rule</a></li>
+          <li><h3>Resolve, then verify</h3><p>After an attempted repair, the owner records the action and marks the issue Resolved. Under the proposed closure rule, the shift lead must verify that the machine works before it can become Closed.</p><a class="project-link case-inline-link" href="arcade-ticketing-evidence.html#req-06">REQ-06 · Closure rule</a><a class="project-link case-inline-link" href="arcade-ticketing-evidence.html#ac-06">AC-06 · Acceptance criteria</a></li>
+          <li><h3>Plan the failure check</h3><p>The shift lead finds that the start button still fails. UAT-09 would first try recording failed verification without a reason, which should be rejected. With the reason entered, the ticket should return to In Progress with its owner retained. <strong>Test status: Not Executed.</strong></p><a class="project-link case-inline-link" href="arcade-ticketing-evidence.html#uat-09">UAT-09 · Planned test</a></li>
+        </ol>
+        <p><strong>Why this rule matters:</strong> an attempted repair would remain in the open backlog until it passes verification. Closing a ticket would mean confirmed completion.</p>
       </section>
 
       <section class="section" aria-labelledby="analysis-path-title">

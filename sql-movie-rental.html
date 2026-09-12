@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Rental Database — Oracle SQL | Jonathan Capalbo</title>
+    <meta name="description" content="An academic Oracle SQL final project: related movie-rental tables, constraints, a read-only availability view, and verified execution with documented limitations." />
+    <meta name="theme-color" content="#0b1f33" />
+    <meta property="og:title" content="Movie Rental Database — Oracle SQL | Jonathan Capalbo" />
+    <meta property="og:description" content="Inspect the academic SQL script, its query result, and the validation findings." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://jonathancapalbo.me/sql-movie-rental.html" />
+    <meta property="og:image" content="https://jonathancapalbo.me/assets/images/jonathan-capalbo-headshot.png" />
+    <meta property="og:image:alt" content="Jonathan Capalbo" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="https://jonathancapalbo.me/sql-movie-rental.html" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css?v=51" />
+  </head>
+  <body class="case-study-page">
+    <a class="skip-link" href="#case-content">Skip to content</a>
+    <header class="case-header" id="top">
+      <div class="nav-shell">
+        <a class="brand" href="index.html" aria-label="Jonathan Capalbo, portfolio home">
+          <span class="brand-mark" aria-hidden="true">JC</span>
+          <span class="brand-copy"><strong>Jonathan Capalbo</strong><small>Business analysis, reporting &amp; systems</small></span>
+        </a>
+        <nav aria-label="Case study navigation">
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#skills">Skills</a>
+          <a class="nav-resume" href="resume.pdf">Resume (PDF)</a>
+        </nav>
+      </div>
+      <div class="case-hero">
+        <div class="case-hero-copy">
+          <p class="eyebrow">Academic final project · Oracle SQL</p>
+          <h1>A movie rental database that <em>tracks copies and checkouts.</em></h1>
+          <p class="case-lede">I built related tables for a movie-rental scenario and a query that identifies copies still checked out. The project demonstrates database structure, constraints, joins, and supporting Oracle objects.</p>
+          <div class="academic-disclosure" role="note">
+            <strong>Coursework with sample data</strong>
+            <span>The public copy replaces customer names and contact details with fictional examples. Movie-to-actor assignments are sample relationships, not factual casting credits. The class submission’s schema and SQL logic are preserved.</span>
+          </div>
+          <div class="button-row">
+            <a class="button button-primary" href="downloads/Movie_Rental_Database.sql" download>Download SQL project</a>
+            <a class="button button-secondary" href="#validation">Read validation findings</a>
+          </div>
+        </div>
+        <aside class="scope-note">
+          <h2>What was verified</h2>
+          <p>The public script ran in Oracle AI Database 26ai Free on September 12, 2026. All 43 validation checks passed.</p>
+          <p>Additional probes confirmed two rental-rule gaps. Both are documented below; this is an academic database, not a complete rental application.</p>
+        </aside>
+      </div>
+    </header>
+    <main id="case-content">
+      <section class="section case-intro">
+        <div><p class="eyebrow">Database design</p><h2>A movie title and a rentable copy are different records.</h2></div>
+        <div class="case-intro-copy">
+          <p>A title can have several physical copies, each with its own identifier and format. Rental history connects a particular copy to a customer and records checkout and return dates.</p>
+          <p>A separate casting table links actors to titles. Primary keys identify records; foreign keys keep those relationships tied to existing records.</p>
+        </div>
+      </section>
+      <section class="section case-methods" aria-labelledby="tables-title">
+        <h2 id="tables-title">What each table holds</h2>
+        <table class="sql-results">
+          <caption>Sample data in the published script</caption>
+          <thead><tr><th scope="col">Table</th><th scope="col">Purpose</th><th scope="col">Rows</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Customers</th><td>Fictional customer records</td><td>6</td></tr>
+            <tr><th scope="row">Movies</th><td>Titles, categories, ratings, and release dates</td><td>6</td></tr>
+            <tr><th scope="row">Media</th><td>Individual copies and their formats</td><td>8</td></tr>
+            <tr><th scope="row">Actors</th><td>Actor records</td><td>4</td></tr>
+            <tr><th scope="row">Star billings</th><td>Sample links between actors and titles</td><td>4</td></tr>
+            <tr><th scope="row">Rental history</th><td>Checkouts and returns for each copy</td><td>4</td></tr>
+          </tbody>
+        </table>
+        <p class="sql-notes">The script also creates four sequences for new identifiers, a customer last-name index, and the synonym <code>tu</code> as a shorter name for the view. The index is present and valid; query-speed improvements were not benchmarked.</p>
+      </section>
+      <section class="section" id="query-result" aria-labelledby="query-title">
+        <p class="eyebrow">Query and result</p>
+        <h2 id="query-title">Which copies have not been returned?</h2>
+        <p class="sql-notes">The <code>title_unavail</code> view joins movie titles, physical copies, and rental history. A missing return date identifies an open rental. It reports individual copies, so it does not imply that every copy of a title is unavailable.</p>
+        <pre class="sql-query"><code>CREATE OR REPLACE VIEW title_unavail AS
+SELECT m.title, me.media_id
+FROM movies m
+JOIN media me ON me.title_id = m.title_id
+JOIN rental_history rh ON rh.media_id = me.media_id
+WHERE rh.return_date IS NULL
+WITH READ ONLY;</code></pre>
+        <table class="sql-results">
+          <caption>Verified result from the initial sample data</caption>
+          <thead><tr><th scope="col">Title</th><th scope="col">Copy ID</th></tr></thead>
+          <tbody><tr><td>The Shawshank Redemption</td><td>94</td></tr></tbody>
+        </table>
+        <p class="sql-notes">Recording a return for copy 94 removed it from both the view and its synonym during validation. Rolling back that test restored the original result.</p>
+      </section>
+      <section class="section" id="validation" aria-labelledby="validation-title">
+        <p class="eyebrow">Execution and limitations</p>
+        <h2 id="validation-title">The script runs; two rental rules need further work.</h2>
+        <div class="sql-notes">
+          <p>The exact download was executed in a fresh Oracle schema using SQL*Plus. All 43 checks passed, covering object creation, sample counts, key and category constraints, sequence behavior, view results, and rejection of writes through the read-only view.</p>
+          <p>The validation suite was added for this portfolio review after the class submission. These checks establish the tested behavior; they do not cover every possible business rule.</p>
+          <ul>
+            <li><strong>Return-date order:</strong> the current schema accepts a return date earlier than the checkout date. A future revision should reject that sequence.</li>
+            <li><strong>One open rental per copy:</strong> the same copy can have two open rentals with different checkout dates. This also duplicates the copy in the view. A future revision should enforce one active checkout per copy.</li>
+            <li><strong>Optional rating:</strong> an empty movie rating is permitted. The rating constraint checks supplied values; it does not make a rating mandatory.</li>
+          </ul>
+          <p>These findings remain visible in the published assignment rather than being silently corrected. No production use or business results are claimed.</p>
+        </div>
+        <div class="button-row">
+          <a class="button button-secondary" href="downloads/Movie_Rental_Validation.sql" download>Download validation checks</a>
+          <a class="button button-secondary" href="downloads/Movie_Rental_Validation_Results.json" download>Download recorded results (JSON)</a>
+        </div>
+      </section>
+      <section class="section case-methods" aria-labelledby="run-title">
+        <h2 id="run-title">Run the academic project</h2>
+        <p class="sql-notes">Use a fresh Oracle schema with permission to create tables, views, sequences, indexes, and synonyms. The script creates objects and commits sample rows, so use a disposable learning database. Run it as a script in SQL*Plus or SQL Developer; it includes SQL*Plus commands such as <code>DESC</code>.</p>
+        <p class="sql-notes">Set the session date language to English because the original date literals use English month abbreviations. Run the project first, then the optional validation script in the same schema. The validation script rolls back its row changes, but sequence numbers advance.</p>
+        <pre class="sql-query"><code>ALTER SESSION SET NLS_DATE_LANGUAGE = 'ENGLISH';
+@Movie_Rental_Database.sql
+@Movie_Rental_Validation.sql</code></pre>
+        <p class="sql-hash"><strong>Validated project SHA-256:</strong> <code>9ebab5eb414cb45a8375e4ddb5d00e893c2fd470a58e0c390c9cd607e8a44101</code></p>
+        <a class="button button-secondary" href="index.html#projects">Back to selected projects</a>
+      </section>
+      <section class="contact-section" id="contact">
+        <div class="contact-copy"><p class="eyebrow">Contact</p><h2>Contact Jonathan.</h2><p>I'm open to business analysis, reporting, operations, and business systems opportunities.</p></div>
+        <div class="contact-actions">
+          <a class="button contact-primary" href="mailto:jonathancapalbo1@gmail.com">Email Jonathan</a>
+          <div><a href="resume.pdf">Business analysis resume (PDF)</a><a href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations resume (PDF)</a></div>
+        </div>
+      </section>
+    </main>
+    <footer><p><strong>Jonathan Capalbo</strong><span>Business analysis · Reporting · Operations · Systems</span></p><p>© 2026 Jonathan Capalbo.</p></footer>
+  </body>
+</html>

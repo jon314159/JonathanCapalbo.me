@@ -741,6 +741,9 @@ nav .nav-resume:hover { color: #fff; background: var(--blue); }
 
 .skill-groups p { margin: 0; }
 .skill-groups .project-link { margin: 0; color: var(--blue-dark); }
+.tools-methods article { grid-template-columns: 220px minmax(0, 1fr); }
+.sql-project-card { grid-column: 1 / -1; }
+.sql-project-card p:not(.project-label) { max-width: 850px; }
 .coursework-note { margin-top: 24px; color: var(--muted); }
 
 .skill-index { margin: 0; color: var(--muted); }
@@ -790,7 +793,7 @@ nav .nav-resume:hover { color: #fff; background: var(--blue); }
 .learning-grid {
   display: grid;
   grid-column: 1 / -1;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
   padding-top: 12px;
 }
@@ -993,6 +996,22 @@ footer strong { color: var(--ink); }
 
 .case-hero > * { min-width: 0; overflow-wrap: anywhere; }
 .case-hero-copy h1 { max-width: 820px; }
+.workbook-walkthrough > p { max-width: 900px; }
+.walkthrough-step { margin: 36px 0 48px; }
+.walkthrough-step > div { max-width: 860px; margin-bottom: 22px; }
+.walkthrough-step .portal-preview { box-shadow: none; }
+.walkthrough-step .portal-preview figcaption { flex-wrap: wrap; }
+.worked-example-list { padding-left: 24px; }
+.worked-example-list li { padding: 18px 0; border-bottom: 1px solid var(--line); }
+.worked-example-list p { max-width: 900px; }
+.worked-example-list .project-link { margin: 0 24px 0 0; }
+.sql-query { white-space: pre-wrap; overflow-wrap: anywhere; padding: 24px; background: #eef2ff; border-left: 4px solid var(--blue); font-size: 0.95rem; }
+.sql-results { width: 100%; border-collapse: collapse; margin: 24px 0; }
+.sql-results th, .sql-results td { padding: 14px; text-align: left; border-bottom: 1px solid var(--line); }
+.sql-results caption { text-align: left; font-weight: 750; padding-bottom: 12px; }
+.sql-notes { max-width: 900px; }
+.sql-notes li { margin: 12px 0; }
+.sql-hash { overflow-wrap: anywhere; font-size: 0.85rem; }
 
 .case-lede {
   max-width: 760px;

@@ -30,6 +30,14 @@ The scenario is hypothetical. No system was implemented, tests were not run, and
 
 [Read the case study](https://jonathancapalbo.me/arcade-ticketing-modernization.html) · [View the supporting work](https://jonathancapalbo.me/arcade-ticketing-evidence.html)
 
+### Movie Rental Database
+
+My Oracle SQL final for an undergraduate database class. It connects customers, movie copies, and rental history, with a query showing which copies have not been returned.
+
+The public copy uses fictional customer details. It ran successfully in Oracle, with 43 validation checks passed and two remaining rental-rule gaps documented in the case study.
+
+[Read the SQL project](https://jonathancapalbo.me/sql-movie-rental.html) · [Download the SQL](https://jonathancapalbo.me/downloads/Movie_Rental_Database.sql)
+
 ## Resumes
 
 - [Business analysis and junior business systems](https://jonathancapalbo.me/resume.pdf)

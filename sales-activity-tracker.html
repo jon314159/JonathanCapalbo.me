@@ -21,7 +21,7 @@
     <meta name="twitter:image:alt" content="Fictional Excel dashboard with KPI cards and goal-comparison charts" />
     <link rel="canonical" href="https://jonathancapalbo.me/sales-activity-tracker.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/css/style.css?v=50" />
+    <link rel="stylesheet" href="assets/css/style.css?v=51" />
   </head>
   <body class="case-study-page sales-case-page">
     <a class="skip-link" href="#case-content">Skip to content</a>
@@ -116,6 +116,29 @@
           </div>
           <p class="sales-architecture-note"><strong>Settings → daily controls → monthly rollup → dashboard.</strong> The separation makes assumptions visible, inputs consistent, and totals traceable back to a specific day.</p>
         </div>
+      </section>
+
+      <section class="section workbook-walkthrough" id="walkthrough" aria-labelledby="walkthrough-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Follow one day through the workbook</p>
+          <h2 id="walkthrough-title">From individual records to a monthly view.</h2>
+          <p>These excerpts show the original downloadable workbook, using fictional July 2026 records.</p>
+        </div>
+        <article class="walkthrough-step">
+          <div><h3>1. Enter the daily activity</h3><p>On Day 01, each row records a product, outcome, units, and follow-up status. The daily formulas total 17 activities, 11 completed units, and 13 points. The 10:05 AM follow-up remains visible but contributes no completed units.</p></div>
+          <figure class="portal-preview">
+            <img src="assets/images/sales-activity-day01.png" width="1572" height="1090" loading="lazy" decoding="async" alt="Day 01 excerpt: 17 fictional activity records produce 11 completed units and 13 points; follow-up and no-sale rows have zero units." />
+            <figcaption><span>Day 01 · Input table and calculated totals</span><a href="assets/images/sales-activity-day01.png" target="_blank" rel="noopener noreferrer">Open daily view</a></figcaption>
+          </figure>
+        </article>
+        <article class="walkthrough-step">
+          <div><h3>2. Check the monthly rollup</h3><p>The first row of Monthly Summary links to Day 01 and carries across the same 17 activities, 11 units, and 13 points. Its 11-unit result meets the daily target. Day 03, at 8 units, is marked Below so the exception is visible alongside the totals.</p></div>
+          <figure class="portal-preview">
+            <img src="assets/images/sales-activity-monthly-summary.png" width="1740" height="818" loading="lazy" decoding="async" alt="First twelve days of Monthly Summary, including Day 01 with 17 activities, 11 units, 13 points, and Met status; Day 03 shows 8 units and Below status." />
+            <figcaption><span>Monthly Summary · First twelve days</span><a href="assets/images/sales-activity-monthly-summary.png" target="_blank" rel="noopener noreferrer">Open monthly view</a></figcaption>
+          </figure>
+        </article>
+        <p><strong>3. Review the whole month.</strong> The dashboard below combines all 31 days. Monthly product goals total 310 units, while the separate daily target totals 341 units (11 × 31). The same 324 completed units exceed the first target and fall short of the second, so the goal definition belongs beside the result.</p>
       </section>
 
       <section class="case-image-section sales-dashboard-section" aria-labelledby="tracker-preview-title">

@@ -1,36 +1,38 @@
-# JonathanCapalbo.me
+# Jonathan Capalbo | Portfolio
 
-Personal portfolio for Jonathan Capalbo, a customer operations professional transitioning into entry-level business analysis, reporting, and business systems work. Professional experience, academic lab work, personal tool use, and hypothetical portfolio planning are labeled separately.
+I'm a customer operations professional pursuing entry-level roles in business analysis, reporting, and business systems. This portfolio shows how I organize information, investigate issues, document processes, and turn activity records into reports.
 
-## Featured case studies
+[Visit my portfolio](https://jonathancapalbo.me/)
 
-[Arcade Operations Ticketing Modernization](arcade-ticketing-modernization.html): a self-directed, hypothetical business analysis study. The [existing evidence pack](arcade-ticketing-evidence.html) contains a process comparison, proposed requirements, linked stories and acceptance criteria, planned UAT, and traceability. All tests are Not Executed. ServiceNow is a conceptual frame only.
+## Explore the projects
 
-[NJIT Registrar ServiceNow Portal](servicenow-njit-registrar.html): an academic school-lab project with a searchable portal, 42 articles organized into 12 categories, and a revised registration guide. Evidence includes a preserved lab screenshot and an explicitly recreated excerpt.
+### Excel Activity Reporting System
 
-[Excel Activity Reporting System](sales-activity-tracker.html): a fictional Excel demonstration with controlled daily entry, editable goals, monthly consolidation, and separate product and daily goal comparisons. [Download the workbook](downloads/Fictional_Sales_Activity_Tracker.xlsx) to inspect its daily activity tabs, monthly summary, dashboard, and input controls. The case-study screenshots and analysis refer to this file.
+An Excel workbook that connects daily activity logs to a monthly summary and dashboard. It includes entry checks, editable goals, and charts that show why monthly results and daily targets can tell different stories.
 
-## Resume variants and editable source
+All records and results are fictional. The case study walks through the same workbook available below.
 
-- [Primary business analysis / junior business systems resume](resume.pdf)
-- [Reporting / operations resume](downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf)
+[Read the case study](https://jonathancapalbo.me/sales-activity-tracker.html) · [Download the workbook](https://jonathancapalbo.me/downloads/Fictional_Sales_Activity_Tracker.xlsx)
 
-Both PDFs use the shared factual content in [`tools/resume_content.json`](tools/resume_content.json) and the ReportLab generator [`tools/build_resume.py`](tools/build_resume.py). Each has selectable text, embedded contact and project links, and 10.5-point body text. Variants change positioning, skills emphasis, project order, and relevant undergraduate coursework; employment history stays identical.
+### NJIT Registrar ServiceNow Portal
 
-Run `python tools/build_resume.py` with ReportLab installed to rebuild both PDFs. Use `--variant business-analysis` or `--variant reporting-operations` to rebuild one. Review extracted text, hyperlinks, page count, and a rendered image after any content change. Serve this static site with `python -m http.server 8765` for local browser checks.
+An academic project focused on making registration information easier to find and follow. I configured a searchable school-lab portal, organized help articles, and revised registration guidance. The case study includes a lab screenshot and a clearly labeled recreation of the revised article.
 
-Undergraduate course attribution was confirmed by the author on September 11, 2026. Training remains separate from certifications. No phone number, new availability claim, or new proficiency level was added.
+This was coursework, not a change to NJIT's live registrar service. No real student records are included.
 
-Technical and scope notes are documented in:
+[Read the case study](https://jonathancapalbo.me/servicenow-njit-registrar.html)
 
-- [`case-studies/arcade-operations-ticketing-modernization.md`](case-studies/arcade-operations-ticketing-modernization.md)
-- [`case-studies/servicenow-njit-registrar.md`](case-studies/servicenow-njit-registrar.md)
-- [`case-studies/sales-activity-tracker.md`](case-studies/sales-activity-tracker.md)
+### Arcade Operations Ticketing Modernization
 
-## Privacy
+A self-directed planning study for handling arcade maintenance requests. It shows a proposed workflow, requirements, and checks that could be used to test whether a future system meets those requirements.
 
-The arcade case study is entirely hypothetical and simulated. It does not describe a real arcade, a live ServiceNow implementation, executed UAT, or measured business results.
+The scenario is hypothetical. No system was implemented, tests were not run, and no business results are claimed.
 
-The ServiceNow material is from a school lab, not NJIT's production registrar platform or live NJIT guidance. It contains no real student records. Public materials include the author's project description, a sanitized school-lab screenshot, and a recreated excerpt based on the author's project revision. Internal user details are omitted, and operational details are corrected or synthetic. The documented scope excludes registrar request forms and ServiceNow catalog items.
+[Read the case study](https://jonathancapalbo.me/arcade-ticketing-modernization.html) · [View the supporting work](https://jonathancapalbo.me/arcade-ticketing-evidence.html)
 
-The public Excel workbook was rebuilt using entirely fictional records. It contains invented product labels, goals, activities, and results, but no employer-specific products, customer or account data, actual revenue, compensation information, or real performance results.
+## Resumes
+
+- [Business analysis and junior business systems](https://jonathancapalbo.me/resume.pdf)
+- [Reporting and operations](https://jonathancapalbo.me/downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf)
+
+Both resumes describe the same work history, with different emphasis for each role family.

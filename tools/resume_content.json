@@ -58,7 +58,7 @@
         "<b>Professional:</b> Issue investigation, CSG records, documentation, prioritization, and handoffs.",
         "<b>Portfolio:</b> Process mapping, requirements, acceptance criteria, UAT planning; Excel reporting.",
         "<b>Academic lab:</b> ServiceNow Knowledge Management and Service Portal.",
-        "<b>Personal use:</b> Power Automate tracking and follow-up. <b>Coursework:</b> SQL and Tableau."
+        "<b>Personal use:</b> Power Automate tracking and follow-up.<br/><b>Coursework:</b> SQL, Tableau, Python, and Java."
       ],
       "project_order": ["arcade", "servicenow", "excel"],
       "coursework": "Database Systems for Managers; Business Research Methods; project management (MIS 363)."
@@ -70,7 +70,7 @@
       "skills": [
         "<b>Portfolio Excel:</b> Tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation.",
         "<b>Professional:</b> CSG records, issue investigation, documentation, prioritization, and handoffs.",
-        "<b>Academic lab:</b> ServiceNow Knowledge Management and Service Portal. <b>Coursework:</b> SQL and Tableau. <b>Personal use:</b> Power Automate tracking and follow-up."
+        "<b>Academic lab:</b> ServiceNow Knowledge Management and Service Portal.<br/><b>Coursework:</b> SQL, Tableau, Python, and Java.<br/><b>Personal use:</b> Power Automate tracking and follow-up."
       ],
       "project_order": ["excel", "servicenow", "arcade"],
       "coursework": "Business Data Analytics; Business Research Methods; business operations management and analytics (OM 375)."

@@ -61,7 +61,7 @@ def build(variant):
     story.append(Paragraph("<b>New Jersey Institute of Technology</b> | Newark, NJ", BODY))
     story.append(Paragraph("M.S. Business &amp; Information Systems | Expected Summer 2028", BODY))
     story.append(Paragraph("B.S. Business Administration | 2024 | GPA: 3.97 | Dean's List, all semesters", BODY))
-    story.append(Paragraph("<b>Undergraduate coursework:</b> " + selected["coursework"], BODY))
+    story.append(Paragraph("<b>Relevant coursework:</b> " + selected["coursework"], BODY))
     story.append(Paragraph("<b>Training:</b> ServiceNow Administration Fundamentals; ServiceNow Knowledge Management Fundamentals", BODY))
 
     def page_metadata(canvas, _document):

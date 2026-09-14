@@ -15,8 +15,8 @@
       "location": "Remote",
       "bullets": [
         "Reviewed customer records and available options across about 25 daily interactions, documenting decisions, follow-up, and cross-team handoffs in CSG and other internal systems.",
-        "Built Power Automate flows to filter reports and post results to Teams, distribute daily Excel reports through scheduled emails, and send scheduled messages and confirmation emails.",
-        "Investigated customer-record, policy, procedure, and system questions using current resources and internal support partners."
+        "Built Power Automate flows to post filtered reports to Teams. Automated daily Excel report distribution by email, scheduled messages, and confirmation emails.",
+        "Investigated account and system questions by checking customer records, reviewing policies and procedures, and consulting internal support teams."
       ]
     },
     {
@@ -60,7 +60,7 @@
     "business-analysis": {
       "output": "resume.pdf",
       "headline": "Business Analysis &amp; Junior Business Systems",
-      "summary": "Customer operations professional pursuing entry-level business analysis and business systems roles. Experience investigating issues and automating internal report distribution with Power Automate; portfolio process planning and Excel reporting, plus academic SQL and ServiceNow work.",
+      "summary": "Customer operations professional pursuing entry-level business analysis and business systems roles. Experience investigating issues and automating internal report distribution with Power Automate. Portfolio projects cover process mapping, requirements, and Excel reporting; academic work includes SQL and ServiceNow.",
       "skills": [
         "<b>Professional:</b> CSG, Power Automate, issue investigation, documentation, prioritization, and handoffs.",
         "<b>Portfolio:</b> Process mapping, requirements, acceptance criteria, UAT planning; Excel reporting.",

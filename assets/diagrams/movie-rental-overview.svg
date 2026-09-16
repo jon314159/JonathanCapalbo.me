@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 290" role="img" aria-labelledby="title desc">
+  <title id="title">Movie rental schema overview</title>
+  <desc id="desc">Actors and movies each have zero or more star_billings. Movies have zero or more media copies. Customers and media each have zero or more rental_history records. Every child record requires exactly one parent on each relationship. Keys are shown in the detailed case-study diagram.</desc>
+  <style>text{font-family:system-ui,sans-serif;fill:#0b1f33} .entity{fill:#fbfaf6;stroke:#5e6b76;stroke-width:1.5}.name{font-size:18px;font-weight:650;text-anchor:middle}.count{font-size:15px;fill:#2147be}.edge{stroke:#2147be;stroke-width:2;fill:none}</style>
+  <path class="edge" d="M87 60V120 M87 225V170 M273 60V120 M273 225V170 M159 250H201"/>
+  <g class="count"><text x="97" y="80">1</text><text x="97" y="111">0..*</text><text x="97" y="216">1</text><text x="97" y="189">0..*</text><text x="283" y="80">1</text><text x="283" y="111">0..*</text><text x="283" y="216">1</text><text x="283" y="189">0..*</text><text x="165" y="241">1</text><text x="165" y="282">0..*</text></g>
+  <g class="entity"><rect x="15" y="10" width="144" height="50" rx="8"/><rect x="201" y="10" width="144" height="50" rx="8"/><rect x="15" y="120" width="144" height="50" rx="8"/><rect x="201" y="120" width="144" height="50" rx="8"/><rect x="15" y="225" width="144" height="50" rx="8"/><rect x="201" y="225" width="144" height="50" rx="8"/></g>
+  <g class="name"><text x="87" y="41">actors</text><text x="273" y="41">customers</text><text x="87" y="151">star_billings</text><text x="273" y="151">rental_history</text><text x="87" y="256">movies</text><text x="273" y="256">media</text></g>
+</svg>

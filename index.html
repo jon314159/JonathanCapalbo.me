@@ -21,7 +21,8 @@
     <meta name="twitter:image:alt" content="Professional headshot of Jonathan Capalbo" />
     <link rel="canonical" href="https://jonathancapalbo.me/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/css/style.css?v=51" />
+    <link rel="stylesheet" href="assets/css/style.css?v=52" />
+    <script src="assets/js/portfolio.js?v=1" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -45,14 +46,15 @@
       <div class="hero-shell">
         <div class="hero-copy">
           <h1>From customer operations <em>to business analysis and reporting.</em></h1>
-          <p class="hero-summary">Customer operations experience at Comcast/Xfinity and Harte Hanks, including internal reporting automation with Power Automate at Comcast. Portfolio work covers Excel reporting and process planning, alongside academic SQL and ServiceNow work.</p>
-          <p class="hero-location">Point Pleasant, New Jersey · Open to remote roles</p>
+          <p class="target-roles">Seeking Business Analyst and Business Systems Analyst roles.</p>
+          <p class="hero-summary">Customer operations experience at Comcast/Xfinity and Harte Hanks, including Power Automate reporting workflows. I’m also interested in reporting and operations roles. My projects cover Excel, process planning, and academic SQL and ServiceNow work.</p>
+          <p class="hero-location">Point Pleasant, NJ · Open to remote, NYC and Philadelphia opportunities.</p>
 
           <div class="button-row">
             <a class="button button-primary" href="resume.pdf">Business analysis resume (PDF)</a>
-            <a class="button button-secondary" href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations resume (PDF)</a>
-            <a class="button button-secondary" href="#projects">Review project evidence</a>
+            <a class="button button-secondary" href="#projects">View projects</a>
           </div>
+          <a class="alternate-resume" href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations resume (PDF)</a>
         </div>
 
         <aside class="recruiter-card" aria-label="Career snapshot">
@@ -85,7 +87,7 @@
             <div class="project-copy">
               <p class="project-label">Excel reporting project · Fictional data</p>
               <h3>Excel Activity Reporting System</h3>
-              <p class="project-lede">A workbook for tracking daily activity, checking monthly totals, and comparing two different goal definitions. Includes fictional records, editable settings, and a reporting dashboard.</p>
+              <p class="project-lede">I built a workbook that connects daily activity records to monthly totals and a dashboard. Editable settings keep the monthly product goals separate from the daily target.</p>
 
               <div class="project-detail-grid">
                 <div><span>Daily inputs</span><p>Daily tables and validation keep entry fields consistent.</p></div>
@@ -94,41 +96,63 @@
               </div>
 
               <div class="featured-links">
-                <a class="button button-primary" href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download workbook <span aria-hidden="true">↓</span></a>
-                <a class="button button-secondary" href="sales-activity-tracker.html">Excel case study</a>
+                <a class="button button-primary" href="sales-activity-tracker.html">Excel case study</a>
+                <a class="button button-secondary" href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download workbook</a>
               </div>
             </div>
 
-            <a class="featured-dashboard-preview" href="sales-activity-tracker.html" aria-label="Open the Excel Activity Reporting System case study">
-              <div class="featured-dashboard-frame"><img src="assets/images/sales-activity-dashboard.png" width="1107" height="1090" loading="lazy" decoding="async" alt="Fictional Excel dashboard with KPI cards and goal-comparison charts" /></div>
-              <div class="featured-dashboard-caption"><span>Workbook evidence · Fictional data</span><strong>Two targets, two reporting questions</strong><small>Read the Excel case study</small></div>
-            </a>
+            <figure class="featured-dashboard-preview">
+              <a class="featured-dashboard-frame" href="assets/images/sales-activity-dashboard.png" aria-label="Open the full-size fictional Excel dashboard"><img src="assets/images/sales-activity-dashboard.png" width="1107" height="1090" loading="lazy" decoding="async" alt="Fictional Excel dashboard: monthly KPI cards above daily results and product-goal comparison charts" /></a>
+              <figcaption class="featured-dashboard-caption"><span>Workbook demonstration · Fictional data</span><a href="assets/images/sales-activity-dashboard.png">View full-size dashboard</a></figcaption>
+            </figure>
           </article>
 
           <div class="secondary-projects">
             <article class="project-card">
-              <div>
-                <p class="project-label">Academic project · ServiceNow school lab</p>
-                <h3>NJIT Registrar ServiceNow Portal</h3>
-                <p>I configured a searchable home page, organized 42 lab articles into 12 categories, and revised a registration guide. See the lab screenshot and the decisions behind search, topic browsing, and article structure.</p>
-                <div class="tag-row"><span>Service Portal</span><span>Knowledge Management</span><span>Article revision</span></div>
+              <p class="project-label">Academic project · ServiceNow school lab</p>
+              <h3>NJIT Registrar ServiceNow Portal</h3>
+              <figure class="project-preview">
+                <a href="servicenow-njit-registrar.html#portal-evidence" aria-label="Inspect the ServiceNow school-lab screenshot"><img src="assets/images/servicenow-registrar-portal.png" width="1280" height="720" loading="lazy" decoding="async" alt="Sanitized lab portal with knowledge search, 12-category count, and Browse All Categories heading" /></a>
+                <figcaption>Actual school-lab view, with search and category browsing.</figcaption>
+              </figure>
+              <p>I configured portal navigation, organized 42 articles into 12 categories, and revised a registration guide.</p>
+              <div class="project-actions">
                 <a class="project-link" href="servicenow-njit-registrar.html">ServiceNow case study</a>
+                <a class="artifact-link" href="assets/images/servicenow-registrar-portal.png">Full-size lab screenshot</a>
               </div>
             </article>
 
             <article class="project-card">
-              <p class="project-label">Self-directed planning study · Hypothetical</p>
-              <h3>Arcade Operations Ticketing Modernization</h3>
-              <p>A hypothetical plan for handling arcade maintenance requests, including a proposed workflow, requirements, and test scenarios. No system was implemented or tested.</p>
-              <div class="tag-row"><span>Process mapping</span><span>Requirements planning</span><span>UAT planning</span></div>
-              <a class="project-link" href="arcade-ticketing-modernization.html">Arcade planning study</a>
-              <a class="project-link" href="arcade-ticketing-evidence.html">Requirements and planned tests</a>
-            </article>
-            <article class="project-card sql-project-card">
               <p class="project-label">Academic final project · Oracle SQL</p>
               <h3>Movie Rental Database</h3>
-              <p>I created related tables for customers, movies, copies, actors, and rentals, plus a view showing copies still checked out. The public script includes fictional customer details and a validation summary covering constraints, query results, and two remaining rental-rule gaps.</p>
-              <a class="project-link" href="sql-movie-rental.html">SQL project and validation</a>
+              <figure class="project-preview diagram-preview">
+                <a href="sql-movie-rental.html#schema" aria-label="Inspect the movie rental schema and keys"><img src="assets/diagrams/movie-rental-overview.svg" width="360" height="290" loading="lazy" decoding="async" alt="Six tables: actors and movies link through star_billings; movies have media copies; rental_history connects media to customers. Each parent has zero or more child records." /></a>
+                <figcaption>Published schema overview. Each child requires one linked parent.</figcaption>
+              </figure>
+              <p>I created six related tables and a view of copies still checked out. The public script uses fictional customer details; validation documents two rental-rule gaps.</p>
+              <div class="project-actions">
+                <a class="project-link" href="sql-movie-rental.html">SQL case study and validation</a>
+                <a class="artifact-link" href="downloads/Movie_Rental_Database.sql" download>Download SQL project</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <p class="project-label">Self-directed planning study · Hypothetical</p>
+              <h3>Arcade Operations Ticketing Modernization</h3>
+              <figure class="project-preview process-preview">
+                <ol aria-label="Proposed workflow overview">
+                  <li>Report and assign owner</li>
+                  <li>Work, with approval where needed</li>
+                  <li>Resolve, verify, then close</li>
+                </ol>
+                <p>Pending or failed verification returns to work.</p>
+                <figcaption>Proposed workflow · Hypothetical scenario. Emergency response comes first.</figcaption>
+              </figure>
+              <p>I mapped a shared ticketing process and wrote requirements and planned tests for five issue types. No software was implemented or tested.</p>
+              <div class="project-actions">
+                <a class="project-link" href="arcade-ticketing-modernization.html">Arcade planning study</a>
+                <a class="artifact-link" href="arcade-ticketing-modernization.html#process-visual">Process comparison</a>
+                <a class="artifact-link" href="arcade-ticketing-evidence.html">Requirements and planned tests</a>
+              </div>
             </article>
           </div>
         </div>
@@ -149,9 +173,9 @@
               <h3>Customer Account Executive</h3>
               <p class="role-intro">Managed about 25 customer interactions daily, reviewing records and available options to identify appropriate actions.</p>
               <ul class="signal-list">
-                <li><strong>Investigation</strong><span>Checked customer-record, policy, procedure, and system questions using current resources and internal support partners.</span></li>
+                <li><strong>Investigation</strong><span>Investigated account and system questions by checking customer records, reviewing policies and procedures, and consulting internal support teams.</span></li>
                 <li><strong>Records and handoffs</strong><span>Maintained records in CSG and other internal systems, documenting decisions, follow-up, and cross-team handoffs.</span></li>
-                <li><strong>Reporting automation</strong><span>Built Power Automate flows to filter reports and post results to Teams, distribute daily Excel reports through scheduled emails, and send scheduled messages and confirmation emails. These workflows were internal; source files and screenshots are unavailable.</span></li>
+                <li><strong>Reporting automation</strong><span>Built Power Automate flows to post filtered reports to Teams. Automated daily Excel report distribution by email, scheduled messages, and confirmation emails. These workflows were internal; source files and screenshots are unavailable.</span></li>
               </ul>
             </div>
           </article>

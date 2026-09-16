@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie Rental Database — Oracle SQL | Jonathan Capalbo</title>
+    <title>Movie Rental Database | Oracle SQL | Jonathan Capalbo</title>
     <meta name="description" content="An academic Oracle SQL final project: related movie-rental tables, constraints, a read-only availability view, and verified execution with documented limitations." />
     <meta name="theme-color" content="#0b1f33" />
-    <meta property="og:title" content="Movie Rental Database — Oracle SQL | Jonathan Capalbo" />
+    <meta property="og:title" content="Movie Rental Database | Oracle SQL | Jonathan Capalbo" />
     <meta property="og:description" content="Inspect the academic SQL script, its query result, and the validation findings." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://jonathancapalbo.me/sql-movie-rental.html" />
@@ -15,7 +15,7 @@
     <meta name="twitter:card" content="summary" />
     <link rel="canonical" href="https://jonathancapalbo.me/sql-movie-rental.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/css/style.css?v=51" />
+    <link rel="stylesheet" href="assets/css/style.css?v=52" />
   </head>
   <body class="case-study-page">
     <a class="skip-link" href="#case-content">Skip to content</a>
@@ -33,32 +33,54 @@
       </div>
       <div class="case-hero">
         <div class="case-hero-copy">
+          <a class="case-back" href="index.html#projects">Back to Selected projects</a>
           <p class="eyebrow">Academic final project · Oracle SQL</p>
           <h1>A movie rental database that <em>tracks copies and checkouts.</em></h1>
-          <p class="case-lede">I built related tables for a movie-rental scenario and a query that identifies copies still checked out. The project demonstrates database structure, constraints, joins, and supporting Oracle objects.</p>
+          <p class="case-lede">The database connects titles, physical copies, and rental history. A read-only view identifies copies still checked out.</p>
           <div class="academic-disclosure" role="note">
             <strong>Coursework with sample data</strong>
             <span>The public copy replaces customer names and contact details with fictional examples. Movie-to-actor assignments are sample relationships, not factual casting credits. The class submission’s schema and SQL logic are preserved.</span>
           </div>
           <div class="button-row">
             <a class="button button-primary" href="downloads/Movie_Rental_Database.sql" download>Download SQL project</a>
+            <a class="button button-secondary" href="#schema">Inspect the schema</a>
             <a class="button button-secondary" href="#validation">Read validation findings</a>
           </div>
         </div>
-        <aside class="scope-note">
-          <h2>What was verified</h2>
-          <p>The public script ran in Oracle AI Database 26ai Free on September 12, 2026. All 43 validation checks passed.</p>
-          <p>Additional probes confirmed two rental-rule gaps. Both are documented below; this is an academic database, not a complete rental application.</p>
-        </aside>
+        <dl class="case-summary" aria-label="Project summary">
+          <div><dt>Project type</dt><dd>Academic database final with fictional customer details</dd></div>
+          <div><dt>My contribution</dt><dd>Created related tables, constraints, joins, a read-only view, and supporting Oracle objects</dd></div>
+          <div><dt>Tools/platform</dt><dd>Oracle SQL; public copy validated with SQL*Plus in Oracle AI Database 26ai Free</dd></div>
+          <div><dt>Deliverables/status</dt><dd>SQL script and recorded validation: 43 checks passed on September 12, 2026. Two rental-rule gaps remain.</dd></div>
+        </dl>
       </div>
     </header>
     <main id="case-content">
-      <section class="section case-intro">
+      <section class="section case-intro" id="schema">
         <div><p class="eyebrow">Database design</p><h2>A movie title and a rentable copy are different records.</h2></div>
         <div class="case-intro-copy">
           <p>A title can have several physical copies, each with its own identifier and format. Rental history connects a particular copy to a customer and records checkout and return dates.</p>
           <p>A separate casting table links actors to titles. Primary keys identify records; foreign keys keep those relationships tied to existing records.</p>
         </div>
+      </section>
+      <section class="section schema-section" aria-labelledby="schema-title">
+        <h2 id="schema-title">Six tables and five relationships.</h2>
+        <figure class="schema-figure">
+          <img src="assets/diagrams/movie-rental-schema.svg" width="900" height="650" loading="lazy" decoding="async" alt="Keys and relationships in the published movie rental schema. The complete text equivalent follows." />
+          <figcaption>Derived from the published SQL. PK = primary key; FK = foreign key; 1 = exactly one; 0..* = zero or more. Non-key attributes are omitted. <a href="assets/diagrams/movie-rental-schema.svg">Open full-size schema (SVG)</a></figcaption>
+        </figure>
+        <div class="schema-text">
+          <h3>Keys and relationships in text</h3>
+          <dl class="schema-key-list">
+            <div><dt><code>actors</code></dt><dd>PK: <code>actor_id</code>. One actor can have zero or more <code>star_billings</code>.</dd></div>
+            <div><dt><code>customers</code></dt><dd>PK: <code>customer_id</code>. One customer can have zero or more <code>rental_history</code> records.</dd></div>
+            <div><dt><code>star_billings</code></dt><dd>Composite PK: <code>(title_id, actor_id)</code>. Both are required FKs, linking each row to exactly one movie and one actor.</dd></div>
+            <div><dt><code>rental_history</code></dt><dd>Composite PK: <code>(media_id, rental_date)</code>. Required FKs: <code>media_id</code> and <code>customer_id</code>, linking each rental to exactly one copy and one customer.</dd></div>
+            <div><dt><code>movies</code></dt><dd>PK: <code>title_id</code>. One movie can have zero or more <code>media</code> copies and zero or more <code>star_billings</code>.</dd></div>
+            <div><dt><code>media</code></dt><dd>PK: <code>media_id</code>. Required FK: <code>title_id</code>, linking each copy to exactly one movie. A copy can have zero or more <code>rental_history</code> records.</dd></div>
+          </dl>
+        </div>
+        <p class="sql-notes">All five foreign keys are <code>NOT NULL</code>. The schema does not require a parent record to have children. Rental cardinality describes history; it does not enforce <a href="#validation">one open rental per copy</a>.</p>
       </section>
       <section class="section case-methods" aria-labelledby="tables-title">
         <h2 id="tables-title">What each table holds</h2>

@@ -23,6 +23,9 @@
     .skip { position: absolute; left: 1rem; top: -5rem; background: white; padding: .6rem; }
     .skip:focus { top: 0; }
     .meta { font-weight: 650; }
+    .pack-summary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 2rem; margin: 1.5rem 0; padding: 1.2rem 0; border-top: 1px solid #a3abb0; border-bottom: 1px solid #a3abb0; }
+    .pack-summary dt { font-weight: 700; }
+    .pack-summary dd { margin: .25rem 0 0; }
     .disclosure { background: #0b1f33; color: #fff; padding: 1.2rem 1.5rem; }
     nav ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
     nav a, .utility a { display: inline-block; min-height: 44px; padding: .5rem 0; }
@@ -55,6 +58,7 @@
       .register td:first-of-type { min-width: 0; }
       nav ul { display: block; }
       nav li { margin: .3rem 0; }
+      .pack-summary { grid-template-columns: 1fr; }
     }
     @media print {
       :root { background: white; font-size: 10pt; }
@@ -70,11 +74,17 @@
 <body>
   <a class="skip" href="#documents">Skip to documents</a>
   <header>
-    <p class="utility"><a href="https://jonathancapalbo.me/arcade-ticketing-modernization.html">Back to the arcade case study</a></p>
+    <p class="utility"><a href="https://jonathancapalbo.me/arcade-ticketing-modernization.html">Back to the arcade case study</a> · <a href="https://jonathancapalbo.me/#projects">Selected projects</a></p>
     <p class="meta">Jonathan Capalbo · Portfolio evidence · Version 1.0 · September 11, 2026</p>
     <h1>Arcade ticketing: the BA evidence pack.</h1>
     <p>Five connected artifacts show how a shared ticket could move from a staff report to verified closure at one fictional arcade location.</p>
     <div class="disclosure"><strong>Hypothetical proposal, prepared for portfolio review.</strong><p>These documents expand the published case-study scenario. Roles, requirements, examples, and controls are proposed assumptions, not findings from real stakeholder interviews. No software was configured, no UAT was executed, and no operational results are claimed. ServiceNow remains a conceptual mapping.</p></div>
+    <dl class="pack-summary" aria-label="Project summary">
+      <div><dt>Project type</dt><dd>Hypothetical business analysis evidence pack</dd></div>
+      <div><dt>My contribution</dt><dd>Wrote the process comparison, requirements, acceptance criteria, planned tests, and traceability sample</dd></div>
+      <div><dt>Tools/platform</dt><dd>Process mapping and requirements documentation; conceptual ServiceNow mapping</dd></div>
+      <div><dt>Deliverables/status</dt><dd>Five public artifacts, with ten proposed requirements and fourteen planned tests. All tests are Not Executed.</dd></div>
+    </dl>
     <p class="utility"><a href="arcade-ticketing-evidence.html" download="arcade-ticketing-evidence.html">Download this pack (HTML)</a> · The downloaded file includes its styles and can be read offline. Use your browser's Print command for a paper copy.</p>
     <nav aria-label="Evidence pack contents"><ul>
       <li><a href="#process-comparison">1. Process comparison</a></li>
@@ -87,6 +97,7 @@
   <main id="documents">
     <section id="process-comparison" aria-labelledby="process-title">
       <h2 id="process-title">1. Process comparison</h2>
+      <p class="utility"><a href="https://jonathancapalbo.me/arcade-ticketing-modernization.html#process-visual">View the workflow diagram and text equivalent</a></p>
       <p><strong>Scope:</strong> broken machines, game-card issues, refunds, prize-counter problems, and facility incidents at one location. Payment processing, customer self-service, integrations, and software configuration are outside this pack.</p>
       <p><strong>Safety first:</strong> for an immediate hazard, staff would secure the area and follow the emergency procedure before documenting the incident when safe. The ticket would record the response; it would not replace it.</p>
       <table><caption>Simulated current state and proposed future state</caption><thead><tr><th scope="col">Step / need</th><th scope="col">Simulated current state</th><th scope="col">Proposed future state and role</th><th scope="col">Control / exception</th></tr></thead><tbody>

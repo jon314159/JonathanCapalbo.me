@@ -21,7 +21,7 @@
     <meta name="twitter:image:alt" content="Professional headshot of Jonathan Capalbo" />
     <link rel="canonical" href="https://jonathancapalbo.me/arcade-ticketing-modernization.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/css/style.css?v=51" />
+    <link rel="stylesheet" href="assets/css/style.css?v=52" />
     <style>#ba-documents strong a { display: inline-flex; align-items: center; min-height: 44px; }</style>
   </head>
   <body class="case-study-page">
@@ -42,25 +42,26 @@
 
       <div class="case-hero">
         <div class="case-hero-copy">
+          <a class="case-back" href="index.html#projects">Back to Selected projects</a>
           <p class="eyebrow">Self-directed portfolio case study · Hypothetical</p>
           <h1>A ticketing plan for <em>five types of arcade issues.</em></h1>
-          <p class="case-lede">For this case study, I planned how one arcade location could handle five common types of internal tickets in one place. The process covers broken machines, game-card issues, refunds, prize-counter problems, and facility incidents from the first report through final review and reporting.</p>
+          <p class="case-lede">The proposed process covers broken machines, game-card issues, refunds, prize-counter problems, and facility incidents at one fictional location.</p>
           <div class="academic-disclosure arcade-disclosure" role="note">
             <strong>Hypothetical and simulated</strong>
             <span>The business and planning scenario are fictional. This is a process proposal, with no configured software, executed UAT, or measured results.</span>
           </div>
           <div class="button-row">
             <a class="button button-primary" href="arcade-ticketing-evidence.html">Review requirements and planned tests</a>
-            <a class="button button-secondary" href="#project-details">Read the ticketing plan</a>
+            <a class="button button-secondary" href="#process-visual">Compare the workflows</a>
           </div>
         </div>
 
-        <aside class="scope-note">
-          <h2>What you can review</h2>
-          <p>Review the process comparison, requirements register, acceptance criteria, planned tests, and traceability sample in the public evidence pack.</p>
-          <a href="arcade-ticketing-evidence.html">Read the BA documents</a>
-          <p>My contribution was analysis and planning. ServiceNow is a conceptual platform mapping only.</p>
-        </aside>
+        <dl class="case-summary" aria-label="Project summary">
+          <div><dt>Project type</dt><dd>Self-directed analysis and planning for a hypothetical scenario</dd></div>
+          <div><dt>My contribution</dt><dd>Mapped the process, defined requirements and acceptance criteria, and planned UAT and rollout</dd></div>
+          <div><dt>Tools/platform</dt><dd>Process mapping and requirements documentation; ServiceNow is a conceptual mapping only</dd></div>
+          <div><dt>Deliverables/status</dt><dd>Process proposal and public evidence pack. No configured software; all planned tests remain Not Executed.</dd></div>
+        </dl>
       </div>
     </header>
 
@@ -76,26 +77,55 @@
         </div>
       </section>
 
-      <section class="case-band" aria-labelledby="future-flow-title">
+      <section class="case-band" id="process-visual" aria-labelledby="future-flow-title">
         <div class="section case-band-inner">
           <div class="section-heading compact-heading">
-            <p class="eyebrow">Proposed future state</p>
-            <h2 id="future-flow-title">A visible path from first report to verified closure.</h2>
+            <p class="eyebrow">Process comparison · Hypothetical</p>
+            <h2 id="future-flow-title">From scattered reports to verified closure.</h2>
+            <p>A visualization of the existing proposal, based on the evidence pack’s process comparison and status rules. No software was configured or tested.</p>
           </div>
           <div class="arcade-emergency-note" role="note">
             <span aria-hidden="true">!</span>
             <div><strong>Safety comes before ticket entry.</strong><small>For an emergency or immediate hazard, staff would secure the area and follow the emergency procedure first, then document the incident when safe.</small></div>
           </div>
-          <ol class="arcade-flow" aria-label="Proposed ticket lifecycle">
-            <li><strong>Minimum ticket</strong><span>Capture category, location, description, and urgency.</span></li>
-            <li><strong>Triage</strong><span>Confirm impact, priority, and safety or refund controls.</span></li>
-            <li><strong>Assign owner</strong><span>Route to the responsible operational team.</span></li>
-            <li><strong>Work or approve</strong><span>Investigate, repair, fulfill, or obtain authorization.</span></li>
-            <li><strong>Place pending</strong><span>Record the reason when parts, vendor, or customer input blocks work.</span></li>
-            <li><strong>Resolve</strong><span>Document the action taken and resolution code.</span></li>
-            <li><strong>Verify</strong><span>Confirm service restoration or customer-facing completion.</span></li>
-            <li><strong>Close and report</strong><span>Lock the record into auditable history and KPI reporting.</span></li>
-          </ol>
+          <figure class="process-comparison">
+            <div class="process-state">
+              <h3>Simulated current state</h3>
+              <ol class="current-flow" aria-label="Simulated current process">
+                <li><strong>Scattered intake</strong><span>Staff use conversations, paper, calls, and messages.</span></li>
+                <li><strong>Informal handoff</strong><span>Urgency and responsibility depend on who hears the report.</span></li>
+                <li><strong>Work and decisions</strong><span>Updates and refund decisions may sit outside the original report.</span></li>
+                <li><strong>Verbal completion</strong><span>A verbal update may be the only evidence of a fix.</span></li>
+              </ol>
+              <p class="flow-context">Scattered records make pending work, backlog, and completion measures difficult to reconcile.</p>
+            </div>
+            <div class="process-state">
+              <h3>Proposed future state</h3>
+              <ol class="proposed-flow" aria-label="Proposed lifecycle with optional Pending and verification return paths">
+                <li><strong>New</strong><span>Staff record category, location, description, and urgency.</span></li>
+                <li><strong>Triaged</strong><span>Shift lead confirms impact and priority.</span></li>
+                <li><strong>Assigned</strong><span>Shift lead assigns a team and named owner.</span></li>
+                <li class="work-step"><strong>In Progress</strong><span>Owner investigates and records actions.</span><div class="flow-branch"><b>↔ Pending</b><small>Optional dependency branch. Return here when work resumes.</small></div></li>
+                <li><strong>Resolved</strong><span>Owner records action notes and a resolution code.</span></li>
+                <li class="verification-step"><strong>Verify</strong><span>Shift lead checks completion.</span><div class="flow-return"><b>Fail → In Progress</b><small>Record the reason; retain the owner.</small></div><span class="flow-pass">Pass → Closed</span></li>
+                <li><strong>Closed</strong><span>Record verifier and time; preserve history for reporting.</span></li>
+              </ol>
+            </div>
+            <figcaption>Boxes name ticket statuses except <strong>Verify</strong>, which is a decision between Resolved and Closed. Arrows show the proposed handoffs and return paths.</figcaption>
+          </figure>
+          <div class="process-details">
+            <article><h3>Refund approval is a separate decision.</h3><p>The ticket stays In Progress while an authorized manager other than the requester decides. Approval allows fulfillment within the approved amount. Rejection requires a reason and customer communication, then resolution as declined.</p><a href="arcade-ticketing-evidence.html#ac-04">Refund decision criteria</a></article>
+            <article><h3>Pending retains the owner.</h3><p>Parts, vendor, or customer input can block work. Record the reason, next action, and review date. The shift lead reviews overdue items. When the dependency arrives, return to In Progress.</p><a href="arcade-ticketing-evidence.html#ac-05">Pending criteria</a></article>
+            <article><h3>Verification controls closure.</h3><p>Resolved remains in the open backlog. A failed check returns to In Progress; a passing check permits closure. A later recurrence creates a linked new ticket and preserves the closed record.</p><a href="arcade-ticketing-evidence.html#ac-06">Verification criteria</a></article>
+          </div>
+          <details class="process-text">
+            <summary>Read the process as text</summary>
+            <p>In the simulated current state, staff report through conversations, paper, calls, and messages. Priority and ownership depend on who hears the report. Work and refund decisions may occur outside it; completion may be verbal, leaving scattered records for reporting.</p>
+            <p>In the proposed future state, emergency response comes first for immediate hazards, followed by documentation when safe. Staff create a New ticket. The shift lead confirms impact and priority (Triaged), then a team and named owner (Assigned). Unclear routing stays with the shift lead.</p>
+            <p>The owner records work In Progress. Refunds require a separate manager decision before fulfillment; awaiting approval is still In Progress. Optional Pending requires a dependency reason, next action, review date, and retained owner; work resumes In Progress.</p>
+            <p>Action notes and a resolution code allow Resolved. Shift-lead verification either fails, returning to In Progress with a reason and the same owner, or passes, permitting Closed with verifier and timestamp recorded. Closed history is preserved; recurring issues receive linked new tickets.</p>
+          </details>
+          <a class="project-link" href="arcade-ticketing-evidence.html#process-comparison">Read the process table and exception rules</a>
         </div>
       </section>
 

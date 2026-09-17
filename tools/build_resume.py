@@ -56,7 +56,7 @@ def build(variant):
     story.extend(section("SELECTED PROJECTS"))
     for key in selected["project_order"]:
         item = DATA["projects"][key]
-        story.append(KeepTogether([Paragraph(link(item["name"], item["url"]), TITLE), Paragraph(item["scope"], META), Paragraph(item["description"], BODY), Spacer(1, 2)]))
+        story.append(KeepTogether([Paragraph(link(item["name"], item["url"]) if item.get("url") else item["name"], TITLE), Paragraph(item["scope"], META), Paragraph(item["description"], BODY), Spacer(1, 2)]))
     story.extend(section("EDUCATION"))
     story.append(Paragraph("<b>New Jersey Institute of Technology</b> | Newark, NJ", BODY))
     story.append(Paragraph("M.S. Business &amp; Information Systems | Expected Summer 2028", BODY))

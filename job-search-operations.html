@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Job-Search Operations System | Jonathan Capalbo</title>
+    <meta name="description" content="How Jonathan Capalbo customized a private fork of an existing job-search workflow for duplicate checks, source validation, resume verification, and application tracking." />
+    <meta name="theme-color" content="#0b1f33" />
+    <meta property="og:title" content="Private Job-Search Operations System | Jonathan Capalbo" />
+    <meta property="og:description" content="An independent project: adapting and maintaining an existing Python-based workflow, with clear review steps and private record management." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://jonathancapalbo.me/job-search-operations.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Private Job-Search Operations System | Jonathan Capalbo" />
+    <meta name="twitter:description" content="Workflow customization, source validation, resume checks, and application tracking in a private independent project." />
+    <link rel="canonical" href="https://jonathancapalbo.me/job-search-operations.html" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css?v=53" />
+  </head>
+  <body class="case-study-page">
+    <a class="skip-link" href="#case-content">Skip to content</a>
+    <header class="case-header" id="top">
+      <div class="nav-shell">
+        <a class="brand" href="index.html" aria-label="Jonathan Capalbo, portfolio home">
+          <span class="brand-mark" aria-hidden="true">JC</span>
+          <span class="brand-copy"><strong>Jonathan Capalbo</strong><small>Business analysis, reporting &amp; systems</small></span>
+        </a>
+        <nav aria-label="Case study navigation">
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#skills">Skills</a>
+          <a class="nav-resume" href="resume.pdf">Resume (PDF)</a>
+        </nav>
+      </div>
+      <div class="case-hero">
+        <div class="case-hero-copy">
+          <a class="case-back" href="index.html#projects">Back to Selected projects</a>
+          <p class="eyebrow">Independent project · Customized private fork</p>
+          <h1>Private Job-Search <em>Operations System.</em></h1>
+          <p class="case-lede">I adapted and maintained a Python-based workflow to organize job discovery, verify sources, check application materials, and preserve application status across repeated sessions.</p>
+          <div class="academic-disclosure" role="note">
+            <strong>Built on an existing foundation</strong>
+            <span>This is my customized private fork of Mads Lorentzen's AI Job Search. The upstream project supplied the foundation; my work focused on adapting, integrating, and maintaining the workflow for my own use.</span>
+          </div>
+          <div class="button-row">
+            <a class="button button-primary" href="#controls">Review the workflow controls</a>
+            <a class="button button-secondary" href="https://github.com/MadsLorentzen/ai-job-search" target="_blank" rel="noopener noreferrer">Original upstream project</a>
+          </div>
+        </div>
+        <dl class="case-summary" aria-label="Project summary">
+          <div><dt>Project type</dt><dd>Independent workflow customization and maintenance</dd></div>
+          <div><dt>My contribution</dt><dd>Adapted discovery, tracking, verification, and recovery steps; integrated updates while retaining local customizations</dd></div>
+          <div><dt>Tools</dt><dd>Python, Git, structured JSON/CSV records, PDF checks, and AI-assisted workflows</dd></div>
+          <div><dt>Public evidence</dt><dd>Workflow explanation and synthetic examples. The working repository and personal records remain private.</dd></div>
+        </dl>
+      </div>
+    </header>
+    <main id="case-content">
+      <section class="section case-intro">
+        <div>
+          <p class="eyebrow">The operational problem</p>
+          <h2>Keep each step tied to the right job and evidence.</h2>
+        </div>
+        <div class="case-intro-copy">
+          <p>A job can appear on several boards, a source can fail to load, and an interrupted application can leave its status unclear. Repeating the whole process adds work; trusting an old result can carry an error into the next step.</p>
+          <p>I customized the workflow around explicit records and review points: identify duplicates, preserve source evidence, check the current resume, and distinguish a prepared application from a confirmed submission.</p>
+        </div>
+      </section>
+      <section class="case-band" id="controls" aria-labelledby="controls-title">
+        <div class="section case-band-inner">
+          <div class="section-heading compact-heading">
+            <p class="eyebrow">Workflow controls</p>
+            <h2 id="controls-title">Checks at the points where errors can carry forward.</h2>
+          </div>
+          <div class="case-feature-grid">
+            <article>
+              <h3>Consolidate discovery</h3>
+              <p>Normalize job links and compare identities before fetching more detail. Preserve source aliases and conflicting metadata so a duplicate check does not erase useful evidence.</p>
+            </article>
+            <article>
+              <h3>Verify the source</h3>
+              <p>Keep the posting snapshot, source, and check time together. Treat a blocked or malformed response as an unresolved check; it does not establish that a job is closed.</p>
+            </article>
+            <article>
+              <h3>Check the resume</h3>
+              <p>Check page count and text extraction, then review the rendered PDF and factual claims. Reuse verification only while the relevant document and evidence inputs remain unchanged.</p>
+            </article>
+            <article>
+              <h3>Record the actual outcome</h3>
+              <p>Keep prepared and submitted materials separate. Require submission confirmation before marking a role applied, and preview tracker changes before saving them.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section case-intro" id="examples">
+        <div>
+          <p class="eyebrow">Synthetic examples</p>
+          <h2>How the controls change the next step.</h2>
+          <p>These examples illustrate the workflow. They contain no real employers, applications, or test results.</p>
+        </div>
+        <div class="case-intro-copy">
+          <h3>The same opening appears twice</h3>
+          <p>Two source links identify the same role. The workflow consolidates the discovery records while retaining both source references for review.</p>
+          <h3>A posting cannot be retrieved</h3>
+          <p>The source check remains unresolved. The workflow records the failure and uses its recovery rules rather than labeling the employer unavailable or the job closed.</p>
+          <h3>A resume changes after verification</h3>
+          <p>The previous check no longer covers the changed file. The affected verification steps must run again before that version is used.</p>
+          <h3>The submission result is uncertain</h3>
+          <p>The application stays unconfirmed until the portal status is checked. Recovery starts with that status check rather than another submission.</p>
+        </div>
+      </section>
+      <section class="section case-scope" id="scope">
+        <div class="scope-card">
+          <p class="eyebrow">Maintenance and evidence</p>
+          <h2>Document the change and check what it affects.</h2>
+          <p>The local Git history records changes to staged application processing, discovery and ranking evidence, checkout consistency, and network-error handling. The repository includes automated checks for these behaviors.</p>
+          <p>I use the system for my own job search. The project demonstrates workflow organization, data validation, exception handling, and implementation support as independent work.</p>
+        </div>
+        <aside class="scope-note">
+          <h3>Scope and limits</h3>
+          <p>This case study describes a maintained private fork. It does not claim original authorship of the upstream framework or professional experience delivering this system for an employer.</p>
+          <p>The private repository, credentials, application records, tracker contents, and operational artifacts are not published here. The examples are synthetic, and the workflow still requires human review.</p>
+          <p>No measured time savings, hiring results, or security certification are claimed.</p>
+          <a href="index.html#projects">Return to selected projects</a>
+        </aside>
+      </section>
+      <section class="contact-section case-contact">
+        <div class="contact-copy">
+          <p class="eyebrow">Related work</p>
+          <h2>Reporting and business-system projects.</h2>
+          <p>See the Excel reporting workflow and academic ServiceNow portal for different examples of organizing information and checking its quality.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button contact-primary" href="sales-activity-tracker.html">Excel reporting case study</a>
+          <div>
+            <a href="servicenow-njit-registrar.html">ServiceNow case study</a>
+            <a href="resume.pdf">Resume (PDF)</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p><strong>Jonathan Capalbo</strong><span>Business analysis · Reporting · Operations · Systems</span></p>
+      <p>© 2026 Jonathan Capalbo.</p>
+    </footer>
+  </body>
+</html>

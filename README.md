@@ -8,6 +8,14 @@ At Comcast/Xfinity, I also built Power Automate flows to filter reports, share r
 
 ## Explore the projects
 
+### Private Job-Search Operations System
+
+An independent project based on a customized private fork of Mads Lorentzen's AI Job Search. I adapted and maintained the workflow for structured discovery, duplicate checks, source validation, resume verification, and application tracking.
+
+The case study describes the controls and uses clearly labeled synthetic examples. The repository, personal application records, and operational files remain private.
+
+[Read the case study](https://jonathancapalbo.me/job-search-operations.html) · [Original upstream project](https://github.com/MadsLorentzen/ai-job-search)
+
 ### Excel Activity Reporting System
 
 An Excel workbook that connects daily activity logs to a monthly summary and dashboard. It includes entry checks, editable goals, and charts that show why monthly results and daily targets can tell different stories.

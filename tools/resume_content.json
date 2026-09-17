@@ -31,6 +31,11 @@
     }
   ],
   "projects": {
+    "job-search": {
+      "name": "Private Job-Search Operations System",
+      "scope": "Independent project | Customized private fork",
+      "description": "Adapted and maintained a Python-based workflow for structured job discovery, duplicate checks, application tracking, resume verification, source validation, and private record management."
+    },
     "arcade": {
       "name": "Arcade Operations Ticketing Modernization",
       "url": "https://jonathancapalbo.me/arcade-ticketing-evidence.html",
@@ -67,7 +72,7 @@
         "<b>Academic SQL:</b> Oracle SQL, relational tables, joins, keys, constraints, and views.",
         "<b>Academic lab:</b> ServiceNow Knowledge Management and Service Portal.<br/><b>Additional coursework:</b> Tableau, Python, and Java."
       ],
-      "project_order": ["arcade", "servicenow", "excel"],
+      "project_order": ["job-search", "servicenow", "excel"],
       "coursework": "System Analysis and Design; Enterprise Database Management; Project Management for Managers."
     },
     "reporting-operations": {

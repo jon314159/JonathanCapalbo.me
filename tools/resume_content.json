@@ -25,8 +25,8 @@
       "dates": "February 2021 - January 2022",
       "location": "Remote",
       "bullets": [
-        "Investigated customer inquiries, recorded relevant details, and explained next actions.",
-        "Prioritized, categorized, and routed email requests, maintaining records for team handoffs."
+        "Investigated customer inquiries, categorized and routed email requests, and maintained records for follow-up and team handoffs.",
+        "Created reference guides in Microsoft OneNote for teammates, supplementing limited official documentation with a basic knowledge resource."
       ]
     }
   ],
@@ -90,7 +90,8 @@
           "dates": "February 2021 - January 2022",
           "location": "Remote",
           "bullets": [
-            "Investigated customer inquiries, categorized and routed email requests, and maintained records for follow-up and team handoffs."
+            "Investigated customer inquiries, categorized and routed email requests, and maintained records for follow-up and team handoffs.",
+            "Created reference guides in Microsoft OneNote for teammates, supplementing limited official documentation with a basic knowledge resource."
           ]
         }
       ],
@@ -128,7 +129,7 @@
         "<b>Academic lab:</b> ServiceNow Knowledge Management and Service Portal.<br/><b>Additional coursework:</b> Tableau, Python, and Java."
       ],
       "project_order": ["excel", "sql", "servicenow"],
-      "coursework": "Enterprise Database Management; Data Analytics for Information Systems (in progress); Business Operations Management and Analytics."
+      "coursework": ""
     }
   }
 }

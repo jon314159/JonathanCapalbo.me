@@ -36,38 +36,49 @@ def section(title):
 
 def build(variant):
     selected = DATA["variants"][variant]
+    experience_first = selected.get("layout") == "experience-first"
     output = ROOT / selected["output"]
     output.parent.mkdir(parents=True, exist_ok=True)
     contact = DATA["contact"]
     story = [Paragraph(DATA["name"], NAME), Paragraph(selected["headline"], HEADLINE)]
     story.append(Paragraph(f'{contact["location"]} | {contact["preference"]} | ' + link(contact["email"], "mailto:" + contact["email"]), CONTACT))
-    story.append(Paragraph(link("Portfolio", contact["portfolio"]) + " | " + link("LinkedIn", contact["linkedin"]), CONTACT))
+    portfolio_label = "jonathancapalbo.me" if experience_first else "Portfolio"
+    linkedin_label = "linkedin.com/in/jonathan-capalbo-2a00b9140" if experience_first else "LinkedIn"
+    story.append(Paragraph(link(portfolio_label, contact["portfolio"]) + " | " + link(linkedin_label, contact["linkedin"]), CONTACT))
     story.extend(section("SUMMARY"))
     story.append(Paragraph(selected["summary"], BODY))
-    story.extend(section("SKILLS"))
-    for item in selected["skills"]:
-        story.append(Paragraph(item, BODY))
-    story.extend(section("EXPERIENCE"))
-    for role in DATA["experience"]:
+    if not experience_first:
+        story.extend(section("SKILLS"))
+        for item in selected["skills"]:
+            story.append(Paragraph(item, BODY))
+    story.extend(section("PROFESSIONAL EXPERIENCE" if experience_first else "EXPERIENCE"))
+    for role in selected.get("experience", DATA["experience"]):
         block = [Paragraph(f'{role["title"]} | {role["company"]}', TITLE), Paragraph(f'{role["dates"]} | {role["location"]}', META)]
         block.extend(Paragraph("- " + item, BULLET) for item in role["bullets"])
         block.append(Spacer(1, 3))
         story.append(KeepTogether(block))
     story.extend(section("SELECTED PROJECTS"))
-    for key in selected["project_order"]:
-        item = DATA["projects"][key]
-        story.append(KeepTogether([Paragraph(link(item["name"], item["url"]) if item.get("url") else item["name"], TITLE), Paragraph(item["scope"], META), Paragraph(item["description"], BODY), Spacer(1, 2)]))
+    projects = selected.get("project_details", [DATA["projects"][key] for key in selected["project_order"]])
+    for item in projects:
+        description = Paragraph("- " + item["description"], BULLET) if experience_first else Paragraph(item["description"], BODY)
+        story.append(KeepTogether([Paragraph(link(item["name"], item["url"]) if item.get("url") else item["name"], TITLE), Paragraph(item["scope"], META), description, Spacer(1, 2)]))
+    if experience_first:
+        story.extend(section("SKILLS"))
+        for item in selected["skills"]:
+            story.append(Paragraph(item, BODY))
     story.extend(section("EDUCATION"))
     story.append(Paragraph("<b>New Jersey Institute of Technology</b> | Newark, NJ", BODY))
     story.append(Paragraph("M.S. Business &amp; Information Systems | Expected Summer 2028", BODY))
     story.append(Paragraph("B.S. Business Administration | 2024 | GPA: 3.97 | Dean's List, all semesters", BODY))
-    story.append(Paragraph("<b>Relevant coursework:</b> " + selected["coursework"], BODY))
+    if selected.get("coursework"):
+        story.append(Paragraph("<b>Relevant coursework:</b> " + selected["coursework"], BODY))
     story.append(Paragraph("<b>Training:</b> ServiceNow Administration Fundamentals; ServiceNow Knowledge Management Fundamentals", BODY))
 
     def page_metadata(canvas, _document):
         canvas._doc.Catalog.Lang = PDFString("en-US")
 
-    document = SimpleDocTemplate(str(output), pagesize=letter, leftMargin=36, rightMargin=36, topMargin=25, bottomMargin=25, title=f'Jonathan Capalbo - {unescape(selected["headline"])}', author=DATA["name"], creator="ReportLab")
+    vertical_margin = 30 if experience_first else 25
+    document = SimpleDocTemplate(str(output), pagesize=letter, leftMargin=36, rightMargin=36, topMargin=vertical_margin, bottomMargin=vertical_margin, title=f'Jonathan Capalbo - {unescape(selected["headline"])}', author=DATA["name"], creator="ReportLab")
     document.build(story, onFirstPage=page_metadata, onLaterPages=page_metadata)
     print(f"Built {output}")
 

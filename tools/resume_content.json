@@ -64,16 +64,58 @@
   "variants": {
     "business-analysis": {
       "output": "resume.pdf",
-      "headline": "Business Analysis &amp; Junior Business Systems",
-      "summary": "Customer operations professional pursuing entry-level business analysis and business systems roles. Experience investigating issues and automating internal report distribution with Power Automate. Portfolio projects cover process mapping, requirements, and Excel reporting; academic work includes SQL and ServiceNow.",
+      "layout": "experience-first",
+      "headline": "Business Analysis | Business Systems | Reporting",
+      "summary": "Customer operations professional with Power Automate reporting workflows and account and system investigation experience. Project work spans process analysis, requirements, Excel reporting, and ServiceNow knowledge management. Pursuing an M.S. in Business &amp; Information Systems at NJIT.",
       "skills": [
-        "<b>Professional:</b> CSG, Power Automate, issue investigation, documentation, prioritization, and handoffs.",
-        "<b>Portfolio:</b> Process mapping, requirements, acceptance criteria, UAT planning; Excel reporting.",
-        "<b>Academic SQL:</b> Oracle SQL, relational tables, joins, keys, constraints, and views.",
-        "<b>Academic lab:</b> ServiceNow Knowledge Management and Service Portal.<br/><b>Additional coursework:</b> Tableau, Python, and Java."
+        "<b>Business analysis (projects):</b> Process mapping, requirements, acceptance criteria, UAT planning.",
+        "<b>Reporting / automation:</b> Power Automate; Excel tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation (portfolio).",
+        "<b>Data / systems:</b> CSG; Oracle SQL - joins, keys, constraints, views (academic); ServiceNow Knowledge Management and Service Portal (lab)."
       ],
-      "project_order": ["job-search", "servicenow", "excel"],
-      "coursework": "System Analysis and Design; Enterprise Database Management; Project Management for Managers."
+      "experience": [
+        {
+          "title": "Customer Account Executive",
+          "company": "Comcast / Xfinity",
+          "dates": "April 2022 - September 2026",
+          "location": "Remote",
+          "bullets": [
+            "Built Power Automate flows to deliver filtered reports to Teams and distribute daily Excel reports by email; also automated scheduled messages and confirmation emails.",
+            "Investigated account and system questions by reviewing customer records, policies, and procedures and consulting internal support teams.",
+            "Handled about 25 customer interactions daily, documenting decisions, follow-up, and cross-team handoffs in CSG and other internal systems."
+          ]
+        },
+        {
+          "title": "Customer Service Representative",
+          "company": "Harte Hanks",
+          "dates": "February 2021 - January 2022",
+          "location": "Remote",
+          "bullets": [
+            "Investigated customer inquiries, categorized and routed email requests, and maintained records for follow-up and team handoffs."
+          ]
+        }
+      ],
+      "project_order": ["arcade", "excel", "servicenow"],
+      "project_details": [
+        {
+          "name": "Arcade Operations Ticketing Modernization",
+          "url": "https://jonathancapalbo.me/arcade-ticketing-modernization.html",
+          "scope": "Self-directed project | Hypothetical planning study",
+          "description": "Mapped current and proposed processes; linked 10 proposed requirements and acceptance criteria to 14 planned UAT scenarios. No system was implemented or tests executed."
+        },
+        {
+          "name": "Excel Activity Reporting System",
+          "url": "https://jonathancapalbo.me/sales-activity-tracker.html",
+          "scope": "Independent portfolio project | Fictional data",
+          "description": "Built validated daily inputs, formula-based monthly consolidation, and a dashboard. Reconciled source records to totals and distinguished monthly product goals from a separate daily target."
+        },
+        {
+          "name": "NJIT Registrar ServiceNow Portal",
+          "url": "https://jonathancapalbo.me/servicenow-njit-registrar.html",
+          "scope": "Academic project | ServiceNow school lab",
+          "description": "Configured a searchable portal, organized 42 articles into 12 categories, and revised registration guidance with steps, common errors, and support contacts."
+        }
+      ],
+      "coursework": ""
     },
     "reporting-operations": {
       "output": "downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf",

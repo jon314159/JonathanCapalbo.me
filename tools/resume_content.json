@@ -14,9 +14,9 @@
       "dates": "April 2022 - September 2026",
       "location": "Remote",
       "bullets": [
+        "Automated daily Excel report distribution by email and filtered report delivery to Teams using Power Automate; also scheduled messages and confirmation emails.",
         "Reviewed customer records and available options across about 25 daily interactions, documenting decisions, follow-up, and cross-team handoffs in CSG and other internal systems.",
-        "Built Power Automate flows to post filtered reports to Teams. Automated daily Excel report distribution by email, scheduled messages, and confirmation emails.",
-        "Investigated account and system questions by checking customer records, reviewing policies and procedures, and consulting internal support teams."
+        "Investigated account and system issues by reviewing customer records, policies, and procedures and consulting internal support teams to determine next steps."
       ]
     },
     {
@@ -26,7 +26,7 @@
       "location": "Remote",
       "bullets": [
         "Investigated customer inquiries, categorized and routed email requests, and maintained records for follow-up and team handoffs.",
-        "Created reference guides in Microsoft OneNote for teammates, supplementing limited official documentation with a basic knowledge resource."
+        "Created Microsoft OneNote reference guides for teammates to supplement limited official documentation."
       ]
     }
   ],
@@ -58,7 +58,7 @@
       "name": "Excel Activity Reporting System",
       "url": "https://jonathancapalbo.me/sales-activity-tracker.html",
       "scope": "Portfolio project | Fictional data",
-      "description": "Built validated daily inputs, monthly consolidation, and a dashboard. Reconciled source records to totals and distinguished monthly product goals from a separate daily target."
+      "description": "Built an Excel workbook with input validation, formula-based monthly consolidation, and a dashboard. Reconciled source records to totals and separated monthly product goals from the daily target."
     }
   },
   "variants": {
@@ -66,11 +66,12 @@
       "output": "resume.pdf",
       "layout": "experience-first",
       "headline": "Business Analysis | Business Systems | Reporting",
-      "summary": "Customer operations professional with Power Automate reporting workflows and account and system investigation experience. Project work spans process analysis, requirements, Excel reporting, and ServiceNow knowledge management. Pursuing an M.S. in Business &amp; Information Systems at NJIT.",
+      "summary": "Customer operations professional with experience automating report distribution, investigating account and system issues, and documenting team handoffs. Project work covers Excel reporting, ServiceNow, and requirements analysis. Pursuing an M.S. in Business &amp; Information Systems at NJIT.",
       "skills": [
         "<b>Business analysis (projects):</b> Process mapping, requirements, acceptance criteria, UAT planning.",
         "<b>Reporting / automation:</b> Power Automate; Excel tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation (portfolio).",
-        "<b>Data / systems:</b> CSG; Oracle SQL - joins, keys, constraints, views (academic); ServiceNow Knowledge Management and Service Portal (lab)."
+        "<b>Workplace tools:</b> CSG, SharePoint, Smartsheet, and OneNote.",
+        "<b>Data / systems:</b> Oracle SQL - joins, keys, constraints, views (academic); ServiceNow Knowledge Management and Service Portal (lab)."
       ],
       "experience": [
         {
@@ -79,8 +80,8 @@
           "dates": "April 2022 - September 2026",
           "location": "Remote",
           "bullets": [
-            "Built Power Automate flows to deliver filtered reports to Teams and distribute daily Excel reports by email; also automated scheduled messages and confirmation emails.",
-            "Investigated account and system questions by reviewing customer records, policies, and procedures and consulting internal support teams.",
+            "Automated daily Excel report distribution by email and filtered report delivery to Teams using Power Automate; also scheduled messages and confirmation emails.",
+            "Investigated account and system issues by reviewing customer records, policies, and procedures and consulting internal support teams to determine next steps.",
             "Handled about 25 customer interactions daily, documenting decisions, follow-up, and cross-team handoffs in CSG and other internal systems."
           ]
         },
@@ -91,29 +92,29 @@
           "location": "Remote",
           "bullets": [
             "Investigated customer inquiries, categorized and routed email requests, and maintained records for follow-up and team handoffs.",
-            "Created reference guides in Microsoft OneNote for teammates, supplementing limited official documentation with a basic knowledge resource."
+            "Created Microsoft OneNote reference guides for teammates to supplement limited official documentation."
           ]
         }
       ],
-      "project_order": ["arcade", "excel", "servicenow"],
+      "project_order": ["excel", "servicenow", "arcade"],
       "project_details": [
-        {
-          "name": "Arcade Operations Ticketing Modernization",
-          "url": "https://jonathancapalbo.me/arcade-ticketing-modernization.html",
-          "scope": "Self-directed project | Hypothetical planning study",
-          "description": "Mapped current and proposed processes; linked 10 proposed requirements and acceptance criteria to 14 planned UAT scenarios. No system was implemented or tests executed."
-        },
         {
           "name": "Excel Activity Reporting System",
           "url": "https://jonathancapalbo.me/sales-activity-tracker.html",
           "scope": "Independent portfolio project | Fictional data",
-          "description": "Built validated daily inputs, formula-based monthly consolidation, and a dashboard. Reconciled source records to totals and distinguished monthly product goals from a separate daily target."
+          "description": "Built an Excel workbook with input validation, formula-based monthly consolidation, and a dashboard. Reconciled source records to totals and separated monthly product goals from the daily target."
         },
         {
           "name": "NJIT Registrar ServiceNow Portal",
           "url": "https://jonathancapalbo.me/servicenow-njit-registrar.html",
           "scope": "Academic project | ServiceNow school lab",
           "description": "Configured a searchable portal, organized 42 articles into 12 categories, and revised registration guidance with steps, common errors, and support contacts."
+        },
+        {
+          "name": "Arcade Operations Ticketing Modernization",
+          "url": "https://jonathancapalbo.me/arcade-ticketing-modernization.html",
+          "scope": "Self-directed project | Hypothetical planning study",
+          "description": "Mapped current and proposed processes; linked 10 proposed requirements and acceptance criteria to 14 planned user acceptance testing (UAT) scenarios. No system was implemented or tests executed."
         }
       ],
       "coursework": ""
@@ -124,7 +125,7 @@
       "summary": "Customer operations professional pursuing entry-level reporting and operations roles. Experience reviewing records and automating internal report distribution with Power Automate. Portfolio Excel work covers monthly reporting and reconciliation using fictional data; academic SQL work covers relational data and queries.",
       "skills": [
         "<b>Portfolio Excel:</b> Tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation.",
-        "<b>Professional:</b> CSG, Power Automate, issue investigation, documentation, prioritization, and handoffs.",
+        "<b>Professional:</b> Power Automate, CSG, SharePoint, Smartsheet, OneNote, issue investigation, documentation, and handoffs.",
         "<b>Academic SQL:</b> Oracle SQL, relational tables, joins, keys, constraints, and views.",
         "<b>Academic lab:</b> ServiceNow Knowledge Management and Service Portal.<br/><b>Additional coursework:</b> Tableau, Python, and Java."
       ],

@@ -69,7 +69,7 @@
       "summary": "Customer operations professional with experience automating report distribution, investigating account and system issues, and documenting team handoffs. Project work covers Excel reporting, ServiceNow, and requirements analysis. Pursuing an M.S. in Business &amp; Information Systems at NJIT.",
       "skills": [
         "<b>Business analysis (projects):</b> Process mapping, requirements, acceptance criteria, UAT planning.",
-        "<b>Reporting / automation:</b> Power Automate; Excel tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation (portfolio).",
+        "<b>Reporting / automation:</b> Power Automate; Excel tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation (portfolio); PivotTables (coursework).",
         "<b>Workplace tools:</b> CSG, SharePoint, Smartsheet, and OneNote.",
         "<b>Data / systems:</b> Oracle SQL - joins, keys, constraints, views (academic); ServiceNow Knowledge Management and Service Portal (lab)."
       ],
@@ -124,7 +124,7 @@
       "headline": "Reporting &amp; Operations",
       "summary": "Customer operations professional pursuing entry-level reporting and operations roles. Experience reviewing records and automating internal report distribution with Power Automate. Portfolio Excel work covers monthly reporting and reconciliation using fictional data; academic SQL work covers relational data and queries.",
       "skills": [
-        "<b>Portfolio Excel:</b> Tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation.",
+        "<b>Portfolio Excel:</b> Tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation. <b>Excel coursework:</b> PivotTables for sales-data summaries.",
         "<b>Professional:</b> Power Automate, CSG, SharePoint, Smartsheet, OneNote, issue investigation, documentation, and handoffs.",
         "<b>Academic SQL:</b> Oracle SQL, relational tables, joins, keys, constraints, and views.",
         "<b>Academic lab:</b> ServiceNow Knowledge Management and Service Portal.<br/><b>Additional coursework:</b> Tableau, Python, and Java."

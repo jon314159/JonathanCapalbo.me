@@ -68,9 +68,9 @@
       "headline": "Business Analysis | Business Systems | Reporting",
       "summary": "Customer operations professional with experience automating report distribution, investigating account and system issues, and documenting team handoffs. Project work covers Excel reporting, ServiceNow, and requirements analysis. Pursuing an M.S. in Business &amp; Information Systems at NJIT.",
       "skills": [
-        "<b>Business analysis (projects):</b> Process mapping, requirements, acceptance criteria, UAT planning.",
+        "<b>Business analysis (projects):</b> Process mapping, user stories, acceptance criteria, traceability, UAT planning.",
         "<b>Reporting / automation:</b> Power Automate; Excel tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation (portfolio); PivotTables (coursework).",
-        "<b>Workplace tools:</b> CSG, SharePoint, Smartsheet, and OneNote.",
+        "<b>Workplace tools:</b> Microsoft Word, PowerPoint, SharePoint, OneNote; Smartsheet and CSG.",
         "<b>Data / systems:</b> Oracle SQL - joins, keys, constraints, views (academic); ServiceNow Knowledge Management and Service Portal (lab)."
       ],
       "experience": [
@@ -80,9 +80,9 @@
           "dates": "April 2022 - September 2026",
           "location": "Remote",
           "bullets": [
-            "Automated daily Excel report distribution by email and filtered report delivery to Teams using Power Automate; also scheduled messages and confirmation emails.",
+            "Built Power Automate flows to filter and distribute daily sales and team-adherence reports through email and Microsoft Teams, reducing manual searching and filtering for teammates.",
             "Investigated account and system issues by reviewing customer records, policies, and procedures and consulting internal support teams to determine next steps.",
-            "Handled about 25 customer interactions daily, documenting decisions, follow-up, and cross-team handoffs in CSG and other internal systems."
+            "Reviewed account records across about 25 daily customer interactions, guided customers through missing or outdated information updates, and documented decisions and follow-up in CSG."
           ]
         },
         {

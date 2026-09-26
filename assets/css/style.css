@@ -221,6 +221,8 @@ nav .nav-resume:hover { color: #fff; background: var(--blue); }
 .hero-copy .button-row { margin-top: 22px; }
 .alternate-resume { display: inline-flex; align-items: center; min-height: 44px; margin-top: 8px; color: var(--blue-dark); font-size: .88rem; text-underline-offset: 4px; }
 .alternate-resume:hover { text-decoration-thickness: 2px; }
+.hero-contact-links { display: flex; flex-wrap: wrap; gap: 0 24px; }
+.project-methods { color: var(--muted); font-size: 0.9rem; }
 
 .availability {
   display: inline-flex;
@@ -993,8 +995,9 @@ footer strong { color: var(--ink); }
   .hero-summary { font-size: 1.02rem; }
   .button { width: 100%; justify-content: space-between; }
   .hero-links { justify-content: center; }
-  .recruiter-card { display: block; padding: 24px; }
-  .card-topline { gap: 14px; margin-bottom: 18px; }
+  .recruiter-card { display: block; padding: 18px; }
+  .recruiter-card .quick-facts { display: none; }
+  .card-topline { gap: 14px; margin-bottom: 0; }
   .profile-photo { width: 72px; height: 72px; }
   .quick-facts div { grid-template-columns: 105px 1fr; }
   .signal-list li { grid-template-columns: 1fr; gap: 4px; }

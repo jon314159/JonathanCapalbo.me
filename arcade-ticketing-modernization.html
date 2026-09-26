@@ -21,7 +21,7 @@
     <meta name="twitter:image:alt" content="Professional headshot of Jonathan Capalbo" />
     <link rel="canonical" href="https://jonathancapalbo.me/arcade-ticketing-modernization.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/css/style.css?v=52" />
+    <link rel="stylesheet" href="assets/css/style.css?v=55" />
     <style>#ba-documents strong a { display: inline-flex; align-items: center; min-height: 44px; }</style>
   </head>
   <body class="case-study-page">
@@ -143,40 +143,11 @@
         <p><strong>Why this rule matters:</strong> an attempted repair would remain in the open backlog until it passes verification. Closing a ticket would mean confirmed completion.</p>
       </section>
 
-      <section class="section" aria-labelledby="analysis-path-title">
-        <div class="section-heading compact-heading">
-          <p class="eyebrow">Analyst workstream</p>
-          <h2 id="analysis-path-title">How I developed the ticketing plan.</h2>
-        </div>
-        <ol class="arcade-analysis-path" aria-label="Business analysis workstream">
-          <li><strong>Frame the scope</strong><span>Define the problem, pilot boundary, assumptions, stakeholders, and decision rights.</span></li>
-          <li><strong>Model the work</strong><span>Compare the simulated current state with a proposed future-state flow and exception paths.</span></li>
-          <li><strong>Define controls</strong><span>Set routing, priority, approval, status, security, and closure rules.</span></li>
-          <li><strong>Define requirements</strong><span>Describe required information, ownership, and conditional validation rules.</span></li>
-          <li><strong>Plan verification</strong><span>Connect requirements to user stories, acceptance criteria, and planned UAT.</span></li>
-          <li><strong>Prepare adoption</strong><span>Plan rollout, employee instructions, governance, and KPI definitions.</span></li>
-        </ol>
-      </section>
-
-      <section class="case-band" id="scope-decisions" aria-labelledby="evidence-title">
-        <div class="section case-band-inner">
-          <div class="section-heading compact-heading">
-            <p class="eyebrow">Process choices</p>
-            <h2 id="evidence-title">What changes in the proposed workflow.</h2>
-          </div>
-          <div class="case-feature-grid">
-            <article><span>01</span><h3>A shared record</h3><p>Replace scattered conversations, notes, calls, and messages with a ticket containing category, location, description, and urgency. Staff would have a common place to check the issue.</p></article>
-            <article><span>02</span><h3>Explicit ownership</h3><p>Triage assigns a responsible team and identifies approval needs. Refunds and repairs follow different work paths within the same lifecycle.</p></article>
-            <article><span>03</span><h3>A reason for waiting</h3><p>A pending state records whether parts, vendor input, or customer information is blocking work. A ticket can remain open without making its next dependency invisible.</p></article>
-            <article><span>04</span><h3>Verification before closure</h3><p>Record the resolution, then verify service restoration or customer-facing completion before closing. This adds a check between doing the work and reporting it complete.</p></article>
-          </div>
-        </div>
-      </section>
-
       <section class="section" id="ba-documents" aria-labelledby="ba-documents-title">
         <div class="section-heading compact-heading">
           <p class="eyebrow">Public evidence pack</p>
           <h2 id="ba-documents-title">Review the decisions behind the ticketing plan.</h2>
+          <p id="scope-decisions">I compared the proposed process with the simulated current state, defined ownership and exception rules, and linked requirements to acceptance criteria and planned tests.</p>
           <p>These proposed artifacts expand the fictional scenario into reviewable rules and test scenarios. They have not been approved by real stakeholders or tested in a configured system.</p>
         </div>
         <ol class="arcade-analysis-path">

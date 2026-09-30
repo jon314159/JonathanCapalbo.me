@@ -2,7 +2,7 @@
 
 ## Summary
 
-This Excel project connects daily activity records to monthly reporting. Inputs include fictional interaction IDs, product selections, outcomes, units, follow-up flags, and notes. The dashboard compares completed units with monthly product goals and a separately configured daily target. Settings controls product labels, goals, target days, and point values.
+This Excel project originated as a workplace initiative connecting daily activity records to monthly reporting. The public sample uses fictional data. Inputs include fictional interaction IDs, product selections, outcomes, units, follow-up flags, and notes. The dashboard compares completed units with monthly product goals and a separately configured daily target. Settings controls product labels, goals, target days, and point values.
 
 The public case study is available at [jonathancapalbo.me/sales-activity-tracker.html](https://jonathancapalbo.me/sales-activity-tracker.html).
 

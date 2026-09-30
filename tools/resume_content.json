@@ -58,7 +58,7 @@
     "excel": {
       "name": "Excel Activity Reporting System",
       "url": "https://jonathancapalbo.me/sales-activity-tracker.html",
-      "scope": "Portfolio project | Fictional data",
+      "scope": "Workplace initiative | Fictional public sample",
       "description": "Built an Excel workbook with input validation, formula-based monthly consolidation, and a dashboard. Reconciled source records to totals and separated monthly product goals from the daily target."
     }
   },
@@ -70,7 +70,7 @@
       "summary": "Customer operations professional with experience automating report distribution, investigating account and system issues, and documenting team handoffs. Project work covers Excel reporting and business-system controls. Pursuing an NJIT M.S.; available for full-time work.",
       "skills": [
         "<b>Business analysis (projects):</b> Process mapping, user stories, acceptance criteria, traceability, UAT planning.",
-        "<b>Reporting / automation:</b> Power Automate; Excel tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation (portfolio); PivotTables (coursework).",
+        "<b>Reporting / automation:</b> Power Automate; Excel tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation (public sample); PivotTables (coursework).",
         "<b>Workplace tools:</b> Excel, Microsoft 365, SharePoint, OneNote, Smartsheet, and CSG.",
         "<b>Data / systems:</b> Oracle SQL - joins, keys, constraints, views (academic); ServiceNow Knowledge Management and Service Portal (lab)."
       ],
@@ -106,7 +106,7 @@
         {
           "name": "Excel Activity Reporting System",
           "url": "https://jonathancapalbo.me/sales-activity-tracker.html",
-          "scope": "Independent portfolio project | Fictional data",
+          "scope": "Workplace initiative | Fictional public sample",
           "description": "Built an Excel workbook with input validation, formula-based monthly consolidation, and a dashboard. Reconciled source records to totals and separated monthly product goals from the daily target."
         },
         {
@@ -128,9 +128,9 @@
       "output": "downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf",
       "layout": "experience-first",
       "headline": "Reporting &amp; Operations",
-      "summary": "Customer operations professional with experience automating report distribution and investigating record and system issues. Portfolio work covers Excel reconciliation; academic SQL work covers relational tables and queries. Pursuing an NJIT M.S.; available for full-time work.",
+      "summary": "Customer operations professional with experience automating report distribution and investigating record and system issues. Workplace reporting includes Excel reconciliation; academic SQL work covers relational tables and queries. Pursuing an NJIT M.S.; available for full-time work.",
       "skills": [
-        "<b>Portfolio Excel:</b> Tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation. <b>Excel coursework:</b> PivotTables for sales-data summaries.",
+        "<b>Excel reporting:</b> Tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation. <b>Excel coursework:</b> PivotTables for sales-data summaries.",
         "<b>Professional:</b> Excel, Microsoft 365, Power Automate, CSG, SharePoint, OneNote, report and account-issue investigation, documentation, and handoffs.",
         "<b>Academic SQL:</b> Oracle SQL, relational tables, joins, keys, constraints, and views.",
         "<b>Academic lab:</b> ServiceNow Knowledge Management and Service Portal."

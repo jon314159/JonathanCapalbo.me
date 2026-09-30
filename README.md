@@ -12,7 +12,7 @@ At Comcast/Xfinity, I built Power Automate flows for a team of 10 to filter repo
 
 ### Excel Activity Reporting System
 
-An Excel workbook that connects daily activity logs to a monthly summary and dashboard. It includes entry checks, editable goals, and charts that show why monthly results and daily targets can tell different stories.
+A workplace initiative: an Excel workbook that connects daily activity logs to a monthly summary and dashboard. The public workbook uses fictional sample data. It includes entry checks, editable goals, and charts that show why monthly results and daily targets can tell different stories.
 
 All records and results are fictional. The case study walks through the same workbook available below.
 

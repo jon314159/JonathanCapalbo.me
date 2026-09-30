@@ -21,7 +21,7 @@
     <meta name="twitter:image:alt" content="Professional headshot of Jonathan Capalbo" />
     <link rel="canonical" href="https://jonathancapalbo.me/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/css/style.css?v=56" />
+    <link rel="stylesheet" href="assets/css/style.css?v=57" />
     <script src="assets/js/portfolio.js?v=1" defer></script>
     <script src="/assets/js/analytics.js?v=1" defer></script>
   </head>
@@ -88,18 +88,40 @@
           </div>
 
           <article class="workplace-feature" aria-labelledby="report-feature-title">
-            <div>
+            <div class="workplace-feature-copy">
               <p class="project-label">Workplace initiative · Comcast / Xfinity</p>
               <h3 id="report-feature-title">Power Automate Report Distribution</h3>
               <p>I built flows to filter and distribute daily sales and team-adherence reports by email and Microsoft Teams for a team of 10.</p>
-              <p class="project-methods">Employer flows and screenshots are unavailable. The case study explains the work with a clearly labeled fictional routing example; no quantified savings are claimed.</p>
+              <p class="project-methods">Original employer flows and screenshots are unavailable; no quantified savings are claimed.</p>
+              <a class="button button-primary" href="report-distribution.html">Workplace reporting case study</a>
             </div>
-            <a class="button button-primary" href="report-distribution.html">Workplace reporting case study</a>
+            <figure class="report-flow-preview" aria-labelledby="report-flow-caption">
+              <figcaption id="report-flow-caption">Fictional process illustration</figcaption>
+              <ol class="report-flow">
+                <li class="report-flow-step">
+                  <h4>Report input</h4>
+                  <ul class="report-input-list">
+                    <li><span>Cedar · Activity</span><span>Sep 1, 2026</span></li>
+                    <li><span>Cedar · Activity</span><span>Aug 31, 2026</span></li>
+                    <li><span>Maple · Activity</span><span>Sep 1, 2026</span></li>
+                  </ul>
+                </li>
+                <li class="report-flow-step report-filter-step">
+                  <h4>Filter the requested report</h4>
+                  <p>Match team, date &amp; report type</p>
+                  <strong>Cedar · Sep 1, 2026 · Activity</strong>
+                </li>
+                <li class="report-flow-step">
+                  <h4>Deliver to the requested channel</h4>
+                  <div class="report-delivery"><span>Email</span><small>or</small><span>Microsoft Teams</span></div>
+                </li>
+              </ol>
+            </figure>
           </article>
 
           <article class="featured-project">
             <div class="project-copy">
-              <p class="project-label">Excel reporting project · Fictional data</p>
+              <p class="project-label">Workplace initiative · Fictional sample data</p>
               <h3>Excel Activity Reporting System</h3>
               <p class="project-lede">I built a workbook that connects daily activity records to monthly totals and a dashboard. Editable settings keep the monthly product goals separate from the daily target.</p>
 

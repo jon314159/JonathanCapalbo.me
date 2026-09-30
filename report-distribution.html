@@ -15,7 +15,7 @@
     <meta name="twitter:description" content="Power Automate report distribution: the business problem, confirmed work, and a fictional process illustration." />
     <link rel="canonical" href="https://jonathancapalbo.me/report-distribution.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/css/style.css?v=55" />
+    <link rel="stylesheet" href="assets/css/style.css?v=57" />
     <script src="/assets/js/analytics.js?v=1" defer></script>
   </head>
   <body class="case-study-page job-operations-page">
@@ -57,30 +57,38 @@
         </div>
       </section>
       <section class="section job-walkthrough" id="example" aria-labelledby="example-title">
-        <div class="section-heading compact-heading"><p class="eyebrow">Fictional example · Created for this portfolio</p><h2 id="example-title">Select the requested report and choose its destination.</h2><p>Imagine a team requests its current daily activity report in Teams. The names, dates, and routing below are invented to explain the filtering concept. This is not an employer screenshot, a production flow export, or a running Power Automate demonstration.</p></div>
-        <dl class="job-example-record">
-          <div><dt>Example request</dt><dd>Team Cedar needs the activity report for September 1, 2026, in its reporting chat.</dd></div>
-          <div><dt>Selection rule</dt><dd>Match the requested team, report date, and report type before choosing what to deliver.</dd></div>
-        </dl>
-        <div class="sales-decision-table-wrap">
-          <table class="sales-decision-table">
-            <caption class="visually-hidden">Fictional report list and expected selection</caption>
-            <thead><tr><th scope="col">Report</th><th scope="col">Contents</th><th scope="col">Decision in this example</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">Cedar daily activity</th><td data-label="Contents">Team Cedar · September 1, 2026 · Activity</td><td data-label="Decision">Select for the requested Teams delivery.</td></tr>
-              <tr><th scope="row">Cedar prior-day activity</th><td data-label="Contents">Team Cedar · August 31, 2026 · Activity</td><td data-label="Decision">Exclude: the date differs.</td></tr>
-              <tr><th scope="row">Maple daily activity</th><td data-label="Contents">Team Maple · September 1, 2026 · Activity</td><td data-label="Decision">Exclude: the team differs.</td></tr>
-            </tbody>
-          </table>
+        <div class="section-heading compact-heading">
+          <h2 id="example-title">Select the requested report and choose its destination.</h2>
+          <p>In this fictional example, Team Cedar requests its September 1, 2026 activity report in Microsoft Teams. The names, dates, selection rules, and routing are invented to explain the concept; this is not a running demonstration or documentation of the original employer flow configuration.</p>
         </div>
-        <h3>Illustrative output</h3>
-        <p>“Team Cedar: the September 1 activity report is ready.” The example selects the matching report for the requested channel; an email request would use the email delivery path.</p>
-        <p><strong>Review question:</strong> Does the selected report match the team's date, information need, and delivery channel? These example criteria illustrate the decision; the exact configuration of the original employer flows is not documented here.</p>
+        <figure class="report-flow-preview report-flow-case" aria-labelledby="report-flow-case-caption">
+          <figcaption id="report-flow-case-caption">Fictional process illustration</figcaption>
+          <ol class="report-flow">
+            <li class="report-flow-step">
+              <h3>Report input</h3>
+              <ul class="report-input-list">
+                <li><span>Cedar · Activity</span><span>Sep 1, 2026</span></li>
+                <li><span>Cedar · Activity</span><span>Aug 31, 2026</span></li>
+                <li><span>Maple · Activity</span><span>Sep 1, 2026</span></li>
+              </ul>
+            </li>
+            <li class="report-flow-step report-filter-step">
+              <h3>Filter the requested report</h3>
+              <p>Match team, date &amp; report type</p>
+              <strong>Cedar · Sep 1, 2026 · Activity</strong>
+            </li>
+            <li class="report-flow-step">
+              <h3>Deliver to the requested channel</h3>
+              <p>Example Microsoft Teams message</p>
+              <strong>Team Cedar: the September 1 activity report is ready.</strong>
+            </li>
+          </ol>
+        </figure>
       </section>
       <section class="section job-validation" aria-labelledby="skills-title">
         <div class="section-heading compact-heading"><p class="eyebrow">Relevant work</p><h2 id="skills-title">Reporting, workflow improvement, and team support.</h2></div>
         <p>This initiative connected a recurring information problem with a practical distribution workflow. My contribution was identifying the manual steps, configuring the automation, and making the reports easier for teammates to access.</p>
-        <p>The related Excel portfolio project demonstrates input validation, monthly consolidation, and reconciliation using a downloadable workbook with fictional data.</p>
+        <p>The related workplace Excel initiative demonstrates input validation, monthly consolidation, and reconciliation through a public workbook with fictional sample data.</p>
         <a class="case-inline-link" href="sales-activity-tracker.html">Inspect the Excel reporting workbook</a>
       </section>
       <section class="contact-section case-contact"><div class="contact-copy"><p class="eyebrow">Availability</p><h2>Available for full-time work.</h2><p>Based in New Jersey; open to U.S. remote work and relocation for a suitable role.</p></div><div class="contact-actions"><a class="button contact-primary" href="resume.pdf">Business analysis resume</a><div><a href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations resume</a><a href="index.html#experience">Professional experience</a></div></div></section>

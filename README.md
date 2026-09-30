@@ -54,3 +54,13 @@ The public copy uses fictional customer details. It ran successfully in Oracle, 
 - [Reporting and operations](https://jonathancapalbo.me/downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf)
 
 Both resumes describe the same work history, with different emphasis for each role family.
+
+## Traffic and link clicks
+
+The site uses [GoatCounter](https://www.goatcounter.com/) for page views and link-click events. The private dashboard is at [jonathancapalbo.goatcounter.com](https://jonathancapalbo.goatcounter.com/).
+
+`assets/js/analytics.js` loads the tracker only on the HTTPS production domain and its `www` alias. Local previews, staging hosts, and downloaded HTML opened offline do not load the tracker. Page counts omit query strings and combine `/index.html` with `/`.
+
+Events cover both resumes, email, GitHub (with upstream links counted separately), LinkedIn, project pages, and downloads. Event names include the source page, such as `click/resume-default/from/home`. Clicks indicate interest; they do not prove a completed download, a sent email, or a job application. Ad blockers can prevent collection.
+
+To exclude your own browsing, visit `https://jonathancapalbo.me/#toggle-goatcounter` and follow GoatCounter's prompt. Repeat in each browser you use. See [GoatCounter's exclusion instructions](https://www.goatcounter.com/help/skip-dev).

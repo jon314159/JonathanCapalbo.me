@@ -1,10 +1,12 @@
 # Jonathan Capalbo | Portfolio
 
-I'm a customer operations professional pursuing entry-level roles in business analysis, reporting, and business systems. This portfolio shows how I organize information, investigate issues, document processes, and turn activity records into reports.
+I'm a customer operations professional seeking roles in business analysis, reporting, operations, and business systems. This portfolio shows how I organize information, investigate issues, document processes, and turn activity records into reports.
 
 [Visit my portfolio](https://jonathancapalbo.me/)
 
 At Comcast/Xfinity, I also built Power Automate flows to filter reports, share results in Teams, distribute daily Excel reports by email, and schedule messages and confirmation emails. These were internal workflows; source files and screenshots are unavailable.
+
+[Read the report-distribution case study](https://jonathancapalbo.me/report-distribution.html)
 
 ## Explore the projects
 

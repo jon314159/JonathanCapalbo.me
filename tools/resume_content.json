@@ -14,7 +14,7 @@
       "dates": "April 2022 - September 2026",
       "location": "Remote",
       "bullets": [
-        "Built Power Automate flows to filter and distribute daily sales and team-adherence reports through email and Microsoft Teams, reducing manual searching and filtering for teammates.",
+        "Built Power Automate flows to filter and distribute daily sales and team-adherence reports through email and Microsoft Teams for a team of 10, reducing manual searching and filtering.",
         "Investigated account and system issues by reviewing customer records, policies, and procedures and consulting internal support teams to determine next steps.",
         "Reviewed account records across about 25 daily customer interactions, helped correct missing or outdated information, and documented decisions and follow-up in CSG."
       ]
@@ -71,7 +71,7 @@
       "skills": [
         "<b>Business analysis (projects):</b> Process mapping, user stories, acceptance criteria, traceability, UAT planning.",
         "<b>Reporting / automation:</b> Power Automate; Excel tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation (portfolio); PivotTables (coursework).",
-        "<b>Workplace tools:</b> Microsoft Word, PowerPoint, SharePoint, OneNote; Smartsheet and CSG.",
+        "<b>Workplace tools:</b> Excel, Microsoft 365, SharePoint, OneNote, Smartsheet, and CSG.",
         "<b>Data / systems:</b> Oracle SQL - joins, keys, constraints, views (academic); ServiceNow Knowledge Management and Service Portal (lab)."
       ],
       "experience": [
@@ -81,7 +81,7 @@
           "dates": "April 2022 - September 2026",
           "location": "Remote",
           "bullets": [
-            "Built Power Automate flows to filter and distribute daily sales and team-adherence reports through email and Microsoft Teams, reducing manual searching and filtering for teammates.",
+            "Built Power Automate flows to filter and distribute daily sales and team-adherence reports through email and Microsoft Teams for a team of 10, reducing manual searching and filtering.",
             "Investigated account and system issues by reviewing customer records, policies, and procedures and consulting internal support teams to determine next steps.",
             "Reviewed account records across about 25 daily customer interactions, helped correct missing or outdated information, and documented decisions and follow-up in CSG."
           ]
@@ -100,7 +100,7 @@
       "project_order": [
         "excel",
         "servicenow",
-        "job-search"
+        "arcade"
       ],
       "project_details": [
         {
@@ -116,23 +116,24 @@
           "description": "Configured a searchable portal, organized 42 articles into 12 categories, and revised registration guidance with steps, common errors, and support contacts."
         },
         {
-          "name": "Private Job-Search Operations System",
-          "scope": "Independent project | Customized private fork",
-          "description": "Customized a private Python-based workflow to check duplicate jobs, verify source evidence and resume versions, and record application status only after confirmation.",
-          "url": "https://jonathancapalbo.me/job-search-operations.html"
+          "name": "Arcade Operations Ticketing Modernization",
+          "scope": "Self-directed planning study | Hypothetical",
+          "description": "Mapped a proposed ticketing workflow with user stories, acceptance criteria, and requirements traceability to planned UAT. No system was implemented; tests were not executed.",
+          "url": "https://jonathancapalbo.me/arcade-ticketing-evidence.html"
         }
       ],
       "coursework": ""
     },
     "reporting-operations": {
       "output": "downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf",
+      "layout": "experience-first",
       "headline": "Reporting &amp; Operations",
       "summary": "Customer operations professional with experience automating report distribution and investigating record and system issues. Portfolio work covers Excel reconciliation; academic SQL work covers relational tables and queries. Pursuing an NJIT M.S.; available for full-time work.",
       "skills": [
         "<b>Portfolio Excel:</b> Tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation. <b>Excel coursework:</b> PivotTables for sales-data summaries.",
-        "<b>Professional:</b> Power Automate, CSG, SharePoint, Smartsheet, OneNote, issue investigation, documentation, and handoffs.",
+        "<b>Professional:</b> Excel, Microsoft 365, Power Automate, CSG, SharePoint, OneNote, report and account-issue investigation, documentation, and handoffs.",
         "<b>Academic SQL:</b> Oracle SQL, relational tables, joins, keys, constraints, and views.",
-        "<b>Academic lab:</b> ServiceNow Knowledge Management and Service Portal.<br/><b>Additional coursework:</b> Tableau, Python, and Java."
+        "<b>Academic lab:</b> ServiceNow Knowledge Management and Service Portal."
       ],
       "project_order": [
         "excel",
@@ -147,7 +148,7 @@
           "dates": "April 2022 - September 2026",
           "location": "Remote",
           "bullets": [
-            "Built Power Automate flows to filter and distribute daily sales and team-adherence reports through email and Microsoft Teams, reducing manual searching and filtering for teammates.",
+            "Built Power Automate flows to filter and distribute daily sales and team-adherence reports through email and Microsoft Teams for a team of 10, reducing manual searching and filtering.",
             "Investigated account and system issues by reviewing customer records, policies, and procedures and consulting internal support teams to determine next steps.",
             "Reviewed account records across about 25 daily customer interactions, helped correct missing or outdated information, and documented decisions and follow-up in CSG."
           ]

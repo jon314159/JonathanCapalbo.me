@@ -1,2 +1,4 @@
 *.pdf binary
 /downloads/Movie_Rental_Database.sql -text
+/downloads/Movie_Rental_Improvements.sql -text
+/downloads/Movie_Rental_Improvements_Validation.sql -text

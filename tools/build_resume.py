@@ -68,7 +68,7 @@ def build(variant):
             story.append(Paragraph(item, BODY))
     story.extend(section("EDUCATION"))
     story.append(Paragraph("<b>New Jersey Institute of Technology</b> | Newark, NJ", BODY))
-    story.append(Paragraph("M.S. Business &amp; Information Systems | Expected Summer 2028", BODY))
+    story.append(Paragraph("M.S. Business &amp; Information Systems | Expected August 2028", BODY))
     story.append(Paragraph("B.S. Business Administration | 2024 | GPA: 3.97 | Dean's List, all semesters", BODY))
     if selected.get("coursework"):
         story.append(Paragraph("<b>Relevant coursework:</b> " + selected["coursework"], BODY))

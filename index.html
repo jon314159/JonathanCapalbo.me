@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jonathan Capalbo | Business Analysis, Reporting &amp; Systems</title>
-    <meta name="description" content="Jonathan Capalbo's portfolio: Excel reporting, a customized private job-search workflow, academic SQL and ServiceNow work, and business analysis planning." />
+    <meta name="description" content="Jonathan Capalbo's portfolio: workplace Power Automate report distribution, Excel reporting, academic SQL and ServiceNow work, and business analysis planning." />
     <meta name="theme-color" content="#0b1f33" />
     <meta property="og:title" content="Jonathan Capalbo | Business Analysis, Reporting &amp; Systems" />
-    <meta property="og:description" content="Excel reporting, a customized private job-search workflow, academic SQL and ServiceNow work, and business analysis planning by Jonathan Capalbo." />
+    <meta property="og:description" content="Workplace report distribution, Excel reporting, academic SQL and ServiceNow work, and business analysis planning by Jonathan Capalbo." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://jonathancapalbo.me/" />
     <meta property="og:image" content="https://jonathancapalbo.me/assets/images/jonathan-capalbo-headshot.png?v=20260913" />
@@ -16,12 +16,12 @@
     <meta property="og:image:alt" content="Professional headshot of Jonathan Capalbo" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Jonathan Capalbo | Business Analysis, Reporting &amp; Systems" />
-    <meta name="twitter:description" content="Excel reporting, a customized private job-search workflow, academic SQL and ServiceNow work, and business analysis planning by Jonathan Capalbo." />
+    <meta name="twitter:description" content="Workplace report distribution, Excel reporting, academic SQL and ServiceNow work, and business analysis planning by Jonathan Capalbo." />
     <meta name="twitter:image" content="https://jonathancapalbo.me/assets/images/jonathan-capalbo-headshot.png?v=20260913" />
     <meta name="twitter:image:alt" content="Professional headshot of Jonathan Capalbo" />
     <link rel="canonical" href="https://jonathancapalbo.me/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/css/style.css?v=55" />
+    <link rel="stylesheet" href="assets/css/style.css?v=56" />
     <script src="assets/js/portfolio.js?v=1" defer></script>
     <script src="/assets/js/analytics.js?v=1" defer></script>
   </head>
@@ -84,8 +84,18 @@
       <section class="work-section" id="projects">
         <div class="section work-inner">
           <div class="section-heading compact-heading">
-            <h2>Selected projects.</h2>
+            <h2>Selected work.</h2>
           </div>
+
+          <article class="workplace-feature" aria-labelledby="report-feature-title">
+            <div>
+              <p class="project-label">Workplace initiative · Comcast / Xfinity</p>
+              <h3 id="report-feature-title">Power Automate Report Distribution</h3>
+              <p>I built flows to filter and distribute daily sales and team-adherence reports by email and Microsoft Teams for a team of 10.</p>
+              <p class="project-methods">Employer flows and screenshots are unavailable. The case study explains the work with a clearly labeled fictional routing example; no quantified savings are claimed.</p>
+            </div>
+            <a class="button button-primary" href="report-distribution.html">Workplace reporting case study</a>
+          </article>
 
           <article class="featured-project">
             <div class="project-copy">
@@ -123,24 +133,6 @@
             </article>
 
             <article class="project-card">
-              <p class="project-label">Independent project · Customized private fork</p>
-              <h3>Job-Search Operations Workflow</h3>
-              <figure class="project-preview process-preview">
-                <ol aria-label="Job-search workflow overview">
-                  <li>Discover jobs and check duplicates</li>
-                  <li>Verify sources and review fit</li>
-                  <li>Prepare and check application materials</li>
-                  <li>Confirm submission and record status</li>
-                </ol>
-                <figcaption>Workflow summary. The repository and application records remain private.</figcaption>
-              </figure>
-              <p>I customized an existing Python-based workflow with resume verification tied to current inputs and recovery rules for uncertain submissions. Review the decisions, a synthetic walkthrough, and focused validation.</p>
-              <div class="project-actions">
-                <a class="project-link" href="job-search-operations.html">Job-search workflow case study</a>
-                <a class="artifact-link" href="job-search-operations.html#controls">Workflow controls and walkthrough</a>
-              </div>
-            </article>
-            <article class="project-card">
               <p class="project-label">Self-directed planning study · Hypothetical</p>
               <h3>Arcade Operations Ticketing Modernization</h3>
               <figure class="project-preview process-preview">
@@ -166,12 +158,17 @@
                 <a href="sql-movie-rental.html#schema" aria-label="Inspect the movie rental schema and keys"><img src="assets/diagrams/movie-rental-overview.svg" width="360" height="290" loading="lazy" decoding="async" alt="Six tables: actors and movies link through star_billings; movies have media copies; rental_history connects media to customers. Each parent has zero or more child records." /></a>
                 <figcaption>Published schema overview. Each child requires one linked parent.</figcaption>
               </figure>
-              <p>I created six related tables and a view of copies still checked out. The public script uses fictional customer details; validation documents two rental-rule gaps.</p>
+              <p>I created six related tables and a view of copies still checked out. A separate Oracle revision adds return-date and open-rental controls while preserving the original academic script.</p>
               <div class="project-actions">
                 <a class="project-link" href="sql-movie-rental.html">SQL case study and validation</a>
                 <a class="artifact-link" href="downloads/Movie_Rental_Database.sql" download>Download SQL project</a>
               </div>
             </article>
+          </div>
+          <div class="supporting-project">
+            <h3>Additional independent project</h3>
+            <p>I customized a private job-search workflow for duplicate checks, source validation, resume verification, and application tracking. The public case study uses synthetic examples.</p>
+            <a class="project-link" href="job-search-operations.html">Job-search workflow case study</a>
           </div>
         </div>
       </section>
@@ -191,7 +188,7 @@
               <h3>Customer Account Executive</h3>
               <p class="role-intro">Alongside customer account support, I developed reporting automation in response to teammates’ requests.</p>
               <ul class="signal-list">
-                <li><strong>Reporting automation</strong><span>Built Power Automate flows to filter and distribute daily sales and team-adherence reports through email and Microsoft Teams, reducing manual searching and filtering for teammates. These workflows were internal; source files and screenshots are unavailable.</span></li>
+                <li><strong>Reporting automation</strong><span>Built Power Automate flows to filter and distribute daily sales and team-adherence reports through email and Microsoft Teams for a team of 10, reducing manual searching and filtering. These workflows were internal; source files and screenshots are unavailable.</span></li>
                 <li><strong>Process illustration</strong><span><a href="report-distribution.html">See a fictional report-routing example</a> based on the type of problem I addressed.</span></li>
                 <li><strong>Investigation</strong><span>Investigated account and system questions by checking customer records, reviewing policies and procedures, and consulting internal support teams.</span></li>
                 <li><strong>Records and handoffs</strong><span>Reviewed account records across about 25 daily customer interactions, helped customers supply missing details or update outdated information, and documented decisions and follow-up in CSG.</span></li>
@@ -236,7 +233,7 @@
           </article>
           <article>
             <h3 class="skill-index">Systems and automation</h3>
-            <p><strong>Professional use:</strong> Microsoft Word, PowerPoint, SharePoint, OneNote, Smartsheet, and CSG; Power Automate for report distribution, Teams notifications, and scheduled emails. <strong>School lab:</strong> ServiceNow Knowledge Management and Service Portal; HTML/CSS content blocks.</p>
+            <p><strong>Professional use:</strong> Excel, Microsoft 365, SharePoint, OneNote, Smartsheet, and CSG; Power Automate for report distribution, Teams notifications, and scheduled emails. <strong>School lab:</strong> ServiceNow Knowledge Management and Service Portal; HTML/CSS content blocks.</p>
           </article>
         </div>
         <p class="coursework-note"><strong>Project-management coursework:</strong> Microsoft Project; Agile, Scrum, and Waterfall methods. <strong>Additional coursework exposure:</strong> Tableau, Python, and Java.</p>
@@ -250,7 +247,7 @@
 
         <div class="education-stack">
           <article>
-            <span class="degree-level">Graduate · Expected summer 2028</span>
+            <span class="degree-level">Graduate · Expected August 2028</span>
             <h3>M.S. Business &amp; Information Systems</h3>
             <p>New Jersey Institute of Technology</p>
           </article>

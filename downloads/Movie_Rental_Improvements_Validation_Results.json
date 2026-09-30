@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "runtime": {
+    "product": "Oracle AI Database 26ai Free",
+    "version": "23.26.3.0.0",
+    "client": "SQL*Plus inside the Oracle container"
+  },
+  "exit_code": 0,
+  "revision_checks": 20,
+  "checks": [
+    "PASS | Date-order constraint enabled and validated | 1",
+    "PASS | Conditional unique index valid | 1",
+    "PASS | Original rental rows preserved | 4",
+    "PASS | Original open copy preserved | 1",
+    "PASS | Insert rejects a return before checkout | Oracle code -2290",
+    "PASS | Update rejects a return before checkout | Oracle code -2290",
+    "PASS | Moving checkout past its return is rejected | Oracle code -2290",
+    "PASS | Second open rental for the same copy is rejected | Oracle code -1",
+    "PASS | Same-time checkout and return accepted | 1",
+    "PASS | Multiple completed rentals for one copy accepted | 3",
+    "PASS | Different copies can each have an open rental | 2",
+    "PASS | Reopening history while a copy is out is rejected | Oracle code -1",
+    "PASS | Moving an open rental onto an occupied copy is rejected | Oracle code -1",
+    "PASS | Returning a copy removes it from availability view | 0",
+    "PASS | A returned copy can be rented again | 1",
+    "PASS | Synonym reflects the new open rental | 1",
+    "PASS | Open-copy view has no duplicate copies | 0",
+    "PASS | Validation restores original rental rows | 4",
+    "PASS | Validation restores original view result | 1",
+    "PASS | No date-order violations remain | 0"
+  ],
+  "compile_validity_passed": true,
+  "errors": [],
+  "source_sha256": {
+    "Movie_Rental_Database.sql": "9ebab5eb414cb45a8375e4ddb5d00e893c2fd470a58e0c390c9cd607e8a44101",
+    "Movie_Rental_Improvements.sql": "d8c8cddc1721d12d724b410c3243d44c5c0e2e38133694f1b0e414b766cff8b3",
+    "Movie_Rental_Improvements_Validation.sql": "61ffd5a2e1d9bc3d310afa1236c5ab2604fbb9fc0f3366413ccea4c4562c5a80"
+  },
+  "image": "sha256:770ca58ab319d8cfde610b0db25c06899ce0af9591c4addfa10d2cb8f0318e65",
+  "repo_digests": [
+    "container-registry.oracle.com/database/free@sha256:770ca58ab319d8cfde610b0db25c06899ce0af9591c4addfa10d2cb8f0318e65"
+  ],
+  "completed_at_utc": "2026-09-30T22:00:05.316728+00:00",
+  "evidence_recorded_at_utc": "2026-09-30T22:02:29.769493+00:00",
+  "scope": "Separate AI-assisted portfolio extension; original academic assignment preserved. Fictional customer data only.",
+  "method": "Original project, separate extension, and revision validation executed as unchanged SQL*Plus scripts in a new disposable schema.",
+  "unrun_tests": [
+    "Concurrent-session behavior",
+    "Performance benchmarks",
+    "Production use"
+  ],
+  "reproduce_sqlplus": [
+    "ALTER SESSION SET NLS_DATE_LANGUAGE = 'ENGLISH';",
+    "@Movie_Rental_Database.sql",
+    "@Movie_Rental_Improvements.sql",
+    "@Movie_Rental_Improvements_Validation.sql",
+    "SELECT COUNT(*) AS invalid_objects FROM user_objects WHERE status='INVALID';"
+  ]
+}

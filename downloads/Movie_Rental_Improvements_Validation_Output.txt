@@ -1,0 +1,29 @@
+Oracle AI Database 26ai Free | Version 23.26.3.0.0
+Official cached image: container-registry.oracle.com/database/free@sha256:770ca58ab319d8cfde610b0db25c06899ce0af9591c4addfa10d2cb8f0318e65
+Client: SQL*Plus inside disposable Oracle container
+Only public fictional portfolio data used.
+
+PASS | Date-order constraint enabled and validated | 1
+PASS | Conditional unique index valid | 1
+PASS | Original rental rows preserved | 4
+PASS | Original open copy preserved | 1
+PASS | Insert rejects a return before checkout | Oracle code -2290
+PASS | Update rejects a return before checkout | Oracle code -2290
+PASS | Moving checkout past its return is rejected | Oracle code -2290
+PASS | Second open rental for the same copy is rejected | Oracle code -1
+PASS | Same-time checkout and return accepted | 1
+PASS | Multiple completed rentals for one copy accepted | 3
+PASS | Different copies can each have an open rental | 2
+PASS | Reopening history while a copy is out is rejected | Oracle code -1
+PASS | Moving an open rental onto an occupied copy is rejected | Oracle code -1
+PASS | Returning a copy removes it from availability view | 0
+PASS | A returned copy can be rented again | 1
+PASS | Synonym reflects the new open rental | 1
+PASS | Open-copy view has no duplicate copies | 0
+PASS | Validation restores original rental rows | 4
+PASS | Validation restores original view result | 1
+PASS | No date-order violations remain | 0
+IMPROVEMENT_VALIDATION_PASSED | 20 checks
+COMPILE_VALIDITY_PASSED | 0 invalid objects
+SQL*Plus exit code: 0
+No Oracle, SQL*Plus, or PL/SQL errors.

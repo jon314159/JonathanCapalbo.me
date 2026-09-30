@@ -4,19 +4,11 @@ I'm a customer operations professional seeking roles in business analysis, repor
 
 [Visit my portfolio](https://jonathancapalbo.me/)
 
-At Comcast/Xfinity, I also built Power Automate flows to filter reports, share results in Teams, distribute daily Excel reports by email, and schedule messages and confirmation emails. These were internal workflows; source files and screenshots are unavailable.
+At Comcast/Xfinity, I built Power Automate flows for a team of 10 to filter reports, share results in Teams, distribute daily Excel reports by email, and schedule messages and confirmation emails. These were internal workflows; source files and screenshots are unavailable. No quantified savings are claimed.
 
 [Read the report-distribution case study](https://jonathancapalbo.me/report-distribution.html)
 
 ## Explore the projects
-
-### Private Job-Search Operations System
-
-An independent project based on a customized private fork of Mads Lorentzen's AI Job Search. I adapted and maintained the workflow for structured discovery, duplicate checks, source validation, resume verification, and application tracking.
-
-The case study describes the controls and uses clearly labeled synthetic examples. The repository, personal application records, and operational files remain private.
-
-[Read the case study](https://jonathancapalbo.me/job-search-operations.html) · [Original upstream project](https://github.com/MadsLorentzen/ai-job-search)
 
 ### Excel Activity Reporting System
 
@@ -46,9 +38,19 @@ The scenario is hypothetical. No system was implemented, tests were not run, and
 
 My Oracle SQL final for an undergraduate database class. It connects customers, movie copies, and rental history, with a query showing which copies have not been returned.
 
-The public copy uses fictional customer details. It ran successfully in Oracle, with 43 validation checks passed and two remaining rental-rule gaps documented in the case study.
+The public copy uses fictional customer details. The original ran successfully in Oracle, with 43 validation checks passed and two rental-rule gaps documented in the case study. A separate AI-assisted portfolio extension adds return-date ordering and one-open-rental-per-copy controls. All 20 revision checks passed in SQL*Plus on Oracle AI Database 26ai Free, version 23.26.3.0.0; object validation found zero invalid objects. Concurrent-session behavior and performance were not tested.
 
 [Read the SQL project](https://jonathancapalbo.me/sql-movie-rental.html) · [Download the SQL](https://jonathancapalbo.me/downloads/Movie_Rental_Database.sql)
+
+[Download the separate Oracle revision](https://jonathancapalbo.me/downloads/Movie_Rental_Improvements.sql) · [Download revision tests](https://jonathancapalbo.me/downloads/Movie_Rental_Improvements_Validation.sql)
+
+[Recorded revision results](https://jonathancapalbo.me/downloads/Movie_Rental_Improvements_Validation_Results.json) · [Recorded test output](https://jonathancapalbo.me/downloads/Movie_Rental_Improvements_Validation_Output.txt)
+
+### Additional independent project
+
+The Private Job-Search Operations System is based on a customized private fork of Mads Lorentzen's AI Job Search. I adapted the workflow for discovery, duplicate checks, source validation, resume verification, and application tracking. The case study uses synthetic examples; the repository and application records remain private.
+
+[Read the case study](https://jonathancapalbo.me/job-search-operations.html) · [Original upstream project](https://github.com/MadsLorentzen/ai-job-search)
 
 ## Resumes
 

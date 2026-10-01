@@ -329,7 +329,7 @@ nav .nav-resume:hover { color: #fff; background: var(--blue); }
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 }
 
 .card-topline p {
@@ -530,7 +530,7 @@ nav .nav-resume:hover { color: #fff; background: var(--blue); }
   background: var(--navy);
 }
 
-.work-inner { position: relative; z-index: 1; width: min(1180px, calc(100% - 48px)); }
+.work-inner { position: relative; z-index: 1; width: min(1180px, calc(100% - 48px)); padding-top: 48px; }
 
 .work-section .section-heading h2 { color: #fff; }
 .work-section .section-heading .eyebrow { color: var(--lime); }
@@ -649,7 +649,7 @@ nav .nav-resume:hover { color: #fff; background: var(--blue); }
   position: relative;
   display: block;
   overflow: hidden;
-  aspect-ratio: 1.9 / 1;
+  aspect-ratio: auto;
   border-radius: 24px 24px 0 0;
   background: #edf1f5;
 }
@@ -1461,9 +1461,10 @@ footer strong { color: var(--ink); }
 }
 
 .sales-hero-crop {
+  position: relative;
   display: block;
   overflow: hidden;
-  aspect-ratio: 1.9 / 1;
+  aspect-ratio: auto;
   background: #edf1f5;
 }
 
@@ -1652,11 +1653,15 @@ footer strong { color: var(--ink); }
 
 .sales-dashboard-crop img { display: block; width: 100%; height: auto; }
 
+.featured-dashboard-frame:focus-visible,
+.sales-hero-crop:focus-visible,
 .sales-dashboard-crop:focus-visible {
   outline: 0;
   box-shadow: none;
 }
 
+.featured-dashboard-frame:focus-visible::after,
+.sales-hero-crop:focus-visible::after,
 .sales-dashboard-crop:focus-visible::after {
   content: "";
   position: absolute;
@@ -1816,7 +1821,7 @@ footer strong { color: var(--ink); }
   .tracker-row span { display: grid; gap: 2px; }
   .tracker-row span:nth-child(3)::before { content: "Outcome"; color: var(--muted); font-size: 0.66rem; font-weight: 850; text-transform: uppercase; }
   .tracker-row span:nth-child(4)::before { content: "Units"; color: inherit; font-size: 0.66rem; font-weight: 850; text-transform: uppercase; }
-  .featured-dashboard-frame { aspect-ratio: 1.9 / 1; }
+  .featured-dashboard-frame { aspect-ratio: auto; }
   .sales-result-contrast,
   .sales-architecture-grid,
   .sales-check-grid { grid-template-columns: 1fr; }
@@ -1873,9 +1878,9 @@ footer strong { color: var(--ink); }
 }
 
 .job-operations-page .job-attribution { max-width: 760px; color: var(--muted); font-size: 0.95rem; }
-.workplace-feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 40px; padding: 32px 0; margin-bottom: 36px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.workplace-feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; gap: 40px; padding: 24px 0; margin-bottom: 28px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .workplace-feature h3 { margin: 12px 0; font-size: clamp(1.4rem, 2.4vw, 2rem); color: var(--white); }
-.workplace-feature .project-label { color: var(--lime); }
+.workplace-feature .project-label, .supporting-project .project-label { color: var(--lime); }
 .workplace-feature p { max-width: 720px; }
 .workplace-feature .project-methods { margin-bottom: 0; color: #b8c5d0; }
 .workplace-feature-copy .button { margin-top: 24px; }

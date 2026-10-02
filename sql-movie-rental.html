@@ -16,6 +16,8 @@
     <link rel="canonical" href="https://jonathancapalbo.me/sql-movie-rental.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/style.css?v=58" />
+    <link rel="stylesheet" href="assets/css/case-study.css?v=1" />
+    <script src="assets/js/case-study.js?v=1" defer></script>
     <script src="/assets/js/analytics.js?v=1" defer></script>
   </head>
   <body class="case-study-page">
@@ -58,14 +60,14 @@
       </div>
     </header>
     <main id="case-content">
-      <section class="section case-intro" id="schema">
+      <section class="section case-intro" id="schema" data-read-label="Database design">
         <div><p class="eyebrow">Database design</p><h2>A movie title and a rentable copy are different records.</h2></div>
         <div class="case-intro-copy">
           <p>A title can have several physical copies, each with its own identifier and format. Rental history connects a particular copy to a customer and records checkout and return dates.</p>
           <p>A separate casting table links actors to titles. Primary keys identify records; foreign keys keep those relationships tied to existing records.</p>
         </div>
       </section>
-      <section class="section schema-section" aria-labelledby="schema-title">
+      <section class="section schema-section" id="relationships" aria-labelledby="schema-title" data-read-label="Relationships">
         <h2 id="schema-title">Six tables and five relationships.</h2>
         <figure class="schema-figure">
           <img src="assets/diagrams/movie-rental-schema.svg" width="900" height="650" loading="lazy" decoding="async" alt="Keys and relationships in the published movie rental schema. The complete text equivalent follows." />
@@ -100,11 +102,11 @@
         </table>
         <p class="sql-notes">The script also creates four sequences for new identifiers, a customer last-name index, and the synonym <code>tu</code> as a shorter name for the view. The index is present and valid; query-speed improvements were not benchmarked.</p>
       </section>
-      <section class="section" id="query-result" aria-labelledby="query-title">
+      <section class="section" id="query-result" aria-labelledby="query-title" data-read-label="Query and result">
         <p class="eyebrow">Query and result</p>
         <h2 id="query-title">Which copies have not been returned?</h2>
         <p class="sql-notes">The <code>title_unavail</code> view joins movie titles, physical copies, and rental history. A missing return date identifies an open rental. It reports individual copies, so it does not imply that every copy of a title is unavailable.</p>
-        <pre class="sql-query"><code>CREATE OR REPLACE VIEW title_unavail AS
+        <pre class="sql-query" data-code-label="Availability view"><code>CREATE OR REPLACE VIEW title_unavail AS
 SELECT m.title, me.media_id
 FROM movies m
 JOIN media me ON me.title_id = m.title_id
@@ -118,7 +120,7 @@ WITH READ ONLY;</code></pre>
         </table>
         <p class="sql-notes">Recording a return for copy 94 removed it from both the view and its synonym during validation. Rolling back that test restored the original result.</p>
       </section>
-      <section class="section" id="validation" aria-labelledby="validation-title">
+      <section class="section" id="validation" aria-labelledby="validation-title" data-read-label="Validation">
         <p class="eyebrow">Execution and limitations</p>
         <h2 id="validation-title">Recorded validation of the original assignment.</h2>
         <div class="sql-notes">
@@ -136,14 +138,14 @@ WITH READ ONLY;</code></pre>
           <a class="button button-secondary" href="downloads/Movie_Rental_Validation_Results.json" download>Download recorded results (JSON)</a>
         </div>
       </section>
-      <section class="section" id="revision" aria-labelledby="revision-title">
+      <section class="section" id="revision" aria-labelledby="revision-title" data-read-label="Oracle revision">
         <p class="eyebrow">Separate portfolio extension · September 2026</p>
         <h2 id="revision-title">Add two controls without rewriting the assignment.</h2>
         <div class="sql-notes">
           <p>The AI-assisted extension adds a check constraint for return-date order and a conditional unique index for open rentals. It is a portfolio revision, not part of the original class submission.</p>
           <p>A return may be recorded at or after checkout, or remain blank while the copy is out. The index uses the copy ID only for open rentals; completed rentals map to <code>NULL</code>, allowing multiple historical rentals for a copy. This follows Oracle's <a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/constraint.html">conditional uniqueness support</a>.</p>
         </div>
-        <pre class="sql-query"><code>ALTER TABLE rental_history ADD CONSTRAINT rental_return_order_ck
+        <pre class="sql-query" data-code-label="Rental controls"><code>ALTER TABLE rental_history ADD CONSTRAINT rental_return_order_ck
   CHECK (return_date IS NULL OR return_date &gt;= rental_date);
 
 CREATE UNIQUE INDEX rental_one_open_uq ON rental_history
@@ -160,17 +162,17 @@ CREATE UNIQUE INDEX rental_one_open_uq ON rental_history
           <a class="button button-secondary" href="downloads/Movie_Rental_Improvements_Validation_Results.json" download>Download revision results (JSON)</a>
           <a class="button button-secondary" href="downloads/Movie_Rental_Improvements_Validation_Output.txt" download>Download recorded test output</a>
         </div>
-        <pre class="sql-query"><code>-- Fresh disposable schema; run the original project first.
+        <pre class="sql-query" data-code-label="Revision run commands" data-code-language="SQL*Plus"><code>-- Fresh disposable schema; run the original project first.
 ALTER SESSION SET NLS_DATE_LANGUAGE = 'ENGLISH';
 @Movie_Rental_Database.sql
 @Movie_Rental_Improvements.sql
 @Movie_Rental_Improvements_Validation.sql</code></pre>
       </section>
-      <section class="section case-methods" aria-labelledby="run-title">
+      <section class="section case-methods" id="run-project" aria-labelledby="run-title" data-read-label="Run the project">
         <h2 id="run-title">Run the academic project</h2>
         <p class="sql-notes">Use a fresh Oracle schema with permission to create tables, views, sequences, indexes, and synonyms. The script creates objects and commits sample rows, so use a disposable learning database. Run it as a script in SQL*Plus or SQL Developer; it includes SQL*Plus commands such as <code>DESC</code>.</p>
         <p class="sql-notes">Set the session date language to English because the original date literals use English month abbreviations. Run the project first, then the optional validation script in the same schema. The validation script rolls back its row changes, but sequence numbers advance.</p>
-        <pre class="sql-query"><code>ALTER SESSION SET NLS_DATE_LANGUAGE = 'ENGLISH';
+        <pre class="sql-query" data-code-label="Original run commands" data-code-language="SQL*Plus"><code>ALTER SESSION SET NLS_DATE_LANGUAGE = 'ENGLISH';
 @Movie_Rental_Database.sql
 @Movie_Rental_Validation.sql</code></pre>
         <p class="sql-hash"><strong>Validated project SHA-256:</strong> <code>9ebab5eb414cb45a8375e4ddb5d00e893c2fd470a58e0c390c9cd607e8a44101</code></p>

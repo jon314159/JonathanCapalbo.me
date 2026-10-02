@@ -22,6 +22,8 @@
     <link rel="canonical" href="https://jonathancapalbo.me/sales-activity-tracker.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/style.css?v=58" />
+    <link rel="stylesheet" href="assets/css/case-study.css?v=1" />
+    <script src="assets/js/case-study.js?v=1" defer></script>
     <script src="/assets/js/analytics.js?v=1" defer></script>
   </head>
   <body class="case-study-page sales-case-page">
@@ -70,7 +72,7 @@
     </header>
 
     <main id="case-content">
-      <section class="section sales-analysis-section" id="analysis">
+      <section class="section sales-analysis-section" id="analysis" data-read-label="Reporting question">
         <div class="sales-analysis-heading">
           <p class="eyebrow">The reporting question</p>
           <h2>Which target are we measuring against?</h2>
@@ -90,7 +92,7 @@
         </div>
       </section>
 
-      <section class="case-band sales-system-band">
+      <section class="case-band sales-system-band" id="architecture" data-read-label="Workbook structure">
         <div class="section case-band-inner">
           <div class="section-heading compact-heading">
             <p class="eyebrow">Workbook architecture</p>
@@ -127,7 +129,7 @@
         </div>
       </section>
 
-      <section class="section workbook-walkthrough" id="walkthrough" aria-labelledby="walkthrough-title">
+      <section class="section workbook-walkthrough" id="walkthrough" aria-labelledby="walkthrough-title" data-read-label="Walkthrough">
         <div class="section-heading compact-heading">
           <p class="eyebrow">Follow one day through the workbook</p>
           <h2 id="walkthrough-title">From individual records to a monthly view.</h2>
@@ -147,10 +149,16 @@
             <figcaption><span>Monthly Summary · First twelve days</span><a href="assets/images/sales-activity-monthly-summary.png" target="_blank" rel="noopener noreferrer">Open monthly view</a></figcaption>
           </figure>
         </article>
-        <p><strong>3. Review the whole month.</strong> The dashboard below combines all 31 days. Monthly product goals total 310 units, while the separate daily target totals 341 units (11 × 31). The same 324 completed units exceed the first target and fall short of the second, so the goal definition belongs beside the result.</p>
+        <article class="walkthrough-step">
+          <div><h3>3. Review the whole month</h3><p>The dashboard combines all 31 days. Monthly product goals total 310 units, while the separate daily target totals 341 units (11 × 31). The same 324 completed units exceed the first target and fall short of the second, so the goal definition belongs beside the result.</p></div>
+          <figure class="portal-preview">
+            <img src="assets/images/sales-activity-dashboard.png" width="1107" height="1090" loading="lazy" decoding="async" alt="Fictional monthly dashboard: 324 completed units against 310 monthly product-goal units; 14 days met the separate daily target and 17 were below." />
+            <figcaption><span>Dashboard · All 31 days of fictional records</span><a href="assets/images/sales-activity-dashboard.png" target="_blank" rel="noopener noreferrer">Open dashboard view</a></figcaption>
+          </figure>
+        </article>
       </section>
 
-      <section class="case-image-section sales-dashboard-section" aria-labelledby="tracker-preview-title">
+      <section class="case-image-section sales-dashboard-section" id="dashboard" aria-labelledby="tracker-preview-title" data-read-label="Dashboard analysis">
         <div class="case-image-copy">
           <p class="eyebrow">Decision view</p>
           <h2 id="tracker-preview-title">The dashboard answers three different review questions.</h2>
@@ -167,7 +175,7 @@
         </figure>
       </section>
 
-      <section class="section sales-decisions-section">
+      <section class="section sales-decisions-section" id="design-decisions" data-read-label="Design decisions">
         <div class="section-heading compact-heading sales-decisions-heading">
           <p class="eyebrow">Design decisions</p>
           <h2>How the workbook controls support review.</h2>
@@ -188,7 +196,7 @@
         </div>
       </section>
 
-      <section class="sales-validation-band">
+      <section class="sales-validation-band" id="validation" data-read-label="Validation">
         <div class="section sales-validation-grid">
           <div>
             <p class="eyebrow">Validation and QA</p>
@@ -217,7 +225,7 @@
         </div>
       </section>
 
-      <section class="section case-scope sales-scope-section">
+      <section class="section case-scope sales-scope-section" id="downloads" data-read-label="Workbook download">
         <div class="scope-card">
           <p class="eyebrow">Inspect the work</p>
           <h2>Review the formulas, controls, and fictional source rows yourself.</h2>

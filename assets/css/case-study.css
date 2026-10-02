@@ -1,0 +1,93 @@
+.case-contents {
+  position: sticky;
+  z-index: 40;
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  border-block: 1px solid var(--muted);
+  background: var(--paper-bright);
+}
+
+.case-contents summary {
+  position: relative;
+  min-height: 52px;
+  padding: 12px 16px;
+  cursor: pointer;
+  color: var(--ink);
+  font-size: .9rem;
+  font-weight: 750;
+}
+
+.case-position { margin-left: 16px; color: var(--muted); font-weight: 400; }
+.case-contents nav { flex-wrap: wrap; justify-content: flex-start; gap: 6px; padding: 0 12px 12px; }
+.case-contents nav a { text-align: left; }
+.case-reading-progress { position: absolute; inset: auto 0 0; height: 3px; background: var(--line); }
+.case-reading-progress span { display: block; height: 100%; background: var(--blue-dark); transform: scaleX(0); transform-origin: left; }
+
+.walkthrough-controls { margin: 24px 0; }
+.sales-analysis-section > * { min-width: 0; }
+.sales-mini-metrics dt, .sales-result-contrast strong { overflow-wrap: anywhere; }
+.walkthrough-choices { display: grid; grid-template-columns: 1fr; gap: 8px; }
+.walkthrough-transport { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.walkthrough-status { margin-top: 12px; color: var(--muted); font-size: .9rem; }
+.walkthrough-controls button, .sql-code-toolbar button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid var(--muted);
+  border-radius: var(--radius-md);
+  color: var(--ink);
+  background: var(--paper-bright);
+  font: inherit;
+  font-size: .9rem;
+  font-weight: 650;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+.walkthrough-choices button { text-align: left; }
+.walkthrough-choices button[aria-pressed="true"] {
+  color: #fff;
+  background: var(--blue-dark);
+  border-color: var(--blue-dark);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.walkthrough-controls button:disabled { color: var(--muted); cursor: default; border-style: dashed; }
+.walkthrough-controls button:not(:disabled):hover, .sql-code-toolbar button:hover { border-color: var(--blue-dark); }
+.walkthrough-controls button:not(:disabled):active, .sql-code-toolbar button:active { background: var(--blue-light); color: var(--ink); }
+.walkthrough-enhanced .walkthrough-step { margin-top: 24px; }
+.walkthrough-step[hidden], .walkthrough-controls button[hidden] { display: none; }
+.walkthrough-step .walkthrough-image-status { margin: 12px 0; color: var(--muted); }
+
+.sql-code-block { min-width: 0; margin: 24px 0; border: 1px solid var(--muted); border-radius: var(--radius-md); background: #eef2ff; }
+.sql-code-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 16px; border-bottom: 1px solid var(--muted); }
+.sql-code-toolbar > span { font-size: .85rem; font-weight: 650; }
+.sql-code-block .sql-query { margin: 0; padding: 18px; border: 0; background: transparent; }
+.sql-copy-status { padding: 0 18px 14px; margin: 0; font-size: .85rem; }
+.sql-copy-status:empty { display: none; }
+.sql-keyword { color: #2147be; font-weight: 750; }
+.sql-string { color: #7b3520; }
+.sql-number { color: #166252; }
+.sql-comment { color: #485762; }
+
+.case-contents summary:focus-visible, .walkthrough-controls button:focus-visible,
+.sql-code-toolbar button:focus-visible, .sql-query:focus-visible {
+  outline: 3px solid var(--blue-dark);
+  outline-offset: 3px;
+}
+
+@media (min-width: 681px) {
+  .walkthrough-choices { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 821px) {
+  .case-contents { width: min(1180px, calc(100% - 48px)); }
+}
+@media (max-width: 680px) {
+  .case-position { display: block; margin-left: 0; font-size: .8rem; }
+  .case-contents nav { display: grid; grid-template-columns: 1fr; max-height: 50dvh; overflow-y: auto; }
+  .case-contents summary { padding: 10px 12px; }
+  .walkthrough-transport button { flex: 1 1 130px; }
+}
+@media (forced-colors: active) {
+  .case-reading-progress span { background: Highlight; }
+  .walkthrough-choices button[aria-pressed="true"] { border: 3px solid Highlight; }
+}

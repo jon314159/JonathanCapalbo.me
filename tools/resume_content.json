@@ -56,10 +56,10 @@
       "description": "Built six related tables with primary and foreign keys, validation constraints, and a read-only view joining movie, copy, and rental records to identify unreturned copies."
     },
     "excel": {
-      "name": "Excel Activity Reporting System",
+      "name": "Activity Reporting: Excel and Tableau",
       "url": "https://jonathancapalbo.me/sales-activity-tracker.html",
-      "scope": "Workplace initiative | Fictional public sample",
-      "description": "Built an Excel workbook with input validation, formula-based monthly consolidation, and a dashboard. Reconciled source records to totals and separated monthly product goals from the daily target."
+      "scope": "Workplace-origin Excel | Fictional portfolio extension",
+      "description": "Rebuilt the workplace-origin Excel workflow with 465 fictional records, validation, and monthly reporting. Added AI-assisted Tableau and React views for outcome counts, adjustable daily targets, and record drilldowns."
     }
   },
   "variants": {
@@ -67,7 +67,7 @@
       "output": "resume.pdf",
       "layout": "experience-first",
       "headline": "Business Analysis | Business Systems | Reporting",
-      "summary": "Customer operations professional with experience automating report distribution, investigating account and system issues, and documenting team handoffs. Project work covers Excel reporting and business-system controls. Pursuing an NJIT M.S.; available for full-time work.",
+      "summary": "Customer operations professional with experience automating report distribution, investigating account and system issues, and documenting team handoffs. Projects cover Excel reporting, Tableau analysis, and business-system controls. Pursuing an NJIT M.S.; available for full-time work.",
       "skills": [
         "<b>Business analysis (projects):</b> Process mapping, user stories, acceptance criteria, traceability, UAT planning.",
         "<b>Reporting / automation:</b> Power Automate; Excel tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation (public sample); PivotTables (coursework).",
@@ -104,10 +104,10 @@
       ],
       "project_details": [
         {
-          "name": "Excel Activity Reporting System",
+          "name": "Activity Reporting: Excel and Tableau",
           "url": "https://jonathancapalbo.me/sales-activity-tracker.html",
-          "scope": "Workplace initiative | Fictional public sample",
-          "description": "Built an Excel workbook with input validation, formula-based monthly consolidation, and a dashboard. Reconciled source records to totals and separated monthly product goals from the daily target."
+          "scope": "Workplace-origin Excel | Fictional portfolio extension",
+          "description": "Rebuilt the workplace-origin Excel workflow with 465 fictional records, validation, and monthly reporting. Added AI-assisted Tableau and React views for outcome counts, adjustable daily targets, and record drilldowns."
         },
         {
           "name": "NJIT Registrar ServiceNow Portal",
@@ -128,7 +128,7 @@
       "output": "downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf",
       "layout": "experience-first",
       "headline": "Reporting &amp; Operations",
-      "summary": "Customer operations professional with experience automating report distribution and investigating record and system issues. Workplace reporting includes Excel reconciliation; academic SQL work covers relational tables and queries. Pursuing an NJIT M.S.; available for full-time work.",
+      "summary": "Customer operations professional with experience automating report distribution and investigating record and system issues. Project work includes Excel reconciliation, Tableau analysis, and academic SQL. Pursuing an NJIT M.S.; available for full-time work.",
       "skills": [
         "<b>Excel reporting:</b> Tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation. <b>Excel coursework:</b> PivotTables for sales-data summaries.",
         "<b>Professional:</b> Excel, Microsoft 365, Power Automate, CSG, SharePoint, OneNote, report and account-issue investigation, documentation, and handoffs.",

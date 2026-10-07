@@ -1,0 +1,466 @@
+Date,Time,Interaction ID,Product,Outcome,Units,Points,Follow-up,Notes,Original row
+2026-07-01,9:05 AM,FAKE-01-001,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 01!A10:H10
+2026-07-01,9:35 AM,FAKE-01-002,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 01!A11:H11
+2026-07-01,10:05 AM,FAKE-01-003,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 01!A12:H12
+2026-07-01,10:35 AM,FAKE-01-004,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 01!A13:H13
+2026-07-01,11:05 AM,FAKE-01-005,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 01!A14:H14
+2026-07-01,11:35 AM,FAKE-01-006,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 01!A15:H15
+2026-07-01,12:05 PM,FAKE-01-007,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 01!A16:H16
+2026-07-01,12:35 PM,FAKE-01-008,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 01!A17:H17
+2026-07-01,1:05 PM,FAKE-01-009,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 01!A18:H18
+2026-07-01,1:35 PM,FAKE-01-010,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 01!A19:H19
+2026-07-01,2:05 PM,FAKE-01-011,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 01!A20:H20
+2026-07-01,2:35 PM,FAKE-01-012,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 01!A21:H21
+2026-07-01,3:05 PM,FAKE-01-013,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 01!A22:H22
+2026-07-01,3:35 PM,FAKE-01-014,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 01!A23:H23
+2026-07-01,4:05 PM,FAKE-01-015,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 01!A24:H24
+2026-07-01,4:35 PM,FAKE-01-016,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 01!A25:H25
+2026-07-01,5:05 PM,FAKE-01-017,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 01!A26:H26
+2026-07-02,9:05 AM,FAKE-02-001,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 02!A10:H10
+2026-07-02,9:35 AM,FAKE-02-002,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 02!A11:H11
+2026-07-02,10:05 AM,FAKE-02-003,Core Package,Completed,2,2,No,Completed the fictional selection.,Day 02!A12:H12
+2026-07-02,10:35 AM,FAKE-02-004,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 02!A13:H13
+2026-07-02,11:05 AM,FAKE-02-005,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 02!A14:H14
+2026-07-02,11:35 AM,FAKE-02-006,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 02!A15:H15
+2026-07-02,12:05 PM,FAKE-02-007,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 02!A16:H16
+2026-07-02,12:35 PM,FAKE-02-008,Optional Add-on,Completed,2,1,No,Completed the fictional selection.,Day 02!A17:H17
+2026-07-02,1:05 PM,FAKE-02-009,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 02!A18:H18
+2026-07-02,1:35 PM,FAKE-02-010,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 02!A19:H19
+2026-07-02,2:05 PM,FAKE-02-011,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 02!A20:H20
+2026-07-02,2:35 PM,FAKE-02-012,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 02!A21:H21
+2026-07-02,3:05 PM,FAKE-02-013,Premium Package,Completed,2,4,No,Completed the fictional selection.,Day 02!A22:H22
+2026-07-02,3:35 PM,FAKE-02-014,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 02!A23:H23
+2026-07-02,4:05 PM,FAKE-02-015,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 02!A24:H24
+2026-07-03,9:05 AM,FAKE-03-001,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 03!A10:H10
+2026-07-03,9:35 AM,FAKE-03-002,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 03!A11:H11
+2026-07-03,10:05 AM,FAKE-03-003,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 03!A12:H12
+2026-07-03,10:35 AM,FAKE-03-004,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 03!A13:H13
+2026-07-03,11:05 AM,FAKE-03-005,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 03!A14:H14
+2026-07-03,11:35 AM,FAKE-03-006,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 03!A15:H15
+2026-07-03,12:05 PM,FAKE-03-007,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 03!A16:H16
+2026-07-03,12:35 PM,FAKE-03-008,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 03!A17:H17
+2026-07-03,1:05 PM,FAKE-03-009,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 03!A18:H18
+2026-07-03,1:35 PM,FAKE-03-010,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 03!A19:H19
+2026-07-03,2:05 PM,FAKE-03-011,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 03!A20:H20
+2026-07-03,2:35 PM,FAKE-03-012,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 03!A21:H21
+2026-07-03,3:05 PM,FAKE-03-013,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 03!A22:H22
+2026-07-04,9:05 AM,FAKE-04-001,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 04!A10:H10
+2026-07-04,9:35 AM,FAKE-04-002,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 04!A11:H11
+2026-07-04,10:05 AM,FAKE-04-003,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 04!A12:H12
+2026-07-04,10:35 AM,FAKE-04-004,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 04!A13:H13
+2026-07-04,11:05 AM,FAKE-04-005,Core Package,Completed,2,2,No,Completed the fictional selection.,Day 04!A14:H14
+2026-07-04,11:35 AM,FAKE-04-006,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 04!A15:H15
+2026-07-04,12:05 PM,FAKE-04-007,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 04!A16:H16
+2026-07-04,12:35 PM,FAKE-04-008,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 04!A17:H17
+2026-07-04,1:05 PM,FAKE-04-009,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 04!A18:H18
+2026-07-04,1:35 PM,FAKE-04-010,Optional Add-on,Completed,2,1,No,Completed the fictional selection.,Day 04!A19:H19
+2026-07-04,2:05 PM,FAKE-04-011,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 04!A20:H20
+2026-07-04,2:35 PM,FAKE-04-012,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 04!A21:H21
+2026-07-04,3:05 PM,FAKE-04-013,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 04!A22:H22
+2026-07-04,3:35 PM,FAKE-04-014,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 04!A23:H23
+2026-07-04,4:05 PM,FAKE-04-015,Premium Package,Completed,2,4,No,Completed the fictional selection.,Day 04!A24:H24
+2026-07-04,4:35 PM,FAKE-04-016,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 04!A25:H25
+2026-07-04,5:05 PM,FAKE-04-017,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 04!A26:H26
+2026-07-04,5:35 PM,FAKE-04-018,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 04!A27:H27
+2026-07-05,9:05 AM,FAKE-05-001,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 05!A10:H10
+2026-07-05,9:35 AM,FAKE-05-002,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 05!A11:H11
+2026-07-05,10:05 AM,FAKE-05-003,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 05!A12:H12
+2026-07-05,10:35 AM,FAKE-05-004,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 05!A13:H13
+2026-07-05,11:05 AM,FAKE-05-005,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 05!A14:H14
+2026-07-05,11:35 AM,FAKE-05-006,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 05!A15:H15
+2026-07-05,12:05 PM,FAKE-05-007,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 05!A16:H16
+2026-07-05,12:35 PM,FAKE-05-008,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 05!A17:H17
+2026-07-05,1:05 PM,FAKE-05-009,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 05!A18:H18
+2026-07-05,1:35 PM,FAKE-05-010,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 05!A19:H19
+2026-07-05,2:05 PM,FAKE-05-011,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 05!A20:H20
+2026-07-05,2:35 PM,FAKE-05-012,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 05!A21:H21
+2026-07-05,3:05 PM,FAKE-05-013,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 05!A22:H22
+2026-07-05,3:35 PM,FAKE-05-014,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 05!A23:H23
+2026-07-05,4:05 PM,FAKE-05-015,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 05!A24:H24
+2026-07-05,4:35 PM,FAKE-05-016,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 05!A25:H25
+2026-07-06,9:05 AM,FAKE-06-001,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 06!A10:H10
+2026-07-06,9:35 AM,FAKE-06-002,Plus Package,Completed,2,3,No,Completed the fictional selection.,Day 06!A11:H11
+2026-07-06,10:05 AM,FAKE-06-003,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 06!A12:H12
+2026-07-06,10:35 AM,FAKE-06-004,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 06!A13:H13
+2026-07-06,11:05 AM,FAKE-06-005,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 06!A14:H14
+2026-07-06,11:35 AM,FAKE-06-006,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 06!A15:H15
+2026-07-06,12:05 PM,FAKE-06-007,Core Package,Completed,2,2,No,Completed the fictional selection.,Day 06!A16:H16
+2026-07-06,12:35 PM,FAKE-06-008,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 06!A17:H17
+2026-07-06,1:05 PM,FAKE-06-009,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 06!A18:H18
+2026-07-06,1:35 PM,FAKE-06-010,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 06!A19:H19
+2026-07-06,2:05 PM,FAKE-06-011,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 06!A20:H20
+2026-07-06,2:35 PM,FAKE-06-012,Optional Add-on,Completed,2,1,No,Completed the fictional selection.,Day 06!A21:H21
+2026-07-06,3:05 PM,FAKE-06-013,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 06!A22:H22
+2026-07-06,3:35 PM,FAKE-06-014,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 06!A23:H23
+2026-07-07,9:05 AM,FAKE-07-001,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 07!A10:H10
+2026-07-07,9:35 AM,FAKE-07-002,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 07!A11:H11
+2026-07-07,10:05 AM,FAKE-07-003,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 07!A12:H12
+2026-07-07,10:35 AM,FAKE-07-004,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 07!A13:H13
+2026-07-07,11:05 AM,FAKE-07-005,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 07!A14:H14
+2026-07-07,11:35 AM,FAKE-07-006,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 07!A15:H15
+2026-07-07,12:05 PM,FAKE-07-007,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 07!A16:H16
+2026-07-07,12:35 PM,FAKE-07-008,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 07!A17:H17
+2026-07-07,1:05 PM,FAKE-07-009,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 07!A18:H18
+2026-07-07,1:35 PM,FAKE-07-010,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 07!A19:H19
+2026-07-07,2:05 PM,FAKE-07-011,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 07!A20:H20
+2026-07-07,2:35 PM,FAKE-07-012,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 07!A21:H21
+2026-07-08,9:05 AM,FAKE-08-001,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 08!A10:H10
+2026-07-08,9:35 AM,FAKE-08-002,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 08!A11:H11
+2026-07-08,10:05 AM,FAKE-08-003,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 08!A12:H12
+2026-07-08,10:35 AM,FAKE-08-004,Plus Package,Completed,2,3,No,Completed the fictional selection.,Day 08!A13:H13
+2026-07-08,11:05 AM,FAKE-08-005,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 08!A14:H14
+2026-07-08,11:35 AM,FAKE-08-006,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 08!A15:H15
+2026-07-08,12:05 PM,FAKE-08-007,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 08!A16:H16
+2026-07-08,12:35 PM,FAKE-08-008,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 08!A17:H17
+2026-07-08,1:05 PM,FAKE-08-009,Core Package,Completed,2,2,No,Completed the fictional selection.,Day 08!A18:H18
+2026-07-08,1:35 PM,FAKE-08-010,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 08!A19:H19
+2026-07-08,2:05 PM,FAKE-08-011,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 08!A20:H20
+2026-07-08,2:35 PM,FAKE-08-012,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 08!A21:H21
+2026-07-08,3:05 PM,FAKE-08-013,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 08!A22:H22
+2026-07-08,3:35 PM,FAKE-08-014,Optional Add-on,Completed,2,1,No,Completed the fictional selection.,Day 08!A23:H23
+2026-07-08,4:05 PM,FAKE-08-015,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 08!A24:H24
+2026-07-08,4:35 PM,FAKE-08-016,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 08!A25:H25
+2026-07-08,5:05 PM,FAKE-08-017,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 08!A26:H26
+2026-07-09,9:05 AM,FAKE-09-001,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 09!A10:H10
+2026-07-09,9:35 AM,FAKE-09-002,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 09!A11:H11
+2026-07-09,10:05 AM,FAKE-09-003,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 09!A12:H12
+2026-07-09,10:35 AM,FAKE-09-004,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 09!A13:H13
+2026-07-09,11:05 AM,FAKE-09-005,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 09!A14:H14
+2026-07-09,11:35 AM,FAKE-09-006,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 09!A15:H15
+2026-07-09,12:05 PM,FAKE-09-007,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 09!A16:H16
+2026-07-09,12:35 PM,FAKE-09-008,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 09!A17:H17
+2026-07-09,1:05 PM,FAKE-09-009,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 09!A18:H18
+2026-07-09,1:35 PM,FAKE-09-010,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 09!A19:H19
+2026-07-09,2:05 PM,FAKE-09-011,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 09!A20:H20
+2026-07-09,2:35 PM,FAKE-09-012,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 09!A21:H21
+2026-07-09,3:05 PM,FAKE-09-013,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 09!A22:H22
+2026-07-09,3:35 PM,FAKE-09-014,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 09!A23:H23
+2026-07-09,4:05 PM,FAKE-09-015,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 09!A24:H24
+2026-07-10,9:05 AM,FAKE-10-001,Premium Package,Completed,2,4,No,Completed the fictional selection.,Day 10!A10:H10
+2026-07-10,9:35 AM,FAKE-10-002,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 10!A11:H11
+2026-07-10,10:05 AM,FAKE-10-003,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 10!A12:H12
+2026-07-10,10:35 AM,FAKE-10-004,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 10!A13:H13
+2026-07-10,11:05 AM,FAKE-10-005,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 10!A14:H14
+2026-07-10,11:35 AM,FAKE-10-006,Plus Package,Completed,2,3,No,Completed the fictional selection.,Day 10!A15:H15
+2026-07-10,12:05 PM,FAKE-10-007,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 10!A16:H16
+2026-07-10,12:35 PM,FAKE-10-008,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 10!A17:H17
+2026-07-10,1:05 PM,FAKE-10-009,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 10!A18:H18
+2026-07-10,1:35 PM,FAKE-10-010,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 10!A19:H19
+2026-07-10,2:05 PM,FAKE-10-011,Core Package,Completed,2,2,No,Completed the fictional selection.,Day 10!A20:H20
+2026-07-10,2:35 PM,FAKE-10-012,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 10!A21:H21
+2026-07-10,3:05 PM,FAKE-10-013,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 10!A22:H22
+2026-07-11,9:05 AM,FAKE-11-001,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 11!A10:H10
+2026-07-11,9:35 AM,FAKE-11-002,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 11!A11:H11
+2026-07-11,10:05 AM,FAKE-11-003,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 11!A12:H12
+2026-07-11,10:35 AM,FAKE-11-004,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 11!A13:H13
+2026-07-11,11:05 AM,FAKE-11-005,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 11!A14:H14
+2026-07-11,11:35 AM,FAKE-11-006,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 11!A15:H15
+2026-07-11,12:05 PM,FAKE-11-007,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 11!A16:H16
+2026-07-11,12:35 PM,FAKE-11-008,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 11!A17:H17
+2026-07-11,1:05 PM,FAKE-11-009,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 11!A18:H18
+2026-07-11,1:35 PM,FAKE-11-010,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 11!A19:H19
+2026-07-11,2:05 PM,FAKE-11-011,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 11!A20:H20
+2026-07-11,2:35 PM,FAKE-11-012,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 11!A21:H21
+2026-07-11,3:05 PM,FAKE-11-013,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 11!A22:H22
+2026-07-11,3:35 PM,FAKE-11-014,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 11!A23:H23
+2026-07-11,4:05 PM,FAKE-11-015,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 11!A24:H24
+2026-07-11,4:35 PM,FAKE-11-016,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 11!A25:H25
+2026-07-11,5:05 PM,FAKE-11-017,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 11!A26:H26
+2026-07-11,5:35 PM,FAKE-11-018,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 11!A27:H27
+2026-07-12,9:05 AM,FAKE-12-001,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 12!A10:H10
+2026-07-12,9:35 AM,FAKE-12-002,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 12!A11:H11
+2026-07-12,10:05 AM,FAKE-12-003,Premium Package,Completed,2,4,No,Completed the fictional selection.,Day 12!A12:H12
+2026-07-12,10:35 AM,FAKE-12-004,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 12!A13:H13
+2026-07-12,11:05 AM,FAKE-12-005,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 12!A14:H14
+2026-07-12,11:35 AM,FAKE-12-006,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 12!A15:H15
+2026-07-12,12:05 PM,FAKE-12-007,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 12!A16:H16
+2026-07-12,12:35 PM,FAKE-12-008,Plus Package,Completed,2,3,No,Completed the fictional selection.,Day 12!A17:H17
+2026-07-12,1:05 PM,FAKE-12-009,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 12!A18:H18
+2026-07-12,1:35 PM,FAKE-12-010,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 12!A19:H19
+2026-07-12,2:05 PM,FAKE-12-011,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 12!A20:H20
+2026-07-12,2:35 PM,FAKE-12-012,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 12!A21:H21
+2026-07-12,3:05 PM,FAKE-12-013,Core Package,Completed,2,2,No,Completed the fictional selection.,Day 12!A22:H22
+2026-07-12,3:35 PM,FAKE-12-014,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 12!A23:H23
+2026-07-12,4:05 PM,FAKE-12-015,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 12!A24:H24
+2026-07-12,4:35 PM,FAKE-12-016,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 12!A25:H25
+2026-07-13,9:05 AM,FAKE-13-001,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 13!A10:H10
+2026-07-13,9:35 AM,FAKE-13-002,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 13!A11:H11
+2026-07-13,10:05 AM,FAKE-13-003,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 13!A12:H12
+2026-07-13,10:35 AM,FAKE-13-004,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 13!A13:H13
+2026-07-13,11:05 AM,FAKE-13-005,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 13!A14:H14
+2026-07-13,11:35 AM,FAKE-13-006,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 13!A15:H15
+2026-07-13,12:05 PM,FAKE-13-007,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 13!A16:H16
+2026-07-13,12:35 PM,FAKE-13-008,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 13!A17:H17
+2026-07-13,1:05 PM,FAKE-13-009,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 13!A18:H18
+2026-07-13,1:35 PM,FAKE-13-010,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 13!A19:H19
+2026-07-13,2:05 PM,FAKE-13-011,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 13!A20:H20
+2026-07-13,2:35 PM,FAKE-13-012,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 13!A21:H21
+2026-07-13,3:05 PM,FAKE-13-013,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 13!A22:H22
+2026-07-13,3:35 PM,FAKE-13-014,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 13!A23:H23
+2026-07-14,9:05 AM,FAKE-14-001,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 14!A10:H10
+2026-07-14,9:35 AM,FAKE-14-002,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 14!A11:H11
+2026-07-14,10:05 AM,FAKE-14-003,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 14!A12:H12
+2026-07-14,10:35 AM,FAKE-14-004,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 14!A13:H13
+2026-07-14,11:05 AM,FAKE-14-005,Premium Package,Completed,2,4,No,Completed the fictional selection.,Day 14!A14:H14
+2026-07-14,11:35 AM,FAKE-14-006,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 14!A15:H15
+2026-07-14,12:05 PM,FAKE-14-007,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 14!A16:H16
+2026-07-14,12:35 PM,FAKE-14-008,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 14!A17:H17
+2026-07-14,1:05 PM,FAKE-14-009,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 14!A18:H18
+2026-07-14,1:35 PM,FAKE-14-010,Plus Package,Completed,2,3,No,Completed the fictional selection.,Day 14!A19:H19
+2026-07-14,2:05 PM,FAKE-14-011,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 14!A20:H20
+2026-07-14,2:35 PM,FAKE-14-012,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 14!A21:H21
+2026-07-15,9:05 AM,FAKE-15-001,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 15!A10:H10
+2026-07-15,9:35 AM,FAKE-15-002,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 15!A11:H11
+2026-07-15,10:05 AM,FAKE-15-003,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 15!A12:H12
+2026-07-15,10:35 AM,FAKE-15-004,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 15!A13:H13
+2026-07-15,11:05 AM,FAKE-15-005,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 15!A14:H14
+2026-07-15,11:35 AM,FAKE-15-006,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 15!A15:H15
+2026-07-15,12:05 PM,FAKE-15-007,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 15!A16:H16
+2026-07-15,12:35 PM,FAKE-15-008,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 15!A17:H17
+2026-07-15,1:05 PM,FAKE-15-009,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 15!A18:H18
+2026-07-15,1:35 PM,FAKE-15-010,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 15!A19:H19
+2026-07-15,2:05 PM,FAKE-15-011,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 15!A20:H20
+2026-07-15,2:35 PM,FAKE-15-012,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 15!A21:H21
+2026-07-15,3:05 PM,FAKE-15-013,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 15!A22:H22
+2026-07-15,3:35 PM,FAKE-15-014,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 15!A23:H23
+2026-07-15,4:05 PM,FAKE-15-015,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 15!A24:H24
+2026-07-15,4:35 PM,FAKE-15-016,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 15!A25:H25
+2026-07-15,5:05 PM,FAKE-15-017,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 15!A26:H26
+2026-07-16,9:05 AM,FAKE-16-001,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 16!A10:H10
+2026-07-16,9:35 AM,FAKE-16-002,Optional Add-on,Completed,2,1,No,Completed the fictional selection.,Day 16!A11:H11
+2026-07-16,10:05 AM,FAKE-16-003,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 16!A12:H12
+2026-07-16,10:35 AM,FAKE-16-004,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 16!A13:H13
+2026-07-16,11:05 AM,FAKE-16-005,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 16!A14:H14
+2026-07-16,11:35 AM,FAKE-16-006,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 16!A15:H15
+2026-07-16,12:05 PM,FAKE-16-007,Premium Package,Completed,2,4,No,Completed the fictional selection.,Day 16!A16:H16
+2026-07-16,12:35 PM,FAKE-16-008,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 16!A17:H17
+2026-07-16,1:05 PM,FAKE-16-009,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 16!A18:H18
+2026-07-16,1:35 PM,FAKE-16-010,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 16!A19:H19
+2026-07-16,2:05 PM,FAKE-16-011,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 16!A20:H20
+2026-07-16,2:35 PM,FAKE-16-012,Plus Package,Completed,2,3,No,Completed the fictional selection.,Day 16!A21:H21
+2026-07-16,3:05 PM,FAKE-16-013,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 16!A22:H22
+2026-07-16,3:35 PM,FAKE-16-014,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 16!A23:H23
+2026-07-16,4:05 PM,FAKE-16-015,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 16!A24:H24
+2026-07-17,9:05 AM,FAKE-17-001,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 17!A10:H10
+2026-07-17,9:35 AM,FAKE-17-002,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 17!A11:H11
+2026-07-17,10:05 AM,FAKE-17-003,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 17!A12:H12
+2026-07-17,10:35 AM,FAKE-17-004,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 17!A13:H13
+2026-07-17,11:05 AM,FAKE-17-005,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 17!A14:H14
+2026-07-17,11:35 AM,FAKE-17-006,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 17!A15:H15
+2026-07-17,12:05 PM,FAKE-17-007,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 17!A16:H16
+2026-07-17,12:35 PM,FAKE-17-008,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 17!A17:H17
+2026-07-17,1:05 PM,FAKE-17-009,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 17!A18:H18
+2026-07-17,1:35 PM,FAKE-17-010,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 17!A19:H19
+2026-07-17,2:05 PM,FAKE-17-011,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 17!A20:H20
+2026-07-17,2:35 PM,FAKE-17-012,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 17!A21:H21
+2026-07-17,3:05 PM,FAKE-17-013,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 17!A22:H22
+2026-07-18,9:05 AM,FAKE-18-001,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 18!A10:H10
+2026-07-18,9:35 AM,FAKE-18-002,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 18!A11:H11
+2026-07-18,10:05 AM,FAKE-18-003,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 18!A12:H12
+2026-07-18,10:35 AM,FAKE-18-004,Optional Add-on,Completed,2,1,No,Completed the fictional selection.,Day 18!A13:H13
+2026-07-18,11:05 AM,FAKE-18-005,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 18!A14:H14
+2026-07-18,11:35 AM,FAKE-18-006,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 18!A15:H15
+2026-07-18,12:05 PM,FAKE-18-007,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 18!A16:H16
+2026-07-18,12:35 PM,FAKE-18-008,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 18!A17:H17
+2026-07-18,1:05 PM,FAKE-18-009,Premium Package,Completed,2,4,No,Completed the fictional selection.,Day 18!A18:H18
+2026-07-18,1:35 PM,FAKE-18-010,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 18!A19:H19
+2026-07-18,2:05 PM,FAKE-18-011,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 18!A20:H20
+2026-07-18,2:35 PM,FAKE-18-012,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 18!A21:H21
+2026-07-18,3:05 PM,FAKE-18-013,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 18!A22:H22
+2026-07-18,3:35 PM,FAKE-18-014,Plus Package,Completed,2,3,No,Completed the fictional selection.,Day 18!A23:H23
+2026-07-18,4:05 PM,FAKE-18-015,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 18!A24:H24
+2026-07-18,4:35 PM,FAKE-18-016,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 18!A25:H25
+2026-07-18,5:05 PM,FAKE-18-017,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 18!A26:H26
+2026-07-18,5:35 PM,FAKE-18-018,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 18!A27:H27
+2026-07-19,9:05 AM,FAKE-19-001,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 19!A10:H10
+2026-07-19,9:35 AM,FAKE-19-002,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 19!A11:H11
+2026-07-19,10:05 AM,FAKE-19-003,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 19!A12:H12
+2026-07-19,10:35 AM,FAKE-19-004,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 19!A13:H13
+2026-07-19,11:05 AM,FAKE-19-005,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 19!A14:H14
+2026-07-19,11:35 AM,FAKE-19-006,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 19!A15:H15
+2026-07-19,12:05 PM,FAKE-19-007,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 19!A16:H16
+2026-07-19,12:35 PM,FAKE-19-008,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 19!A17:H17
+2026-07-19,1:05 PM,FAKE-19-009,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 19!A18:H18
+2026-07-19,1:35 PM,FAKE-19-010,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 19!A19:H19
+2026-07-19,2:05 PM,FAKE-19-011,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 19!A20:H20
+2026-07-19,2:35 PM,FAKE-19-012,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 19!A21:H21
+2026-07-19,3:05 PM,FAKE-19-013,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 19!A22:H22
+2026-07-19,3:35 PM,FAKE-19-014,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 19!A23:H23
+2026-07-19,4:05 PM,FAKE-19-015,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 19!A24:H24
+2026-07-19,4:35 PM,FAKE-19-016,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 19!A25:H25
+2026-07-20,9:05 AM,FAKE-20-001,Core Package,Completed,2,2,No,Completed the fictional selection.,Day 20!A10:H10
+2026-07-20,9:35 AM,FAKE-20-002,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 20!A11:H11
+2026-07-20,10:05 AM,FAKE-20-003,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 20!A12:H12
+2026-07-20,10:35 AM,FAKE-20-004,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 20!A13:H13
+2026-07-20,11:05 AM,FAKE-20-005,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 20!A14:H14
+2026-07-20,11:35 AM,FAKE-20-006,Optional Add-on,Completed,2,1,No,Completed the fictional selection.,Day 20!A15:H15
+2026-07-20,12:05 PM,FAKE-20-007,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 20!A16:H16
+2026-07-20,12:35 PM,FAKE-20-008,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 20!A17:H17
+2026-07-20,1:05 PM,FAKE-20-009,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 20!A18:H18
+2026-07-20,1:35 PM,FAKE-20-010,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 20!A19:H19
+2026-07-20,2:05 PM,FAKE-20-011,Premium Package,Completed,2,4,No,Completed the fictional selection.,Day 20!A20:H20
+2026-07-20,2:35 PM,FAKE-20-012,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 20!A21:H21
+2026-07-20,3:05 PM,FAKE-20-013,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 20!A22:H22
+2026-07-20,3:35 PM,FAKE-20-014,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 20!A23:H23
+2026-07-21,9:05 AM,FAKE-21-001,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 21!A10:H10
+2026-07-21,9:35 AM,FAKE-21-002,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 21!A11:H11
+2026-07-21,10:05 AM,FAKE-21-003,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 21!A12:H12
+2026-07-21,10:35 AM,FAKE-21-004,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 21!A13:H13
+2026-07-21,11:05 AM,FAKE-21-005,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 21!A14:H14
+2026-07-21,11:35 AM,FAKE-21-006,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 21!A15:H15
+2026-07-21,12:05 PM,FAKE-21-007,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 21!A16:H16
+2026-07-21,12:35 PM,FAKE-21-008,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 21!A17:H17
+2026-07-21,1:05 PM,FAKE-21-009,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 21!A18:H18
+2026-07-21,1:35 PM,FAKE-21-010,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 21!A19:H19
+2026-07-21,2:05 PM,FAKE-21-011,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 21!A20:H20
+2026-07-21,2:35 PM,FAKE-21-012,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 21!A21:H21
+2026-07-22,9:05 AM,FAKE-22-001,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 22!A10:H10
+2026-07-22,9:35 AM,FAKE-22-002,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 22!A11:H11
+2026-07-22,10:05 AM,FAKE-22-003,Core Package,Completed,2,2,No,Completed the fictional selection.,Day 22!A12:H12
+2026-07-22,10:35 AM,FAKE-22-004,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 22!A13:H13
+2026-07-22,11:05 AM,FAKE-22-005,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 22!A14:H14
+2026-07-22,11:35 AM,FAKE-22-006,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 22!A15:H15
+2026-07-22,12:05 PM,FAKE-22-007,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 22!A16:H16
+2026-07-22,12:35 PM,FAKE-22-008,Optional Add-on,Completed,2,1,No,Completed the fictional selection.,Day 22!A17:H17
+2026-07-22,1:05 PM,FAKE-22-009,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 22!A18:H18
+2026-07-22,1:35 PM,FAKE-22-010,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 22!A19:H19
+2026-07-22,2:05 PM,FAKE-22-011,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 22!A20:H20
+2026-07-22,2:35 PM,FAKE-22-012,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 22!A21:H21
+2026-07-22,3:05 PM,FAKE-22-013,Premium Package,Completed,2,4,No,Completed the fictional selection.,Day 22!A22:H22
+2026-07-22,3:35 PM,FAKE-22-014,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 22!A23:H23
+2026-07-22,4:05 PM,FAKE-22-015,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 22!A24:H24
+2026-07-22,4:35 PM,FAKE-22-016,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 22!A25:H25
+2026-07-22,5:05 PM,FAKE-22-017,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 22!A26:H26
+2026-07-23,9:05 AM,FAKE-23-001,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 23!A10:H10
+2026-07-23,9:35 AM,FAKE-23-002,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 23!A11:H11
+2026-07-23,10:05 AM,FAKE-23-003,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 23!A12:H12
+2026-07-23,10:35 AM,FAKE-23-004,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 23!A13:H13
+2026-07-23,11:05 AM,FAKE-23-005,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 23!A14:H14
+2026-07-23,11:35 AM,FAKE-23-006,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 23!A15:H15
+2026-07-23,12:05 PM,FAKE-23-007,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 23!A16:H16
+2026-07-23,12:35 PM,FAKE-23-008,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 23!A17:H17
+2026-07-23,1:05 PM,FAKE-23-009,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 23!A18:H18
+2026-07-23,1:35 PM,FAKE-23-010,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 23!A19:H19
+2026-07-23,2:05 PM,FAKE-23-011,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 23!A20:H20
+2026-07-23,2:35 PM,FAKE-23-012,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 23!A21:H21
+2026-07-23,3:05 PM,FAKE-23-013,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 23!A22:H22
+2026-07-23,3:35 PM,FAKE-23-014,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 23!A23:H23
+2026-07-23,4:05 PM,FAKE-23-015,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 23!A24:H24
+2026-07-24,9:05 AM,FAKE-24-001,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 24!A10:H10
+2026-07-24,9:35 AM,FAKE-24-002,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 24!A11:H11
+2026-07-24,10:05 AM,FAKE-24-003,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 24!A12:H12
+2026-07-24,10:35 AM,FAKE-24-004,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 24!A13:H13
+2026-07-24,11:05 AM,FAKE-24-005,Core Package,Completed,2,2,No,Completed the fictional selection.,Day 24!A14:H14
+2026-07-24,11:35 AM,FAKE-24-006,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 24!A15:H15
+2026-07-24,12:05 PM,FAKE-24-007,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 24!A16:H16
+2026-07-24,12:35 PM,FAKE-24-008,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 24!A17:H17
+2026-07-24,1:05 PM,FAKE-24-009,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 24!A18:H18
+2026-07-24,1:35 PM,FAKE-24-010,Optional Add-on,Completed,2,1,No,Completed the fictional selection.,Day 24!A19:H19
+2026-07-24,2:05 PM,FAKE-24-011,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 24!A20:H20
+2026-07-24,2:35 PM,FAKE-24-012,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 24!A21:H21
+2026-07-24,3:05 PM,FAKE-24-013,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 24!A22:H22
+2026-07-25,9:05 AM,FAKE-25-001,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 25!A10:H10
+2026-07-25,9:35 AM,FAKE-25-002,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 25!A11:H11
+2026-07-25,10:05 AM,FAKE-25-003,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 25!A12:H12
+2026-07-25,10:35 AM,FAKE-25-004,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 25!A13:H13
+2026-07-25,11:05 AM,FAKE-25-005,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 25!A14:H14
+2026-07-25,11:35 AM,FAKE-25-006,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 25!A15:H15
+2026-07-25,12:05 PM,FAKE-25-007,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 25!A16:H16
+2026-07-25,12:35 PM,FAKE-25-008,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 25!A17:H17
+2026-07-25,1:05 PM,FAKE-25-009,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 25!A18:H18
+2026-07-25,1:35 PM,FAKE-25-010,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 25!A19:H19
+2026-07-25,2:05 PM,FAKE-25-011,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 25!A20:H20
+2026-07-25,2:35 PM,FAKE-25-012,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 25!A21:H21
+2026-07-25,3:05 PM,FAKE-25-013,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 25!A22:H22
+2026-07-25,3:35 PM,FAKE-25-014,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 25!A23:H23
+2026-07-25,4:05 PM,FAKE-25-015,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 25!A24:H24
+2026-07-25,4:35 PM,FAKE-25-016,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 25!A25:H25
+2026-07-25,5:05 PM,FAKE-25-017,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 25!A26:H26
+2026-07-25,5:35 PM,FAKE-25-018,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 25!A27:H27
+2026-07-26,9:05 AM,FAKE-26-001,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 26!A10:H10
+2026-07-26,9:35 AM,FAKE-26-002,Plus Package,Completed,2,3,No,Completed the fictional selection.,Day 26!A11:H11
+2026-07-26,10:05 AM,FAKE-26-003,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 26!A12:H12
+2026-07-26,10:35 AM,FAKE-26-004,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 26!A13:H13
+2026-07-26,11:05 AM,FAKE-26-005,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 26!A14:H14
+2026-07-26,11:35 AM,FAKE-26-006,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 26!A15:H15
+2026-07-26,12:05 PM,FAKE-26-007,Core Package,Completed,2,2,No,Completed the fictional selection.,Day 26!A16:H16
+2026-07-26,12:35 PM,FAKE-26-008,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 26!A17:H17
+2026-07-26,1:05 PM,FAKE-26-009,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 26!A18:H18
+2026-07-26,1:35 PM,FAKE-26-010,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 26!A19:H19
+2026-07-26,2:05 PM,FAKE-26-011,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 26!A20:H20
+2026-07-26,2:35 PM,FAKE-26-012,Optional Add-on,Completed,2,1,No,Completed the fictional selection.,Day 26!A21:H21
+2026-07-26,3:05 PM,FAKE-26-013,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 26!A22:H22
+2026-07-26,3:35 PM,FAKE-26-014,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 26!A23:H23
+2026-07-26,4:05 PM,FAKE-26-015,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 26!A24:H24
+2026-07-26,4:35 PM,FAKE-26-016,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 26!A25:H25
+2026-07-27,9:05 AM,FAKE-27-001,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 27!A10:H10
+2026-07-27,9:35 AM,FAKE-27-002,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 27!A11:H11
+2026-07-27,10:05 AM,FAKE-27-003,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 27!A12:H12
+2026-07-27,10:35 AM,FAKE-27-004,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 27!A13:H13
+2026-07-27,11:05 AM,FAKE-27-005,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 27!A14:H14
+2026-07-27,11:35 AM,FAKE-27-006,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 27!A15:H15
+2026-07-27,12:05 PM,FAKE-27-007,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 27!A16:H16
+2026-07-27,12:35 PM,FAKE-27-008,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 27!A17:H17
+2026-07-27,1:05 PM,FAKE-27-009,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 27!A18:H18
+2026-07-27,1:35 PM,FAKE-27-010,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 27!A19:H19
+2026-07-27,2:05 PM,FAKE-27-011,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 27!A20:H20
+2026-07-27,2:35 PM,FAKE-27-012,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 27!A21:H21
+2026-07-27,3:05 PM,FAKE-27-013,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 27!A22:H22
+2026-07-27,3:35 PM,FAKE-27-014,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 27!A23:H23
+2026-07-28,9:05 AM,FAKE-28-001,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 28!A10:H10
+2026-07-28,9:35 AM,FAKE-28-002,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 28!A11:H11
+2026-07-28,10:05 AM,FAKE-28-003,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 28!A12:H12
+2026-07-28,10:35 AM,FAKE-28-004,Plus Package,Completed,2,3,No,Completed the fictional selection.,Day 28!A13:H13
+2026-07-28,11:05 AM,FAKE-28-005,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 28!A14:H14
+2026-07-28,11:35 AM,FAKE-28-006,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 28!A15:H15
+2026-07-28,12:05 PM,FAKE-28-007,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 28!A16:H16
+2026-07-28,12:35 PM,FAKE-28-008,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 28!A17:H17
+2026-07-28,1:05 PM,FAKE-28-009,Core Package,Completed,2,2,No,Completed the fictional selection.,Day 28!A18:H18
+2026-07-28,1:35 PM,FAKE-28-010,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 28!A19:H19
+2026-07-28,2:05 PM,FAKE-28-011,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 28!A20:H20
+2026-07-28,2:35 PM,FAKE-28-012,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 28!A21:H21
+2026-07-29,9:05 AM,FAKE-29-001,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 29!A10:H10
+2026-07-29,9:35 AM,FAKE-29-002,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 29!A11:H11
+2026-07-29,10:05 AM,FAKE-29-003,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 29!A12:H12
+2026-07-29,10:35 AM,FAKE-29-004,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 29!A13:H13
+2026-07-29,11:05 AM,FAKE-29-005,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 29!A14:H14
+2026-07-29,11:35 AM,FAKE-29-006,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 29!A15:H15
+2026-07-29,12:05 PM,FAKE-29-007,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 29!A16:H16
+2026-07-29,12:35 PM,FAKE-29-008,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 29!A17:H17
+2026-07-29,1:05 PM,FAKE-29-009,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 29!A18:H18
+2026-07-29,1:35 PM,FAKE-29-010,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 29!A19:H19
+2026-07-29,2:05 PM,FAKE-29-011,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 29!A20:H20
+2026-07-29,2:35 PM,FAKE-29-012,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 29!A21:H21
+2026-07-29,3:05 PM,FAKE-29-013,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 29!A22:H22
+2026-07-29,3:35 PM,FAKE-29-014,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 29!A23:H23
+2026-07-29,4:05 PM,FAKE-29-015,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 29!A24:H24
+2026-07-29,4:35 PM,FAKE-29-016,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 29!A25:H25
+2026-07-29,5:05 PM,FAKE-29-017,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 29!A26:H26
+2026-07-30,9:05 AM,FAKE-30-001,Premium Package,Completed,2,4,No,Completed the fictional selection.,Day 30!A10:H10
+2026-07-30,9:35 AM,FAKE-30-002,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 30!A11:H11
+2026-07-30,10:05 AM,FAKE-30-003,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 30!A12:H12
+2026-07-30,10:35 AM,FAKE-30-004,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 30!A13:H13
+2026-07-30,11:05 AM,FAKE-30-005,Premium Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 30!A14:H14
+2026-07-30,11:35 AM,FAKE-30-006,Plus Package,Completed,2,3,No,Completed the fictional selection.,Day 30!A15:H15
+2026-07-30,12:05 PM,FAKE-30-007,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 30!A16:H16
+2026-07-30,12:35 PM,FAKE-30-008,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 30!A17:H17
+2026-07-30,1:05 PM,FAKE-30-009,Premium Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 30!A18:H18
+2026-07-30,1:35 PM,FAKE-30-010,Plus Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 30!A19:H19
+2026-07-30,2:05 PM,FAKE-30-011,Core Package,Completed,2,2,No,Completed the fictional selection.,Day 30!A20:H20
+2026-07-30,2:35 PM,FAKE-30-012,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 30!A21:H21
+2026-07-30,3:05 PM,FAKE-30-013,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 30!A22:H22
+2026-07-30,3:35 PM,FAKE-30-014,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 30!A23:H23
+2026-07-30,4:05 PM,FAKE-30-015,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 30!A24:H24
+2026-07-31,9:05 AM,FAKE-31-001,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 31!A10:H10
+2026-07-31,9:35 AM,FAKE-31-002,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 31!A11:H11
+2026-07-31,10:05 AM,FAKE-31-003,Plus Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 31!A12:H12
+2026-07-31,10:35 AM,FAKE-31-004,Core Package,No sale,0,0,No,No selection made; no follow-up needed.,Day 31!A13:H13
+2026-07-31,11:05 AM,FAKE-31-005,Optional Add-on,Completed,1,0.5,No,Completed the fictional selection.,Day 31!A14:H14
+2026-07-31,11:35 AM,FAKE-31-006,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 31!A15:H15
+2026-07-31,12:05 PM,FAKE-31-007,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 31!A16:H16
+2026-07-31,12:35 PM,FAKE-31-008,Core Package,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 31!A17:H17
+2026-07-31,1:05 PM,FAKE-31-009,Optional Add-on,No sale,0,0,No,No selection made; no follow-up needed.,Day 31!A18:H18
+2026-07-31,1:35 PM,FAKE-31-010,Premium Package,Completed,1,2,No,Completed the fictional selection.,Day 31!A19:H19
+2026-07-31,2:05 PM,FAKE-31-011,Plus Package,Completed,1,1.5,No,Completed the fictional selection.,Day 31!A20:H20
+2026-07-31,2:35 PM,FAKE-31-012,Core Package,Completed,1,1,No,Completed the fictional selection.,Day 31!A21:H21
+2026-07-31,3:05 PM,FAKE-31-013,Optional Add-on,Follow-up,0,0,Yes,Follow-up requested for a later date.,Day 31!A22:H22

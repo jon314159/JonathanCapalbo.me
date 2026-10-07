@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Excel Activity Reporting System Case Study | Jonathan Capalbo</title>
-    <meta name="description" content="A workplace Excel reporting initiative, shown through a public workbook with fictional sample data, validated inputs, monthly summaries, and separate targets." />
+    <title>Activity Reporting: Excel and Tableau | Jonathan Capalbo</title>
+    <meta name="description" content="A workplace-origin Excel workflow rebuilt with fictional data, with new Tableau and React portfolio extensions for reviewing outcomes, daily targets, and source records." />
     <meta name="theme-color" content="#0b1f33" />
-    <meta property="og:title" content="Excel Activity Reporting System Case Study | Jonathan Capalbo" />
-    <meta property="og:description" content="A workplace Excel reporting initiative with a fictional public sample, controlled inputs, reconciled totals, and separate goal comparisons." />
+    <meta property="og:title" content="Activity Reporting: Excel and Tableau | Jonathan Capalbo" />
+    <meta property="og:description" content="A fictional Excel reconstruction and new Tableau and React portfolio extensions, with separate monthly and daily goals." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://jonathancapalbo.me/sales-activity-tracker.html" />
     <meta property="og:image" content="https://jonathancapalbo.me/assets/images/sales-activity-dashboard.png" />
@@ -15,14 +15,18 @@
     <meta property="og:image:height" content="1090" />
     <meta property="og:image:alt" content="Fictional Excel dashboard with KPI cards and goal-comparison charts" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Excel Activity Reporting System Case Study | Jonathan Capalbo" />
-    <meta name="twitter:description" content="A workplace Excel reporting initiative shown with fictional sample data, controlled inputs, and reconciled monthly totals." />
+    <meta name="twitter:title" content="Activity Reporting: Excel and Tableau | Jonathan Capalbo" />
+    <meta name="twitter:description" content="A fictional Excel reconstruction and new Tableau and React portfolio extensions, with source records and separate targets." />
     <meta name="twitter:image" content="https://jonathancapalbo.me/assets/images/sales-activity-dashboard.png" />
     <meta name="twitter:image:alt" content="Fictional Excel dashboard with KPI cards and goal-comparison charts" />
     <link rel="canonical" href="https://jonathancapalbo.me/sales-activity-tracker.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/style.css?v=58" />
     <link rel="stylesheet" href="assets/css/case-study.css?v=1" />
+    <link rel="stylesheet" href="assets/css/activity-explorer.css?v=1" />
+    <script src="assets/vendor/react-18.3.1/react.production.min.js" defer></script>
+    <script src="assets/vendor/react-18.3.1/react-dom.production.min.js" defer></script>
+    <script src="assets/js/activity-explorer.js?v=1" defer></script>
     <script src="assets/js/case-study.js?v=1" defer></script>
     <script src="/assets/js/analytics.js?v=1" defer></script>
   </head>
@@ -47,13 +51,14 @@
         <div class="case-hero-copy">
           <a class="case-back" href="index.html#projects">Back to Selected projects</a>
           <p class="eyebrow">Workplace initiative · Fictional sample data</p>
-          <h1>An Excel workflow for <em>daily records and monthly reporting.</em></h1>
-          <p class="case-lede">I originally built this Excel reporting system as a workplace initiative. The public sample uses fictional data to compare monthly product-goal attainment with a separate daily target. Inspect the formulas, input controls, and reconciliations behind both views.</p>
+          <h1>Activity reporting with <em>Excel and Tableau.</em></h1>
+          <p class="case-lede">The Excel workflow originated as a workplace initiative. I rebuilt the public workbook with fictional data, then added a new Tableau portfolio extension and a separate React browser view to inspect outcomes and daily targets.</p>
           <div class="button-row">
-            <a class="button button-primary" href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download workbook <span aria-hidden="true">↓</span></a>
-            <a class="button button-secondary" href="#analysis">Read the workbook analysis</a>
+            <a class="button button-primary" href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download Excel workbook <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="#analysis">Review Excel results</a>
+            <a class="button button-secondary" href="#tableau-review">Review Tableau analysis</a>
           </div>
-          <p class="sales-data-note"><span>Fictional demonstration</span> Every published record, goal, product, and result is fictional. The screenshots and analysis show the downloadable workbook.</p>
+          <p class="sales-data-note"><span>Fictional demonstration</span> Every record, goal, product, and result shown here is fictional. The Excel screenshots show the downloadable workbook. Tableau and React are new portfolio work, separate from my prior Tableau coursework.</p>
         </div>
 
         <div class="sales-hero-evidence">
@@ -63,10 +68,10 @@
           </figure>
         </div>
         <dl class="case-summary summary-wide" aria-label="Project summary">
-          <div><dt>Project type</dt><dd>Workplace initiative; public workbook demonstration with fictional sample data</dd></div>
-          <div><dt>My contribution</dt><dd>Built daily entry tables, monthly formulas, input checks, and the dashboard</dd></div>
-          <div><dt>Tools/platform</dt><dd>Microsoft Excel</dd></div>
-          <div><dt>Deliverables/status</dt><dd>Downloadable workbook, screenshots, and documented reconciliations</dd></div>
+          <div><dt>Project type</dt><dd>Workplace-origin Excel workflow; new Tableau and React portfolio extensions; fictional public data</dd></div>
+          <div><dt>My contribution</dt><dd>Excel entry and reporting design; AI-assisted Tableau and React extensions, with source reconciliation and interaction checks</dd></div>
+          <div><dt>Tools/platform</dt><dd>Microsoft Excel · Tableau Desktop · React</dd></div>
+          <div><dt>Deliverables/status</dt><dd>Excel workbook, packaged Tableau workbook, native export, browser explorer, and source records</dd></div>
         </dl>
       </div>
     </header>
@@ -92,10 +97,10 @@
         </div>
       </section>
 
-      <section class="case-band sales-system-band" id="architecture" data-read-label="Workbook structure">
+      <section class="case-band sales-system-band" id="architecture" data-read-label="Excel workflow">
         <div class="section case-band-inner">
           <div class="section-heading compact-heading">
-            <p class="eyebrow">Workbook architecture</p>
+            <p class="eyebrow">Excel reporting workflow</p>
             <h2>Four connected layers separate assumptions, entry, calculation, and review.</h2>
           </div>
 
@@ -125,7 +130,7 @@
               <small>Two decision views</small>
             </article>
           </div>
-          <p class="sales-architecture-note"><strong>Settings → daily controls → monthly rollup → dashboard.</strong> The separation makes assumptions visible, inputs consistent, and totals traceable back to a specific day.</p>
+          <p class="sales-architecture-note"><strong>Settings → daily controls → monthly rollup → dashboard.</strong> The separation makes assumptions visible, inputs consistent, and totals traceable back to a specific day. The Tableau portfolio extension reuses those 465 fictional daily records for outcome, target, and record analysis.</p>
         </div>
       </section>
 
@@ -173,6 +178,44 @@
           <a class="sales-dashboard-crop" href="assets/images/sales-activity-dashboard.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/sales-activity-dashboard.png" width="1107" height="1090" loading="lazy" decoding="async" alt="Fictional Excel dashboard showing 465 activities, 324 completed units, 402.5 points, daily results versus goal, and product totals versus monthly goals" /></a>
           <figcaption><span>Actual workbook dashboard with fictional records.</span><a href="assets/images/sales-activity-dashboard.png" target="_blank" rel="noopener noreferrer">View full-size dashboard <span aria-hidden="true">↗</span></a></figcaption>
         </figure>
+      </section>
+
+      <section class="section" id="tableau-review" data-read-label="Tableau extension">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">New portfolio extension · Fictional data</p>
+          <h2>Review outcomes and daily targets in Tableau.</h2>
+          <p>The Tableau workbook uses the same 465 fictional records as the Excel sample. It adds outcome counts, four daily views, an adjustable daily target, and record drilldowns. This is new portfolio work, separate from the workplace Excel initiative and my Tableau coursework.</p>
+        </div>
+        <figure class="tableau-static-preview">
+          <a href="assets/images/tableau-activity-review.png"><img src="assets/images/tableau-activity-review.png" width="1440" height="1520" loading="lazy" decoding="async" alt="Static Tableau export of fictional July activity: 465 activities, 324 units, 14 Met days at 11 units per day, outcome count table, daily charts, and record review" /></a>
+          <figcaption>Static image exported from Tableau Desktop. Use the packaged workbook for native filters and drilldowns, or the separate browser view below. The controls in this image are not interactive.</figcaption>
+        </figure>
+        <div class="button-row">
+          <a class="button button-primary" href="downloads/Activity_Outcomes_Daily_Target_Review.twbx" download>Download Tableau workbook</a>
+          <a class="button button-secondary" href="assets/images/tableau-activity-review.png">View full-size Tableau export</a>
+        </div>
+      </section>
+
+      <section class="section" id="browser-explorer" data-read-label="Browser explorer">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Separate React browser implementation · Fictional data</p>
+          <h2>Inspect the same records in your browser.</h2>
+          <p>Change the target, compare product outcomes, and inspect a day or outcome count. This React view implements the review in the browser; the native Tableau workbook is available above.</p>
+        </div>
+        <p id="activity-explorer-status" role="status">Interactive controls become available when the browser view loads. Static results are below.</p>
+        <button id="activity-explorer-retry" type="button" hidden>Retry browser view</button>
+        <div id="activity-explorer-root" hidden></div>
+        <div id="activity-explorer-fallback">
+          <p>July 2026: <strong>465 activities, 282 completed interactions, 324 completed units, and 402.5 points.</strong> Completed-interaction share is 60.6%; units per completed interaction is 1.15. At 11 units/day, 14 days are Met and 17 Below.</p>
+          <table class="activity-fallback-table">
+            <caption>Fictional outcomes by product (interaction counts)</caption>
+            <thead><tr><th scope="col">Product</th><th scope="col">Completed</th><th scope="col">Follow-up</th><th scope="col">No sale</th></tr></thead>
+            <tbody><tr><th scope="row">Core</th><td>73</td><td>22</td><td>21</td></tr><tr><th scope="row">Plus</th><td>71</td><td>23</td><td>23</td></tr><tr><th scope="row">Premium</th><td>68</td><td>25</td><td>23</td></tr><tr><th scope="row">Add-on</th><td>70</td><td>25</td><td>21</td></tr></tbody>
+          </table>
+          <p>Monthly product goals total 310 units. The separate daily target implies 341 units across July. Follow-up is an activity flag, not an unresolved backlog. Download the CSV to inspect every source record.</p>
+          <noscript><p>Enable JavaScript to use the React controls. The Tableau export, static results, Excel workbook, and source CSV remain available.</p></noscript>
+        </div>
+        <p><a href="downloads/Fictional_Activities.csv" download>Download all 465 fictional source records (CSV)</a></p>
       </section>
 
       <section class="section sales-decisions-section" id="design-decisions" data-read-label="Design decisions">
@@ -225,12 +268,12 @@
         </div>
       </section>
 
-      <section class="section case-scope sales-scope-section" id="downloads" data-read-label="Workbook download">
+      <section class="section case-scope sales-scope-section" id="downloads" data-read-label="Downloads">
         <div class="scope-card">
           <p class="eyebrow">Inspect the work</p>
           <h2>Review the formulas, controls, and fictional source rows yourself.</h2>
           <div class="skill-list case-skill-list"><span>Cross-sheet formulas</span><span>SUMIF &amp; COUNTIF</span><span>Excel tables</span><span>Data validation</span><span>Conditional formatting</span><span>Goal analysis</span><span>Dashboard reporting</span><span>Process documentation</span></div>
-          <div class="button-row sales-download-actions"><a class="button button-primary" href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download workbook <span aria-hidden="true">↓</span></a><a class="button button-secondary" href="https://github.com/jon314159/JonathanCapalbo.me/blob/main/case-studies/sales-activity-tracker.md" target="_blank" rel="noopener noreferrer">View build notes <span aria-hidden="true">↗</span></a></div>
+          <div class="button-row sales-download-actions"><a class="button button-primary" href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download Excel workbook <span aria-hidden="true">↓</span></a><a class="button button-secondary" href="https://github.com/jon314159/JonathanCapalbo.me/blob/main/case-studies/sales-activity-tracker.md" target="_blank" rel="noopener noreferrer">View build notes <span aria-hidden="true">↗</span></a></div>
         </div>
         <aside class="scope-note">
           <h3>Fictional public version</h3>

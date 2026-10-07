@@ -1,10 +1,27 @@
-# Excel Activity Reporting System
+# Activity Reporting: Excel and Tableau
 
 ## Summary
 
 This Excel project originated as a workplace initiative connecting daily activity records to monthly reporting. The public sample uses fictional data. Inputs include fictional interaction IDs, product selections, outcomes, units, follow-up flags, and notes. The dashboard compares completed units with monthly product goals and a separately configured daily target. Settings controls product labels, goals, target days, and point values.
 
 The public case study is available at [jonathancapalbo.me/sales-activity-tracker.html](https://jonathancapalbo.me/sales-activity-tracker.html).
+
+The Tableau and React portions are new, AI-assisted portfolio extensions using the fictional public records. They are separate from the workplace Excel initiative and Jonathan's prior Tableau coursework. The browser explorer is a separate React implementation; the Tableau image is a static native export and the TWBX provides native interaction.
+
+Excel settings guide daily entry, and the monthly summary and dashboard consolidate those entries for reporting. The Tableau extension reuses the same 465 fictional daily records for outcome, target, and record analysis. These are two views of the same activity-reporting project.
+
+## Tableau and browser review
+
+- [Packaged Tableau workbook](../downloads/Activity_Outcomes_Daily_Target_Review.twbx), with its fictional CSV included
+- [Native Tableau export](../assets/images/tableau-activity-review.png)
+- [All 465 fictional source records](../downloads/Fictional_Activities.csv)
+- [React browser explorer](https://jonathancapalbo.me/sales-activity-tracker.html#browser-explorer)
+
+Both views show outcomes by product, daily completed units, activity volume, completed-interaction share, units per completed interaction, and source records. Monthly totals and all daily charts always use the full source. Product and outcome controls narrow outcomes and records. Day and chart selections narrow records further. Clearing chart selection returns to the product/outcome subset. The React reset button restores 465 records and target 11. In Tableau, Escape clears the chart selection; set Product and Outcome to All and the daily target to 11 to restore defaults.
+
+The React view uses semantic count and record tables, keyboard controls, an explicit empty state, and record details with all 10 source fields. Ratios divide total numerators by total denominators; they do not average daily percentages. Dates are July reporting dates, with no timezone conversion. Follow-up flags record activity, not an unresolved backlog. The sample provides no evidence of causes, response times, revenue, or business improvement.
+
+React and ReactDOM 18.3.1 are pinned and self-hosted with their MIT license. The app uses `createRoot` and `createElement`, with no package installation or build step. The Excel walkthrough remains its original plain JavaScript implementation. Existing page fragments and workbook bytes are preserved. A local HTTP server is required for the JSON fetch; static results and downloads remain readable without JavaScript.
 
 ## Public demonstration workbook
 
@@ -49,6 +66,12 @@ The monthly product goals total 310 units. The separate daily target is 11 units
 Before recommending a process change, confirm the intended relationship between the targets, then compare activity volume and completed units on below-target days. The fictional data does not establish causes such as staffing, demand, or employee performance.
 
 ## Validation checks
+
+On October 6, 2026, all 465 records and all 10 fields were reconciled with the fictional source. The revised packaged workbook opened in native Tableau; its exported preview and website download were checked against the final files. Native checks confirmed fixed month totals, target changes, an empty date/subset intersection, Escape recovery to 22 records, and the full source worksheet.
+
+Browser checks covered targets 0, 10, 11, 12, 13 and 25; all outcome counts and daily selections; 465 unique records across 47 pages; keyboard and touch controls; empty-state recovery; loading and failure fallback; and no-JavaScript content. At widths 320, 390, 768 and 1440, the expanded daily and record tables had no horizontal overflow at normal and 200% root text size. Chart axes use HTML labels at 16 and 32 pixels respectively. The existing walkthrough, navigation, SQL-copy controls and downloads passed their regression checks.
+
+The native workbook has a fixed canvas and scrollable records. Full native keyboard-only, screen-reader, mobile and 200% text operation were not certified. The PNG is a static preview; native controls require the TWBX. The React explorer is a separate implementation using the same data.
 
 A September 11, 2026 source-record check independently reproduced 465 activities, 324 units, 402.5 points, and the daily and product totals from the original public workbook. This was a reconciliation of the source records and saved outputs, not a native Excel interaction test.
 

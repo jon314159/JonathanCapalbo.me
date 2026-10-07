@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job-Search Operations Workflow | Jonathan Capalbo</title>
-    <meta name="description" content="Jonathan Capalbo's independent workflow customization: current resume verification, recovery from uncertain submissions, and review points that connect jobs, evidence, and application status." />
+    <meta name="description" content="Jonathan Capalbo's independent job-search workflow: Kepler coordination, local evidence checks, human submission approval, and read-only Hermes reports and audits." />
     <meta name="theme-color" content="#0b1f33" />
     <meta property="og:title" content="Job-Search Operations Workflow | Jonathan Capalbo" />
-    <meta property="og:description" content="An independent project: adapting and maintaining an existing Python-based workflow, with clear review steps and private record management." />
+    <meta property="og:description" content="An independent Python-based workflow with Kepler coordination, human review, evidence-based records, and read-only Hermes reports and audits." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://jonathancapalbo.me/job-search-operations.html" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Job-Search Operations Workflow | Jonathan Capalbo" />
-    <meta name="twitter:description" content="Workflow customization, source validation, resume checks, and application tracking in a private independent project." />
+    <meta name="twitter:description" content="Kepler coordination, local workflow checks, human submission approval, and read-only Hermes reporting in an independent job-search project." />
     <link rel="canonical" href="https://jonathancapalbo.me/job-search-operations.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/css/style.css?v=58" />
+    <link rel="stylesheet" href="assets/css/style.css?v=60" />
     <link rel="stylesheet" href="assets/css/case-study.css?v=1" />
     <script src="assets/js/case-study.js?v=1" defer></script>
     <script src="/assets/js/analytics.js?v=1" defer></script>
@@ -49,8 +49,8 @@
         </div>
         <dl class="case-summary" aria-label="Project summary">
           <div><dt>Project type</dt><dd>Independent workflow customization and maintenance</dd></div>
-          <div><dt>Tools</dt><dd>Python, Git, structured JSON/CSV records, PDF checks, and AI-assisted workflows</dd></div>
-          <div><dt>On this page</dt><dd>Three customizations, four review points, one synthetic walkthrough, and a focused validation summary</dd></div>
+          <div><dt>Tools</dt><dd>Python, Git, JSON/CSV records, PDF checks, Kepler coordination, and Hermes reports and audits</dd></div>
+          <div><dt>On this page</dt><dd>A workflow diagram, three customizations, four review points, one synthetic walkthrough, and focused validation</dd></div>
         </dl>
       </div>
     </header>
@@ -85,6 +85,40 @@
               <div><dt>How I checked it</dt><dd>Focused tests use synthetic records to verify that drafts do not consume follow-up attempts, duplicate records of the same sent message count once, and administrative edits do not reset the contact date.</dd></div>
             </dl>
           </article>
+        </div>
+      </section>
+      <section class="section job-workflow-section" id="workflow" aria-labelledby="workflow-title" data-read-label="Workflow diagram">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Workflow diagram · Human review at consequential steps</p>
+          <h2 id="workflow-title">From a request to a verified record.</h2>
+          <p>Kepler is the AI assistant coordinating my requests and local project work. The local workflow handles checks and records; I review decisions and authorize submissions. Hermes reads the existing state for reports and audits.</p>
+        </div>
+        <div class="job-workflow-lanes">
+          <div>
+            <h3 id="job-main-flow-title">Requested work and application decisions</h3>
+            <ol class="job-workflow-flow" aria-labelledby="job-main-flow-title" role="list">
+              <li><h4>Jonathan: request and scope</h4><p>Set the task, preferences, and constraints.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>Kepler: coordinate local work</h4><p>Clarify missing details, pass constraints and evidence to local tasks, and bring results back for review.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>Local workflow: discover and check jobs</h4><p>Normalize and deduplicate postings, retain snapshots, and verify employer or ATS availability and hard-gate evidence before ranking.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>Prepare and verify materials</h4><p>Evaluate, draft, review, revise, and verify against supported candidate evidence. Prepared materials do not authorize submission.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>Jonathan: review and authorize</h4><p>Review the materials and answers. Approve consequential consent, certification, and the final submission.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>Browser or Jonathan: complete portal steps</h4><p>Complete authorized actions and any manual or account gates. Pause when a portal requires my action.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>Verify the outcome</h4><p>Retain success evidence for the same job and account. An uncertain result stays unresolved and requires a status check before retry.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>Preview and record the result</h4><p>Match the exact job, tracker row, and retained archive. Preview the update, then save only the supported status and artifacts.</p></li>
+            </ol>
+            <p class="job-workflow-note">An ambiguous result returns to a status check and human review. It is not recorded as applied. <a href="#examples">Read the uncertain-submission example.</a></p>
+          </div>
+          <aside class="job-reporting-lane" aria-labelledby="job-reporting-title">
+            <h3 id="job-reporting-title">Hermes: read, report, and audit</h3>
+            <p class="job-reporting-scope">A separate reporting lane reads canonical job-search state. It does not run the application steps.</p>
+            <ol class="job-workflow-flow" role="list">
+              <li><h4>Read the existing state</h4><p>Collect current job-search records and the canonical daily summary.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>Produce reports and audit findings</h4><p>Configured daily report at noon and weekly read-only audit on Sundays at 3 p.m., America/New_York.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>Deliver a private Telegram summary</h4><p>Send the report to the configured private recipient; retain delivery receipt metadata.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>Jonathan and Kepler: review findings</h4><p>Decide whether a finding needs separately authorized follow-up work.</p></li>
+            </ol>
+            <p class="job-workflow-note">Reports depend on the host being awake, network access, and the Hermes gateway running. This is scheduled reporting, with no guarantee of continuous execution. Reports and audits do not authorize repairs, outreach, or submissions.</p>
+          </aside>
         </div>
       </section>
       <section class="case-band" id="controls" aria-labelledby="controls-title" data-read-label="Review points">
@@ -159,10 +193,10 @@
         <div class="contact-copy">
           <p class="eyebrow">Related work</p>
           <h2>Reporting and business-system projects.</h2>
-          <p>See the Excel reporting workflow and academic ServiceNow portal for different examples of organizing information and checking its quality.</p>
+          <p>See the Excel and Tableau reporting project and academic ServiceNow portal for different examples of organizing information and checking its quality.</p>
         </div>
         <div class="contact-actions">
-          <a class="button contact-primary" href="sales-activity-tracker.html">Excel reporting case study</a>
+          <a class="button contact-primary" href="sales-activity-tracker.html">Activity Reporting: Excel and Tableau</a>
           <div>
             <a href="servicenow-njit-registrar.html">ServiceNow case study</a>
             <a href="resume.pdf">Resume (PDF)</a>

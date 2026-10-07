@@ -10,13 +10,17 @@ At Comcast/Xfinity, I built Power Automate flows for a team of 10 to filter repo
 
 ## Explore the projects
 
-### Excel Activity Reporting System
+### Activity Reporting: Excel and Tableau
 
 A workplace initiative: an Excel workbook that connects daily activity logs to a monthly summary and dashboard. The public workbook uses fictional sample data. It includes entry checks, editable goals, and charts that show why monthly results and daily targets can tell different stories.
 
-All records and results are fictional. The case study walks through the same workbook available below.
+The new Tableau portfolio extension uses the same 465 fictional records. It adds outcome counts, adjustable daily targets, and record drilldowns. A separate React browser implementation lets reviewers inspect the data without opening Tableau. These extensions are separate from the workplace Excel initiative and prior Tableau coursework. All records and results are fictional.
 
-[Read the case study](https://jonathancapalbo.me/sales-activity-tracker.html) · [Download the workbook](https://jonathancapalbo.me/downloads/Fictional_Sales_Activity_Tracker.xlsx)
+[Read the case study](https://jonathancapalbo.me/sales-activity-tracker.html) · [Download the Excel workbook](https://jonathancapalbo.me/downloads/Fictional_Sales_Activity_Tracker.xlsx)
+
+[Tableau workbook](downloads/Activity_Outcomes_Daily_Target_Review.twbx) · [Native Tableau export](assets/images/tableau-activity-review.png) · [Fictional source CSV](downloads/Fictional_Activities.csv) · [Browser explorer](https://jonathancapalbo.me/sales-activity-tracker.html#browser-explorer)
+
+The browser explorer is a focused React island on the existing static page. React and ReactDOM 18.3.1 are pinned and self-hosted in `assets/vendor/react-18.3.1`; their MIT license is included. No package installation, transpiler, build step, or runtime CDN is required. Serve the site over HTTP for the JSON dataset to load. Static totals, the Tableau export, and downloads remain available when JavaScript or data loading is unavailable. The Excel walkthrough retains its existing plain JavaScript controls.
 
 ### NJIT Registrar ServiceNow Portal
 

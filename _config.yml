@@ -8,3 +8,6 @@ permalink: pretty
 
 exclude:
   - README.md
+  - .agents
+  - AGENTS.md
+  - docs/third-party

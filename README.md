@@ -12,6 +12,16 @@ I also tested a workplace Excel activity tracker, found days missing from monthl
 
 ## Explore the projects
 
+### Chicago Food Inspections
+
+An academic team project using real-world City of Chicago food inspection data. Two Tableau dashboards compare evaluated-inspection failure rates by ZIP, facility group, recorded risk, inspection context and time across 2019-2025. The web summary includes the denominator, findings, source preparation and limitations.
+
+I developed the Tableau dashboards for this academic team project. The team includes Jon Capalbo, Camerun Hannah, Mostafa Moawad and Yovanny Moscoso Huaman. Our presentation is upcoming and will be a team effort. This is coursework, with no claimed business impact.
+
+[Read the case study](https://jonathancapalbo.me/chicago-food-inspections.html) · [Explore on Tableau Public](https://public.tableau.com/app/profile/jonathan.capalbo/viz/Chicago_Food_Inspections/1Overviewandgeography) · [Download the packaged Tableau workbook](downloads/Chicago_Food_Inspections.twbx) · [Validation totals](downloads/Chicago_Food_Inspections_Validation.json)
+
+The public workbook copy preserves the source CSV bytes and analytical definitions while removing Tableau author/machine fingerprint metadata. The original local workbook is unchanged. Both dashboards were opened in Tableau Desktop 2026.2 and exported for the page's previews. The separate HTML charts summarize the embedded data. Tableau Public hosts an all-row, unaggregated extract with both dashboard tabs visible; its workbook copying/download option is disabled because Tableau adds machine metadata when publishing. Use the sanitized website workbook download.
+
 ### Activity Reporting: Excel and Tableau
 
 A workplace initiative: an Excel workbook that connects daily activity logs to a monthly summary and dashboard. The public workbook uses fictional sample data. It includes entry checks, editable goals, and charts that show why monthly results and daily targets can tell different stories.

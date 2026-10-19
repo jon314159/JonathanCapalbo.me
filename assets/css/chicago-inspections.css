@@ -1,0 +1,53 @@
+.chicago-results,
+.chicago-comparison {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+  padding-top: 0;
+}
+
+.chicago-results > *, .chicago-comparison > * { min-width: 0; }
+.chicago-previews > p { max-width: 78ch; }
+.chicago-preview { margin: 2rem 0 3rem; }
+.chicago-preview > a { display: block; border: 1px solid var(--line); background: #fff; }
+.chicago-preview img { display: block; width: 100%; height: auto; }
+.chicago-preview figcaption { margin-top: .8rem; max-width: 90ch; font-size: .95rem; color: var(--ink-soft); }
+.chicago-results h2, .chicago-comparison h2, .chicago-methods h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); }
+.chicago-trend { padding: clamp(1rem, 3vw, 2rem); background: var(--paper-bright); border: 1px solid var(--line); border-radius: var(--radius-md); }
+.chicago-bars { display: grid; gap: 1rem; padding: 0; margin: 2rem 0; list-style: none; }
+.chicago-bars li { display: grid; grid-template-columns: 2.7rem minmax(0, 1fr) 3.5rem; align-items: center; gap: .6rem; font-variant-numeric: tabular-nums; }
+.chicago-bars strong { text-align: right; }
+.chicago-bar-track { display: block; height: 1.1rem; border-bottom: 1px solid var(--muted); }
+.chicago-bar-track > span { display: block; height: 100%; background: var(--blue-dark); }
+.chicago-caption { color: var(--muted); font-size: .9rem; }
+.chicago-table { width: 100%; border-collapse: collapse; align-self: start; font-size: .9rem; font-variant-numeric: tabular-nums; }
+.chicago-table caption { text-align: left; margin-bottom: 1rem; font-weight: 700; color: var(--ink); }
+.chicago-table th, .chicago-table td { padding: .8rem .35rem; border-bottom: 1px solid var(--line); text-align: right; overflow-wrap: anywhere; }
+.chicago-table th:first-child { text-align: left; }
+.chicago-table thead, .chicago-table tfoot { background: var(--paper-bright); }
+.chicago-notes { margin: 1.5rem 0; }
+.chicago-notes > div { padding: 1.2rem 0; border-bottom: 1px solid var(--line); }
+.chicago-notes dt { font-weight: 750; }
+.chicago-notes dd { margin: .4rem 0 0; max-width: 78ch; color: var(--ink-soft); }
+.chicago-methods { padding-top: 0; }
+.chicago-methods > p, .chicago-limitations { max-width: 85ch; }
+.chicago-limitations { padding-left: 1.4rem; }
+.chicago-limitations li { padding-left: .3rem; margin-bottom: 1rem; }
+.chicago-page main a:not(.button) { text-underline-offset: .2em; }
+.chicago-page main a:not(.button):focus-visible { outline: 3px solid var(--blue-dark); outline-offset: 3px; }
+
+@media (min-width: 58rem) {
+  .chicago-results, .chicago-comparison { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 3rem; }
+  .chicago-notes > div { display: grid; grid-template-columns: minmax(0, .4fr) minmax(0, 1fr); gap: 2rem; }
+  .chicago-notes dd { margin: 0; }
+}
+
+@media (max-width: 26rem) {
+  .chicago-table { font-size: .8rem; }
+  .chicago-bars li { gap: .35rem; }
+  .chicago-page .brand-copy small { max-width: 12rem; }
+}
+
+@media (forced-colors: active) {
+  .chicago-bar-track > span { background: CanvasText; }
+}

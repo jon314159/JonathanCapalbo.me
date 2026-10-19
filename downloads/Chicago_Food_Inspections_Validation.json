@@ -1,0 +1,202 @@
+{
+  "project_type": "Academic team project using real-world City of Chicago public data",
+  "source_url": "https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5",
+  "supplied_snapshot_date": "2026-10-17",
+  "analysis_period": "2019-01-01 through 2025-12-31",
+  "first_record_date": "2019-01-02",
+  "last_record_date": "2025-12-31",
+  "period_records": 123673,
+  "all_evaluated": {
+    "evaluated": 103614,
+    "failed": 23843,
+    "failure_rate": 0.2301136912000309
+  },
+  "duplicate_inspection_ids": 0,
+  "outcomes": {
+    "Business Not Located": 28,
+    "Fail": 23843,
+    "No Entry": 7904,
+    "Not Ready": 2735,
+    "Out of Business": 9392,
+    "Pass": 54972,
+    "Pass w/ Conditions": 24799
+  },
+  "years": {
+    "2019": {
+      "evaluated": 16121,
+      "failed": 3612,
+      "failure_rate": 0.22405557967867998
+    },
+    "2020": {
+      "evaluated": 12600,
+      "failed": 2935,
+      "failure_rate": 0.23293650793650794
+    },
+    "2021": {
+      "evaluated": 13139,
+      "failed": 3035,
+      "failure_rate": 0.23099170408706904
+    },
+    "2022": {
+      "evaluated": 14286,
+      "failed": 3554,
+      "failure_rate": 0.24877502449951
+    },
+    "2023": {
+      "evaluated": 15413,
+      "failed": 3835,
+      "failure_rate": 0.2488159346006618
+    },
+    "2024": {
+      "evaluated": 15995,
+      "failed": 3481,
+      "failure_rate": 0.21763050953422944
+    },
+    "2025": {
+      "evaluated": 16060,
+      "failed": 3391,
+      "failure_rate": 0.21114570361145704
+    }
+  },
+  "facility_groups": {
+    "Bakery": {
+      "evaluated": 1447,
+      "failed": 369,
+      "failure_rate": 0.25501036627505186
+    },
+    "Catering": {
+      "evaluated": 606,
+      "failed": 107,
+      "failure_rate": 0.17656765676567657
+    },
+    "Children's services": {
+      "evaluated": 3874,
+      "failed": 692,
+      "failure_rate": 0.17862674238513165
+    },
+    "Daycare": {
+      "evaluated": 2634,
+      "failed": 601,
+      "failure_rate": 0.2281700835231587
+    },
+    "Grocery store": {
+      "evaluated": 10873,
+      "failed": 2743,
+      "failure_rate": 0.2522762806953003
+    },
+    "Long-term care": {
+      "evaluated": 1069,
+      "failed": 287,
+      "failure_rate": 0.2684752104770814
+    },
+    "Mobile food preparer": {
+      "evaluated": 584,
+      "failed": 134,
+      "failure_rate": 0.22945205479452055
+    },
+    "Other / unspecified": {
+      "evaluated": 3804,
+      "failed": 806,
+      "failure_rate": 0.21188222923238695
+    },
+    "Restaurant": {
+      "evaluated": 71155,
+      "failed": 16163,
+      "failure_rate": 0.22715199212985734
+    },
+    "School": {
+      "evaluated": 7568,
+      "failed": 1941,
+      "failure_rate": 0.2564746300211416
+    }
+  },
+  "risk_groups": {
+    "High risk": {
+      "evaluated": 82440,
+      "failed": 18893,
+      "failure_rate": 0.2291727316836487
+    },
+    "Low risk": {
+      "evaluated": 5309,
+      "failed": 1378,
+      "failure_rate": 0.25955923902806555
+    },
+    "Medium risk": {
+      "evaluated": 15863,
+      "failed": 3572,
+      "failure_rate": 0.22517808737313244
+    },
+    "Unspecified": {
+      "evaluated": 2,
+      "failed": 0,
+      "failure_rate": 0.0
+    }
+  },
+  "inspection_groups": {
+    "Complaint": {
+      "evaluated": 10817,
+      "failed": 4048,
+      "failure_rate": 0.37422575575483036
+    },
+    "License": {
+      "evaluated": 14009,
+      "failed": 3881,
+      "failure_rate": 0.27703619102005855
+    },
+    "Other inspection": {
+      "evaluated": 267,
+      "failed": 40,
+      "failure_rate": 0.149812734082397
+    },
+    "Re-inspection": {
+      "evaluated": 24188,
+      "failed": 2797,
+      "failure_rate": 0.11563585248883744
+    },
+    "Routine canvass": {
+      "evaluated": 51642,
+      "failed": 12659,
+      "failure_rate": 0.2451299330002711
+    },
+    "Short-form complaint": {
+      "evaluated": 2503,
+      "failed": 358,
+      "failure_rate": 0.14302836596084698
+    },
+    "Suspected food poisoning": {
+      "evaluated": 188,
+      "failed": 60,
+      "failure_rate": 0.3191489361702128
+    }
+  },
+  "missing_coordinates_evaluated": 381,
+  "missing_zip_evaluated": 3,
+  "unmapped_by_zip_location_rule": {
+    "evaluated": 79,
+    "failed": 10,
+    "failure_rate": 0.12658227848101267
+  },
+  "zip_examples": {
+    "60614": {
+      "evaluated": 3730,
+      "failed": 893,
+      "failure_rate": 0.2394101876675603
+    },
+    "60640": {
+      "evaluated": 2793,
+      "failed": 542,
+      "failure_rate": 0.19405656999641963
+    }
+  },
+  "data_sha256": "e5a16ec40c61f84596748d16e48168d7d384345bcba54635fd4d2ef66cfc710a",
+  "public_package_sha256": "62473577876451b6c765052606ae2f3d0ae94a99fbd1a3436eff5e9fa72410bf",
+  "public_package_crc_verified": true,
+  "data_preserved_byte_for_byte": true,
+  "analytical_xml_and_layout_preserved": true,
+  "fingerprint_metadata_removed": true,
+  "native_rendering_rechecked": true,
+  "note": "Rates describe evaluated inspection events, including repeat inspections; they are not establishment-level probabilities. ZIP locations use full-period mean recorded coordinates. This file reports static recomputations and package checks, not a native Tableau interaction test.",
+  "native_rendering_environment": "Tableau Desktop 2026.2; both dashboards opened and exported on 2026-10-19",
+  "tableau_public_url": "https://public.tableau.com/app/profile/jonathan.capalbo/viz/Chicago_Food_Inspections/1Overviewandgeography",
+  "tableau_public_hosting": "Native Tableau created an all-row, unaggregated extract for hosting. The website download retains the sanitized CSV-based package."
+}

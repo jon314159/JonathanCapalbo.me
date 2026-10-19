@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chicago Food Inspections | Jonathan Capalbo</title>
+  <meta name="description" content="An academic team project using real-world City of Chicago food inspection data. Two Tableau dashboards compare inspection failure rates, geography and inspection context for 2019-2025." />
+  <meta name="theme-color" content="#0b1f33" />
+  <meta property="og:title" content="Chicago Food Inspections | Jonathan Capalbo" />
+  <meta property="og:description" content="Academic team analysis using real-world Chicago food inspection data, with documented denominators, findings and limitations." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://jonathancapalbo.me/chicago-food-inspections.html" />
+  <link rel="canonical" href="https://jonathancapalbo.me/chicago-food-inspections.html" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css?v=59" />
+  <link rel="stylesheet" href="assets/css/chicago-inspections.css?v=1" />
+</head>
+<body class="case-study-page chicago-page">
+  <a class="skip-link" href="#case-content">Skip to content</a>
+  <header class="case-header" id="top">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Jonathan Capalbo, portfolio home">
+        <span class="brand-mark" aria-hidden="true">JC</span>
+        <span class="brand-copy"><strong>Jonathan Capalbo</strong><small>Business analysis, reporting &amp; systems</small></span>
+      </a>
+      <nav aria-label="Case study navigation">
+        <a href="index.html#projects">Projects</a>
+        <a href="#methods">Methods</a>
+        <a href="#limitations">Limitations</a>
+        <a class="nav-resume" href="resume.pdf">Résumé (PDF)</a>
+      </nav>
+    </div>
+    <div class="case-hero">
+      <div class="case-hero-copy">
+        <a class="case-back" href="index.html#projects">Back to selected projects</a>
+        <p class="eyebrow">Academic team project · Real-world public data</p>
+        <h1>Chicago food inspections: <em>compare rates with context.</em></h1>
+        <p class="case-lede">How do inspection failure rates differ by location, facility type and recorded risk level, and how did those patterns change from 2019 through 2025?</p>
+        <p>I developed two Tableau dashboards using real-world City of Chicago food inspection records for an academic team project. The dashboards combine geographic exploration, time trends and category comparisons. Our team presentation is upcoming.</p>
+        <div class="button-row">
+          <a class="button button-primary" href="#findings">Read the findings</a>
+          <a class="button button-secondary" href="https://public.tableau.com/app/profile/jonathan.capalbo/viz/Chicago_Food_Inspections/1Overviewandgeography">Explore on Tableau Public</a>
+          <a class="button button-secondary" href="downloads/Chicago_Food_Inspections.twbx" download>Download Tableau workbook (5.6 MB)</a>
+        </div>
+      </div>
+      <dl class="case-summary" aria-label="Project summary">
+        <div><dt>Project type</dt><dd>Academic team analysis using real-world public data</dd></div>
+        <div><dt>Team</dt><dd>Jon Capalbo, Camerun Hannah, Mostafa Moawad and Yovanny Moscoso Huaman</dd></div>
+        <div><dt>My role</dt><dd>Tableau dashboard development. The upcoming presentation will be a team effort.</dd></div>
+        <div><dt>Tools and deliverables</dt><dd>Tableau; two dashboards, eleven worksheets, shared filters, ZIP selection and annual/monthly trends</dd></div>
+        <div><dt>Scope</dt><dd>123,673 inspection records from 2019-2025, including 103,614 evaluated inspections. Source snapshot supplied October 17, 2026.</dd></div>
+      </dl>
+    </div>
+  </header>
+  <main id="case-content">
+    <section class="section chicago-previews" id="dashboards" aria-labelledby="preview-title">
+      <p class="eyebrow">Dashboard previews</p>
+      <h2 id="preview-title">Explore geography, trends and inspection context.</h2>
+      <p>These images are native Tableau exports of the downloadable workbook with all years, facilities, risk levels and inspection types selected. Open either image at full size to read the detail.</p>
+      <figure class="chicago-preview">
+        <a href="assets/images/chicago-overview.png" aria-label="Open the overview and geography dashboard preview at full size"><img src="assets/images/chicago-overview.png" width="1800" height="1180" alt="Tableau overview: 103,614 evaluated inspections, 23,843 failures and a 23.0% failure rate, with a ZIP summary map and annual rate and volume trends." /></a>
+        <figcaption>Overview and geography. ZIP circles summarize inspection records. The rate and volume trend axes use focused ranges; the web summary below provides a zero-based rate scale and exact counts.</figcaption>
+      </figure>
+      <figure class="chicago-preview">
+        <a href="assets/images/chicago-comparison.png" aria-label="Open the establishments and risk dashboard preview at full size"><img src="assets/images/chicago-comparison.png" width="1800" height="1320" loading="lazy" alt="Tableau comparisons of failure rates by facility group, recorded risk and inspection type, with evaluated and failed inspection count bars." /></a>
+        <figcaption>Establishments and risk. The blue Total inspections bars represent evaluated inspections, and orange bars show the failed subset. Restaurants and other facility groups use separate count scales. Category rates describe inspection visits, including repeat visits.</figcaption>
+      </figure>
+    </section>
+    <section class="section case-intro" id="findings" aria-labelledby="finding-title">
+      <div>
+        <p class="eyebrow">Main finding</p>
+        <h2 id="finding-title">The annual failure rate fell from 24.9% to 21.1% between 2023 and 2025.</h2>
+      </div>
+      <div class="case-intro-copy">
+        <p>That is a decline of about 3.8 percentage points among evaluated inspections. The charts describe the records in the dataset; changes in inspection activity and the mix of facilities may affect the comparison.</p>
+        <p>Across all seven years, 23,843 of 103,614 evaluated inspections failed, giving an overall failure rate of 23.0%.</p>
+      </div>
+    </section>
+    <section class="section chicago-results" aria-labelledby="trend-title">
+      <div class="chicago-trend">
+        <p class="eyebrow">Static web summary from the workbook data</p>
+        <h2 id="trend-title">Annual inspection failure rates.</h2>
+        <p id="chart-scale">Each bar uses the same 0-30% scale. The table provides counts and exact denominators.</p>
+        <ol class="chicago-bars" aria-label="Annual failure rates, 2019 through 2025" aria-describedby="chart-scale">
+          <li><span>2019</span><span class="chicago-bar-track" aria-hidden="true"><span style="width:74.685193%"></span></span><strong>22.4%</strong></li>
+          <li><span>2020</span><span class="chicago-bar-track" aria-hidden="true"><span style="width:77.645503%"></span></span><strong>23.3%</strong></li>
+          <li><span>2021</span><span class="chicago-bar-track" aria-hidden="true"><span style="width:76.997235%"></span></span><strong>23.1%</strong></li>
+          <li><span>2022</span><span class="chicago-bar-track" aria-hidden="true"><span style="width:82.925008%"></span></span><strong>24.9%</strong></li>
+          <li><span>2023</span><span class="chicago-bar-track" aria-hidden="true"><span style="width:82.938645%"></span></span><strong>24.9%</strong></li>
+          <li><span>2024</span><span class="chicago-bar-track" aria-hidden="true"><span style="width:72.543503%"></span></span><strong>21.8%</strong></li>
+          <li><span>2025</span><span class="chicago-bar-track" aria-hidden="true"><span style="width:70.381901%"></span></span><strong>21.1%</strong></li>
+        </ol>
+        <p class="chicago-caption">This is an HTML summary of the packaged data. Native Tableau exploration is available in the downloadable workbook.</p>
+      </div>
+      <div>
+        <table class="chicago-table">
+          <caption>Evaluated inspection counts and outcomes by year</caption>
+          <thead><tr><th scope="col">Year</th><th scope="col">Evaluated</th><th scope="col">Failed</th><th scope="col">Failure rate</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">2019</th><td>16,121</td><td>3,612</td><td>22.4%</td></tr>
+            <tr><th scope="row">2020</th><td>12,600</td><td>2,935</td><td>23.3%</td></tr>
+            <tr><th scope="row">2021</th><td>13,139</td><td>3,035</td><td>23.1%</td></tr>
+            <tr><th scope="row">2022</th><td>14,286</td><td>3,554</td><td>24.9%</td></tr>
+            <tr><th scope="row">2023</th><td>15,413</td><td>3,835</td><td>24.9%</td></tr>
+            <tr><th scope="row">2024</th><td>15,995</td><td>3,481</td><td>21.8%</td></tr>
+            <tr><th scope="row">2025</th><td>16,060</td><td>3,391</td><td>21.1%</td></tr>
+          </tbody>
+          <tfoot><tr><th scope="row">Total</th><td>103,614</td><td>23,843</td><td>23.0%</td></tr></tfoot>
+        </table>
+      </div>
+    </section>
+    <section class="section chicago-comparison" aria-labelledby="context-title">
+      <div>
+        <p class="eyebrow">Inspection context</p>
+        <h2 id="context-title">Complaint and routine inspections describe different situations.</h2>
+        <p>Complaint inspections had a 37.4% failure rate, compared with 24.5% for routine canvass inspections and 11.6% for re-inspections. The inspection-type filter helps narrow comparisons to a more consistent context.</p>
+        <p>These observed differences do not establish that inspection type causes an outcome. Complaint inspections, for example, are selected because someone reported a concern.</p>
+      </div>
+      <table class="chicago-table">
+        <caption>Selected inspection contexts, full 2019-2025 period</caption>
+        <thead><tr><th scope="col">Context</th><th scope="col">Evaluated</th><th scope="col">Failed</th><th scope="col">Failure rate</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Complaint</th><td>10,817</td><td>4,048</td><td>37.4%</td></tr>
+          <tr><th scope="row">Routine canvass</th><td>51,642</td><td>12,659</td><td>24.5%</td></tr>
+          <tr><th scope="row">Re-inspection</th><td>24,188</td><td>2,797</td><td>11.6%</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="section case-methods" aria-labelledby="dashboard-title">
+      <p class="eyebrow">Inside the Tableau workbook</p>
+      <h2 id="dashboard-title">Two views connect outcomes with volume.</h2>
+      <dl class="chicago-notes">
+        <div><dt>Overview and geography</dt><dd>Headline evaluated counts, failed counts and failure rate; a ZIP-level map; and rate and volume trends. ZIP selection filters the headline values and both trends. The time control switches between annual and monthly aggregation.</dd></div>
+        <div><dt>Establishments and risk</dt><dd>Failure-rate comparisons by facility group, recorded risk and inspection type. Evaluated and failed count bars provide context; restaurants have a separate count panel because they account for 68.7% of evaluated inspections.</dd></div>
+        <div><dt>Shared controls</dt><dd>Year, facility, risk and inspection type narrow the evaluated records. Rates are recalculated from the filtered numerator and denominator.</dd></div>
+      </dl>
+      <p>For example, ZIP 60614 had 893 failures in 3,730 evaluated inspections (23.9%), compared with 542 in 2,793 (19.4%) for ZIP 60640. Facility mix and inspection context may differ, so these figures are starting points for investigation.</p>
+      <p><a href="https://public.tableau.com/app/profile/jonathan.capalbo/viz/Chicago_Food_Inspections/1Overviewandgeography">Open the interactive dashboards on Tableau Public</a> to use the shared controls and switch between sheets. The fixed-width Tableau canvases work best on a desktop; the previews and findings here reflow for smaller screens.</p>
+      <p>Tableau Public hosts an all-row, unaggregated extract created from the packaged CSV. Use this website's sanitized workbook download; workbook copying and downloading are disabled on Tableau Public. The previews show the native dashboard layout; the web findings are a separate static summary.</p>
+    </section>
+    <section class="section chicago-methods" id="methods" aria-labelledby="methods-title">
+      <p class="eyebrow">Source and preparation</p>
+      <h2 id="methods-title">Define the denominator before comparing rates.</h2>
+      <p><a href="https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5">City of Chicago Food Inspections</a> is the public source. The supplied October 17, 2026 snapshot has 317,175 rows. The workbook retains the 123,673 records dated within 2019-2025, covering seven complete calendar years.</p>
+      <dl class="chicago-notes">
+        <div><dt>Failure-rate calculation</dt><dd>Failed inspections divided by evaluated inspections. Evaluated means Pass, Pass w/ Conditions or Fail. The rate divides summed counts after filtering, rather than averaging group percentages.</dd></div>
+        <div><dt>Excluded outcomes</dt><dd>Out of Business (9,392), No Entry (7,904), Not Ready (2,735) and Business Not Located (28) remain in the packaged source but are excluded from the rate. These outcomes are not passes.</dd></div>
+        <div><dt>Category preparation</dt><dd>Named common facility types are normalized for case and surrounding spaces, daycare variants are combined, and remaining types use Other / unspecified. Inspection groups combine re-inspection variants. Original category fields remain available.</dd></div>
+        <div><dt>Validation</dt><dd>The packaged CSV reconciles to the supplied snapshot's inspection IDs and retained raw fields. No duplicate Inspection IDs were found in the period. Annual, risk and inspection-context totals reconcile with the headline counts.</dd></div>
+      </dl>
+    </section>
+    <section class="section chicago-methods" id="limitations" aria-labelledby="limitations-title">
+      <p class="eyebrow">Interpretation limits</p>
+      <h2 id="limitations-title">Inspection records count visits, including repeat visits.</h2>
+      <ul class="chicago-limitations">
+        <li>These are inspection rates. Repeat inspections of the same establishment are separate observations. The results do not estimate the probability that a randomly chosen Chicago establishment will fail.</li>
+        <li>Inspection scheduling, complaints, licensing and re-inspection requirements affect which establishments appear and how often. Raw category differences do not control for that selection or for changes in composition over time.</li>
+        <li>There are 381 evaluated records with missing coordinates. Because the map places ZIP summaries at fixed, full-period mean recorded coordinates, some of these records still contribute to their mapped ZIP. In total, 79 evaluated records cannot be placed by the workbook's ZIP-location rule; headline totals retain them.</li>
+        <li>Map circles represent ZIP summaries, rather than individual establishments or official ZIP boundaries. The source also contains inconsistent city and ZIP labels, which are retained rather than silently corrected.</li>
+        <li>The risk chart omits the unspecified group, which has only two evaluated inspections; both passed. Other totals retain them. Recorded risk level describes the source classification, not the inspection result.</li>
+        <li>Small filtered groups can produce unstable percentages. Comparisons need denominators; the workbook's native time axes and map color range can change with selection. Separate establishment-count panels use separate scales.</li>
+      </ul>
+      <p>A useful follow-up would compare routine inspections within similar facility and risk groups, then investigate repeat visits at the establishment level. The current project reports descriptive patterns and does not claim a public-health intervention or measured business impact.</p>
+    </section>
+    <section class="section chicago-methods" aria-labelledby="team-title">
+      <p class="eyebrow">Attribution</p>
+      <h2 id="team-title">An academic team deliverable.</h2>
+      <p>I developed the Tableau dashboards for this academic team project. The team includes Jon Capalbo, Camerun Hannah, Mostafa Moawad and Yovanny Moscoso Huaman. Our presentation has not taken place yet and will be a team effort. Dashboard development is my contribution; this page does not assign me sole ownership of the team's other work.</p>
+      <p>The downloadable copy retains the public inspection records and analytical definitions. Tableau author and machine fingerprint metadata have been removed for public distribution. The original local workbook is preserved.</p>
+      <div class="button-row">
+        <a class="button button-primary" href="downloads/Chicago_Food_Inspections.twbx" download>Download Tableau workbook</a>
+        <a class="button button-secondary" href="downloads/Chicago_Food_Inspections_Validation.json" download>Download validation totals (JSON)</a>
+      </div>
+      <p class="chicago-caption">The workbook requires a compatible Tableau application. Both dashboards in the sanitized copy were opened and exported in Tableau Desktop 2026.2 before publication.</p>
+    </section>
+    <section class="contact-section case-contact">
+      <div class="contact-copy"><p class="eyebrow">Contact</p><h2>Contact Jonathan.</h2><p>I'm open to business analysis, reporting, operations and business systems opportunities.</p></div>
+      <div class="contact-actions"><a class="button contact-primary" href="index.html#contact">View contact details</a><div><a href="index.html#projects">Return to selected projects</a><a href="resume.pdf">Resume (PDF)</a></div></div>
+    </section>
+  </main>
+  <footer><p><strong>Jonathan Capalbo</strong><span>Business analysis · Reporting · Operations · Systems</span></p><p>© 2026 Jonathan Capalbo.</p></footer>
+</body>
+</html>

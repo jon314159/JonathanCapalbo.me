@@ -31,6 +31,12 @@
     }
   ],
   "projects": {
+    "chicago": {
+      "name": "Chicago Food Inspections | Tableau",
+      "url": "https://jonathancapalbo.me/chicago-food-inspections.html",
+      "scope": "Academic team project | Real-world public data",
+      "description": "Developed two Tableau dashboards with shared filters and ZIP selection for 123,673 City of Chicago inspection records (2019-2025); defined failure rates over evaluated inspections."
+    },
     "job-search": {
       "name": "Private Job-Search Operations System",
       "scope": "Independent project | Customized private fork",
@@ -69,10 +75,10 @@
       "headline": "Business Analysis | Business Systems | Reporting",
       "summary": "Customer operations professional with experience automating report distribution, investigating account and system issues, and documenting team handoffs. Projects cover Excel reporting, Tableau analysis, and business-system controls. Pursuing an NJIT M.S.; available for full-time work.",
       "skills": [
-        "<b>Business analysis (projects):</b> Process mapping, user stories, acceptance criteria, traceability, UAT planning.",
+        "<b>Analysis projects:</b> Process mapping, user stories, acceptance criteria, traceability, UAT planning.",
         "<b>Reporting / automation:</b> Power Automate; Excel tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation (public sample); PivotTables (coursework).",
         "<b>Workplace tools:</b> Excel, Microsoft 365, SharePoint, OneNote, Smartsheet, and CSG.",
-        "<b>Data / systems:</b> Oracle SQL - joins, keys, constraints, views (academic); ServiceNow Knowledge Management and Service Portal (lab)."
+        "<b>Data / systems:</b> Tableau dashboards (academic); Oracle SQL - joins, keys, constraints, views (academic); ServiceNow Knowledge Management and Service Portal (lab)."
       ],
       "experience": [
         {
@@ -100,7 +106,7 @@
       "project_order": [
         "excel",
         "servicenow",
-        "arcade"
+        "chicago"
       ],
       "project_details": [
         {
@@ -116,10 +122,10 @@
           "description": "Configured a searchable portal, organized 42 articles into 12 categories, and revised registration guidance with steps, common errors, and support contacts."
         },
         {
-          "name": "Arcade Operations Ticketing Modernization",
-          "scope": "Self-directed planning study | Hypothetical",
-          "description": "Mapped a proposed ticketing workflow with user stories, acceptance criteria, and requirements traceability to planned UAT. No system was implemented; tests were not executed.",
-          "url": "https://jonathancapalbo.me/arcade-ticketing-evidence.html"
+          "name": "Chicago Food Inspections | Tableau",
+          "scope": "Academic team project | Real-world public data",
+          "description": "Developed two Tableau dashboards with shared filters and ZIP selection for 123,673 City of Chicago inspection records (2019-2025); defined failure rates over evaluated inspections.",
+          "url": "https://jonathancapalbo.me/chicago-food-inspections.html"
         }
       ],
       "coursework": ""
@@ -133,12 +139,12 @@
         "<b>Excel reporting:</b> Tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation. <b>Excel coursework:</b> PivotTables for sales-data summaries.",
         "<b>Professional:</b> Excel, Microsoft 365, Power Automate, CSG, SharePoint, OneNote, report and account-issue investigation, documentation, and handoffs.",
         "<b>Academic SQL:</b> Oracle SQL, relational tables, joins, keys, constraints, and views.",
-        "<b>Academic lab:</b> ServiceNow Knowledge Management and Service Portal."
+        "<b>Academic dashboards / lab:</b> Tableau; ServiceNow Knowledge Management and Service Portal."
       ],
       "project_order": [
         "excel",
         "sql",
-        "servicenow"
+        "chicago"
       ],
       "coursework": "",
       "experience": [

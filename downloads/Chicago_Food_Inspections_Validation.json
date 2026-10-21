@@ -206,6 +206,6 @@
   ],
   "native_rendering_environment": "Tableau Desktop 2026.2; all four dashboards opened on 2026-10-21. Establishments and trends previews exported; risk/context and geography previews captured in presentation mode.",
   "native_interaction_scope": "This website update checked native rendering and workbook structure; it does not repeat every source-project filter interaction.",
-  "tableau_public_url": "https://public.tableau.com/app/profile/jonathan.capalbo/viz/Chicago_Food_Inspections/1Overviewandgeography",
-  "tableau_public_version": "Earlier two-dashboard edition, checked 2026-10-21; latest four-dashboard edition supplied by website download."
+  "tableau_public_url": "https://public.tableau.com/app/profile/jonathan.capalbo/viz/Chicago_Food_Inspections_17926114522930/3Geography",
+  "tableau_public_version": "Four-dashboard edition published 2026-10-21, with dashboard tabs enabled. Hosted workbook copying is disabled; the website supplies the sanitized workbook download."
 }

@@ -18,7 +18,7 @@ An academic team project using real-world City of Chicago food inspection data. 
 
 I developed the Tableau dashboards for this academic team project. The team includes Jon Capalbo, Camerun Hannah, Mostafa Moawad and Yovanny Moscoso Huaman. Our presentation is upcoming and will be a team effort. This is coursework, with no claimed business impact.
 
-[Read the case study](https://jonathancapalbo.me/chicago-food-inspections.html) · [Download the four-dashboard Tableau workbook](downloads/Chicago_Food_Inspections.twbx) · [Validation totals](downloads/Chicago_Food_Inspections_Validation.json) · [Earlier two-dashboard edition on Tableau Public](https://public.tableau.com/app/profile/jonathan.capalbo/viz/Chicago_Food_Inspections/1Overviewandgeography)
+[Read the case study](https://jonathancapalbo.me/chicago-food-inspections.html) · [Download the four-dashboard Tableau workbook](downloads/Chicago_Food_Inspections.twbx) · [Validation totals](downloads/Chicago_Food_Inspections_Validation.json) · [Four dashboards on Tableau Public](https://public.tableau.com/app/profile/jonathan.capalbo/viz/Chicago_Food_Inspections_17926114522930/3Geography)
 
 The public workbook copy preserves the source CSV bytes and analytical definitions while removing Tableau author/machine fingerprint metadata. The original local workbook is unchanged. All four dashboards were opened in Tableau Desktop 2026.2 for the October 21, 2026 update, and the page's previews were captured from that copy. The separate HTML charts summarize the embedded data. Use the sanitized website workbook download.
 

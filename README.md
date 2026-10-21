@@ -16,7 +16,7 @@ I also tested a workplace Excel activity tracker, found days missing from monthl
 
 An academic team project using real-world City of Chicago food inspection data. Four Tableau dashboards cover establishments, risk and inspection type, geography, and trends and conclusions across 2019-2025. The workbook has nineteen worksheets, shared filters, local ZIP selection, annual/monthly trends and evaluated outcome counts. The web summary includes the denominator, findings, source preparation and limitations.
 
-I developed the Tableau dashboards for this academic team project. The team includes Jon Capalbo, Camerun Hannah, Mostafa Moawad and Yovanny Moscoso Huaman. Our presentation is upcoming and will be a team effort. This is coursework, with no claimed business impact.
+I developed the Tableau dashboards for this academic team project. The team includes Jon Capalbo, Camerun Hannah, Mostafa Moawad and Yovanny Moscoso Huaman. This is coursework, with no claimed business impact.
 
 [Read the case study](https://jonathancapalbo.me/chicago-food-inspections.html) · [Download the four-dashboard Tableau workbook](downloads/Chicago_Food_Inspections.twbx) · [Validation totals](downloads/Chicago_Food_Inspections_Validation.json) · [Four dashboards on Tableau Public](https://public.tableau.com/app/profile/jonathan.capalbo/viz/Chicago_Food_Inspections_17926114522930/3Geography)
 

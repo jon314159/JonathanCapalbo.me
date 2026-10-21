@@ -8,9 +8,12 @@
 
 .chicago-results > *, .chicago-comparison > * { min-width: 0; }
 .chicago-previews > p { max-width: 78ch; }
-.chicago-preview { margin: 2rem 0 3rem; }
+.chicago-preview { min-width: 0; margin: 0; }
+.chicago-preview-feature { margin: 2rem 0; }
+.chicago-preview-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem; }
 .chicago-preview > a { display: block; border: 1px solid var(--line); background: #fff; }
 .chicago-preview img { display: block; width: 100%; height: auto; }
+.chicago-preview-label { display: flex; align-items: center; min-height: 44px; padding: .6rem .8rem; color: var(--blue-dark); font-size: .9rem; font-weight: 650; text-decoration: underline; text-underline-offset: .2em; }
 .chicago-preview figcaption { margin-top: .8rem; max-width: 90ch; font-size: .95rem; color: var(--ink-soft); }
 .chicago-results h2, .chicago-comparison h2, .chicago-methods h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); }
 .chicago-trend { padding: clamp(1rem, 3vw, 2rem); background: var(--paper-bright); border: 1px solid var(--line); border-radius: var(--radius-md); }
@@ -37,6 +40,7 @@
 .chicago-page main a:not(.button):focus-visible { outline: 3px solid var(--blue-dark); outline-offset: 3px; }
 
 @media (min-width: 58rem) {
+  .chicago-preview-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
   .chicago-results, .chicago-comparison { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 3rem; }
   .chicago-notes > div { display: grid; grid-template-columns: minmax(0, .4fr) minmax(0, 1fr); gap: 2rem; }
   .chicago-notes dd { margin: 0; }

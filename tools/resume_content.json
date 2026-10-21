@@ -35,7 +35,7 @@
       "name": "Chicago Food Inspections | Tableau",
       "url": "https://jonathancapalbo.me/chicago-food-inspections.html",
       "scope": "Academic team project | Real-world public data",
-      "description": "Developed two Tableau dashboards with shared filters and ZIP selection for 123,673 City of Chicago inspection records (2019-2025); defined failure rates over evaluated inspections."
+      "description": "Developed four Tableau dashboards with shared filters and ZIP selection for 123,673 City of Chicago inspection records (2019-2025); defined failure rates over evaluated inspections."
     },
     "job-search": {
       "name": "Private Job-Search Operations System",
@@ -124,7 +124,7 @@
         {
           "name": "Chicago Food Inspections | Tableau",
           "scope": "Academic team project | Real-world public data",
-          "description": "Developed two Tableau dashboards with shared filters and ZIP selection for 123,673 City of Chicago inspection records (2019-2025); defined failure rates over evaluated inspections.",
+          "description": "Developed four Tableau dashboards with shared filters and ZIP selection for 123,673 City of Chicago inspection records (2019-2025); defined failure rates over evaluated inspections.",
           "url": "https://jonathancapalbo.me/chicago-food-inspections.html"
         }
       ],

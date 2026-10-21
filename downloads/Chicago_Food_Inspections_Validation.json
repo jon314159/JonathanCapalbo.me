@@ -189,14 +189,23 @@
     }
   },
   "data_sha256": "e5a16ec40c61f84596748d16e48168d7d384345bcba54635fd4d2ef66cfc710a",
-  "public_package_sha256": "62473577876451b6c765052606ae2f3d0ae94a99fbd1a3436eff5e9fa72410bf",
+  "public_package_sha256": "9f288e5a2b297ce7801a459f4bd0f118c2595ae50f96fb7309ca48231b0879cc",
   "public_package_crc_verified": true,
   "data_preserved_byte_for_byte": true,
   "analytical_xml_and_layout_preserved": true,
   "fingerprint_metadata_removed": true,
   "native_rendering_rechecked": true,
   "note": "Rates describe evaluated inspection events, including repeat inspections; they are not establishment-level probabilities. ZIP locations use full-period mean recorded coordinates. This file reports static recomputations and package checks, not a native Tableau interaction test.",
-  "native_rendering_environment": "Tableau Desktop 2026.2; both dashboards opened and exported on 2026-10-19",
+  "dashboard_count": 4,
+  "worksheet_count": 19,
+  "dashboards": [
+    "1  Establishments",
+    "2  Risk and inspection type",
+    "3  Geography",
+    "4  Trends and conclusions"
+  ],
+  "native_rendering_environment": "Tableau Desktop 2026.2; all four dashboards opened on 2026-10-21. Establishments and trends previews exported; risk/context and geography previews captured in presentation mode.",
+  "native_interaction_scope": "This website update checked native rendering and workbook structure; it does not repeat every source-project filter interaction.",
   "tableau_public_url": "https://public.tableau.com/app/profile/jonathan.capalbo/viz/Chicago_Food_Inspections/1Overviewandgeography",
-  "tableau_public_hosting": "Native Tableau created an all-row, unaggregated extract for hosting. The website download retains the sanitized CSV-based package."
+  "tableau_public_version": "Earlier two-dashboard edition, checked 2026-10-21; latest four-dashboard edition supplied by website download."
 }

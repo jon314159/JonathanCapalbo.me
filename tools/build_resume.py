@@ -9,20 +9,26 @@ from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import ParagraphStyle
+from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.pdfdoc import PDFString
+from reportlab.pdfbase.ttfonts import TTFont
+from reportlab.pdfgen.canvas import Canvas
 from reportlab.platypus import HRFlowable, KeepTogether, Paragraph, SimpleDocTemplate, Spacer
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = json.loads(Path(__file__).with_name("resume_content.json").read_text(encoding="utf-8"))
+pdfmetrics.registerFont(TTFont("ResumeVera", str(ROOT / "assets/fonts/Vera.ttf")))
+pdfmetrics.registerFont(TTFont("ResumeVera-Bold", str(ROOT / "assets/fonts/VeraBd.ttf")))
+pdfmetrics.registerFontFamily("ResumeVera", normal="ResumeVera", bold="ResumeVera-Bold")
 INK = "#17233A"
 ACCENT = "#2B5D7E"
-BODY = ParagraphStyle("Body", fontName="Helvetica", fontSize=10.5, leading=12.5, spaceAfter=2)
-NAME = ParagraphStyle("Name", parent=BODY, fontName="Helvetica-Bold", fontSize=20, leading=23, alignment=TA_CENTER, textColor=colors.HexColor(INK))
-HEADLINE = ParagraphStyle("Headline", parent=BODY, fontName="Helvetica-Bold", fontSize=10.5, leading=13, alignment=TA_CENTER, textColor=colors.HexColor(ACCENT))
+BODY = ParagraphStyle("Body", fontName="ResumeVera", fontSize=10, leading=11.5, spaceAfter=1.5)
+NAME = ParagraphStyle("Name", parent=BODY, fontName="ResumeVera-Bold", fontSize=20, leading=23, alignment=TA_CENTER, textColor=colors.HexColor(INK))
+HEADLINE = ParagraphStyle("Headline", parent=BODY, fontName="ResumeVera-Bold", fontSize=10.5, leading=13, alignment=TA_CENTER, textColor=colors.HexColor(ACCENT))
 CONTACT = ParagraphStyle("Contact", parent=BODY, fontSize=10, leading=12, alignment=TA_CENTER)
-SECTION = ParagraphStyle("Section", parent=BODY, fontName="Helvetica-Bold", textColor=colors.HexColor(INK), spaceBefore=6, spaceAfter=2)
-TITLE = ParagraphStyle("Title", parent=BODY, fontName="Helvetica-Bold", textColor=colors.HexColor(INK), spaceAfter=1)
-META = ParagraphStyle("Meta", parent=BODY, fontSize=10, leading=12, textColor=colors.HexColor("#4D5968"), spaceAfter=2)
+SECTION = ParagraphStyle("Section", parent=BODY, fontName="ResumeVera-Bold", textColor=colors.HexColor(INK), spaceBefore=6, spaceAfter=2)
+TITLE = ParagraphStyle("Title", parent=BODY, fontName="ResumeVera-Bold", textColor=colors.HexColor(INK), spaceAfter=1)
+META = ParagraphStyle("Meta", parent=BODY, fontSize=9.5, leading=11, textColor=colors.HexColor("#4D5968"), spaceAfter=2)
 BULLET = ParagraphStyle("Bullet", parent=BODY, leftIndent=9, firstLineIndent=-9, spaceAfter=2)
 
 
@@ -32,6 +38,11 @@ def link(label, url):
 
 def section(title):
     return [Paragraph(title, SECTION), HRFlowable(width="100%", thickness=.5, color=colors.HexColor("#9AA8B5"), spaceAfter=3)]
+
+
+def resume_canvas(*args, **kwargs):
+    kwargs["initialFontName"] = "ResumeVera"
+    return Canvas(*args, **kwargs)
 
 
 def build(variant):
@@ -79,7 +90,7 @@ def build(variant):
 
     vertical_margin = 30 if experience_first else 25
     document = SimpleDocTemplate(str(output), pagesize=letter, leftMargin=36, rightMargin=36, topMargin=vertical_margin, bottomMargin=vertical_margin, title=f'Jonathan Capalbo - {unescape(selected["headline"])}', author=DATA["name"], creator="ReportLab")
-    document.build(story, onFirstPage=page_metadata, onLaterPages=page_metadata)
+    document.build(story, onFirstPage=page_metadata, onLaterPages=page_metadata, canvasmaker=resume_canvas)
     print(f"Built {output}")
 
 

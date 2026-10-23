@@ -14,9 +14,9 @@
       "dates": "April 2022 - September 2026",
       "location": "Remote",
       "bullets": [
-        "Built Power Automate flows to filter and distribute daily sales and team-adherence reports through email and Microsoft Teams for a team of 10, reducing manual searching and filtering.",
-        "Tested an Excel activity tracker, identified days missing from monthly totals, and corrected the formulas so those days contributed correctly.",
-        "Investigated account and system issues using customer records, policies, and internal support teams; documented decisions and follow-up in CSG."
+        "Built Power Automate flows that filtered and delivered daily sales and team-adherence reports for a team of 10 through email and Microsoft Teams, reducing manual report searching and filtering.",
+        "Corrected Excel formulas that omitted daily activity from monthly totals.",
+        "Investigated account and system issues by reviewing customer records and policies, consulting internal support teams, and documenting decisions and follow-up in CSG."
       ]
     },
     {
@@ -25,8 +25,8 @@
       "dates": "February 2021 - January 2022",
       "location": "Remote",
       "bullets": [
-        "Investigated customer inquiries, categorized and routed email requests, and maintained records for follow-up and team handoffs.",
-        "Created OneNote guides for teammates covering task steps, information locations, and escalation contacts."
+        "Investigated state unemployment inquiries, routed email requests and maintained records for follow-up.",
+        "Wrote OneNote guides covering task steps, information sources and escalation contacts for teammates."
       ]
     }
   ],
@@ -35,7 +35,7 @@
       "name": "Chicago Food Inspections | Tableau",
       "url": "https://jonathancapalbo.me/chicago-food-inspections.html",
       "scope": "Academic team project | Real-world public data",
-      "description": "Developed four Tableau dashboards with shared filters and ZIP selection for 123,673 City of Chicago inspection records (2019-2025); defined failure rates over evaluated inspections."
+      "description": "Developed four Tableau dashboards with shared filters and ZIP selection to compare failure rates across 123,673 City of Chicago inspection records (2019-2025)."
     },
     "job-search": {
       "name": "Private Job-Search Operations System",
@@ -53,7 +53,7 @@
       "name": "NJIT Registrar ServiceNow Portal",
       "url": "https://jonathancapalbo.me/servicenow-njit-registrar.html",
       "scope": "Academic project | ServiceNow school lab",
-      "description": "Configured a searchable portal, organized 42 lab articles into 12 categories, and revised registration guidance with steps, common errors, and support contacts."
+      "description": "Configured a searchable portal, organized 42 articles into 12 categories, and revised registration guidance with steps, common errors, and support contacts."
     },
     "sql": {
       "name": "Movie Rental Database | Oracle SQL",
@@ -65,7 +65,7 @@
       "name": "Activity Reporting: Excel and Tableau",
       "url": "https://jonathancapalbo.me/sales-activity-tracker.html",
       "scope": "Workplace-origin Excel | Fictional portfolio extension",
-      "description": "Rebuilt the workplace-origin Excel workflow with 465 fictional records, validation, and monthly reporting. Added AI-assisted Tableau and React views for outcome counts, adjustable daily targets, and record drilldowns."
+      "description": "Rebuilt a workplace-origin Excel tracker with 465 fictional records, input validation and monthly reports. Added AI-assisted Tableau views for outcomes and daily targets."
     }
   },
   "variants": {
@@ -73,60 +73,18 @@
       "output": "resume.pdf",
       "layout": "experience-first",
       "headline": "Business Analysis | Business Systems | Reporting",
-      "summary": "Customer operations professional with experience automating report distribution, investigating account and system issues, and documenting team handoffs. Projects cover Excel reporting, Tableau analysis, and business-system controls. Pursuing an NJIT M.S.; available for full-time work.",
+      "summary": "Customer operations background in Power Automate reporting, Excel troubleshooting and account investigation. Academic work in Tableau, Oracle SQL and ServiceNow. NJIT M.S. student available full-time.",
       "skills": [
-        "<b>Analysis projects:</b> Process mapping, user stories, acceptance criteria, traceability, UAT planning.",
-        "<b>Reporting / automation:</b> Power Automate; Excel tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation (public sample); PivotTables (coursework).",
-        "<b>Workplace tools:</b> Excel, Microsoft 365, SharePoint, OneNote, Smartsheet, and CSG.",
-        "<b>Data / systems:</b> Tableau dashboards (academic); Oracle SQL - joins, keys, constraints, views (academic); ServiceNow Knowledge Management and Service Portal (lab)."
-      ],
-      "experience": [
-        {
-          "title": "Customer Account Executive",
-          "company": "Comcast / Xfinity",
-          "dates": "April 2022 - September 2026",
-          "location": "Remote",
-          "bullets": [
-            "Built Power Automate flows to filter and distribute daily sales and team-adherence reports through email and Microsoft Teams for a team of 10, reducing manual searching and filtering.",
-            "Tested an Excel activity tracker, identified days missing from monthly totals, and corrected the formulas so those days contributed correctly.",
-            "Investigated account and system issues using customer records, policies, and internal support teams; documented decisions and follow-up in CSG."
-          ]
-        },
-        {
-          "title": "Customer Service Representative",
-          "company": "Harte Hanks",
-          "dates": "February 2021 - January 2022",
-          "location": "Remote",
-          "bullets": [
-            "Investigated customer inquiries, categorized and routed email requests, and maintained records for follow-up and team handoffs.",
-            "Created OneNote guides for teammates covering task steps, information locations, and escalation contacts."
-          ]
-        }
+        "<b>Reporting:</b> Power Automate and Excel troubleshooting (workplace); SUMIF/COUNTIF, validation and reconciliation (portfolio); PivotTables (coursework).",
+        "<b>SQL / Tableau:</b> Oracle joins, keys, constraints and views; Tableau filters and trends (academic projects).",
+        "<b>Analysis:</b> Requirements, user stories, acceptance criteria, traceability and UAT planning (projects).",
+        "<b>Project support:</b> Microsoft Project scheduling and dependencies (coursework); Smartsheet forms and escalations (workplace).",
+        "<b>Systems:</b> Microsoft 365, SharePoint, OneNote, CSG (workplace); ServiceNow Knowledge Management / Service Portal (lab)."
       ],
       "project_order": [
-        "excel",
         "servicenow",
+        "excel",
         "chicago"
-      ],
-      "project_details": [
-        {
-          "name": "Activity Reporting: Excel and Tableau",
-          "url": "https://jonathancapalbo.me/sales-activity-tracker.html",
-          "scope": "Workplace-origin Excel | Fictional portfolio extension",
-          "description": "Rebuilt the workplace-origin Excel workflow with 465 fictional records, validation, and monthly reporting. Added AI-assisted Tableau and React views for outcome counts, adjustable daily targets, and record drilldowns."
-        },
-        {
-          "name": "NJIT Registrar ServiceNow Portal",
-          "url": "https://jonathancapalbo.me/servicenow-njit-registrar.html",
-          "scope": "Academic project | ServiceNow school lab",
-          "description": "Configured a searchable portal, organized 42 articles into 12 categories, and revised registration guidance with steps, common errors, and support contacts."
-        },
-        {
-          "name": "Chicago Food Inspections | Tableau",
-          "scope": "Academic team project | Real-world public data",
-          "description": "Developed four Tableau dashboards with shared filters and ZIP selection for 123,673 City of Chicago inspection records (2019-2025); defined failure rates over evaluated inspections.",
-          "url": "https://jonathancapalbo.me/chicago-food-inspections.html"
-        }
       ],
       "coursework": ""
     },
@@ -134,42 +92,19 @@
       "output": "downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf",
       "layout": "experience-first",
       "headline": "Reporting &amp; Operations",
-      "summary": "Customer operations professional with experience automating report distribution and investigating record and system issues. Project work includes Excel reconciliation, Tableau analysis, and academic SQL. Pursuing an NJIT M.S.; available for full-time work.",
+      "summary": "Customer operations background in Power Automate reporting, Excel troubleshooting and record investigation. Academic projects in Tableau and Oracle SQL; portfolio work in Excel validation. NJIT M.S. student available full-time.",
       "skills": [
-        "<b>Excel reporting:</b> Tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting, and reconciliation. <b>Excel coursework:</b> PivotTables for sales-data summaries.",
-        "<b>Professional:</b> Excel, Microsoft 365, Power Automate, CSG, SharePoint, OneNote, report and account-issue investigation, documentation, and handoffs.",
-        "<b>Academic SQL:</b> Oracle SQL, relational tables, joins, keys, constraints, and views.",
-        "<b>Academic dashboards / lab:</b> Tableau; ServiceNow Knowledge Management and Service Portal."
+        "<b>Excel:</b> Formula troubleshooting (workplace); tables, SUMIF/COUNTIF, cross-sheet formulas, validation and reconciliation (portfolio); PivotTables (coursework).",
+        "<b>SQL / Tableau:</b> Oracle joins, keys, constraints and views; Tableau filters and trends (academic projects).",
+        "<b>Operations:</b> Power Automate report distribution; Microsoft 365, SharePoint, OneNote, CSG, Smartsheet forms and escalations; documentation and handoffs (workplace).",
+        "<b>Project / systems coursework:</b> Microsoft Project schedules, dependencies and deadlines; ServiceNow Knowledge Management and Service Portal (lab)."
       ],
       "project_order": [
+        "chicago",
         "excel",
-        "sql",
-        "chicago"
+        "sql"
       ],
-      "coursework": "",
-      "experience": [
-        {
-          "title": "Customer Account Executive",
-          "company": "Comcast / Xfinity",
-          "dates": "April 2022 - September 2026",
-          "location": "Remote",
-          "bullets": [
-            "Built Power Automate flows to filter and distribute daily sales and team-adherence reports through email and Microsoft Teams for a team of 10, reducing manual searching and filtering.",
-            "Tested an Excel activity tracker, identified days missing from monthly totals, and corrected the formulas so those days contributed correctly.",
-            "Investigated account and system issues using customer records, policies, and internal support teams; documented decisions and follow-up in CSG."
-          ]
-        },
-        {
-          "title": "Customer Service Representative",
-          "company": "Harte Hanks",
-          "dates": "February 2021 - January 2022",
-          "location": "Remote",
-          "bullets": [
-            "Investigated customer inquiries, categorized and routed email requests, and maintained records for follow-up and team handoffs.",
-            "Created OneNote guides for teammates covering task steps, information locations, and escalation contacts."
-          ]
-        }
-      ]
+      "coursework": ""
     }
   }
 }

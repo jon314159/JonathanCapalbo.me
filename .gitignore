@@ -1,0 +1,3 @@
+# Local agent tooling and its attribution belong in the enclosing workspace.
+/.agents/
+/docs/third-party/matt-pocock-skills.md

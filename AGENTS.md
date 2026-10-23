@@ -2,15 +2,11 @@
 
 This repository contains Jonathan Capalbo's static portfolio.
 
-- For a reported defect, incorrect result, failed download, or performance regression, read [diagnosing-bugs](.agents/skills/diagnosing-bugs/SKILL.md).
-- When adding or changing interactive behavior or its tests, read the shared [behavioral testing reference](.agents/skills/diagnosing-bugs/references/behavioral-testing.md).
-- When creating or editing agent instructions, skills, or workflow documentation, read [writing-for-agents](.agents/skills/writing-for-agents/SKILL.md).
-
 ## Existing direction and evidence
 
 [README.md](README.md) describes the projects and runtime. Preserve the established warm paper, navy, blue, system typography, and source-based presentation when extending the existing site; use the user's brief for new design decisions.
 
-In the enclosing Website Improvement workspace, the workspace's AGENTS.md supplies the approved anti-slop routing and DURING mode. Its local skills and design reviews are optional workspace resources outside this repository; a standalone clone must not assume they are installed.
+In the enclosing Website Improvement workspace, the workspace's AGENTS.md supplies local engineering guidance, the approved anti-slop routing, and DURING mode. Its skills, attribution, and design reviews stay outside this public repository; a standalone clone must not assume they are installed.
 
 Keep Activity Reporting: Excel and Tableau consistent across the case study, navigation, supporting prose, and relevant résumé sources. Preserve the distinction between workplace-origin Excel, its fictional public reconstruction, new Tableau and React portfolio extensions, and prior coursework. Agent-writing guidance does not replace the existing public-copy or résumé workflow.
 

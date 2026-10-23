@@ -82,8 +82,8 @@
         "<b>Systems:</b> Microsoft 365, SharePoint, OneNote, CSG (workplace); ServiceNow Knowledge Management / Service Portal (lab)."
       ],
       "project_order": [
+        "arcade",
         "servicenow",
-        "excel",
         "chicago"
       ],
       "coursework": ""

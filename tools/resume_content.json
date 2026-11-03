@@ -15,8 +15,8 @@
       "location": "Remote",
       "bullets": [
         "Built Power Automate flows that filtered and delivered daily sales and team-adherence reports for a team of 10 through email and Microsoft Teams, reducing manual report searching and filtering.",
-        "Corrected Excel formulas that omitted daily activity from monthly totals.",
-        "Investigated account and system issues by reviewing customer records and policies, consulting internal support teams, and documenting decisions and follow-up in CSG."
+        "Tested an Excel activity tracker and corrected formulas that left some days out of monthly totals.",
+        "Investigated account and system issues by reviewing customer records and policies, consulting internal support teams, and documenting decisions and follow-up in CSG for team handoffs."
       ]
     },
     {
@@ -73,7 +73,7 @@
       "output": "resume.pdf",
       "layout": "experience-first",
       "headline": "Business Analysis | Business Systems | Reporting",
-      "summary": "Customer operations background in Power Automate reporting, Excel troubleshooting and account investigation. Academic work in Tableau, Oracle SQL and ServiceNow. NJIT M.S. student available full-time.",
+      "summary": "Customer operations experience connecting customer needs with accurate records, Power Automate reporting and Excel fixes. Documented decisions and team handoffs; wrote teammate reference guides. Academic work in Tableau, Oracle SQL and ServiceNow. NJIT M.S. student available full-time.",
       "skills": [
         "<b>Reporting:</b> Power Automate and Excel troubleshooting (workplace); SUMIF/COUNTIF, validation and reconciliation (portfolio); PivotTables (coursework).",
         "<b>SQL / Tableau:</b> Oracle joins, keys, constraints and views; Tableau filters and trends (academic projects).",
@@ -82,8 +82,8 @@
         "<b>Systems:</b> Microsoft 365, SharePoint, OneNote, CSG (workplace); ServiceNow Knowledge Management / Service Portal (lab)."
       ],
       "project_order": [
-        "arcade",
         "servicenow",
+        "excel",
         "chicago"
       ],
       "coursework": ""
@@ -92,7 +92,7 @@
       "output": "downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf",
       "layout": "experience-first",
       "headline": "Reporting &amp; Operations",
-      "summary": "Customer operations background in Power Automate reporting, Excel troubleshooting and record investigation. Academic projects in Tableau and Oracle SQL; portfolio work in Excel validation. NJIT M.S. student available full-time.",
+      "summary": "Customer operations experience in Power Automate report distribution, Excel formula fixes and process documentation, informed by front-line customer needs. Academic projects in Tableau and Oracle SQL; portfolio work in Excel validation. NJIT M.S. student available full-time.",
       "skills": [
         "<b>Excel:</b> Formula troubleshooting (workplace); tables, SUMIF/COUNTIF, cross-sheet formulas, validation and reconciliation (portfolio); PivotTables (coursework).",
         "<b>SQL / Tableau:</b> Oracle joins, keys, constraints and views; Tableau filters and trends (academic projects).",

@@ -1,6 +1,6 @@
 # Jonathan Capalbo | Portfolio
 
-I'm a customer operations professional seeking early-career roles in business analysis, reporting, operations, business systems, and project coordination. This portfolio shows how I organize information, investigate issues, document processes, and turn activity records into reports.
+I'm a customer operations professional seeking early-career roles in business analysis, reporting, operations, business systems, and project coordination. Front-line sales and account support taught me to clarify customer needs, investigate process problems and explain next steps. This portfolio leads with workplace reporting automation and Excel fixes, supported by clearly labeled academic and sample projects.
 
 [Visit my portfolio](https://jonathancapalbo.me/)
 

@@ -535,8 +535,12 @@ nav .nav-resume:hover { color: #fff; background: var(--blue); }
 .work-section .section-heading h2 { color: #fff; }
 .work-section .section-heading .eyebrow { color: var(--lime); }
 
-.project-paths { margin-bottom: 36px; }
-.project-paths > p { margin-bottom: 12px; color: #b8c5d0; font-size: .9rem; }
+.project-paths { margin: 0 0 36px; border-top: 1px solid #5e6b76; }
+.project-paths summary { width: fit-content; max-width: 100%; min-height: 48px; padding: 12px 0; color: #c9d5de; cursor: pointer; font-size: .95rem; font-weight: 650; }
+.project-paths summary:hover, .project-paths summary:active { color: #fff; }
+.project-paths summary:focus-visible { outline: 3px solid #fff; outline-offset: 4px; border-radius: 2px; }
+.project-paths[open] { padding-bottom: 12px; }
+.project-paths[open] summary { margin-bottom: 8px; }
 .project-paths dl { margin: 0; }
 .project-paths dl > div { display: grid; grid-template-columns: minmax(0, 1fr); padding: 12px 0; border-top: 1px solid #5e6b76; }
 .project-paths dt { align-self: center; font-weight: 750; line-height: 1.5; }
@@ -1893,12 +1897,24 @@ footer strong { color: var(--ink); }
 }
 
 .job-operations-page .job-attribution { max-width: 760px; color: var(--muted); font-size: 0.95rem; }
-.workplace-feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; gap: 40px; padding: 24px 0; margin-bottom: 28px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.workplace-feature h3 { margin: 12px 0; font-size: clamp(1.4rem, 2.4vw, 2rem); color: var(--white); }
-.workplace-feature .project-label, .supporting-project .project-label { color: var(--lime); }
-.workplace-feature p { max-width: 720px; }
-.workplace-feature .project-methods { margin-bottom: 0; color: #b8c5d0; }
-.workplace-feature-copy .button { margin-top: 24px; }
+.workplace-feature { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; gap: clamp(28px, 4vw, 56px); padding: 0 0 32px; }
+.workplace-feature h3 { max-width: 580px; margin: 12px 0 18px; font-size: clamp(1.65rem, 2.8vw, 2.6rem); color: var(--white); }
+.workplace-feature .project-label { color: #b8c5d0; }
+.supporting-project .project-label { color: var(--lime); }
+.workplace-feature-copy > p:not(.project-label) { max-width: 60ch; color: #c9d5de; }
+.workplace-feature-copy .button { margin-top: 8px; }
+.report-flow-summary { container: report-summary / inline-size; margin: 0; padding: clamp(20px, 2.5vw, 30px); border-radius: var(--radius-md); background: var(--paper-bright); color: var(--ink); }
+.report-flow-summary figcaption { margin-bottom: 24px; font-size: .9rem; font-weight: 650; }
+.report-flow-summary ol { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin: 0; padding: 0; list-style: none; }
+.report-flow-summary li { position: relative; min-width: 0; }
+.report-flow-summary li:not(:last-child)::after { content: ''; position: absolute; right: -15px; top: 8px; width: 7px; height: 7px; border-top: 2px solid var(--blue-dark); border-right: 2px solid var(--blue-dark); transform: rotate(45deg); }
+.report-flow-summary strong { display: block; margin-bottom: 6px; color: var(--blue-dark); font-size: 1rem; line-height: 1.4; }
+.report-flow-summary span { display: block; font-size: .85rem; line-height: 1.5; }
+.report-flow-summary > p { margin: 24px 0 0; color: var(--muted); font-size: .8rem; line-height: 1.5; }
+@container report-summary (max-width: 14rem) {
+  .report-flow-summary ol { grid-template-columns: minmax(0, 1fr); }
+  .report-flow-summary li:not(:last-child)::after { left: 4px; right: auto; top: calc(100% + 6px); transform: rotate(135deg); }
+}
 .report-flow-preview { margin: 0; padding: 22px; border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--paper-bright); color: var(--ink); }
 .report-flow-preview figcaption { margin-bottom: 18px; font-size: .85rem; font-weight: 750; color: var(--blue-dark); }
 .report-flow { display: grid; gap: 28px; margin: 0; padding: 0; list-style: none; }

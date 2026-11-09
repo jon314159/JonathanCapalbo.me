@@ -1,7 +1,7 @@
 .case-contents {
   position: sticky;
   z-index: 40;
-  width: min(1180px, calc(100% - 32px));
+  width: min(var(--content-width), calc(100% - 2 * var(--page-gutter)));
   margin: 0 auto;
   border-block: 1px solid var(--muted);
   background: var(--paper-bright);
@@ -77,9 +77,6 @@
 
 @media (min-width: 681px) {
   .walkthrough-choices { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-}
-@media (min-width: 821px) {
-  .case-contents { width: min(1180px, calc(100% - 48px)); }
 }
 @media (max-width: 680px) {
   .case-position { display: block; margin-left: 0; font-size: .8rem; }

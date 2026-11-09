@@ -5,9 +5,9 @@
 }
 .activity-explorer button:not(:disabled), .activity-explorer summary, #activity-explorer-retry { cursor: pointer; }
 .activity-explorer button:disabled { color: #5e6b76; border-style: dashed; cursor: default; }
-.activity-explorer button:hover:not(:disabled), .activity-explorer button[aria-pressed="true"] { background: #0b1f33; color: #fbfaf6; }
-.activity-explorer :is(button, select, summary):focus-visible, #activity-explorer-retry:focus-visible { outline: 3px solid #315eea; outline-offset: 4px; }
-.activity-explorer :is(button, summary):active { outline: 2px solid #315eea; }
+.activity-explorer button:hover:not(:disabled), .activity-explorer button[aria-pressed="true"] { background: var(--blue-dark); color: #fbfaf6; }
+.activity-explorer :is(button, select, summary):focus-visible, #activity-explorer-retry:focus-visible { outline: 3px solid var(--blue-dark); outline-offset: 4px; }
+.activity-explorer :is(button, summary):active { outline: 2px solid var(--blue-dark); }
 .activity-month-summary { display: flex; flex-wrap: wrap; gap: 1rem 2rem; padding: 1.5rem 0; border-block: 2px solid #0b1f33; }
 .activity-month-summary p { margin: 0; }
 .activity-month-summary strong { display: block; font-size: clamp(1.5rem, 3vw, 2rem); }

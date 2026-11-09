@@ -58,7 +58,7 @@
 .walkthrough-step[hidden], .walkthrough-controls button[hidden] { display: none; }
 .walkthrough-step .walkthrough-image-status { margin: 12px 0; color: var(--muted); }
 
-.sql-code-block { min-width: 0; margin: 24px 0; border: 1px solid var(--muted); border-radius: var(--radius-md); background: #eef2ff; }
+.sql-code-block { min-width: 0; margin: 24px 0; border: 1px solid var(--muted); border-radius: var(--radius-md); background: var(--blue-light); }
 .sql-code-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 16px; border-bottom: 1px solid var(--muted); }
 .sql-code-toolbar > span { font-size: .85rem; font-weight: 650; }
 .sql-code-block .sql-query { margin: 0; padding: 18px; border: 0; background: transparent; }

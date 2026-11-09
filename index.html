@@ -21,7 +21,7 @@
     <meta name="twitter:image:alt" content="Professional headshot of Jonathan Capalbo" />
     <link rel="canonical" href="https://jonathancapalbo.me/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/css/style.css?v=62" />
+    <link rel="stylesheet" href="assets/css/style.css?v=63" />
     <script src="assets/js/portfolio.js?v=2" defer></script>
     <script src="/assets/js/analytics.js?v=1" defer></script>
   </head>
@@ -48,8 +48,8 @@
       <div class="hero-shell">
         <div class="hero-copy">
           <h1>Business analysis, <em>reporting &amp; systems.</em></h1>
-          <p class="target-roles">Available for permanent, full-time roles in business analysis, reporting, business systems, operations, and project coordination.</p>
-          <p class="hero-summary">At Comcast/Xfinity, I helped teammates find the right reports, corrected missing days in Excel totals, and documented account decisions and handoffs. Front-line sales and support taught me to clarify customer needs before choosing the next step. Academic projects add Tableau analysis, Oracle SQL, and ServiceNow configuration.</p>
+          <p class="target-roles">Available for permanent, full-time analysis and operations roles.</p>
+          <p class="hero-summary">At Comcast/Xfinity, I automated daily report delivery and corrected missing days in Excel totals. My portfolio combines that customer operations experience with academic work in Tableau, Oracle SQL and ServiceNow.</p>
           <p class="hero-location">Point Pleasant, NJ · Open to U.S. remote work and relocation for a suitable role.</p>
 
           <div class="button-row">
@@ -134,85 +134,76 @@
               <p class="project-methods">Excel input validation, cross-sheet formulas, and reconciled totals; Tableau outcome and daily-target analysis.</p>
 
               <div class="featured-links">
-                <a class="button button-primary" href="sales-activity-tracker.html">View Case Study<span class="visually-hidden">: Activity Reporting with Excel and Tableau</span></a>
-                <a class="button button-secondary" href="sales-activity-tracker.html#walkthrough">See workbook walkthrough</a>
-                <a class="button button-secondary" href="sales-activity-tracker.html#browser-explorer">Inspect records in browser</a>
+                <a class="button button-primary" href="sales-activity-tracker.html">Read the activity reporting case study</a>
                 <a class="button button-secondary" href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download Excel workbook</a>
               </div>
             </div>
 
             <figure class="featured-dashboard-preview">
-              <a class="featured-dashboard-frame" href="assets/images/sales-activity-dashboard.png" aria-label="Open the full-size fictional Excel dashboard"><img src="assets/images/sales-activity-dashboard.png" width="1107" height="1090" loading="lazy" decoding="async" alt="Fictional Excel dashboard: monthly KPI cards above daily results and product-goal comparison charts" /></a>
-              <figcaption class="featured-dashboard-caption"><span>Workbook demonstration · Fictional data</span><a href="assets/images/sales-activity-dashboard.png">View full-size dashboard</a></figcaption>
+              <a class="featured-dashboard-frame" href="assets/images/sales-activity-dashboard.png" aria-label="Open the full-size fictional Excel dashboard"><img src="assets/images/sales-activity-dashboard.png" width="1107" height="1090" loading="lazy" decoding="async" alt="Detail of the fictional Excel dashboard showing monthly KPI cards and daily results" /></a>
+              <figcaption class="featured-dashboard-caption"><span>Dashboard detail · Fictional data</span><a href="assets/images/sales-activity-dashboard.png">View full-size dashboard</a></figcaption>
             </figure>
           </article>
 
-          <div class="secondary-projects">
-            <article class="project-card">
+          <article class="data-project" aria-labelledby="chicago-feature-title">
+            <div class="project-copy">
               <p class="project-label">Academic team project · Real-world public data</p>
-              <h3>Chicago Food Inspections</h3>
+              <h3 id="chicago-feature-title">Chicago Food Inspections</h3>
               <p>I developed four Tableau dashboards to compare failure rates by facility, inspection type, location and time across 123,673 City of Chicago inspection records (2019-2025).</p>
               <p class="project-methods">Shared filters, ZIP selection and annual/monthly trends, with defined rate denominators and interpretation limits.</p>
-              <figure class="project-preview">
-                <img src="assets/images/chicago-trends.png" width="1800" height="1120" loading="lazy" alt="Chicago food inspections Tableau dashboard showing citywide failure-rate trends, inspection volume and evaluated outcome counts." />
-              </figure>
               <div class="project-actions">
                 <a class="project-link" href="chicago-food-inspections.html">Read the Chicago inspections case study</a>
                 <a class="artifact-link" href="downloads/Chicago_Food_Inspections.twbx" download>Download Tableau workbook</a>
               </div>
-            </article>
-            <article class="project-card">
-              <p class="project-label">Academic project · ServiceNow school lab</p>
-              <h3>NJIT Registrar ServiceNow Portal</h3>
-              <p>A school-lab portal for finding registrar information. I configured navigation, organized 42 articles into 12 categories, and revised a registration guide.</p>
-              <figure class="project-preview">
-                <a href="servicenow-njit-registrar.html#portal-evidence" aria-label="Inspect the ServiceNow school-lab screenshot"><img src="assets/images/servicenow-registrar-portal.png" width="1280" height="720" loading="lazy" decoding="async" alt="Sanitized lab portal with knowledge search, 12-category count, and Browse All Categories heading" /></a>
-                <figcaption>Actual school-lab view, with search and category browsing.</figcaption>
-              </figure>
-              <div class="project-actions">
-                <a class="project-link" href="servicenow-njit-registrar.html">View Case Study<span class="visually-hidden">: NJIT Registrar ServiceNow Portal</span></a>
-                <a class="artifact-link" href="assets/images/servicenow-registrar-portal.png">Full-size lab screenshot</a>
-              </div>
-            </article>
+            </div>
+            <figure class="project-preview">
+              <a href="chicago-food-inspections.html#dashboards" aria-label="View the Chicago food inspection dashboards"><img src="assets/images/chicago-trends.png" width="1800" height="1120" loading="lazy" decoding="async" alt="Chicago food inspections Tableau dashboard showing citywide failure-rate trends, inspection volume and evaluated outcome counts." /></a>
+              <figcaption>One of four Tableau dashboards · City of Chicago public data</figcaption>
+            </figure>
+          </article>
 
-            <article class="project-card">
-              <p class="project-label">Self-directed planning study · Hypothetical</p>
-              <h3>Arcade Operations Ticketing Modernization</h3>
-              <p>A proposed process for tracking five types of arcade issues. I mapped the workflow and wrote requirements and planned tests. No software was implemented or tested.</p>
-              <figure class="project-preview process-preview">
-                <ol aria-label="Proposed workflow overview">
-                  <li>Report and assign owner</li>
-                  <li>Work, with approval where needed</li>
-                  <li>Resolve, verify, then close</li>
-                </ol>
-                <p>Pending or failed verification returns to work.</p>
-                <figcaption>Proposed workflow · Hypothetical scenario. Emergency response comes first.</figcaption>
-              </figure>
-              <div class="project-actions">
-                <a class="project-link" href="arcade-ticketing-modernization.html">View Case Study<span class="visually-hidden">: Arcade Operations Ticketing Modernization</span></a>
-                <a class="artifact-link" href="arcade-ticketing-modernization.html#process-visual">Process comparison</a>
-                <a class="artifact-link" href="arcade-ticketing-evidence.html">Requirements and planned tests</a>
+          <div class="project-list" aria-labelledby="more-projects-title">
+            <h3 id="more-projects-title">More projects</h3>
+            <article>
+              <div>
+                <p class="project-label">Academic project · ServiceNow school lab</p>
+                <h4>NJIT Registrar ServiceNow Portal</h4>
+              </div>
+              <div>
+                <p>I configured portal navigation, organized 42 articles into 12 categories, and revised a registration guide.</p>
+                <a class="project-link" href="servicenow-njit-registrar.html">Read the ServiceNow case study</a>
               </div>
             </article>
-            <article class="project-card">
-              <p class="project-label">Academic final project · Oracle SQL</p>
-              <h3>Movie Rental Database</h3>
-              <p>A database linking titles, copies, and rental history. I created six related tables and a view of copies still checked out. A separate Oracle revision adds rental controls; the original academic script is preserved.</p>
-              <figure class="project-preview diagram-preview">
-                <a href="sql-movie-rental.html#schema" aria-label="Inspect the movie rental schema and keys"><img src="assets/diagrams/movie-rental-overview.svg" width="360" height="290" loading="lazy" decoding="async" alt="Six tables: actors and movies link through star_billings; movies have media copies; rental_history connects media to customers. Each parent has zero or more child records." /></a>
-                <figcaption>Published schema overview. Each child requires one linked parent.</figcaption>
-              </figure>
-              <div class="project-actions">
-                <a class="project-link" href="sql-movie-rental.html">View Case Study<span class="visually-hidden">: Movie Rental Database</span></a>
-                <a class="artifact-link" href="downloads/Movie_Rental_Database.sql" download>Download SQL</a>
+            <article>
+              <div>
+                <p class="project-label">Self-directed planning study · Hypothetical</p>
+                <h4>Arcade Operations Ticketing Modernization</h4>
+              </div>
+              <div>
+                <p>A proposed workflow, requirements and planned tests for five types of arcade issues. No software was implemented or tested.</p>
+                <a class="project-link" href="arcade-ticketing-modernization.html">Read the ticketing planning study</a>
               </div>
             </article>
-          </div>
-          <div class="supporting-project">
-            <p class="project-label">Additional independent project · Customized private fork</p>
-            <h3>Private Job-Search Operations System</h3>
-            <p>I customized a private job-search workflow for duplicate checks, source validation, resume verification, and application tracking. The public case study uses synthetic examples.</p>
-            <a class="project-link" href="job-search-operations.html">View Case Study<span class="visually-hidden">: Private Job-Search Operations System</span></a>
+            <article>
+              <div>
+                <p class="project-label">Academic final project · Oracle SQL</p>
+                <h4>Movie Rental Database</h4>
+              </div>
+              <div>
+                <p>Six related tables and a view of copies still checked out. A separate portfolio revision adds rental controls; the original academic script is preserved.</p>
+                <a class="project-link" href="sql-movie-rental.html">Read the SQL case study</a>
+              </div>
+            </article>
+            <article>
+              <div>
+                <p class="project-label">Independent project · Customized private fork</p>
+                <h4>Private Job-Search Operations System</h4>
+              </div>
+              <div>
+                <p>I customized a workflow for duplicate checks, source validation, résumé verification and application tracking. The public case study uses synthetic examples.</p>
+                <a class="project-link" href="job-search-operations.html">Read the job-search workflow case study</a>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -232,8 +223,8 @@
               <h3>Customer Account Executive</h3>
               <p class="role-intro">Alongside customer account support, I developed reporting automation in response to teammates’ requests.</p>
               <ul class="signal-list">
-                <li><strong>Reporting automation</strong><span>Built Power Automate flows that filtered and delivered daily sales and team-adherence reports for a team of 10 through email and Microsoft Teams, reducing manual report searching and filtering. The case study uses a fictional illustration.</span></li>
-                <li><strong>Spreadsheet testing</strong><span>Checked that an Excel tracker counted activity toward goals, found days missing from monthly totals, and corrected the formulas so those days contributed correctly. <a href="sales-activity-tracker.html#workplace-example">Read the workplace example</a>.</span></li>
+                <li><strong>Reporting automation</strong><span>Filtered and delivered daily sales and team-adherence reports for a team of 10. <a href="report-distribution.html">Read the Power Automate case study</a>.</span></li>
+                <li><strong>Spreadsheet testing</strong><span>Found days missing from monthly Excel totals and corrected the formulas. <a href="sales-activity-tracker.html#workplace-example">Read the workplace example</a>.</span></li>
                 <li><strong>Investigation</strong><span>Investigated account and system questions by checking customer records, reviewing policies and procedures, and consulting internal support teams.</span></li>
                 <li><strong>Records and handoffs</strong><span>Reviewed account records across about 25 daily customer interactions, helped customers supply missing details or update outdated information, and documented decisions and follow-up in CSG.</span></li>
               </ul>

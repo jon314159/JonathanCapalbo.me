@@ -65,7 +65,8 @@ def build(variant):
     story.extend(section("PROFESSIONAL EXPERIENCE" if experience_first else "EXPERIENCE"))
     for role in selected.get("experience", DATA["experience"]):
         block = [Paragraph(f'{role["title"]} | {role["company"]}', TITLE), Paragraph(f'{role["dates"]} | {role["location"]}', META)]
-        block.extend(Paragraph("- " + item, BULLET) for item in role["bullets"])
+        bullet_order = selected.get("experience_bullet_order", {}).get(role["company"], range(len(role["bullets"])))
+        block.extend(Paragraph("- " + role["bullets"][index], BULLET) for index in bullet_order)
         block.append(Spacer(1, 3))
         story.append(KeepTogether(block))
     story.extend(section("SELECTED PROJECTS"))

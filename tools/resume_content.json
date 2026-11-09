@@ -46,8 +46,8 @@
     "arcade": {
       "name": "Arcade Operations Ticketing Modernization",
       "url": "https://jonathancapalbo.me/arcade-ticketing-evidence.html",
-      "scope": "Self-directed planning study | Hypothetical",
-      "description": "Proposed a five-category ticket lifecycle with requirements, user stories, acceptance criteria, and traceability to planned UAT. No implementation; all tests Not Executed."
+      "scope": "Self-directed planning study",
+      "description": "Proposed a five-category ticket lifecycle with requirements, user stories, acceptance criteria, and traceability."
     },
     "servicenow": {
       "name": "NJIT Registrar ServiceNow Portal",
@@ -65,7 +65,7 @@
       "name": "Activity Reporting: Excel and Tableau",
       "url": "https://jonathancapalbo.me/sales-activity-tracker.html",
       "scope": "Workplace-origin Excel | Fictional portfolio extension",
-      "description": "Rebuilt a workplace-origin Excel tracker with 465 fictional records, input validation and monthly reports. Added AI-assisted Tableau views for outcomes and daily targets."
+      "description": "Rebuilt a workplace-origin Excel tracker with 465 fictional records, input validation and monthly reports. Added Tableau views for outcomes and daily targets."
     }
   },
   "variants": {
@@ -73,18 +73,21 @@
       "output": "resume.pdf",
       "layout": "experience-first",
       "headline": "Business Analysis | Business Systems | Reporting",
-      "summary": "Customer operations experience connecting customer needs with accurate records, Power Automate reporting and Excel fixes. Documented decisions and team handoffs; wrote teammate reference guides. Academic work in Tableau, Oracle SQL and ServiceNow. NJIT M.S. student available full-time.",
+      "summary": "At Comcast, I investigated account and system issues, documented decisions and follow-up for team handoffs, and used Power Automate to filter and distribute daily reports for a team of 10. Academic project experience in Tableau, Oracle SQL and ServiceNow. NJIT M.S. student available full-time.",
+      "experience_bullet_order": {
+        "Comcast / Xfinity": [2, 0, 1]
+      },
       "skills": [
         "<b>Reporting:</b> Power Automate and Excel troubleshooting (workplace); SUMIF/COUNTIF, validation and reconciliation (portfolio); PivotTables (coursework).",
         "<b>SQL / Tableau:</b> Oracle joins, keys, constraints and views; Tableau filters and trends (academic projects).",
-        "<b>Analysis:</b> Requirements, user stories, acceptance criteria, traceability and UAT planning (projects).",
+        "<b>Analysis:</b> Requirements, user stories, acceptance criteria and traceability (projects).",
         "<b>Project support:</b> Microsoft Project scheduling and dependencies (coursework); Smartsheet forms and escalations (workplace).",
         "<b>Systems:</b> Microsoft 365, SharePoint, OneNote, CSG (workplace); ServiceNow Knowledge Management / Service Portal (lab)."
       ],
       "project_order": [
         "servicenow",
         "excel",
-        "chicago"
+        "arcade"
       ],
       "coursework": ""
     },

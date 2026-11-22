@@ -4,6 +4,7 @@ import argparse
 from html import unescape
 import json
 from pathlib import Path
+from shutil import copyfile
 
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER
@@ -67,7 +68,10 @@ def build(variant):
     for role in selected.get("experience", DATA["experience"]):
         block = [Paragraph(f'{role["title"]} | {role["company"]}', TITLE), Paragraph(f'{role["dates"]} | {role["location"]}', META)]
         bullet_order = selected.get("experience_bullet_order", {}).get(role["company"], range(len(role["bullets"])))
-        block.extend(Paragraph("- " + role["bullets"][index], BULLET) for index in bullet_order)
+        for index in bullet_order:
+            bullet = role["bullets"][index]
+            text = bullet[variant] if isinstance(bullet, dict) else bullet
+            block.append(Paragraph("- " + text, BULLET))
         block.append(Spacer(1, 3))
         story.append(KeepTogether(block))
     story.extend(section("SELECTED PROJECTS"))
@@ -93,6 +97,8 @@ def build(variant):
     vertical_margin = 30 if experience_first else 25
     document = SimpleDocTemplate(str(output), pagesize=letter, leftMargin=36, rightMargin=36, topMargin=vertical_margin, bottomMargin=vertical_margin, title=f'Jonathan Capalbo - {unescape(selected["headline"])}', author=DATA["name"], creator="ReportLab")
     document.build(story, onFirstPage=page_metadata, onLaterPages=page_metadata, canvasmaker=resume_canvas)
+    if selected.get("alias"):
+        copyfile(output, ROOT / selected["alias"])
     print(f"Built {output}")
 
 

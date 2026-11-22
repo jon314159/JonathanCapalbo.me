@@ -2,7 +2,7 @@
   "name": "Jonathan Capalbo",
   "contact": {
     "location": "Point Pleasant, NJ",
-    "preference": "Remote / relocation",
+    "preference": "Open to U.S. remote work or relocation",
     "email": "jonathancapalbo1@gmail.com",
     "portfolio": "https://jonathancapalbo.me/",
     "linkedin": "https://www.linkedin.com/in/jonathan-capalbo-2a00b9140"
@@ -14,9 +14,9 @@
       "dates": "April 2022 - September 2026",
       "location": "Remote",
       "bullets": [
-        "Built Power Automate flows that filtered and delivered daily sales and team-adherence reports for a team of 10 through email and Microsoft Teams, reducing manual report searching and filtering.",
-        "Tested an Excel activity tracker and corrected formulas that left some days out of monthly totals.",
-        "Investigated account and system issues by reviewing customer records and policies, consulting internal support teams, and documenting decisions and follow-up in CSG for team handoffs."
+        "When teammates asked for an easier way to find their daily reports, I built Power Automate flows that filtered sales and adherence results for a team of 10 and sent them by email or Microsoft Teams.",
+        "Fixed Excel formulas that had left some days of activity out of the monthly totals.",
+        "Reviewed account records across about 25 customer interactions a day. Consulted internal teams on account and system issues and logged decisions and follow-up in CSG."
       ]
     },
     {
@@ -35,7 +35,7 @@
       "name": "Chicago Food Inspections | Tableau",
       "url": "https://jonathancapalbo.me/chicago-food-inspections.html",
       "scope": "Academic team project | Real-world public data",
-      "description": "Developed four Tableau dashboards with shared filters and ZIP selection to compare failure rates across 123,673 City of Chicago inspection records (2019-2025)."
+      "description": "Built four Tableau dashboards covering 123,673 Chicago food inspection records. Among evaluated inspections, the failure rate fell from 24.9% in 2023 to 21.1% in 2025."
     },
     "job-search": {
       "name": "Private Job-Search Operations System",
@@ -47,7 +47,7 @@
       "name": "Arcade Operations Ticketing Modernization",
       "url": "https://jonathancapalbo.me/arcade-ticketing-evidence.html",
       "scope": "Self-directed planning study",
-      "description": "Proposed a five-category ticket lifecycle with requirements, user stories, acceptance criteria, and traceability."
+      "description": "Wrote 10 requirements and drafted 14 acceptance tests for a proposed ticketing system. Flagged an open time-zone decision that affects how the daily report counts tickets closed at midnight."
     },
     "servicenow": {
       "name": "NJIT Registrar ServiceNow Portal",
@@ -59,43 +59,45 @@
       "name": "Movie Rental Database | Oracle SQL",
       "url": "https://jonathancapalbo.me/sql-movie-rental.html",
       "scope": "Academic final project",
-      "description": "Built six related tables with primary and foreign keys, validation constraints, and a read-only view joining movie, copy, and rental records to identify unreturned copies."
+      "description": "Designed six related Oracle tables for a movie rental business. Wrote a read-only view joining movie, copy and rental records to show which copies were still checked out."
     },
     "excel": {
       "name": "Activity Reporting: Excel and Tableau",
       "url": "https://jonathancapalbo.me/sales-activity-tracker.html",
-      "scope": "Workplace-origin Excel | Fictional portfolio extension",
-      "description": "Rebuilt a workplace-origin Excel tracker with 465 fictional records, input validation and monthly reports. Added Tableau views for outcomes and daily targets."
+      "scope": "Portfolio reconstruction of a workplace Excel tracker",
+      "description": "Rebuilt my workplace tracker with 465 fictional records and reconciled daily and monthly totals. Added a Tableau view showing which days met the daily target."
     }
   },
   "variants": {
     "business-analysis": {
       "output": "resume.pdf",
       "layout": "experience-first",
-      "headline": "Business Analysis | Business Systems | Reporting",
-      "summary": "At Comcast, I investigated account and system issues, documented decisions and follow-up for team handoffs, and used Power Automate to filter and distribute daily reports for a team of 10. Academic project experience in Tableau, Oracle SQL and ServiceNow. NJIT M.S. student available full-time.",
+      "headline": "Target roles | Business Analyst &amp; Business Systems Analyst",
+      "portfolio_fragment": "business-analyst",
+      "summary": "At Comcast, I investigated account issues and helped teammates get the reports they needed. In my project work, I designed a ServiceNow knowledge portal and mapped how arcade staff would report, assign and close tickets. Available for full-time work while completing my NJIT master’s degree.",
       "experience_bullet_order": {
-        "Comcast / Xfinity": [2, 0, 1]
+        "Comcast / Xfinity": [0, 2, 1]
       },
       "skills": [
-        "<b>Reporting:</b> Power Automate and Excel troubleshooting (workplace); SUMIF/COUNTIF, validation and reconciliation (portfolio); PivotTables (coursework).",
-        "<b>SQL / Tableau:</b> Oracle joins, keys, constraints and views; Tableau filters and trends (academic projects).",
-        "<b>Analysis:</b> Requirements, user stories, acceptance criteria and traceability (projects).",
+        "<b>Business analysis projects:</b> Process mapping, requirements, user stories, acceptance criteria and test planning.",
+        "<b>Workplace reporting:</b> Power Automate, Excel formula troubleshooting and monthly totals.",
+        "<b>Data projects:</b> Oracle SQL joins, keys, constraints and views. Tableau filters and trend analysis.",
         "<b>Project support:</b> Microsoft Project scheduling and dependencies (coursework); Smartsheet forms and escalations (workplace).",
         "<b>Systems:</b> Microsoft 365, SharePoint, OneNote, CSG (workplace); ServiceNow Knowledge Management / Service Portal (lab)."
       ],
       "project_order": [
+        "arcade",
         "servicenow",
-        "excel",
-        "arcade"
+        "excel"
       ],
       "coursework": ""
     },
     "reporting-operations": {
       "output": "downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf",
       "layout": "experience-first",
-      "headline": "Reporting &amp; Operations",
-      "summary": "Customer operations experience in Power Automate report distribution, Excel formula fixes and process documentation, informed by front-line customer needs. Academic projects in Tableau and Oracle SQL; portfolio work in Excel validation. NJIT M.S. student available full-time.",
+      "headline": "Target roles | Reporting Analyst &amp; Operations Analyst",
+      "portfolio_fragment": "reporting-analyst",
+      "summary": "At Comcast, I automated daily report delivery for a team of 10 and corrected an Excel tracker that missed days in its monthly totals. At NJIT, I built Tableau dashboards and an Oracle SQL database. Available for full-time work while completing my master’s degree.",
       "skills": [
         "<b>Excel:</b> Formula troubleshooting (workplace); tables, SUMIF/COUNTIF, cross-sheet formulas, validation and reconciliation (portfolio); PivotTables (coursework).",
         "<b>SQL / Tableau:</b> Oracle joins, keys, constraints and views; Tableau filters and trends (academic projects).",

@@ -1,0 +1,25 @@
+.routing-demo { container-type: inline-size; padding: clamp(16px, 3vw, 32px); border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--paper-bright); }
+.routing-demo fieldset { min-width: 0; margin: 0 0 24px; padding: 0; border: 0; }
+.routing-demo legend, .routing-demo caption { margin-bottom: 12px; padding: 0; color: var(--ink); font-size: 1.05rem; font-weight: 700; text-align: left; }
+.route-fields, .route-evidence { display: grid; gap: 16px; }
+.route-fields { grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); }
+.route-fields label { display: block; margin-bottom: 4px; color: var(--ink-soft); font-weight: 600; }
+.route-fields select { width: 100%; min-height: 44px; padding: 6px 8px; border: 1px solid var(--muted); border-radius: 4px; color: var(--ink); background: white; font: inherit; }
+.route-fields select:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+.route-evidence { grid-template-columns: repeat(auto-fit, minmax(min(100%, 23rem), 1fr)); align-items: start; }
+.route-evidence table { width: 100%; border-collapse: collapse; font-size: .94rem; }
+.route-evidence th, .route-evidence td { padding: 8px 6px; border-bottom: 1px solid var(--line); text-align: left; }
+.route-evidence :is(th, td):last-child { text-align: right; }
+.route-evidence tr.matched { background: var(--blue-light); box-shadow: inset 3px 0 var(--blue-dark); }
+.route-evidence tr.matched th::after { content: 'Match'; display: block; color: var(--blue-dark); font-size: .78rem; }
+.route-result { padding: 16px 20px; border-left: 3px solid var(--blue); background: var(--blue-light); color: var(--ink); }
+.route-result h3 { margin-bottom: 12px; font-size: 1.15rem; }
+.route-result p { margin: 0 0 6px; overflow-wrap: anywhere; }
+.route-result p:last-child { margin-bottom: 0; }
+@container (max-width: 15rem) {
+  .route-evidence thead { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); overflow: hidden; }
+  .route-evidence tbody tr { display: grid; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  .route-evidence th, .route-evidence td { padding: 0; border: 0; overflow-wrap: anywhere; }
+  .route-evidence tbody td:last-child { text-align: left; }
+  .route-evidence tbody td:last-child::after { content: ' completed activities'; }
+}

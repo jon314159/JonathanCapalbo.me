@@ -1,4 +1,4 @@
-const sectionLinks = [...document.querySelectorAll('.nav-shell nav a[href^="#"]')];
+const sectionLinks = [...document.querySelectorAll('.nav-shell nav a[href^="#"]:not(.nav-resume)')];
 const sections = sectionLinks.map(link => document.getElementById(link.hash.slice(1))).filter(Boolean);
 
 function markCurrentSection() {

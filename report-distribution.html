@@ -15,9 +15,11 @@
     <meta name="twitter:description" content="Power Automate report distribution: the business problem, confirmed work, and a fictional process illustration." />
     <link rel="canonical" href="https://jonathancapalbo.me/report-distribution.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/css/style.css?v=68" />
+    <link rel="stylesheet" href="assets/css/style.css?v=69" />
     <link rel="stylesheet" href="assets/css/case-study.css?v=3" />
+    <link rel="stylesheet" href="assets/css/report-routing.css" />
     <script src="assets/js/case-study.js?v=1" defer></script>
+    <script src="assets/js/report-routing.js" defer></script>
     <script src="/assets/js/analytics.js?v=1" defer></script>
   </head>
   <body class="case-study-page job-operations-page report-distribution-page">
@@ -32,7 +34,7 @@
           <a href="index.html#projects">Projects</a>
           <a href="index.html#skills">Skills</a>
           <a href="index.html#contact">Contact</a>
-          <a class="nav-resume" href="resume.pdf" aria-label="Business analysis / systems résumé (PDF)">Résumé</a>
+          <a class="nav-resume" href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf" aria-label="Reporting résumé (PDF)">Reporting résumé</a>
         </nav>
       </div>
       <div class="case-hero">
@@ -41,7 +43,7 @@
           <p class="eyebrow">Workplace initiative · Fictional process illustration</p>
           <h1>Making daily reports <em>easier for teammates to find.</em></h1>
           <p class="case-lede">At Comcast/Xfinity, teammates needed information from multiple daily reports. Finding the right report and applying filters caused confusion and repeated manual work. I built Power Automate flows to filter and distribute reports through email and Microsoft Teams for a team of 10.</p>
-          <a class="button button-primary" href="#example">View Fictional Process Example</a>
+          <a class="button button-primary" href="#example">Try the report-routing example</a>
         </div>
         <dl class="case-summary" aria-label="Experience and illustration scope">
           <div><dt>Professional contribution</dt><dd>Report filtering and distribution with Power Automate, developed in response to teammates' requests</dd></div>
@@ -62,32 +64,42 @@
       </section>
       <section class="section job-walkthrough" id="example" data-read-label="Process example" aria-labelledby="example-title">
         <div class="section-heading compact-heading">
-          <h2 id="example-title">Select the requested report and choose its destination.</h2>
-          <p>Team Cedar requests its September 1, 2026 activity report in Microsoft Teams. Names, dates and routing rules are fictional; the diagram explains the concept rather than reproducing the employer flow.</p>
+          <h2 id="example-title">Route a daily activity report.</h2>
+          <p>Choose a team, report date and delivery channel to preview a message using fictional activity records. September 2 has no report for either team. All selections stay in your browser.</p>
         </div>
-        <figure class="report-flow-preview report-flow-case" aria-labelledby="report-flow-case-caption">
-          <figcaption id="report-flow-case-caption">Fictional process illustration</figcaption>
-          <ol class="report-flow">
-            <li class="report-flow-step">
-              <h3>Report input</h3>
-              <ul class="report-input-list">
-                <li><span>Cedar · Activity</span><span>Sep 1, 2026</span></li>
-                <li><span>Cedar · Activity</span><span>Aug 31, 2026</span></li>
-                <li><span>Maple · Activity</span><span>Sep 1, 2026</span></li>
-              </ul>
-            </li>
-            <li class="report-flow-step report-filter-step">
-              <h3>Filter the requested report</h3>
-              <p>Match team, date &amp; report type</p>
-              <strong>Cedar · Sep 1, 2026 · Activity</strong>
-            </li>
-            <li class="report-flow-step">
-              <h3>Deliver to the requested channel</h3>
-              <p>Example Microsoft Teams message</p>
-              <strong>Team Cedar: the September 1 activity report is ready.</strong>
-            </li>
-          </ol>
-        </figure>
+        <div class="routing-demo">
+          <fieldset id="route-controls" hidden>
+            <legend>Report request</legend>
+            <div class="route-fields">
+              <div><label for="route-team">Team</label><select id="route-team"><option>Cedar</option><option>Maple</option></select></div>
+              <div><label for="route-date">Report date</label><select id="route-date">
+                <option value="">Choose a date</option>
+                <option value="2026-08-31">August 31, 2026</option>
+                <option value="2026-09-01" selected>September 1, 2026</option>
+                <option value="2026-09-02">September 2, 2026</option>
+              </select></div>
+              <div><label for="route-channel">Delivery channel</label><select id="route-channel"><option>Microsoft Teams</option><option>Email</option></select></div>
+            </div>
+          </fieldset>
+          <div class="route-evidence">
+            <table id="route-rows">
+              <caption>Sample activity reports</caption>
+              <thead><tr><th scope="col">Team</th><th scope="col">Report date</th><th scope="col">Completed activities</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Cedar</th><td><time datetime="2026-09-01">Sep 1, 2026</time></td><td>18</td></tr>
+                <tr><th scope="row">Cedar</th><td><time datetime="2026-08-31">Aug 31, 2026</time></td><td>12</td></tr>
+                <tr><th scope="row">Maple</th><td><time datetime="2026-09-01">Sep 1, 2026</time></td><td>15</td></tr>
+              </tbody>
+            </table>
+            <div class="route-result" role="status" aria-live="polite" aria-atomic="true">
+              <h3 id="route-title">Microsoft Teams preview</h3>
+              <p id="route-address">To Team Cedar chat</p>
+              <p id="route-subject" hidden></p>
+              <p id="route-body">Team Cedar recorded 18 completed activities on September 1, 2026.</p>
+            </div>
+          </div>
+          <noscript><p>The example shows Cedar’s September 1 report. Enable JavaScript to try another request.</p></noscript>
+        </div>
       </section>
       <section class="section job-validation" id="related-work" data-read-label="Related work" aria-labelledby="skills-title">
         <div class="section-heading compact-heading"><p class="eyebrow">Relevant work</p><h2 id="skills-title">Reporting, workflow improvement, and team support.</h2></div>

@@ -55,7 +55,8 @@ def build(variant):
     story.append(Paragraph(f'{contact["location"]} | {contact["preference"]} | ' + link(contact["email"], "mailto:" + contact["email"]), CONTACT))
     portfolio_label = "jonathancapalbo.me" if experience_first else "Portfolio"
     linkedin_label = "linkedin.com/in/jonathan-capalbo-2a00b9140" if experience_first else "LinkedIn"
-    story.append(Paragraph(link(portfolio_label, contact["portfolio"]) + " | " + link(linkedin_label, contact["linkedin"]), CONTACT))
+    portfolio_url = contact["portfolio"] + "#" + selected["portfolio_fragment"]
+    story.append(Paragraph(link(portfolio_label, portfolio_url) + " | " + link(linkedin_label, contact["linkedin"]), CONTACT))
     story.extend(section("SUMMARY"))
     story.append(Paragraph(selected["summary"], BODY))
     if not experience_first:

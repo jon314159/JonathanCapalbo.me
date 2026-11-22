@@ -70,7 +70,7 @@ The Private Job-Search Operations System is based on a customized private fork o
 
 ## Resumes
 
-- [Business analysis, business systems, and reporting (default)](https://jonathancapalbo.me/resume.pdf)
+- [Business analysis and business systems (default)](https://jonathancapalbo.me/resume.pdf)
 - [Reporting and operations](https://jonathancapalbo.me/downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf)
 
 Both resumes describe the same work history, with different emphasis for each role family.

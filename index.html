@@ -21,8 +21,8 @@
     <meta name="twitter:image:alt" content="Professional headshot of Jonathan Capalbo" />
     <link rel="canonical" href="https://jonathancapalbo.me/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/css/style.css?v=68" />
-    <script src="assets/js/portfolio.js?v=2" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css?v=69" />
+    <script src="assets/js/portfolio.js?v=3" defer></script>
     <script src="/assets/js/analytics.js?v=1" defer></script>
   </head>
   <body>
@@ -41,7 +41,7 @@
           <a href="#skills">Skills</a>
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
-          <a class="nav-resume" href="resume.pdf" aria-label="Business analysis / systems résumé (PDF)">Résumé</a>
+          <a class="nav-resume" href="#resumes">Résumés</a>
         </nav>
       </div>
 
@@ -63,7 +63,7 @@
             <a class="button button-primary" href="#projects">View Projects</a>
             <a class="button button-secondary" href="mailto:jonathancapalbo1@gmail.com">Email Jonathan</a>
           </div>
-          <div class="hero-contact-links">
+          <div class="hero-contact-links" id="resumes">
             <a class="resume-choice" href="resume.pdf">Business analysis / systems résumé (PDF)</a>
             <a class="resume-choice" href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations résumé (PDF)</a>
           </div>
@@ -80,6 +80,50 @@
           <div class="section-heading compact-heading">
             <h2>Selected work.</h2>
           </div>
+
+          <section class="project-paths" aria-labelledby="role-title">
+            <h3 id="role-title">Browse projects by role</h3>
+            <div class="role-links" role="navigation" aria-label="Projects by role">
+              <a href="#reporting-analyst">Reporting analyst</a>
+              <a href="#business-analyst">Business analyst</a>
+              <a href="#systems-operations">Systems &amp; service operations</a>
+              <a href="#project-coordinator">Project coordinator</a>
+            </div>
+            <section class="role-work" id="reporting-analyst" tabindex="-1" aria-labelledby="reporting-role-title">
+              <h4 id="reporting-role-title">Reporting analyst work samples</h4>
+              <ul>
+                <li><a href="sales-activity-tracker.html#analysis">Excel activity tracker and monthly reconciliation</a></li>
+                <li><a href="chicago-food-inspections.html#findings">Chicago Tableau dashboards and findings</a></li>
+                <li><a href="sql-movie-rental.html#query-result">Oracle SQL query and results</a></li>
+              </ul>
+              <a class="role-resume" href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations résumé (PDF)</a>
+            </section>
+            <section class="role-work" id="business-analyst" tabindex="-1" aria-labelledby="business-role-title">
+              <h4 id="business-role-title">Business analyst work samples</h4>
+              <ul>
+                <li><a href="arcade-ticketing-evidence.html#requirements">Arcade requirements register</a></li>
+                <li><a href="arcade-ticketing-evidence.html#planned-tests">Planned acceptance tests</a></li>
+                <li><a href="report-distribution.html#contribution">Workplace reporting workflow</a></li>
+              </ul>
+              <a class="role-resume" href="resume.pdf">Business analysis / systems résumé (PDF)</a>
+            </section>
+            <section class="role-work" id="systems-operations" tabindex="-1" aria-labelledby="systems-role-title">
+              <h4 id="systems-role-title">Systems and service operations work samples</h4>
+              <ul>
+                <li><a href="servicenow-njit-registrar.html#portal-evidence">ServiceNow knowledge portal</a></li>
+                <li><a href="report-distribution.html#example">Report routing and delivery preview</a></li>
+              </ul>
+              <a class="role-resume" href="resume.pdf">Business analysis / systems résumé (PDF)</a>
+            </section>
+            <section class="role-work" id="project-coordinator" tabindex="-1" aria-labelledby="coordinator-role-title">
+              <h4 id="coordinator-role-title">Project coordinator work samples</h4>
+              <ul>
+                <li><a href="arcade-status-update.html">One-page stakeholder status update</a></li>
+                <li><a href="arcade-ticketing-evidence.html#traceability">Requirements and test dependencies</a></li>
+              </ul>
+              <a class="role-resume" href="resume.pdf">Business analysis / systems résumé (PDF)</a>
+            </section>
+          </section>
 
           <article class="workplace-feature" aria-labelledby="report-feature-title">
             <div class="workplace-feature-copy">
@@ -98,26 +142,6 @@
               <p>Process overview; the case study includes a fictional example.</p>
             </figure>
           </article>
-
-          <details class="project-paths">
-            <summary>Browse projects by role</summary>
-            <div role="navigation" aria-label="Projects by role">
-              <dl>
-                <div>
-                  <dt>Reporting &amp; data</dt>
-                  <dd><a href="chicago-food-inspections.html">Chicago Tableau analysis</a><a href="sales-activity-tracker.html#analysis">Excel reporting</a><a href="sql-movie-rental.html#query-result">SQL query and results</a></dd>
-                </div>
-                <div>
-                  <dt>Business analysis</dt>
-                  <dd><a href="arcade-ticketing-evidence.html#requirements">Requirements and planned tests</a><a href="report-distribution.html">Workplace automation</a></dd>
-                </div>
-                <div>
-                  <dt>Systems &amp; service operations</dt>
-                  <dd><a href="servicenow-njit-registrar.html">ServiceNow portal</a><a href="report-distribution.html#example">Report distribution process</a></dd>
-                </div>
-              </dl>
-            </div>
-          </details>
 
           <article class="featured-project">
             <div class="project-copy">
@@ -144,10 +168,11 @@
               <p class="project-label">Academic team project · Real-world public data</p>
               <h3 id="chicago-feature-title">Chicago Food Inspections</h3>
               <p>I developed four Tableau dashboards to compare failure rates by facility, inspection type, location and time across 123,673 City of Chicago inspection records (2019-2025).</p>
-              <p class="project-methods">Shared filters, ZIP selection and annual/monthly trends, with defined rate denominators and interpretation limits.</p>
+              <p class="project-methods">Among evaluated inspections, the failure rate fell from 24.9% in 2023 to 21.1% in 2025.</p>
               <div class="project-actions">
                 <a class="button button-primary" href="chicago-food-inspections.html">Read the Chicago inspections case study</a>
-                <a class="button button-secondary" href="downloads/Chicago_Food_Inspections.twbx" download>Download Tableau workbook</a>
+                <a class="button button-secondary" href="https://public.tableau.com/app/profile/jonathan.capalbo/viz/Chicago_Food_Inspections_17926114522930/3Geography">Open dashboards on Tableau Public</a>
+                <a class="project-link" href="downloads/Chicago_Food_Inspections.twbx" download>Download Tableau workbook</a>
               </div>
             </div>
             <figure class="project-preview">

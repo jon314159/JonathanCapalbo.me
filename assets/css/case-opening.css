@@ -1,0 +1,178 @@
+.case-study-page .case-header {
+  --cover-width: 82rem;
+  padding: 0 var(--page-gutter);
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.case-header .nav-shell {
+  position: static;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 20px;
+  width: min(100%, var(--cover-width));
+  margin-inline: auto;
+  padding: 12px 0;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  box-shadow: none;
+}
+
+.case-header .brand {
+  min-width: 0;
+  min-height: 44px;
+  font-size: 1.08rem;
+  font-weight: 750;
+  letter-spacing: -.035em;
+}
+
+.case-header .nav-shell nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0 clamp(10px, 2vw, 30px);
+}
+
+.case-header .nav-shell nav a {
+  min-width: 0;
+  min-height: 44px;
+  margin: 0;
+  padding: 6px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--ink);
+  font-weight: 600;
+  text-align: left;
+}
+.case-header .nav-shell nav .nav-resume { color: var(--blue-dark); }
+.case-header .nav-shell a:hover { text-decoration: underline; text-underline-offset: .2em; }
+
+.case-header .case-hero, .case-header .report-intro {
+  width: min(100%, var(--cover-width));
+  padding-block: clamp(34px, 5vw, 78px) clamp(24px, 3vw, 48px);
+}
+.case-header .case-hero {
+  grid-template-columns: minmax(0, 1fr) minmax(0, .9fr);
+  align-items: center;
+  gap: clamp(20px, 3vw, 44px) clamp(38px, 6vw, 96px);
+}
+
+.case-header .case-hero-copy h1, .case-header .report-intro h1 {
+  margin: 0;
+  max-width: 17ch;
+  color: var(--ink);
+  font-size: clamp(2.7rem, 5.5vw, 5.4rem);
+  font-weight: 750;
+  line-height: 1;
+  letter-spacing: -.06em;
+  text-wrap: balance;
+}
+.case-header .case-hero-copy > .eyebrow {
+  margin: 0 0 clamp(12px, 1.6vw, 24px);
+  color: var(--muted);
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.case-header .case-hero-copy > p.case-lede, .case-header .report-intro .case-lede {
+  max-width: 55ch;
+  margin: clamp(16px, 1.8vw, 26px) 0 0;
+  color: var(--ink-soft);
+  font-size: clamp(1.05rem, 1.35vw, 1.23rem);
+  line-height: 1.55;
+}
+.case-links { display: flex; flex-wrap: wrap; gap: 0 20px; margin-top: 14px; }
+.case-links a, .case-cover-excerpt a, .rental-result a, .case-cover-figure figcaption a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--blue-dark);
+  font-weight: 650;
+  text-underline-offset: .22em;
+}
+.case-header :focus-visible { outline: 3px solid var(--blue-dark); outline-offset: 3px; }
+.case-project-notes { grid-column: 1 / -1; width: 100%; border-top: 1px solid var(--line); color: var(--ink-soft); }
+.case-project-notes summary { width: fit-content; max-width: 100%; padding: 12px 0; cursor: pointer; font-size: .95rem; font-weight: 600; }
+.case-project-notes p { max-width: 80ch; }
+
+.case-cover-figure, .case-header .sales-hero-preview {
+  width: 100%;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.case-cover-figure > a, .case-header .sales-hero-crop {
+  display: block;
+  width: 100%;
+  background: white;
+  border: 1px solid var(--line);
+}
+.case-cover-figure img { display: block; width: 100%; height: auto; }
+.case-header .sales-hero-crop { max-height: 24rem; overflow: hidden; }
+.case-cover-figure figcaption, .case-header .sales-hero-preview figcaption {
+  padding: 8px 0 0;
+  color: var(--muted);
+  font-size: .9rem;
+  line-height: 1.45;
+}
+
+.case-cover-excerpt, .rental-result {
+  margin: 0;
+  padding: clamp(20px, 3vw, 44px);
+  background: var(--navy);
+  color: white;
+}
+.case-cover-excerpt :is(h2, h3), .case-cover-excerpt strong { color: white; }
+.case-cover-excerpt :is(h2, h3) { max-width: 24ch; margin-bottom: 16px; font-size: clamp(1.5rem, 2.6vw, 2.4rem); }
+.case-cover-excerpt p, .rental-result figcaption { color: var(--on-navy); }
+.case-cover-excerpt a, .rental-result a { color: var(--navy-link); }
+.case-cover-excerpt a:focus-visible, .rental-result a:focus-visible { outline-color: white; }
+.rental-result dl { margin: 24px 0 16px; }
+.rental-result dl > div + div { margin-top: 16px; padding-top: 20px; border-top: 1px solid #52677b; }
+.rental-result dt { color: var(--on-navy); font-size: .9rem; }
+.rental-result dd { margin: 3px 0 0; color: white; font-size: clamp(1.6rem, 3vw, 2.9rem); font-weight: 650; letter-spacing: -.045em; line-height: 1.05; }
+.rental-result dl > div:first-child dd { color: var(--navy-link); font-size: clamp(4rem, 8vw, 8rem); font-variant-numeric: tabular-nums; }
+
+.job-operations-page .case-cover-excerpt {
+  padding: 18px 0 0;
+  border-top: 2px solid var(--ink);
+  color: var(--ink);
+  background: transparent;
+}
+.job-operations-page .case-cover-excerpt h2 { color: var(--ink); }
+.job-operations-page .case-cover-excerpt p { color: var(--ink-soft); }
+.job-operations-page .case-cover-excerpt a { color: var(--blue-dark); }
+.job-operations-page .case-cover-excerpt a:focus-visible { outline-color: var(--blue-dark); }
+
+.report-distribution-page .case-header { background: var(--navy); }
+.report-distribution-page .case-header .nav-shell { color: white; border-color: #52677b; }
+.report-distribution-page .nav-shell nav a { color: white; }
+.report-distribution-page .nav-shell nav .nav-resume { color: var(--navy-link); }
+.report-distribution-page .case-header :focus-visible { outline-color: white; }
+.case-header .report-intro {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: end;
+  gap: 24px clamp(36px, 6vw, 96px);
+}
+.case-header .report-intro h1 { max-width: 20ch; color: var(--navy-link); }
+.case-header .report-intro .case-lede { margin: 0; color: white; }
+
+@media (max-width: 52rem) {
+  .case-header .case-hero, .case-header .report-intro { grid-template-columns: minmax(0, 1fr); }
+  .case-intro > *, .case-scope > * { min-width: 0; overflow-wrap: anywhere; }
+  .case-cover-figure, .sales-hero-evidence, .case-cover-excerpt, .rental-result { max-width: 40rem; }
+}
+@media (max-width: 38rem) {
+  .case-header .nav-shell { align-items: flex-start; gap: 0; }
+  .case-header .nav-shell nav { flex-basis: 100%; }
+  .case-header .case-hero, .case-header .report-intro { padding-block: 24px; }
+  .case-header .case-hero-copy h1, .case-header .report-intro h1 { font-size: clamp(2.4rem, 10.4vw, 3.4rem); }
+}

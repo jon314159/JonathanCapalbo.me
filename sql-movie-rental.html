@@ -17,6 +17,7 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/style.css?v=68" />
     <link rel="stylesheet" href="assets/css/case-study.css?v=3" />
+    <link rel="stylesheet" href="assets/css/case-opening.css?v=1" />
     <script src="assets/js/case-study.js?v=1" defer></script>
     <script src="/assets/js/analytics.js?v=2" defer></script>
   </head>
@@ -25,38 +26,38 @@
     <header class="case-header" id="top">
       <div class="nav-shell">
         <a class="brand" href="index.html" aria-label="Jonathan Capalbo, portfolio home">
-          <span class="brand-mark" aria-hidden="true">JC</span>
-          <span class="brand-copy"><strong>Jonathan Capalbo</strong><small>Business analysis, reporting &amp; systems</small></span>
+          Jonathan Capalbo
         </a>
         <nav aria-label="Case study navigation">
-          <a href="index.html#projects">Projects</a>
-          <a href="index.html#skills">Skills</a>
+          <a href="index.html#projects">Work</a>
+          <a href="index.html#experience">Experience</a>
           <a href="index.html#contact">Contact</a>
           <a class="nav-resume" href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf" aria-label="Reporting résumé (PDF)">Reporting résumé</a>
         </nav>
       </div>
       <div class="case-hero">
         <div class="case-hero-copy">
-          <a class="case-back" href="index.html#projects">Back to Selected projects</a>
-          <p class="eyebrow">Academic final project · Oracle SQL</p>
-          <h1>A movie rental database that <em>tracks copies and checkouts.</em></h1>
-          <p class="case-lede">The database connects titles, physical copies, and rental history. A read-only view identifies copies still checked out.</p>
-          <div class="academic-disclosure" role="note">
-            <strong>Coursework with sample data</strong>
-            <span>The public copy replaces customer names and contact details with fictional examples. Movie-to-actor assignments are sample relationships, not factual casting credits. The class submission's schema and SQL logic are preserved; a separate portfolio extension adds two rental controls.</span>
-          </div>
-          <div class="button-row">
-            <a class="button button-primary" href="downloads/Movie_Rental_Database.sql" download>Download SQL project</a>
-            <a class="button button-secondary" href="#schema">Inspect the schema</a>
-            <a class="button button-secondary" href="#validation">Read validation findings</a>
+          <p class="eyebrow">Oracle SQL coursework</p>
+          <h1>Which movie copy is still out?</h1>
+          <p class="case-lede">I built a movie rental database that tracks each physical copy from checkout to return. A read-only view finds the copies a customer still has.</p>
+          <div class="case-links">
+            <a href="downloads/Movie_Rental_Database.sql" download>Download SQL project</a>
+            <a href="#schema">Inspect the schema</a>
+            <a href="#validation">Validation results</a>
           </div>
         </div>
-        <dl class="case-summary" aria-label="Project summary">
-          <div><dt>Project type</dt><dd>Academic database final with fictional customer details</dd></div>
-          <div><dt>My contribution</dt><dd>Created related tables, constraints, joins, a read-only view, and supporting Oracle objects</dd></div>
-          <div><dt>Tools/platform</dt><dd>Oracle SQL; public copy validated with SQL*Plus in Oracle AI Database 26ai Free</dd></div>
-          <div><dt>Deliverables/status</dt><dd>Original assignment: 43 checks passed on September 12, 2026. Separate revision: all 20 Oracle checks passed; zero invalid objects.</dd></div>
-        </dl>
+        <figure class="rental-result">
+          <figcaption>Query result from the sample database</figcaption>
+          <dl>
+            <div><dt>Copy ID</dt><dd>94</dd></div>
+            <div><dt>Title</dt><dd>The Shawshank Redemption</dd></div>
+          </dl>
+          <a href="#query-result">See the query that found this copy</a>
+        </figure>
+        <details class="case-project-notes">
+          <summary>Data and validation notes</summary>
+          <p>The public copy uses fictional customer details and sample casting relationships. It preserves the class submission’s schema and SQL logic. I validated it with SQL*Plus in Oracle AI Database 26ai Free. All 43 checks passed on September 12, 2026. A separate portfolio revision added two rental controls and passed all 20 checks with zero invalid objects.</p>
+        </details>
       </div>
     </header>
     <main id="case-content">

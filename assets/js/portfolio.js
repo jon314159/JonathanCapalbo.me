@@ -1,9 +1,15 @@
-const sectionLinks = [...document.querySelectorAll('.nav-shell nav a[href^="#"]:not(.nav-resume)')];
-const sections = sectionLinks.map(link => document.getElementById(link.hash.slice(1))).filter(Boolean);
+const masthead = document.querySelector('.portfolio-header');
+const sectionLinks = [...document.querySelectorAll('.portfolio-header nav a[href^="#"]')];
+const sections = [...document.querySelectorAll('main [id]')].filter(section =>
+  sectionLinks.some(link => link.hash === `#${section.id}`)
+);
+
+function headerOffset() {
+  return getComputedStyle(masthead).position === 'sticky' ? masthead.offsetHeight : 0;
+}
 
 function markCurrentSection() {
-  const nav = document.querySelector('.nav-shell');
-  const threshold = getComputedStyle(nav).position === 'fixed' ? nav.getBoundingClientRect().bottom + 48 : 80;
+  const threshold = headerOffset() + 48;
   let current;
   for (const section of sections) {
     if (section.getBoundingClientRect().top <= threshold) current = section.id;
@@ -11,7 +17,11 @@ function markCurrentSection() {
   const lastSection = sections[sections.length - 1];
   // A short final section may not reach the threshold before scrolling ends.
   const atPageEnd = scrollY + innerHeight >= document.documentElement.scrollHeight - 2;
-  if (lastSection && atPageEnd && lastSection.getBoundingClientRect().top < innerHeight) current = lastSection.id;
+  if (lastSection && atPageEnd && lastSection.getBoundingClientRect().top < innerHeight) {
+    const target = sections.find(section => `#${section.id}` === location.hash);
+    const bounds = target?.getBoundingClientRect();
+    current = bounds && bounds.bottom > headerOffset() && bounds.top < innerHeight ? target.id : lastSection.id;
+  }
   if (lastSection && lastSection.getBoundingClientRect().bottom < 0) current = undefined;
   for (const link of sectionLinks) {
     if (link.hash === `#${current}`) link.setAttribute('aria-current', 'location');
@@ -20,14 +30,19 @@ function markCurrentSection() {
 }
 
 if (sections.length) {
+  function updateHeader() {
+    document.documentElement.style.scrollPaddingTop = `${headerOffset() + 16}px`;
+    markCurrentSection();
+  }
   let scheduled = false;
   addEventListener('scroll', () => {
     if (scheduled) return;
     scheduled = true;
     requestAnimationFrame(() => { markCurrentSection(); scheduled = false; });
   }, { passive: true });
-  addEventListener('resize', markCurrentSection);
+  addEventListener('resize', updateHeader);
+  if ('ResizeObserver' in window) new ResizeObserver(updateHeader).observe(masthead);
   addEventListener('hashchange', markCurrentSection);
   addEventListener('pageshow', markCurrentSection);
-  markCurrentSection();
+  updateHeader();
 }

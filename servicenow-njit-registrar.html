@@ -23,6 +23,7 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/style.css?v=68" />
     <link rel="stylesheet" href="assets/css/case-study.css?v=3" />
+    <link rel="stylesheet" href="assets/css/case-opening.css?v=1" />
     <script src="assets/js/case-study.js?v=1" defer></script>
     <script src="/assets/js/analytics.js?v=2" defer></script>
   </head>
@@ -32,12 +33,11 @@
     <header class="case-header" id="top">
       <div class="nav-shell">
         <a class="brand" href="index.html" aria-label="Jonathan Capalbo, portfolio home">
-          <span class="brand-mark" aria-hidden="true">JC</span>
-          <span class="brand-copy"><strong>Jonathan Capalbo</strong><small>Business analysis, reporting &amp; systems</small></span>
+          Jonathan Capalbo
         </a>
         <nav aria-label="Case study navigation">
-          <a href="index.html#projects">Projects</a>
-          <a href="index.html#skills">Skills</a>
+          <a href="index.html#projects">Work</a>
+          <a href="index.html#experience">Experience</a>
           <a href="index.html#contact">Contact</a>
           <a class="nav-resume" href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf" aria-label="Business analysis / systems résumé (PDF)">Résumé</a>
         </nav>
@@ -45,26 +45,18 @@
 
       <div class="case-hero">
         <div class="case-hero-copy">
-          <a class="case-back" href="index.html#projects">Back to Selected projects</a>
-          <p class="eyebrow">Academic project · ServiceNow school lab</p>
-          <h1>A ServiceNow lab portal for <em>registrar information.</em></h1>
-          <p class="case-lede">I configured a searchable ServiceNow portal, organized 42 registrar articles into 12 categories, and revised a registration guide to separate preparation steps from common-error guidance.</p>
-          <div class="academic-disclosure" role="note">
-            <strong>Academic demonstration</strong>
-            <span>This school-lab project is not NJIT's live registrar system and should not be used as current NJIT guidance.</span>
-          </div>
-          <div class="button-row">
-            <a class="button button-primary" href="#portal-evidence">View the lab screenshot</a>
-            <a class="button button-secondary" href="https://github.com/jon314159/JonathanCapalbo.me/blob/main/case-studies/servicenow-njit-registrar.md" target="_blank" rel="noopener noreferrer">Portal project notes <span aria-hidden="true">↗</span></a>
+          <p class="eyebrow">NJIT coursework · ServiceNow</p>
+          <h1>A registrar knowledge base</h1>
+          <p class="case-lede">In a ServiceNow school lab, I organized 42 registrar articles into 12 topics. Someone looking for a transcript could browse by topic. Someone who knew what to ask could go straight to search.</p>
+          <div class="case-links">
+            <a href="#article-revision">See the registration guide revision</a>
+            <a href="https://github.com/jon314159/JonathanCapalbo.me/blob/main/case-studies/servicenow-njit-registrar.md" target="_blank" rel="noopener noreferrer">Portal project notes</a>
           </div>
         </div>
-
-        <dl class="case-summary" aria-label="Project summary">
-          <div><dt>Project type</dt><dd>Academic portal and knowledge-content configuration</dd></div>
-          <div><dt>My contribution</dt><dd>Portal navigation, article organization, registration instructions and article versioning</dd></div>
-          <div><dt>Tools/platform</dt><dd>ServiceNow Service Portal and Knowledge Management; HTML/CSS content blocks</dd></div>
-          <div><dt>Deliverables/status</dt><dd>Sanitized screenshot, project notes, and recreated article excerpt. The temporary lab is no longer available.</dd></div>
-        </dl>
+        <figure class="case-cover-figure">
+          <a href="#portal-evidence" aria-label="View the registrar lab screenshot and its design notes"><img src="assets/images/servicenow-registrar-portal.png" width="1280" height="720" decoding="async" fetchpriority="high" alt="Registrar lab portal home with a knowledge search and topic categories." /></a>
+          <figcaption>My ServiceNow lab portal. The temporary lab has closed. This screenshot shows the class project and is separate from NJIT’s current registrar guidance.</figcaption>
+        </figure>
       </div>
     </header>
 

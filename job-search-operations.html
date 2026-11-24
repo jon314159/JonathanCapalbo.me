@@ -17,6 +17,7 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/style.css?v=68" />
     <link rel="stylesheet" href="assets/css/case-study.css?v=3" />
+    <link rel="stylesheet" href="assets/css/case-opening.css?v=1" />
     <script src="assets/js/case-study.js?v=1" defer></script>
     <script src="/assets/js/analytics.js?v=2" defer></script>
   </head>
@@ -25,33 +26,30 @@
     <header class="case-header" id="top">
       <div class="nav-shell">
         <a class="brand" href="index.html" aria-label="Jonathan Capalbo, portfolio home">
-          <span class="brand-mark" aria-hidden="true">JC</span>
-          <span class="brand-copy"><strong>Jonathan Capalbo</strong><small>Business analysis, reporting &amp; systems</small></span>
+          Jonathan Capalbo
         </a>
         <nav aria-label="Case study navigation">
-          <a href="index.html#projects">Projects</a>
-          <a href="index.html#skills">Skills</a>
+          <a href="index.html#projects">Work</a>
+          <a href="index.html#experience">Experience</a>
           <a href="index.html#contact">Contact</a>
           <a class="nav-resume" href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf" aria-label="Reporting résumé (PDF)">Reporting résumé</a>
         </nav>
       </div>
       <div class="case-hero">
         <div class="case-hero-copy">
-          <a class="case-back" href="index.html#projects">Back to Selected projects</a>
-          <p class="eyebrow">Independent project · Customized private fork</p>
-          <h1>Job-Search <em>Operations Workflow.</em></h1>
-          <p class="case-lede">Duplicate postings, unreliable source checks, changed resumes, and uncertain submissions can create incorrect records or repeated work. I customized a Python-based workflow to make the next action depend on the evidence available.</p>
-          <p class="job-attribution">An independent customization and maintenance project based on Mads Lorentzen's AI Job Search, which supplied the original framework and commands.</p>
-          <div class="button-row">
-            <a class="button button-primary" href="#controls">Review the workflow controls</a>
-            <a class="button button-secondary" href="https://github.com/MadsLorentzen/ai-job-search" target="_blank" rel="noopener noreferrer">Original upstream project</a>
+          <p class="eyebrow">Independent Python project · Private fork</p>
+          <h1>Tracking my job search</h1>
+          <p class="case-lede">I adapted Mads Lorentzen’s AI Job Search for my own applications. I added checks for revised résumés, interrupted submissions and follow-up messages so I could tell which applications still needed attention.</p>
+          <div class="case-links">
+            <a href="#controls">Review the workflow controls</a>
+            <a href="https://github.com/MadsLorentzen/ai-job-search" target="_blank" rel="noopener noreferrer">Mads Lorentzen’s original project</a>
           </div>
         </div>
-        <dl class="case-summary" aria-label="Project summary">
-          <div><dt>Project type</dt><dd>Independent workflow customization and maintenance</dd></div>
-          <div><dt>Tools</dt><dd>Python, Git, JSON/CSV records, PDF checks, and AI assistants</dd></div>
-          <div><dt>On this page</dt><dd>A workflow diagram, three customizations, four review points, one synthetic walkthrough, and focused validation</dd></div>
-        </dl>
+        <aside class="case-cover-excerpt" aria-labelledby="submission-excerpt-title">
+          <h2 id="submission-excerpt-title">Submission uncertain</h2>
+          <p>In this sample, the portal times out after I press Submit. The tracker keeps the résumé marked prepared and the submission unresolved while I check the portal for a receipt.</p>
+          <a href="#examples">Read the sample application record</a>
+        </aside>
       </div>
     </header>
     <main id="case-content">
@@ -59,6 +57,7 @@
         <div class="section-heading compact-heading">
           <p class="eyebrow">My contribution</p>
           <h2 id="contribution-title">Three additions to the existing workflow.</h2>
+          <p>Mads Lorentzen supplied the original framework and commands. I maintain my changes in a private Git fork, using Python, JSON and CSV records, PDF checks and AI assistants.</p>
         </div>
         <div class="job-change-list">
           <article>

@@ -23,6 +23,7 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/style.css?v=68" />
     <link rel="stylesheet" href="assets/css/case-study.css?v=3" />
+    <link rel="stylesheet" href="assets/css/case-opening.css?v=1" />
     <script src="assets/js/case-study.js?v=1" defer></script>
     <style>#ba-documents strong a { display: inline-flex; align-items: center; min-height: 44px; }</style>
     <script src="/assets/js/analytics.js?v=2" defer></script>
@@ -33,12 +34,11 @@
     <header class="case-header" id="top">
       <div class="nav-shell">
         <a class="brand" href="index.html" aria-label="Jonathan Capalbo, portfolio home">
-          <span class="brand-mark" aria-hidden="true">JC</span>
-          <span class="brand-copy"><strong>Jonathan Capalbo</strong><small>Business analysis, reporting &amp; systems</small></span>
+          Jonathan Capalbo
         </a>
         <nav aria-label="Case study navigation">
-          <a href="index.html#projects">Projects</a>
-          <a href="index.html#skills">Skills</a>
+          <a href="index.html#projects">Work</a>
+          <a href="index.html#experience">Experience</a>
           <a href="index.html#contact">Contact</a>
           <a class="nav-resume" href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf" aria-label="Business analysis / systems résumé (PDF)">Résumé</a>
         </nav>
@@ -46,27 +46,20 @@
 
       <div class="case-hero">
         <div class="case-hero-copy">
-          <a class="case-back" href="index.html#projects">Back to Selected projects</a>
-          <p class="eyebrow">Self-directed portfolio case study · Hypothetical</p>
-          <h1>A ticketing plan for <em>five types of arcade issues.</em></h1>
-          <p class="case-lede">The proposed process covers broken machines, game-card issues, refunds, prize-counter problems, and facility incidents at one fictional location.</p>
-          <div class="academic-disclosure arcade-disclosure" role="note">
-            <strong>Hypothetical proposal</strong>
-            <span>The business and scenario are fictional. No software was configured, no UAT was executed, and no operational results were measured.</span>
-          </div>
-          <div class="button-row">
-            <a class="button button-primary" href="arcade-ticketing-evidence.html">Review requirements and planned tests</a>
-            <a class="button button-secondary" href="#process-visual">Compare the workflows</a>
-            <a class="project-link case-inline-link" href="arcade-status-update.html">Read the one-page stakeholder update</a>
+          <p class="eyebrow">Business analysis · Hypothetical project</p>
+          <h1>Arcade ticketing</h1>
+          <p class="case-lede">For a fictional arcade, I designed a way for staff to report a problem, assign an owner and check the fix before closing the ticket. I wrote the requirements and planned tests for five types of issues, including machine repairs and refunds.</p>
+          <div class="case-links">
+            <a href="arcade-ticketing-evidence.html">Requirements and planned tests</a>
+            <a href="#process-visual">Compare the workflows</a>
+            <a href="arcade-status-update.html">One-page stakeholder update</a>
           </div>
         </div>
-
-        <dl class="case-summary" aria-label="Project summary">
-          <div><dt>Project type</dt><dd>Self-directed analysis and planning for a hypothetical scenario</dd></div>
-          <div><dt>My contribution</dt><dd>Mapped the process, defined requirements and acceptance criteria, and planned UAT and rollout</dd></div>
-          <div><dt>Tools/platform</dt><dd>Process mapping and requirements documentation; ServiceNow is a conceptual mapping only</dd></div>
-          <div><dt>Deliverables/status</dt><dd>Process proposal and public evidence pack. No configured software; all planned tests remain Not Executed.</dd></div>
-        </dl>
+        <aside class="case-cover-excerpt" aria-labelledby="repair-excerpt-title">
+          <h2 id="repair-excerpt-title">Machine A-12</h2>
+          <p>The repair is marked Resolved, but the start button still fails. The shift lead records the failed check and its reason. The ticket goes back to In Progress with the same maintenance owner.</p>
+          <a href="#worked-example">Follow the proposed repair</a>
+        </aside>
       </div>
     </header>
 
@@ -78,7 +71,8 @@
         </div>
         <div class="case-intro-copy">
           <p>In the simulated current state, staff report issues through conversations, paper notes, phone calls, and messages. With information spread across several channels, it is hard to see who owns the work, what is urgent, and whether an issue was fully resolved.</p>
-          <p>The proposed pilot covers one location and five issue types, with shared routing, approvals, training, and reporting. Limiting the location keeps the operating boundary clear; including five issue types still introduces different approval and exception paths.</p>
+          <p>The proposed pilot covers broken machines, game-card issues, refunds, prize-counter problems and facility incidents at one location. Each uses the same ticket, with different approval and exception paths.</p>
+          <p>This was a planning exercise. I wrote the acceptance criteria and rollout plan. I did not configure software, execute the proposed tests or measure operational results.</p>
         </div>
       </section>
 

@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="assets/css/style.css?v=68" />
     <link rel="stylesheet" href="assets/css/case-study.css?v=3" />
     <link rel="stylesheet" href="assets/css/activity-explorer.css?v=2" />
+    <link rel="stylesheet" href="assets/css/case-opening.css?v=1" />
     <script src="assets/vendor/react-18.3.1/react.production.min.js" defer></script>
     <script src="assets/vendor/react-18.3.1/react-dom.production.min.js" defer></script>
     <script src="assets/js/activity-explorer.js?v=1" defer></script>
@@ -36,12 +37,11 @@
     <header class="case-header" id="top">
       <div class="nav-shell">
         <a class="brand" href="index.html" aria-label="Jonathan Capalbo, portfolio home">
-          <span class="brand-mark" aria-hidden="true">JC</span>
-          <span class="brand-copy"><strong>Jonathan Capalbo</strong><small>Business analysis, reporting &amp; systems</small></span>
+          Jonathan Capalbo
         </a>
         <nav aria-label="Case study navigation">
-          <a href="index.html#projects">Projects</a>
-          <a href="index.html#skills">Skills</a>
+          <a href="index.html#projects">Work</a>
+          <a href="index.html#experience">Experience</a>
           <a href="index.html#contact">Contact</a>
           <a class="nav-resume" href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf" aria-label="Reporting résumé (PDF)">Reporting résumé</a>
         </nav>
@@ -49,16 +49,14 @@
 
       <div class="case-hero sales-case-hero">
         <div class="case-hero-copy">
-          <a class="case-back" href="index.html#projects">Back to Selected projects</a>
-          <p class="eyebrow">Workplace initiative · Fictional sample data</p>
-          <h1>Activity reporting with <em>Excel and Tableau.</em></h1>
-          <p class="case-lede">I rebuilt a workplace-origin Excel workflow with fictional data, then added AI-assisted Tableau and React views to inspect outcomes and daily targets.</p>
-          <div class="button-row">
-            <a class="button button-primary" href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download Excel workbook <span aria-hidden="true">↓</span></a>
-            <a class="button button-secondary" href="#analysis">Review Excel results</a>
-            <a class="button button-secondary" href="#tableau-review">Review Tableau analysis</a>
+          <p class="eyebrow">Rebuilt from a workplace reporting project</p>
+          <h1>Activity reporting with Excel and Tableau</h1>
+          <p class="case-lede">At Comcast/Xfinity, I found days missing from my monthly totals and fixed the formulas. I rebuilt the Excel workflow with fictional records, then added AI-assisted Tableau and React views to compare results against daily targets.</p>
+          <div class="case-links">
+            <a href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download Excel workbook</a>
+            <a href="#analysis">Review Excel results</a>
+            <a href="#tableau-review">Review Tableau analysis</a>
           </div>
-          <p class="sales-data-note"><span>Fictional demonstration</span> All records, goals and results are fictional. Tableau and React are portfolio extensions, separate from the workplace Excel initiative and my academic Tableau projects. Excel screenshots show the downloadable workbook.</p>
         </div>
 
         <div class="sales-hero-evidence">
@@ -67,12 +65,10 @@
             <figcaption>Fictional workbook data. <a href="assets/images/sales-activity-dashboard.png">View full-size dashboard</a></figcaption>
           </figure>
         </div>
-        <dl class="case-summary summary-wide" aria-label="Project summary">
-          <div><dt>Project type</dt><dd>Workplace-origin Excel; fictional portfolio reconstruction and extensions</dd></div>
-          <div><dt>My contribution</dt><dd>Excel entry and reporting design; AI-assisted Tableau and React extensions, with source reconciliation and interaction checks</dd></div>
-          <div><dt>Tools/platform</dt><dd>Microsoft Excel · Tableau Desktop · React</dd></div>
-          <div><dt>Deliverables/status</dt><dd>Excel workbook, packaged Tableau workbook, native export, browser explorer, and source records</dd></div>
-        </dl>
+        <details class="case-project-notes">
+          <summary>Workplace project and portfolio extensions</summary>
+          <p>Excel was the workplace initiative. All records, goals and results in the downloadable workbook are fictional. The Tableau and React views are portfolio extensions, separate from my academic Tableau projects. I checked the extensions against the same source rows and tested their controls.</p>
+        </details>
       </div>
     </header>
 

@@ -22,72 +22,117 @@
     <link rel="canonical" href="https://jonathancapalbo.me/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/style.css?v=69" />
-    <link rel="stylesheet" href="assets/css/portfolio.css?v=1" />
-    <script src="assets/js/portfolio.js?v=4" defer></script>
+    <link rel="stylesheet" href="assets/css/portfolio.css?v=2" />
+    <link rel="stylesheet" href="assets/css/work-gallery.css?v=1" />
+    <link rel="stylesheet" href="assets/css/background.css?v=1" />
+    <script src="assets/js/portfolio.js?v=5" defer></script>
+    <script src="assets/js/work-gallery.js?v=1" defer></script>
     <script src="/assets/js/analytics.js?v=2" defer></script>
   </head>
-  <body>
+  <body class="portfolio-page">
     <a class="skip-link" href="#main-content">Skip to content</a>
 
     <header class="portfolio-header" id="top">
       <div class="nav-shell">
-        <a class="brand" href="#top" aria-label="Jonathan Capalbo, home">
-          <img src="assets/images/jonathan-capalbo-headshot-web.jpg?v=20260913" width="44" height="44" alt="" />
-          <strong>Jonathan Capalbo</strong>
-        </a>
-        <a class="portfolio-resume-link" href="#resumes">Résumés</a>
+        <a class="portfolio-monogram" href="#top" aria-label="Jonathan Capalbo, home">JC</a>
         <nav aria-label="Main navigation">
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#skills">Skills</a>
-          <a href="#education">Education</a>
+          <a href="#projects">Work</a>
+          <a href="#experience">Background</a>
           <a href="#contact">Contact</a>
+          <a class="nav-resume" href="#resumes">Résumés</a>
         </nav>
       </div>
     </header>
 
     <main id="main-content">
-      <div class="portfolio-opening">
-        <div class="opening-inner">
-          <div class="opening-intro">
-            <h1>Business analysis and reporting</h1>
-            <p>At Comcast/Xfinity, I automated daily reports for my team of 10 and fixed Excel formulas that left whole days out of our monthly totals.</p>
-            <p class="opening-location">I’m looking for a permanent, full-time role. I live in Point Pleasant, NJ, and can work remotely in the U.S. or relocate.</p>
+      <section class="portrait-opening" aria-labelledby="profile-name">
+        <div class="portrait-layout">
+          <h1 id="profile-name">Jonathan <span>Capalbo</span></h1>
+          <div class="portrait-introduction">
+            <p class="portrait-specialty">Business analysis &amp; reporting</p>
+            <p>I got into reporting at Comcast/Xfinity. When teammates needed their daily numbers, I built a workflow to deliver them. When our Excel totals looked off, I traced the problem to formulas that skipped whole days.</p>
+          </div>
+          <figure class="profile-portrait">
+            <img src="assets/images/jonathan-capalbo-portrait.webp" width="840" height="840" fetchpriority="high" alt="Jonathan Capalbo" />
+            <figcaption>Based in Point Pleasant, New Jersey</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="work-gallery" id="projects" aria-labelledby="work-title">
+        <div class="gallery-inner">
+          <div class="gallery-header">
+            <h2 id="work-title">Selected work</h2>
+            <div class="gallery-picker" role="tablist" aria-label="Featured projects" hidden>
+              <button type="button" id="pick-workbook" role="tab" aria-controls="gallery-workbook">Excel tracker</button>
+              <button type="button" id="pick-routing" role="tab" aria-controls="gallery-routing">Report routing</button>
+              <button type="button" id="pick-inspections" role="tab" aria-controls="gallery-inspections">Chicago inspections</button>
+            </div>
           </div>
 
-          <article class="opening-project" aria-labelledby="workbook-title">
-            <h2 id="workbook-title"><a href="sales-activity-tracker.html">Activity Reporting: Excel and Tableau</a></h2>
-            <figure>
-              <a class="workbook-preview" href="assets/images/sales-activity-dashboard.png" aria-label="Open the full-size fictional Excel dashboard">
-                <img src="assets/images/sales-activity-dashboard.png" width="1107" height="1090" fetchpriority="high" alt="Excel line chart of completed units each day in July against the daily target of 11 units" />
-              </a>
-              <figcaption>In this fictional reconstruction, July reached 105% of the monthly product goal. Daily completions still fell short of target on 17 of 31 days.</figcaption>
+          <article class="gallery-panel" id="gallery-workbook" aria-labelledby="workbook-title">
+            <figure class="gallery-figure">
+              <div class="gallery-visual workbook-visual">
+                <span class="sheet-window"><img src="assets/images/sales-activity-dashboard.png" width="1107" height="1090" decoding="async" alt="Excel dashboard showing the monthly product goal and daily completed units against the separate daily target" /></span>
+              </div>
+              <figcaption>Fictional Excel workbook, July 2026 <a class="dashboard-enlarge" href="assets/images/sales-activity-dashboard.png">Full-size dashboard</a></figcaption>
             </figure>
-            <div class="workbook-files">
-              <a href="assets/images/sales-activity-dashboard.png">Full-size dashboard</a>
-              <a href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download Excel workbook</a>
+            <div class="gallery-story">
+              <p class="gallery-origin">Workplace project · Excel</p>
+              <h3 id="workbook-title"><a href="sales-activity-tracker.html">Activity Reporting: Excel and Tableau</a></h3>
+              <p>At Comcast, I fixed a tracker that left whole days out of the monthly totals. I rebuilt it with fictional records, then added separate AI-assisted Tableau and React views for this portfolio.</p>
+              <p class="gallery-finding">July reached <strong>105%</strong> of the monthly product goal. Daily completions still fell short of their separate target on <strong>17 of 31 days</strong>.</p>
+              <a class="gallery-link" href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download the Excel workbook</a>
             </div>
           </article>
 
-          <section class="opening-resumes" id="resumes" aria-labelledby="resumes-title">
-            <h2 id="resumes-title">Résumés</h2>
-            <a href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis / systems <span>(PDF)</span></a>
-            <a href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations <span>(PDF)</span></a>
-          </section>
-        </div>
-      </div>
+          <article class="gallery-panel" id="gallery-routing" aria-labelledby="report-feature-title">
+            <figure class="gallery-figure">
+              <div class="gallery-visual routing-visual">
+                <div class="routing-specimen">
+                  <table>
+                    <caption>Completed activities by team</caption>
+                    <thead><tr><th scope="col">Team</th><th scope="col">Date</th><th scope="col">Count</th></tr></thead>
+                    <tbody>
+                      <tr class="selected-report"><th scope="row">Cedar</th><td>Sep 1, 2026</td><td>18</td></tr>
+                      <tr><th scope="row">Cedar</th><td>Aug 31, 2026</td><td>12</td></tr>
+                      <tr><th scope="row">Maple</th><td>Sep 1, 2026</td><td>15</td></tr>
+                    </tbody>
+                  </table>
+                  <p><strong>To Team Cedar chat</strong>Team Cedar recorded 18 completed activities on September 1, 2026.</p>
+                </div>
+              </div>
+              <figcaption>Fictional routing example · Microsoft Teams delivery</figcaption>
+            </figure>
+            <div class="gallery-story">
+              <p class="gallery-origin">Comcast / Xfinity · Power Automate</p>
+              <h3 id="report-feature-title"><a href="report-distribution.html">Routing the daily reports</a></h3>
+              <p>My teammates used to find and filter sales and adherence reports by hand. I built Power Automate flows that sent the figures our team of 10 needed by email or Microsoft Teams.</p>
+              <p class="gallery-finding">In the public example, you can change the team and date, then see which row supplies the message.</p>
+              <a class="gallery-link" href="report-distribution.html#example">Route a sample report</a>
+            </div>
+          </article>
 
-      <section class="work-section" id="projects" aria-labelledby="work-title">
-        <div class="section work-inner">
-          <h2 id="work-title">Selected work</h2>
+          <article class="gallery-panel" id="gallery-inspections" aria-labelledby="chicago-feature-title">
+            <figure class="gallery-figure">
+              <a class="gallery-visual inspections-visual" href="chicago-food-inspections.html#dashboards" aria-label="View the Chicago food inspection dashboards">
+                <span class="map-window"><img src="assets/images/chicago-geography.png" width="1170" height="732" loading="lazy" decoding="async" alt="Tableau map of Chicago ZIP codes, with circle size showing the number of evaluated inspections and color showing failure rate" /></span>
+              </a>
+              <figcaption>Chicago food inspections by ZIP, 2019–2025 <a href="assets/images/chicago-geography.png">Full-size map</a></figcaption>
+            </figure>
+            <div class="gallery-story">
+              <p class="gallery-origin">NJIT team project · Tableau</p>
+              <h3 id="chicago-feature-title"><a href="chicago-food-inspections.html">Chicago Food Inspections</a></h3>
+              <p>I built four Tableau dashboards from 123,673 City of Chicago inspection records. The map lets you select a ZIP code to see its inspection volume and failure rate.</p>
+              <p class="gallery-finding">Among evaluated inspections, <strong>23.9%</strong> failed in ZIP 60614, compared with <strong>19.4%</strong> in ZIP 60640.</p>
+              <div class="gallery-links">
+                <a class="gallery-link" href="https://public.tableau.com/app/profile/jonathan.capalbo/viz/Chicago_Food_Inspections_17926114522930/3Geography">Open Tableau Public</a>
+                <a class="gallery-link" href="downloads/Chicago_Food_Inspections.twbx" download>Download workbook</a>
+              </div>
+            </div>
+          </article>
 
-          <div class="work-overview">
-            <article class="routing-entry" aria-labelledby="report-feature-title">
-              <p class="work-origin">Comcast / Xfinity</p>
-              <h3 id="report-feature-title"><a href="report-distribution.html">Routing daily reports with Power Automate</a></h3>
-              <p>My team of 10 used to find and filter its sales and adherence reports each day. I built flows that sent the relevant figures by email or Microsoft Teams.</p>
-              <a class="work-link" href="report-distribution.html#example">Route a fictional report</a>
-            </article>
+          <div class="gallery-directory">
             <section class="project-paths" aria-labelledby="role-title">
               <h3 id="role-title">Browse projects by role</h3>
               <div class="role-links" role="navigation" aria-label="Projects by role">
@@ -131,166 +176,124 @@
                 <a class="role-resume" href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis / systems résumé (PDF)</a>
               </section>
             </section>
+            <section class="gallery-list" aria-labelledby="more-projects-title">
+              <h3 id="more-projects-title">More projects</h3>
+              <dl>
+                <div>
+                  <dt><a href="servicenow-njit-registrar.html">NJIT Registrar ServiceNow Portal</a></dt>
+                  <dd>In an NJIT lab, I organized 42 articles into 12 categories and revised a registration guide.</dd>
+                </div>
+                <div>
+                  <dt><a href="arcade-ticketing-modernization.html">Arcade Operations Ticketing Modernization</a></dt>
+                  <dd>For a hypothetical arcade, I proposed a workflow for five types of issues and wrote requirements and planned acceptance tests.</dd>
+                </div>
+                <div>
+                  <dt><a href="sql-movie-rental.html">Movie Rental Database</a></dt>
+                  <dd>My Oracle SQL course project tracked outstanding rentals across six related tables. A later portfolio revision added rental controls.</dd>
+                </div>
+                <div>
+                  <dt><a href="job-search-operations.html">Private Job-Search Operations System</a></dt>
+                  <dd>I adapted a private fork to check for duplicate jobs and track applications. The case study uses synthetic examples.</dd>
+                </div>
+              </dl>
+            </section>
           </div>
+        </div>
+      </section>
 
-          <article class="inspection-entry" aria-labelledby="chicago-feature-title">
+      <div class="career-background">
+        <section class="career-section" id="experience" aria-labelledby="experience-title">
+          <div class="career-contents">
+            <h2 id="experience-title">Work experience</h2>
+            <ul aria-label="More about my background">
+              <li><a href="#skills">Tools and methods</a></li>
+              <li><a href="#education">Education</a></li>
+            </ul>
+          </div>
+          <div class="career-jobs">
+            <article>
+              <h3>Comcast / Xfinity</h3>
+              <p class="career-position">Customer Account Executive</p>
+              <p class="career-period"><time datetime="2022-04">April 2022</time> to <time datetime="2026-09">September 2026</time></p>
+              <p>I handled about 25 customer interactions a day. I checked records and policies, worked with internal support teams on account issues, and recorded corrections and next steps in CSG.</p>
+              <p>When teammates asked for help with reporting, I built <a href="report-distribution.html">Power Automate flows</a> that sent sales and adherence figures to our team of 10. I also <a href="sales-activity-tracker.html#workplace-example">fixed Excel formulas</a> that left entire days out of the monthly totals.</p>
+            </article>
+            <article>
+              <h3>Harte Hanks</h3>
+              <p class="career-position">Customer Service Representative</p>
+              <p class="career-period"><time datetime="2021-02">February 2021</time> to <time datetime="2022-01">January 2022</time></p>
+              <p>I worked remotely on a state unemployment program. I investigated inquiries, explained next steps, and sorted and routed email requests. I wrote OneNote guides so teammates could find instructions, information sources and escalation contacts.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="career-section" id="skills" aria-labelledby="skills-title">
+          <h2 id="skills-title">Tools and methods</h2>
+          <dl class="career-methods">
             <div>
-              <p class="work-origin">Academic team project · City of Chicago public data</p>
-              <h3 id="chicago-feature-title"><a href="chicago-food-inspections.html">Chicago Food Inspections</a></h3>
-              <p>I built four Tableau dashboards from 123,673 inspection records covering 2019 to 2025. Among evaluated inspections, the failure rate fell from 24.9% in 2023 to 21.1% in 2025.</p>
-              <div class="dashboard-links">
-                <a class="work-link" href="https://public.tableau.com/app/profile/jonathan.capalbo/viz/Chicago_Food_Inspections_17926114522930/3Geography">Open dashboards on Tableau Public</a>
-                <a class="work-link" href="downloads/Chicago_Food_Inspections.twbx" download>Download Tableau workbook</a>
-              </div>
+              <dt>Excel reporting</dt>
+              <dd>At work I tracked activity and corrected monthly formulas. My public workbook uses fictional data, Excel tables, SUMIF and COUNTIF, cross-sheet formulas, validation and conditional formatting to reconcile totals. In class I used PivotTables to summarize sales.</dd>
             </div>
-            <figure>
-              <a href="chicago-food-inspections.html#dashboards" aria-label="View the Chicago food inspection dashboards"><img src="assets/images/chicago-trends.png" width="1800" height="1120" loading="lazy" decoding="async" alt="Chicago food inspections Tableau dashboard showing citywide failure-rate trends, inspection volume and evaluated outcome counts." /></a>
-              <figcaption>Citywide inspection outcomes by year</figcaption>
-            </figure>
-          </article>
+            <div>
+              <dt>SQL and Tableau</dt>
+              <dd>My Oracle coursework covered joins, keys, constraints and views. For Chicago food inspections I built four Tableau dashboards with shared filters, ZIP selection and year-by-year failure rates. My separate <a href="sales-activity-tracker.html#tableau-review">AI-assisted Tableau extension</a> uses fictional activity records.</dd>
+            </div>
+            <div>
+              <dt>Business analysis and planning</dt>
+              <dd>For a hypothetical arcade, I mapped processes, wrote requirements and user stories, and linked acceptance criteria to planned user acceptance tests. My coursework included Microsoft Project schedules with dependencies, deadlines and follow-ups, plus Agile, Scrum and Waterfall methods.</dd>
+            </div>
+            <div>
+              <dt>Systems and automation</dt>
+              <dd>At work I used Microsoft 365, Power Automate, Teams, SharePoint, OneNote, CSG and Smartsheet to deliver reports, document work and route escalations. In an NJIT lab I used ServiceNow Knowledge Management, Service Portal and HTML/CSS content blocks. I also studied Python and Java.</dd>
+            </div>
+          </dl>
+        </section>
 
-          <section class="work-directory" aria-labelledby="more-projects-title">
-            <h3 id="more-projects-title">More projects</h3>
-            <dl>
+        <section class="career-section" id="education" aria-labelledby="education-title">
+          <h2 id="education-title">Education</h2>
+          <div class="career-education">
+            <h3>New Jersey Institute of Technology</h3>
+            <dl class="career-degrees">
               <div>
-                <dt><a href="sales-activity-tracker.html">Activity Reporting: Excel and Tableau</a></dt>
-                <dd>I rebuilt my workplace Excel tracker with fictional data. I later added AI-assisted Tableau and React versions to the portfolio.</dd>
+                <dt>M.S. Business &amp; Information Systems</dt>
+                <dd>Expected December 2027</dd>
               </div>
               <div>
-                <dt><a href="servicenow-njit-registrar.html">NJIT Registrar ServiceNow Portal</a></dt>
-                <dd>In an NJIT lab, I organized 42 articles into 12 categories and revised a registration guide.</dd>
-              </div>
-              <div>
-                <dt><a href="arcade-ticketing-modernization.html">Arcade Operations Ticketing Modernization</a></dt>
-                <dd>For a hypothetical arcade, I proposed a workflow for five types of issues and wrote requirements and planned acceptance tests.</dd>
-              </div>
-              <div>
-                <dt><a href="sql-movie-rental.html">Movie Rental Database</a></dt>
-                <dd>My Oracle SQL course project tracked outstanding rentals across six related tables. A later portfolio revision added rental controls.</dd>
-              </div>
-              <div>
-                <dt><a href="job-search-operations.html">Private Job-Search Operations System</a></dt>
-                <dd>I adapted a private fork to check for duplicate jobs and track applications. The case study uses synthetic examples.</dd>
+                <dt>B.S. Business Administration</dt>
+                <dd>2024. GPA 3.97. Dean’s List every semester.</dd>
               </div>
             </dl>
-          </section>
-        </div>
-      </section>
-
-      <section class="section experience-section" id="experience">
-        <div class="section-heading compact-heading">
-          <h2>Work experience</h2>
-        </div>
-        <div class="timeline">
-          <article class="role-card">
-            <div class="role-meta">
-              <p class="role-date">April 2022–September 2026</p>
-              <p class="role-company">Comcast / Xfinity</p>
-            </div>
-            <div class="role-content">
-              <h3>Customer Account Executive</h3>
-              <p class="role-intro">Alongside customer account support, I developed reporting automation in response to teammates’ requests.</p>
-              <ul class="signal-list">
-                <li><strong>Reporting automation</strong><span>Filtered and delivered daily sales and team-adherence reports for a team of 10. <a href="report-distribution.html">Read the Power Automate case study</a>.</span></li>
-                <li><strong>Spreadsheet testing</strong><span>Found days missing from monthly Excel totals and corrected the formulas. <a href="sales-activity-tracker.html#workplace-example">Read the workplace example</a>.</span></li>
-                <li><strong>Investigation</strong><span>Investigated account and system questions by checking customer records, reviewing policies and procedures, and consulting internal support teams.</span></li>
-                <li><strong>Records and handoffs</strong><span>Reviewed account records across about 25 daily customer interactions, helped customers supply missing details or update outdated information, and documented decisions and follow-up in CSG.</span></li>
-              </ul>
-            </div>
-          </article>
-          <article class="role-card">
-            <div class="role-meta">
-              <p class="role-date">February 2021–January 2022</p>
-              <p class="role-company">Harte Hanks</p>
-            </div>
-            <div class="role-content">
-              <h3>Customer Service Representative</h3>
-              <p class="role-intro">Supported a state unemployment program remotely, investigating customer inquiries and explaining next actions.</p>
-              <ul class="signal-list">
-                <li><strong>Team reference guides</strong><span>Wrote OneNote reference guides covering task instructions, information sources, and escalation contacts for teammates.</span></li>
-                <li><strong>Email coordination</strong><span>Prioritized, categorized, and routed email requests while keeping records organized for team handoffs.</span></li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section skills-section" id="skills">
-        <div class="section-heading compact-heading">
-          <h2>Tools and methods</h2>
-        </div>
-
-        <div class="skill-groups tools-methods">
-          <article>
-            <h3 class="skill-index">Excel reporting</h3>
-            <p><strong>Workplace:</strong> Activity tracking, formula troubleshooting and checking monthly totals. <strong>Portfolio:</strong> Tables, SUMIF/COUNTIF, cross-sheet formulas, data validation, conditional formatting and reconciliation. <strong>Coursework:</strong> PivotTables for sales-data summaries.</p>
-          </article>
-          <article>
-            <h3 class="skill-index">Business analysis</h3>
-            <p><strong>Planning projects:</strong> Process mapping, requirements, user stories, acceptance criteria, requirements traceability, and UAT planning.</p>
-          </article>
-          <article>
-            <h3 class="skill-index">SQL and Tableau</h3>
-            <p><strong>Academic projects:</strong> Oracle SQL joins, keys, constraints and views; four Tableau dashboards with shared filters, ZIP selection, trend comparisons and defined failure-rate calculations using Chicago inspection data. The separate <a href="sales-activity-tracker.html#tableau-review">AI-assisted Tableau extension</a> uses fictional activity records.</p>
-          </article>
-          <article>
-            <h3 class="skill-index">Systems and automation</h3>
-            <p><strong>Workplace:</strong> Power Automate report distribution, Teams notifications and scheduled emails; Microsoft 365, SharePoint, OneNote guides, CSG, and Smartsheet forms and escalations. <strong>School lab:</strong> ServiceNow Knowledge Management and Service Portal; HTML/CSS content blocks.</p>
-          </article>
-        </div>
-        <p class="coursework-note"><strong>Project-management coursework:</strong> Microsoft Project schedules with dependencies, deadlines and follow-ups; Agile, Scrum and Waterfall methods. <strong>Additional coursework:</strong> Python and Java.</p>
-      </section>
-
-      <section class="section education-section" id="education">
-        <div class="education-intro">
-          <h2>Education</h2>
-        </div>
-
-        <div class="education-stack">
-          <article>
-            <span class="degree-level">Graduate · Expected December 2027</span>
-            <h3>M.S. Business &amp; Information Systems</h3>
-            <p>New Jersey Institute of Technology</p>
-          </article>
-          <article class="undergrad-card">
-            <span class="degree-level">Undergraduate · 2024 · 3.97 GPA</span>
-            <h3>B.S. Business Administration</h3>
-            <p>New Jersey Institute of Technology · Dean’s List, all semesters</p>
-          </article>
-        </div>
-
-        <div class="learning-grid">
-          <div>
-            <h3>Undergraduate coursework</h3>
-            <p>Database Systems for Managers · Business Data Analytics · Business Research Methods · Project Management for Managers</p>
+            <p><strong>Undergraduate coursework</strong> included Database Systems for Managers, Business Data Analytics, Business Research Methods and Project Management for Managers.</p>
+            <p><strong>Additional training</strong> included ServiceNow Administration Fundamentals and Knowledge Management Fundamentals.</p>
           </div>
-          <div>
-            <h3>Additional training</h3>
-            <p>ServiceNow Administration Fundamentals · Knowledge Management Fundamentals</p>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="contact-section" id="contact">
-        <div class="contact-copy">
-          <h2>Contact Jonathan</h2>
-          <p>I'm available for permanent, full-time roles in business analysis, reporting, operations, business systems, implementation support, and project coordination.</p>
-        </div>
-        <div class="contact-actions">
-          <a class="button contact-primary" href="mailto:jonathancapalbo1@gmail.com">Email Jonathan</a>
+        <section class="career-section career-files" id="resumes" aria-labelledby="resumes-title">
+          <h2 id="resumes-title">Résumés</h2>
+          <ul>
+            <li><a href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis and systems <span>(PDF)</span></a></li>
+            <li><a href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting and operations <span>(PDF)</span></a></li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="portfolio-contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-inner">
+          <h2 id="contact-title">Contact</h2>
           <div>
-            <a href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis / systems résumé (PDF)</a>
-            <a href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations résumé (PDF)</a>
-            <a href="https://www.linkedin.com/in/jonathan-capalbo-2a00b9140" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
-            <a href="https://github.com/jon314159" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <p>I’m looking for a permanent, full-time role in business analysis, reporting or operations. I’m also open to business systems, implementation support and project coordination. I can work remotely in the U.S. or relocate.</p>
+            <a class="contact-email" href="mailto:jonathancapalbo1@gmail.com">jonathancapalbo1@gmail.com</a>
+            <div class="contact-profiles">
+              <a href="https://www.linkedin.com/in/jonathan-capalbo-2a00b9140" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://github.com/jon314159" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <p><strong>Jonathan Capalbo</strong><span>Business analysis · Reporting · Operations · Systems</span></p>
-      <p>© 2026 Jonathan Capalbo.</p>
+    <footer class="portfolio-colophon">
+      <p>© 2026 Jonathan Capalbo</p>
     </footer>
   </body>
 </html>

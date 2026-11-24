@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Workplace Report Distribution | Jonathan Capalbo</title>
-    <meta name="description" content="A fictional illustration of report filtering and delivery, grounded in Jonathan Capalbo's workplace Power Automate experience." />
+    <meta name="description" content="How I used Power Automate to deliver daily sales and adherence reports at Comcast/Xfinity, with a fictional example you can try." />
     <meta name="theme-color" content="#0b1f33" />
     <meta property="og:title" content="Workplace Report Distribution | Jonathan Capalbo" />
-    <meta property="og:description" content="Workplace reporting initiative with a clearly labeled fictional routing example." />
+    <meta property="og:description" content="How I delivered daily sales and adherence reports to my team at Comcast/Xfinity. Try the routing rules on a fictional report." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://jonathancapalbo.me/report-distribution.html" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Workplace Report Distribution | Jonathan Capalbo" />
-    <meta name="twitter:description" content="Power Automate report distribution: the business problem, confirmed work, and a fictional process illustration." />
+    <meta name="twitter:description" content="How I delivered daily sales and adherence reports to my team at Comcast/Xfinity. Try the routing rules on a fictional report." />
     <link rel="canonical" href="https://jonathancapalbo.me/report-distribution.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/style.css?v=69" />
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="assets/css/report-routing.css?v=2" />
     <link rel="stylesheet" href="assets/css/case-opening.css?v=1" />
     <script src="assets/js/case-study.js?v=1" defer></script>
-    <script src="assets/js/report-routing.js" defer></script>
+    <script src="assets/js/report-routing.js?v=2" defer></script>
     <script src="/assets/js/analytics.js?v=2" defer></script>
   </head>
   <body class="case-study-page report-distribution-page">
@@ -39,14 +39,14 @@
       </div>
       <div class="report-intro">
         <h1>Routing daily reports with Power Automate</h1>
-        <p class="case-lede">At Comcast/Xfinity, my team of 10 had to find and filter several reports each day. I built flows that delivered the figures my teammates needed by email or Microsoft Teams.</p>
+        <p class="case-lede">At Comcast/Xfinity, my team of 10 had to find and filter sales and adherence reports each day. I built Power Automate flows that sent our team’s figures by email or Microsoft Teams.</p>
       </div>
     </header>
     <main id="case-content">
       <section class="section" id="example" data-read-label="Routing example" aria-labelledby="example-title">
         <div class="section-heading report-example-intro">
           <h2 id="example-title">Route a sample report</h2>
-          <p>Pick a team and date to preview a Teams message or email using fictional records. Try September 2 to see what happens when there’s no match.</p>
+          <p>Choose a team and a date to see which row supplies the message. Switch between Teams and email to compare the previews. Neither team has a report for September 2.</p>
         </div>
         <div class="routing-demo">
           <fieldset id="route-controls" hidden>
@@ -74,30 +74,30 @@
             </table>
             <div class="route-result" role="status" aria-live="polite" aria-atomic="true">
               <h3 id="route-title">Microsoft Teams preview</h3>
-              <p id="route-address">To Team Cedar chat</p>
+              <p id="route-address">Message to Team Cedar</p>
               <p id="route-subject" hidden></p>
-              <p id="route-body">Team Cedar recorded 18 completed activities on September 1, 2026.</p>
+              <p id="route-body">Team Cedar completed 18 activities on September 1, 2026.</p>
             </div>
           </div>
           <noscript><p>The example shows Cedar’s September 1 report. Enable JavaScript to try another request.</p></noscript>
-          <p class="report-evidence-note">The employer flows, records and screenshots are private. This example runs in your browser.</p>
+          <p class="report-evidence-note">The teams, records and messages in this example are fictional. Your selections only change the preview.</p>
         </div>
       </section>
       <section class="section report-notes" id="contribution" data-read-label="My contribution" aria-labelledby="work-title">
         <h2 id="work-title">What I built and checked</h2>
         <div>
-          <p>My teammates wanted an easier way to look up sales counts and compare team adherence. I set up the filters and delivery channels, and used scheduled messages and confirmation emails for recurring workflows.</p>
-          <p>I checked the screenshots posted in Teams against the expected date and filters. Reports arrived more consistently, and teammates spent less time finding and filtering them. I didn’t measure the time saved.</p>
+          <p>My teammates wanted to check sales counts and compare team adherence without searching each report. I set up the filters and delivery channels, scheduled recurring messages, and used confirmation emails.</p>
+          <p>When a report appeared in Teams, I checked its screenshot for the right date and filters. Reports arrived more consistently, and teammates spent less time looking for their figures. I didn’t track the time saved.</p>
         </div>
       </section>
       <section class="section report-notes" id="related-work" data-read-label="Related work" aria-labelledby="skills-title">
         <h2 id="skills-title">Related workbook</h2>
         <div>
           <a class="case-inline-link" href="sales-activity-tracker.html">Activity Reporting: Excel and Tableau</a>
-          <p>I describe a formula I corrected at work and use a separate fictional workbook to show how I check individual entries against their monthly totals.</p>
+          <p>Another reporting problem came up in my Excel tracker at Comcast. Some days were missing from the monthly totals. The case study explains the formula fix and includes a fictional workbook you can inspect.</p>
         </div>
       </section>
-      <section class="contact-section case-contact"><div class="contact-copy"><h2>Contact Jonathan</h2><p>Available for permanent, full-time work. Based in New Jersey and open to U.S. remote work and relocation.</p></div><div class="contact-actions"><a class="button contact-primary" href="mailto:jonathancapalbo1@gmail.com">Email Jonathan</a><div><a href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis / systems résumé (PDF)</a><a href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations résumé (PDF)</a><a href="index.html#experience">Professional experience</a></div></div></section>
+      <section class="contact-section case-contact"><div class="contact-copy"><h2>Contact Jonathan</h2><p>I’m looking for permanent, full-time work. I’m based in New Jersey and open to remote roles in the U.S., hybrid work, and relocation.</p></div><div class="contact-actions"><a class="button contact-primary" href="mailto:jonathancapalbo1@gmail.com">Email Jonathan</a><div><a href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis / systems résumé (PDF)</a><a href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations résumé (PDF)</a><a href="index.html#experience">Professional experience</a></div></div></section>
     </main>
     <footer><p><strong>Jonathan Capalbo</strong><span>Business analysis · Reporting · Operations · Systems</span></p><p>© 2026 Jonathan Capalbo.</p></footer>
   </body>

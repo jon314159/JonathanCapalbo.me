@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Activity Reporting: Excel and Tableau | Jonathan Capalbo</title>
-    <meta name="description" content="A workplace-origin Excel workflow rebuilt with fictional data, with new Tableau and React portfolio extensions for reviewing outcomes, daily targets, and source records." />
+    <meta name="description" content="See how I corrected monthly totals in an Excel activity tracker and rebuilt the workflow with fictional data. Compare daily and monthly targets in Excel, Tableau or the browser." />
     <meta name="theme-color" content="#0b1f33" />
     <meta property="og:title" content="Activity Reporting: Excel and Tableau | Jonathan Capalbo" />
-    <meta property="og:description" content="A fictional Excel reconstruction and new Tableau and React portfolio extensions, with separate monthly and daily goals." />
+    <meta property="og:description" content="Trace a day of activity through a fictional Excel workbook, then compare daily targets and monthly product goals in Tableau." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://jonathancapalbo.me/sales-activity-tracker.html" />
     <meta property="og:image" content="https://jonathancapalbo.me/assets/images/sales-activity-dashboard.png" />
@@ -16,7 +16,7 @@
     <meta property="og:image:alt" content="Fictional Excel dashboard with KPI cards and goal-comparison charts" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Activity Reporting: Excel and Tableau | Jonathan Capalbo" />
-    <meta name="twitter:description" content="A fictional Excel reconstruction and new Tableau and React portfolio extensions, with source records and separate targets." />
+    <meta name="twitter:description" content="Trace a day of activity through a fictional Excel workbook, then compare daily targets and monthly product goals in Tableau." />
     <meta name="twitter:image" content="https://jonathancapalbo.me/assets/images/sales-activity-dashboard.png" />
     <meta name="twitter:image:alt" content="Fictional Excel dashboard with KPI cards and goal-comparison charts" />
     <link rel="canonical" href="https://jonathancapalbo.me/sales-activity-tracker.html" />
@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="assets/css/case-opening.css?v=1" />
     <script src="assets/vendor/react-18.3.1/react.production.min.js" defer></script>
     <script src="assets/vendor/react-18.3.1/react-dom.production.min.js" defer></script>
-    <script src="assets/js/activity-explorer.js?v=1" defer></script>
+    <script src="assets/js/activity-explorer.js?v=2" defer></script>
     <script src="assets/js/case-study.js?v=1" defer></script>
     <script src="/assets/js/analytics.js?v=2" defer></script>
   </head>
@@ -51,7 +51,7 @@
         <div class="case-hero-copy">
           <p class="eyebrow">Rebuilt from a workplace reporting project</p>
           <h1>Activity reporting with Excel and Tableau</h1>
-          <p class="case-lede">At Comcast/Xfinity, I found days missing from my monthly totals and fixed the formulas. I rebuilt the Excel workflow with fictional records, then added AI-assisted Tableau and React views to compare results against daily targets.</p>
+          <p class="case-lede">At Comcast/Xfinity, I found and corrected Excel formulas that skipped entire days in my monthly report. The workbook here uses fictional sales data to show how I check a month’s total against the daily logs.</p>
           <div class="case-links">
             <a href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download Excel workbook</a>
             <a href="#analysis">Review Excel results</a>
@@ -62,12 +62,12 @@
         <div class="sales-hero-evidence">
           <figure class="sales-hero-preview">
             <a class="sales-hero-crop" href="assets/images/sales-activity-dashboard.png"><img src="assets/images/sales-activity-dashboard.png" width="1107" height="1090" decoding="async" fetchpriority="high" alt="Fictional Excel dashboard showing monthly KPI cards and goal-comparison charts" /></a>
-            <figcaption>Fictional workbook data. <a href="assets/images/sales-activity-dashboard.png">View full-size dashboard</a></figcaption>
+            <figcaption>July 2026 demo workbook. <a href="assets/images/sales-activity-dashboard.png">View full-size dashboard</a></figcaption>
           </figure>
         </div>
         <details class="case-project-notes">
           <summary>Workplace project and portfolio extensions</summary>
-          <p>Excel was the workplace initiative. All records, goals and results in the downloadable workbook are fictional. The Tableau and React views are portfolio extensions, separate from my academic Tableau projects. I checked the extensions against the same source rows and tested their controls.</p>
+          <p>I used Excel at work. For this portfolio, I created a new workbook with fictional records and goals. I later added AI-assisted Tableau and React versions, checked both against the same source rows, and tested their controls. My Tableau coursework was a separate project.</p>
         </details>
       </div>
     </header>
@@ -75,12 +75,12 @@
     <main id="case-content">
       <section class="section case-intro" id="workplace-example" data-read-label="Workplace Excel example">
         <div>
-          <p class="eyebrow">Workplace Excel troubleshooting</p>
-          <h2>Finding days missing from monthly totals.</h2>
+          <p class="eyebrow">At Comcast/Xfinity</p>
+          <h2>Why the monthly total came up short</h2>
         </div>
         <div class="case-intro-copy">
-          <p>At Comcast/Xfinity, I checked that my activity tracker calculated results and counted activity toward goals correctly. I found that some days were missing from the monthly totals and corrected the formulas so those days contributed correctly.</p>
-          <p>The downloadable workbook below is a separate fictional reconstruction. Its records, formulas and results illustrate reporting techniques; they are not a record of the original workplace fix.</p>
+          <p>I used my Excel tracker to check my progress toward goals. When I reviewed the monthly formulas, I found they skipped some days. I corrected them so those days counted toward the total.</p>
+          <p>In the public workbook, formulas pull each day’s figures into one row of Monthly Summary. You can compare that row with the daily worksheet and check exactly what went into the monthly total.</p>
         </div>
       </section>
 
@@ -88,15 +88,15 @@
         <div class="sales-analysis-heading">
           <p class="eyebrow">The reporting question</p>
           <h2>Which target are we measuring against?</h2>
-          <p>The workbook has independently editable monthly product goals and a daily completed-unit target. These answer different questions and should not be treated as equivalent goals.</p>
+          <p>The workbook has a monthly goal for each product and a separate daily target for completed units. Changing one leaves the other in place.</p>
         </div>
         <div class="sales-result-panel">
-          <p><strong>Fictional portfolio data.</strong> These figures come from the public reconstruction, separate from the <a href="#workplace-example">workplace formula-correction example</a>.</p>
+          <p><strong>July 2026, fictional workbook.</strong> The <a href="#workplace-example">original Excel fix</a> was part of my work at Comcast.</p>
           <div class="sales-result-contrast">
-            <article><span>Monthly product attainment</span><strong>104.5%</strong><p>324 completed units ÷ 310 combined product-goal units.</p></article>
-            <article><span>Days meeting the daily target</span><strong>14 / 31</strong><p>Days with at least 11 completed units; 17 days were below that threshold.</p></article>
+            <article><span>Monthly product goal reached</span><strong>104.5%</strong><p>324 completed units against a combined goal of 310.</p></article>
+            <article><span>Days meeting the daily target</span><strong>14 / 31</strong><p>Fourteen days reached 11 units. The other 17 fell short.</p></article>
           </div>
-          <p class="sales-finding">The daily target implies 341 units over 31 days (11 × 31), compared with 310 units in the monthly product goals. Against that 341-unit benchmark, the same 324 units represent 95.0% attainment. The target difference helps explain the contrast; it does not by itself establish a performance problem.</p>
+          <p class="sales-finding">At 11 units a day, July’s target adds up to 341. The same 324 units covered 95.0% of that target and 104.5% of the combined monthly product goals. The difference comes from which goal you use.</p>
           <dl class="sales-mini-metrics" aria-label="Fictional demonstration totals">
             <div><dt>465</dt><dd>Activities</dd></div>
             <div><dt>324</dt><dd>Completed units</dd></div>
@@ -109,44 +109,44 @@
         <div class="section case-band-inner">
           <div class="section-heading compact-heading">
             <p class="eyebrow">Excel reporting workflow</p>
-            <h2>Four connected layers separate assumptions, entry, calculation, and review.</h2>
+            <h2>How a daily entry reaches the dashboard</h2>
           </div>
 
           <div class="sales-architecture-grid">
             <article>
-              <span>01 · Control</span>
+              <span>Set the goals</span>
               <h3>Settings</h3>
-              <p>Centralizes fictional product labels, monthly goals, daily targets, target days, and point values.</p>
-              <small>One assumption layer</small>
+              <p>Set product names, monthly goals, daily targets, target days, and point values here.</p>
+              <small>Blue cells mark editable values</small>
             </article>
             <article>
-              <span>02 · Capture</span>
-              <h3>Day 01–31</h3>
-              <p>Uses a consistent table, validated fields, daily KPI cards, product totals, and Met/Below status.</p>
-              <small>620-row log capacity</small>
+              <span>Enter activity</span>
+              <h3>Day 01 to Day 31</h3>
+              <p>Enter each interaction on its day’s sheet. The sheet calculates totals by product and marks whether the day met its goal.</p>
+              <small>20 entries per day, 620 across July</small>
             </article>
             <article>
-              <span>03 · Consolidate</span>
+              <span>Add up the month</span>
               <h3>Monthly Summary</h3>
-              <p>Consolidates each day into an 11-column table and reconciles actuals with goals.</p>
-              <small>No monthly copy-and-paste</small>
+              <p>Each of the 31 rows pulls figures from one daily worksheet. The 11 columns let you compare that day’s results with its goals.</p>
+              <small>Daily entries update the summary</small>
             </article>
             <article>
-              <span>04 · Review</span>
+              <span>Compare results</span>
               <h3>Dashboard</h3>
-              <p>Shows four KPI cards, daily actual-versus-goal results, product comparisons, and goal-status counts.</p>
-              <small>Two decision views</small>
+              <p>Check completed units against the daily target, then compare each product’s total with its monthly goal.</p>
+              <small>Four summary figures and two charts</small>
             </article>
           </div>
-          <p class="sales-architecture-note"><strong>Settings → daily controls → monthly rollup → dashboard.</strong> The separation makes assumptions visible, inputs consistent, and totals traceable back to a specific day. The Tableau portfolio extension reuses those 465 fictional daily records for outcome, target, and record analysis.</p>
+          <p class="sales-architecture-note">To check a figure on the dashboard, find the matching row in Monthly Summary, then open that day’s worksheet tab. The example below follows July 1.</p>
         </div>
       </section>
 
       <section class="section workbook-walkthrough" id="walkthrough" aria-labelledby="walkthrough-title" data-read-label="Walkthrough">
         <div class="section-heading compact-heading">
           <p class="eyebrow">Follow one day through the workbook</p>
-          <h2 id="walkthrough-title">From individual records to a monthly view.</h2>
-          <p>These excerpts show the original downloadable workbook, using fictional July 2026 records.</p>
+          <h2 id="walkthrough-title">July 1, from entry to dashboard</h2>
+          <p>These screenshots come from the downloadable workbook.</p>
         </div>
         <article class="walkthrough-step">
           <div><h3>1. Enter the daily activity</h3><p>On Day 01, each row records a product, outcome, units, and follow-up status. The daily formulas total 17 activities, 11 completed units, and 13 points. The 10:05 AM follow-up remains visible but contributes no completed units.</p></div>
@@ -156,14 +156,14 @@
           </figure>
         </article>
         <article class="walkthrough-step">
-          <div><h3>2. Check the monthly rollup</h3><p>The first row of Monthly Summary links to Day 01 and carries across the same 17 activities, 11 units, and 13 points. Its 11-unit result meets the daily target. Day 03, at 8 units, is marked Below so the exception is visible alongside the totals.</p></div>
+          <div><h3>2. Check the monthly summary</h3><p>The first row of Monthly Summary shows the same 17 activities, 11 units, and 13 points. Day 01 met the 11-unit target. Day 03 finished at 8 units, so its status reads Below.</p></div>
           <figure class="portal-preview">
             <img src="assets/images/sales-activity-monthly-summary.png" width="1740" height="818" loading="lazy" decoding="async" alt="First twelve days of Monthly Summary, including Day 01 with 17 activities, 11 units, 13 points, and Met status; Day 03 shows 8 units and Below status." />
             <figcaption><span>Monthly Summary · First twelve days</span><a href="assets/images/sales-activity-monthly-summary.png" target="_blank" rel="noopener noreferrer">Open monthly view</a></figcaption>
           </figure>
         </article>
         <article class="walkthrough-step">
-          <div><h3>3. Review the whole month</h3><p>The dashboard combines all 31 days. Monthly product goals total 310 units, while the separate daily target totals 341 units (11 × 31). The same 324 completed units exceed the first target and fall short of the second, so the goal definition belongs beside the result.</p></div>
+          <div><h3>3. Review the whole month</h3><p>On the dashboard, find July 1 on the daily chart. Its 11 completed units sit exactly on the target line. The bar chart beside it shows how each product finished for the full month.</p></div>
           <figure class="portal-preview">
             <img src="assets/images/sales-activity-dashboard.png" width="1107" height="1090" loading="lazy" decoding="async" alt="Fictional monthly dashboard: 324 completed units against 310 monthly product-goal units; 14 days met the separate daily target and 17 were below." />
             <figcaption><span>Dashboard · All 31 days of fictional records</span><a href="assets/images/sales-activity-dashboard.png" target="_blank" rel="noopener noreferrer">Open dashboard view</a></figcaption>
@@ -173,30 +173,30 @@
 
       <section class="case-image-section sales-dashboard-section" id="dashboard" aria-labelledby="tracker-preview-title" data-read-label="Dashboard analysis">
         <div class="case-image-copy">
-          <p class="eyebrow">Decision view</p>
-          <h2 id="tracker-preview-title">The dashboard answers three different review questions.</h2>
+          <p class="eyebrow">Excel dashboard</p>
+          <h2 id="tracker-preview-title">What the July dashboard shows</h2>
           <ol class="sales-question-list">
             <li><span>01</span><div><strong>Which days missed the daily target?</strong><p>The line chart and status count show 14 days at or above 11 units and 17 below.</p></div></li>
-            <li><span>02</span><div><strong>Which products are driving variance?</strong><p>All four finished above goal; Optional Add-on had the largest positive variance at +6 units, or 108.1% attainment.</p></div></li>
+            <li><span>02</span><div><strong>Which product beat its goal by the most?</strong><p>All four products beat their goals. Optional Add-on had the largest margin at 6 units above goal, or 108.1% of its target.</p></div></li>
             <li><span>03</span><div><strong>Do the totals reconcile?</strong><p>Product units sum to 324, matching completed units, while product points sum to 402.5.</p></div></li>
           </ol>
           <a class="project-link case-inline-link" href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download the workbook to inspect formulas <span aria-hidden="true">↓</span></a>
         </div>
         <figure class="portal-preview sales-preview sales-dashboard-figure">
           <a class="sales-dashboard-crop" href="assets/images/sales-activity-dashboard.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/sales-activity-dashboard.png" width="1107" height="1090" loading="lazy" decoding="async" alt="Fictional Excel dashboard showing 465 activities, 324 completed units, 402.5 points, daily results versus goal, and product totals versus monthly goals" /></a>
-          <figcaption><span>Actual workbook dashboard with fictional records.</span><a href="assets/images/sales-activity-dashboard.png" target="_blank" rel="noopener noreferrer">View full-size dashboard <span aria-hidden="true">↗</span></a></figcaption>
+          <figcaption><span>July dashboard, fictional records.</span><a href="assets/images/sales-activity-dashboard.png" target="_blank" rel="noopener noreferrer">View full-size dashboard <span aria-hidden="true">↗</span></a></figcaption>
         </figure>
       </section>
 
       <section class="section" id="tableau-review" data-read-label="Tableau extension">
         <div class="section-heading compact-heading">
-          <p class="eyebrow">New portfolio extension · Fictional data</p>
-          <h2>Review outcomes and daily targets in Tableau.</h2>
-          <p>The Tableau workbook uses the same 465 fictional records as the Excel sample, with outcome counts, four daily views, an adjustable daily target and record drilldowns.</p>
+          <p class="eyebrow">Portfolio extension · Tableau</p>
+          <h2>Compare outcomes and daily targets in Tableau</h2>
+          <p>I used the same 465 records for the Tableau workbook. Select a product or outcome to inspect the entries behind a count, or change the daily target to see how many days met it.</p>
         </div>
         <figure class="tableau-static-preview">
           <a href="assets/images/tableau-activity-review.png"><img src="assets/images/tableau-activity-review.png" width="1440" height="1520" loading="lazy" decoding="async" alt="Static Tableau export of fictional July activity: 465 activities, 324 units, 14 Met days at 11 units per day, outcome count table, daily charts, and record review" /></a>
-          <figcaption>Static image exported from Tableau Desktop. Use the packaged workbook for native filters and drilldowns, or the separate browser view below. The controls in this image are not interactive.</figcaption>
+          <figcaption>Preview from Tableau Desktop. Open the workbook to use its filters, or try the browser version below.</figcaption>
         </figure>
         <div class="button-row">
           <a class="button button-primary" href="downloads/Activity_Outcomes_Daily_Target_Review.twbx" download>Download Tableau workbook</a>
@@ -206,22 +206,22 @@
 
       <section class="section" id="browser-explorer" data-read-label="Browser explorer">
         <div class="section-heading compact-heading">
-          <p class="eyebrow">Separate React browser implementation · Fictional data</p>
-          <h2>Inspect the same records in your browser.</h2>
-          <p>Change the target, compare product outcomes, and inspect a day or outcome count. This React view implements the review in the browser; the native Tableau workbook is available above.</p>
+          <p class="eyebrow">Portfolio extension · React</p>
+          <h2>Explore July’s activity records</h2>
+          <p>Try changing the daily target from 11 units to 12. The monthly totals stay the same, but fewer days meet the higher target. Select a day or an outcome count to read the underlying entries.</p>
         </div>
-        <p id="activity-explorer-status" role="status">Interactive controls become available when the browser view loads. Static results are below.</p>
+        <p id="activity-explorer-status" role="status">July’s results appear below. The filters load when JavaScript is available.</p>
         <button id="activity-explorer-retry" type="button" hidden>Retry browser view</button>
         <div id="activity-explorer-root" hidden></div>
         <div id="activity-explorer-fallback">
-          <p>July 2026: <strong>465 activities, 282 completed interactions, 324 completed units, and 402.5 points.</strong> Completed-interaction share is 60.6%; units per completed interaction is 1.15. At 11 units/day, 14 days are Met and 17 Below.</p>
+          <p>July 2026 had <strong>465 activities, 282 completed interactions, 324 completed units, and 402.5 points.</strong> Of all interactions, 60.6% were completed. Those averaged 1.15 units each. Fourteen days met the 11-unit target and 17 fell short.</p>
           <table class="activity-fallback-table">
             <caption>Fictional outcomes by product (interaction counts)</caption>
             <thead><tr><th scope="col">Product</th><th scope="col">Completed</th><th scope="col">Follow-up</th><th scope="col">No sale</th></tr></thead>
             <tbody><tr><th scope="row">Core</th><td>73</td><td>22</td><td>21</td></tr><tr><th scope="row">Plus</th><td>71</td><td>23</td><td>23</td></tr><tr><th scope="row">Premium</th><td>68</td><td>25</td><td>23</td></tr><tr><th scope="row">Add-on</th><td>70</td><td>25</td><td>21</td></tr></tbody>
           </table>
-          <p>Monthly product goals total 310 units. The separate daily target implies 341 units across July. Follow-up is an activity flag, not an unresolved backlog. Download the CSV to inspect every source record.</p>
-          <noscript><p>Enable JavaScript to use the React controls. The Tableau export, static results, Excel workbook, and source CSV remain available.</p></noscript>
+          <p>The monthly product goals total 310 units. The daily target adds up to 341 over July. A follow-up flag tells you what happened during that interaction. To inspect all the entries, download the CSV.</p>
+          <noscript><p>Enable JavaScript to use the filters, or download the data below.</p></noscript>
         </div>
         <p><a href="downloads/Fictional_Activities.csv" download>Download all 465 fictional source records (CSV)</a></p>
       </section>
@@ -229,19 +229,19 @@
       <section class="section sales-decisions-section" id="design-decisions" data-read-label="Design decisions">
         <div class="section-heading compact-heading sales-decisions-heading">
           <p class="eyebrow">Design decisions</p>
-          <h2>How the workbook controls support review.</h2>
-          <p>Settings hold assumptions; daily tables hold records; formulas consolidate the results.</p>
+          <h2>How I made the workbook easier to check</h2>
+          <p>The daily sheets share the same fields so I can compare one day with another and trace a monthly figure back to its source.</p>
         </div>
         <div class="sales-decision-table-wrap">
           <table class="sales-decision-table">
             <caption class="visually-hidden">Workbook design decisions, their implementation, and their operational value</caption>
             <thead><tr><th scope="col">Decision</th><th scope="col">Workbook implementation</th><th scope="col">Why it matters</th></tr></thead>
             <tbody>
-              <tr><th scope="row">Centralize assumptions</th><td data-label="Implementation">Editable product names, goals, target days, and point values live on Settings.</td><td data-label="Why it matters">A reviewer can change inputs once and see connected calculations respond.</td></tr>
-              <tr><th scope="row">Standardize daily entry</th><td data-label="Implementation">Thirty-one matching tables use validation for product, outcome, follow-up, and units.</td><td data-label="Why it matters">Consistent fields reduce ambiguous records and support reliable rollups.</td></tr>
-              <tr><th scope="row">Separate aggregation</th><td data-label="Implementation">Monthly Summary links one row to each day before the Dashboard reads the totals.</td><td data-label="Why it matters">The reporting layer stays reviewable without changing source entries.</td></tr>
-              <tr><th scope="row">Surface exceptions</th><td data-label="Implementation">IF, IFERROR, SUMIF, COUNTIF, and conditional formatting calculate status, attainment, totals, and exception counts.</td><td data-label="Why it matters">Below-goal days and follow-up activity are easier to find.</td></tr>
-              <tr><th scope="row">Document the handoff</th><td data-label="Implementation">A Read Me sheet explains workflow, editable cells, and privacy boundaries.</td><td data-label="Why it matters">The file can be understood without relying on its original builder.</td></tr>
+              <tr><th scope="row">Set goals in one place</th><td data-label="Implementation">The Settings sheet holds the product names, goals, target days, and point values.</td><td data-label="Why it matters">Change a goal once to update the relevant comparisons.</td></tr>
+              <tr><th scope="row">Use the same fields each day</th><td data-label="Implementation">Thirty-one matching tables use validation for product, outcome, follow-up, and units.</td><td data-label="Why it matters">Product names and outcomes match across all 31 sheets.</td></tr>
+              <tr><th scope="row">Keep a daily summary</th><td data-label="Implementation">Formulas pull the daily figures into Monthly Summary. The dashboard uses those totals.</td><td data-label="Why it matters">You can check one day’s totals without editing its entries.</td></tr>
+              <tr><th scope="row">Flag days below goal</th><td data-label="Implementation">IF, IFERROR, SUMIF, and COUNTIF calculate totals and goal status. Conditional formatting highlights the results.</td><td data-label="Why it matters">Below-goal days and follow-up activity are easier to find.</td></tr>
+              <tr><th scope="row">Explain how to use the file</th><td data-label="Implementation">The Read Me sheet explains the workflow and which cells to edit.</td><td data-label="Why it matters">Someone opening the file for the first time can find the input cells.</td></tr>
             </tbody>
           </table>
         </div>
@@ -251,7 +251,7 @@
         <div class="section sales-validation-grid">
           <div>
             <p class="eyebrow">Validation and QA</p>
-            <h2>The source rows match the dashboard totals.</h2>
+            <h2>Checking the dashboard against the source rows</h2>
             <ol class="sales-check-grid">
               <li><span>01</span><p><strong>Unit reconciliation</strong> Four product totals sum to 324, matching completed units.</p></li>
               <li><span>02</span><p><strong>Point reconciliation</strong> Product-level points sum to the 402.5 dashboard total.</p></li>
@@ -262,39 +262,39 @@
           <aside class="sales-tradeoff-card">
             <p class="eyebrow">Judgment and trade-off</p>
             <h3>Why use 31 daily tabs?</h3>
-            <p>The structure keeps each day's inputs, totals, and goal status together for review. The monthly summary connects those daily views to the dashboard.</p>
-            <div><strong>Maintenance trade-off</strong><span>Changes to repeated daily layouts or formulas need consistent updates across the tabs, followed by reconciliation of monthly totals.</span></div>
+            <p>A daily tab puts the entries beside their totals, so I can check one day without filtering a month of records.</p>
+            <div><strong>Maintenance trade-off</strong><span>If I change a daily formula, I have to update each sheet that uses it and recheck the monthly totals.</span></div>
           </aside>
         </div>
       </section>
 
       <section class="section case-intro" aria-labelledby="next-review-title">
-        <div><p class="eyebrow">Recommendation</p><h2 id="next-review-title">Confirm the goals before explaining the shortfall.</h2></div>
+        <div><p class="eyebrow">Recommendation</p><h2 id="next-review-title">What I’d check before changing the process</h2></div>
         <div class="case-intro-copy">
-          <p>First, confirm whether the monthly product goals and daily target are meant to differ. Then compare activity volume and completed units on below-target days before proposing a process change.</p>
-          <p>This fictional sample can demonstrate those checks, but it cannot establish causes such as staffing, demand, or employee performance. A real review would need that operating context.</p>
+          <p>I’d first ask whether the daily and monthly goals were set independently on purpose. Then I’d compare activity counts and completed units on the 17 days that fell short.</p>
+          <p>The workbook can show which days to investigate. To explain why they fell short, I’d also need to know about staffing and demand on those days.</p>
         </div>
       </section>
 
       <section class="section case-scope sales-scope-section" id="downloads" data-read-label="Downloads">
         <div class="scope-card">
           <p class="eyebrow">Inspect the work</p>
-          <h2>Review the formulas, controls, and fictional source rows yourself.</h2>
+          <h2>Excel workbook and build notes</h2>
           <div class="skill-list case-skill-list"><span>Cross-sheet formulas</span><span>SUMIF &amp; COUNTIF</span><span>Excel tables</span><span>Data validation</span><span>Conditional formatting</span><span>Goal analysis</span><span>Dashboard reporting</span><span>Process documentation</span></div>
           <div class="button-row sales-download-actions"><a class="button button-primary" href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download Excel workbook <span aria-hidden="true">↓</span></a><a class="button button-secondary" href="https://github.com/jon314159/JonathanCapalbo.me/blob/main/case-studies/sales-activity-tracker.md" target="_blank" rel="noopener noreferrer">View build notes <span aria-hidden="true">↗</span></a></div>
         </div>
         <aside class="scope-note">
           <h3>Inspect and change the formulas</h3>
-          <p>The fictional workbook contains no employer or customer data.</p>
-          <p>Formula cells are not protected in this demonstration, so reviewers can inspect and test the logic directly.</p>
+          <p>The download uses the same fictional data as the screenshots.</p>
+          <p>The worksheets are unprotected, so you can edit a formula and see how it changes the totals.</p>
         </aside>
       </section>
 
       <section class="contact-section case-contact">
         <div class="contact-copy">
           <p class="eyebrow">Contact</p>
-          <h2>Contact Jonathan.</h2>
-          <p>I'm open to business analysis, reporting, operations, and business systems opportunities.</p>
+          <h2>Contact Jonathan</h2>
+          <p>I’m looking for permanent, full-time work. I’m based in New Jersey and open to remote roles in the U.S., hybrid work, and relocation.</p>
         </div>
         <div class="contact-actions">
           <a class="button contact-primary" href="mailto:jonathancapalbo1@gmail.com">Email Jonathan</a>

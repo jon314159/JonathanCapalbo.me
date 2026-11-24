@@ -83,18 +83,18 @@
         h('p', null, h('strong', null, '324'), ' completed units'), h('p', null, h('strong', null, '402.5'), ' points'),
         h('p', null, h('strong', null, pct(completed.length / rows.length)), ' completed-interaction share'),
         h('p', null, h('strong', null, (total(completed, 'Units') / completed.length).toFixed(2)), ' units per completed interaction')),
-      h('p', {className:'activity-scope-note'}, 'Month totals and daily charts always use all 465 source records. Product and outcome controls narrow the outcome table and records. Chart and day selections narrow records only.'),
+      h('p', {className:'activity-scope-note'}, 'The monthly totals and daily charts cover all 465 entries. Choose a product or outcome to filter the counts and records below. Choosing a day or a count narrows only the record list.'),
       h('div', {className:'activity-controls'},
         select('Daily unit target', 'activity-target', String(target), Array.from({length:26}, (_, i) => String(i)), value => setTarget(Number(value))),
         select('Product', 'activity-product', product, ['All products', ...products], setProduct),
         select('Outcome', 'activity-outcome', outcome, ['All outcomes', ...outcomes], setOutcome),
         h('label', {htmlFor:'activity-day'}, 'Inspect day (records only)', h('select', {id:'activity-day', value:day, onChange:change(setDay)}, h('option', {value:'All days'}, 'All days'), daily.map(item => h('option', {key:item.date, value:item.date}, dateLabel(item.date))))),
         h('div', {className:'activity-reset-controls'}, button('Clear chart selection', clear, {disabled:day === 'All days' && !mark}), button('Reset all controls', reset))),
-      h('p', {className:'activity-target-summary', role:'status', 'data-testid':'target-summary'}, `${met} Met / ${31} days at ${target} units/day; ${31 - met} Below. This target implies ${target * 31} units over July. Monthly product goals total 310 units and remain separate.`),
+      h('p', {className:'activity-target-summary', role:'status', 'data-testid':'target-summary'}, `${met} Met / ${31} days at ${target} units/day; ${31 - met} Below. That daily target adds up to ${target * 31} units in July. The separate monthly product goals total 310 units.`),
       h('section', {className:'activity-outcomes', 'aria-labelledby':'activity-outcomes-title'},
         h('h3', {id:'activity-outcomes-title'}, 'Outcomes by product'),
-        h('p', null, `${subset.length} interactions in the product/outcome subset. Select a count to inspect those records.`),
-        h('table', {className:'activity-outcome-table'}, h('caption', null, 'Interaction counts; product and outcome controls apply'),
+        h('p', null, `${subset.length} interactions match the product and outcome filters. Select a count to see its records.`),
+        h('table', {className:'activity-outcome-table'}, h('caption', null, 'Interaction counts for the selected product and outcome'),
           h('thead', null, h('tr', null, h('th', {scope:'col'}, 'Product'), ...outcomes.map(value => h('th', {scope:'col', key:value}, value)))),
           h('tbody', null, products.filter(value => product === 'All products' || product === value).map(value => h('tr', {key:value},
             h('th', {scope:'row'}, short[value]), ...outcomes.map(result => {
@@ -107,25 +107,25 @@
         h(Chart, {title:'Completed-interaction share', measure:'share', maximum:1, format:value => `${Math.round(value * 100)}%`}),
         h(Chart, {title:'Units per completed interaction', measure:'per', maximum:2, format:value => value.toFixed(1)})),
       h('details', {className:'activity-daily-values'}, h('summary', null, 'Read daily values and inspect a day'),
-        h('table', null, h('caption', null, 'July 2026, all products and outcomes; status uses the selected daily target'),
+        h('table', null, h('caption', null, 'Daily results for all products and outcomes in July 2026. Status uses the selected daily target.'),
           h('thead', null, h('tr', null, ...['Day', 'Activities', 'Completed', 'Units', 'Status', 'Completed share', 'Units per completed'].map(value => h('th', {scope:'col', key:value}, value)))),
           h('tbody', null, daily.map(item => h('tr', {key:item.date}, h('th', {scope:'row'}, button(dateLabel(item.date), () => {setDay(item.date); setPage(0);}, {'aria-label':`Inspect records for ${dateLabel(item.date)}`, 'aria-pressed':day === item.date})),
             ...[['Activities', item.activities], ['Completed', item.completed], ['Units', item.units], ['Status', item.units >= target ? 'Met' : 'Below'], ['Completed share', pct(item.share)], ['Units per completed', item.per.toFixed(2)]].map(([label, value]) => h('td', {key:label, 'data-label':label}, value))))))),
       h('section', {className:'activity-records', 'aria-labelledby':'activity-records-title'},
         h('h3', {id:'activity-records-title'}, 'Fictional records'),
         h('p', {role:'status', 'aria-atomic':'true', 'data-testid':'record-count'}, `${records.length} matching records. ${scope}.`),
-        records.length === 0 ? h('div', {className:'activity-empty'}, h('p', null, 'No records match these controls and selections. Clear chart selection to return to the product/outcome subset, or reset all controls for all 465 records.')) :
-          h('table', {className:'activity-record-table'}, h('caption', null, `Records ${currentPage * pageSize + 1}–${Math.min((currentPage + 1) * pageSize, records.length)} of ${records.length}; open Details for all 10 source fields`),
+        records.length === 0 ? h('div', {className:'activity-empty'}, h('p', null, 'No records match this selection. Choose Clear chart selection to keep your product and outcome filters, or Reset all controls to see all 465 records.')) :
+          h('table', {className:'activity-record-table'}, h('caption', null, `Records ${currentPage * pageSize + 1}–${Math.min((currentPage + 1) * pageSize, records.length)} of ${records.length}. Open Details for all 10 source fields.`),
             h('thead', null, h('tr', null, ...['ID', 'Date', 'Product', 'Outcome', 'Units', 'Points', 'Details'].map(value => h('th', {scope:'col', key:value}, value)))),
             h('tbody', null, visible.map(row => h('tr', {key:row['Interaction ID']}, h('th', {scope:'row'}, row['Interaction ID']),
               ...[['Date', dateLabel(row.Date)], ['Product', short[row.Product]], ['Outcome', row.Outcome], ['Units', row.Units], ['Points', row.Points]].map(([label, value]) => h('td', {key:label, 'data-label':label}, value)),
               h('td', {'data-label':'Details'}, h('details', null, h('summary', {'aria-label':`Details for ${row['Interaction ID']}`}, 'Details'), h('dl', {className:'activity-record-detail'}, fields.map(field => h('div', {key:field}, h('dt', null, field === 'Original row' ? 'Source row' : field), h('dd', null, String(row[field]))))))))))),
         h('div', {className:'activity-pagination'}, button('Previous records', () => setPage(currentPage - 1), {disabled:currentPage === 0}), h('span', null, `Page ${currentPage + 1} of ${pages}`), button('Next records', () => setPage(currentPage + 1), {disabled:currentPage >= pages - 1}))),
-      h('p', {className:'activity-scope-note'}, 'Follow-up is a recorded activity flag, not an unresolved backlog. These fictional records do not establish causes, response times, revenue, or improvement. Dates are reporting dates in July 2026.'));
+      h('p', {className:'activity-scope-note'}, 'A follow-up flag records what happened during an interaction. The records have no later status to tell you whether that follow-up is still open.'));
   }
 
   function fail() {
-    status.textContent = 'The interactive view could not load. The static totals, Tableau preview, and downloads remain available. Retry the browser view to try again.';
+    status.textContent = 'The interactive view couldn’t load. You can retry below, read July’s totals, or download the source records.';
     status.hidden = false;
     retry.hidden = false;
     fallback.hidden = false;

@@ -33,22 +33,22 @@
 <body>
   <main class="status-sheet">
     <header>
-      <p class="status-meta">Arcade ticketing · Sample from a hypothetical project</p>
+      <p class="status-meta">Arcade ticketing · Fictional project</p>
       <h1>Project status update</h1>
       <p>From Jonathan Capalbo, project coordinator<br>For the arcade operations manager</p>
-      <p><strong>Decision needed before test setup:</strong> Which time zone should the arcade use to count tickets closed during a reporting period?</p>
+      <p><strong>Before we prepare the test, please confirm which time zone shift leads should use for the daily close.</strong></p>
     </header>
     <section>
-      <h2>Decision owner</h2>
-      <p>The operations manager reviews the <a href="arcade-ticketing-evidence.html#req-09">closure-reporting requirement (REQ-09)</a>. It defines which tickets count as closed and leaves the location’s time zone open. Please confirm the time zone that shift leads use for the daily close.</p>
+      <h2>Why the time zone matters</h2>
+      <p>The <a href="arcade-ticketing-evidence.html#req-09">reporting requirement (REQ-09)</a> counts a ticket on the day it closes. A closure at the start of Monday belongs in Monday’s report. One at the start of Tuesday belongs in Tuesday’s. We need the location’s time zone to know which midnight to use.</p>
     </section>
     <section>
-      <h2>What depends on the decision</h2>
-      <p>The <a href="arcade-ticketing-evidence.html#uat-13">planned period-boundary test (UAT-13)</a> uses four ticket closures. For a Monday report, a ticket closed at midnight as Monday begins should count. One closed at midnight as Tuesday begins belongs in Tuesday’s report. The tester needs the time zone to set all four timestamps. Test execution is pending.</p>
+      <h2>What the tester will check</h2>
+      <p>The <a href="arcade-ticketing-evidence.html#uat-13">planned test (UAT-13)</a> uses four closure times. Two fall just before and exactly at the start of Monday. The other two fall just before and exactly at the start of Tuesday. Only the middle two should count for Monday. The tester hasn’t run this check yet.</p>
     </section>
     <section>
-      <h2>Next action</h2>
-      <p>At the next requirements review, the coordinator will ask the operations manager to confirm the time zone and record it against REQ-09. The tester can then prepare the four records and check which two count for Monday using the cutoff rules in <a href="arcade-ticketing-evidence.html#ac-09">acceptance criterion AC-09</a>.</p>
+      <h2>Next review</h2>
+      <p>At our next requirements review, I’ll record the time zone you choose under REQ-09. The tester can then prepare the four records using the cutoff rules in <a href="arcade-ticketing-evidence.html#ac-09">acceptance criterion AC-09</a>.</p>
     </section>
     <footer>
       <a href="downloads/Arcade_Project_Status_Update.pdf" download>Download one-page update (PDF)</a>

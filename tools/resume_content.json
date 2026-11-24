@@ -2,7 +2,7 @@
   "name": "Jonathan Capalbo",
   "contact": {
     "location": "Point Pleasant, NJ",
-    "preference": "Open to U.S. remote work or relocation",
+    "preference": "Open to U.S. remote roles, hybrid work and relocation",
     "email": "jonathancapalbo1@gmail.com",
     "portfolio": "https://jonathancapalbo.me/",
     "linkedin": "https://www.linkedin.com/in/jonathan-capalbo-2a00b9140"
@@ -15,10 +15,10 @@
       "location": "Remote",
       "bullets": [
         {
-          "business-analysis": "When teammates asked for an easier way to find their daily reports, I built Power Automate flows that filtered sales and adherence results for a team of 10 and sent them by email or Microsoft Teams.",
+          "business-analysis": "Built Power Automate flows after teammates asked for easier access to daily reports. The flows sent filtered sales and adherence results to a team of 10 by email or Microsoft Teams.",
           "reporting-operations": "Built Power Automate flows to deliver daily reports to a team of 10. Checked the date and filters on report screenshots posted in Teams."
         },
-        "Fixed Excel formulas that had left some days of activity out of the monthly totals.",
+        "Corrected Excel formulas that skipped days when calculating monthly activity totals.",
         "Reviewed account records across about 25 customer interactions a day. Consulted internal teams on account and system issues and logged decisions and follow-up in CSG."
       ]
     },
@@ -67,8 +67,8 @@
     "excel": {
       "name": "Activity Reporting: Excel and Tableau",
       "url": "https://jonathancapalbo.me/sales-activity-tracker.html",
-      "scope": "Portfolio reconstruction of a workplace Excel tracker",
-      "description": "Rebuilt my workplace tracker with 465 fictional records and reconciled daily and monthly totals. Added a Tableau view showing which days met the daily target."
+      "scope": "Portfolio project based on workplace Excel reporting",
+      "description": "Built a separate Excel workbook with 465 fictional activity records. Checked the monthly totals against daily entries and added a Tableau view showing which days met the daily target."
     }
   },
   "variants": {
@@ -78,7 +78,7 @@
       "layout": "experience-first",
       "headline": "Target roles | Business Analyst &amp; Business Systems Analyst",
       "portfolio_fragment": "business-analyst",
-      "summary": "At Comcast, I investigated account issues and helped teammates get the reports they needed. In my project work, I designed a ServiceNow knowledge portal and mapped how arcade staff would report, assign and close tickets. Available for full-time work while completing my NJIT master’s degree.",
+      "summary": "At Comcast, I investigated account issues and helped teammates get the reports they needed. In a ServiceNow lab, I built a searchable registrar portal. For a separate planning project, I mapped how arcade staff would report, assign and close tickets. Available for full-time work while completing my NJIT master's degree.",
       "experience_bullet_order": {
         "Comcast / Xfinity": [0, 2, 1]
       },

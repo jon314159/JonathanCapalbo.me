@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job-Search Operations Workflow | Jonathan Capalbo</title>
-    <meta name="description" content="Jonathan Capalbo's independent job-search workflow: duplicate checks, source verification, resume review, and application-status records supported by evidence and human review." />
+    <meta name="description" content="How Jonathan Capalbo adapted a Python job tracker to catch résumé changes, check interrupted submissions and keep follow-up dates accurate." />
     <meta name="theme-color" content="#0b1f33" />
     <meta property="og:title" content="Job-Search Operations Workflow | Jonathan Capalbo" />
-    <meta property="og:description" content="An independent Python-based workflow for duplicate checks, source verification, resume review, and evidence-based application records." />
+    <meta property="og:description" content="How I keep track of résumé changes, applications that need a status check and follow-up messages I’ve sent." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://jonathancapalbo.me/job-search-operations.html" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Job-Search Operations Workflow | Jonathan Capalbo" />
-    <meta name="twitter:description" content="Duplicate checks, source verification, resume review, and human approval in an independent job-search workflow." />
+    <meta name="twitter:description" content="How I keep track of résumé changes, applications that need a status check and follow-up messages I’ve sent." />
     <link rel="canonical" href="https://jonathancapalbo.me/job-search-operations.html" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/style.css?v=68" />
@@ -39,15 +39,15 @@
         <div class="case-hero-copy">
           <p class="eyebrow">Independent Python project · Private fork</p>
           <h1>Tracking my job search</h1>
-          <p class="case-lede">I adapted Mads Lorentzen’s AI Job Search for my own applications. I added checks for revised résumés, interrupted submissions and follow-up messages so I could tell which applications still needed attention.</p>
+          <p class="case-lede">I adapted Mads Lorentzen’s AI Job Search to keep track of which résumé I’d checked, whether an employer received my application and when I last followed up.</p>
           <div class="case-links">
-            <a href="#controls">Review the workflow controls</a>
+            <a href="#controls">How I check an application</a>
             <a href="https://github.com/MadsLorentzen/ai-job-search" target="_blank" rel="noopener noreferrer">Mads Lorentzen’s original project</a>
           </div>
         </div>
         <aside class="case-cover-excerpt" aria-labelledby="submission-excerpt-title">
           <h2 id="submission-excerpt-title">Submission uncertain</h2>
-          <p>In this sample, the portal times out after I press Submit. The tracker keeps the résumé marked prepared and the submission unresolved while I check the portal for a receipt.</p>
+          <p>In this example, the portal times out after I press Submit. I leave the application open in my tracker while I check whether the employer received it.</p>
           <a href="#examples">Read the sample application record</a>
         </aside>
       </div>
@@ -55,143 +55,113 @@
     <main id="case-content">
       <section class="section job-contribution" id="contribution" aria-labelledby="contribution-title" data-read-label="My contribution">
         <div class="section-heading compact-heading">
-          <p class="eyebrow">My contribution</p>
-          <h2 id="contribution-title">Three additions to the existing workflow.</h2>
-          <p>Mads Lorentzen supplied the original framework and commands. I maintain my changes in a private Git fork, using Python, JSON and CSV records, PDF checks and AI assistants.</p>
+          <h2 id="contribution-title">What I changed</h2>
+          <p>Lorentzen wrote the original framework and commands. I maintain my own version in a private Git fork. It uses Python to work with JSON and CSV records and check résumé PDFs. AI assistants help me coordinate the work.</p>
         </div>
         <div class="job-change-list">
           <article>
-            <h3>Make resume verification depend on current inputs</h3>
-            <dl>
-              <div><dt>Problem</dt><dd>A previous check may no longer cover an edited resume or changed supporting evidence.</dd></div>
-              <div><dt>My change</dt><dd>I added saved verification records tied to the document and evidence inputs, with invalidation when those inputs change.</dd></div>
-              <div><dt>How I checked it</dt><dd>A regression test changes the resume source, PDF, verification contract, and claim text in turn, then checks that the earlier verification is no longer valid.</dd></div>
-            </dl>
+            <h3>Recheck a résumé after an edit</h3>
+            <p>I tied each review to the exact résumé and supporting material I checked. If I change a claim or rebuild the PDF, the tracker flags the affected checks for another review.</p>
           </article>
           <article>
-            <h3>Preserve uncertainty after a submission attempt</h3>
-            <dl>
-              <div><dt>Problem</dt><dd>An interrupted portal session can leave it unclear whether the application went through.</dd></div>
-              <div><dt>My change</dt><dd>I added submission-state recovery rules that require a status check before another attempt and evidence before recording confirmation.</dd></div>
-              <div><dt>How I checked it</dt><dd>Regression tests check that an uncertain attempt cannot be reset without evidence and that a confirmed state requires success evidence.</dd></div>
-            </dl>
+            <h3>Track interrupted submissions</h3>
+            <p>A portal timeout can mean the application went through and the receipt never appeared. I added an “uncertain” status that requires me to check what happened before trying again. I only mark the role as applied once I have confirmation.</p>
           </article>
           <article>
-            <h3>Separate planned follow-ups from actual contact</h3>
-            <dl>
-              <div><dt>Problem</dt><dd>A draft or promise to send can be mistaken for completed outreach, making follow-up counts and reminder dates unreliable.</dd></div>
-              <div><dt>My change</dt><dd>I separated planned messages from confirmed sends, based reminders on actual contact dates, and kept ambiguous historical entries flagged for review.</dd></div>
-              <div><dt>How I checked it</dt><dd>Focused tests use synthetic records to verify that drafts do not consume follow-up attempts, duplicate records of the same sent message count once, and administrative edits do not reset the contact date.</dd></div>
-            </dl>
+            <h3>Count follow-ups when I send them</h3>
+            <p>I keep drafts separate from messages I’ve sent. Reminders now use the last actual contact date. I flagged older entries for review wherever I couldn’t tell whether I’d sent the message.</p>
           </article>
         </div>
       </section>
       <section class="section job-workflow-section" id="workflow" aria-labelledby="workflow-title" data-read-label="Workflow diagram">
         <div class="section-heading compact-heading">
-          <p class="eyebrow">Workflow diagram · Human review at consequential steps</p>
-          <h2 id="workflow-title">From a request to a verified record.</h2>
-          <p>AI assistants help coordinate requests and local project work. The workflow checks evidence and maintains records; I review decisions and authorize submissions. A separate reporting process reads those records for summaries and audits.</p>
+          <h2 id="workflow-title">How I handle an application</h2>
+          <p>I use an AI assistant and local tools to find openings and prepare materials. I review the application and decide whether to send it.</p>
         </div>
         <div class="job-workflow-lanes">
           <div>
-            <h3 id="job-main-flow-title">Requested work and application decisions</h3>
+            <h3 id="job-main-flow-title">Application steps</h3>
             <ol class="job-workflow-flow" aria-labelledby="job-main-flow-title" role="list">
-              <li><h4>Jonathan: request and scope</h4><p>Set the task, preferences, and constraints.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
-              <li><h4>AI assistant: coordinate local work</h4><p>Clarify missing details, pass constraints and evidence to local tasks, and bring results back for review.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
-              <li><h4>Local workflow: discover and check jobs</h4><p>Normalize and deduplicate postings, retain snapshots, and verify employer or ATS availability and hard-gate evidence before ranking.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
-              <li><h4>Prepare and verify materials</h4><p>Evaluate, draft, review, revise, and verify against supported candidate evidence. Prepared materials do not authorize submission.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
-              <li><h4>Jonathan: review and authorize</h4><p>Review the materials and answers. Approve consequential consent, certification, and the final submission.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
-              <li><h4>Browser or Jonathan: complete portal steps</h4><p>Complete authorized actions and any manual or account gates. Pause when a portal requires my action.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
-              <li><h4>Verify the outcome</h4><p>Retain success evidence for the same job and account. An uncertain result stays unresolved and requires a status check before retry.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
-              <li><h4>Preview and record the result</h4><p>Match the exact job, tracker row, and retained archive. Preview the update, then save only the supported status and artifacts.</p></li>
+              <li><h4>Set the search</h4><p>I give the assistant my preferences and limits for this request.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>Coordinate the search</h4><p>The assistant asks for missing details, passes the request to my local tools and brings back the results.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>Check the openings</h4><p>My tools standardize listings, look for duplicates and save copies of the postings. Before ranking a role, they check its availability on the employer’s site or application portal and look for evidence that it meets my requirements.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>Prepare the materials</h4><p>The workflow evaluates the role and helps draft and revise the application. I check the résumé’s claims against my experience.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>Approve the application</h4><p>I review the documents, answers, consent requests and certifications before approving submission.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>Complete the portal steps</h4><p>The browser carries out the steps I approved. I take over when the portal needs a manual action or an account check.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>Check for a receipt</h4><p>I look for confirmation tied to the same opening and account. If the portal leaves the outcome unclear, I check its status before any retry.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>Update the tracker</h4><p>I match the opening to its tracker row and saved files, then preview the update before recording the status and documents.</p></li>
             </ol>
-            <p class="job-workflow-note">An ambiguous result returns to a status check and human review. It is not recorded as applied. <a href="#examples">Read the uncertain-submission example.</a></p>
+            <p class="job-workflow-note"><a href="#examples">See what happens when the portal times out</a></p>
           </div>
           <aside class="job-reporting-lane" aria-labelledby="job-reporting-title">
             <h3 id="job-reporting-title">Reports and audits</h3>
-            <p class="job-reporting-scope">A separate reporting lane reads canonical job-search state. It does not run the application steps.</p>
+            <p class="job-reporting-scope">A separate process reads the tracker so I can review outstanding work.</p>
             <ol class="job-workflow-flow" role="list">
-              <li><h4>Read the existing state</h4><p>Collect current job-search records and the canonical daily summary.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
-              <li><h4>Summarize findings</h4><p>Review record quality, unresolved outcomes, and follow-up dates in private reports.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
-              <li><h4>Jonathan: review findings</h4><p>Decide whether a finding needs separately authorized follow-up work.</p></li>
+              <li><h4>Read the tracker</h4><p>The reporting process reads the current records and the daily summary.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>List what needs attention</h4><p>My private reports flag record errors, unresolved submissions and follow-up dates.</p><span class="job-flow-connector" aria-hidden="true">↓</span></li>
+              <li><h4>Decide what to do</h4><p>I review the findings and separately approve any correction, outreach or submission.</p></li>
             </ol>
-            <p class="job-workflow-note">Reports and audits support review. Repairs, outreach, and submissions require separate authorization.</p>
           </aside>
         </div>
       </section>
       <section class="case-band" id="controls" aria-labelledby="controls-title" data-read-label="Review points">
         <div class="section case-band-inner">
           <div class="section-heading compact-heading">
-            <p class="eyebrow">Workflow controls</p>
-            <h2 id="controls-title">Four review points, each with a next action.</h2>
-            <p>These checks connect job identity, posting evidence, resume versions, and application status. Each determines what can proceed and what needs review.</p>
+            <h2 id="controls-title">What I check before updating the tracker</h2>
           </div>
           <div class="case-feature-grid">
             <article>
-              <span class="job-stage">01 · Job identity</span>
-              <h3>Identify duplicate jobs</h3>
-              <p>Compare job identities and combine matching discovery records, retaining source references and conflicting details.</p>
-              <p class="job-next"><strong>Next action:</strong> Review conflicts before treating the links as one opening; keep ambiguous roles separate.</p>
+              <h3>Do two listings refer to the same job?</h3>
+              <p>I compare the postings before combining them. If I can confirm a match, I keep both sources and note any conflicting details. When the match is unclear, I keep the records separate.</p>
             </article>
             <article>
-              <span class="job-stage">02 · Posting evidence</span>
-              <h3>Verify the posting</h3>
-              <p>Keep the posting snapshot, source, and check time together. A blocked or malformed response leaves the check unresolved; it does not establish that the job is closed.</p>
-              <p class="job-next"><strong>Next action:</strong> Inspect an authoritative source before treating the posting as verified.</p>
+              <h3>Is the job still open?</h3>
+              <p>I save a copy of the posting with its source and the time I checked it. If the site blocks the request or returns an unreadable page, I leave the status unresolved until I can verify it with the employer or its application portal.</p>
             </article>
             <article>
-              <span class="job-stage">03 · Application materials</span>
-              <h3>Check the resume</h3>
-              <p>Check PDF page count and extracted text, then review layout and factual claims. A changed resume or relevant evidence input invalidates the affected prior verification.</p>
-              <p class="job-next"><strong>Next action:</strong> Repeat the affected checks and human review before using that version.</p>
+              <h3>Is this the résumé I reviewed?</h3>
+              <p>I check the PDF’s page count and extracted text, look at its layout and verify its claims. When the document or the evidence behind a claim changes, I repeat the affected checks before using it.</p>
             </article>
             <article id="submission-control">
-              <span class="job-stage">04 · Application status</span>
-              <h3>Confirm application status</h3>
-              <p>Prepared materials and submission attempts are not confirmed applications. Require success evidence before marking a role applied.</p>
-              <p class="job-next"><strong>Next action:</strong> If the outcome is uncertain, check portal status before deciding whether to submit again. Preview tracker changes before saving.</p>
+              <h3>Did the employer receive it?</h3>
+              <p>I look for confirmation on the same job and account. If I only have a prepared résumé or a record of clicking Submit, I check the portal before changing the application status. I preview the tracker update before saving.</p>
             </article>
           </div>
         </div>
       </section>
       <section class="section job-walkthrough" id="examples" aria-labelledby="example-title" data-read-label="Worked example">
         <div class="section-heading compact-heading">
-          <p class="eyebrow">Synthetic illustration · Control 04</p>
-          <h2 id="example-title">The portal stops responding after Submit.</h2>
-          <p>This invented scenario illustrates the application-status control. It is not an execution log or a real application record.</p>
+          <p class="eyebrow">Fictional application record</p>
+          <h2 id="example-title">The portal times out after I click Submit</h2>
         </div>
         <dl class="job-example-record">
-          <div><dt>Situation</dt><dd>The resume is prepared and checked. After an authorized submission attempt, the portal times out before showing a result.</dd></div>
-          <div><dt>Available evidence</dt><dd>The job, account, and attempted submission are known. No success confirmation has been observed.</dd></div>
-          <div><dt>Decision</dt><dd>Check the status for the same job and account. Do not repeat the submission while its outcome is unknown.</dd></div>
-          <div><dt>Resulting status</dt><dd>Keep the submission uncertain and the materials recorded as prepared. Do not mark the application confirmed.</dd></div>
+          <div><dt>What happened</dt><dd>I checked the résumé and approved submission. The portal timed out before it showed a result.</dd></div>
+          <div><dt>What I know</dt><dd>I have the job, the account and the attempted submission on record. I have no receipt.</dd></div>
+          <div><dt>Tracker status</dt><dd>The materials stay marked prepared and the submission stays uncertain. I check the same opening in the same account before deciding whether to try again.</dd></div>
         </dl>
-        <h3>What the status check permits next</h3>
+        <h3>What happens next</h3>
         <div class="job-branches">
-          <article><h4>If the portal confirms receipt</h4><p>Retain the success evidence, record confirmation, and review the tracker update. Do not submit again.</p></article>
-          <article><h4>If the result is still unclear</h4><p>Keep the submission uncertain. Pause for human review and obtain an authoritative status check before considering another attempt.</p></article>
-          <article><h4>If the portal establishes no submission</h4><p>Record that evidence before resetting the submission state. Resume preparation and obtain approval for any new submission.</p></article>
+          <article><h4>The portal confirms receipt</h4><p>I save the receipt, review the tracker update and mark the application confirmed.</p></article>
+          <article><h4>The result is still unclear</h4><p>I keep the status uncertain and pause until I can verify what happened with the employer or its portal.</p></article>
+          <article><h4>The portal confirms it received nothing</h4><p>I record that evidence before resetting the status. Another submission requires my approval.</p></article>
         </div>
-        <a class="project-link case-inline-link" href="#submission-control">Return to the application-status control</a>
+        <a class="project-link case-inline-link" href="#submission-control">Back to the receipt check</a>
       </section>
       <section class="section job-validation" id="validation" aria-labelledby="validation-title" data-read-label="Validation">
         <div class="section-heading compact-heading">
-          <p class="eyebrow">Maintenance and validation</p>
-          <h2 id="validation-title">Check the rule when its inputs change.</h2>
+          <h2 id="validation-title">What the regression tests covered</h2>
         </div>
-        <p>When maintaining resume verification, a key question is whether an earlier result still applies after an edit. The check compares the current inputs with those recorded during verification. Changed inputs reopen the affected checks, so an old result cannot silently cover a new version.</p>
-        <p><strong>Executed validation:</strong> On September 19, 2026, three existing regression tests passed using temporary synthetic records: verification invalidation after input changes, recovery from an uncertain submission, and rejection of confirmation without success evidence.</p>
-        <p>On September 28, 2026, focused follow-up tests also passed using synthetic records, including planned-versus-sent handling, duplicate message records, and contact-date validation.</p>
-        <p>These are focused checks of the local implementation, not live portal submissions or a full-workflow test. Local change history and current code support the customizations described above.</p>
+        <p>On September 19, 2026, three regression tests passed using temporary sample records. One changed the résumé source, PDF, verification rules and claim text one at a time. Each change invalidated the earlier check. The other two tests verified that resetting an uncertain attempt requires evidence and that recording a confirmed application requires proof of receipt.</p>
+        <p>On September 28, 2026, follow-up tests passed on sample messages. Drafts didn’t count as attempts, two records of the same sent message counted once, and editing a tracker entry preserved the original contact date.</p>
+        <p>Both runs tested selected rules locally. A full application through a live portal was outside their scope.</p>
         <aside class="job-scope-note" id="scope" aria-label="Scope and evidence limits">
-          <p><strong>Scope:</strong> Independent work for my own job search, with human review of materials, submission decisions, and record updates. The working repository, credentials, and personal application records remain private. No measured time savings, hiring outcomes, or employer implementation are claimed.</p>
+          <p>I maintain the code and its change history privately, along with my credentials and application records. I built these changes for my own search. I haven’t measured time savings or hiring outcomes.</p>
         </aside>
       </section>
       <section class="contact-section case-contact">
         <div class="contact-copy">
-          <p class="eyebrow">Contact</p>
-          <h2>Contact Jonathan.</h2>
-          <p>I'm available for permanent, full-time roles in business analysis, reporting, operations and business systems.</p>
+          <h2>Contact Jonathan</h2>
+          <p>I’m looking for permanent, full-time work. I’m based in New Jersey and open to remote roles in the U.S., hybrid work, and relocation.</p>
         </div>
         <div class="contact-actions">
           <a class="button contact-primary" href="mailto:jonathancapalbo1@gmail.com">Email Jonathan</a>

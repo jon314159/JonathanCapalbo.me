@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Arcade Ticketing: BA Evidence Pack | Jonathan Capalbo</title>
-  <meta name="description" content="Hypothetical arcade ticketing process comparison, requirements register, acceptance criteria, planned UAT tests, and traceability sample.">
+  <title>Arcade Ticketing Requirements and Test Plan | Jonathan Capalbo</title>
+  <meta name="description" content="Jonathan Capalbo's proposed ticketing workflow for a fictional arcade, with ten requirements, acceptance criteria and fourteen planned tests.">
   <link rel="canonical" href="https://jonathancapalbo.me/arcade-ticketing-evidence.html">
   <style>
     :root { color-scheme: light; font-family: system-ui, sans-serif; color: #0b1f33; background: #eeeae2; line-height: 1.65; }
     * { box-sizing: border-box; }
     body { margin: 0; overflow-wrap: anywhere; }
     header, main, footer { max-width: 76rem; margin: auto; padding: 2rem; }
+    main { container: evidence / inline-size; }
     header { max-width: none; padding: 3rem max(2rem, calc((100% - 72rem) / 2)) 2rem; color: #fff; background: #0a1c2d; }
     header a { color: #b7ccff; }
     header a:focus-visible { outline-color: #b7ccff; }
@@ -25,9 +26,6 @@
     .skip { position: absolute; left: 1rem; top: -5rem; background: white; padding: .6rem; }
     .skip:focus { top: 0; }
     .meta { font-weight: 650; }
-    .pack-summary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem 2rem; margin: 1.5rem 0; padding: 1.2rem 0; border-top: 1px solid #a3abb0; border-bottom: 1px solid #a3abb0; }
-    .pack-summary dt { font-weight: 700; }
-    .pack-summary dd { margin: .25rem 0 0; }
     .disclosure { background: #dce6ef; color: #0b1f33; padding: 1.2rem 1.5rem; border-left: 3px solid #2147be; }
     nav ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
     nav a, .utility a { display: inline-block; min-height: 44px; padding: .5rem 0; }
@@ -47,20 +45,21 @@
     footer { border-top: 1px solid #a3abb0; }
     @media (max-width: 760px) {
       header, main, footer { padding: 1.2rem; }
+      nav ul { display: block; }
+      nav li { margin: .3rem 0; }
+    }
+    @container evidence (max-width: 45rem) {
       table, tbody, tr, td, tbody th { display: block; width: 100%; }
       caption { display: block; width: 100%; }
       thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
       thead th { padding: 0; font-size: 1px; }
       tbody tr { padding: .6rem 0; border-bottom: 2px solid #0b1f33; }
-      tbody th { background: #0b1f33; color: white; }
+      tbody th { min-width: 0; background: #0b1f33; color: white; }
       tbody th a { color: white; }
       tbody th a:focus-visible { outline-color: white; }
       td::before { content: attr(data-label); display: block; font-weight: 700; margin-bottom: .3rem; }
       td { border: 0; padding: .6rem; }
       .register td:first-of-type { min-width: 0; }
-      nav ul { display: block; }
-      nav li { margin: .3rem 0; }
-      .pack-summary { grid-template-columns: 1fr; }
     }
     @media print {
       :root { background: white; font-size: 10pt; }
@@ -78,18 +77,12 @@
 <body>
   <a class="skip" href="#documents">Skip to documents</a>
   <header>
-    <p class="utility"><a href="https://jonathancapalbo.me/arcade-ticketing-modernization.html">Back to the arcade case study</a> · <a href="https://jonathancapalbo.me/#projects">Selected projects</a></p>
-    <p class="meta">Jonathan Capalbo · Portfolio evidence · Version 1.0 · September 11, 2026</p>
-    <h1>Arcade ticketing: the BA evidence pack.</h1>
-    <p>Five connected artifacts show how a shared ticket could move from a staff report to verified closure at one fictional arcade location.</p>
-    <div class="disclosure"><strong>Hypothetical proposal, prepared for portfolio review.</strong><p>These documents expand the published case-study scenario. Roles, requirements, examples, and controls are proposed assumptions, not findings from real stakeholder interviews. No software was configured, no UAT was executed, and no operational results are claimed. ServiceNow remains a conceptual mapping.</p></div>
-    <dl class="pack-summary" aria-label="Project summary">
-      <div><dt>Project type</dt><dd>Hypothetical business analysis evidence pack</dd></div>
-      <div><dt>My contribution</dt><dd>Wrote the process comparison, requirements, acceptance criteria, planned tests, and traceability sample</dd></div>
-      <div><dt>Tools/platform</dt><dd>Process mapping and requirements documentation; conceptual ServiceNow mapping</dd></div>
-      <div><dt>Deliverables/status</dt><dd>Five public artifacts, with ten proposed requirements and fourteen planned tests. All tests are Not Executed.</dd></div>
-    </dl>
-    <p class="utility"><a href="arcade-ticketing-evidence.html" download="arcade-ticketing-evidence.html">Download this pack (HTML)</a> · The downloaded file includes its styles and can be read offline. Use your browser's Print command for a paper copy.</p>
+    <p class="utility"><a href="https://jonathancapalbo.me/arcade-ticketing-modernization.html">Arcade case study</a> · <a href="https://jonathancapalbo.me/#projects">Selected projects</a></p>
+    <p class="meta">Jonathan Capalbo · Version 1.0 · September 11, 2026</p>
+    <h1>Arcade ticketing requirements and test plan</h1>
+    <p>If a technician marks a machine as fixed but the start button still fails, who owns the ticket? I wrote this plan for one fictional arcade. Under the <a href="#req-06">closure requirement</a>, the shift lead checks the repair. The <a href="#uat-09">failed-verification test</a> spells out what should happen if the machine still fails.</p>
+    <div class="disclosure"><strong>Hypothetical project</strong><p>I mapped the workflow and wrote ten proposed requirements, their acceptance criteria and fourteen planned user acceptance tests. The roles, rules and examples are my assumptions. I did not interview arcade staff, configure software, run tests or measure operational results. ServiceNow appears only as a possible platform.</p></div>
+    <p class="utility"><a href="arcade-ticketing-evidence.html" download="arcade-ticketing-evidence.html">Download the five documents (HTML)</a> to read offline or print from your browser.</p>
     <nav aria-label="Evidence pack contents"><ul>
       <li><a href="#process-comparison">1. Process comparison</a></li>
       <li><a href="#requirements">2. Requirements register</a></li>
@@ -101,9 +94,9 @@
   <main id="documents">
     <section id="process-comparison" aria-labelledby="process-title">
       <h2 id="process-title">1. Process comparison</h2>
-      <p class="utility"><a href="https://jonathancapalbo.me/arcade-ticketing-modernization.html#process-visual">View the workflow diagram and text equivalent</a></p>
-      <p><strong>Scope:</strong> broken machines, game-card issues, refunds, prize-counter problems, and facility incidents at one location. Payment processing, customer self-service, integrations, and software configuration are outside this pack.</p>
-      <p><strong>Safety first:</strong> for an immediate hazard, staff would secure the area and follow the emergency procedure before documenting the incident when safe. The ticket would record the response; it would not replace it.</p>
+      <p>At this fictional location, staff report broken machines, game-card issues, refunds, prize-counter problems and facility incidents. The plan covers how staff handle those reports. Payment processing, customer self-service, integrations and software configuration fall outside its scope.</p>
+      <p>For an immediate hazard, staff would secure the area and follow the arcade's emergency procedure first. They would document the response once it was safe.</p>
+      <p class="utility"><a href="https://jonathancapalbo.me/arcade-ticketing-modernization.html#process-visual">See the workflow diagram and its text description</a></p>
       <table><caption>Simulated current state and proposed future state</caption><thead><tr><th scope="col">Step / need</th><th scope="col">Simulated current state</th><th scope="col">Proposed future state and role</th><th scope="col">Control / exception</th></tr></thead><tbody>
         <tr><th scope="row">P-01 Intake</th><td data-label="Current">Staff use conversations, paper, calls, and messages; required details vary.</td><td data-label="Proposed">Reporting staff capture category, location, description, and urgency in one ticket.</td><td data-label="Control">Reject incomplete intake. Record immediate-hazard response after the area is safe.</td></tr>
         <tr><th scope="row">P-02 Triage</th><td data-label="Current">Urgency and responsibility depend on who hears the report.</td><td data-label="Proposed">Shift lead confirms impact and priority, then assigns a team and named owner.</td><td data-label="Control">Unclear routing remains with the shift lead until an owner accepts it; safety concerns get immediate operational attention.</td></tr>
@@ -113,13 +106,13 @@
         <tr><th scope="row">P-06 History and reporting</th><td data-label="Current">Scattered reports make backlog and completion measures inconsistent.</td><td data-label="Proposed">System preserves dated changes and shows ticket-level backlog and closure counts to authorized managers.</td><td data-label="Control">Closed history remains intact. A recurring issue creates a linked new ticket rather than overwriting the old record.</td></tr>
       </tbody></table>
       <h3>Proposed routing and status rules</h3>
-      <p>Machine issues route to maintenance; game-card and prize-counter issues to guest services; refunds to the shift lead for manager approval; facility incidents to facilities. These are role assumptions for validation in discovery. The shift lead owns unassigned tickets and reassignment decisions.</p>
-      <p><strong>Lifecycle:</strong> New → Triaged → Assigned → In Progress → Resolved → Closed. Pending is an optional branch from In Progress and returns there when work resumes. Approval is a separate decision field; a refund awaiting approval stays In Progress. Failed verification returns Resolved to In Progress.</p>
-      <p><strong>Proposed priority definitions:</strong> Critical = immediate safety concern, with emergency response first; High = service unavailable with no workaround; Normal = degraded service or an available workaround. These labels define triage order only. Response-time targets require stakeholder agreement.</p>
+      <p>In the proposed workflow, maintenance handles machines, guest services handles game cards and prizes, and facilities handles incidents at the site. Refunds go to the shift lead for manager approval. The shift lead owns unassigned tickets and decides when to reassign them. Arcade staff would need to confirm those roles.</p>
+      <p>A ticket normally moves from New to Triaged, Assigned, In Progress, Resolved and finally Closed. An owner can move an In Progress ticket to Pending and return it to In Progress when work resumes. A refund stays In Progress while the manager decides. The ticket records approval separately. If the shift lead checks a Resolved ticket and the fix fails, it goes back to In Progress.</p>
+      <p><strong>Critical</strong> means an immediate safety concern, with emergency response first. <strong>High</strong> means a service is unavailable and staff have no workaround. <strong>Normal</strong> covers degraded service or an available workaround. These priorities set the triage order. Stakeholders would still need to agree on response times.</p>
     </section>
     <section id="requirements" aria-labelledby="requirements-title">
       <h2 id="requirements-title">2. Requirements register</h2>
-      <p>All entries are <strong>Proposed / awaiting stakeholder review</strong>. Must = needed for the proposed pilot controls; Should = useful for pilot evaluation. Review roles below are fictional responsibilities, not recorded approvals.</p>
+      <p>All ten requirements have the same status, <strong>Proposed / awaiting stakeholder review</strong>. A <strong>Must</strong> supports a control the pilot needs. A <strong>Should</strong> would help the team evaluate the pilot. The last column names the person I would ask to review each requirement.</p>
       <table class="register"><caption>Proposed pilot requirements</caption><thead><tr><th scope="col">ID / type</th><th scope="col">Requirement</th><th scope="col">Rationale</th><th scope="col">Priority / review role</th></tr></thead><tbody>
         <tr id="req-01"><th scope="row">REQ-01<br>Data</th><td data-label="Requirement">Require one of the five categories, a location, a nonblank description, and urgency on submission. Assign a unique ticket ID, reporter, and created timestamp.</td><td data-label="Rationale">P-01: give each report a usable common record.</td><td data-label="Priority / reviewer">Must · Shift lead</td></tr>
         <tr id="req-02"><th scope="row">REQ-02<br>Safety</th><td data-label="Requirement">Display the emergency-first instruction at intake. For an immediate-hazard report entered when safe, require response notes and shift-lead acknowledgment before resolution.</td><td data-label="Rationale">P-01: keep ticketing subordinate to emergency response.</td><td data-label="Priority / reviewer">Must · Operations manager</td></tr>
@@ -133,12 +126,12 @@
         <tr id="req-10"><th scope="row">REQ-10<br>Usability</th><td data-label="Requirement">Allow keyboard-only intake and correction. Identify invalid fields in text, associate each message with its field, and retain valid entries after a validation error.</td><td data-label="Rationale">P-01: help staff complete intake without losing work.</td><td data-label="Priority / reviewer">Must · Staff representative</td></tr>
       </tbody></table>
       <h3>Decisions still open</h3>
-      <p>Real discovery must confirm role membership, refund authority limits and currency, location time zone, retention periods, escalation timing, service targets, outage procedures, and the system of record for financial transactions. This sample does not define a production security model or integration design.</p>
+      <p>Before a pilot, the arcade would need to decide who holds each role, who can approve which refund amounts and in what currency. Other open questions include which time zone to use, how long to keep tickets, when to escalate them, what service targets to set, how to work during an outage and where to keep the official transaction record. Production security and integration design are outside this proposal.</p>
       <p class="utility"><a href="https://jonathancapalbo.me/arcade-status-update.html">Read the sample stakeholder update on the open time-zone decision</a></p>
     </section>
     <section id="acceptance-criteria" aria-labelledby="criteria-title">
       <h2 id="criteria-title">3. User stories and acceptance criteria</h2>
-      <p>Given/When/Then statements describe proposed observable behavior. They are specifications, not executed automated tests.</p>
+      <p>Each story names the person who needs the rule. The Given, When and Then statements spell out the starting point, the action and the response a tester should see.</p>
       <article id="ac-01"><h3>AC-01 · Complete intake · REQ-01</h3><p><strong>Story:</strong> As reporting staff, I want one identifiable report so the next person can act on it.</p><p><strong>Given</strong> an intake form, <strong>when</strong> I submit an invalid category or omit a required value, <strong>then</strong> submission is blocked with a field-specific error. <strong>Given</strong> valid values, <strong>when</strong> I submit, <strong>then</strong> the record has a unique ID, reporter, created timestamp, and the supplied values.</p></article>
       <article id="ac-02"><h3>AC-02 · Document safety response · REQ-02</h3><p><strong>Story:</strong> As a shift lead, I want emergency handling documented without delaying the response.</p><p><strong>Given</strong> intake is open, <strong>then</strong> an emergency-first instruction is visible. <strong>Given</strong> a hazard report entered when safe, <strong>when</strong> response notes or shift-lead acknowledgment are missing, <strong>then</strong> resolution is blocked; after both are recorded, ordinary resolution checks apply.</p></article>
       <article id="ac-03"><h3>AC-03 · Own the work · REQ-03</h3><p><strong>Story:</strong> As a shift lead, I want an accountable owner for each active issue.</p><p><strong>Given</strong> an untriaged ticket, <strong>when</strong> impact, priority, team, or owner is absent, <strong>then</strong> In Progress is blocked. <strong>Given</strong> all are present, <strong>when</strong> the shift lead starts work or reassigns it with a reason, <strong>then</strong> the current owner is visible and the change is dated and attributed.</p></article>
@@ -151,9 +144,9 @@
       <article id="ac-10"><h3>AC-10 · Correct intake errors · REQ-10</h3><p><strong>Story:</strong> As reporting staff using a keyboard, I want to correct errors without re-entering valid information.</p><p><strong>Given</strong> keyboard-only input, <strong>when</strong> I submit with a required value missing, <strong>then</strong> I can reach and correct the field, its error is programmatically associated and visible in text, and valid entries remain. <strong>When</strong> I resubmit, <strong>then</strong> the valid ticket is saved with a visible confirmation.</p></article>
     </section>
     <section id="planned-tests" aria-labelledby="tests-title">
-      <h2 id="tests-title">4. Planned UAT tests</h2>
-      <p class="status">Every test below: Not Executed. Actual result, evidence, tester, and execution date: not recorded.</p>
-      <p><strong>Prerequisites:</strong> a configured test environment implementing the proposed rules; synthetic tickets only; staff, second-team staff, shift-lead, and manager test accounts. A future tester would record actual results and evidence against each ID, log defects, and rerun failed cases. These materials alone do not demonstrate acceptance.</p>
+      <h2 id="tests-title">4. Planned user acceptance tests</h2>
+      <p class="status">All fourteen tests have status <strong>Not Executed</strong>. No actual results, evidence, tester names or execution dates have been recorded.</p>
+      <p>To run these tests, the tester would need an environment configured with the proposed rules, synthetic tickets, staff accounts from two teams, a shift-lead account and a manager account. For each test ID, the tester would record the actual result and evidence, log defects and rerun failed cases.</p>
       <ol class="test-list">
         <li id="uat-01"><strong>UAT-01 · Valid intake · AC-01.</strong> Setup: staff account and valid inputs for each of the five categories. Action: submit one record per category. Expected: five distinct IDs, correct input values, reporter, and timestamps.</li>
         <li id="uat-02"><strong>UAT-02 · Invalid intake · AC-01, AC-10.</strong> Setup: a populated draft. Action: submit once for each omitted required field, a whitespace-only description, and an unsupported category. Expected: each invalid submission is blocked, the relevant field has a textual error, and valid input is retained.</li>
@@ -170,12 +163,12 @@
         <li id="uat-13"><strong>UAT-13 · Period boundaries · AC-09.</strong> Setup: agree a test time zone and period; place Closed timestamps just before start, exactly at start, just before end, and exactly at end. Action: filter that period. Expected: exactly the middle two records count as period closures.</li>
         <li id="uat-14"><strong>UAT-14 · Keyboard error recovery · AC-10.</strong> Setup: intake with a keyboard and accessibility inspection tool. Action: navigate all inputs, submit with one required value missing, inspect the error association, correct it, and resubmit. Expected: visible focus and logical navigation, an associated textual error, retained valid entries, and a saved-ticket confirmation.</li>
       </ol>
-      <h3>Proposed exit decision</h3>
-      <p>The operations manager would review recorded evidence for every Must requirement, resolved defects, and retest results before recommending a pilot. Any deferred Should requirement needs an explicit decision. No sign-off, pass rate, or readiness claim is recorded here.</p>
+      <h3>When would the operations manager recommend a pilot?</h3>
+      <p>Before recommending a pilot, the operations manager would review the evidence for every Must requirement, the defects the team fixed and the retest results. The manager would also need to record a decision on any Should requirement the team defers. Sign-off and a pass rate would require actual test results.</p>
     </section>
     <section id="traceability" aria-labelledby="trace-title">
       <h2 id="trace-title">5. Traceability sample</h2>
-      <p>This matrix covers the ten requirements in this public sample. Links demonstrate planned coverage; they do not establish that a requirement has passed validation.</p>
+      <p>Each row connects a process need to its requirement, acceptance criteria and planned tests. For example, the P-05 verification row links the closure rule to two possible outcomes. One test checks a successful repair and the other checks what happens when the machine still fails.</p>
       <table><caption>Process need → requirement → acceptance criteria → planned tests</caption><thead><tr><th scope="col">Process need</th><th scope="col">Requirement</th><th scope="col">Criteria</th><th scope="col">Planned tests</th><th scope="col">Execution</th></tr></thead><tbody>
         <tr><th scope="row">P-01 Intake</th><td data-label="Requirement"><a href="#req-01">REQ-01</a></td><td data-label="Criteria"><a href="#ac-01">AC-01</a></td><td data-label="Tests"><a href="#uat-01">UAT-01</a>, <a href="#uat-02">UAT-02</a></td><td data-label="Execution">Not Executed</td></tr>
         <tr><th scope="row">P-01 Safety</th><td data-label="Requirement"><a href="#req-02">REQ-02</a></td><td data-label="Criteria"><a href="#ac-02">AC-02</a></td><td data-label="Tests"><a href="#uat-03">UAT-03</a></td><td data-label="Execution">Not Executed</td></tr>
@@ -188,7 +181,7 @@
         <tr><th scope="row">P-06 Reporting</th><td data-label="Requirement"><a href="#req-09">REQ-09</a></td><td data-label="Criteria"><a href="#ac-09">AC-09</a></td><td data-label="Tests"><a href="#uat-12">UAT-12</a>, <a href="#uat-13">UAT-13</a></td><td data-label="Execution">Not Executed</td></tr>
         <tr><th scope="row">P-01 Usability</th><td data-label="Requirement"><a href="#req-10">REQ-10</a></td><td data-label="Criteria"><a href="#ac-10">AC-10</a></td><td data-label="Tests"><a href="#uat-02">UAT-02</a>, <a href="#uat-14">UAT-14</a></td><td data-label="Execution">Not Executed</td></tr>
       </tbody></table>
-      <p><strong>Change example:</strong> if refund authority changes, review REQ-04 and REQ-08, revise AC-04 and AC-08, update UAT-05, UAT-06, and UAT-11, then record the review decision and rerun affected tests in the future test environment.</p>
+      <p>If the arcade changed who could approve refunds, I would review REQ-04 and REQ-08 and revise AC-04 and AC-08. That change would also affect UAT-05, UAT-06 and UAT-11. I would record the decision so a tester could rerun those cases once the test environment was available.</p>
     </section>
   </main>
   <footer><p>Jonathan Capalbo · Hypothetical business analysis case study</p><p class="utility"><a href="mailto:jonathancapalbo1@gmail.com">Email Jonathan</a> · <a href="https://jonathancapalbo.me/downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis / systems résumé (PDF)</a> · <a href="https://jonathancapalbo.me/downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations résumé (PDF)</a></p><p class="utility"><a href="https://jonathancapalbo.me/arcade-ticketing-modernization.html">Return to the case study</a></p></footer>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chicago Food Inspections | Jonathan Capalbo</title>
-  <meta name="description" content="An academic team project using real-world City of Chicago food inspection data. Four Tableau dashboards compare establishments, risk and inspection context, geography and trends for 2019-2025." />
+  <meta name="description" content="I built four Tableau dashboards for an NJIT team project to compare Chicago food inspection outcomes by year, facility, inspection type and ZIP code." />
   <meta name="theme-color" content="#0b1f33" />
   <meta property="og:title" content="Chicago Food Inspections | Jonathan Capalbo" />
   <meta property="og:description" content="Academic team analysis using real-world Chicago food inspection data, with documented denominators, findings and limitations." />
@@ -37,7 +37,7 @@
       <div class="case-hero-copy">
         <p class="eyebrow">Academic team project · Tableau</p>
         <h1>Chicago food inspections</h1>
-        <p class="case-lede">How often did inspections fail, and where? I built four dashboards from seven years of City of Chicago records. Each pairs failure rates with inspection counts so readers can see how much data sits behind a comparison.</p>
+        <p class="case-lede">I built four Tableau dashboards to see where Chicago food inspections failed and how that changed from 2019 to 2025. I put inspection counts beside the rates so readers could tell whether a high percentage represented a handful of visits or thousands.</p>
         <div class="case-links">
           <a href="https://public.tableau.com/app/profile/jonathan.capalbo/viz/Chicago_Food_Inspections_17926114522930/3Geography">Open in Tableau Public</a>
           <a href="#findings">Read the findings</a>
@@ -50,7 +50,7 @@
       </figure>
       <details class="case-project-notes">
         <summary>Team and data source</summary>
-        <p>Jon Capalbo, Camerun Hannah, Mostafa Moawad and Yovanny Moscoso Huaman worked on the academic project. I developed the four dashboards, which use nineteen worksheets. The names beneath the dashboard headings identify each section’s assigned presenter.</p>
+        <p>I worked on this class project with Camerun Hannah, Mostafa Moawad and Yovanny Moscoso Huaman. I built all four dashboards from nineteen worksheets. The name under each dashboard heading identifies the teammate assigned to present it.</p>
         <p>The October 17, 2026 data snapshot covers 123,673 inspections from 2019 through 2025, including 103,614 with an evaluated outcome.</p>
       </details>
     </div>
@@ -62,16 +62,16 @@
         <h2 id="finding-title">The annual failure rate fell from 24.9% to 21.1% between 2023 and 2025.</h2>
       </div>
       <div class="case-intro-copy">
-        <p>That is a decline of about 3.8 percentage points among evaluated inspections. The charts describe the records in the dataset; changes in inspection activity and the mix of facilities may affect the comparison.</p>
+        <p>That’s a drop of about 3.8 percentage points among evaluated inspections. Both the number of visits and the mix of facilities inspected can change from year to year.</p>
         <p>Across all seven years, 23,843 of 103,614 evaluated inspections failed, giving an overall failure rate of 23.0%.</p>
         <p>Evaluated inspections have a Pass, Pass w/ Conditions or Fail result. These counts describe inspection visits, including repeat visits to the same establishment.</p>
       </div>
     </section>
     <section class="section chicago-results" id="annual-rates" data-read-label="Annual rates" aria-labelledby="trend-title">
       <div class="chicago-trend">
-        <p class="eyebrow">Static web summary from the workbook data</p>
-        <h2 id="trend-title">Annual inspection failure rates.</h2>
-        <p id="chart-scale">Each bar uses the same 0-30% scale. The table provides counts and exact denominators.</p>
+        <p class="eyebrow">Workbook data, 2019–2025</p>
+        <h2 id="trend-title">Annual inspection failure rates</h2>
+        <p id="chart-scale">Each bar uses the same 0–30% scale. The table gives the number of evaluated visits and failures behind each rate.</p>
         <ol class="chicago-bars" aria-label="Annual failure rates, 2019 through 2025" aria-describedby="chart-scale">
           <li><span>2019</span><span class="chicago-bar-track" aria-hidden="true"><span style="width:74.685193%"></span></span><strong>22.4%</strong></li>
           <li><span>2020</span><span class="chicago-bar-track" aria-hidden="true"><span style="width:77.645503%"></span></span><strong>23.3%</strong></li>
@@ -81,7 +81,7 @@
           <li><span>2024</span><span class="chicago-bar-track" aria-hidden="true"><span style="width:72.543503%"></span></span><strong>21.8%</strong></li>
           <li><span>2025</span><span class="chicago-bar-track" aria-hidden="true"><span style="width:70.381901%"></span></span><strong>21.1%</strong></li>
         </ol>
-        <p class="chicago-caption">This is an HTML summary of the packaged data. Explore the dashboards on Tableau Public, or download the workbook for a compatible Tableau application.</p>
+        <p class="chicago-caption">The bars show the full seven-year series. Use Tableau Public or the downloadable workbook to filter it.</p>
       </div>
       <div>
         <table class="chicago-table">
@@ -102,11 +102,11 @@
     </section>
     <section class="section chicago-previews" id="dashboards" data-read-label="Dashboard previews" aria-labelledby="preview-title">
       <p class="eyebrow">Dashboard previews</p>
-      <h2 id="preview-title">Citywide trends, with context from three more views.</h2>
-      <p>These static previews show all years, facilities, risk levels and inspection types selected. Open a full-size image to read the detail, or use Tableau Public for interactive exploration.</p>
+      <h2 id="preview-title">Four views of inspection results</h2>
+      <p>These images show the dashboards with all filters reset. Open a full-size preview to read the labels. You can change the year, facility, risk level or inspection type in Tableau Public.</p>
       <figure class="chicago-preview chicago-preview-feature">
         <a href="assets/images/chicago-trends.png" aria-label="Trends and conclusions · Full-size preview"><img src="assets/images/chicago-trends.png" width="1800" height="1120" loading="lazy" alt="Tableau citywide trends dashboard with annual failure-rate and inspection-volume lines and outcome counts of 54,972 passes, 24,799 conditional passes and 23,843 failures." /><span class="chicago-preview-label">Trends and conclusions · Full-size preview</span></a>
-        <figcaption>Workbook tab 4. Rate and volume trends sit beside evaluated outcome counts. Trend axes fit the selected data; the web summary above uses a zero-based rate scale.</figcaption>
+        <figcaption>Workbook tab 4. Compare inspection volume, failure rates and outcome counts over time. The trend axes adjust to the selection. The bar chart above starts at zero.</figcaption>
       </figure>
       <div class="chicago-preview-grid">
         <figure class="chicago-preview">
@@ -115,20 +115,20 @@
         </figure>
         <figure class="chicago-preview">
           <a href="assets/images/chicago-risk-context.png" aria-label="Risk and inspection type · Full-size preview"><img src="assets/images/chicago-risk-context.png" width="1170" height="732" loading="lazy" alt="Tableau risk and inspection-type comparisons, pairing orange failure-rate bars with blue evaluated-inspection count bars." /><span class="chicago-preview-label">Risk and inspection type · Full-size preview</span></a>
-          <figcaption>Workbook tab 2. Paired rate and count charts keep group size visible when comparing recorded risk and inspection types.</figcaption>
+          <figcaption>Workbook tab 2. Each rate has a companion count chart so you can see how many inspections fell in each group.</figcaption>
         </figure>
         <figure class="chicago-preview">
           <a href="assets/images/chicago-geography.png" aria-label="Geography · Full-size preview"><img src="assets/images/chicago-geography.png" width="1170" height="732" loading="lazy" alt="Tableau geography dashboard with a ZIP summary map, evaluated and failed inspection totals, failure rate and local time trends." /><span class="chicago-preview-label">Geography · Full-size preview</span></a>
-          <figcaption>Workbook tab 3. Circle color shows failure rate and size shows evaluated volume. ZIP selection updates local totals and trends.</figcaption>
+          <figcaption>Workbook tab 3. Circle color shows the failure rate. Circle size shows the number of evaluated visits. Select a ZIP code to see its totals and trends.</figcaption>
         </figure>
       </div>
     </section>
     <section class="section chicago-comparison" id="inspection-context" data-read-label="Inspection context" aria-labelledby="context-title">
       <div>
         <p class="eyebrow">Inspection context</p>
-        <h2 id="context-title">Complaint and routine inspections describe different situations.</h2>
-        <p>Complaint inspections had a 37.4% failure rate, compared with 24.5% for routine canvass inspections and 11.6% for re-inspections. The inspection-type filter helps narrow comparisons to a more consistent context.</p>
-        <p>These observed differences do not establish that inspection type causes an outcome. Complaint inspections, for example, are selected because someone reported a concern.</p>
+        <h2 id="context-title">Failure rates varied by reason for inspection</h2>
+        <p>Complaint inspections had a 37.4% failure rate, compared with 24.5% for routine canvass inspections and 11.6% for re-inspections.</p>
+        <p>A reported concern triggers a complaint inspection. That difference in how visits begin makes the rates hard to compare directly.</p>
       </div>
       <table class="chicago-table">
         <caption>Selected inspection contexts, full 2019-2025 period</caption>
@@ -142,42 +142,42 @@
     </section>
     <section class="section case-methods" id="dashboard-guide" data-read-label="Using the dashboards" aria-labelledby="dashboard-title">
       <p class="eyebrow">Explore the dashboards</p>
-      <h2 id="dashboard-title">Try a comparison, then inspect a ZIP.</h2>
-      <p>Select Routine canvass in the Inspection type control, then compare facility groups using both failure rates and evaluated counts. This narrows the inspection context; it does not control for every difference between facilities.</p>
+      <h2 id="dashboard-title">Compare routine inspections by facility and ZIP code</h2>
+      <p>Select Routine canvass under Inspection type. Compare the failure rates for two facility groups, then check how many evaluated inspections each rate represents. Facilities can still differ in other ways.</p>
       <p>In Geography, select a ZIP to inspect its local totals and trends. Clear the selection to restore the broader geography view. The citywide Trends and conclusions dashboard remains independent of that map selection.</p>
       <dl class="chicago-notes">
-        <div><dt>Shared controls</dt><dd>Year, facility, risk and inspection type narrow records across dashboards. Rates are recalculated from the filtered numerator and denominator. The geography and trends dashboards also provide an annual/monthly control.</dd></div>
+        <div><dt>Shared controls</dt><dd>Year, facility, risk and inspection type filter the dashboards. Each rate uses the failures and evaluated visits in the filtered records. You can also switch between annual and monthly results in the geography and trends views.</dd></div>
       </dl>
       <p>With all filters reset for 2019-2025, ZIP 60614 had 893 failures in 3,730 evaluated inspections (23.9%), compared with 542 in 2,793 (19.4%) for ZIP 60640. Facility mix and inspection context may differ, so these figures are starting points for investigation.</p>
       <p><a href="https://public.tableau.com/app/profile/jonathan.capalbo/viz/Chicago_Food_Inspections_17926114522930/3Geography">Open the four dashboards on Tableau Public</a> and use the tabs to switch views. The fixed-width Tableau canvases work best on a desktop; the previews and findings here reflow for smaller screens.</p>
     </section>
     <section class="section chicago-methods" id="methods" data-read-label="Source and methods" aria-labelledby="methods-title">
       <p class="eyebrow">Source and preparation</p>
-      <h2 id="methods-title">Define the denominator before comparing rates.</h2>
-      <p><a href="https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5">City of Chicago Food Inspections</a> is the public source. The supplied October 17, 2026 snapshot has 317,175 rows. The workbook retains the 123,673 records dated within 2019-2025, covering seven complete calendar years.</p>
+      <h2 id="methods-title">How I calculated the failure rate</h2>
+      <p><a href="https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5">City of Chicago Food Inspections</a> is the public source. The October 17, 2026 snapshot contains 317,175 rows. I kept the 123,673 inspections from the seven complete calendar years 2019 through 2025.</p>
       <dl class="chicago-notes">
-        <div><dt>Failure-rate calculation</dt><dd>Failed inspections divided by evaluated inspections. Evaluated means Pass, Pass w/ Conditions or Fail. The rate divides summed counts after filtering, rather than averaging group percentages.</dd></div>
-        <div><dt>Excluded outcomes</dt><dd>Out of Business (9,392), No Entry (7,904), Not Ready (2,735) and Business Not Located (28) remain in the packaged source but are excluded from the rate. These outcomes are not passes.</dd></div>
-        <div><dt>Category preparation</dt><dd>Named common facility types are normalized for case and surrounding spaces, daycare variants are combined, and remaining types use Other / unspecified. Inspection groups combine re-inspection variants. Original category fields remain available.</dd></div>
-        <div><dt>Validation</dt><dd>The packaged CSV reconciles to the supplied snapshot's inspection IDs and retained raw fields. No duplicate Inspection IDs were found in the period. Annual, risk and inspection-context totals reconcile with the headline counts.</dd></div>
+        <div><dt>Failure-rate calculation</dt><dd>I divided the number of failures by the number of visits with a Pass, Pass w/ Conditions or Fail result. When a filter changes, Tableau repeats that calculation on the selected visits.</dd></div>
+        <div><dt>Excluded outcomes</dt><dd>The workbook keeps 9,392 Out of Business, 7,904 No Entry, 2,735 Not Ready and 28 Business Not Located records. None had an evaluated outcome, so they contribute to neither the numerator nor the denominator.</dd></div>
+        <div><dt>Category preparation</dt><dd>I standardized capitalization and spacing for common facility types, grouped daycare variants together and labeled the remaining types Other / unspecified. I also grouped re-inspection variants. The workbook keeps the original category fields.</dd></div>
+        <div><dt>Validation</dt><dd>I matched the CSV’s inspection IDs and retained fields to the source snapshot. Each Inspection ID appeared once during the seven years. I also checked that the yearly, risk and inspection-context totals matched the overall counts.</dd></div>
       </dl>
     </section>
     <section class="section chicago-methods" id="limitations" data-read-label="Limitations" aria-labelledby="limitations-title">
       <p class="eyebrow">Interpretation limits</p>
-      <h2 id="limitations-title">Inspection records count visits, including repeat visits.</h2>
+      <h2 id="limitations-title">What an inspection rate can tell you</h2>
       <ul class="chicago-limitations">
-        <li>These are inspection rates. Repeat inspections of the same establishment are separate observations. The results do not estimate the probability that a randomly chosen Chicago establishment will fail.</li>
-        <li>Inspection scheduling, complaints, licensing and re-inspection requirements affect which establishments appear and how often. Raw category differences do not control for that selection or for changes in composition over time.</li>
-        <li>There are 381 evaluated records with missing coordinates. Because the map places ZIP summaries at fixed, full-period mean recorded coordinates, some of these records still contribute to their mapped ZIP. In total, 79 evaluated records cannot be placed by the workbook's ZIP-location rule; headline totals retain them.</li>
-        <li>Map circles represent ZIP summaries, rather than individual establishments or official ZIP boundaries. The source also contains inconsistent city and ZIP labels, which are retained rather than silently corrected.</li>
-        <li>The risk chart omits the unspecified group, which has only two evaluated inspections; both passed. Other totals retain them. Recorded risk level describes the source classification, not the inspection result.</li>
-        <li>Small filtered groups can produce unstable percentages. Comparisons need denominators; the workbook's native time axes and map color range can change with selection. Separate establishment-count panels use separate scales.</li>
+        <li>A facility can appear several times. The rate tells you how often evaluated visits ended in failure. It cannot tell you the odds that a randomly chosen establishment will fail.</li>
+        <li>Complaints, licensing rules and re-inspection schedules affect which establishments get inspected and how often. A year-to-year change can reflect a different mix of facilities.</li>
+        <li>Of the evaluated inspections, 381 lacked coordinates. I placed each ZIP at its average recorded location across all seven years, so a visit with a usable ZIP could still count there. In all, 79 evaluated visits could not be mapped. They still count in the citywide totals.</li>
+        <li>Each circle summarizes a ZIP code. It does not mark an individual establishment or trace an official ZIP boundary. I kept the city and ZIP labels as recorded, including inconsistencies.</li>
+        <li>Only two evaluated inspections had an unspecified risk level. Both passed. They count in the overall totals but do not appear in the risk chart. Risk level is the city’s classification of the facility.</li>
+        <li>One failure can move the rate considerably in a small group. Check the visit counts and the scale when comparing views. Filtering can change the time axes and map color range, and the establishment-count panels have separate scales.</li>
       </ul>
-      <p>A useful follow-up would compare routine inspections within similar facility and risk groups, then investigate repeat visits at the establishment level. The current project reports descriptive patterns and does not claim a public-health intervention or measured business impact.</p>
+      <p>To investigate the drop further, I’d compare routine inspections within the same facility type and risk level, then look at which establishments received repeat visits.</p>
     </section>
     <section class="section chicago-methods" id="downloads" data-read-label="Downloads" aria-labelledby="team-title">
       <p class="eyebrow">Downloads</p>
-      <h2 id="team-title">Workbook and validation.</h2>
+      <h2 id="team-title">Tableau workbook and validation totals</h2>
       <p>Download the workbook to explore it in a compatible Tableau application. The validation file documents the source totals, calculations and workbook checks.</p>
       <div class="button-row">
         <a class="button button-primary" href="downloads/Chicago_Food_Inspections.twbx" download>Download Tableau workbook</a>
@@ -185,7 +185,7 @@
       </div>
     </section>
     <section class="contact-section case-contact">
-      <div class="contact-copy"><p class="eyebrow">Contact</p><h2>Contact Jonathan.</h2><p>I'm open to business analysis, reporting, operations and business systems opportunities.</p></div>
+      <div class="contact-copy"><p class="eyebrow">Contact</p><h2>Contact Jonathan.</h2><p>I’m looking for permanent, full-time work. I’m based in New Jersey and open to remote roles in the U.S., hybrid work, and relocation.</p></div>
       <div class="contact-actions"><a class="button contact-primary" href="mailto:jonathancapalbo1@gmail.com">Email Jonathan</a><div><a href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis / systems résumé (PDF)</a><a href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations résumé (PDF)</a><a href="index.html#projects">Return to selected projects</a></div></div>
     </section>
   </main>

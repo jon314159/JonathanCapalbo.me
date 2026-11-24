@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Rental Database | Oracle SQL | Jonathan Capalbo</title>
-    <meta name="description" content="An academic Oracle SQL movie-rental project with recorded validation and a separate portfolio revision for date-order and open-rental controls." />
+    <meta name="description" content="An Oracle SQL course project tracks which movie copies are out. A later portfolio extension blocks returns dated before checkout and limits each copy to one open rental." />
     <meta name="theme-color" content="#0b1f33" />
     <meta property="og:title" content="Movie Rental Database | Oracle SQL | Jonathan Capalbo" />
     <meta property="og:description" content="Inspect the academic SQL script, its query result, and the validation findings." />
@@ -39,7 +39,7 @@
         <div class="case-hero-copy">
           <p class="eyebrow">Oracle SQL coursework</p>
           <h1>Which movie copy is still out?</h1>
-          <p class="case-lede">I built a movie rental database that tracks each physical copy from checkout to return. A read-only view finds the copies a customer still has.</p>
+          <p class="case-lede">I built an Oracle database for a movie rental store. Its read-only view lists each copy that’s still out, even when the store owns several copies of the same film.</p>
           <div class="case-links">
             <a href="downloads/Movie_Rental_Database.sql" download>Download SQL project</a>
             <a href="#schema">Inspect the schema</a>
@@ -55,24 +55,24 @@
           <a href="#query-result">See the query that found this copy</a>
         </figure>
         <details class="case-project-notes">
-          <summary>Data and validation notes</summary>
-          <p>The public copy uses fictional customer details and sample casting relationships. It preserves the class submission’s schema and SQL logic. I validated it with SQL*Plus in Oracle AI Database 26ai Free. All 43 checks passed on September 12, 2026. A separate portfolio revision added two rental controls and passed all 20 checks with zero invalid objects.</p>
+          <summary>What I built and tested</summary>
+          <p>The download keeps my class schema and SQL logic, with fictional customer details and sample casting links. On September 12, 2026, the original script passed all 43 checks in SQL*Plus on Oracle AI Database 26ai Free. I later tested two additional rental rules in a separate portfolio script. It passed all 20 checks and left every database object valid.</p>
         </details>
       </div>
     </header>
     <main id="case-content">
       <section class="section case-intro" id="schema" data-read-label="Database design">
-        <div><p class="eyebrow">Database design</p><h2>A movie title and a rentable copy are different records.</h2></div>
+        <div><p class="eyebrow">Database design</p><h2>One movie, several copies</h2></div>
         <div class="case-intro-copy">
-          <p>A title can have several physical copies, each with its own identifier and format. Rental history connects a particular copy to a customer and records checkout and return dates.</p>
-          <p>A separate casting table links actors to titles. Primary keys identify records; foreign keys keep those relationships tied to existing records.</p>
+          <p>The store might own two copies of a film and have only one out on loan. I gave each copy its own ID and format. The rental record ties that ID to a customer, a checkout date and a return date.</p>
+          <p>A separate table links actors to titles. Primary keys identify individual records. Foreign keys ensure that a rental refers to a copy and a customer that exist.</p>
         </div>
       </section>
       <section class="section schema-section" id="relationships" aria-labelledby="schema-title" data-read-label="Relationships">
-        <h2 id="schema-title">Six tables and five relationships.</h2>
+        <h2 id="schema-title">Six tables and five relationships</h2>
         <figure class="schema-figure">
           <img src="assets/diagrams/movie-rental-schema.svg" width="900" height="650" loading="lazy" decoding="async" alt="Keys and relationships in the published movie rental schema. The complete text equivalent follows." />
-          <figcaption>Derived from the published SQL. PK = primary key; FK = foreign key; 1 = exactly one; 0..* = zero or more. Non-key attributes are omitted. <a href="assets/diagrams/movie-rental-schema.svg">Open full-size schema (SVG)</a></figcaption>
+          <figcaption>The diagram shows keys and relationships from the SQL script. PK means primary key and FK means foreign key. Read 1 as exactly one and 0..* as zero or more. <a href="assets/diagrams/movie-rental-schema.svg">Open full-size schema (SVG)</a></figcaption>
         </figure>
         <div class="schema-text">
           <h3>Keys and relationships in text</h3>
@@ -85,7 +85,7 @@
             <div><dt><code>media</code></dt><dd>PK: <code>media_id</code>. Required FK: <code>title_id</code>, linking each copy to exactly one movie. A copy can have zero or more <code>rental_history</code> records.</dd></div>
           </dl>
         </div>
-        <p class="sql-notes">All five foreign keys are <code>NOT NULL</code>. The schema does not require a parent record to have children. Rental cardinality describes history; the original assignment does not enforce <a href="#revision">one open rental per copy</a>.</p>
+        <p class="sql-notes">All five foreign keys are <code>NOT NULL</code>. For example, every rental needs a customer, but a new customer can have no rentals yet. A copy can have many past rentals. I added the <a href="#revision">one open rental per copy</a> rule later.</p>
       </section>
       <section class="section case-methods" aria-labelledby="tables-title">
         <h2 id="tables-title">What each table holds</h2>
@@ -101,12 +101,12 @@
             <tr><th scope="row">Rental history</th><td>Checkouts and returns for each copy</td><td>4</td></tr>
           </tbody>
         </table>
-        <p class="sql-notes">The script also creates four sequences for new identifiers, a customer last-name index, and the synonym <code>tu</code> as a shorter name for the view. The index is present and valid; query-speed improvements were not benchmarked.</p>
+        <p class="sql-notes">The script also creates four sequences for new identifiers, a customer last-name index, and the synonym <code>tu</code> as a shorter name for the view. I checked that Oracle created a valid index. I didn’t benchmark query speed.</p>
       </section>
       <section class="section" id="query-result" aria-labelledby="query-title" data-read-label="Query and result">
         <p class="eyebrow">Query and result</p>
         <h2 id="query-title">Which copies have not been returned?</h2>
-        <p class="sql-notes">The <code>title_unavail</code> view joins movie titles, physical copies, and rental history. A missing return date identifies an open rental. It reports individual copies, so it does not imply that every copy of a title is unavailable.</p>
+        <p class="sql-notes">The <code>title_unavail</code> view joins movies, copies and rentals. It returns a row when the return date is blank. If copy 94 is out and another copy of the same film is on the shelf, only copy 94 appears.</p>
         <pre class="sql-query" data-code-label="Availability view"><code>CREATE OR REPLACE VIEW title_unavail AS
 SELECT m.title, me.media_id
 FROM movies m
@@ -119,20 +119,19 @@ WITH READ ONLY;</code></pre>
           <thead><tr><th scope="col">Title</th><th scope="col">Copy ID</th></tr></thead>
           <tbody><tr><td>The Shawshank Redemption</td><td>94</td></tr></tbody>
         </table>
-        <p class="sql-notes">Recording a return for copy 94 removed it from both the view and its synonym during validation. Rolling back that test restored the original result.</p>
+        <p class="sql-notes">I recorded a return for copy 94 and reran the query. The row disappeared whether I queried the view or its synonym. When I rolled back the test, the row returned.</p>
       </section>
       <section class="section" id="validation" aria-labelledby="validation-title" data-read-label="Validation">
-        <p class="eyebrow">Execution and limitations</p>
-        <h2 id="validation-title">Recorded validation of the original assignment.</h2>
+        <p class="eyebrow">Testing the class project</p>
+        <h2 id="validation-title">What the original database allowed</h2>
         <div class="sql-notes">
-          <p>The exact download was executed in a fresh Oracle schema using SQL*Plus. All 43 checks passed, covering object creation, sample counts, key and category constraints, sequence behavior, view results, and rejection of writes through the read-only view.</p>
-          <p>The validation suite was added for this portfolio review after the class submission. These checks establish the tested behavior; they do not cover every possible business rule.</p>
+          <p>I ran the downloadable script in a fresh Oracle schema using SQL*Plus. All 43 checks passed. They covered the database objects, sample row counts, key and category constraints, sequences, query results and attempts to write through the read-only view.</p>
+          <p>I added those tests after the course ended. They also confirmed three choices in the original schema.</p>
           <ul>
-            <li><strong>Return-date order:</strong> the original schema accepts a return date earlier than the checkout date.</li>
-            <li><strong>One open rental per copy:</strong> the original schema permits two open rentals for the same copy with different checkout dates. This also duplicates the copy in the view.</li>
-            <li><strong>Optional rating:</strong> an empty movie rating is permitted. The rating constraint checks supplied values; it does not make a rating mandatory.</li>
+            <li><strong>Return dates.</strong> The original schema accepted a return before checkout.</li>
+            <li><strong>Double checkout.</strong> Two open rentals for the same copy were possible if their checkout dates differed. The copy then appeared twice in the view.</li>
+            <li><strong>Optional movie ratings.</strong> A rating could be blank. When someone entered a rating, Oracle checked it against the allowed values.</li>
           </ul>
-          <p>The published assignment retains these limitations. No production use or business results are claimed.</p>
         </div>
         <div class="button-row">
           <a class="button button-secondary" href="downloads/Movie_Rental_Validation.sql" download>Download validation checks</a>
@@ -141,10 +140,10 @@ WITH READ ONLY;</code></pre>
       </section>
       <section class="section" id="revision" aria-labelledby="revision-title" data-read-label="Oracle revision">
         <p class="eyebrow">Separate portfolio extension · September 2026</p>
-        <h2 id="revision-title">Add two controls without rewriting the assignment.</h2>
+        <h2 id="revision-title">Block returns dated before checkout and double checkouts</h2>
         <div class="sql-notes">
-          <p>The AI-assisted extension adds a check constraint for return-date order and a conditional unique index for open rentals. It is a portfolio revision, not part of the original class submission.</p>
-          <p>A return may be recorded at or after checkout, or remain blank while the copy is out. The index uses the copy ID only for open rentals; completed rentals map to <code>NULL</code>, allowing multiple historical rentals for a copy. This follows Oracle's <a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/constraint.html">conditional uniqueness support</a>.</p>
+          <p>After the course, I used AI assistance to add two rules in a separate SQL script. A check constraint enforces return-date order, and a conditional unique index limits each copy to one open rental.</p>
+          <p>The return date can stay blank while a copy is out. Once entered, it must be on or after checkout. The index uses the copy ID for open rentals and <code>NULL</code> for completed ones, so the same copy can be rented again after a return. This follows Oracle's <a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/constraint.html">conditional uniqueness support</a>.</p>
         </div>
         <pre class="sql-query" data-code-label="Rental controls"><code>ALTER TABLE rental_history ADD CONSTRAINT rental_return_order_ck
   CHECK (return_date IS NULL OR return_date &gt;= rental_date);
@@ -152,10 +151,10 @@ WITH READ ONLY;</code></pre>
 CREATE UNIQUE INDEX rental_one_open_uq ON rental_history
   (CASE WHEN return_date IS NULL THEN media_id ELSE NULL END);</code></pre>
         <div class="sql-notes">
-          <p><strong>Test coverage provided:</strong> positive cases cover same-time returns, multiple completed rentals, open rentals on different copies, returning and renting again, and view/synonym results. Negative cases cover early returns on insert and update, moving checkout past a return, a second open rental, reopening an occupied copy's history, and moving an open rental to an occupied copy.</p>
-          <p><strong>Verified runtime:</strong> all 20 revision checks passed in SQL*Plus on Oracle AI Database 26ai Free, version <code>23.26.3.0.0</code>, in a new disposable schema. Object validation found zero invalid objects. The original 43-check result applies only to the original download.</p>
-          <p><strong>Scope:</strong> concurrent-session behavior and performance were not tested; no production use or business results are claimed. Historical overlaps between completed rentals remain outside this extension's scope.</p>
-          <p>Run the extension once in a disposable Oracle schema after loading the original project. Existing violations must be resolved first. Oracle DDL commits implicitly; validation rolls back its test rows but does not undo the installed constraint or index.</p>
+          <p><strong>Rental tests.</strong> I checked that two copies could be out at once and that a returned copy could go out again. The tests also covered same-time returns, multiple completed rentals and the view and synonym results. Oracle rejected returns dated before checkout on insert and update, a checkout moved past its return, and attempts to open, reopen or move a rental onto a copy already out.</p>
+          <p><strong>Results.</strong> All 20 extension checks passed in a fresh Oracle schema using SQL*Plus on Oracle AI Database 26ai Free, version <code>23.26.3.0.0</code>. Oracle reported zero invalid objects.</p>
+          <p><strong>Limits.</strong> I tested one database session at a time and didn’t measure performance. The extension checks open rentals. It still allows overlapping dates on two completed rentals.</p>
+          <p>Run the extension once in a disposable Oracle schema after loading the original project. Fix any existing violations first. Oracle commits DDL implicitly. The tests roll back their sample rows, but the constraint and index stay installed.</p>
         </div>
         <div class="button-row">
           <a class="button button-secondary" href="downloads/Movie_Rental_Improvements.sql" download>Download Oracle revision</a>
@@ -171,7 +170,7 @@ ALTER SESSION SET NLS_DATE_LANGUAGE = 'ENGLISH';
       </section>
       <section class="section case-methods" id="run-project" aria-labelledby="run-title" data-read-label="Run the project">
         <h2 id="run-title">Run the academic project</h2>
-        <p class="sql-notes">Use a fresh Oracle schema with permission to create tables, views, sequences, indexes, and synonyms. The script creates objects and commits sample rows, so use a disposable learning database. Run it as a script in SQL*Plus or SQL Developer; it includes SQL*Plus commands such as <code>DESC</code>.</p>
+        <p class="sql-notes">Use a fresh Oracle schema with permission to create tables, views, sequences, indexes, and synonyms. The script creates objects and commits sample rows, so use a disposable learning database. Run it as a script in SQL*Plus or SQL Developer because it includes SQL*Plus commands such as <code>DESC</code>.</p>
         <p class="sql-notes">Set the session date language to English because the original date literals use English month abbreviations. Run the project first, then the optional validation script in the same schema. The validation script rolls back its row changes, but sequence numbers advance.</p>
         <pre class="sql-query" data-code-label="Original run commands" data-code-language="SQL*Plus"><code>ALTER SESSION SET NLS_DATE_LANGUAGE = 'ENGLISH';
 @Movie_Rental_Database.sql
@@ -180,7 +179,7 @@ ALTER SESSION SET NLS_DATE_LANGUAGE = 'ENGLISH';
         <a class="button button-secondary" href="index.html#projects">Back to selected projects</a>
       </section>
       <section class="contact-section" id="contact">
-        <div class="contact-copy"><p class="eyebrow">Contact</p><h2>Contact Jonathan.</h2><p>I'm open to business analysis, reporting, operations, and business systems opportunities.</p></div>
+        <div class="contact-copy"><p class="eyebrow">Contact</p><h2>Contact Jonathan.</h2><p>I’m looking for permanent, full-time work. I’m based in New Jersey and open to remote roles in the U.S., hybrid work, and relocation.</p></div>
         <div class="contact-actions">
           <a class="button contact-primary" href="mailto:jonathancapalbo1@gmail.com">Email Jonathan</a>
           <div><a href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis / systems résumé (PDF)</a><a href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations résumé (PDF)</a></div>

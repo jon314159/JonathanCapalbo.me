@@ -52,12 +52,12 @@
           <div class="case-links">
             <a href="arcade-ticketing-evidence.html">Requirements and planned tests</a>
             <a href="#process-visual">Compare the workflows</a>
-            <a href="arcade-status-update.html">One-page stakeholder update</a>
+            <a href="arcade-status-update.html">Update for the operations manager</a>
           </div>
         </div>
         <aside class="case-cover-excerpt" aria-labelledby="repair-excerpt-title">
           <h2 id="repair-excerpt-title">Machine A-12</h2>
-          <p>The repair is marked Resolved, but the start button still fails. The shift lead records the failed check and its reason. The ticket goes back to In Progress with the same maintenance owner.</p>
+          <p>The technician marks the repair Resolved. When the shift lead tries the start button, nothing happens. The lead records what failed and sends the ticket back to the same technician.</p>
           <a href="#worked-example">Follow the proposed repair</a>
         </aside>
       </div>
@@ -66,22 +66,19 @@
     <main id="case-content">
       <section class="section case-intro" id="project-details" data-read-label="Planning scope">
         <div>
-          <p class="eyebrow">Problem and recommendation</p>
-          <h2>Bring scattered issue reports into one clear ticketing process.</h2>
+          <h2>Who owns the next step?</h2>
         </div>
         <div class="case-intro-copy">
-          <p>In the simulated current state, staff report issues through conversations, paper notes, phone calls, and messages. With information spread across several channels, it is hard to see who owns the work, what is urgent, and whether an issue was fully resolved.</p>
-          <p>The proposed pilot covers broken machines, game-card issues, refunds, prize-counter problems and facility incidents at one location. Each uses the same ticket, with different approval and exception paths.</p>
-          <p>This was a planning exercise. I wrote the acceptance criteria and rollout plan. I did not configure software, execute the proposed tests or measure operational results.</p>
+          <p>In this scenario, a staff member can report a problem by phone, on paper, in a message or in person. The next shift has to piece together who took the report, how urgent it is and whether anyone fixed it.</p>
+          <p>I proposed one ticket for broken machines, game-card issues, refunds, prize-counter problems and facility incidents at a single location. The shift lead would assign each ticket to a named owner. Refunds would also need a manager’s approval.</p>
+          <p>I wrote the acceptance criteria and rollout plan. The project ended at planning, before software configuration, testing or measurement.</p>
         </div>
       </section>
 
       <section class="case-band" id="process-visual" aria-labelledby="future-flow-title" data-read-label="Proposed workflow">
         <div class="section case-band-inner">
           <div class="section-heading compact-heading">
-            <p class="eyebrow">Process comparison · Hypothetical</p>
-            <h2 id="future-flow-title">From scattered reports to verified closure.</h2>
-            <p>The process comparison shows proposed handoffs, ownership and exception paths.</p>
+            <h2 id="future-flow-title">How a ticket would move between shifts</h2>
           </div>
           <div class="arcade-emergency-note" role="note">
             <span aria-hidden="true">!</span>
@@ -94,9 +91,9 @@
                 <li><strong>Scattered intake</strong><span>Staff use conversations, paper, calls, and messages.</span></li>
                 <li><strong>Informal handoff</strong><span>Urgency and responsibility depend on who hears the report.</span></li>
                 <li><strong>Work and decisions</strong><span>Updates and refund decisions may sit outside the original report.</span></li>
-                <li><strong>Verbal completion</strong><span>A verbal update may be the only evidence of a fix.</span></li>
+                <li><strong>Word of mouth</strong><span>A coworker’s update may be the only record of a fix.</span></li>
               </ol>
-              <p class="flow-context">Scattered records make pending work, backlog, and completion measures difficult to reconcile.</p>
+              <p class="flow-context">At the end of a shift, staff have no single list of what is waiting, what is still open or what they finished.</p>
             </div>
             <div class="process-state">
               <h3>Proposed future state</h3>
@@ -104,25 +101,25 @@
                 <li><strong>New</strong><span>Staff record category, location, description, and urgency.</span></li>
                 <li><strong>Triaged</strong><span>Shift lead confirms impact and priority.</span></li>
                 <li><strong>Assigned</strong><span>Shift lead assigns a team and named owner.</span></li>
-                <li class="work-step"><strong>In Progress</strong><span>Owner investigates and records actions.</span><div class="flow-branch"><b>↔ Pending</b><small>Optional dependency branch. Return here when work resumes.</small></div></li>
+                <li class="work-step"><strong>In Progress</strong><span>The owner investigates and records what they do.</span><div class="flow-branch"><b>↔ Pending</b><small>If work has to wait, record why. Return here when work resumes.</small></div></li>
                 <li><strong>Resolved</strong><span>Owner records action notes and a resolution code.</span></li>
-                <li class="verification-step"><strong>Verify</strong><span>Shift lead checks completion.</span><div class="flow-return"><b>Fail → In Progress</b><small>Record the reason; retain the owner.</small></div><span class="flow-pass">Pass → Closed</span></li>
-                <li><strong>Closed</strong><span>Record verifier and time; preserve history for reporting.</span></li>
+                <li class="verification-step"><strong>Verify</strong><span>The shift lead checks the fix.</span><div class="flow-return"><b>Fail → In Progress</b><small>Record what failed and keep the same owner.</small></div><span class="flow-pass">Pass → Closed</span></li>
+                <li><strong>Closed</strong><span>The ticket keeps the verifier’s name, the time and its history for reporting.</span></li>
               </ol>
             </div>
-            <figcaption>Boxes name ticket statuses except <strong>Verify</strong>, which is a decision between Resolved and Closed. Arrows show the proposed handoffs and return paths.</figcaption>
+            <figcaption><strong>Verify</strong> marks the shift lead’s decision. The ticket remains Resolved until that check passes or sends it back to In Progress.</figcaption>
           </figure>
           <div class="process-details">
-            <article><h3>Refund approval is a separate decision.</h3><p>The ticket stays In Progress while an authorized manager other than the requester decides. Approval allows fulfillment within the approved amount. Rejection requires a reason and customer communication, then resolution as declined.</p><a href="arcade-ticketing-evidence.html#ac-04">Refund decision criteria</a></article>
-            <article><h3>Pending retains the owner.</h3><p>Parts, vendor, or customer input can block work. Record the reason, next action, and review date. The shift lead reviews overdue items. When the dependency arrives, return to In Progress.</p><a href="arcade-ticketing-evidence.html#ac-05">Pending criteria</a></article>
-            <article><h3>Verification controls closure.</h3><p>Resolved remains in the open backlog. A failed check returns to In Progress; a passing check permits closure. A later recurrence creates a linked new ticket and preserves the closed record.</p><a href="arcade-ticketing-evidence.html#ac-06">Verification criteria</a></article>
+            <article><h3>Who can approve a refund?</h3><p>The ticket stays In Progress while an authorized manager other than the requester decides. Staff can fulfill a refund up to the approved amount. If the manager declines, staff record the reason, tell the customer and resolve the ticket as declined.</p><a href="arcade-ticketing-evidence.html#ac-04">Refund decision criteria</a></article>
+            <article><h3>Who follows up while work is on hold?</h3><p>A ticket waiting for parts, a vendor or a customer keeps its owner. The owner records what they need, the next step and a review date. The shift lead checks overdue tickets. Work returns to In Progress when it can resume.</p><a href="arcade-ticketing-evidence.html#ac-05">Pending criteria</a></article>
+            <article><h3>When does a ticket leave the backlog?</h3><p>A Resolved ticket still counts as open. The shift lead can close it after verifying the fix, or return it to In Progress if the check fails. If the issue comes back after closure, staff open a new ticket and link it to the original.</p><a href="arcade-ticketing-evidence.html#ac-06">Verification criteria</a></article>
           </div>
           <details class="process-text">
             <summary>Read the process as text</summary>
-            <p>In the simulated current state, staff report through conversations, paper, calls, and messages. Priority and ownership depend on who hears the report. Work and refund decisions may occur outside it; completion may be verbal, leaving scattered records for reporting.</p>
-            <p>In the proposed future state, emergency response comes first for immediate hazards, followed by documentation when safe. Staff create a New ticket. The shift lead confirms impact and priority (Triaged), then a team and named owner (Assigned). Unclear routing stays with the shift lead.</p>
-            <p>The owner records work In Progress. Refunds require a separate manager decision before fulfillment; awaiting approval is still In Progress. Optional Pending requires a dependency reason, next action, review date, and retained owner; work resumes In Progress.</p>
-            <p>Action notes and a resolution code allow Resolved. Shift-lead verification either fails, returning to In Progress with a reason and the same owner, or passes, permitting Closed with verifier and timestamp recorded. Closed history is preserved; recurring issues receive linked new tickets.</p>
+            <p>In the fictional arcade, staff report problems in conversation, on paper, by phone or in messages. Priority and ownership depend on who hears the report. Repair updates and refund decisions can end up in different places.</p>
+            <p>In the proposed process, staff address immediate hazards first and create a New ticket when it is safe. The shift lead confirms impact and priority (Triaged), then assigns a team and a named owner (Assigned). If the route is unclear, the shift lead keeps responsibility.</p>
+            <p>The owner records actions while the ticket is In Progress. A refund stays In Progress while a manager decides whether to approve it. If work is blocked, the owner can mark it Pending, record why, set the next action and review date, then return it to In Progress when work resumes.</p>
+            <p>The owner adds action notes and a resolution code to mark a ticket Resolved. If verification fails, the shift lead records why and returns it to the same owner as In Progress. If the check passes, the ticket can be Closed with the verifier’s name and time. Staff keep the closed history and link any later recurrence to it in a new ticket.</p>
           </details>
           <a class="project-link" href="arcade-ticketing-evidence.html#process-comparison">Read the process table and exception rules</a>
         </div>
@@ -130,30 +127,25 @@
 
       <section class="section worked-example" id="worked-example" aria-labelledby="worked-example-title" data-read-label="Worked example">
         <div class="section-heading compact-heading">
-          <p class="eyebrow">Worked example · Hypothetical</p>
-          <h2 id="worked-example-title">A repair is attempted, but the machine still fails.</h2>
-          <p>Follow a proposed repair through assignment, verification and a planned failure check.</p>
+          <h2 id="worked-example-title">What if the start button still fails?</h2>
         </div>
         <ol class="worked-example-list">
           <li><h3>Report and assign</h3><p>A staff member reports that the start button on Machine A-12 is unresponsive. The report includes the machine location and urgency. The shift lead confirms impact and priority, then assigns a named maintenance owner before work starts.</p><a class="project-link case-inline-link" href="arcade-ticketing-evidence.html#req-03">REQ-03 · Ownership rule</a></li>
-          <li><h3>Resolve, then verify</h3><p>After an attempted repair, the owner records the action and marks the issue Resolved. Under the proposed closure rule, the shift lead must verify that the machine works before it can become Closed.</p><a class="project-link case-inline-link" href="arcade-ticketing-evidence.html#req-06">REQ-06 · Closure rule</a><a class="project-link case-inline-link" href="arcade-ticketing-evidence.html#ac-06">AC-06 · Acceptance criteria</a></li>
-          <li><h3>Plan the failure check</h3><p>The shift lead finds that the start button still fails. UAT-09 would first try recording failed verification without a reason, which should be rejected. With the reason entered, the ticket should return to In Progress with its owner retained. <strong>Test status: Not Executed.</strong></p><a class="project-link case-inline-link" href="arcade-ticketing-evidence.html#uat-09">UAT-09 · Planned test</a></li>
+          <li><h3>Check the repair</h3><p>The owner records the attempted repair and marks the issue Resolved. Before closing it, the shift lead tries the start button. It still doesn’t work.</p><a class="project-link case-inline-link" href="arcade-ticketing-evidence.html#req-06">REQ-06 · Closure rule</a><a class="project-link case-inline-link" href="arcade-ticketing-evidence.html#ac-06">AC-06 · Acceptance criteria</a></li>
+          <li><h3>Test what happens after a failed check</h3><p>In UAT-09, the tester would first leave the failure reason blank. The system should ask for a reason. Once the tester enters one, the ticket should return to In Progress with the same owner. <strong>Test status: Not Executed.</strong></p><a class="project-link case-inline-link" href="arcade-ticketing-evidence.html#uat-09">UAT-09 · Planned test</a></li>
         </ol>
-        <p><strong>Why this rule matters:</strong> an attempted repair would remain in the open backlog until it passes verification. Closing a ticket would mean confirmed completion.</p>
       </section>
 
       <section class="section" id="ba-documents" aria-labelledby="ba-documents-title" data-read-label="Supporting documents">
         <div class="section-heading compact-heading">
-          <p class="eyebrow">Public evidence pack</p>
-          <h2 id="ba-documents-title">Review the decisions behind the ticketing plan.</h2>
-          <p id="scope-decisions">I compared the proposed process with the simulated current state, defined ownership and exception rules, and linked requirements to acceptance criteria and planned tests.</p>
-          <p>Requirements and review roles are proposed assumptions; no real stakeholder approval is claimed.</p>
+          <h2 id="ba-documents-title">Requirements and test plan</h2>
+          <p id="scope-decisions">I linked each requirement to the person who would review it, the rule they would check and a planned test. The roles are my proposals for the fictional arcade.</p>
         </div>
         <ol class="arcade-analysis-path">
           <li><strong><a href="arcade-ticketing-evidence.html#process-comparison">Process comparison</a></strong><span>Current and proposed workflows, responsible roles, and exception paths.</span></li>
-          <li><strong><a href="arcade-ticketing-evidence.html#requirements">Requirements register</a></strong><span>Ten proposed requirements with rationale, priority, and review ownership.</span></li>
+          <li><strong><a href="arcade-ticketing-evidence.html#requirements">Requirements register</a></strong><span>Ten requirements, why each matters, its priority and who would review it.</span></li>
           <li><strong><a href="arcade-ticketing-evidence.html#acceptance-criteria">Acceptance criteria</a></strong><span>Given/When/Then scenarios linked to each requirement.</span></li>
-          <li><strong><a href="arcade-ticketing-evidence.html#planned-tests">Planned tests</a></strong><span>Fourteen UAT scenarios with setup, actions, and expected results. All are Not Executed.</span></li>
+          <li><strong><a href="arcade-ticketing-evidence.html#planned-tests">Planned tests</a></strong><span>Setup, steps and expected results for fourteen user acceptance tests.</span></li>
           <li><strong><a href="arcade-ticketing-evidence.html#traceability">Traceability sample</a></strong><span>Follow a process need through its requirement, acceptance criteria, and planned tests.</span></li>
         </ol>
         <div class="button-row"><a class="button button-primary" href="arcade-ticketing-evidence.html">Open the evidence pack</a><a class="button button-secondary" href="arcade-ticketing-evidence.html" download="arcade-ticketing-evidence.html">Download the pack (HTML)</a></div>
@@ -161,13 +153,12 @@
 
       <section class="section case-scope">
         <div class="scope-card">
-          <p class="eyebrow">Planning methods</p>
-          <h2>Business analysis methods used in this case study.</h2>
+          <h2>Methods I used</h2>
           <div class="skill-list case-skill-list"><span>Stakeholder analysis</span><span>Current and future-state mapping</span><span>Requirements analysis</span><span>Business rules</span><span>User stories</span><span>Acceptance criteria</span><span>Data definition</span><span>Traceability</span><span>UAT planning</span><span>Implementation planning</span><span>Procedure writing</span><span>KPI design</span></div>
         </div>
         <aside class="scope-note">
           <h3>How ServiceNow could fit</h3>
-          <p>I reviewed official ServiceNow documentation to understand how incident, request, work-order, and workplace-service concepts could support the process. I did not configure or test the platform.</p>
+          <p>I compared the proposed workflow with four parts of ServiceNow. These were potential uses for the platform.</p>
           <ul class="arcade-source-list">
             <li><a href="https://www.servicenow.com/products/incident-management.html" target="_blank" rel="noopener noreferrer">Incident Management</a>: interruption and restoration concepts</li>
             <li><a href="https://www.servicenow.com/docs/r/servicenow-platform/service-catalog/c_UsingTheServiceCatalog.html" target="_blank" rel="noopener noreferrer">Service Catalog</a>: structured request concepts</li>
@@ -179,21 +170,19 @@
 
       <section class="section case-methods" aria-labelledby="method-sources-title">
         <div class="section-heading compact-heading">
-          <p class="eyebrow">Methods and sources</p>
-          <h2 id="method-sources-title">References for the planning approach.</h2>
+          <h2 id="method-sources-title">Sources and project notes</h2>
         </div>
         <div class="project-detail-grid">
           <div><span>Business analysis structure</span><p>I used IIBA's standard to organize the work.</p><a class="project-link case-inline-link" href="https://www.iiba.org/knowledgehub/the-business-analysis-standard/" target="_blank" rel="noopener noreferrer">IIBA Business Analysis Standard <span aria-hidden="true">↗</span></a></div>
           <div><span>Acceptance criteria format</span><p>I wrote scenarios in Given/When/Then format.</p><a class="project-link case-inline-link" href="https://cucumber.io/docs/gherkin/reference/" target="_blank" rel="noopener noreferrer">Cucumber Gherkin reference <span aria-hidden="true">↗</span></a></div>
-          <div><span>Public project summary</span><p>The summary notes describe the scope and methods. The public evidence pack above contains the proposed requirements and planned tests.</p><a class="project-link case-inline-link" href="https://github.com/jon314159/JonathanCapalbo.me/blob/main/case-studies/arcade-operations-ticketing-modernization.md" target="_blank" rel="noopener noreferrer">Read summary notes <span aria-hidden="true">↗</span></a></div>
+          <div><span>Project scope</span><p>My notes explain what the pilot would cover and what a team would need before implementation.</p><a class="project-link case-inline-link" href="https://github.com/jon314159/JonathanCapalbo.me/blob/main/case-studies/arcade-operations-ticketing-modernization.md" target="_blank" rel="noopener noreferrer">Read the project notes <span aria-hidden="true">↗</span></a></div>
         </div>
       </section>
 
       <section class="contact-section case-contact">
         <div class="contact-copy">
-          <p class="eyebrow">Contact</p>
-          <h2>Contact Jonathan.</h2>
-          <p>I'm open to business analysis, reporting, operations, and business systems opportunities.</p>
+          <h2>Contact Jonathan</h2>
+          <p>I’m looking for permanent, full-time work. I’m based in New Jersey and open to remote roles in the U.S., hybrid work, and relocation.</p>
         </div>
         <div class="contact-actions">
           <a class="button contact-primary" href="mailto:jonathancapalbo1@gmail.com">Email Jonathan</a>

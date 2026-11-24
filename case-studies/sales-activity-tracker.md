@@ -2,13 +2,13 @@
 
 ## Summary
 
-This Excel project originated as a workplace initiative connecting daily activity records to monthly reporting. The public sample uses fictional data. Inputs include fictional interaction IDs, product selections, outcomes, units, follow-up flags, and notes. The dashboard compares completed units with monthly product goals and a separately configured daily target. Settings controls product labels, goals, target days, and point values.
+At Comcast/Xfinity, I found that the monthly totals in my Excel activity tracker skipped some days. I corrected the formulas. For this portfolio, I built a separate workbook with fictional records so readers can check how daily entries add up over a month.
 
-The public case study is available at [jonathancapalbo.me/sales-activity-tracker.html](https://jonathancapalbo.me/sales-activity-tracker.html).
+[Read the case study and follow a day through the workbook](https://jonathancapalbo.me/sales-activity-tracker.html).
 
-The Tableau and React portions are new, AI-assisted portfolio extensions using the fictional public records. They are separate from the workplace Excel initiative and Jonathan's prior Tableau coursework. The browser explorer is a separate React implementation; the Tableau image is a static native export and the TWBX provides native interaction.
+I later built two AI-assisted versions for this portfolio, one in Tableau and one in React. Both use the same 465 fictional records as the Excel workbook. My Tableau coursework was a separate project.
 
-Excel settings guide daily entry, and the monthly summary and dashboard consolidate those entries for reporting. The Tableau extension reuses the same 465 fictional daily records for outcome, target, and record analysis. These are two views of the same activity-reporting project.
+July’s 324 completed units exceeded the combined monthly product goals of 310. Only 14 of 31 days met the daily target. The workbook lets you inspect both calculations.
 
 ## Tableau and browser review
 
@@ -17,18 +17,20 @@ Excel settings guide daily entry, and the monthly summary and dashboard consolid
 - [All 465 fictional source records](../downloads/Fictional_Activities.csv)
 - [React browser explorer](https://jonathancapalbo.me/sales-activity-tracker.html#browser-explorer)
 
-Both views show outcomes by product, daily completed units, activity volume, completed-interaction share, units per completed interaction, and source records. Monthly totals and all daily charts always use the full source. Product and outcome controls narrow outcomes and records. Day and chart selections narrow records further. Clearing chart selection returns to the product/outcome subset. The React reset button restores 465 records and target 11. In Tableau, Escape clears the chart selection; set Product and Outcome to All and the daily target to 11 to restore defaults.
+Open the packaged workbook in Tableau or use the browser version to compare outcomes by product and see the underlying records. The daily charts show completed units, activity volume, the percentage of interactions completed, and units per completed interaction. Monthly totals and daily charts always include the full month.
 
-The React view uses semantic count and record tables, keyboard controls, an explicit empty state, and record details with all 10 source fields. Ratios divide total numerators by total denominators; they do not average daily percentages. Dates are July reporting dates, with no timezone conversion. Follow-up flags record activity, not an unresolved backlog. The sample provides no evidence of causes, response times, revenue, or business improvement.
+Product and outcome filters narrow the counts and records. Selecting a day or count narrows the record list further. In the browser, **Clear chart selection** keeps your product and outcome filters. **Reset all controls** restores the 465 records and the daily target of 11 units. In Tableau, press **Escape** to clear a chart selection. To restore the defaults, set Product and Outcome to All and the target to 11.
 
-React and ReactDOM 18.3.1 are pinned and self-hosted with their MIT license. The app uses `createRoot` and `createElement`, with no package installation or build step. The Excel walkthrough remains its original plain JavaScript implementation. Existing page fragments and workbook bytes are preserved. A local HTTP server is required for the JSON fetch; static results and downloads remain readable without JavaScript.
+The browser view includes keyboard-accessible count and record tables. Open **Details** to read all 10 fields. The completion percentage uses all completed interactions divided by all interactions. Dates follow the workbook’s July reporting dates. A follow-up flag records an activity at the time of entry. The records have no later status to show whether the follow-up remains open.
+
+The site serves React and ReactDOM 18.3.1 locally with their MIT license. The explorer uses `createRoot` and `createElement` and needs no build step. For local testing, use an HTTP server so the explorer can load its JSON data. The Excel walkthrough uses plain JavaScript. The results table and downloads also work with JavaScript turned off.
 
 ## Public demonstration workbook
 
-[Download the workbook](../downloads/Fictional_Sales_Activity_Tracker.xlsx). It was rebuilt from scratch using fabricated records. The case-study screenshots and analysis refer to this file. It contains 35 sheets:
+The [downloadable Excel workbook](../downloads/Fictional_Sales_Activity_Tracker.xlsx) is the source for the screenshots and figures in the case study. Its 35 sheets include the following.
 
 1. **Dashboard:** four KPI cards and two charts comparing fictional results with goals.
-2. **Monthly Summary:** one row for each day, linked to the 31 daily sheets.
+2. **Monthly Summary:** one row per day, with figures pulled from the daily worksheets.
 3. **Settings:** editable month, product labels, monthly product goals, daily goals, and point values.
 4. **Day 01 through Day 31:** separate activity tables, daily totals, goal status, and product progress.
 5. **Read Me:** instructions and a clear privacy statement.
@@ -40,7 +42,7 @@ React and ReactDOM 18.3.1 are pinned and self-hosted with their MIT license. The
 - Drop-down validation for products, outcomes, and follow-up choices, plus whole-number validation from 0 through 10 for units
 - Daily summary cards for activities, completed units, points, goal, and status
 - Daily product totals and progress compared with a pro-rated daily target
-- A monthly summary linked to all 31 daily sheets
+- A monthly summary that uses formulas to pull in totals from all 31 daily worksheets
 - A line chart comparing daily completed units with the editable daily goal
 - A bar chart comparing fictional product totals with editable monthly goals
 - Conditional formatting for completed outcomes, follow-ups, and goal status
@@ -48,32 +50,32 @@ React and ReactDOM 18.3.1 are pinned and self-hosted with their MIT license. The
 
 ## How settings affect the workbook
 
-`Settings → Daily sheets → Monthly Summary → Dashboard`
+The daily sheets read their goals and product names from Settings. Monthly Summary pulls in the daily totals, and the Dashboard reads the summary.
 
-Changing a fictional product name updates connected labels and the available drop-down choices. Existing manually entered activity text remains as recorded. Product goals update product progress and the dashboard comparison; the daily goal updates status and the daily chart; target days update the Monthly Summary comparison; and point values recalculate point totals.
+Renaming a product updates its labels and drop-down choices. Earlier entries keep the text originally entered. Changing a product goal updates the dashboard comparison, while changing the daily goal updates each day’s status and the line chart. Target days feed the Monthly Summary comparison. Point values determine the points totals.
 
 ## Demonstration finding
 
-The fictional workbook uses separate monthly product goals and a daily target:
+July’s dashboard compares each product with its monthly goal and each day with the daily target.
 
-- 324 completed units against 310 combined product-goal units, or **104.5%** attainment;
-- 402.5 points against a 400-point goal, or **100.6%** attainment;
-- all four product totals finished above their configured goals; and
-- only 14 of 31 days met the daily unit goal, while 17 finished below it.
+- 324 completed units against a combined monthly product goal of 310, or **104.5%**.
+- 402.5 points against a 400-point goal, or **100.6%**.
+- All four products finished above their goals.
+- 14 days met the daily goal and 17 fell short.
 
-The monthly product goals total 310 units. The separate daily target is 11 units, implying 341 units across 31 days. The same 324 completed units represent 95.0% of that 341-unit benchmark. These independently editable targets are not equivalent, so the contrast cannot by itself establish a performance problem.
+At 11 units per day, the target for 31 days adds up to 341. The same 324 completed units reached 95.0% of that benchmark. You can change either target independently in Settings.
 
-Before recommending a process change, confirm the intended relationship between the targets, then compare activity volume and completed units on below-target days. The fictional data does not establish causes such as staffing, demand, or employee performance.
+Before proposing a process change, I’d ask how the two goals were set and compare activity counts with completed units on the 17 below-target days. Explaining why those days fell short would also require information about staffing and demand.
 
 ## Validation checks
 
-On October 6, 2026, all 465 records and all 10 fields were reconciled with the fictional source. The revised packaged workbook opened in native Tableau; its exported preview and website download were checked against the final files. Native checks confirmed fixed month totals, target changes, an empty date/subset intersection, Escape recovery to 22 records, and the full source worksheet.
+The October 6, 2026 checks compared all 10 fields in each of the 465 records with the fictional source. The test opened the packaged workbook in Tableau and checked the preview and download against the final files. Monthly totals held steady when the target changed. When a day selection narrowed the filtered results to zero, Escape restored all 22 matching records. The checks also covered the full source worksheet.
 
 Browser checks covered targets 0, 10, 11, 12, 13 and 25; all outcome counts and daily selections; 465 unique records across 47 pages; keyboard and touch controls; empty-state recovery; loading and failure fallback; and no-JavaScript content. At widths 320, 390, 768 and 1440, the expanded daily and record tables had no horizontal overflow at normal and 200% root text size. Chart axes use HTML labels at 16 and 32 pixels respectively. The existing walkthrough, navigation, SQL-copy controls and downloads passed their regression checks.
 
 The native workbook has a fixed canvas and scrollable records. Full native keyboard-only, screen-reader, mobile and 200% text operation were not certified. The PNG is a static preview; native controls require the TWBX. The React explorer is a separate implementation using the same data.
 
-A September 11, 2026 source-record check independently reproduced 465 activities, 324 units, 402.5 points, and the daily and product totals from the original public workbook. This was a reconciliation of the source records and saved outputs, not a native Excel interaction test.
+A September 11, 2026 check compared the entries with the workbook’s saved results. Adding them independently reproduced the daily and product totals, including 465 activities, 324 units, and 402.5 points.
 
 - Four product totals reconcile to the 324 completed-unit dashboard total.
 - Product-level points reconcile to the 402.5 dashboard total.
@@ -83,7 +85,7 @@ A September 11, 2026 source-record check independently reproduced 465 activities
 
 ## Design trade-off
 
-Separate daily tabs keep each day's inputs, totals, and goal status together for review. The monthly summary connects those daily views to the dashboard. Changes to repeated layouts or formulas need consistent updates across the tabs, followed by reconciliation of monthly totals.
+Separate tabs put one day’s entries beside its totals and goal status. That makes one day easy to check, but it adds maintenance. If I change a daily formula or layout, I have to update the affected tabs and recheck the monthly totals.
 
 ## Fictional public version
 
@@ -94,7 +96,7 @@ The public workbook contains no:
 - actual revenue, compensation, quotas, goals, or performance results; or
 - confidential processes, scripts, systems, or operational instructions.
 
-Every published product name, goal, activity record, identifier, date, note, result, and chart value is fictional.
+All published names, goals, records and chart values are fictional.
 
 ## Tools used
 

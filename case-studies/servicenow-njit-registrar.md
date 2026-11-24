@@ -1,32 +1,14 @@
 # NJIT Registrar ServiceNow Portal
 
-## Summary
+## The project
 
-For this academic project, I used a ServiceNow school lab to build a searchable home page and organize common registrar information. The design supports two navigation paths: search for an article or browse by topic.
+For an NJIT course, I built a registrar home page in a temporary ServiceNow lab. I organized 42 articles into 12 categories and revised the guide to registering for classes in Banner. The lab has since closed. The [public case study](https://jonathancapalbo.me/servicenow-njit-registrar.html) includes a screenshot of the portal and a recreated excerpt from the guide.
 
-The public case study is available at [jonathancapalbo.me/servicenow-njit-registrar.html](https://jonathancapalbo.me/servicenow-njit-registrar.html).
+## Finding an article
 
-This is an academic demonstration, not NJIT's live registrar system or current NJIT guidance.
+I put ServiceNow’s knowledge search widget next to the topic categories. A student who knew the word “transcript” could search for it. Someone unsure which form they needed could browse the Forms Directory. The home page also had popular topics, quick links, office hours and contact details. I used reusable HTML and CSS blocks for the office information.
 
-The temporary school-lab instance is no longer available. The public evidence consists of the preserved screenshot, project notes, and clearly labeled recreated article excerpt.
-
-## Responsibility and boundaries
-
-My project work covered school-lab portal configuration, article organization, and revision of the registration article through version 3.0.
-
-The project focused on portal navigation and knowledge content. Registrar request forms, ServiceNow catalog items, production deployment, and live usage measurement were outside its documented scope.
-
-## What the project includes
-
-- A dedicated ServiceNow portal and custom registrar home page
-- 42 knowledge articles organized into 12 student-facing categories in the completed project
-- Search, popular topics, category cards, quick links, office hours, and contact information
-- A consistent article layout using overviews, preparation steps, numbered instructions, callouts, tables, and contact guidance
-- Article versioning that publishes the revised project version and marks the previous version as outdated in the lab
-
-## Article categories
-
-The 12 categories are:
+I grouped the articles under these 12 topics.
 
 1. Academic Calendar & Exams
 2. Academic Policies
@@ -41,65 +23,18 @@ The 12 categories are:
 11. Transfer Credit
 12. Withdrawals
 
-## How the portal was built
+## Revising the Banner registration guide
 
-The documented school-lab configuration includes one registrar Service Portal, a custom home page, reusable HTML content blocks, and ServiceNow's knowledge search widget.
+I revised **How to Register for Classes Using Banner** through version 3.0. I opened with a short overview and a preparation checklist, then put the registration steps in order. A separate section paired common Banner errors with the next action. I used tables for holds and deadlines and included contact details for problems a student couldn’t resolve on their own.
 
-The project focuses on the portal and knowledge articles. It does not include registrar request forms or ServiceNow catalog items.
+The excerpt in the case study recreates the preparation checklist and common-error guidance. The full guide also contained the numbered registration procedure. The public project doesn’t include an original before-and-after pair.
 
-## Design decisions
+## Publishing in the lab
 
-- Group articles into 12 topic-based categories rather than one long list.
-- Provide search and browsing as parallel navigation paths.
-- Use a consistent article structure with a short overview, preparation, numbered steps, common errors, and contact guidance.
-- Use ServiceNow version history to distinguish the published project version from the version marked outdated.
+I drafted the article in ServiceNow Knowledge Management, published it, then revised it. After publishing version 3.0, I marked the previous version as outdated. ServiceNow kept the earlier version in its history while the portal displayed the published guide.
 
-## Public evidence and limitations
+## What the project shows
 
-The public screenshot documents the portal home, search area, article count, office information, and contact area. The documented category list supports the 12-category taxonomy.
+The preserved screenshot shows the search, the 42-article count and the office information. It contains no student records or production data. I omitted internal user details and corrected or replaced operational details for the public example. NJIT’s registrar is the source for current instructions.
 
-The styled registration article on the public case-study page is a recreated excerpt based on my project revision. It is a portfolio presentation, not a ServiceNow screenshot.
-
-The public materials do not establish live usage, search performance, student usability results, or production deployment. No user-testing or analytics results are claimed.
-
-## Example content revision
-
-The article **How to Register for Classes Using Banner** was revised by Jonathan Capalbo through version 3.0. The recreated excerpt separates:
-
-- preparation before registration;
-- numbered registration steps;
-- common registration errors;
-- account-hold guidance;
-- deadline information; and
-- registrar contact details.
-
-The structure uses headings, callouts, lists, and tables to support scanning for a relevant step or issue.
-
-Easier scanning was the intended benefit. The preserved public material does not provide an authentic before-and-after article comparison or measured usability change.
-
-## Article updates
-
-`Draft → Publish → Revise → Replace older version`
-
-In the school-lab workflow, ServiceNow retains earlier versions while the portal presents the published project version. The prior version is marked as outdated.
-
-## Public QA checks
-
-- The screenshot displays the 42-article project count.
-- The documented taxonomy contains 12 named categories.
-- The recreated excerpt demonstrates the documented headings, lists, callout, and table structure.
-- The public screenshot and excerpt show no student records or production data.
-
-## Tools used
-
-- ServiceNow Knowledge Management
-- Service Portal configuration
-- Article organization
-- Search
-- Article versioning and content review
-- HTML and CSS content blocks
-- Instruction writing
-
-## Privacy and scope
-
-This is an academic project in a ServiceNow school lab, not NJIT's production registrar platform. It contains no real student records. The public materials include my project description, a sanitized school-lab screenshot, and a recreated excerpt based on my project revision. Internal user details are omitted, and operational details are corrected or synthetic. Nothing in the case study should be used as live NJIT guidance.
+My work covered Service Portal configuration, knowledge content and version history. The project ended in the lab, before production deployment or student testing. It didn’t include registrar request forms or catalog items, and I didn’t measure portal usage, search performance or the effect of the article revision.

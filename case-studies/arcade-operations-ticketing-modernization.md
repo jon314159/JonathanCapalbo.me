@@ -2,38 +2,36 @@
 
 ## Portfolio disclosure
 
-This is a self-directed, hypothetical business analysis case study. The arcade, stakeholders, operating data, requirements, user stories, tests, targets, and implementation materials are fictional or simulated. ServiceNow is used only as a conceptual platform frame; no ServiceNow instance was configured, built, tested, or deployed.
+I designed a ticketing process for one fictional arcade. I wrote the requirements, user stories, acceptance tests and rollout materials. The people, operating data and targets are part of the scenario. The project ended at planning, before anyone built or deployed a system or measured results.
 
 ## Business problem
 
-In the simulated current state, staff report broken machines, game-card issues, refunds, prize-counter problems, and facility incidents through conversations, paper notes, phone calls, and messages. With information spread across several channels, it is hard to see who owns the work, what is urgent, and whether an issue was fully resolved.
+In the scenario, a staff member might call in a machine failure, leave a paper note about a refund or mention a game-card problem to the next shift. Prize-counter and facility issues can come in through any of the same channels. The shift lead has to piece together what is urgent, who owns it and whether anyone checked the fix.
 
 ## Recommended scope
 
-Use one internal ticketing process for all five issue types at one location. The process would standardize intake, route work by category and urgency, apply approval controls, record status history, verify resolution, and create a reporting baseline. Emergency response always takes priority over ticket entry.
+I proposed one internal ticket for all five types of issues at one location. The shift lead would use category and urgency to assign work. The ticket would record approvals, changes of status and the final verification, giving managers a consistent record for reporting. Staff would address an immediate hazard before entering a ticket.
 
 ## Planning coverage
 
-This public summary describes the planning scope. Review the proposed lifecycle and process choices on the [case-study page](https://jonathancapalbo.me/arcade-ticketing-modernization.html), then open the [public BA evidence pack](https://jonathancapalbo.me/arcade-ticketing-evidence.html). The pack contains a process comparison, ten proposed requirements, linked user stories and acceptance criteria, fourteen planned tests, and a traceability sample. It expands the fictional scenario for portfolio review; it is not a stakeholder-approved baseline. All tests are Not Executed.
+The case study follows a machine repair that fails verification. The supporting documents show how I connected the workflow to ten proposed requirements, user stories, acceptance criteria and fourteen planned user acceptance tests. The review roles are my assumptions for this exercise. All tests have the status **Not Executed**. [Read the case study](https://jonathancapalbo.me/arcade-ticketing-modernization.html) · [Open the requirements and test plan](https://jonathancapalbo.me/arcade-ticketing-evidence.html)
 
 - Problem statement, project charter, stakeholder analysis, and scope
 - Simulated current-state and proposed future-state workflows
-- Functional, data, reporting, security, and nonfunctional requirements planning
+- Functional, data, reporting, security, and nonfunctional requirements
 - User stories and Given/When/Then acceptance criteria
 - Data definitions and cross-field validation rules
 - Requirements traceability and UAT planning
 - Implementation and cutover plan, employee procedure, and governance model
-- KPI definitions and report planning
-
-UAT remains **Not Executed**. No implementation outcomes, time savings, adoption results, or operational improvements are claimed.
+- Definitions for the measures used in reports
 
 ## Proposed lifecycle
 
-`Safety first → Minimum ticket → Triage and ownership → Work or approval → Pending if blocked → Resolve → Verify → Close and report`
+Staff would open a ticket once it was safe to do so. The shift lead would confirm priority and assign a named owner. A refund would stay In Progress while a manager decides. If a repair had to wait, the owner would record the reason and review date. After a repair, the shift lead would verify it before closure or send it back to the owner if it failed.
 
 ## ServiceNow positioning
 
-The platform mapping is conceptual. It uses official ServiceNow material to distinguish incidents, request/catalog patterns, work orders, and workplace services. A real implementation would require discovery, platform-owner review, licensing decisions, security and privacy review, configuration, integration design, and testing.
+I used ServiceNow’s documentation to see where the proposed process might fit. An interruption could be an incident, a staff request could go through the catalog, and a repair could use a work order. I also reviewed workplace services for facility issues. Before implementation, the team would need to check these assumptions with staff and the platform owner, review licensing, security and privacy, design the integrations, configure the system and test it.
 
 ## Methods and sources
 

@@ -24,15 +24,15 @@ function previewReport() {
   if (!row) {
     title.textContent = date.value ? 'No matching report' : 'Choose a report date';
     body.textContent = date.value
-      ? `Team ${team.value} has no activity report for ${day}. Choose a date listed for this team in the sample reports.`
-      : 'Select a date to find a sample row and preview its message.';
+      ? `Team ${team.value} has no report for ${day}. Choose a date listed for this team in the table.`
+      : 'Choose a date to preview this team’s report.';
     return;
   }
 
   title.textContent = email ? 'Email preview' : 'Microsoft Teams preview';
-  address.textContent = email ? `To Team ${team.value} distribution list` : `To Team ${team.value} chat`;
+  address.textContent = email ? `Email to the Team ${team.value} distribution list` : `Message to Team ${team.value}`;
   subject.textContent = email ? `Subject: Daily activity report for ${day}` : '';
-  body.textContent = `Team ${team.value} recorded ${row.cells[2].textContent} completed activities on ${day}.`;
+  body.textContent = `Team ${team.value} completed ${row.cells[2].textContent} activities on ${day}.`;
 }
 
 controls.addEventListener('change', previewReport);

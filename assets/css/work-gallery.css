@@ -21,6 +21,13 @@
   border-bottom: 1px solid var(--gallery-rule);
 }
 
+.gallery-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 clamp(.75rem, 2vw, 1.5rem);
+}
+
 .gallery-header h2 {
   margin: 0 0 .3em;
   font-size: clamp(2.05rem, 4vw, 4rem);
@@ -161,6 +168,7 @@
 .gallery-finding strong { font-weight: 700; }
 .gallery-links { display: flex; flex-wrap: wrap; gap: 0 1.25rem; }
 .gallery-link { font-size: .96rem; font-weight: 600; }
+.gallery-download { color: var(--gallery-muted); font-weight: 400; }
 .work-gallery a:hover { color: var(--blue-dark); text-decoration-thickness: 2px; }
 
 .routing-visual { background: #233f61; }

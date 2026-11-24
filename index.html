@@ -23,7 +23,7 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/style.css?v=69" />
     <link rel="stylesheet" href="assets/css/portfolio.css?v=2" />
-    <link rel="stylesheet" href="assets/css/work-gallery.css?v=2" />
+    <link rel="stylesheet" href="assets/css/work-gallery.css?v=3" />
     <link rel="stylesheet" href="assets/css/background.css?v=1" />
     <script src="assets/js/portfolio.js?v=5" defer></script>
     <script src="assets/js/work-gallery.js?v=2" defer></script>
@@ -62,7 +62,10 @@
       <section class="work-gallery" id="projects" aria-labelledby="work-title">
         <div class="gallery-inner">
           <div class="gallery-header">
-            <h2 id="work-title">Selected work</h2>
+            <div class="gallery-heading">
+              <h2 id="work-title">Selected work</h2>
+              <a class="gallery-link" href="#role-title">Browse by role</a>
+            </div>
             <div class="gallery-picker" role="tablist" aria-label="Featured projects" hidden>
               <button type="button" id="pick-workbook" role="tab" aria-controls="gallery-workbook">Excel tracker</button>
               <button type="button" id="pick-routing" role="tab" aria-controls="gallery-routing">Report routing</button>
@@ -82,7 +85,10 @@
               <h3 id="workbook-title"><a href="sales-activity-tracker.html">Activity Reporting: Excel and Tableau</a></h3>
               <p>At Comcast, I noticed that my monthly Excel report was missing activity I’d already logged. I traced the problem to the formulas and corrected them.</p>
               <p class="gallery-finding">The sample workbook shows 324 units against a monthly goal of 310 (<strong>105%</strong>). Daily totals fell short of the 11-unit target on <strong>17 of 31 days</strong>.</p>
-              <a class="gallery-link" href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download the Excel workbook</a>
+              <div class="gallery-links">
+                <a class="gallery-link" href="sales-activity-tracker.html#browser-explorer">Try the tracker in your browser</a>
+                <a class="gallery-link gallery-download" href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download the Excel workbook</a>
+              </div>
             </div>
           </article>
 
@@ -134,7 +140,7 @@
 
           <div class="gallery-directory">
             <section class="project-paths" aria-labelledby="role-title">
-              <h3 id="role-title">Browse projects by role</h3>
+              <h3 id="role-title" tabindex="-1">Browse projects by role</h3>
               <div class="role-links" role="navigation" aria-label="Projects by role">
                 <a href="#reporting-analyst">Reporting analyst</a>
                 <a href="#business-analyst">Business analyst</a>

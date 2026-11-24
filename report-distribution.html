@@ -17,12 +17,12 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/style.css?v=69" />
     <link rel="stylesheet" href="assets/css/case-study.css?v=3" />
-    <link rel="stylesheet" href="assets/css/report-routing.css" />
+    <link rel="stylesheet" href="assets/css/report-routing.css?v=2" />
     <script src="assets/js/case-study.js?v=1" defer></script>
     <script src="assets/js/report-routing.js" defer></script>
     <script src="/assets/js/analytics.js?v=2" defer></script>
   </head>
-  <body class="case-study-page job-operations-page report-distribution-page">
+  <body class="case-study-page report-distribution-page">
     <a class="skip-link" href="#case-content">Skip to content</a>
     <header class="case-header" id="top">
       <div class="nav-shell">
@@ -37,35 +37,17 @@
           <a class="nav-resume" href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf" aria-label="Reporting résumé (PDF)">Reporting résumé</a>
         </nav>
       </div>
-      <div class="case-hero">
-        <div class="case-hero-copy">
-          <a class="case-back" href="index.html#projects">Back to selected projects</a>
-          <p class="eyebrow">Workplace initiative · Fictional process illustration</p>
-          <h1>Making daily reports <em>easier for teammates to find.</em></h1>
-          <p class="case-lede">At Comcast/Xfinity, teammates needed information from multiple daily reports. Finding the right report and applying filters caused confusion and repeated manual work. I built Power Automate flows to filter and distribute reports through email and Microsoft Teams for a team of 10.</p>
-          <a class="button button-primary" href="#example">Try the report-routing example</a>
-        </div>
-        <dl class="case-summary" aria-label="Experience and illustration scope">
-          <div><dt>Professional contribution</dt><dd>Report filtering and distribution with Power Automate, developed in response to teammates' requests</dd></div>
-          <div><dt>Audience</dt><dd>A team of 10</dd></div>
-          <div><dt>Observed result</dt><dd>More consistent delivery and less time locating and filtering reports; no quantified time saving was measured</dd></div>
-          <div><dt>Public evidence</dt><dd>A fictional illustration of the process. Original employer flows, records, and screenshots are not reproduced.</dd></div>
-        </dl>
+      <div class="report-intro">
+        <a class="case-back" href="index.html#projects">Back to selected projects</a>
+        <h1>Routing daily reports with Power Automate</h1>
+        <p class="case-lede">At Comcast/Xfinity, my team of 10 had to find and filter several reports each day. I built flows that delivered the figures my teammates needed by email or Microsoft Teams.</p>
       </div>
     </header>
     <main id="case-content">
-      <section class="section job-contribution" id="contribution" data-read-label="My contribution" aria-labelledby="work-title">
-        <div class="section-heading compact-heading"><p class="eyebrow">Workplace reporting</p><h2 id="work-title">The reporting problem and my contribution.</h2></div>
-        <div class="job-change-list">
-          <article><h3>The reporting problem</h3><p>My team gathered daily metrics, including sales counts and team-adherence comparisons, from multiple reports. Teammates requested a more convenient way to access the information.</p></article>
-          <article><h3>My contribution</h3><p>I built flows that filtered the relevant reports and distributed them by email or in a Teams chat, depending on the need. I also used scheduled messages and confirmation emails in recurring workflows.</p></article>
-          <article><h3>How I checked the output</h3><p>I manually reviewed the report screenshots posted in chat, checking that they displayed the correct date and filters and looking for anything that appeared wrong.</p></article>
-        </div>
-      </section>
-      <section class="section job-walkthrough" id="example" data-read-label="Process example" aria-labelledby="example-title">
-        <div class="section-heading compact-heading">
-          <h2 id="example-title">Route a daily activity report.</h2>
-          <p>Choose a team, report date and delivery channel to preview a message using fictional activity records. September 2 has no report for either team. All selections stay in your browser.</p>
+      <section class="section" id="example" data-read-label="Routing example" aria-labelledby="example-title">
+        <div class="section-heading report-example-intro">
+          <h2 id="example-title">Route a sample report</h2>
+          <p>Pick a team and date to preview a Teams message or email using fictional records. Try September 2 to see what happens when there’s no match.</p>
         </div>
         <div class="routing-demo">
           <fieldset id="route-controls" hidden>
@@ -99,15 +81,24 @@
             </div>
           </div>
           <noscript><p>The example shows Cedar’s September 1 report. Enable JavaScript to try another request.</p></noscript>
+          <p class="report-evidence-note">The employer flows, records and screenshots are private. This example runs in your browser.</p>
         </div>
       </section>
-      <section class="section job-validation" id="related-work" data-read-label="Related work" aria-labelledby="skills-title">
-        <div class="section-heading compact-heading"><p class="eyebrow">Relevant work</p><h2 id="skills-title">Reporting, workflow improvement, and team support.</h2></div>
-        <p>This initiative connected a recurring information problem with a practical distribution workflow. My contribution was identifying the manual steps, configuring the automation, and making the reports easier for teammates to access.</p>
-        <p>The related Excel case study includes a workplace formula-correction example and a separate fictional workbook demonstrating input validation, monthly consolidation and reconciliation.</p>
-        <a class="case-inline-link" href="sales-activity-tracker.html">Review Activity Reporting: Excel and Tableau</a>
+      <section class="section report-notes" id="contribution" data-read-label="My contribution" aria-labelledby="work-title">
+        <h2 id="work-title">What I built and checked</h2>
+        <div>
+          <p>My teammates wanted an easier way to look up sales counts and compare team adherence. I set up the filters and delivery channels, and used scheduled messages and confirmation emails for recurring workflows.</p>
+          <p>I checked the screenshots posted in Teams against the expected date and filters. Reports arrived more consistently, and teammates spent less time finding and filtering them. I didn’t measure the time saved.</p>
+        </div>
       </section>
-      <section class="contact-section case-contact"><div class="contact-copy"><p class="eyebrow">Contact</p><h2>Contact Jonathan.</h2><p>Available for permanent, full-time work. Based in New Jersey; open to U.S. remote work and relocation for a suitable role.</p></div><div class="contact-actions"><a class="button contact-primary" href="mailto:jonathancapalbo1@gmail.com">Email Jonathan</a><div><a href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis / systems résumé (PDF)</a><a href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations résumé (PDF)</a><a href="index.html#experience">Professional experience</a></div></div></section>
+      <section class="section report-notes" id="related-work" data-read-label="Related work" aria-labelledby="skills-title">
+        <h2 id="skills-title">Related workbook</h2>
+        <div>
+          <a class="case-inline-link" href="sales-activity-tracker.html">Activity Reporting: Excel and Tableau</a>
+          <p>I describe a formula I corrected at work and use a separate fictional workbook to show how I check individual entries against their monthly totals.</p>
+        </div>
+      </section>
+      <section class="contact-section case-contact"><div class="contact-copy"><h2>Contact Jonathan</h2><p>Available for permanent, full-time work. Based in New Jersey and open to U.S. remote work and relocation.</p></div><div class="contact-actions"><a class="button contact-primary" href="mailto:jonathancapalbo1@gmail.com">Email Jonathan</a><div><a href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis / systems résumé (PDF)</a><a href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations résumé (PDF)</a><a href="index.html#experience">Professional experience</a></div></div></section>
     </main>
     <footer><p><strong>Jonathan Capalbo</strong><span>Business analysis · Reporting · Operations · Systems</span></p><p>© 2026 Jonathan Capalbo.</p></footer>
   </body>

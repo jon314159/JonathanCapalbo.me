@@ -1,4 +1,32 @@
-.routing-demo { container-type: inline-size; padding: clamp(16px, 3vw, 32px); border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--paper-bright); }
+.report-distribution-page .case-header { padding-top: 0; }
+.report-distribution-page .nav-shell {
+  position: static;
+  width: min(var(--content-width), 100%);
+  margin-inline: auto;
+  padding-inline: 0;
+  box-shadow: none;
+}
+.report-intro { width: min(var(--content-width), 100%); margin-inline: auto; }
+@media (min-width: 821px) {
+  .report-intro { padding-top: 24px; }
+}
+.report-intro .case-back { margin-bottom: 8px; }
+.report-intro h1 { max-width: 34ch; margin: 0; font-size: clamp(2rem, 3.4vw, 3.25rem); line-height: 1.1; }
+.report-intro .case-lede { max-width: 68ch; margin: 16px 0 0; }
+.report-example-intro h2, .report-notes h2 { margin: 0; font-size: clamp(1.5rem, 2.1vw, 2rem); line-height: 1.2; }
+.report-example-intro p { max-width: 62ch; margin: 12px 0 0; }
+.report-evidence-note { max-width: 68ch; margin: 16px 0 0; color: var(--muted); font-size: .92rem; }
+.report-notes { display: grid; align-items: start; gap: 16px; }
+.report-notes p { max-width: 68ch; margin: 0; }
+.report-notes p + p { margin-top: 12px; }
+.report-notes .case-inline-link { margin: 0 0 4px; }
+@media (min-width: 62rem) {
+  .report-distribution-page #example, .report-notes {
+    grid-template-columns: minmax(15rem, 1fr) minmax(0, 2.55fr);
+    column-gap: clamp(32px, 4vw, 64px);
+  }
+}
+.routing-demo { min-width: 0; container-type: inline-size; }
 .routing-demo fieldset { min-width: 0; margin: 0 0 24px; padding: 0; border: 0; }
 .routing-demo legend, .routing-demo caption { margin-bottom: 12px; padding: 0; color: var(--ink); font-size: 1.05rem; font-weight: 700; text-align: left; }
 .route-fields, .route-evidence { display: grid; gap: 16px; }

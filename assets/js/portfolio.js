@@ -31,20 +31,3 @@ if (sections.length) {
   addEventListener('pageshow', markCurrentSection);
   markCurrentSection();
 }
-
-if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  try {
-    const observer = new IntersectionObserver(entries => {
-      for (const entry of entries) {
-        if (!entry.isIntersecting) continue;
-        entry.target.classList.add('project-enter');
-        observer.unobserve(entry.target);
-      }
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.featured-project, .project-card').forEach(card => {
-      if (card.getBoundingClientRect().top >= innerHeight) observer.observe(card);
-    });
-  } catch {
-    // Cards remain visible if the optional entrance effect is unavailable.
-  }
-}

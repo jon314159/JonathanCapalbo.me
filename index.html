@@ -22,215 +22,164 @@
     <link rel="canonical" href="https://jonathancapalbo.me/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/style.css?v=69" />
-    <script src="assets/js/portfolio.js?v=3" defer></script>
+    <link rel="stylesheet" href="assets/css/portfolio.css?v=1" />
+    <script src="assets/js/portfolio.js?v=4" defer></script>
     <script src="/assets/js/analytics.js?v=2" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <header class="site-header" id="top">
+    <header class="portfolio-header" id="top">
       <div class="nav-shell">
         <a class="brand" href="#top" aria-label="Jonathan Capalbo, home">
-          <span class="brand-mark" aria-hidden="true">JC</span>
-          <span class="brand-copy"><strong>Jonathan Capalbo</strong><small>Business analysis, reporting &amp; systems</small></span>
+          <img src="assets/images/jonathan-capalbo-headshot-web.jpg?v=20260913" width="44" height="44" alt="" />
+          <strong>Jonathan Capalbo</strong>
         </a>
-
+        <a class="portfolio-resume-link" href="#resumes">Résumés</a>
         <nav aria-label="Main navigation">
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
-          <a class="nav-resume" href="#resumes">Résumés</a>
         </nav>
       </div>
-
-      <div class="hero-shell">
-        <div class="hero-copy">
-          <div class="hero-heading">
-          <div class="intro-identity">
-            <img src="assets/images/jonathan-capalbo-headshot-web.jpg?v=20260913" width="256" height="256" alt="Jonathan Capalbo" decoding="async" fetchpriority="high" />
-            <p><strong>Jonathan Capalbo</strong><span>Customer operations background</span></p>
-          </div>
-          <h1>Business analysis, <em>reporting &amp; systems.</em></h1>
-          </div>
-          <div class="hero-details">
-          <p class="target-roles">Available for permanent, full-time analysis and operations roles.</p>
-          <p class="hero-summary">At Comcast/Xfinity, I automated daily report delivery and corrected missing days in Excel totals. My portfolio combines that customer operations experience with academic work in Tableau, Oracle SQL and ServiceNow.</p>
-          <p class="hero-location">Point Pleasant, NJ · Open to U.S. remote work and relocation for a suitable role.</p>
-
-          <div class="button-row">
-            <a class="button button-primary" href="#projects">View Projects</a>
-            <a class="button button-secondary" href="mailto:jonathancapalbo1@gmail.com">Email Jonathan</a>
-          </div>
-          <div class="hero-contact-links" id="resumes">
-            <a class="resume-choice" href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis / systems résumé (PDF)</a>
-            <a class="resume-choice" href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations résumé (PDF)</a>
-          </div>
-          </div>
-        </div>
-
-      </div>
-
     </header>
 
     <main id="main-content">
-      <section class="work-section" id="projects">
-        <div class="section work-inner">
-          <div class="section-heading compact-heading">
-            <h2>Selected work.</h2>
+      <div class="portfolio-opening">
+        <div class="opening-inner">
+          <div class="opening-intro">
+            <h1>Business analysis and reporting</h1>
+            <p>At Comcast/Xfinity, I automated daily reports for my team of 10 and fixed Excel formulas that left whole days out of our monthly totals.</p>
+            <p class="opening-location">I’m looking for a permanent, full-time role. I live in Point Pleasant, NJ, and can work remotely in the U.S. or relocate.</p>
           </div>
 
-          <section class="project-paths" aria-labelledby="role-title">
-            <h3 id="role-title">Browse projects by role</h3>
-            <div class="role-links" role="navigation" aria-label="Projects by role">
-              <a href="#reporting-analyst">Reporting analyst</a>
-              <a href="#business-analyst">Business analyst</a>
-              <a href="#systems-operations">Systems &amp; service operations</a>
-              <a href="#project-coordinator">Project coordinator</a>
+          <article class="opening-project" aria-labelledby="workbook-title">
+            <h2 id="workbook-title"><a href="sales-activity-tracker.html">Activity Reporting: Excel and Tableau</a></h2>
+            <figure>
+              <a class="workbook-preview" href="assets/images/sales-activity-dashboard.png" aria-label="Open the full-size fictional Excel dashboard">
+                <img src="assets/images/sales-activity-dashboard.png" width="1107" height="1090" fetchpriority="high" alt="Excel line chart of completed units each day in July against the daily target of 11 units" />
+              </a>
+              <figcaption>In this fictional reconstruction, July reached 105% of the monthly product goal. Daily completions still fell short of target on 17 of 31 days.</figcaption>
+            </figure>
+            <div class="workbook-files">
+              <a href="assets/images/sales-activity-dashboard.png">Full-size dashboard</a>
+              <a href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download Excel workbook</a>
             </div>
-            <section class="role-work" id="reporting-analyst" tabindex="-1" aria-labelledby="reporting-role-title">
-              <h4 id="reporting-role-title">Reporting analyst work samples</h4>
-              <ul>
-                <li><a href="sales-activity-tracker.html#analysis">Excel activity tracker and monthly reconciliation</a></li>
-                <li><a href="chicago-food-inspections.html#findings">Chicago Tableau dashboards and findings</a></li>
-                <li><a href="sql-movie-rental.html#query-result">Oracle SQL query and results</a></li>
-              </ul>
-              <a class="role-resume" href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations résumé (PDF)</a>
-            </section>
-            <section class="role-work" id="business-analyst" tabindex="-1" aria-labelledby="business-role-title">
-              <h4 id="business-role-title">Business analyst work samples</h4>
-              <ul>
-                <li><a href="arcade-ticketing-evidence.html#requirements">Arcade requirements register</a></li>
-                <li><a href="arcade-ticketing-evidence.html#planned-tests">Planned acceptance tests</a></li>
-                <li><a href="report-distribution.html#contribution">Workplace reporting workflow</a></li>
-              </ul>
-              <a class="role-resume" href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis / systems résumé (PDF)</a>
-            </section>
-            <section class="role-work" id="systems-operations" tabindex="-1" aria-labelledby="systems-role-title">
-              <h4 id="systems-role-title">Systems and service operations work samples</h4>
-              <ul>
-                <li><a href="servicenow-njit-registrar.html#portal-evidence">ServiceNow knowledge portal</a></li>
-                <li><a href="report-distribution.html#example">Report routing and delivery preview</a></li>
-              </ul>
-              <a class="role-resume" href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis / systems résumé (PDF)</a>
-            </section>
-            <section class="role-work" id="project-coordinator" tabindex="-1" aria-labelledby="coordinator-role-title">
-              <h4 id="coordinator-role-title">Project coordinator work samples</h4>
-              <ul>
-                <li><a href="arcade-status-update.html">One-page stakeholder status update</a></li>
-                <li><a href="arcade-ticketing-evidence.html#traceability">Requirements and test dependencies</a></li>
-              </ul>
-              <a class="role-resume" href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis / systems résumé (PDF)</a>
-            </section>
+          </article>
+
+          <section class="opening-resumes" id="resumes" aria-labelledby="resumes-title">
+            <h2 id="resumes-title">Résumés</h2>
+            <a href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis / systems <span>(PDF)</span></a>
+            <a href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations <span>(PDF)</span></a>
           </section>
+        </div>
+      </div>
 
-          <article class="workplace-feature" aria-labelledby="report-feature-title">
-            <div class="workplace-feature-copy">
-              <p class="project-label">Workplace initiative · Comcast / Xfinity</p>
-              <h3 id="report-feature-title">Power Automate Report Distribution</h3>
-              <p>I built Power Automate flows that filtered and delivered daily reports to a team of 10 through email and Microsoft Teams, reducing manual searching and filtering.</p>
-              <a class="button button-primary" href="report-distribution.html">Read the report distribution case study</a>
-            </div>
-            <figure class="report-flow-summary" aria-labelledby="report-summary-caption">
-              <figcaption id="report-summary-caption">Report distribution at a glance</figcaption>
-              <ol>
-                <li><strong>Reports</strong><span>Daily team results</span></li>
-                <li><strong>Filter</strong><span>Team, date &amp; type</span></li>
-                <li><strong>Deliver</strong><span>Email or Teams</span></li>
-              </ol>
-              <p>Process overview; the case study includes a fictional example.</p>
-            </figure>
-          </article>
+      <section class="work-section" id="projects" aria-labelledby="work-title">
+        <div class="section work-inner">
+          <h2 id="work-title">Selected work</h2>
 
-          <article class="featured-project">
-            <div class="project-copy">
-              <p class="project-label">Workplace-origin Excel · Fictional portfolio reconstruction</p>
-              <h3>Activity Reporting: Excel and Tableau</h3>
-              <p class="project-lede">I corrected formulas that left days out of monthly totals in my workplace Excel tracker. This public reconstruction uses fictional records. The Tableau and React views are separate, AI-assisted portfolio extensions.</p>
-
-              <p class="project-methods">Excel input validation, cross-sheet formulas, and reconciled totals; Tableau outcome and daily-target analysis.</p>
-
-              <div class="featured-links">
-                <a class="button button-primary" href="sales-activity-tracker.html">Read the activity reporting case study</a>
-                <a class="button button-secondary" href="downloads/Fictional_Sales_Activity_Tracker.xlsx" download>Download Excel workbook</a>
-              </div>
-            </div>
-
-            <figure class="featured-dashboard-preview">
-              <a class="featured-dashboard-frame" href="assets/images/sales-activity-dashboard.png" aria-label="Open the full-size fictional Excel dashboard"><img src="assets/images/sales-activity-dashboard.png" width="1107" height="1090" loading="lazy" decoding="async" alt="Detail of the fictional Excel dashboard showing monthly KPI cards and daily results" /></a>
-              <figcaption class="featured-dashboard-caption"><span>Dashboard detail · Fictional data</span><a href="assets/images/sales-activity-dashboard.png">View full-size dashboard</a></figcaption>
-            </figure>
-          </article>
-
-          <article class="data-project" aria-labelledby="chicago-feature-title">
-            <div class="project-copy">
-              <p class="project-label">Academic team project · Real-world public data</p>
-              <h3 id="chicago-feature-title">Chicago Food Inspections</h3>
-              <p>I developed four Tableau dashboards to compare failure rates by facility, inspection type, location and time across 123,673 City of Chicago inspection records (2019-2025).</p>
-              <p class="project-methods">Among evaluated inspections, the failure rate fell from 24.9% in 2023 to 21.1% in 2025.</p>
-              <div class="project-actions">
-                <a class="button button-primary" href="chicago-food-inspections.html">Read the Chicago inspections case study</a>
-                <a class="button button-secondary" href="https://public.tableau.com/app/profile/jonathan.capalbo/viz/Chicago_Food_Inspections_17926114522930/3Geography">Open dashboards on Tableau Public</a>
-                <a class="project-link" href="downloads/Chicago_Food_Inspections.twbx" download>Download Tableau workbook</a>
-              </div>
-            </div>
-            <figure class="project-preview">
-              <a href="chicago-food-inspections.html#dashboards" aria-label="View the Chicago food inspection dashboards"><img src="assets/images/chicago-trends.png" width="1800" height="1120" loading="lazy" decoding="async" alt="Chicago food inspections Tableau dashboard showing citywide failure-rate trends, inspection volume and evaluated outcome counts." /></a>
-              <figcaption>One of four Tableau dashboards · City of Chicago public data</figcaption>
-            </figure>
-          </article>
-
-          <div class="project-list" aria-labelledby="more-projects-title">
-            <h3 id="more-projects-title">More projects</h3>
-            <article>
-              <div>
-                <p class="project-label">Academic project · ServiceNow school lab</p>
-                <h4>NJIT Registrar ServiceNow Portal</h4>
-              </div>
-              <div>
-                <p>I configured portal navigation, organized 42 articles into 12 categories, and revised a registration guide.</p>
-                <a class="project-link" href="servicenow-njit-registrar.html">Read the ServiceNow case study</a>
-              </div>
+          <div class="work-overview">
+            <article class="routing-entry" aria-labelledby="report-feature-title">
+              <p class="work-origin">Comcast / Xfinity</p>
+              <h3 id="report-feature-title"><a href="report-distribution.html">Routing daily reports with Power Automate</a></h3>
+              <p>My team of 10 used to find and filter its sales and adherence reports each day. I built flows that sent the relevant figures by email or Microsoft Teams.</p>
+              <a class="work-link" href="report-distribution.html#example">Route a fictional report</a>
             </article>
-            <article>
-              <div>
-                <p class="project-label">Self-directed planning study · Hypothetical</p>
-                <h4>Arcade Operations Ticketing Modernization</h4>
+            <section class="project-paths" aria-labelledby="role-title">
+              <h3 id="role-title">Browse projects by role</h3>
+              <div class="role-links" role="navigation" aria-label="Projects by role">
+                <a href="#reporting-analyst">Reporting analyst</a>
+                <a href="#business-analyst">Business analyst</a>
+                <a href="#systems-operations">Systems &amp; service operations</a>
+                <a href="#project-coordinator">Project coordinator</a>
               </div>
-              <div>
-                <p>A proposed workflow, requirements and planned tests for five types of arcade issues. No software was implemented or tested.</p>
-                <a class="project-link" href="arcade-ticketing-modernization.html">Read the ticketing planning study</a>
-              </div>
-            </article>
-            <article>
-              <div>
-                <p class="project-label">Academic final project · Oracle SQL</p>
-                <h4>Movie Rental Database</h4>
-              </div>
-              <div>
-                <p>Six related tables and a view of copies still checked out. A separate portfolio revision adds rental controls; the original academic script is preserved.</p>
-                <a class="project-link" href="sql-movie-rental.html">Read the SQL case study</a>
-              </div>
-            </article>
-            <article>
-              <div>
-                <p class="project-label">Independent project · Customized private fork</p>
-                <h4>Private Job-Search Operations System</h4>
-              </div>
-              <div>
-                <p>I customized a workflow for duplicate checks, source validation, résumé verification and application tracking. The public case study uses synthetic examples.</p>
-                <a class="project-link" href="job-search-operations.html">Read the job-search workflow case study</a>
-              </div>
-            </article>
+              <section class="role-work" id="reporting-analyst" tabindex="-1" aria-labelledby="reporting-role-title">
+                <h4 id="reporting-role-title">Reporting analyst work samples</h4>
+                <ul>
+                  <li><a href="sales-activity-tracker.html#analysis">Excel activity tracker and monthly reconciliation</a></li>
+                  <li><a href="chicago-food-inspections.html#findings">Chicago Tableau dashboards and findings</a></li>
+                  <li><a href="sql-movie-rental.html#query-result">Oracle SQL query and results</a></li>
+                </ul>
+                <a class="role-resume" href="downloads/Jonathan_Capalbo_Reporting_Operations_Resume.pdf">Reporting / operations résumé (PDF)</a>
+              </section>
+              <section class="role-work" id="business-analyst" tabindex="-1" aria-labelledby="business-role-title">
+                <h4 id="business-role-title">Business analyst work samples</h4>
+                <ul>
+                  <li><a href="arcade-ticketing-evidence.html#requirements">Arcade requirements register</a></li>
+                  <li><a href="arcade-ticketing-evidence.html#planned-tests">Planned acceptance tests</a></li>
+                  <li><a href="report-distribution.html#contribution">Workplace reporting workflow</a></li>
+                </ul>
+                <a class="role-resume" href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis / systems résumé (PDF)</a>
+              </section>
+              <section class="role-work" id="systems-operations" tabindex="-1" aria-labelledby="systems-role-title">
+                <h4 id="systems-role-title">Systems and service operations work samples</h4>
+                <ul>
+                  <li><a href="servicenow-njit-registrar.html#portal-evidence">ServiceNow knowledge portal</a></li>
+                  <li><a href="report-distribution.html#example">Report routing and delivery preview</a></li>
+                </ul>
+                <a class="role-resume" href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis / systems résumé (PDF)</a>
+              </section>
+              <section class="role-work" id="project-coordinator" tabindex="-1" aria-labelledby="coordinator-role-title">
+                <h4 id="coordinator-role-title">Project coordinator work samples</h4>
+                <ul>
+                  <li><a href="arcade-status-update.html">One-page stakeholder status update</a></li>
+                  <li><a href="arcade-ticketing-evidence.html#traceability">Requirements and test dependencies</a></li>
+                </ul>
+                <a class="role-resume" href="downloads/Jonathan_Capalbo_Business_Analyst_Resume.pdf">Business analysis / systems résumé (PDF)</a>
+              </section>
+            </section>
           </div>
+
+          <article class="inspection-entry" aria-labelledby="chicago-feature-title">
+            <div>
+              <p class="work-origin">Academic team project · City of Chicago public data</p>
+              <h3 id="chicago-feature-title"><a href="chicago-food-inspections.html">Chicago Food Inspections</a></h3>
+              <p>I built four Tableau dashboards from 123,673 inspection records covering 2019 to 2025. Among evaluated inspections, the failure rate fell from 24.9% in 2023 to 21.1% in 2025.</p>
+              <div class="dashboard-links">
+                <a class="work-link" href="https://public.tableau.com/app/profile/jonathan.capalbo/viz/Chicago_Food_Inspections_17926114522930/3Geography">Open dashboards on Tableau Public</a>
+                <a class="work-link" href="downloads/Chicago_Food_Inspections.twbx" download>Download Tableau workbook</a>
+              </div>
+            </div>
+            <figure>
+              <a href="chicago-food-inspections.html#dashboards" aria-label="View the Chicago food inspection dashboards"><img src="assets/images/chicago-trends.png" width="1800" height="1120" loading="lazy" decoding="async" alt="Chicago food inspections Tableau dashboard showing citywide failure-rate trends, inspection volume and evaluated outcome counts." /></a>
+              <figcaption>Citywide inspection outcomes by year</figcaption>
+            </figure>
+          </article>
+
+          <section class="work-directory" aria-labelledby="more-projects-title">
+            <h3 id="more-projects-title">More projects</h3>
+            <dl>
+              <div>
+                <dt><a href="sales-activity-tracker.html">Activity Reporting: Excel and Tableau</a></dt>
+                <dd>I rebuilt my workplace Excel tracker with fictional data. I later added AI-assisted Tableau and React versions to the portfolio.</dd>
+              </div>
+              <div>
+                <dt><a href="servicenow-njit-registrar.html">NJIT Registrar ServiceNow Portal</a></dt>
+                <dd>In an NJIT lab, I organized 42 articles into 12 categories and revised a registration guide.</dd>
+              </div>
+              <div>
+                <dt><a href="arcade-ticketing-modernization.html">Arcade Operations Ticketing Modernization</a></dt>
+                <dd>For a hypothetical arcade, I proposed a workflow for five types of issues and wrote requirements and planned acceptance tests.</dd>
+              </div>
+              <div>
+                <dt><a href="sql-movie-rental.html">Movie Rental Database</a></dt>
+                <dd>My Oracle SQL course project tracked outstanding rentals across six related tables. A later portfolio revision added rental controls.</dd>
+              </div>
+              <div>
+                <dt><a href="job-search-operations.html">Private Job-Search Operations System</a></dt>
+                <dd>I adapted a private fork to check for duplicate jobs and track applications. The case study uses synthetic examples.</dd>
+              </div>
+            </dl>
+          </section>
         </div>
       </section>
 
       <section class="section experience-section" id="experience">
         <div class="section-heading compact-heading">
-          <p class="eyebrow">Experience</p>
-          <h2>Customer operations and issue investigation.</h2>
+          <h2>Work experience</h2>
         </div>
         <div class="timeline">
           <article class="role-card">
@@ -268,8 +217,7 @@
 
       <section class="section skills-section" id="skills">
         <div class="section-heading compact-heading">
-          <p class="eyebrow">Skills</p>
-          <h2>Tools and methods.</h2>
+          <h2>Tools and methods</h2>
         </div>
 
         <div class="skill-groups tools-methods">
@@ -295,8 +243,7 @@
 
       <section class="section education-section" id="education">
         <div class="education-intro">
-          <p class="eyebrow">Education</p>
-          <h2>Business and information systems at NJIT.</h2>
+          <h2>Education</h2>
         </div>
 
         <div class="education-stack">
@@ -326,8 +273,7 @@
 
       <section class="contact-section" id="contact">
         <div class="contact-copy">
-          <p class="eyebrow">Contact</p>
-          <h2>Contact Jonathan.</h2>
+          <h2>Contact Jonathan</h2>
           <p>I'm available for permanent, full-time roles in business analysis, reporting, operations, business systems, implementation support, and project coordination.</p>
         </div>
         <div class="contact-actions">

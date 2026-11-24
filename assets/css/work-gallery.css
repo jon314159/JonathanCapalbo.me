@@ -46,7 +46,20 @@
   cursor: pointer;
 }
 
-.gallery-picker button[aria-selected="true"] { color: var(--blue-dark); border-bottom-color: currentColor; }
+.gallery-picker button[aria-selected="true"] { color: var(--blue-dark); }
+.gallery-tab-rule {
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  left: 0;
+  height: 3px;
+  background: #2147be;
+  transform-origin: left center;
+  pointer-events: none;
+}
+@media (forced-colors: active) {
+  .gallery-tab-rule { background: Highlight; forced-color-adjust: none; }
+}
 .gallery-picker button:hover { color: var(--ink); }
 .gallery-picker button:focus-visible { outline: 2px solid var(--blue-dark); outline-offset: 2px; }
 
@@ -66,6 +79,15 @@
   aspect-ratio: 1.68;
   padding: clamp(.8rem, 2.15vw, 2.5rem);
   background: #cad6e5;
+}
+
+.gallery-visual.gallery-outgoing {
+  position: absolute;
+  z-index: 1;
+  inset: 0 0 auto;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
 }
 
 .sheet-window,

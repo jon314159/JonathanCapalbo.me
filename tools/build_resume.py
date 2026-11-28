@@ -67,9 +67,12 @@ def build(variant):
     story.extend(section("PROFESSIONAL EXPERIENCE" if experience_first else "EXPERIENCE"))
     for role in selected.get("experience", DATA["experience"]):
         block = [Paragraph(f'{role["title"]} | {role["company"]}', TITLE), Paragraph(f'{role["dates"]} | {role["location"]}', META)]
-        bullet_order = selected.get("experience_bullet_order", {}).get(role["company"], range(len(role["bullets"])))
+        bullets = role["bullets"]
+        if isinstance(bullets, dict):
+            bullets = bullets[variant]
+        bullet_order = selected.get("experience_bullet_order", {}).get(role["company"], range(len(bullets)))
         for index in bullet_order:
-            bullet = role["bullets"][index]
+            bullet = bullets[index]
             text = bullet[variant] if isinstance(bullet, dict) else bullet
             block.append(Paragraph("- " + text, BULLET))
         block.append(Spacer(1, 3))
@@ -77,19 +80,21 @@ def build(variant):
     story.extend(section("SELECTED PROJECTS"))
     projects = selected.get("project_details", [DATA["projects"][key] for key in selected["project_order"]])
     for item in projects:
-        description = Paragraph("- " + item["description"], BULLET) if experience_first else Paragraph(item["description"], BODY)
+        text = item["description"]
+        if isinstance(text, dict):
+            text = text[variant]
+        description = Paragraph("- " + text, BULLET) if experience_first else Paragraph(text, BODY)
         story.append(KeepTogether([Paragraph(link(item["name"], item["url"]) if item.get("url") else item["name"], TITLE), Paragraph(item["scope"], META), description, Spacer(1, 2)]))
     if experience_first:
         story.extend(section("SKILLS"))
         for item in selected["skills"]:
             story.append(Paragraph(item, BODY))
     story.extend(section("EDUCATION"))
-    story.append(Paragraph("<b>New Jersey Institute of Technology</b> | Newark, NJ", BODY))
-    story.append(Paragraph("M.S. Business &amp; Information Systems | Expected December 2027", BODY))
-    story.append(Paragraph("B.S. Business Administration | 2024 | GPA: 3.97 | Dean's List, all semesters", BODY))
+    for line in DATA["education"]:
+        story.append(Paragraph(line, BODY))
     if selected.get("coursework"):
         story.append(Paragraph("<b>Relevant coursework:</b> " + selected["coursework"], BODY))
-    story.append(Paragraph("<b>Training:</b> ServiceNow Administration Fundamentals; ServiceNow Knowledge Management Fundamentals", BODY))
+    story.append(Paragraph(DATA["training"], BODY))
 
     def page_metadata(canvas, _document):
         canvas._doc.Catalog.Lang = PDFString("en-US")
